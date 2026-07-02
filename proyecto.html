@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260702r"></script>
+<script src="data/portal-data.js?v=20260702r2"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -85,7 +85,7 @@ const tipoLabel={flat:'Flat',duplex:'Dúplex',pent:'Penthouse',triplex:'Triplex'
 const id=new URLSearchParams(location.search).get('id');
 const p=P.find(x=>x.id===id);
 
-if(!p){document.getElementById('content').innerHTML='<div class="notfound"><h1>Proyecto no encontrado</h1><p><a href="index.html">← Volver al portal</a></p></div>';}
+if(!p||p.mostrar===false){document.getElementById('content').innerHTML='<div class="notfound"><h1>Proyecto no disponible</h1><p>Este proyecto fue retirado del cuadrante.</p><p><a href="index.html">← Volver al portal</a></p></div>';}
 else render();
 
 
