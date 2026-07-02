@@ -2422,7 +2422,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). Medidas corregidas desde brochure junio 2026: flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m². Para comparación se usa el promedio ponderado de 18 flats típicos, sin ajuste de cochera porque el brochure/lista no confirma política de estacionamiento.",
+   "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m².",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -2450,10 +2450,10 @@
     "assets/ads/parque-monte-carmelo-1.jpg"
    ],
    "stock": {
-    "n": 18,
-    "label": "18 flats típicos"
+    "n": 24,
+    "label": "24 disponibles"
    },
-   "cochera_status": "nd"
+   "cochera_status": "no"
   },
   {
    "id": "terraverde",
