@@ -360,7 +360,8 @@ window.PORTAL_DATA = {
     "assets/planos/monte-mayor-183/plano-01.jpg",
     "assets/planos/monte-mayor-183/plano-02.jpg",
     "assets/planos/monte-mayor-183/plano-03.jpg",
-    "assets/planos/monte-mayor-183/plano-x02-1.jpg"
+    "assets/planos/monte-mayor-183/plano-x02-1.jpg",
+    "assets/planos/monte-mayor-183/lista-precios-1.jpg"
    ],
    "brochure": "assets/brochures/monte-mayor-183-f1.pdf",
    "typologies": [
@@ -785,7 +786,8 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 4,
     "label": "4 quedan"
-   }
+   },
+   "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf"
   },
   {
    "id": "dmont-2",
@@ -1830,7 +1832,8 @@ window.PORTAL_DATA = {
    "stock": {
     "label": "4 precios enviados",
     "n": 4
-   }
+   },
+   "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf"
   },
   {
    "id": "aura-sul",
@@ -2022,9 +2025,10 @@ window.PORTAL_DATA = {
     "assets/planos/precursores-ii/plano-02.jpg",
     "assets/planos/precursores-ii/plano-14.jpg",
     "assets/planos/precursores-ii/plano-15.jpg",
-    "assets/planos/precursores-ii/plano-16.jpg"
+    "assets/planos/precursores-ii/plano-16.jpg",
+    "assets/planos/precursores-ii/lista-precios-1.jpg"
    ],
-   "brochure": null,
+   "brochure": "assets/brochures/precursores-ii-brochure.pdf",
    "typologies": [
     {
      "unidad": "201",
@@ -2090,7 +2094,8 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 3,
     "label": "3 quedan"
-   }
+   },
+   "lista_precios": "assets/brochures/precursores-ii-lista-precios.pdf"
   },
   {
    "id": "dmont-dicon",
@@ -3411,7 +3416,8 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 9,
     "label": "9 flats típicos · 12 con precio"
-   }
+   },
+   "lista_precios": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf"
   }
  ]
 };

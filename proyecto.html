@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260702pmc"></script>
+<script src="data/portal-data.js?v=20260702lp"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -145,6 +145,7 @@ function render(){
   const wa=p.wa?`<a class="btn wa" href="${waHref(p)}" target="_blank">📱 WhatsApp +51 ${waFmt(p.wa)}</a>`:'';
   const web=p.web?`<a class="btn web" href="${p.web}" target="_blank">🌐 Web oficial</a>`:'';
   const broch=p.brochure?`<a class="btn broch" href="${p.brochure}" target="_blank">📄 Ver brochure (PDF)</a>`:'';
+  const lista=p.lista_precios?`<a class="btn broch" href="${p.lista_precios}" target="_blank">💲 Lista de precios (PDF)</a>`:'';
 
   document.getElementById('content').innerHTML=`
    <div class="hero">${hero}
@@ -160,7 +161,7 @@ function render(){
          <div class="chip"><b>${p.entrega||'—'}</b><span>Entrega</span></div>
          ${p.total_pisos?`<div class="chip"><b>${p.total_pisos}</b><span>Pisos</span></div>`:''}
        </div>
-       <div class="cta">${wa}${web}${broch}</div>
+       <div class="cta">${wa}${web}${broch}${lista}</div>
      </div>
    </div>
    
