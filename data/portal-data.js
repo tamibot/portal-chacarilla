@@ -1832,8 +1832,8 @@ window.PORTAL_DATA = {
     "assets/img-f1/monte-carmelo-551/img-05.png"
    ],
    "stock": {
-    "label": "4 precios enviados",
-    "n": 4
+    "n": 6,
+    "label": "6 disponibles"
    },
    "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf"
   },
