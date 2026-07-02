@@ -184,7 +184,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260701o"></script>
+<script src="data/portal-data.js?v=20260701p"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
@@ -540,7 +540,7 @@ function buildAnalysis(){
   const flats={1:[],2:[],3:[]},dupx=[],projMin={};
   comp.forEach(p=>{if(EXCL_PROJ.has(p.name))return;(p.typologies||[]).forEach(t=>{
     if(!t.precio_m2||exclUnit(p.name,t))return;
-    if(t.tipo==='flat'&&[1,2,3].includes(t.dorm)&&pisoOk(t.piso)){flats[t.dorm].push(t.precio_m2);projMin[p.name]=Math.min(projMin[p.name]||9e9,t.precio_m2);}
+    if(t.tipo==='flat'&&[1,2,3].includes(t.dorm)&&pisoOk(t.piso)){flats[t.dorm].push(t.precio_m2);const pmChart=t.precio_m2_techada||t.precio_m2;projMin[p.name]=Math.min(projMin[p.name]||9e9,pmChart);}
     else if(t.tipo==='duplex'||t.tipo==='triplex')dupx.push(t.precio_m2);
   });});
   const all=[...flats[1],...flats[2],...flats[3]];
@@ -578,7 +578,7 @@ function buildAnalysis(){
    <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). GEU ($2,475/m²) queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — al centro del mercado. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — 6 proyectos en últimas unidades y solo GEU y Conde II en fase de planos.</div>
    <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
    ${barRows}
-   <div style="font-size:10px;color:#aaa;margin:6px 0 14px">⬛ borde = proyecto ubicado sobre una avenida-límite del cuadrante. Los proyectos que no aparecen en el gráfico no publican precios por unidad.</div>
+   <div style="font-size:10px;color:#aaa;margin:6px 0 14px">⬛ borde = proyecto ubicado sobre una avenida-límite del cuadrante. Donde el asesor confirmó la política de cochera (Santorini, Monte Mayor 177 y 183, Precursores II, Conde de la Vega 460), la barra muestra el precio neto sin cochera; en los demás es el precio de lista publicado. Los proyectos que no aparecen en el gráfico no publican precios por unidad.</div>
    <div class="sec">Ajuste por cochera — precios netos confirmados con cada asesor</div>
    <table class="t" style="max-width:1080px"><thead><tr><th>Proyecto</th><th>Unidades típicas</th><th>Desde (lista)</th><th>Cochera / depósito</th><th>US$/m² neto</th><th>Disponibilidad</th></tr></thead><tbody>
    <tr class="geurow"><td><b>AVE. DEL SUR 220 (GEU)</b></td><td>Flats 1–3d (67.8–165 m²)</td><td>US$167,805</td><td>Aparte ($15–16k / $27k)</td><td><b style="color:#A32D2D">$2,475</b></td><td>Lanzamiento · 39 und.</td></tr>

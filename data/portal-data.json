@@ -350,7 +350,7 @@
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 187000,
-   "precio_hasta_usd": 301857,
+   "precio_hasta_usd": 447000,
    "dorms": "1–3",
    "m2": "64–240",
    "wa": "944216477",
@@ -820,7 +820,7 @@
      "dorm": 3,
      "m2": 122.2,
      "precio_usd": 264210,
-     "precio_m2": 2163,
+     "precio_m2": 2162,
      "tipo": "flat",
      "piso": "1",
      "flat": false
@@ -850,7 +850,7 @@
      "dorm": 3,
      "m2": 123.5,
      "precio_usd": 265184,
-     "precio_m2": 2148,
+     "precio_m2": 2147,
      "tipo": "flat",
      "piso": "3",
      "flat": true
@@ -900,7 +900,7 @@
      "dorm": 3,
      "m2": 123.5,
      "precio_usd": 265184,
-     "precio_m2": 2148,
+     "precio_m2": 2147,
      "tipo": "flat",
      "piso": "5",
      "flat": true
@@ -910,7 +910,7 @@
      "dorm": 3,
      "m2": 84.5,
      "precio_usd": 181190,
-     "precio_m2": 2145,
+     "precio_m2": 2144,
      "tipo": "flat",
      "piso": "5",
      "flat": true
@@ -938,7 +938,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Grupo Dicon, en construcción; flats 3 dorm (82–242 m2) desde US$181,190. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Grupo Dicon publica lista de precios por unidad en su web oficial (11 unidades, 81–243 m²). Falta confirmar con el asesor si los precios incluyen cochera y cuántas unidades quedan disponibles; en los otros proyectos de Dicon la cochera se vende aparte.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -954,7 +954,8 @@
     "assets/img-f1/dmont-2/img-03.jpg",
     "assets/img-f1/dmont-2/img-04.jpg",
     "assets/img-f1/dmont-2/img-05.jpg"
-   ]
+   ],
+   "cochera_status": "nd"
   },
   {
    "id": "monteflor",
@@ -2177,7 +2178,7 @@
    "id": "hana",
    "name": "HANA",
    "dev": "Odima Inmobiliaria",
-   "addr": "Jr. Conde de la Vega del Rey 149, Chacarilla del Estanque, Santiago de Surco",
+   "addr": "Jr. Conde de la Vega del Ren 149, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
    "estado_raw": "Entrega inmediata — ÚLTIMA unidad",
    "entrega": "Entrega inmediata (últimas unidades)",
@@ -2863,7 +2864,9 @@
      "precio_m2": 2531,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "m2_techada": 120.47,
+     "precio_m2_techada": 2640
     },
     {
      "unidad": "Flat 301",
@@ -2873,7 +2876,9 @@
      "precio_m2": 2553,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "m2_techada": 120.47,
+     "precio_m2_techada": 2673
     },
     {
      "unidad": "Flat 302",
@@ -2883,7 +2888,9 @@
      "precio_m2": 2412,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "m2_techada": 116.9,
+     "precio_m2_techada": 2498
     },
     {
      "unidad": "Flat 401",
@@ -2893,7 +2900,9 @@
      "precio_m2": 2555,
      "tipo": "flat",
      "piso": "4",
-     "flat": true
+     "flat": true,
+     "m2_techada": 120.47,
+     "precio_m2_techada": 2665
     },
     {
      "unidad": "Flat 403",
@@ -2903,7 +2912,9 @@
      "precio_m2": 2670,
      "tipo": "flat",
      "piso": "4",
-     "flat": true
+     "flat": true,
+     "m2_techada": 116.9,
+     "precio_m2_techada": 2754
     },
     {
      "unidad": "Flat 501",
@@ -2913,7 +2924,9 @@
      "precio_m2": 2553,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "m2_techada": 120.47,
+     "precio_m2_techada": 2673
     },
     {
      "unidad": "Flat 502",
@@ -2923,7 +2936,9 @@
      "precio_m2": 2561,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "m2_techada": 116.9,
+     "precio_m2_techada": 2652
     },
     {
      "unidad": "Flat 503",
@@ -2933,7 +2948,9 @@
      "precio_m2": 2797,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "m2_techada": 82.47,
+     "precio_m2_techada": 2886
     },
     {
      "unidad": "Flat 504",
@@ -2943,7 +2960,9 @@
      "precio_m2": 2555,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "m2_techada": 104.99,
+     "precio_m2_techada": 2619
     }
    ],
    "flats_summary": [
