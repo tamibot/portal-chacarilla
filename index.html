@@ -184,7 +184,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260701p"></script>
+<script src="data/portal-data.js?v=20260702pmc"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
@@ -227,7 +227,7 @@ function dataLevel(p){
 }
 function dataLabel(p){
   const dl=dataLevel(p);
-  if(dl==='completa')return 'm² de típico ✓';
+  if(dl==='completa')return comparableRows(p).length?'m² de típico ✓':'Info completa · sin típico';
   if(dl==='general')return 'Precio referencial (sin típico)';
   return 'Sin precio público';
 }
@@ -415,8 +415,12 @@ function buildFullList(){
     const pr=priceForDorm(p), stock=stockInfo(p), park=parkingStatus(p);
     const qs=p.isGEU?'<span class="qtag q-geu">GEU</span>':(p.en_cuadrante?'<span class="qtag q-in">En cuadrante</span>':'<span class="qtag q-out">Fuera</span>');
     const exact=comparableRows(p);
-    const detail=(exact.length?exact.map(f=>`${f.dorm}d · ${f.m2} m² · ${fmtUsd(f.precio_usd)} · $${f.precio_m2.toLocaleString()}/m²`).join('<br>'):'')||
-      '<span class="nd">Sin lista de precios pública</span>';
+    const allSummary=(p.flats_summary||[]).filter(f=>f.m2&&f.precio_usd&&f.precio_m2);
+    const detail=exact.length
+      ? exact.map(f=>`${f.dorm}d · ${f.m2} m² · ${fmtUsd(f.precio_usd)} · $${f.precio_m2.toLocaleString()}/m²`).join('<br>')
+      : (allSummary.length
+        ? allSummary.map(f=>`${f.dorm}d · ${f.m2} m² · ${fmtUsd(f.precio_usd)} · <span class="nd">no típico${f.motivo_no_comparable?': '+f.motivo_no_comparable:''}</span>`).join('<br>')
+        : '<span class="nd">Sin lista de precios pública</span>');
     const parkLabel=park==='si'?'Incluye cochera':park==='no'?'No incluye cochera':'Cochera s/d';
     const stockClass=stock.known?'ok':'warn';
     const status=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span>`;
@@ -426,7 +430,7 @@ function buildFullList(){
       <td>${status}<div class="muted" style="margin-top:4px">${p.entrega||'Entrega s/d'}</div></td>
       <td><b>${p.dorms||'—'}</b><div class="muted">${p.m2} m²</div></td>
       <td><b>${fmtUsd(p.precio_desde_usd)||'<span class=nd>consultar</span>'}</b>${p.precio_hasta_usd?`<div class="muted">hasta ${fmtUsd(p.precio_hasta_usd)}</div>`:''}</td>
-      <td>${pr.pm2?`<span class="tpm2 ${pm2cls(pr.pm2)}">$${pr.pm2.toLocaleString()}/m²</span>`:'<span class="nd">—</span>'}<div class="muted">${curDorm&&pr.m2?`${curDorm}d · ${pr.m2} m²`:'flat típico'}</div></td>
+      <td>${pr.pm2?`<span class="tpm2 ${pm2cls(pr.pm2)}">$${pr.pm2.toLocaleString()}/m²</span>`:'<span class="nd">—</span>'}<div class="muted">${pr.pm2?(curDorm&&pr.m2?`${curDorm}d · ${pr.m2} m²`:'flat típico'):(allSummary.length?'sin típico comparable':'flat típico')}</div></td>
       <td>${detail}</td>
       <td><div class="smalltags"><span class="smalltag ${park==='si'?'ok':park==='no'?'bad':'warn'}">${parkLabel}</span><span class="smalltag ${stockClass}">${stock.label}</span></div></td>
     </tr>`;
@@ -567,13 +571,13 @@ function buildAnalysis(){
      <div class="k"><div class="kv">25</div><div class="kl">Proyectos que compiten hoy</div></div>
      <div class="k"><div class="kv">${nComparable}</div><div class="kl">Con precio por m² comparable</div></div>
      <div class="k"><div class="kv">6</div><div class="kl">En últimas unidades</div></div>
-     <div class="k"><div class="kv" style="color:#A32D2D">$${GEU_F.toLocaleString()}/m²</div><div class="kl">GEU flats (techado)</div></div>
+     <div class="k"><div class="kv" style="color:#A32D2D">$${GEU_F.toLocaleString()}/m²</div><div class="kl">GEU flats comparables</div></div>
      <div class="k"><div class="kv" style="color:#185FA5">${gapAll>0?'+':''}${gapAll}%</div><div class="kl">GEU vs mediana de la zona</div></div>
    </div>
    <div class="sec">Precio por m² — flats típicos del cuadrante (comparación principal)</div>
    <table class="t" style="max-width:980px"><thead><tr><th>Tipología</th><th>Mínimo</th><th>Mediana</th><th>Máximo</th><th>GEU</th><th>GEU vs mediana</th></tr></thead><tbody>
      ${trow('Flat 1 dormitorio',flats[1],GEU_F)}${trow('Flat 2 dormitorios',flats[2],GEU_F)}${trow('Flat 3 dormitorios',flats[3],GEU_F)}
-     ${trow('GENERAL FLATS (m² techado)',all,GEU_F)}${trow('Dúplex / PH (m² área total)',dupx,GEU_D)}
+     ${trow('GENERAL FLATS (m² comparable)',all,GEU_F)}${trow('Dúplex / PH (m² área total)',dupx,GEU_D)}
    </tbody></table>
    <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). GEU ($2,475/m²) queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — al centro del mercado. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — 6 proyectos en últimas unidades y solo GEU y Conde II en fase de planos.</div>
    <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
@@ -587,13 +591,13 @@ function buildAnalysis(){
    <tr><td><b>Monte Mayor 177</b></td><td>Flat 203, 87 m², 2d</td><td>S/820,000</td><td>2 paralelos + depósito incl. → −$30k</td><td><b>$2,429</b></td><td>ÚLTIMA unidad</td></tr>
    <tr><td><b>Precursores II</b></td><td>Flats 201/503, 149 m², 3d</td><td>US$385,000</td><td>2 paralelas + depósito incl. → −$30k</td><td><b>$2,435–2,463</b></td><td>3 und. (16/19 vendidas) · jul-26</td></tr>
    <tr><td><b>Monte Mayor 183</b></td><td>Flats 202/302, 115.6 m²</td><td>US$319,000</td><td>2 simples incl. → −$30k</td><td><b>$2,501–2,510</b></td><td>Últimas 4 und.</td></tr>
-   <tr><td><b>Conde de la Vega 460</b></td><td>9 flats típicos, pisos 2-5</td><td>US$253,000</td><td>1-2 incl. → −15/28/30k</td><td><b>$2,498–2,886</b></td><td>12 und. c/precio</td></tr>
+   <tr><td><b>Conde de la Vega 460</b></td><td>9 flats típicos, pisos 2-5</td><td>US$253,000</td><td>1-2 incl. → −15/28/30k</td><td><b>$2,412–2,797</b><div style="font-size:10px;color:#999">prom. $2,568</div></td><td>12 und. c/precio</td></tr>
    <tr style="color:#777"><td><b>HANA</b> †</td><td>Tipo 102, 96.31 m² — piso 1 elevado</td><td>S/900,000</td><td>Incluida → −$15k</td><td><b>$2,593</b> †</td><td>ÚLTIMA unidad</td></tr>
    <tr style="color:#777"><td><b>D'Mont</b> †</td><td>D-101, 115.71 m² — piso 1 elevado</td><td>US$237,206</td><td>Aparte: $14k</td><td><b>$2,050</b> †</td><td>ÚLTIMA unidad · sep-26</td></tr>
    <tr style="color:#777"><td><b>Monte Mar 167</b> †</td><td>121 m² — piso por confirmar</td><td>S/980,000</td><td>2 paralelos incl. → −$30k</td><td><b>$2,134</b> †</td><td>Últimas 3</td></tr>
    </tbody></table>
    <div style="font-size:10px;color:#999;max-width:1080px;margin:2px 0 8px">† Unidades finales con cálculo completo (piso 1 / piso por confirmar): referencia de cierre, no integran la banda de flats típicos.</div>
-   <div class="alert" style="max-width:1080px">🎯 <b>Rango confirmado del cuadrante: $2,180–2,886/m² neto · GEU ($2,475) queda al centro (+1.6% sobre la mediana de estos proyectos).</b> Situación de cochera verificada con cada asesor comercial (jun–jul 2026). El cuadrante se está quedando sin stock: 6 proyectos en últimas unidades y solo GEU y Conde II en fase de planos.</div>
+   <div class="alert" style="max-width:1080px">🎯 <b>Rango confirmado del cuadrante: $2,180–2,797/m² neto · GEU ($2,475) queda al centro (+1.6% sobre la mediana de estos proyectos).</b> Situación de cochera verificada con cada asesor comercial (jun–jul 2026). El cuadrante se está quedando sin stock: 6 proyectos en últimas unidades y solo GEU y Conde II en fase de planos.</div>
    <div class="sec">Estado de la oferta (${comp.length} proyectos)</div>
    ${estRows}
    <div class="alert" style="max-width:980px">La competencia activa real de la preventa GEU son los <b>en construcción</b> y <b>en planos</b>; los de entrega inmediata compiten por urgencia de mudanza y los entregados solo aportan referencia de cierre.</div>
