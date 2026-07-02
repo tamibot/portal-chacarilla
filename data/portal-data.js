@@ -150,7 +150,7 @@ window.PORTAL_DATA = {
    "lat": -12.111313355375833,
    "lng": -76.98854344646954,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 154000,
    "precio_hasta_usd": 330000,
    "dorms": "1–3",
@@ -247,14 +247,15 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": true,
+   "mostrar": false,
    "gallery": [
     "assets/img-f1/la-floresta-boulevard/img-01.jpg",
     "assets/img-f1/la-floresta-boulevard/img-02.jpg",
     "assets/img-f1/la-floresta-boulevard/img-03.jpg",
     "assets/img-f1/la-floresta-boulevard/img-04.jpg",
     "assets/img-f1/la-floresta-boulevard/img-05.jpg"
-   ]
+   ],
+   "retirado": "Retirado 2026-07-02: sin lista de precios verificable, no comparable por US$/m² (solo \"desde\" no confiable)."
   },
   {
    "id": "jardines-monte-real",
@@ -1290,7 +1291,7 @@ window.PORTAL_DATA = {
    "lat": -12.114061640626225,
    "lng": -76.98035437139151,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 193463,
    "precio_hasta_usd": 337517,
    "dorms": "1–3",
@@ -1384,12 +1385,13 @@ window.PORTAL_DATA = {
     "adondevivir": "https://www.adondevivir.com/departamentos-q-monte-umbroso-santiago-de-surco.html"
    },
    "anuncios": null,
-   "mostrar": true,
+   "mostrar": false,
    "gallery": [
     "assets/img-f1/monte-umbroso/img-01.jpg",
     "assets/img-f1/monte-umbroso/img-02.jpg"
    ],
-   "cochera_status": "si"
+   "cochera_status": "si",
+   "retirado": "Retirado 2026-07-02: agotado, sin unidades disponibles (confirmado cliente)."
   },
   {
    "id": "floresta-living-444",
