@@ -2625,7 +2625,11 @@
     "assets/img-f1/monte-sierpe/img-03.jpg",
     "assets/img-f1/monte-sierpe/img-04.jpg",
     "assets/img-f1/monte-sierpe/img-05.jpg"
-   ]
+   ],
+   "stock": {
+    "n": 6,
+    "label": "6 disponibles"
+   }
   },
   {
    "id": "monte-real-265",
