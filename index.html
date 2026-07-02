@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portal Competitivo · Chacarilla del Estanque · GEU</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+:root{--verde:#1a3a2a;--verde2:#2d6a4f;--azul:#185FA5;--crema:#f4f1ea;--amarillo:#F2C200;--linea:#e4dfd5;
+ --planos:#C99700;--constr:#2d6a4f;--inmediata:#5b7e91;--fuera:#9a958c}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--crema);color:#1a1a1a;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+#wrap{display:flex;flex-direction:column;height:100vh}
+#hdr{background:var(--verde);color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.3);z-index:1200}
+#hdr h1{font-size:13px;font-weight:700}
+#hdr .sub{font-size:10px;opacity:.6;margin-top:2px}
+.hkpis{display:flex;align-items:center;gap:15px}
+.hkpi{text-align:center;font-size:9.5px;opacity:.82;line-height:1.1}
+.hkpi strong{display:block;font-size:14px;font-weight:800;opacity:1;margin-bottom:1px}
+.hdiv{width:1px;height:30px;background:rgba(255,255,255,.16)}
+#tabs{display:flex;background:#fff;border-bottom:2px solid var(--linea);flex-shrink:0;z-index:1100}
+.tab{padding:9px 20px;font-size:12px;font-weight:600;cursor:pointer;color:#9a948a;border-bottom:3px solid transparent;margin-bottom:-2px;user-select:none}
+.tab:hover{color:#555}
+.tab.on{color:var(--verde);border-bottom-color:var(--verde)}
+/* MAPA */
+#mapaview{display:flex;flex:1;overflow:hidden}
+#sb{width:300px;flex-shrink:0;display:flex;flex-direction:column;background:#fafaf8;border-right:1px solid var(--linea);overflow:hidden}
+.sbf{padding:8px 9px;display:flex;flex-wrap:wrap;gap:5px;border-bottom:1px solid #eee;flex-shrink:0;background:#fff}
+.chip{font-size:10px;padding:3px 9px;border-radius:999px;border:1px solid #ccc;cursor:pointer;background:#fff;color:#666;line-height:1.4}
+.chip.on{background:var(--verde);color:#fff;border-color:var(--verde)}
+.sbcount{font-size:9.5px;color:#aaa;padding:5px 11px 0}
+#plist{flex:1;overflow-y:auto}
+.pi{padding:8px 10px;border-bottom:1px solid #f0ede8;cursor:pointer;display:flex;gap:9px;align-items:stretch}
+.pi:hover{background:#eef3ef}
+.pi.geuitem{border-left:3px solid var(--azul)}
+.pthumb{width:54px;height:54px;flex-shrink:0;border-radius:7px;object-fit:cover;background:#e6e2da}
+.pthumb.ph{display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#fff}
+.pbody{flex:1;min-width:0}
+.pname{font-size:11.5px;font-weight:700;line-height:1.25;display:flex;align-items:center;gap:5px}
+.pdev{font-size:9.5px;color:#aaa;margin-top:1px}
+.pprice{font-size:11.5px;font-weight:700;margin-top:2px;color:var(--verde2)}
+.pmeta{font-size:9.5px;color:#bbb;margin-top:1px}
+.stbadge{font-size:8px;padding:1px 5px;border-radius:4px;font-weight:700;color:#fff;white-space:nowrap}
+.st-planos{background:var(--planos)}.st-constr{background:var(--constr)}.st-inmediata{background:var(--inmediata)}.st-entregado{background:#ece9e4;color:#777}
+#mapwrap{flex:1;display:flex;flex-direction:column;overflow:hidden;position:relative}
+#map{flex:1;min-height:0;background:#e9e6df}
+#listwrap{display:none;flex:1;min-height:0;overflow:auto;background:#fafaf8;padding:14px 16px 70px}
+#listwrap h2{font-size:14px;font-weight:800;margin-bottom:4px;color:var(--verde)}
+.listnote{font-size:10.5px;color:#999;margin-bottom:11px;line-height:1.45}
+.listtable{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--linea);font-size:11px}
+.listtable th{position:sticky;top:0;background:#f0ede8;color:#666;text-align:left;padding:8px 9px;font-size:9.5px;border-bottom:2px solid #ddd;z-index:3;white-space:nowrap}
+.listtable td{padding:8px 9px;border-bottom:1px solid #f0ede8;vertical-align:top;line-height:1.35}
+.listtable tr:hover td{background:#f7f5f1}
+.listtable .main{font-weight:800;font-size:11.5px}
+.listtable .muted{color:#999;font-size:10px}
+.qtag{font-size:8.5px;font-weight:800;border-radius:999px;padding:2px 6px;display:inline-block;margin-top:3px}
+.q-in{background:#e9f4ea;color:#2d6a4f}.q-out{background:#f7ead7;color:#9a6a00}.q-geu{background:#E4EFF9;color:var(--azul)}
+.smalltags{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.smalltag{font-size:8.5px;font-weight:700;border-radius:4px;padding:2px 5px;background:#f1eee8;color:#777;white-space:nowrap}
+.smalltag.ok{background:#EAF3DE;color:#3B6D11}.smalltag.warn{background:#FFF4DA;color:#8a5a12}.smalltag.bad{background:#FBECEC;color:#A32D2D}
+#mapctrl{position:absolute;top:10px;right:10px;z-index:800;display:flex;flex-direction:column;gap:6px;align-items:flex-end}
+.mbtn{background:#fff;border:1px solid #ccc;border-radius:7px;padding:6px 11px;font-size:11px;font-weight:600;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12);color:#444;display:flex;align-items:center;gap:6px}
+.mbtn:hover{background:#f5f2ec}
+.mbtn.on{background:var(--amarillo);border-color:#d9ad00;color:#5a4500}
+.mbtn .sw{width:11px;height:11px;border-radius:3px;background:var(--amarillo);border:1px solid #d9ad00}
+#drawhint{display:none;background:var(--verde);color:#fff;font-size:10.5px;padding:6px 10px;border-radius:7px;max-width:210px;line-height:1.4}
+#statusleg{position:absolute;bottom:8px;left:8px;z-index:800;background:rgba(255,255,255,.94);border:1px solid #ddd;border-radius:7px;padding:6px 9px;font-size:9.5px;display:flex;gap:11px;box-shadow:0 1px 5px rgba(0,0,0,.1)}
+.legitem{display:flex;align-items:center;gap:4px}
+.legdot{width:9px;height:9px;border-radius:50%}
+#dtl{height:0;flex-shrink:0;overflow:hidden;background:#fff;border-top:1px solid var(--linea);transition:height .18s}
+#dtl.open{height:236px;overflow-y:auto;padding:13px 16px}
+.dhead{display:flex;gap:14px;align-items:flex-start}
+.dimg{width:158px;height:104px;flex-shrink:0;border-radius:8px;object-fit:cover;background:#eee;border:1px solid var(--linea)}
+.dname{font-size:15px;font-weight:800;display:flex;align-items:center;flex-wrap:wrap;gap:6px;line-height:1.15}
+.dsub{font-size:11px;color:#999;margin-top:3px}
+.dcomment{font-size:11px;color:#555;margin-top:6px;line-height:1.45;font-style:italic;border-left:2px solid var(--linea);padding-left:8px}
+.dchips{display:flex;gap:14px;margin-top:8px;flex-wrap:wrap}
+.dchip{text-align:center}
+.dchip b{font-size:13px;font-weight:800;display:block}
+.dchip span{font-size:9.5px;color:#aaa}
+.badge{font-size:9px;padding:1.5px 7px;border-radius:999px;font-weight:700;display:inline-block;vertical-align:middle}
+.b-geu{background:#E4EFF9;color:var(--azul)}
+.b-out{background:#FBEAD2;color:#9a6a00}
+.tlist{margin-top:10px}
+.tlabel{font-size:9.5px;font-weight:700;color:#aaa;letter-spacing:.05em;margin-bottom:5px}
+.trow{display:flex;align-items:center;gap:10px;padding:3px 0;font-size:11.5px;border-bottom:1px dashed #f0ede8}
+.tdorm{font-weight:700;color:var(--verde);min-width:50px}
+.tm2{color:#888;min-width:52px}
+.tprice{font-weight:700;min-width:92px}
+.tpm2{font-weight:800;margin-left:auto;padding:1px 8px;border-radius:5px;font-size:11px;background:#eef2e8;color:#3B6D11}
+.dfoot{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:11px;border-top:1px solid #f0ede8;padding-top:9px;font-size:11px}
+.wa{color:#1a8a4a;font-weight:700}
+.btnficha{background:var(--verde);color:#fff;padding:6px 13px;border-radius:7px;font-size:11px;font-weight:700;cursor:pointer;border:none}
+.btnficha:hover{background:#143024}
+/* HOVER CARD */
+.hovercard{font-family:inherit!important;border:none!important;border-radius:10px!important;box-shadow:0 6px 22px rgba(0,0,0,.22)!important;padding:0!important;background:#fff!important;width:214px;overflow:hidden}
+.hc-img{width:100%;height:108px;object-fit:cover;display:block;background:#ddd}
+.hc-img.ph{display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:#fff}
+.hc-body{padding:8px 10px}
+.hc-top{display:flex;justify-content:space-between;align-items:center;gap:6px}
+.hc-name{font-size:12px;font-weight:800;line-height:1.15}
+.hc-dev{font-size:9.5px;color:#999;margin:1px 0 5px}
+.hc-price{font-size:12px;font-weight:800;color:var(--verde2)}
+.hc-trow{font-size:10px;color:#555;display:flex;justify-content:space-between;margin-top:2px}
+.hc-trow b{color:#222}
+.hc-cta{font-size:9px;color:var(--azul);margin-top:6px;font-weight:700}
+.leaflet-tooltip.hovercard:before{display:none!important}
+/* STATS + PRICE */
+#topfilters{display:none;flex-wrap:wrap;gap:6px;align-items:center;padding:10px 16px;background:#fff;border-bottom:1px solid #e6e2dc;position:sticky;top:0;z-index:5}
+#statview,#priceview,#analysisview{display:none;flex:1;overflow-y:auto;padding:22px 26px;background:#fafaf8}
+.brow{display:flex;align-items:center;gap:8px;margin:2.5px 0;max-width:980px}.bname{width:190px;font-size:11px;text-align:right;white-space:nowrap;overflow:hidden}
+.btrack{flex:1;background:#ece9e4;border-radius:3px;height:13px}.bfill{height:13px;border-radius:3px;background:#3a3a3a}
+.bval{width:74px;font-weight:700;font-size:11px}.bstt{width:130px;font-size:9.5px}
+.geub .bname{color:#A32D2D;font-weight:800}.geub .bfill{background:#FF4438}.geub .bval{color:#A32D2D}
+.bdd{color:#b8860b;font-size:9px;font-weight:800}
+.card{background:#fff;border-radius:12px;border:1px solid var(--linea);padding:18px 22px;margin-bottom:18px;max-width:1180px}
+.card.geucard{border:2px solid var(--azul)}
+.card h3{font-size:14px;font-weight:800;margin-bottom:2px;display:flex;align-items:center;gap:8px}
+.cdesc{font-size:11px;color:#aaa;margin-bottom:14px}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.k{background:var(--crema);border-radius:8px;padding:11px 13px}
+.kv{font-size:18px;font-weight:800;color:var(--verde);line-height:1}
+.kl{font-size:10px;color:#999;margin-top:5px}
+.geucard .kv{color:var(--azul)}
+.sec{font-size:11px;font-weight:800;color:var(--verde);letter-spacing:.06em;text-transform:uppercase;margin:20px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--linea);max-width:1180px}
+table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
+.t thead th{background:#f0ede8;padding:8px 10px;font-size:10px;font-weight:700;color:#777;border-bottom:2px solid #ddd;text-align:left;white-space:nowrap}
+.t tbody td{padding:7px 10px;border-bottom:1px solid #f0ede8;vertical-align:middle}
+.t tbody tr:hover td{background:#f5f2ec}
+.t .geurow td{background:#e4efe8;font-weight:700}
+.t tbody tr.clickrow{cursor:pointer}
+.nd{color:#ccc;font-style:italic}
+.rank{width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;background:#eee;color:#999}
+.rank.r1{background:#E3B928;color:#fff}.rank.r2{background:#AeB0B4;color:#fff}.rank.r3{background:#CD8434;color:#fff}
+.alert{background:#FFFBE6;border:1px solid #F2C200;border-radius:8px;padding:10px 14px;font-size:11px;color:#7a5f00;margin-top:12px;line-height:1.5;max-width:1180px}
+.foot{font-size:10px;color:#bbb;margin-top:12px;line-height:1.7;max-width:1180px}
+.tpm2.hi{background:#FBECEC;color:#A32D2D}.tpm2.mid{background:#FBF1E0;color:#8a5a12}.tpm2.lo{background:#EAF3DE;color:#3B6D11}
+.sep{border-left:2px solid var(--linea)}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="hdr">
+    <div><h1>Portal Competitivo · Chacarilla del Estanque</h1>
+      <div class="sub">Grupo Espacio Urbano · Ave. del Sur 220 · Junio 2026</div></div>
+    <div class="hkpis" id="hkpis"></div>
+  </div>
+  <div id="tabs">
+    <div class="tab on" data-tab="mapa" onclick="showTab('mapa')">🗺 Mapa competitivo</div>
+    <div class="tab" data-tab="stat" onclick="showTab('stat')">📊 Estadísticas</div>
+    <div class="tab" data-tab="price" onclick="showTab('price')">💰 Precio por m²</div>
+    <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📈 Análisis del cuadrante</div>
+  </div>
+  <div id="mapaview">
+    <div id="sb">
+      <div class="sbf" id="filtersEstado"></div>
+      <div class="sbf" id="filtersDorm" style="border-top:none;padding-top:0"></div>
+      <div class="sbcount" id="sbcount"></div>
+      <div id="plist"></div>
+    </div>
+    <div id="mapwrap">
+      <div id="map"></div>
+      <div id="topfilters"></div>
+      <div id="listwrap"></div>
+      <div id="mapctrl">
+        <button class="mbtn on" id="btnMapMode" onclick="setMainView('map')">Mapa</button>
+        <button class="mbtn" id="btnListMode" onclick="setMainView('list')">📋 Vista lista</button>
+        <button class="mbtn on" id="btnQuad" onclick="toggleQuad()"><span class="sw"></span>Mi cuadrante</button>
+      </div>
+      <div id="statusleg">
+        <div class="legitem"><span class="legdot" style="background:var(--azul)"></span>GEU</div>
+        <div class="legitem"><span class="legdot" style="background:var(--planos)"></span>En planos</div>
+        <div class="legitem"><span class="legdot" style="background:var(--constr)"></span>En construcción</div>
+        <div class="legitem"><span class="legdot" style="background:var(--inmediata)"></span>Entrega inmediata</div>
+        <div class="legitem"><span class="legdot" style="background:#fff;border:2px dashed #999"></span>Precio a consultar</div>
+      </div>
+      <div id="dtl"></div>
+    </div>
+  </div>
+  <div id="statview"></div>
+  <div id="priceview"></div>
+  <div id="analysisview"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="data/portal-data.js?v=20260701o"></script>
+<script>
+const D=window.PORTAL_DATA, P=D.projects;
+const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
+const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata','Entregado':'st-entregado'};
+const fmtUsd=n=>n?'US$'+n.toLocaleString('en-US'):null;
+const waFmt=w=>w?w.replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3'):'';
+const waHref=p=>{
+  if(!p.wa)return '';
+  const msg=`Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
+  return `https://wa.me/51${p.wa}?text=${encodeURIComponent(msg)}`;
+};
+const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
+const typText=(p)=>[p.estado_raw,p.comentario,...(p.typologies||[]).map(t=>`${t.unidad||''} ${t.tipo||''} ${t.piso||''}`)].join(' ').toLowerCase();
+function parkingStatus(p){
+  if(p.cochera_status)return p.cochera_status;
+  const txt=typText(p);
+  if(/sin\s+(cochera|estacionamiento)/.test(txt))return 'no';
+  if(/(c\/cochera|con cochera|incluye cochera|cochera incluida|con estacionamiento|incluye estacionamiento)/.test(txt))return 'si';
+  return 'nd';
+}
+function pricedTypologies(p){return (p.typologies||[]).filter(t=>t.m2&&t.precio_usd&&t.precio_m2);}
+function typicalRows(p){return (p.flats_summary||[]).filter(f=>f.m2&&f.precio_usd&&f.precio_m2);}
+function exactTypicalRows(p){return (p.flats_summary||[]).filter(f=>f.comparable_confirmado===true&&f.m2&&f.precio_usd&&f.precio_m2&&!f.est&&!f.motivo_no_comparable);}
+function comparableRows(p){return exactTypicalRows(p);}
+function stockInfo(p){
+  if(p.stock&&p.stock.label)return {known:true,label:p.stock.label,n:p.stock.n};
+  const txt=typText(p);
+  const m=txt.match(/(\d+)\s+(unidades|dptos|departamentos)\s+(disponibles|restantes)/i)||txt.match(/(disponibles|restantes).*?(\d+)\s+(unidades|dptos|departamentos)/i);
+  if(m){const n=Number(m[1]&&/\d/.test(m[1])?m[1]:m[2]);return {known:true,label:`${n} quedan`,n};}
+  if(/últim[ao] disponible|ultima unidad|última unidad/.test(txt))return {known:true,label:'Última unidad',n:1};
+  if(/sold out|vendido|agotado/.test(txt))return {known:true,label:'Vendido/agotar',n:0};
+  return {known:false,label:'s/d',n:null};
+}
+function dataLevel(p){
+  const hasTipico=typicalRows(p).length>0;              // precio + m² de tipología típica = COMPLETO
+  const hasPrecio=pricedTypologies(p).length>0||!!p.precio_desde_usd;
+  if(hasTipico)return 'completa';
+  if(hasPrecio)return 'general';
+  return 'incompleta';
+}
+function dataLabel(p){
+  const dl=dataLevel(p);
+  if(dl==='completa')return 'm² de típico ✓';
+  if(dl==='general')return 'Precio referencial (sin típico)';
+  return 'Sin precio público';
+}
+function colorOf(p){return p.isGEU?'#185FA5':(p.en_cuadrante?(STCOL[p.estado_grupo]||'#777'):'#9a958c');}
+function initials(n){return n.replace(/[^A-Za-zÁÉÍÓÚÑ ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
+function thumbHtml(p,cls){
+  const c=colorOf(p);
+  if(p.img)return `<img class="${cls}" src="${p.img}" alt="" onerror="this.outerHTML='<div class=\\'${cls} ph\\' style=\\'background:${c}\\'>${initials(p.name)}</div>'">`;
+  return `<div class="${cls} ph" style="background:${c}">${initials(p.name)}</div>`;
+}
+
+/* HEADER KPIs */
+(function(){
+  const inq=P.filter(p=>p.mostrar&&!p.isGEU);
+  const precios=inq.map(p=>p.precio_desde_usd).filter(Boolean);
+  const pm2=[];P.filter(p=>p.mostrar).forEach(p=>comparableRows(p).forEach(f=>pm2.push(f.precio_m2)));
+  document.getElementById('hkpis').innerHTML=`
+    <div class="hkpi"><strong>25</strong>competidores</div><div class="hdiv"></div>
+    <div class="hkpi"><strong>US$${Math.round(Math.min(...precios)/1000)}k–${Math.round(Math.max(...precios)/1000)}k</strong>rango desde</div><div class="hdiv"></div>
+    <div class="hkpi"><strong>$${Math.min(...pm2).toLocaleString()}–$${Math.max(...pm2).toLocaleString()}</strong>USD/m²</div><div class="hdiv"></div>
+    <div class="hkpi"><strong>Nov-2027</strong>entrega GEU</div>`;
+})();
+
+/* MAPA */
+const map=L.map('map',{zoomControl:true}).setView([-12.114,-76.983],15);
+const carto=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:20});
+const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:19});
+carto.addTo(map);let cd=false;carto.on('tileerror',()=>{if(!cd){cd=true;map.removeLayer(carto);osm.addTo(map);}});
+
+let quadLayer=L.polygon(D.quadrant,{color:'#C99700',weight:2.5,fillColor:'#F2C200',fillOpacity:0.15}).addTo(map);
+quadLayer.bindTooltip('Mi cuadrante · Chacarilla del Estanque',{sticky:true});
+map.fitBounds(quadLayer.getBounds(),{padding:[35,35]});
+function toggleQuad(){const b=document.getElementById('btnQuad');if(map.hasLayer(quadLayer)){map.removeLayer(quadLayer);b.classList.remove('on');}else{quadLayer.addTo(map);b.classList.add('on');}}
+
+function icon(p){
+  const c=colorOf(p),s=p.isGEU?27:(p.destacado?20:15),b=p.isGEU?3:(p.destacado?3:2);
+  const ring=p.isGEU?`box-shadow:0 0 0 2.5px #fff,0 0 0 5px ${c},0 2px 6px rgba(0,0,0,.4);`:'box-shadow:0 1px 4px rgba(0,0,0,.35);';
+  const dim=p.en_cuadrante||p.isGEU?1:.5;
+  const noPrice=!p.isGEU&&p.en_cuadrante&&!p.precio_desde_usd;
+  // sin precio = marcador hueco (anillo del color, relleno blanco) para distinguir
+  const bg=noPrice?'#fff':c, bd=noPrice?`2px dashed ${c}`:`${b}px solid #fff`;
+  return L.divIcon({className:'',html:`<div title="${noPrice?'Precio a consultar':''}" style="width:${s}px;height:${s}px;border-radius:50%;background:${bg};border:${bd};${ring}opacity:${dim};cursor:pointer"></div>`,iconSize:[s,s],iconAnchor:[s/2,s/2]});
+}
+const MK={};
+P.forEach(p=>{
+  if(!p.mostrar&&!p.isGEU)return;
+  if(p.lat==null)return;
+  const m=L.marker([p.lat,p.lng],{icon:icon(p),zIndexOffset:p.isGEU?1000:(p.en_cuadrante?100:0)}).addTo(map);
+  m.bindTooltip(hoverCard(p),{direction:'top',offset:[0,-10],opacity:1,className:'hovercard'});
+  m.on('click',()=>showDetail(p));
+  MK[p.id]={m,p};
+});
+function hoverCard(p){
+  const img=p.img?`<img class="hc-img" src="${p.img}" onerror="this.outerHTML='<div class=\\'hc-img ph\\' style=\\'background:${colorOf(p)}\\'>${initials(p.name)}</div>'">`
+    :`<div class="hc-img ph" style="background:${colorOf(p)}">${initials(p.name)}</div>`;
+  const st=p.isGEU?'':`<span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span>`;
+  const rows=comparableRows(p).slice(0,3).map(f=>`<div class="hc-trow"><span>${f.dorm} dorm · ${f.m2} m²</span><b>$${f.precio_m2.toLocaleString()}/m²</b></div>`).join('');
+  const price=fmtUsd(p.precio_desde_usd);
+  return `<div>${img}<div class="hc-body"><div class="hc-top"><div class="hc-name">${p.name}</div>${st}</div>
+    <div class="hc-dev">${p.dev}</div>
+    ${price?`<div class="hc-price">Desde ${price}</div>`:'<div class="hc-price" style="color:#aaa">Sin lista de precios</div>'}
+    ${rows||''}${p.isGEU?'':'<div class="hc-cta">Clic → ficha completa (planos, brochure, precios)</div>'}</div></div>`;
+}
+
+/* DETALLE (panel inferior) */
+function showDetail(p){
+  document.querySelectorAll('.pi').forEach(e=>e.classList.remove('sel'));
+  const img=p.img?`<img class="dimg" src="${p.img}" onerror="this.style.opacity=.25">`:`<div class="dimg" style="display:flex;align-items:center;justify-content:center;color:#fff;font-size:30px;font-weight:800;background:${colorOf(p)}">${initials(p.name)}</div>`;
+  const geuB=p.isGEU?'<span class="badge b-geu">Nuestro proyecto</span>':'';
+  const outB=!p.en_cuadrante&&!p.isGEU?'<span class="badge b-out">Fuera del cuadrante</span>':'';
+  const st=p.isGEU?'':`<span class="stbadge ${STCLASS[p.estado_grupo]}" style="font-size:9px;padding:2px 7px">${p.estado_grupo}</span>`;
+  let tlist;
+  if(comparableRows(p).length){
+    tlist=`<div class="tlist"><div class="tlabel">PRECIO POR M² · FLATS TÍPICOS (no 1er piso / dúplex / PH)</div>`+
+      comparableRows(p).map(f=>`<div class="trow"><span class="tdorm">${f.dorm} dorm</span><span class="tm2">${f.m2} m²</span>
+        <span class="tprice">${fmtUsd(f.precio_usd)}</span>
+        <span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></div>`).join('')+`</div>`;
+  } else {
+    tlist=`<div class="tlist"><div class="tlabel">TIPOLOGÍAS</div><div style="font-size:11px;color:#999">${p.dorms} dorm · ${p.m2} m²${p.precio_desde_usd?' · desde '+fmtUsd(p.precio_desde_usd):' · sin lista de precios pública'}</div></div>`;
+  }
+  const wa=p.wa?`<a class="wa" href="${waHref(p)}" target="_blank">📱 WhatsApp +51 ${waFmt(p.wa)}</a>`:'';
+  const ficha=p.isGEU?'':`<button class="btnficha" onclick="window.open('proyecto.html?id=${p.id}','_blank')">Ver ficha completa →</button>`;
+  const dtl=document.getElementById('dtl');
+  dtl.innerHTML=`<div class="dhead">${img}<div style="flex:1">
+      <div class="dname"><span style="width:11px;height:11px;border-radius:50%;background:${colorOf(p)};display:inline-block"></span>${p.name} ${geuB}${outB}${st}</div>
+      <div class="dsub">${p.dev} · 📍 ${p.addr}</div>
+      <div class="dcomment">${p.comentario||''}</div>
+      <div class="dchips">
+        <div class="dchip"><b>${p.m2}</b><span>m²</span></div>
+        <div class="dchip"><b>${p.dorms||'—'}</b><span>dorm.</span></div>
+        <div class="dchip"><b>${p.entrega||'—'}</b><span>entrega</span></div>
+        <div class="dchip"><b>${fmtUsd(p.precio_desde_usd)||'—'}</b><span>desde</span></div>
+      </div></div></div>
+    ${tlist}
+    <div class="dfoot">${wa}
+      <span style="margin-left:auto"></span>${ficha}</div>`;
+  dtl.classList.add('open');
+  map.panTo([p.lat,p.lng],{animate:true});
+}
+
+/* SIDEBAR + FILTROS */
+const ESTADOS=[['todos','Todos'],['En planos','En planos'],['En construcción','En construcción'],['Entrega inmediata','Entrega inmediata'],['sinprecio','Sin precio']];
+const DORMS=[[0,'Todas'],[1,'1 dorm'],[2,'2 dorm'],[3,'3 dorm']];
+const COCHERA=[['todos','Cochera: todos'],['si','Incluye'],['no','No incluye'],['nd','Sin dato']];
+const DATAF=[['todos','Info: todos'],['completa','Completa'],['tipologias','Precio por tipología'],['general','Solo general'],['stock','Stock conocido'],['incompleta','Incompleta']];
+let curEstado='todos', curDorm=0, curCochera='todos', curData='todos', mainView='map';
+function fmatch(p){
+  if(!p.mostrar&&!p.isGEU)return false;
+  if(!p.en_cuadrante)return false;           // todos los del cuadrante (incl. sin precio = "consultar")
+  if(curEstado==='sinprecio')return !p.precio_desde_usd;
+  if(p.isGEU&&!(curEstado==='todos'||curEstado==='En construcción'))return false;
+  if(!p.isGEU&&curEstado!=='todos'&&p.estado_grupo!==curEstado)return false;
+  if(curDorm!==0&&!(p.dorms_disponibles||[]).includes(curDorm))return false;
+  if(curCochera!=='todos'&&parkingStatus(p)!==curCochera)return false;
+  if(curData==='stock'&&!stockInfo(p).known)return false;
+  if(curData!=='todos'&&curData!=='stock'&&dataLevel(p)!==curData)return false;
+  return true;
+}
+document.getElementById('filtersEstado').innerHTML='<span style="font-size:9px;color:#bbb;align-self:center;margin-right:2px">Estado:</span>'+ESTADOS.map(e=>`<button class="chip${e[0]===curEstado?' on':''}" data-estado="${e[0]}" onclick="setEstado('${e[0]}',this)">${e[1]}</button>`).join('');
+document.getElementById('filtersDorm').innerHTML=
+  '<span style="font-size:9px;color:#bbb;align-self:center;margin-right:2px">Tipología:</span>'+DORMS.map(d=>`<button class="chip${d[0]===curDorm?' on':''}" data-dorm="${d[0]}" onclick="setDorm(${d[0]},this)">${d[1]}</button>`).join('')+
+  '<span style="width:100%;height:0"></span>'+
+  '<span style="font-size:9px;color:#bbb;align-self:center;margin-right:2px">Cochera:</span>'+COCHERA.map(c=>`<button class="chip${c[0]===curCochera?' on':''}" onclick="setCochera('${c[0]}',this)">${c[1]}</button>`).join('')+
+  '<span style="width:100%;height:0"></span>'+
+  '<span style="font-size:9px;color:#bbb;align-self:center;margin-right:2px">Datos:</span>'+DATAF.map(c=>`<button class="chip${c[0]===curData?' on':''}" onclick="setDataFilter('${c[0]}',this)">${c[1]}</button>`).join('');
+function setEstado(e,btn){curEstado=e;document.querySelectorAll('#filtersEstado .chip').forEach(c=>c.classList.remove('on'));btn.classList.add('on');refresh();}
+function setDorm(d,btn){curDorm=d;document.querySelectorAll('#filtersDorm [data-dorm]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');refresh();}
+function setCochera(v,btn){curCochera=v;btn.parentNode.querySelectorAll('button[onclick^="setCochera"]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');refresh();}
+function setDataFilter(v,btn){curData=v;btn.parentNode.querySelectorAll('button[onclick^="setDataFilter"]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');refresh();}
+function setMainView(v){
+  mainView=v;
+  const sb=document.getElementById('sb'), tf=document.getElementById('topfilters'),
+        fE=document.getElementById('filtersEstado'), fD=document.getElementById('filtersDorm');
+  if(v==='list'){
+    sb.style.display='none';
+    tf.style.display='flex'; tf.appendChild(fE); tf.appendChild(fD);
+  } else {
+    sb.style.display='';
+    tf.style.display='none';
+    sb.insertBefore(fD,sb.firstChild); sb.insertBefore(fE,sb.firstChild);
+  }
+  document.getElementById('map').style.display=v==='map'?'block':'none';
+  document.getElementById('listwrap').style.display=v==='list'?'block':'none';
+  document.getElementById('statusleg').style.display=v==='map'?'flex':'none';
+  document.getElementById('btnQuad').style.display=v==='map'?'flex':'none';
+  document.getElementById('dtl').style.display=v==='map'?'block':'none';
+  document.getElementById('btnMapMode').classList.toggle('on',v==='map');
+  document.getElementById('btnListMode').classList.toggle('on',v==='list');
+  if(v==='map')setTimeout(()=>map.invalidateSize(),20);
+  buildFullList();
+}
+function priceForDorm(p){ // si hay filtro de dorm, mostrar el precio de esa tipología
+  const rows=comparableRows(p);
+  if(curDorm!==0){const f=rows.find(x=>x.dorm===curDorm);if(f)return {precio:f.precio_usd,m2:f.m2,pm2:f.precio_m2,dorm:f.dorm,comparable:true};}
+  const pm=rows[0];
+  return {precio:p.precio_desde_usd,m2:null,pm2:pm?pm.precio_m2:null,dorm:null,comparable:!!pm};
+}
+function buildList(){
+  let list=P.filter(fmatch);
+  list.sort((a,b)=>(a.isGEU?0:a.destacado?1:2)-(b.isGEU?0:b.destacado?1:2)||(a.precio_desde_usd||9e9)-(b.precio_desde_usd||9e9));
+  // si hay filtro de dorm, ordenar por $/m² de esa tipología
+  if(curDorm!==0)list.sort((a,b)=>{const fa=comparableRows(a).find(x=>x.dorm===curDorm),fb=comparableRows(b).find(x=>x.dorm===curDorm);return (fa?fa.precio_m2:9e9)-(fb?fb.precio_m2:9e9);});
+  document.getElementById('sbcount').textContent=`${list.length} proyectos${curDorm?' · '+curDorm+' dorm · orden por $/m²':' · orden por precio'}`;
+  document.getElementById('plist').innerHTML=list.map(p=>{
+    const pr=priceForDorm(p);
+    const st=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span>`;
+    const priceline=curDorm&&pr.m2
+      ? `${pr.dorm}d · ${pr.m2} m² · ${fmtUsd(pr.precio)} · $${pr.pm2.toLocaleString()}/m²`
+      : `${fmtUsd(p.precio_desde_usd)||'<span style=color:#b8860b>Precio a consultar</span>'}${pr.pm2?` · $${pr.pm2.toLocaleString()}/m²`:''}${!pr.pm2&&p.flats_summary.length?` · <span style=color:#b8860b>$m² no comparable</span>`:''}`;
+    return `<div class="pi${p.isGEU?' geuitem':''}" onclick="clickItem('${p.id}')">
+      ${thumbHtml(p,'pthumb')}
+      <div class="pbody"><div class="pname">${p.name}</div>
+        <div class="pdev">${p.dev}</div>
+        <div class="pprice">${priceline}</div>
+        <div class="pmeta">${p.dorms||'—'} dorm · ${p.m2} m²</div>
+        <div style="margin-top:3px">${st}</div></div></div>`;
+  }).join('');
+}
+function buildFullList(){
+  const list=P.filter(fmatch).sort((a,b)=>{
+    const pa=priceForDorm(a).pm2||999999,pb=priceForDorm(b).pm2||999999;
+    return (a.isGEU?0:a.destacado?1:2)-(b.isGEU?0:b.destacado?1:2)||pa-pb||(a.precio_desde_usd||9999999)-(b.precio_desde_usd||9999999);
+  });
+  const rows=list.map(p=>{
+    const pr=priceForDorm(p), stock=stockInfo(p), park=parkingStatus(p);
+    const qs=p.isGEU?'<span class="qtag q-geu">GEU</span>':(p.en_cuadrante?'<span class="qtag q-in">En cuadrante</span>':'<span class="qtag q-out">Fuera</span>');
+    const exact=comparableRows(p);
+    const detail=(exact.length?exact.map(f=>`${f.dorm}d · ${f.m2} m² · ${fmtUsd(f.precio_usd)} · $${f.precio_m2.toLocaleString()}/m²`).join('<br>'):'')||
+      '<span class="nd">Sin lista de precios pública</span>';
+    const parkLabel=park==='si'?'Incluye cochera':park==='no'?'No incluye cochera':'Cochera s/d';
+    const stockClass=stock.known?'ok':'warn';
+    const status=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span>`;
+    return `<tr onclick="window.open('proyecto.html?id=${p.id}','_blank')" style="cursor:pointer">
+      <td><div class="main">${p.name}</div><div class="muted">${p.dev}</div>${qs}</td>
+      <td>${p.addr||'<span class="nd">—</span>'}</td>
+      <td>${status}<div class="muted" style="margin-top:4px">${p.entrega||'Entrega s/d'}</div></td>
+      <td><b>${p.dorms||'—'}</b><div class="muted">${p.m2} m²</div></td>
+      <td><b>${fmtUsd(p.precio_desde_usd)||'<span class=nd>consultar</span>'}</b>${p.precio_hasta_usd?`<div class="muted">hasta ${fmtUsd(p.precio_hasta_usd)}</div>`:''}</td>
+      <td>${pr.pm2?`<span class="tpm2 ${pm2cls(pr.pm2)}">$${pr.pm2.toLocaleString()}/m²</span>`:'<span class="nd">—</span>'}<div class="muted">${curDorm&&pr.m2?`${curDorm}d · ${pr.m2} m²`:'flat típico'}</div></td>
+      <td>${detail}</td>
+      <td><div class="smalltags"><span class="smalltag ${park==='si'?'ok':park==='no'?'bad':'warn'}">${parkLabel}</span><span class="smalltag ${stockClass}">${stock.label}</span></div></td>
+    </tr>`;
+  }).join('');
+  document.getElementById('listwrap').innerHTML=`<h2>Vista lista · comparación de proyectos</h2>
+    <div class="listnote">${list.length} proyectos dentro del cuadrante según los filtros. Ordenados por precio por m² del flat típico.</div>
+    <table class="listtable"><thead><tr><th>Proyecto</th><th>Dirección</th><th>Estado</th><th>Dorm/m²</th><th>Precio desde</th><th>USD/m² típico</th><th>Departamentos típicos</th><th>Cochera / stock</th></tr></thead><tbody>${rows}</tbody></table>`;
+}
+function clickItem(id){const p=P.find(x=>x.id===id);if(p&&p.lat!=null)showDetail(p);}
+function refresh(){
+  P.forEach(p=>{const mk=MK[p.id];if(!mk)return;fmatch(p)?(!map.hasLayer(mk.m)&&map.addLayer(mk.m)):(map.hasLayer(mk.m)&&map.removeLayer(mk.m));});
+  buildList();
+  buildFullList();
+}
+
+/* ESTADÍSTICAS */
+function buildStats(){
+  const geu=P.find(p=>p.isGEU);
+  const inq=P.filter(p=>p.mostrar&&!p.isGEU);   // solo los del cuadrante CON precio
+  const wp=inq.filter(p=>p.precio_desde_usd);
+  const precios=wp.map(p=>p.precio_desde_usd).sort((a,b)=>a-b);
+  const avg=Math.round(precios.reduce((a,b)=>a+b,0)/precios.length);
+  const pm2v=[];inq.forEach(p=>comparableRows(p).forEach(f=>pm2v.push(f.precio_m2)));
+  const pm2avg=Math.round(pm2v.reduce((a,b)=>a+b,0)/pm2v.length);
+  const geuBest=Math.min(...geu.flats_summary.map(f=>f.precio_m2));
+  // GEU tabla de precios real
+  const grows=geu.typologies.map(u=>`<tr class="geurow">
+     <td>Flat ${u.dorm} dorm</td><td>${u.m2} m²</td><td>${fmtUsd(u.precio_usd)} *</td>
+     <td><span class="tpm2 ${pm2cls(u.precio_m2)}">$${u.precio_m2.toLocaleString()}/m²</span></td></tr>`).join('');
+  // ranking $/m²
+  const rk=inq.filter(p=>comparableRows(p).length).map(p=>({name:p.name,dev:p.dev,v:Math.min(...comparableRows(p).map(f=>f.precio_m2)),id:p.id,geu:false}));
+  rk.push({name:geu.name,dev:'GEU',v:geuBest,geu:true});rk.sort((a,b)=>a.v-b.v);
+  const rkRows=rk.map((x,i)=>`<tr class="${x.geu?'geurow':'clickrow'}" ${x.geu?'':`onclick="window.open('proyecto.html?id=${x.id}','_blank')"`}>
+     <td><span class="rank ${i<3?'r'+(i+1):''}">${i+1}</span></td><td>${x.name}${x.geu?' ★':''}</td>
+     <td style="font-size:10px;color:#999">${x.dev}</td><td><span class="tpm2 ${pm2cls(x.v)}">$${x.v.toLocaleString()}/m²</span></td></tr>`).join('');
+  // comparativo cuadrante
+  const comp=[...inq].sort((a,b)=>(a.precio_desde_usd||9e9)-(b.precio_desde_usd||9e9));
+  let ci=0;
+  const crows=comp.map(p=>{ci++;
+    const fl=comparableRows(p).map(f=>`${f.dorm}d · ${f.m2}m² · <b>$${f.precio_m2.toLocaleString()}/m²</b>`).join('<br>')||'<span class="nd">Sin lista de precios pública</span>';
+    const wa=p.wa?`<a class="wa" href="${waHref(p)}" target="_blank">WhatsApp ${waFmt(p.wa)}</a>`:'<span class="nd">—</span>';
+    return `<tr class="clickrow" onclick="window.open('proyecto.html?id=${p.id}','_blank')">
+      <td><span class="rank ${ci<=3?'r'+ci:''}">${ci}</span></td>
+      <td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${colorOf(p)}"></span> ${p.name}</td>
+      <td style="font-size:10px;color:#999">${p.dev}</td><td>${p.m2} m²</td><td>${p.dorms||'—'}</td>
+      <td><b>${fmtUsd(p.precio_desde_usd)||'<span class=nd>consultar</span>'}</b></td>
+      <td style="font-size:10.5px;line-height:1.5">${fl}</td>
+      <td><span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span></td><td>${wa}</td></tr>`;}).join('');
+  document.getElementById('statview').innerHTML=`
+   <div class="card geucard">
+     <h3><span style="width:12px;height:12px;border-radius:50%;background:#185FA5;display:inline-block"></span>${geu.name} — Nuestro Proyecto <span class="badge b-geu">GEU</span></h3>
+     <div class="cdesc">${geu.addr} · Entrega ${geu.entrega} · ${geu.estado_grupo}</div>
+     <div class="kgrid">
+       <div class="k"><div class="kv">${geu.entrega}</div><div class="kl">Entrega</div></div>
+       <div class="k"><div class="kv">${geu.typologies.length}</div><div class="kl">Tipologías en venta</div></div>
+       <div class="k"><div class="kv">${geu.dorms} dorm</div><div class="kl">Dormitorios</div></div>
+       <div class="k"><div class="kv">${geu.m2} m²</div><div class="kl">Rango de áreas</div></div>
+       <div class="k"><div class="kv">${fmtUsd(geu.precio_desde_usd)}</div><div class="kl">Precio desde</div></div>
+       <div class="k"><div class="kv">$${geuBest.toLocaleString()}/m²</div><div class="kl">USD/m² flat 2 dorm</div></div>
+     </div>
+     <div class="sec" style="margin-top:16px;border:none;padding:0">Precio por m² · depas típicos (por tipología)</div>
+     <div style="font-size:12px;color:#666;margin-bottom:4px;font-weight:600">📍 Dirección exacta: ${geu.addr}</div>
+     <div style="font-size:10.5px;color:#aaa;margin-bottom:10px">Solo flats típicos de pisos 2–6. No se consideran 1er piso, Colección Terra (área libre) ni dúplex.</div>
+     <table class="t"><thead><tr><th>Tipología</th><th>Área total</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${grows}</tbody></table>
+     
+   </div>
+   <div class="sec">Resumen del cuadrante (25 competidores)</div>
+   <div class="kgrid" style="max-width:1180px">
+     <div class="k"><div class="kv">${inq.length}</div><div class="kl">Con precio publicado</div></div>
+     <div class="k"><div class="kv" style="color:#3B6D11">US$${Math.round(precios[0]/1000)}k</div><div class="kl">Precio desde más bajo</div></div>
+     <div class="k"><div class="kv" style="color:#A32D2D">US$${Math.round(precios[precios.length-1]/1000)}k</div><div class="kl">Precio desde más alto</div></div>
+     <div class="k"><div class="kv" style="color:#8a5a12">US$${Math.round(avg/1000)}k</div><div class="kl">Precio desde promedio</div></div>
+     <div class="k"><div class="kv" style="color:#8a5a12">$${pm2avg.toLocaleString()}/m²</div><div class="kl">USD/m² promedio flats</div></div>
+     <div class="k"><div class="kv" style="color:#185FA5">$${geuBest.toLocaleString()}/m²</div><div class="kl">GEU flat 2 dorm</div></div>
+   </div>
+   <div class="sec">Ranking USD/m² · flats típicos (menor = más competitivo)</div>
+   <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>USD/m² (mejor flat)</th></tr></thead><tbody>${rkRows}</tbody></table>
+   <div class="sec">Comparativo del cuadrante · metraje y $/m² por tipología · clic en una fila abre su ficha</div>
+   <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
+   <div class="foot">Solo proyectos dentro del cuadrante Av. Primavera — Av. de la Floresta — Av. de los Precursores. TC ${D.meta.tc} S/USD. $/m² sobre flats típicos (sin 1er ni último piso, sin dúplex/PH). Fuentes: webs oficiales, BCP/Nexo, brochures PDF; verificado con doble revisión.</div>`;
+}
+
+/* PRECIO/M² */
+function buildPrice(){
+  const inq=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&comparableRows(p).length).sort((a,b)=>(a.isGEU?0:1)-(b.isGEU?0:1)||comparableRows(a)[0].precio_m2-comparableRows(b)[0].precio_m2);
+  const rows=inq.map(p=>{
+    const cols=[2,3].map(d=>{const f=comparableRows(p).find(x=>x.dorm===d);
+      if(!f)return`<td class="sep nd">—</td><td class="nd">—</td><td class="nd">—</td>`;
+      return`<td class="sep">${f.m2} m²</td><td>${fmtUsd(f.precio_usd)}</td><td><span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></td>`;}).join('');
+    const out=!p.en_cuadrante&&!p.isGEU?'<span class="badge b-out">Fuera</span>':'';
+    return`<tr class="${p.isGEU?'geurow':'clickrow'}" ${p.isGEU?'':`onclick="window.open('proyecto.html?id=${p.id}','_blank')"`}><td>${p.name} ${p.isGEU?'★':''}${out}</td>${cols}</tr>`;}).join('');
+  document.getElementById('priceview').innerHTML=`
+   <h2 style="font-size:15px;font-weight:800;margin-bottom:5px">Precio por m² · Flats típicos (pisos 2–7)</h2>
+   <div style="font-size:11px;color:#aaa;margin-bottom:16px;line-height:1.6">Una fila por proyecto; columnas por nº de dormitorios. Excluye 1er piso, dúplex y PH. TC ${D.meta.tc} S/USD. Clic en fila → ficha.<br>
+     <span style="color:#A32D2D;font-weight:600">Rojo &gt;$2,200/m²</span> · <span style="color:#8a5a12;font-weight:600">Ámbar $1,800–2,200</span> · <span style="color:#3B6D11;font-weight:600">Verde &lt;$1,800</span></div>
+   <table class="t"><thead>
+     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th></tr>
+     <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>
+   <div class="foot">Solo proyectos del cuadrante con precios por tipología confirmados por el desarrollador o su asesor comercial. Los proyectos que no publican lista de precios no aparecen en esta tabla.</div>`;
+}
+
+
+/* ANÁLISIS DEL CUADRANTE */
+const BORDE_SET=new Set(['Estelar 1080','Floresta Living 444','Precursores 525','Precursores II','Spazio']);
+const EXCL_PROJ=new Set([]);
+function exclUnit(name,t){return name==='Monte Umbroso'&&t.m2>=150&&t.m2<=165;}
+function pisoOk(ps){ps=String(ps||'').toLowerCase().trim();if(/semis|ss|azotea|s[oó]tano|últ|ult/.test(ps))return false;if(ps==='1'||ps==='1er'||ps.startsWith('1 '))return false;return true;}
+function median(v){const a=[...v].sort((x,y)=>x-y);const m=Math.floor(a.length/2);return a.length%2?a[m]:Math.floor((a[m-1]+a[m])/2);}
+function buildAnalysis(){
+  const comp=P.filter(p=>!p.isGEU&&p.mostrar);
+  const flats={1:[],2:[],3:[]},dupx=[],projMin={};
+  comp.forEach(p=>{if(EXCL_PROJ.has(p.name))return;(p.typologies||[]).forEach(t=>{
+    if(!t.precio_m2||exclUnit(p.name,t))return;
+    if(t.tipo==='flat'&&[1,2,3].includes(t.dorm)&&pisoOk(t.piso)){flats[t.dorm].push(t.precio_m2);projMin[p.name]=Math.min(projMin[p.name]||9e9,t.precio_m2);}
+    else if(t.tipo==='duplex'||t.tipo==='triplex')dupx.push(t.precio_m2);
+  });});
+  const all=[...flats[1],...flats[2],...flats[3]];
+  const GEU_F=2475,GEU_D=2153;
+  const gapAll=+(((GEU_F-median(all))/median(all)*100).toFixed(1));
+  const nComparable=comp.filter(p=>dataLevel(p)==='completa').length+1;
+  const trow=(lbl,v,geu)=>{if(!v.length)return'';const md=median(v),gap=+(((geu-md)/md*100).toFixed(1));
+    const gc=Math.abs(gap)<=8?'#3B6D11':(gap>0?'#8a5a12':'#185FA5');
+    return `<tr><td><b>${lbl}</b></td><td>$${Math.min(...v).toLocaleString()}</td><td><b>$${md.toLocaleString()}</b></td><td>$${Math.max(...v).toLocaleString()}</td><td style="color:#A32D2D;font-weight:800">$${geu.toLocaleString()}</td><td style="color:${gc};font-weight:700">${gap>0?'+':''}${gap}%</td></tr>`;};
+  const items=Object.entries(projMin).sort((a,b)=>a[1]-b[1]);
+  const MAXB=Math.max(3100,...items.map(x=>x[1]));
+  let barRows='',inserted=false;
+  const barOf=(name,v,geu)=>{const p=comp.find(x=>x.name===name);const st=p?`<span class="stbadge ${STCLASS[p.estado_grupo]||''}">${p?p.estado_grupo:''}</span>`:'';
+    return `<div class="brow ${geu?'geub':''}"><div class="bname">${name}${!geu&&BORDE_SET.has(name)?' <span class=bdd>borde</span>':''}</div><div class="btrack"><div class="bfill" style="width:${(v/MAXB*100).toFixed(1)}%"></div></div><div class="bval">$${v.toLocaleString()}/m²</div><div class="bstt">${geu?'<b style=color:#A32D2D>NUESTRO PROYECTO</b>':st}</div></div>`;};
+  items.forEach(([n,v])=>{if(!inserted&&v>=GEU_F){barRows+=barOf('AVE. DEL SUR 220 (GEU)',GEU_F,true);inserted=true;}barRows+=barOf(n,v,false);});
+  if(!inserted)barRows+=barOf('AVE. DEL SUR 220 (GEU)',GEU_F,true);
+  const estCnt={};comp.forEach(p=>{const e=p.estado_grupo||'s/d';estCnt[e]=(estCnt[e]||0)+1;});
+  const maxE=Math.max(...Object.values(estCnt));
+  const estRows=Object.entries(estCnt).sort((a,b)=>b[1]-a[1]).map(([e,n])=>`<div class="brow"><div class="bname">${e}</div><div class="btrack"><div class="bfill" style="width:${(n/maxE*100).toFixed(0)}%"></div></div><div class="bval">${n}</div><div class="bstt"></div></div>`).join('');
+  document.getElementById('analysisview').innerHTML=`
+   <h2 style="font-size:15px;font-weight:800;margin-bottom:4px">Análisis del cuadrante — Chacarilla del Estanque (julio 2026)</h2>
+   <div style="font-size:11px;color:#999;margin-bottom:14px">Dirección de cada proyecto verificada una a una · Precios y disponibilidad confirmados con los asesores comerciales (jun–jul 2026) · TC ${D.meta.tc} · m² sobre flats típicos de pisos intermedios.</div>
+   <div class="kgrid" style="max-width:1180px;margin-bottom:18px">
+     <div class="k"><div class="kv">25</div><div class="kl">Proyectos que compiten hoy</div></div>
+     <div class="k"><div class="kv">${nComparable}</div><div class="kl">Con precio por m² comparable</div></div>
+     <div class="k"><div class="kv">6</div><div class="kl">En últimas unidades</div></div>
+     <div class="k"><div class="kv" style="color:#A32D2D">$${GEU_F.toLocaleString()}/m²</div><div class="kl">GEU flats (techado)</div></div>
+     <div class="k"><div class="kv" style="color:#185FA5">${gapAll>0?'+':''}${gapAll}%</div><div class="kl">GEU vs mediana de la zona</div></div>
+   </div>
+   <div class="sec">Precio por m² — flats típicos del cuadrante (comparación principal)</div>
+   <table class="t" style="max-width:980px"><thead><tr><th>Tipología</th><th>Mínimo</th><th>Mediana</th><th>Máximo</th><th>GEU</th><th>GEU vs mediana</th></tr></thead><tbody>
+     ${trow('Flat 1 dormitorio',flats[1],GEU_F)}${trow('Flat 2 dormitorios',flats[2],GEU_F)}${trow('Flat 3 dormitorios',flats[3],GEU_F)}
+     ${trow('GENERAL FLATS (m² techado)',all,GEU_F)}${trow('Dúplex / PH (m² área total)',dupx,GEU_D)}
+   </tbody></table>
+   <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). GEU ($2,475/m²) queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — al centro del mercado. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — 6 proyectos en últimas unidades y solo GEU y Conde II en fase de planos.</div>
+   <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
+   ${barRows}
+   <div style="font-size:10px;color:#aaa;margin:6px 0 14px">⬛ borde = proyecto ubicado sobre una avenida-límite del cuadrante. Los proyectos que no aparecen en el gráfico no publican precios por unidad.</div>
+   <div class="sec">Ajuste por cochera — precios netos confirmados con cada asesor</div>
+   <table class="t" style="max-width:1080px"><thead><tr><th>Proyecto</th><th>Unidades típicas</th><th>Desde (lista)</th><th>Cochera / depósito</th><th>US$/m² neto</th><th>Disponibilidad</th></tr></thead><tbody>
+   <tr class="geurow"><td><b>AVE. DEL SUR 220 (GEU)</b></td><td>Flats 1–3d (67.8–165 m²)</td><td>US$167,805</td><td>Aparte ($15–16k / $27k)</td><td><b style="color:#A32D2D">$2,475</b></td><td>Lanzamiento · 39 und.</td></tr>
+   <tr><td><b>Santorini</b></td><td>7 flats 2-3d, pisos 2-5</td><td>US$286,450 c/1 estac</td><td>1-2 estac. incl. → −$15k</td><td><b>$2,180–2,335</b></td><td>9 disp. (>50% vendido) · mar-27</td></tr>
+   <tr><td><b>Aura Sul</b></td><td>6 flats 3d</td><td>US$229,552</td><td>Aparte ($15k/$25k)</td><td><b>$2,286–2,287</b></td><td>En construcción</td></tr>
+   <tr><td><b>Monte Mayor 177</b></td><td>Flat 203, 87 m², 2d</td><td>S/820,000</td><td>2 paralelos + depósito incl. → −$30k</td><td><b>$2,429</b></td><td>ÚLTIMA unidad</td></tr>
+   <tr><td><b>Precursores II</b></td><td>Flats 201/503, 149 m², 3d</td><td>US$385,000</td><td>2 paralelas + depósito incl. → −$30k</td><td><b>$2,435–2,463</b></td><td>3 und. (16/19 vendidas) · jul-26</td></tr>
+   <tr><td><b>Monte Mayor 183</b></td><td>Flats 202/302, 115.6 m²</td><td>US$319,000</td><td>2 simples incl. → −$30k</td><td><b>$2,501–2,510</b></td><td>Últimas 4 und.</td></tr>
+   <tr><td><b>Conde de la Vega 460</b></td><td>9 flats típicos, pisos 2-5</td><td>US$253,000</td><td>1-2 incl. → −15/28/30k</td><td><b>$2,498–2,886</b></td><td>12 und. c/precio</td></tr>
+   <tr style="color:#777"><td><b>HANA</b> †</td><td>Tipo 102, 96.31 m² — piso 1 elevado</td><td>S/900,000</td><td>Incluida → −$15k</td><td><b>$2,593</b> †</td><td>ÚLTIMA unidad</td></tr>
+   <tr style="color:#777"><td><b>D'Mont</b> †</td><td>D-101, 115.71 m² — piso 1 elevado</td><td>US$237,206</td><td>Aparte: $14k</td><td><b>$2,050</b> †</td><td>ÚLTIMA unidad · sep-26</td></tr>
+   <tr style="color:#777"><td><b>Monte Mar 167</b> †</td><td>121 m² — piso por confirmar</td><td>S/980,000</td><td>2 paralelos incl. → −$30k</td><td><b>$2,134</b> †</td><td>Últimas 3</td></tr>
+   </tbody></table>
+   <div style="font-size:10px;color:#999;max-width:1080px;margin:2px 0 8px">† Unidades finales con cálculo completo (piso 1 / piso por confirmar): referencia de cierre, no integran la banda de flats típicos.</div>
+   <div class="alert" style="max-width:1080px">🎯 <b>Rango confirmado del cuadrante: $2,180–2,886/m² neto · GEU ($2,475) queda al centro (+1.6% sobre la mediana de estos proyectos).</b> Situación de cochera verificada con cada asesor comercial (jun–jul 2026). El cuadrante se está quedando sin stock: 6 proyectos en últimas unidades y solo GEU y Conde II en fase de planos.</div>
+   <div class="sec">Estado de la oferta (${comp.length} proyectos)</div>
+   ${estRows}
+   <div class="alert" style="max-width:980px">La competencia activa real de la preventa GEU son los <b>en construcción</b> y <b>en planos</b>; los de entrega inmediata compiten por urgencia de mudanza y los entregados solo aportan referencia de cierre.</div>
+   <div class="foot">Dirección de cada proyecto verificada una a una dentro del cuadrante (jun–jul 2026) · Los nombres comerciales que corresponden a un mismo edificio se muestran como una sola ficha · Tipo de cambio: S/ 3.40 por US$.</div>`;
+}
+
+function showTab(t){
+  document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('on',e.dataset.tab===t));
+  document.getElementById('mapaview').style.display=t==='mapa'?'flex':'none';
+  document.getElementById('statview').style.display=t==='stat'?'block':'none';
+  document.getElementById('priceview').style.display=t==='price'?'block':'none';
+  document.getElementById('analysisview').style.display=t==='analysis'?'block':'none';
+  if(t==='mapa')setTimeout(()=>map.invalidateSize(),20);
+  if(t==='stat')buildStats();
+  if(t==='price')buildPrice();
+  if(t==='analysis')buildAnalysis();
+}
+
+/* INIT: solo proyectos con precio en el cuadrante */
+refresh();
+showDetail(P.find(p=>p.isGEU));
+</script>
+</body>
+</html>

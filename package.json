@@ -1,0 +1,12 @@
+{
+  "name": "portal-competencia-avesur220",
+  "version": "1.0.0",
+  "description": "Portal Competitivo Chacarilla del Estanque — Ave. del Sur 220 (Grupo Espacio Urbano)",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

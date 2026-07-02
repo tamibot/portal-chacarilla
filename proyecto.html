@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ficha de proyecto · Portal Competitivo GEU</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>
+:root{--verde:#1a3a2a;--verde2:#2d6a4f;--azul:#185FA5;--crema:#f4f1ea;--linea:#e4dfd5;
+ --planos:#C99700;--constr:#2d6a4f;--inmediata:#5b7e91}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;background:var(--crema);color:#1a1a1a;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+#top{background:var(--verde);color:#fff;padding:11px 22px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,.3)}
+#top a.back{font-size:12px;opacity:.85;font-weight:600;text-decoration:none}
+#top a.back:hover{opacity:1}
+#top .brand{font-size:11px;opacity:.6}
+.wrap{max-width:1080px;margin:0 auto;padding:24px 22px 60px}
+.hero{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap}
+.heroimg{width:340px;height:220px;border-radius:12px;object-fit:cover;background:#e6e2da;border:1px solid var(--linea);flex-shrink:0}
+.heroimg.ph{display:flex;align-items:center;justify-content:center;font-size:54px;font-weight:800;color:#fff}
+.hinfo{flex:1;min-width:280px}
+h1{font-size:26px;font-weight:800;line-height:1.1;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.dev{font-size:14px;color:#777;margin-top:5px}
+.addr{font-size:13px;color:#999;margin-top:8px}
+.stbadge{font-size:11px;padding:3px 10px;border-radius:999px;font-weight:700;color:#fff}
+.st-planos{background:var(--planos)}.st-constr{background:var(--constr)}.st-inmediata{background:var(--inmediata)}
+.b-out{background:#FBEAD2;color:#9a6a00;font-size:11px;padding:3px 10px;border-radius:999px;font-weight:700}
+.comment{font-size:14px;color:#444;margin-top:14px;line-height:1.55;border-left:3px solid var(--linea);padding-left:12px;font-style:italic}
+.chips{display:flex;gap:22px;margin-top:18px;flex-wrap:wrap}
+.chip b{font-size:17px;font-weight:800;display:block}
+.chip span{font-size:11px;color:#aaa}
+.cta{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.btn{padding:9px 16px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+.btn.wa{background:#1a8a4a;color:#fff}.btn.web{background:#fff;border:1px solid var(--linea);color:#444}
+.btn.broch{background:var(--azul);color:#fff}
+.sec{font-size:13px;font-weight:800;color:var(--verde);letter-spacing:.05em;text-transform:uppercase;margin:34px 0 14px;padding-bottom:7px;border-bottom:2px solid var(--linea)}
+table.t{width:100%;border-collapse:collapse;font-size:12.5px}
+.t thead th{background:#f0ede8;padding:9px 11px;font-size:10.5px;font-weight:700;color:#777;border-bottom:2px solid #ddd;text-align:left;white-space:nowrap}
+.t tbody td{padding:8px 11px;border-bottom:1px solid #f0ede8}
+.t tbody tr:hover td{background:#f7f5f1}
+.tpm2{font-weight:800;padding:2px 9px;border-radius:5px;font-size:12px}
+.tpm2.hi{background:#FBECEC;color:#A32D2D}.tpm2.mid{background:#FBF1E0;color:#8a5a12}.tpm2.lo{background:#EAF3DE;color:#3B6D11}
+.ttype{display:inline-block;font-size:10px;padding:1px 7px;border-radius:4px;background:#eef2e8;color:#3B6D11;font-weight:700}
+.ttype.duplex{background:#f0e8f5;color:#7a4f9a}.ttype.pent,.ttype.triplex{background:#f5ece0;color:#9a6a1a}.ttype.primer{background:#eee;color:#888}
+.planos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.plano{border:1px solid var(--linea);border-radius:9px;overflow:hidden;background:#fff;cursor:zoom-in}
+.plano img{width:100%;height:160px;object-fit:cover;display:block;background:#f0ede8}
+.plano .cap{font-size:10px;color:#999;padding:5px 8px;text-align:center}
+#map{height:300px;border-radius:12px;border:1px solid var(--linea);margin-top:4px}
+.srclist{font-size:12px;line-height:1.9}.srclist a{color:var(--azul);word-break:break-all}
+.empty{font-size:13px;color:#aaa;font-style:italic;padding:8px 0}
+.amen{display:flex;flex-wrap:wrap;gap:8px}
+.amen span{font-size:12px;background:#fff;border:1px solid var(--linea);border-radius:999px;padding:4px 12px}
+.alert{background:#FFFBE6;border:1px solid #F2C200;border-radius:8px;padding:11px 15px;font-size:12px;color:#7a5f00;margin-top:14px;line-height:1.5}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:5000;cursor:zoom-out}
+#lightbox img{max-width:94%;max-height:94%;border-radius:6px}
+.notfound{text-align:center;padding:80px 20px;color:#999}
+</style>
+</head>
+<body>
+<div id="top">
+  <a class="back" href="index.html">← Volver al portal</a>
+  <span class="brand">Portal Competitivo · Chacarilla del Estanque · GEU</span>
+</div>
+<div class="wrap" id="content"></div>
+<div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="data/portal-data.js?v=20260701o"></script>
+<script>
+const D=window.PORTAL_DATA,P=D.projects;
+const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
+const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
+const fmtUsd=n=>n?'US$'+n.toLocaleString('en-US'):null;
+const waFmt=w=>w?w.replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3'):'';
+const waHref=p=>{
+  if(!p.wa)return '';
+  const msg=`Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
+  return `https://wa.me/51${p.wa}?text=${encodeURIComponent(msg)}`;
+};
+const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
+const initials=n=>n.replace(/[^A-Za-zÁÉÍÓÚÑ ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
+const tipoLabel={flat:'Flat',duplex:'Dúplex',pent:'Penthouse',triplex:'Triplex',primer_piso:'1er piso',flat_duplex_varios:'Flat/Dúplex'};
+const id=new URLSearchParams(location.search).get('id');
+const p=P.find(x=>x.id===id);
+
+if(!p){document.getElementById('content').innerHTML='<div class="notfound"><h1>Proyecto no encontrado</h1><p><a href="index.html">← Volver al portal</a></p></div>';}
+else render();
+
+
+function render(){
+  document.title=p.name+' · Ficha · GEU';
+  const color=p.isGEU?'#185FA5':STCOL[p.estado_grupo]||'#777';
+  const hero=p.img?`<img class="heroimg" src="${p.img}" onerror="this.outerHTML='<div class=\\'heroimg ph\\' style=\\'background:${color}\\'>${initials(p.name)}</div>'">`
+    :`<div class="heroimg ph" style="background:${color}">${initials(p.name)}</div>`;
+  const st=p.isGEU?'<span class="stbadge st-constr">Nuestro proyecto</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span>`;
+  const out=!p.en_cuadrante&&!p.isGEU?'<span class="b-out">Fuera del cuadrante</span>':'';
+
+  // tabla de tipologías completa con $/m²
+  let typTable='';
+  if(p.typologies&&p.typologies.length){
+    const rows=p.typologies.map(t=>{
+      const tc=t.tipo==='duplex'?'duplex':(t.tipo==='pent'||t.tipo==='triplex')?'pent':(t.tipo==='primer_piso'?'primer':'');
+      const tip=t.flat?' <span style="font-size:9px;font-weight:700;color:#1a8a4a;background:#EAF3DE;padding:1px 6px;border-radius:4px">TÍPICO</span>':'';
+      return `<tr${t.flat?' style="background:#fbfdf9"':''}>
+        <td><span class="ttype ${tc}">${tipoLabel[t.tipo]||t.tipo}</span>${tip}${t.unidad?' <span style="color:#aaa;font-size:11px">'+t.unidad+'</span>':''}</td>
+        <td>${t.dorm?t.dorm+' dorm':'<span style="color:#ccc">—</span>'}</td>
+        <td>${t.m2?t.m2+' m²':'<span style="color:#ccc">—</span>'}</td>
+        <td>${t.precio_usd?fmtUsd(t.precio_usd):'<span style="color:#ccc">consultar</span>'}</td>
+        <td>${t.precio_m2?`<span class="tpm2 ${pm2cls(t.precio_m2)}">$${t.precio_m2.toLocaleString()}/m²</span>`:'<span style="color:#ccc">—</span>'}</td></tr>`;
+    }).join('');
+    typTable=`<table class="t"><thead><tr><th>Tipología</th><th>Dorm.</th><th>Área total</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>`;
+  } else {
+    typTable=`<div class="empty">Aún sin lista de precios pública. Rango general: ${p.dorms||'—'} dorm · ${p.m2} m².</div>`;
+  }
+
+  // planos
+  let planosHtml='';
+  if(p.planos&&p.planos.length){
+    planosHtml=`<div class="planos">`+p.planos.map((pl,i)=>{
+      const cap=pl.split('/').pop().replace(/\.(png|jpg|jpeg)$/i,'').replace(/[-_]/g,' ');
+      return `<div class="plano" onclick="lb('${pl}')"><img src="${pl}" loading="lazy" onerror="this.parentNode.style.display='none'"><div class="cap">${cap}</div></div>`;
+    }).join('')+`</div>`;
+  } else planosHtml=`<div class="empty">Planos no disponibles para este proyecto.</div>`;
+
+  // fuentes
+  const allsrc=[...(p.fuentes||[]),...Object.values(p.portales||{})].filter((v,i,a)=>v&&a.indexOf(v)===i);
+  const srcHtml=allsrc.length?`<div class="srclist">`+allsrc.map(u=>`<div>🔗 <a href="${u}" target="_blank">${u}</a></div>`).join('')+`</div>`:`<div class="empty">—</div>`;
+
+  // amenidades
+  const amenHtml=(p.amenidades&&p.amenidades.length)?`<div class="amen">`+p.amenidades.map(a=>`<span>${a}</span>`).join('')+`</div>`:'';
+
+  // anuncios (piezas Meta)
+  let adsHtml='';
+  if(p.anuncios){
+    const imgs=(p.anuncios.imgs||[]).map(s=>`<div class="plano" onclick="lb('${s}')"><img src="${s}" loading="lazy" onerror="this.parentNode.style.display='none'"><div class="cap">Pieza Meta Ads</div></div>`).join('');
+    const fb=(p.anuncios.fb_ids||[]).map(id=>`<a href="https://www.facebook.com/ads/library/?id=${id}" target="_blank" style="color:var(--azul);font-size:12px;display:inline-block;margin-right:14px">🔗 Ver en Biblioteca de Anuncios (${id})</a>`).join('');
+    adsHtml=`<div class="sec">Anuncios que usa (Meta)</div>
+      ${p.anuncios.copy?`<div class="comment" style="margin-top:0;margin-bottom:14px">${p.anuncios.copy}</div>`:''}
+      <div class="planos">${imgs}</div>
+      <div style="margin-top:12px">${fb}</div>`;
+  }
+
+  const wa=p.wa?`<a class="btn wa" href="${waHref(p)}" target="_blank">📱 WhatsApp +51 ${waFmt(p.wa)}</a>`:'';
+  const web=p.web?`<a class="btn web" href="${p.web}" target="_blank">🌐 Web oficial</a>`:'';
+  const broch=p.brochure?`<a class="btn broch" href="${p.brochure}" target="_blank">📄 Ver brochure (PDF)</a>`:'';
+
+  document.getElementById('content').innerHTML=`
+   <div class="hero">${hero}
+     <div class="hinfo">
+       <h1>${p.name} ${st}${out}</h1>
+       <div class="dev">${p.dev}</div>
+       <div class="addr">📍 ${p.addr||'Chacarilla del Estanque, Santiago de Surco'}</div>
+       ${p.comentario?`<div class="comment">${p.comentario}</div>`:''}
+       <div class="chips">
+         <div class="chip"><b>${fmtUsd(p.precio_desde_usd)||'—'}</b><span>Precio desde</span></div>
+         <div class="chip"><b>${p.dorms||'—'}</b><span>Dormitorios</span></div>
+         <div class="chip"><b>${p.m2} m²</b><span>Áreas</span></div>
+         <div class="chip"><b>${p.entrega||'—'}</b><span>Entrega</span></div>
+         ${p.total_pisos?`<div class="chip"><b>${p.total_pisos}</b><span>Pisos</span></div>`:''}
+       </div>
+       <div class="cta">${wa}${web}${broch}</div>
+     </div>
+   </div>
+   
+
+   <div class="sec">Tipologías · m² · precio · USD/m²</div>
+   ${typTable}
+
+   <div class="sec">Planos</div>
+   ${planosHtml}
+
+   ${adsHtml}
+
+   ${amenHtml?`<div class="sec">Amenidades</div>${amenHtml}`:''}
+
+   <div class="sec">Ubicación</div>
+   <div id="map"></div>
+
+   <div class="sec">Fuentes</div>
+   ${srcHtml}`;
+
+  // mapa de ubicación
+  if(p.lat!=null){
+    const m=L.map('map',{zoomControl:true,scrollWheelZoom:false}).setView([p.lat,p.lng],16);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{subdomains:'abcd',maxZoom:20,attribution:'© OSM © CARTO'}).addTo(m);
+    L.polygon(D.quadrant,{color:'#C99700',weight:2,fillColor:'#F2C200',fillOpacity:0.1}).addTo(m);
+    L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:`<div style="width:20px;height:20px;border-radius:50%;background:${color};border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4)"></div>`,iconSize:[20,20],iconAnchor:[10,10]})}).addTo(m).bindPopup(p.name);
+  } else { document.getElementById('map').style.display='none'; }
+}
+function lb(src){document.getElementById('lbimg').src=src;document.getElementById('lightbox').style.display='flex';}
+</script>
+</body>
+</html>

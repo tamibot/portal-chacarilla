@@ -1,0 +1,9 @@
+# Sitio estático servido por Node sin dependencias (server.js).
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["echo 'sin dependencias que instalar'"]
+
+[start]
+cmd = "node server.js"
