@@ -977,57 +977,53 @@ window.PORTAL_DATA = {
    "brochure": null,
    "typologies": [
     {
-     "unidad": "Flat típico (desde, 2-5 piso)",
-     "dorm": 2,
-     "m2": 79.6,
-     "precio_usd": 188000,
-     "precio_m2": 2362,
-     "tipo": "flat",
-     "piso": "2-5",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 3 dorm",
+     "unidad": "Depto 154 m² (InfoCasas L3DCAC)",
      "dorm": 3,
-     "m2": 135,
-     "precio_usd": 335373,
-     "precio_m2": 2484,
+     "m2": 154,
+     "precio_soles": 1323630,
+     "precio_usd": 389303,
+     "precio_m2": 2528,
      "tipo": "flat",
      "piso": "intermedio",
      "flat": true
     },
     {
-     "unidad": "Flat/Dúplex 3 dorm",
+     "unidad": "Depto 135 m² (InfoCasas Y7B5FF)",
      "dorm": 3,
-     "m2": 154,
-     "precio_usd": 389303,
-     "precio_m2": 2528,
-     "tipo": "duplex",
-     "piso": "intermedio/superior",
-     "flat": false
+     "m2": 135,
+     "precio_soles": 1140270,
+     "precio_usd": 335374,
+     "precio_m2": 2484,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true
     }
    ],
    "flats_summary": [
     {
-     "dorm": 2,
-     "m2": 79.6,
-     "precio_usd": 188000,
-     "precio_m2": 2362,
-     "comparable_confirmado": false
+     "unidad": "InfoCasas ref L3DCAC",
+     "dorm": 3,
+     "m2": 154,
+     "precio_usd": 389303,
+     "precio_m2": 2528,
+     "comparable_confirmado": false,
+     "nota": "Anuncio InfoCasas (broker Exklusiv). S/1,323,630 · 154 m² · 3 dorm. Referencial, sin confirmar con desarrollador."
     },
     {
+     "unidad": "InfoCasas ref Y7B5FF",
      "dorm": 3,
      "m2": 135,
-     "precio_usd": 335373,
+     "precio_usd": 335374,
      "precio_m2": 2484,
-     "comparable_confirmado": false
+     "comparable_confirmado": false,
+     "nota": "Anuncio InfoCasas (broker). S/1,140,270 · 135 m² · 3 dorm. Referencial."
     }
    ],
    "dorms_disponibles": [
     2,
     3
    ],
-   "comentario": "Disponibilidad por confirmar con el desarrollador.",
+   "comentario": "Monteflor (Arch Inversiones). SIN lista de precios oficial ni cotización del asesor; no figura en Nexo. Únicos datos: 2 anuncios de InfoCasas (broker Exklusiv) — 154 m² S/1,323,630 y 135 m² S/1,140,270, ambos 3 dorm. Precios referenciales, no confirmados con el desarrollador. Se removió una entrada de 79.6 m² que no tenía fuente verificable.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -2258,82 +2254,88 @@ window.PORTAL_DATA = {
      "unidad": "Típico 04 (204-604)",
      "dorm": 3,
      "m2": 85.16,
-     "precio_usd": 189412,
-     "precio_m2": 2224,
+     "precio_usd": 197941,
+     "precio_m2": 2324,
      "tipo": "flat",
      "piso": "2-6",
      "flat": true,
      "area_techada_m2": 85.16,
      "area_total_m2": 85.16,
      "unidades_count": 5,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "precio_soles": 673000
     },
     {
      "unidad": "Típico 05 (205-605)",
      "dorm": 3,
      "m2": 86.24,
-     "precio_usd": 191765,
-     "precio_m2": 2224,
+     "precio_usd": 200588,
+     "precio_m2": 2326,
      "tipo": "flat",
      "piso": "2-6",
      "flat": true,
      "area_techada_m2": 86.24,
      "area_total_m2": 86.24,
      "unidades_count": 5,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "precio_soles": 682000
     },
     {
      "unidad": "Típico 03 (203-603)",
      "dorm": 3,
      "m2": 103.91,
-     "precio_usd": 249412,
-     "precio_m2": 2400,
+     "precio_usd": 258235,
+     "precio_m2": 2485,
      "tipo": "flat",
      "piso": "2-6",
      "flat": true,
      "area_techada_m2": 103.91,
      "area_total_m2": 103.91,
      "unidades_count": 5,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "precio_soles": 878000
     },
     {
      "unidad": "Típico 01-A (201)/01-B (301,501)",
      "dorm": 3,
      "m2": 103.46,
-     "precio_usd": 248235,
-     "precio_m2": 2399,
+     "precio_usd": 257059,
+     "precio_m2": 2485,
      "tipo": "flat",
      "piso": "2,3,5",
      "flat": true,
      "area_total_m2": 103.46,
      "unidades_count": 3,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "precio_soles": 874000
     },
     {
      "unidad": "101",
      "dorm": 3,
      "m2": 127.87,
-     "precio_usd": 273382,
-     "precio_m2": 2138,
+     "precio_usd": 282941,
+     "precio_m2": 2213,
      "tipo": "flat",
      "piso": "1",
      "flat": false,
      "area_techada_m2": 99.97,
      "area_total_m2": 127.87,
-     "motivo_no_comparable": "piso 1"
+     "motivo_no_comparable": "piso 1",
+     "precio_soles": 962000
     },
     {
      "unidad": "102",
      "dorm": 3,
      "m2": 140.86,
-     "precio_usd": 310147,
-     "precio_m2": 2202,
+     "precio_usd": 320882,
+     "precio_m2": 2278,
      "tipo": "flat",
      "piso": "1",
      "flat": false,
      "area_techada_m2": 117.47,
      "area_total_m2": 140.86,
-     "motivo_no_comparable": "piso 1"
+     "motivo_no_comparable": "piso 1",
+     "precio_soles": 1091000
     },
     {
      "unidad": "Dúplex 702 (DUO/flex)",
@@ -2352,14 +2354,15 @@ window.PORTAL_DATA = {
      "unidad": "Dúplex 704",
      "dorm": 3,
      "m2": 168.7,
-     "precio_usd": 309118,
-     "precio_m2": 1832,
+     "precio_usd": 319706,
+     "precio_m2": 1895,
      "tipo": "duplex",
      "piso": "7-8",
      "flat": false,
      "area_techada_m2": 109.19,
      "area_total_m2": 168.7,
-     "motivo_no_comparable": "duplex"
+     "motivo_no_comparable": "duplex",
+     "precio_soles": 1087000
     },
     {
      "unidad": "Dúplex 705",
@@ -2378,27 +2381,29 @@ window.PORTAL_DATA = {
      "unidad": "Dúplex 701",
      "dorm": 4,
      "m2": 207.35,
-     "precio_usd": 391471,
-     "precio_m2": 1888,
+     "precio_usd": 405000,
+     "precio_m2": 1953,
      "tipo": "duplex",
      "piso": "7-8",
      "flat": false,
      "area_techada_m2": 133.15,
      "area_total_m2": 207.35,
-     "motivo_no_comparable": "duplex"
+     "motivo_no_comparable": "duplex",
+     "precio_soles": 1377000
     },
     {
      "unidad": "Dúplex 703",
      "dorm": 4,
      "m2": 208.31,
-     "precio_usd": 393382,
-     "precio_m2": 1888,
+     "precio_usd": 407059,
+     "precio_m2": 1954,
      "tipo": "duplex",
      "piso": "7-8",
      "flat": false,
      "area_techada_m2": 133.78,
      "area_total_m2": 208.31,
-     "motivo_no_comparable": "duplex"
+     "motivo_no_comparable": "duplex",
+     "precio_soles": 1384000
     }
    ],
    "flats_summary": [
@@ -2406,11 +2411,11 @@ window.PORTAL_DATA = {
      "unidad": "Flat típico promedio (18 flats T01/T03/T04/T05)",
      "dorm": 3,
      "m2": 93.72,
-     "precio_usd": 216536,
-     "precio_m2": 2310,
+     "precio_usd": 225278,
+     "precio_m2": 2396,
      "comparable_confirmado": true,
      "cochera_incluida": "No (confirmado con asesor 2026-07-02): estacionamiento aparte S/48,000–99,000, algunos con depósito",
-     "nota": "Promedio ponderado por 18 flats típicos de pisos 2-6; usa medidas de brochure (T01 103.46 m², T03 103.91 m², T04 85.16 m², T05 86.24 m²). Estacionamiento NO incluido en el precio (confirmado por asesor 2026-07-02) → precio de lista ya es neto sin cochera; su US$/m² es directamente comparable a GEU-neto (no se descuenta cochera)."
+     "nota": "Promedio ponderado por 18 flats típicos (T01/T03/T04/T05), precios de Nexo Inmobiliario 2026-07-07 (T04 S/673,000·85.16m², T05 S/682,000·86.24m², T03 S/878,000·103.91m², T01 S/874,000·103.46m²). Estacionamiento NO incluido (asesor 2026-07-02) → precio ya neto sin cochera."
     }
    ],
    "dorms_disponibles": [
