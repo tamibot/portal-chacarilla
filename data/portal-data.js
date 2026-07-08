@@ -150,7 +150,7 @@ window.PORTAL_DATA = {
    "lat": -12.111313355375833,
    "lng": -76.98854344646954,
    "isGEU": false,
-   "en_cuadrante": false,
+   "en_cuadrante": true,
    "precio_desde_usd": 154000,
    "precio_hasta_usd": 330000,
    "dorms": "1–3",
@@ -183,59 +183,49 @@ window.PORTAL_DATA = {
    "brochure": null,
    "typologies": [
     {
-     "unidad": "Flat 1 dormitorio (típico)",
+     "unidad": "Flat típico ~123 m² (confirmado asesor)",
+     "dorm": 3,
+     "m2": 123,
+     "precio_usd": 325000,
+     "precio_usd_neto": 308000,
+     "precio_m2": 2504,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_usd": 17000,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true,
+     "nota": "US$325,000 incluye 1 cochera; cochera simple se vende en US$17,000 → neto US$308,000 (2,504/m²). Dorm por confirmar."
+    },
+    {
+     "unidad": "Flat 1 dormitorio",
      "dorm": 1,
      "m2": 51,
-     "precio_usd": 154000,
-     "precio_m2": 3020,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 2 dormitorios",
-     "dorm": 2,
-     "m2": null,
      "precio_usd": null,
      "precio_m2": null,
      "tipo": "flat",
      "piso": "intermedio",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 2 dormitorios + estudio",
-     "dorm": 2,
-     "m2": null,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true
-    },
-    {
-     "unidad": "Flat/dúplex 3 dormitorios (tope de rango)",
-     "dorm": 3,
-     "m2": 147,
-     "precio_usd": 330000,
-     "precio_m2": 2245,
-     "tipo": "duplex",
-     "piso": "varios",
-     "flat": false
+     "nota": "Precio por confirmar — el asesor aún no lo envió (2026-07)."
     }
    ],
    "flats_summary": [
     {
-     "dorm": 1,
-     "m2": 51,
-     "precio_usd": 154000,
-     "precio_m2": 3020,
-     "comparable_confirmado": false
+     "unidad": "Flat ~123 m² (asesor)",
+     "dorm": 3,
+     "m2": 123,
+     "precio_usd": 308000,
+     "precio_m2": 2504,
+     "precio_usd_lista": 325000,
+     "precio_m2_lista": 2642,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_usd": 17000,
+     "comparable_confirmado": true,
+     "nota": "Confirmado por el asesor (WhatsApp, 2026-07): US$325,000 (123 m²) incluye 1 cochera; neto de cochera (US$17,000) = US$308,000 → 2,504/m². Falta precio de 1 dorm."
     }
    ],
    "dorms_disponibles": [
     1
    ],
-   "comentario": "Boulevard (boulevard.com.pe), en construcción; flats 1–3 dorm (51–147 m2) desde US$154,000. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). Falta que envíen el precio del 1 dormitorio. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas.",
    "amenidades": [],
    "total_pisos": null,
    "fuentes": [
@@ -247,7 +237,7 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": false,
+   "mostrar": true,
    "gallery": [
     "assets/img-f1/la-floresta-boulevard/img-01.jpg",
     "assets/img-f1/la-floresta-boulevard/img-02.jpg",
@@ -255,7 +245,11 @@ window.PORTAL_DATA = {
     "assets/img-f1/la-floresta-boulevard/img-04.jpg",
     "assets/img-f1/la-floresta-boulevard/img-05.jpg"
    ],
-   "retirado": "Retirado 2026-07-02: sin lista de precios verificable, no comparable por US$/m² (solo \"desde\" no confiable)."
+   "stock": {
+    "n": null,
+    "label": "78 deptos · 2 torres"
+   },
+   "cochera_status": "incluida"
   },
   {
    "id": "jardines-monte-real",
