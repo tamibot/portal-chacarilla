@@ -2,10 +2,10 @@ window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
   "fecha": "2026-07-22",
-  "total": 25,
-  "en_cuadrante": 25,
+  "total": 24,
+  "en_cuadrante": 24,
   "con_precio": 100,
-  "competidores_activos": 24,
+  "competidores_activos": 23,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 10,
   "en_ultimas_unidades": 8,
@@ -3461,7 +3461,7 @@ window.PORTAL_DATA = {
    "precio_desde_usd": 192428,
    "precio_hasta_usd": 387491,
    "dorms": "3–6",
-   "m2": "83–83",
+   "m2": "83–247",
    "wa": "957733272",
    "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
    "img": "assets/img-f1/spazio/img-01.webp",
@@ -3603,7 +3603,8 @@ window.PORTAL_DATA = {
    "gallery": [
     "assets/img-f1/spazio/img-01.webp",
     "assets/img-f1/spazio/img-02.webp"
-   ]
+   ],
+   "dorms_nota": "Dormitorios sin confirmar con el asesor (el comentario dice 3–6, no verificado)."
   },
   {
    "id": "terraverde",
@@ -3653,7 +3654,7 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": true,
+   "mostrar": false,
    "gallery": [
     "assets/img-f1/terraverde/img-01.jpg"
    ],
@@ -3661,7 +3662,8 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 1,
     "label": "A estrenar (broker)"
-   }
+   },
+   "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas."
   }
  ]
 }
