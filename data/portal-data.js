@@ -142,7 +142,8 @@ window.PORTAL_DATA = {
    },
    "wa_label": "Central del proyecto",
    "wa_asesora": "902312242",
-   "asesora": "Camu Planas"
+   "asesora": "Camu Planas",
+   "cochera_nota": "Cochera y depósito se venden aparte: US$15–16k la simple, US$27k la doble."
   },
   {
    "id": "aura-sul",
