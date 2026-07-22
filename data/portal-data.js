@@ -2,12 +2,14 @@ window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
   "fecha": "2026-07-22",
-  "total": 22,
-  "en_cuadrante": 22,
-  "con_precio": 98,
-  "competidores_activos": 21,
+  "total": 25,
+  "en_cuadrante": 25,
+  "con_precio": 100,
+  "competidores_activos": 24,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 10
+  "comparables_confirmados": 10,
+  "en_ultimas_unidades": 8,
+  "sin_precio_publico": 2
  },
  "quadrant": [
   [
@@ -141,1694 +143,6 @@ window.PORTAL_DATA = {
    "wa_label": "Central del proyecto",
    "wa_asesora": "902312242",
    "asesora": "Camu Planas"
-  },
-  {
-   "id": "la-floresta-boulevard",
-   "name": "La Floresta Boulevard",
-   "dev": "Boulevard (boulevard.com.pe)",
-   "addr": "Calle Montepío 120-130, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque La Floresta)",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "",
-   "lat": -12.111313355375833,
-   "lng": -76.98854344646954,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 154000,
-   "precio_hasta_usd": 330000,
-   "dorms": "1–3",
-   "m2": "51–147",
-   "wa": "945678879",
-   "web": "https://floresta.boulevard.com.pe/la-floresta/",
-   "img": "assets/img-f1/la-floresta-boulevard/img-01.jpg",
-   "planos": [
-    "assets/planos/la-floresta-boulevard/plano-01.jpg",
-    "assets/planos/la-floresta-boulevard/plano-02.jpg",
-    "assets/planos/la-floresta-boulevard/plano-03.jpg",
-    "assets/planos/la-floresta-boulevard/plano-04.jpg",
-    "assets/planos/la-floresta-boulevard/plano-05.jpg",
-    "assets/planos/la-floresta-boulevard/plano-06.jpg",
-    "assets/planos/la-floresta-boulevard/plano-07.jpg",
-    "assets/planos/la-floresta-boulevard/plano-08.jpg",
-    "assets/planos/la-floresta-boulevard/plano-09.jpg",
-    "assets/planos/la-floresta-boulevard/plano-10.jpg",
-    "assets/planos/la-floresta-boulevard/plano-11.jpg",
-    "assets/planos/la-floresta-boulevard/plano-12.jpg",
-    "assets/planos/la-floresta-boulevard/plano-13.jpg",
-    "assets/planos/la-floresta-boulevard/plano-14.jpg",
-    "assets/planos/la-floresta-boulevard/plano-15.jpg",
-    "assets/planos/la-floresta-boulevard/plano-16.jpg",
-    "assets/planos/la-floresta-boulevard/plano-17.jpg",
-    "assets/planos/la-floresta-boulevard/plano-18.jpg",
-    "assets/planos/la-floresta-boulevard/plano-19.jpg",
-    "assets/planos/la-floresta-boulevard/plano-20.jpg"
-   ],
-   "brochure": null,
-   "typologies": [
-    {
-     "unidad": "Flat típico ~123 m² (confirmado asesor)",
-     "dorm": 3,
-     "m2": 123,
-     "precio_usd": 325000,
-     "precio_usd_neto": 308000,
-     "precio_m2": 2504,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_usd": 17000,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true,
-     "nota": "US$325,000 incluye 1 cochera; cochera simple se vende en US$17,000 → neto US$308,000 (2,504/m²). Dorm por confirmar."
-    },
-    {
-     "unidad": "Flat 1 dormitorio",
-     "dorm": 1,
-     "m2": 51,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "nota": "Precio por confirmar — el asesor aún no lo envió (2026-07)."
-    }
-   ],
-   "flats_summary": [
-    {
-     "unidad": "Flat ~123 m² (asesor)",
-     "dorm": 3,
-     "m2": 123,
-     "precio_usd": 308000,
-     "precio_m2": 2504,
-     "precio_usd_lista": 325000,
-     "precio_m2_lista": 2642,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_usd": 17000,
-     "comparable_confirmado": true,
-     "nota": "Confirmado por el asesor (WhatsApp, 2026-07): US$325,000 (123 m²) incluye 1 cochera; neto de cochera (US$17,000) = US$308,000 → 2,504/m². Falta precio de 1 dorm."
-    }
-   ],
-   "dorms_disponibles": [
-    1
-   ],
-   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). Falta que envíen el precio del 1 dormitorio. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas.",
-   "amenidades": [],
-   "total_pisos": null,
-   "fuentes": [
-    "https://floresta.boulevard.com.pe/la-floresta/",
-    "https://floresta.boulevard.com.pe/1-dormitorio/",
-    "https://floresta.boulevard.com.pe/2-dormitorios/",
-    "https://floresta.boulevard.com.pe/2-dormitorios-estudio/",
-    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-la-floresta-boulevard-670"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/la-floresta-boulevard/img-01.jpg",
-    "assets/img-f1/la-floresta-boulevard/img-02.jpg",
-    "assets/img-f1/la-floresta-boulevard/img-03.jpg",
-    "assets/img-f1/la-floresta-boulevard/img-04.jpg",
-    "assets/img-f1/la-floresta-boulevard/img-05.jpg"
-   ],
-   "stock": {
-    "n": null,
-    "label": "78 deptos · 2 torres"
-   },
-   "cochera_status": "incluida"
-  },
-  {
-   "id": "jardines-monte-real",
-   "name": "Jardines de Monte Real",
-   "dev": "Central Inmobiliaria",
-   "addr": "Jr. Monte Real 496, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — últimas unidades",
-   "entrega": "Marzo/Abril 2027",
-   "lat": -12.11186929636266,
-   "lng": -76.98578255636211,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 246028,
-   "precio_hasta_usd": 329187,
-   "dorms": "1–4",
-   "m2": "63–145",
-   "wa": "994298155",
-   "web": "https://centralinmobiliaria.pe",
-   "img": "assets/img-f1/jardines-monte-real/img-01.jpg",
-   "planos": [
-    "assets/planos/jardines-de-monte-real/plano-107-precio.jpg",
-    "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg"
-   ],
-   "brochure": "assets/brochures/jardines-monte-real-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "X08 (408/508)",
-     "dorm": 3,
-     "m2": 94.2,
-     "precio_usd": 246028,
-     "precio_m2": 2612,
-     "tipo": "flat",
-     "piso": "4",
-     "flat": true
-    },
-    {
-     "unidad": "107",
-     "dorm": 2,
-     "m2": 129.42,
-     "precio_usd": 329187,
-     "precio_m2": 2543,
-     "tipo": "flat",
-     "piso": "1"
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 3,
-     "m2": 94.2,
-     "precio_usd": 246028,
-     "precio_m2": 2612,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    2,
-    3
-   ],
-   "comentario": "Últimas unidades (Flat 107 en piso 1 y Flat X08 en pisos 4-5). Entrega marzo/abril 2027, financia BCP. Situación de cochera por confirmar.",
-   "amenidades": [],
-   "total_pisos": "6 + rooftop",
-   "fuentes": [
-    "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
-    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/jardines-de-monte-real-3770",
-    "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP.pdf"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria"
-   },
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/jardines-monte-real/img-01.jpg",
-    "assets/img-f1/jardines-monte-real/img-02.jpg"
-   ],
-   "cochera_status": "nd",
-   "stock": {
-    "n": 3,
-    "label": "Últimas ~3"
-   }
-  },
-  {
-   "id": "monte-mayor-183",
-   "name": "Monte Mayor 183",
-   "dev": "Azzurra Constructores",
-   "addr": "Calle Monte Mayor 183, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — últimas 4 unidades",
-   "entrega": "1er trimestre 2027 (portal; web oficial no publica)",
-   "lat": -12.114388330633895,
-   "lng": -76.9869248368436,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 187000,
-   "precio_hasta_usd": 447000,
-   "dorms": "1–3",
-   "m2": "64–240",
-   "wa": "944216477",
-   "web": "https://azzurra.com.pe/proyectos/monte-mayor-183/",
-   "img": "assets/img-f1/monte-mayor-183/img-01.jpg",
-   "planos": [
-    "assets/planos/monte-mayor-183/plano-01.jpg",
-    "assets/planos/monte-mayor-183/plano-02.jpg",
-    "assets/planos/monte-mayor-183/plano-03.jpg",
-    "assets/planos/monte-mayor-183/plano-x02-1.jpg",
-    "assets/planos/monte-mayor-183/lista-precios-1.jpg"
-   ],
-   "brochure": "assets/brochures/monte-mayor-183-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "Flat 101",
-     "dorm": 1,
-     "m2": 73.13,
-     "m2_techada": 73.13,
-     "m2_libre": 0,
-     "precio_lista_usd": 202000,
-     "cochera_incluida": "1 SIMPLE",
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 187000,
-     "precio_m2": 2557,
-     "precio_m2_techada": 2557,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false,
-     "nota_precio": "Precio lista 202,000 incluye 1 simple; neto descuenta US$15,000.",
-     "motivo_no_comparable": "piso 1",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 102",
-     "dorm": 2,
-     "m2": 239.69,
-     "m2_techada": 132.98,
-     "m2_libre": 106.71,
-     "precio_lista_usd": 477000,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": 447000,
-     "precio_m2": 1865,
-     "precio_m2_techada": 3361,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false,
-     "nota_precio": "Precio lista 477,000 incluye 2 simples; neto descuenta US$30,000.",
-     "motivo_no_comparable": "piso 1, area libre 45%",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 201",
-     "dorm": 2,
-     "m2": 64.49,
-     "m2_techada": 64.49,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "1 SIMPLE",
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 202",
-     "dorm": 3,
-     "m2": 115.56,
-     "m2_techada": 115.56,
-     "m2_libre": 0,
-     "precio_lista_usd": 319000,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": 289000,
-     "precio_m2": 2501,
-     "precio_m2_techada": 2501,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": 319000,
-     "nota_precio": "Precio lista 319,000 incluye 2 simples; neto descuenta US$30,000.",
-     "motivo_no_comparable": null,
-     "comparable_confirmado": true
-    },
-    {
-     "unidad": "Flat 203",
-     "dorm": 3,
-     "m2": 110.26,
-     "m2_techada": 110.26,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 301",
-     "dorm": 2,
-     "m2": 64.49,
-     "m2_techada": 64.49,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "1 SIMPLE",
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 302",
-     "dorm": 3,
-     "m2": 115.56,
-     "m2_techada": 115.56,
-     "m2_libre": 0,
-     "precio_lista_usd": 320000,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": 290000,
-     "precio_m2": 2510,
-     "precio_m2_techada": 2510,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": 320000,
-     "nota_precio": "Precio lista 320,000 incluye 2 simples; neto descuenta US$30,000.",
-     "motivo_no_comparable": null,
-     "comparable_confirmado": true
-    },
-    {
-     "unidad": "Flat 303",
-     "dorm": 3,
-     "m2": 110.26,
-     "m2_techada": 110.26,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 401",
-     "dorm": 2,
-     "m2": 64.49,
-     "m2_techada": 64.49,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "1 SIMPLE",
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "4",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 402",
-     "dorm": 3,
-     "m2": 115.56,
-     "m2_techada": 115.56,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "4",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 403",
-     "dorm": 3,
-     "m2": 110.26,
-     "m2_techada": 110.26,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "4",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 501",
-     "dorm": 2,
-     "m2": 64.49,
-     "m2_techada": 64.49,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "1 SIMPLE",
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 502",
-     "dorm": 3,
-     "m2": 115.56,
-     "m2_techada": 115.56,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 503",
-     "dorm": 3,
-     "m2": 110.26,
-     "m2_techada": 110.26,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": null,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 601",
-     "dorm": 2,
-     "m2": 64.49,
-     "m2_techada": 64.49,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "1 SIMPLE",
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "6",
-     "flat": false,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "piso 6, vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 602",
-     "dorm": 3,
-     "m2": 115.56,
-     "m2_techada": 115.56,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "6",
-     "flat": false,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "piso 6, vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Flat 603",
-     "dorm": 3,
-     "m2": 110.26,
-     "m2_techada": 110.26,
-     "m2_libre": 0,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "flat",
-     "piso": "6",
-     "flat": false,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "piso 6, vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Penthouse 701",
-     "dorm": 3,
-     "m2": 130.68,
-     "m2_techada": 120.04,
-     "m2_libre": 10.64,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "penthouse",
-     "piso": "7",
-     "flat": false,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "penthouse, piso 7, area libre 8%, vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Penthouse 702",
-     "dorm": 3,
-     "m2": 224.51,
-     "m2_techada": 192.51,
-     "m2_libre": 32,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "penthouse",
-     "piso": "7",
-     "flat": false,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "penthouse, piso 7, area libre 14%, vendido/sin precio",
-     "comparable_confirmado": false
-    },
-    {
-     "unidad": "Penthouse 703",
-     "dorm": 3,
-     "m2": 221.45,
-     "m2_techada": 180,
-     "m2_libre": 41.45,
-     "precio_lista_usd": null,
-     "cochera_incluida": "2 SIMPLES",
-     "ajuste_cochera_usd": 30000,
-     "precio_usd": null,
-     "precio_m2": null,
-     "precio_m2_techada": null,
-     "tipo": "penthouse",
-     "piso": "7",
-     "flat": false,
-     "nota_precio": "Vendido / sin precio disponible en lista.",
-     "motivo_no_comparable": "penthouse, piso 7, area libre 19%, vendido/sin precio",
-     "comparable_confirmado": false
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 3,
-     "m2": 115.56,
-     "precio_usd": 289000,
-     "precio_m2": 2501,
-     "comparable_confirmado": true
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Lista de precios por unidad con cochera y depósito incluidos (lista Azzurra 24-jun). Últimas 4 unidades (101, 102, 202, 302).",
-   "amenidades": [
-    "Lobby",
-    "Estacionamiento de bicicletas",
-    "Certificación EDGE",
-    "Control de acceso"
-   ],
-   "total_pisos": 7,
-   "fuentes": [
-    "https://azzurra.com.pe/proyectos/monte-mayor-183/",
-    "https://www.azzurra.com.pe/montemayor183-chacarilla-surco",
-    "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-MM-240626.pdf",
-    "https://www.facebook.com/azzurraconstructoresoficial/posts/monte-mayor-183-redefine-la-elegancia-en-el-distrito-de-surco",
-    "https://tangible.pe/blog/oferta-inmobiliaria/departamentos-en-surco/departamentos-de-lujo-en-venta",
-    "Lista de precios y brochure oficiales del desarrollador (jun-2026)"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/monte-mayor-183/img-01.jpg",
-    "assets/img-f1/monte-mayor-183/img-02.png"
-   ],
-   "destacado": true,
-   "cochera_status": "si",
-   "stock": {
-    "n": 4,
-    "label": "4 quedan"
-   },
-   "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf"
-  },
-  {
-   "id": "dmont-2",
-   "name": "D'Mont 2",
-   "dev": "Grupo Dicon",
-   "addr": "Jr. Monte Real 422, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "En construcción",
-   "lat": -12.111703553764334,
-   "lng": -76.98553394529374,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 181190,
-   "precio_hasta_usd": null,
-   "dorms": "3",
-   "m2": "82–242",
-   "wa": "933209656",
-   "web": "https://grupodicon.com.pe/proyecto/dmont-2/",
-   "img": "assets/img-f1/dmont-2/img-01.jpg",
-   "planos": [
-    "assets/planos/dmont-2/plano-01.jpg",
-    "assets/planos/dmont-2/plano-02.jpg",
-    "assets/planos/dmont-2/plano-03.jpg",
-    "assets/planos/dmont-2/plano-04.jpg",
-    "assets/planos/dmont-2/plano-05.jpg"
-   ],
-   "brochure": "assets/brochures/dmont-2-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "Flat 101",
-     "dorm": 3,
-     "m2": 122.2,
-     "precio_usd": 264210,
-     "precio_m2": 2162,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "Flat 201",
-     "dorm": 3,
-     "m2": 121.6,
-     "precio_usd": 263064,
-     "precio_m2": 2163,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 202",
-     "dorm": 3,
-     "m2": 121.8,
-     "precio_usd": 263453,
-     "precio_m2": 2163,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 302",
-     "dorm": 3,
-     "m2": 123.5,
-     "precio_usd": 265184,
-     "precio_m2": 2147,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 304",
-     "dorm": 3,
-     "m2": 84.5,
-     "precio_usd": 183328,
-     "precio_m2": 2170,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 401",
-     "dorm": 3,
-     "m2": 121.6,
-     "precio_usd": 263064,
-     "precio_m2": 2163,
-     "tipo": "flat",
-     "piso": "4",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 402",
-     "dorm": 3,
-     "m2": 121.8,
-     "precio_usd": 263453,
-     "precio_m2": 2163,
-     "tipo": "flat",
-     "piso": "4",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 501",
-     "dorm": 3,
-     "m2": 123.3,
-     "precio_usd": 264794,
-     "precio_m2": 2148,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 502",
-     "dorm": 3,
-     "m2": 123.5,
-     "precio_usd": 265184,
-     "precio_m2": 2147,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 504",
-     "dorm": 3,
-     "m2": 84.5,
-     "precio_usd": 181190,
-     "precio_m2": 2144,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "Dúplex 603",
-     "dorm": null,
-     "m2": 157.3,
-     "precio_usd": 299558,
-     "precio_m2": 1904,
-     "tipo": "duplex",
-     "piso": "6",
-     "flat": false
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 3,
-     "m2": 84.5,
-     "precio_usd": 181190,
-     "precio_m2": 2144,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Grupo Dicon publica lista de precios por unidad en su web oficial (11 unidades, 81–243 m²). Falta confirmar con el asesor si los precios incluyen cochera y cuántas unidades quedan disponibles; en los otros proyectos de Dicon la cochera se vende aparte.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://grupodicon.com.pe/proyecto/dmont-2/",
-    "https://grupodicon.com.pe/site/media/Brochure-web_compressed.pdf"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/dmont-2/img-01.jpg",
-    "assets/img-f1/dmont-2/img-02.jpg",
-    "assets/img-f1/dmont-2/img-03.jpg",
-    "assets/img-f1/dmont-2/img-04.jpg",
-    "assets/img-f1/dmont-2/img-05.jpg"
-   ],
-   "cochera_status": "nd"
-  },
-  {
-   "id": "monteflor",
-   "name": "Monteflor",
-   "dev": "Arch Inversiones Inmobiliarias",
-   "addr": "Jr. Monte Flor 523-525, esquina con Monte Real, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "Agosto 2026 (aprox.)",
-   "lat": -12.111928239024742,
-   "lng": -76.98275878252593,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 188000,
-   "precio_hasta_usd": 385000,
-   "dorms": "2–4",
-   "m2": "64–240",
-   "wa": "981349116",
-   "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
-   "img": "assets/img-f1/monteflor/img-01.jpg",
-   "planos": [],
-   "brochure": null,
-   "typologies": [
-    {
-     "unidad": "Depto 154 m² (InfoCasas L3DCAC)",
-     "dorm": 3,
-     "m2": 154,
-     "precio_soles": 1323630,
-     "precio_usd": 389303,
-     "precio_m2": 2528,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true
-    },
-    {
-     "unidad": "Depto 135 m² (InfoCasas Y7B5FF)",
-     "dorm": 3,
-     "m2": 135,
-     "precio_soles": 1140270,
-     "precio_usd": 335374,
-     "precio_m2": 2484,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "unidad": "InfoCasas ref L3DCAC",
-     "dorm": 3,
-     "m2": 154,
-     "precio_usd": 389303,
-     "precio_m2": 2528,
-     "comparable_confirmado": false,
-     "nota": "Anuncio InfoCasas (broker Exklusiv). S/1,323,630 · 154 m² · 3 dorm. Referencial, sin confirmar con desarrollador."
-    },
-    {
-     "unidad": "InfoCasas ref Y7B5FF",
-     "dorm": 3,
-     "m2": 135,
-     "precio_usd": 335374,
-     "precio_m2": 2484,
-     "comparable_confirmado": false,
-     "nota": "Anuncio InfoCasas (broker). S/1,140,270 · 135 m² · 3 dorm. Referencial."
-    }
-   ],
-   "dorms_disponibles": [
-    2,
-    3
-   ],
-   "comentario": "Monteflor (Arch Inversiones). SIN lista de precios oficial ni cotización del asesor; no figura en Nexo. Únicos datos: 2 anuncios de InfoCasas (broker Exklusiv) — 154 m² S/1,323,630 y 135 m² S/1,140,270, ambos 3 dorm. Precios referenciales, no confirmados con el desarrollador. Se removió una entrada de 79.6 m² que no tenía fuente verificable.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
-    "https://www.infocasas.com.pe/monteflor/191143770 (Ref L3DCAC: 154 m², 3 dorm, S/1,323,630, En construcción, BBVA)",
-    "https://www.infocasas.com.pe/monteflor/191143752 (Ref Y7B5FF: 135 m², 3 dorm, S/1,140,270, En construcción)",
-    "https://www.archinversiones.com/proyectos/ (sitio del desarrollador)",
-    "https://www.youtube.com/watch?v=CDdcrkr19pM (video Monteflor | Arch Inversiones)",
-    "https://www.youtube.com/watch?v=IHo6Mza5oak (Monteflor - Como llegar)",
-    "https://www.facebook.com/ArchInversionesInmobiliarias/videos/inicio-de-obra-proyecto-monteflor/237308579097608/ (inicio de obra)"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/monteflor/img-01.jpg"
-   ]
-  },
-  {
-   "id": "monte-mayor-177",
-   "name": "Monte Mayor 177",
-   "dev": "Edifikarte",
-   "addr": "Calle Monte Mayor 177, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata — última unidad",
-   "entrega": "Agosto 2024 (ya entregado)",
-   "lat": -12.11442877256639,
-   "lng": -76.98753819552181,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 241176,
-   "precio_hasta_usd": 241176,
-   "dorms": "2–4",
-   "m2": "87–233",
-   "wa": "981386111",
-   "web": "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
-   "img": "assets/img/monte-mayor-177.jpg",
-   "planos": [
-    "assets/planos/monte-mayor-177/monte_mayor-18.png",
-    "assets/planos/monte-mayor-177/monte_mayor-20.png",
-    "assets/planos/monte-mayor-177/monte_mayor-21.png",
-    "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg"
-   ],
-   "brochure": "assets/brochures/Monte_Mayor_177-brochure.pdf",
-   "typologies": [
-    {
-     "unidad": "203",
-     "dorm": 2,
-     "m2": 86.95,
-     "precio_usd": 211176,
-     "precio_m2": 2429,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 2,
-     "m2": 86.95,
-     "precio_usd": 211176,
-     "precio_m2": 2429,
-     "comparable_confirmado": true
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Última unidad: flat 87 m², 2 dorm (piso 2), S/820,000 con 2 estacionamientos paralelos y depósito incluidos; valor por m² neto de cocheras.",
-   "amenidades": [],
-   "total_pisos": 7,
-   "fuentes": [
-    "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2762-monte-mayor-177-santiago-de-surco-lima-lima-grupo-edifikarte",
-    "https://reuschereyna.com/proyecto/monte-mayor-177/"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2762-monte-mayor-177-santiago-de-surco-lima-lima-grupo-edifikarte"
-   },
-   "anuncios": null,
-   "mostrar": true,
-   "cochera_status": "si",
-   "stock": {
-    "n": 1,
-    "label": "Última unidad"
-   }
-  },
-  {
-   "id": "spazio",
-   "name": "Spazio",
-   "dev": "Grupo Dicon",
-   "addr": "Av. De los Precursores 166-172, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "2026",
-   "lat": -12.11850208401939,
-   "lng": -76.98248346969847,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 192428,
-   "precio_hasta_usd": 387491,
-   "dorms": "3–6",
-   "m2": "83–83",
-   "wa": "957733272",
-   "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
-   "img": "assets/img-f1/spazio/img-01.webp",
-   "planos": [
-    "assets/planos/spazio/plano-01.webp",
-    "assets/planos/spazio/plano-02.webp",
-    "assets/planos/spazio/plano-03.webp",
-    "assets/planos/spazio/plano-04.webp",
-    "assets/planos/spazio/plano-05.webp",
-    "assets/planos/spazio/plano-06.webp",
-    "assets/planos/spazio/plano-07.webp",
-    "assets/planos/spazio/plano-08.webp",
-    "assets/planos/spazio/plano-09.webp",
-    "assets/planos/spazio/plano-13.jpg",
-    "assets/planos/spazio/plano-14.jpg",
-    "assets/planos/spazio/plano-15.jpg",
-    "assets/planos/spazio/plano-16.jpg",
-    "assets/planos/spazio/plano-17.jpg",
-    "assets/planos/spazio/plano-18.jpg"
-   ],
-   "brochure": "assets/brochures/spazio-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "Flat 101",
-     "dorm": null,
-     "m2": 100.9,
-     "precio_usd": 209914,
-     "precio_m2": 2080,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "Flat 102",
-     "dorm": null,
-     "m2": 97.2,
-     "precio_usd": 189819,
-     "precio_m2": 1952,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "Flat 201",
-     "dorm": null,
-     "m2": 104.7,
-     "precio_usd": 217838,
-     "precio_m2": 2080,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 203/303/403/503",
-     "dorm": null,
-     "m2": 83.1,
-     "precio_usd": 174468,
-     "precio_m2": 2100,
-     "tipo": "flat",
-     "piso": "2-5",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 204/304/404/504",
-     "dorm": null,
-     "m2": 84.4,
-     "precio_usd": 177219,
-     "precio_m2": 2100,
-     "tipo": "flat",
-     "piso": "2-5",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 301",
-     "dorm": null,
-     "m2": 104.7,
-     "precio_usd": 217838,
-     "precio_m2": 2080,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "Duplex 701",
-     "dorm": null,
-     "m2": 209.2,
-     "precio_usd": 372316,
-     "precio_m2": 1779,
-     "tipo": "duplex",
-     "piso": "7",
-     "flat": false
-    },
-    {
-     "unidad": "Duplex 702",
-     "dorm": null,
-     "m2": 208.2,
-     "precio_usd": 371148,
-     "precio_m2": 1782,
-     "tipo": "duplex",
-     "piso": "7",
-     "flat": false
-    },
-    {
-     "unidad": "Triplex 603",
-     "dorm": null,
-     "m2": 247.3,
-     "precio_usd": 387491,
-     "precio_m2": 1567,
-     "tipo": "duplex",
-     "piso": "6-7",
-     "flat": false
-    },
-    {
-     "unidad": "Triplex 604",
-     "dorm": null,
-     "m2": 229.7,
-     "precio_usd": 362284,
-     "precio_m2": 1577,
-     "tipo": "duplex",
-     "piso": "6-7",
-     "flat": false
-    }
-   ],
-   "flats_summary": [],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Proyecto de Grupo Dicon en Av. Precursores, en obra con entrega 2026; flats grandes de 3 a 6 dorms desde US$174,468, ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
-    "https://grupodicon.com.pe/site/media/Book-Spazio-Comercial-Web_compressed-1.pdf",
-    "https://grupodicon.com.pe/departamentos-boutique/"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/spazio/img-01.webp",
-    "assets/img-f1/spazio/img-02.webp"
-   ]
-  },
-  {
-   "id": "monte-umbroso",
-   "name": "Monte Umbroso",
-   "dev": "Transforma Proyectos Inmobiliarios S.A.C.",
-   "addr": "Alameda Monte Umbroso 520, Urb. Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En venta / construcción",
-   "entrega": "Pendiente confirmar",
-   "lat": -12.114061640626225,
-   "lng": -76.98035437139151,
-   "isGEU": false,
-   "en_cuadrante": false,
-   "precio_desde_usd": 193463,
-   "precio_hasta_usd": 337517,
-   "dorms": "1–3",
-   "m2": "67–158",
-   "wa": null,
-   "web": "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
-   "img": "assets/img-f1/monte-umbroso/img-01.jpg",
-   "planos": [],
-   "brochure": null,
-   "typologies": [
-    {
-     "unidad": "Flat",
-     "dorm": 1,
-     "m2": 67,
-     "precio_usd": 193463,
-     "precio_m2": 2888,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Flat",
-     "dorm": 3,
-     "m2": 98,
-     "precio_usd": 271878,
-     "precio_m2": 2774,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Flat",
-     "dorm": 3,
-     "m2": 145,
-     "precio_usd": 372261,
-     "precio_m2": 2567,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Flat",
-     "dorm": 2,
-     "m2": 158,
-     "precio_usd": 350944,
-     "precio_m2": 2221,
-     "tipo": "flat",
-     "piso": "?",
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 1,
-     "m2": 67,
-     "precio_usd": 193463,
-     "precio_m2": 2888,
-     "comparable_confirmado": false
-    },
-    {
-     "dorm": 3,
-     "m2": 145,
-     "precio_usd": 372261,
-     "precio_m2": 2567,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    1,
-    2,
-    3
-   ],
-   "comentario": "Transforma Proyectos Inmobiliarios; proyecto en construcción en la Alameda Monte Umbroso, Chacarilla. Publica precios de unidades en portales, sin lista completa por tipología. La ficha indica cochera incluida en el precio (por confirmar con el asesor).",
-   "amenidades": [
-    "Rooftop",
-    "Cocinas equipadas",
-    "Estacionamiento por depto"
-   ],
-   "total_pisos": 7,
-   "fuentes": [
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144372",
-    "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144367",
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144395",
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144400",
-    "https://limaspace.com/listing/proyecto-de-alameda-monte-umbroso-chacarilla-suj10/",
-    "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159"
-   ],
-   "portales": {
-    "urbania": "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
-    "adondevivir": "https://www.adondevivir.com/departamentos-q-monte-umbroso-santiago-de-surco.html"
-   },
-   "anuncios": null,
-   "mostrar": false,
-   "gallery": [
-    "assets/img-f1/monte-umbroso/img-01.jpg",
-    "assets/img-f1/monte-umbroso/img-02.jpg"
-   ],
-   "cochera_status": "si",
-   "retirado": "Retirado 2026-07-02: agotado, sin unidades disponibles (confirmado cliente)."
-  },
-  {
-   "id": "floresta-living-444",
-   "name": "Floresta Living 444",
-   "dev": "EE Inmobiliaria",
-   "addr": "Av. de la Floresta 442, Urb. Chacarilla del Estanque, Santiago de Surco (borde Oeste, dentro de la urbanizacion).",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "Diciembre 2026",
-   "lat": -12.116010161531724,
-   "lng": -76.98720446798781,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 196471,
-   "precio_hasta_usd": 319733,
-   "dorms": "2–3",
-   "m2": "85–197.66",
-   "wa": "988609572",
-   "web": "https://eeinmobiliaria.com/proyectos/",
-   "img": "assets/img-f1/floresta-living-444/img-01.jpg",
-   "planos": [
-    "assets/planos/floresta-living-444/plano-01.jpg",
-    "assets/planos/floresta-living-444/plano-02.jpg",
-    "assets/planos/floresta-living-444/plano-03.jpg",
-    "assets/planos/floresta-living-444/plano-04.jpg"
-   ],
-   "brochure": "assets/brochures/floresta-living-444-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "Tipo 03",
-     "dorm": 3,
-     "m2": 85,
-     "precio_usd": 196471,
-     "precio_m2": 2311,
-     "tipo": "flat",
-     "piso": "3-4",
-     "flat": true
-    },
-    {
-     "unidad": "Dpto. 101",
-     "dorm": 3,
-     "m2": 119.9,
-     "precio_usd": 257647,
-     "precio_m2": 2149,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "Dpto. 102",
-     "dorm": 3,
-     "m2": 197.7,
-     "precio_usd": 352647,
-     "precio_m2": 1784,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "Duplex 603",
-     "dorm": 2,
-     "m2": 110.3,
-     "precio_usd": 222941,
-     "precio_m2": 2022,
-     "tipo": "duplex",
-     "piso": "6",
-     "flat": false
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 3,
-     "m2": 85,
-     "precio_usd": 196471,
-     "precio_m2": 2311,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Edificio de EE Inmobiliaria, en obra con entrega a dic-2026; flats de 2-3 dorm (85-198 m2) desde US$178,133, ingreso ~US$10 mil por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/floresta-living-444-3795",
-    "https://eeinmobiliaria.com/proyectos/floresta-living-444/",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3795-floresta-living-444-santiago-de-surco-lima-lima-ee-inmobiliaria",
-    "https://micasapropia.interbank.pe/proyectos/floresta-living-444/"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/floresta-living-444-3795"
-   },
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/floresta-living-444/img-01.jpg",
-    "assets/img-f1/floresta-living-444/img-02.jpg",
-    "assets/img-f1/floresta-living-444/img-03.jpg",
-    "assets/img-f1/floresta-living-444/img-04.jpg",
-    "assets/img-f1/floresta-living-444/img-05.jpg"
-   ]
-  },
-  {
-   "id": "estelar-1080",
-   "name": "Estelar 1080",
-   "dev": "Galeon",
-   "addr": "Av. Velasco Astete 1080, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "~Febrero 2027",
-   "lat": -12.112102950138416,
-   "lng": -76.98446300308579,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 202941,
-   "precio_hasta_usd": 266032,
-   "dorms": "2–3",
-   "m2": "80–224",
-   "wa": "976367206",
-   "web": "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
-   "img": "assets/planos/estelar-1080/estelar-12.png",
-   "planos": [
-    "assets/planos/estelar-1080/estelar-12.png",
-    "assets/planos/estelar-1080/estelar-14.png",
-    "assets/planos/estelar-1080/estelar-17.png",
-    "assets/planos/estelar-1080/estelar-brochure-p1.jpg",
-    "assets/planos/estelar-1080/estelar-captura.png"
-   ],
-   "brochure": "assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf",
-   "typologies": [
-    {
-     "unidad": "Flat 2 dorm (típico)",
-     "dorm": 2,
-     "m2": 80,
-     "precio_usd": 197407,
-     "precio_m2": 2467,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 3 dorm + 1 estac.",
-     "dorm": 3,
-     "m2": 112.5,
-     "precio_usd": 266032,
-     "precio_m2": 2364,
-     "tipo": "flat",
-     "piso": "intermedio",
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 2,
-     "m2": 80,
-     "precio_usd": 197407,
-     "precio_m2": 2468,
-     "comparable_confirmado": false
-    },
-    {
-     "dorm": 3,
-     "m2": 112.5,
-     "precio_usd": 266032,
-     "precio_m2": 2365,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    2,
-    3
-   ],
-   "comentario": "Proyecto de Galeon en construcción (entrega feb-2027); flats de 2-3 dorm desde US$184,000 a ~$2,360-2,470/m2. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
-    "https://www.adondevivir.com/propiedades/proyecto/ememefin-velasco-astete-1080-surco-147154828.html",
-    "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-galeon-inmobiliaria-147108629"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true
-  },
-  {
-   "id": "precursores-525",
-   "name": "Precursores 525",
-   "dev": "Grupo Chacarilla Sur",
-   "addr": "Av. Precursores 525, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — últimos departamentos",
-   "entrega": "Noviembre 2026",
-   "lat": -12.116567517125498,
-   "lng": -76.98061927217682,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 203700,
-   "precio_hasta_usd": null,
-   "dorms": "2–3",
-   "m2": "83–227",
-   "wa": "949107186",
-   "web": "https://precursoreschacarillasur.com.pe/",
-   "img": "assets/img/precursores-525.jpg",
-   "planos": [
-    "assets/planos/precursores-525/precu-15.png",
-    "assets/planos/precursores-525/precu-17.png",
-    "assets/planos/precursores-525/precu-18.png",
-    "assets/planos/precursores-525/precu-duplex-603.jpg",
-    "assets/planos/precursores-525/precu-flat-101.jpg",
-    "assets/planos/precursores-525/precu-flat-102.jpg",
-    "assets/planos/precursores-525/precu-flat-x04-304.jpg"
-   ],
-   "brochure": "assets/brochures/Precu_Brochure_AC.pdf",
-   "typologies": [
-    {
-     "unidad": "101 (vista parque)",
-     "dorm": 3,
-     "m2": 199,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "X04/304",
-     "dorm": 2,
-     "m2": 84,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "Flat mínimo brochure",
-     "dorm": 2,
-     "m2": 83,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "varios",
-     "flat": true
-    },
-    {
-     "unidad": "Dúplex X02/202",
-     "dorm": 2,
-     "m2": 96,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "2",
-     "flat": false
-    },
-    {
-     "unidad": "Dúplex 603 (vista parque)",
-     "dorm": 3,
-     "m2": 227,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "6",
-     "flat": false
-    }
-   ],
-   "flats_summary": [],
-   "dorms_disponibles": [
-    2
-   ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega set-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://precursoreschacarillasur.com.pe/",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
-   },
-   "anuncios": null,
-   "mostrar": true
-  },
-  {
-   "id": "monte-carmelo-551",
-   "name": "Monte Carmelo 551",
-   "dev": "Balance Grupo Inmobiliario",
-   "addr": "Jr. Monte Carmelo 551, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "30 de noviembre de 2026",
-   "lat": -12.11457421674685,
-   "lng": -76.98530634199747,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 264147,
-   "precio_hasta_usd": 305118,
-   "dorms": "2–3",
-   "m2": "108–142",
-   "wa": "952496382",
-   "web": "https://balance.pe/proyecto/monte-carmelo-551/",
-   "img": "assets/img-f1/monte-carmelo-551/img-01.jpg",
-   "planos": [
-    "assets/planos/monte-carmelo-551/plano-01.jpg",
-    "assets/planos/monte-carmelo-551/plano-02.jpg",
-    "assets/planos/monte-carmelo-551/plano-03.jpg",
-    "assets/planos/monte-carmelo-551/plano-04.jpg",
-    "assets/planos/monte-carmelo-551/plano-05.png",
-    "assets/planos/monte-carmelo-551/plano-06.png",
-    "assets/planos/monte-carmelo-551/plano-07.png",
-    "assets/planos/monte-carmelo-551/plano-08.jpg",
-    "assets/planos/monte-carmelo-551/plano-09.jpg",
-    "assets/planos/monte-carmelo-551/plano-10.jpg",
-    "assets/planos/monte-carmelo-551/plano-11.jpg",
-    "assets/planos/monte-carmelo-551/plano-12.jpg",
-    "assets/planos/monte-carmelo-551/plano-13.jpg",
-    "assets/planos/monte-carmelo-551/plano-14.jpg",
-    "assets/planos/monte-carmelo-551/plano-15.jpg",
-    "assets/planos/monte-carmelo-551/plano-16.jpg",
-    "assets/planos/monte-carmelo-551/plano-17.jpg",
-    "assets/planos/monte-carmelo-551/plano-18.jpg"
-   ],
-   "brochure": "assets/brochures/Monte_Carmelo_551-brochure.pdf",
-   "typologies": [
-    {
-     "unidad": "Flat SS01 (semisótano)",
-     "dorm": 3,
-     "m2": 142.46,
-     "area_techada": 109.3,
-     "area_libre": 33.16,
-     "precio_soles": 1037400,
-     "precio_usd": 305118,
-     "precio_m2": 2142,
-     "precio_usd_neto": 288941,
-     "precio_m2_neto": 2028,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
-     "tipo": "flat",
-     "piso": "SS",
-     "flat": false,
-     "motivo_no_comparable": "semisotano / area libre"
-    },
-    {
-     "unidad": "Flat 301 (piso 3)",
-     "dorm": 3,
-     "m2": 108.03,
-     "area_techada": 108.03,
-     "area_libre": 0,
-     "precio_soles": 898100,
-     "precio_usd": 264147,
-     "precio_m2": 2445,
-     "precio_usd_neto": 247971,
-     "precio_m2_neto": 2295,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 202 (piso 2)",
-     "dorm": 3,
-     "m2": 108.0,
-     "area_techada": 108.0,
-     "area_libre": 0,
-     "precio_soles": 912200,
-     "precio_usd": 268294,
-     "precio_m2": 2484,
-     "precio_usd_neto": 252118,
-     "precio_m2_neto": 2334,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "Flat 303 (piso 3)",
-     "dorm": 3,
-     "m2": 108.5,
-     "area_techada": 108.5,
-     "area_libre": 0,
-     "precio_soles": 901800,
-     "precio_usd": 265235,
-     "precio_m2": 2445,
-     "precio_usd_neto": 249059,
-     "precio_m2_neto": 2295,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "unidad": "Flat típico promedio (202, 301 y 303)",
-     "dorm": 3,
-     "m2": 108.18,
-     "precio_usd": 249716,
-     "precio_m2": 2308,
-     "precio_usd_lista_promedio": 265892,
-     "precio_m2_lista": 2458,
-     "precio_soles_lista_promedio": 904033,
-     "precio_soles_neto_promedio": 849033,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
-     "comparable_confirmado": true,
-     "nota": "Promedio ponderado de flats típicos 202, 301 y 303. Precio neto descuenta 1 cochera de S/55,000; no incluye depósito."
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Balance Grupo Inmobiliario en el cuadrante, en obra con entrega dic-2026. Información actualizada por asesor (WhatsApp 02-jul-2026): precios enviados para SS01, 202, 301 y 303 incluyen 1 cochera; no incluyen depósito. Para comparación contra GEU se netea la cochera referencial de S/55,000.",
-   "amenidades": [],
-   "total_pisos": 5,
-   "fuentes": [
-    "https://balance.pe/proyecto/monte-carmelo-551/",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3722-monte-carmelo-551-santiago-de-surco-lima-lima-balance-grupo-inmobiliario",
-    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-carmelo-662",
-    "https://balance.pe/site/media/Brochure-Monte-carmelo-551-web.pdf",
-    "https://www.facebook.com/balance.inmobiliaria/posts/1191382622999771/"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3722-monte-carmelo-551-santiago-de-surco-lima-lima-balance-grupo-inmobiliario",
-    "bcp": "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-carmelo-662",
-    "adondevivir": "https://www.adondevivir.com/departamentos-en-venta-en-santiago-de-surco-con-duplex-y-frente-al-parque-con-3-dormitorios.html"
-   },
-   "anuncios": null,
-   "mostrar": true,
-   "cochera_status": "si",
-   "cochera_nota": "Precios enviados incluyen 1 cochera; no incluyen depósito. Para comparación neta se descuenta S/55,000 por cochera.",
-   "gallery": [
-    "assets/img-f1/monte-carmelo-551/img-01.jpg",
-    "assets/img-f1/monte-carmelo-551/img-02.png",
-    "assets/img-f1/monte-carmelo-551/img-03.png",
-    "assets/img-f1/monte-carmelo-551/img-04.png",
-    "assets/img-f1/monte-carmelo-551/img-05.png"
-   ],
-   "stock": {
-    "n": 6,
-    "label": "6 disponibles"
-   },
-   "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf"
   },
   {
    "id": "aura-sul",
@@ -1997,894 +311,70 @@ window.PORTAL_DATA = {
    "cochera_status": "no"
   },
   {
-   "id": "precursores-ii",
-   "name": "Precursores II",
-   "dev": "IPIROS",
-   "addr": "Av. de los Precursores 789, Chacarilla, Santiago de Surco, Lima",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Pronta entrega (jul-2026) — 3 unidades",
-   "entrega": "Julio 2026",
-   "lat": -12.11512850307942,
-   "lng": -76.97923436666099,
+   "id": "conde-ii",
+   "name": "Conde II",
+   "dev": "AYD Inmobiliaria",
+   "addr": "Calle Conde de la Vega del Ren 119, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En planos",
+   "estado_raw": "En planos (pre-construcción) — 10 unidades boutique",
+   "entrega": "Pendiente confirmar",
+   "lat": -12.1187009,
+   "lng": -76.982851,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 385000,
-   "precio_hasta_usd": 410000,
-   "dorms": "3",
-   "m2": "89–189",
-   "wa": "996898925",
-   "web": "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-ipiros-3608299",
-   "img": "assets/img-f1/precursores-ii/img-01.jpg",
-   "planos": [
-    "assets/planos/precursores-ii/plano-01.jpg",
-    "assets/planos/precursores-ii/plano-02.jpg",
-    "assets/planos/precursores-ii/plano-14.jpg",
-    "assets/planos/precursores-ii/plano-15.jpg",
-    "assets/planos/precursores-ii/plano-16.jpg",
-    "assets/planos/precursores-ii/lista-precios-1.jpg"
-   ],
-   "brochure": "assets/brochures/precursores-ii-brochure.pdf",
-   "typologies": [
-    {
-     "unidad": "201",
-     "dorm": 3,
-     "m2": 149.04,
-     "precio_usd": 355000,
-     "precio_m2": 2382,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "503",
-     "dorm": 3,
-     "m2": 149.35,
-     "precio_usd": 360000,
-     "precio_m2": 2410,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "601 dúplex",
-     "dorm": 3,
-     "m2": 189.02,
-     "precio_usd": 380000,
-     "precio_m2": 2010,
-     "tipo": "duplex",
-     "piso": "6"
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 3,
-     "m2": 149.04,
-     "precio_usd": 355000,
-     "precio_m2": 2382,
-     "comparable_confirmado": true
-    }
-   ],
-   "dorms_disponibles": [
-    2,
-    3
-   ],
-   "comentario": "Sobre Av. de los Precursores (borde). 19 deptos de 3 dorm; quedan 3 unidades (2 flats + dúplex con terraza y piscina). Precio incluye 2 cocheras paralelas y depósito; valores por m² netos de cochera. Entrega julio 2026.",
-   "amenidades": [],
-   "total_pisos": 7,
-   "fuentes": [
-    "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-ipiros-3608299",
-    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-precursores-ii-650",
-    "https://www.adondevivir.com/propiedades/proyecto/ememefin-en-construccion-precursores-ii-54284387.html"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/precursores-ii/img-01.jpg",
-    "assets/img-f1/precursores-ii/img-02.jpg",
-    "assets/img-f1/precursores-ii/img-03.jpg",
-    "assets/img-f1/precursores-ii/img-04.jpg"
-   ],
-   "cochera_status": "si",
-   "stock": {
-    "n": 3,
-    "label": "3 quedan"
-   },
-   "lista_precios": "assets/brochures/precursores-ii-lista-precios.pdf"
-  },
-  {
-   "id": "dmont-dicon",
-   "name": "D'Mont",
-   "dev": "Grupo Dicon",
-   "addr": "Jirón Monte Blanco 256, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Última unidad (D-101, piso 1)",
-   "entrega": "Setiembre 2026",
-   "lat": -12.11343,
-   "lng": -76.985402,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 237206,
-   "precio_hasta_usd": 237206,
-   "dorms": "3",
-   "m2": "116–116",
-   "wa": "998113990",
-   "web": "https://grupodicon.com.pe/proyecto/dmont-surco-chacarilla/",
-   "img": "assets/img-f1/dmont-dicon/img-01.jpg",
-   "planos": [
-    "assets/planos/dmont-dicon/plano-d101-1.jpg"
-   ],
-   "brochure": "assets/brochures/dmont-dicon-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "D-101",
-     "dorm": 3,
-     "m2": 115.71,
-     "precio_usd": 237206,
-     "precio_m2": 2050,
-     "tipo": "flat",
-     "piso": "1"
-    }
-   ],
-   "flats_summary": [],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Última unidad: D-101 (piso 1, 115.71 m², 3 dorm) US$237,206; cochera simple aparte US$14,000. Entrega setiembre 2026.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://grupodicon.com.pe/proyecto/dmont-surco-chacarilla/",
-    "https://grupodicon.com.pe/site/media/Book-Dmont-Web_compressed.pdf",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3750-dmont-monte-blanco-256-santiago-de-surco-lima-lima-grupo-dicon"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/dmont-dicon/img-01.jpg",
-    "assets/img-f1/dmont-dicon/img-02.jpg",
-    "assets/img-f1/dmont-dicon/img-03.jpg",
-    "assets/img-f1/dmont-dicon/img-04.jpg",
-    "assets/img-f1/dmont-dicon/img-05.jpg"
-   ],
-   "cochera_status": "no",
-   "stock": {
-    "n": 1,
-    "label": "Última unidad"
-   }
-  },
-  {
-   "id": "hana",
-   "name": "HANA",
-   "dev": "Odima Inmobiliaria",
-   "addr": "Jr. Conde de la Vega del Ren 149, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata — ÚLTIMA unidad",
-   "entrega": "Entrega inmediata (últimas unidades)",
-   "lat": -12.117556047760015,
-   "lng": -76.983405589272,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 264706,
-   "precio_hasta_usd": 264706,
-   "dorms": "2–4",
-   "m2": "108–209",
-   "wa": "972920864",
-   "web": "https://odima.pe/proyecto/hana/",
-   "img": "assets/planos/hana/hana-17.png",
-   "planos": [
-    "assets/planos/hana/hana-17.png",
-    "assets/planos/hana/hana-18.png",
-    "assets/planos/hana/hana-19.png",
-    "assets/planos/hana/hana-dpto102-plano.png",
-    "assets/planos/hana/hana-planta-1piso.png",
-    "assets/planos/hana/plano-102-vigente.jpg"
-   ],
-   "brochure": "assets/brochures/HANA-Odima-brochure.pdf",
-   "typologies": [
-    {
-     "unidad": "Tipo 102",
-     "dorm": 3,
-     "m2": 96.31,
-     "precio_usd": 249706,
-     "precio_m2": 2593,
-     "tipo": "flat",
-     "piso": "1"
-    }
-   ],
-   "flats_summary": [],
-   "dorms_disponibles": [
-    2
-   ],
-   "comentario": "Última unidad disponible: Dpto Tipo 102 (96.31 m², 3 dorm, primer piso elevado, vista externa) — S/900,000 con cochera incluida, precio final. Certificación EDGE.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://odima.pe/proyecto/hana/",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2663-hana-chacarilla-santiago-de-surco-lima-lima-odima-inmobiliaria",
-    "https://odima.pe/wp-content/uploads/2026/02/HANA-BC_compressed.pdf",
-    "https://odima.pe/wp-content/uploads/2024/02/HANA_DIGITAL-VERTICAL-FINAL.pdf"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2663-hana-chacarilla-santiago-de-surco-lima-lima-odima-inmobiliaria"
-   },
-   "anuncios": null,
-   "mostrar": true,
-   "cochera_status": "si",
-   "stock": {
-    "n": 1,
-    "label": "Última unidad"
-   }
-  },
-  {
-   "id": "parque-monte-carmelo",
-   "name": "Parque Monte Carmelo",
-   "dev": "EE Inmobiliaria",
-   "addr": "Jr. Monte Carmelo 341, Chacarilla del Estanque, Santiago de Surco (frente Parque Doig)",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "19 de noviembre de 2027",
-   "lat": -12.116213971563159,
-   "lng": -76.98519706005884,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 189412,
-   "precio_hasta_usd": 393382,
-   "dorms": "1–4",
-   "m2": "85–208",
-   "wa": "988609572",
-   "web": "https://eeinmobiliaria.com/proyectos/parque-monte-carmelo/",
-   "img": "assets/img/parque-monte-carmelo.png",
-   "planos": [
-    "assets/planos/parque-monte-carmelo/dpto-101.png",
-    "assets/planos/parque-monte-carmelo/dpto-102.png",
-    "assets/planos/parque-monte-carmelo/dpto-104.png",
-    "assets/planos/parque-monte-carmelo/tipico-01a.png",
-    "assets/planos/parque-monte-carmelo/tipico-01b.png",
-    "assets/planos/parque-monte-carmelo/tipico-03.png",
-    "assets/planos/parque-monte-carmelo/tipico-04.png",
-    "assets/planos/parque-monte-carmelo/tipico-05.png",
-    "assets/planos/parque-monte-carmelo/duplex-701.png",
-    "assets/planos/parque-monte-carmelo/duplex-702.png",
-    "assets/planos/parque-monte-carmelo/duplex-703.png",
-    "assets/planos/parque-monte-carmelo/duplex-704.png",
-    "assets/planos/parque-monte-carmelo/duplex-705.png"
-   ],
-   "brochure": "assets/brochures/BROCHURE_PARQUE_MONTE_CARMELO_2026-JUNIO.pdf",
-   "typologies": [
-    {
-     "unidad": "Típico 04 (204-604)",
-     "dorm": 3,
-     "m2": 85.16,
-     "precio_usd": 197941,
-     "precio_m2": 2324,
-     "tipo": "flat",
-     "piso": "2-6",
-     "flat": true,
-     "area_techada_m2": 85.16,
-     "area_total_m2": 85.16,
-     "unidades_count": 5,
-     "comparable_confirmado": true,
-     "precio_soles": 673000
-    },
-    {
-     "unidad": "Típico 05 (205-605)",
-     "dorm": 3,
-     "m2": 86.24,
-     "precio_usd": 200588,
-     "precio_m2": 2326,
-     "tipo": "flat",
-     "piso": "2-6",
-     "flat": true,
-     "area_techada_m2": 86.24,
-     "area_total_m2": 86.24,
-     "unidades_count": 5,
-     "comparable_confirmado": true,
-     "precio_soles": 682000
-    },
-    {
-     "unidad": "Típico 03 (203-603)",
-     "dorm": 3,
-     "m2": 103.91,
-     "precio_usd": 258235,
-     "precio_m2": 2485,
-     "tipo": "flat",
-     "piso": "2-6",
-     "flat": true,
-     "area_techada_m2": 103.91,
-     "area_total_m2": 103.91,
-     "unidades_count": 5,
-     "comparable_confirmado": true,
-     "precio_soles": 878000
-    },
-    {
-     "unidad": "Típico 01-A (201)/01-B (301,501)",
-     "dorm": 3,
-     "m2": 103.46,
-     "precio_usd": 257059,
-     "precio_m2": 2485,
-     "tipo": "flat",
-     "piso": "2,3,5",
-     "flat": true,
-     "area_total_m2": 103.46,
-     "unidades_count": 3,
-     "comparable_confirmado": true,
-     "precio_soles": 874000
-    },
-    {
-     "unidad": "101",
-     "dorm": 3,
-     "m2": 127.87,
-     "precio_usd": 282941,
-     "precio_m2": 2213,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false,
-     "area_techada_m2": 99.97,
-     "area_total_m2": 127.87,
-     "motivo_no_comparable": "piso 1",
-     "precio_soles": 962000
-    },
-    {
-     "unidad": "102",
-     "dorm": 3,
-     "m2": 140.86,
-     "precio_usd": 320882,
-     "precio_m2": 2278,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false,
-     "area_techada_m2": 117.47,
-     "area_total_m2": 140.86,
-     "motivo_no_comparable": "piso 1",
-     "precio_soles": 1091000
-    },
-    {
-     "unidad": "Dúplex 702 (DUO/flex)",
-     "dorm": 1,
-     "m2": 128.46,
-     "precio_usd": 244706,
-     "precio_m2": 1905,
-     "tipo": "duplex",
-     "piso": "7-8",
-     "flat": false,
-     "area_techada_m2": 84.25,
-     "area_total_m2": 128.46,
-     "motivo_no_comparable": "duplex"
-    },
-    {
-     "unidad": "Dúplex 704",
-     "dorm": 3,
-     "m2": 168.7,
-     "precio_usd": 319706,
-     "precio_m2": 1895,
-     "tipo": "duplex",
-     "piso": "7-8",
-     "flat": false,
-     "area_techada_m2": 109.19,
-     "area_total_m2": 168.7,
-     "motivo_no_comparable": "duplex",
-     "precio_soles": 1087000
-    },
-    {
-     "unidad": "Dúplex 705",
-     "dorm": 3,
-     "m2": 169.79,
-     "precio_usd": 311471,
-     "precio_m2": 1834,
-     "tipo": "duplex",
-     "piso": "7-8",
-     "flat": false,
-     "area_techada_m2": 110.28,
-     "area_total_m2": 169.79,
-     "motivo_no_comparable": "duplex"
-    },
-    {
-     "unidad": "Dúplex 701",
-     "dorm": 4,
-     "m2": 207.35,
-     "precio_usd": 405000,
-     "precio_m2": 1953,
-     "tipo": "duplex",
-     "piso": "7-8",
-     "flat": false,
-     "area_techada_m2": 133.15,
-     "area_total_m2": 207.35,
-     "motivo_no_comparable": "duplex",
-     "precio_soles": 1377000
-    },
-    {
-     "unidad": "Dúplex 703",
-     "dorm": 4,
-     "m2": 208.31,
-     "precio_usd": 407059,
-     "precio_m2": 1954,
-     "tipo": "duplex",
-     "piso": "7-8",
-     "flat": false,
-     "area_techada_m2": 133.78,
-     "area_total_m2": 208.31,
-     "motivo_no_comparable": "duplex",
-     "precio_soles": 1384000
-    }
-   ],
-   "flats_summary": [
-    {
-     "unidad": "Flat típico promedio (18 flats T01/T03/T04/T05)",
-     "dorm": 3,
-     "m2": 93.72,
-     "precio_usd": 225278,
-     "precio_m2": 2396,
-     "comparable_confirmado": true,
-     "cochera_incluida": "No (confirmado con asesor 2026-07-02): estacionamiento aparte S/48,000–99,000, algunos con depósito",
-     "nota": "Promedio ponderado por 18 flats típicos (T01/T03/T04/T05), precios de Nexo Inmobiliario 2026-07-07 (T04 S/673,000·85.16m², T05 S/682,000·86.24m², T03 S/878,000·103.91m², T01 S/874,000·103.46m²). Estacionamiento NO incluido (asesor 2026-07-02) → precio ya neto sin cochera."
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m².",
-   "amenidades": [],
-   "total_pisos": 7,
-   "fuentes": [
-    "https://eeinmobiliaria.com/proyectos/parque-monte-carmelo/",
-    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152",
-    "adondevivir": "https://www.adondevivir.com/propiedades/dpto-frente-a-parque-en-monte-carmelo-chacarilla-52520180.html"
-   },
-   "anuncios": {
-    "imgs": [
-     "assets/ads/parque-monte-carmelo-1.jpg"
-    ],
-    "fb_ids": [
-     "2066156823936800",
-     "1063487949426321"
-    ],
-    "copy": "“El edificio que soñabas en Surco ya es realidad. Jr. Monte Carmelo 341. Depas desde 85 m², precio desde S/644,000.” (EN LANZAMIENTO · 2,3 y 4 dorm)"
-   },
-   "mostrar": true,
-   "gallery": [
-    "assets/img/parque-monte-carmelo.png",
-    "assets/img/parque-monte-carmelo.jpg",
-    "assets/ads/parque-monte-carmelo-1.jpg"
-   ],
-   "stock": {
-    "n": 24,
-    "label": "24 disponibles"
-   },
-   "cochera_status": "no"
-  },
-  {
-   "id": "terraverde",
-   "name": "Terraverde",
-   "dev": "ByB Bienes Raíces (Moving to Lima) — contacto Carlos Fernández",
-   "addr": "Calle Monte Carmelo N°16X, Dpto. 101, Urb. Chacarilla del Estanque, Santiago de Surco, Lima (referencias cruzadas indican numeración Monte Carmelo 167)",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata",
-   "entrega": "Entregado mar-2021 — unidades a estrenar vía broker (ByB, Carlos Fernández)",
-   "lat": -12.117662111777141,
-   "lng": -76.98515196061585,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 263000,
-   "precio_hasta_usd": 441000,
-   "dorms": "3",
-   "m2": "120–243",
-   "wa": null,
-   "web": "https://www.infocasas.com.pe/venta-surco-preciosos-departamentos-en-proyecto-en-chacarilla-del-estanque/186999982",
-   "img": "assets/img-f1/terraverde/img-01.jpg",
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "3–4",
+   "m2": "126–254",
+   "wa": "994363232",
+   "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
+   "img": null,
    "planos": [],
    "brochure": null,
    "typologies": [
     {
-     "unidad": "Flat 3 dorm (Dpto. 101, 1er piso)",
+     "unidad": "Tipo 201/202/401",
      "dorm": 3,
-     "m2": 156,
-     "precio_usd": 322000,
-     "precio_m2": 2064,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    }
-   ],
-   "flats_summary": [],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Unidades a estrenar en venta vía broker (ByB Bienes Raíces).",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://www.infocasas.com.pe/venta-surco-preciosos-departamentos-en-proyecto-en-chacarilla-del-estanque/186999982",
-    "https://urbania.pe/inmueble/proyecto-terraverde-inmobiliaria-exklusiv-santiago-de-surco-chacarilla-del-estanque-inmobiliaria-exklusiv-sac-empresa-8004824",
-    "https://www.infocasas.com.pe/inmobiliarias/870724-byb-bienes-raices-moving-to-lima/propiedades",
-    "https://www.datosperu.org/empresa-inmobiliaria-exklusiv-sac-20600107055.php"
-   ],
-   "portales": {},
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/terraverde/img-01.jpg"
-   ],
-   "cochera_status": "nd",
-   "stock": {
-    "n": 1,
-    "label": "A estrenar (broker)"
-   }
-  },
-  {
-   "id": "monte-sierpe",
-   "name": "Monte Sierpe",
-   "dev": "Make Inmobiliaria",
-   "addr": "Calle Monte Sierpe 106, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata (jun-2026)",
-   "entrega": "Entrega inmediata (según web Make, jun-2026)",
-   "lat": -12.112716,
-   "lng": -76.986573,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 248824,
-   "precio_hasta_usd": 248533,
-   "dorms": "2–3",
-   "m2": "103–107",
-   "wa": "943729552",
-   "web": "https://makeinmobiliaria.pe/proyecto/monte-sierpe/",
-   "img": "assets/img-f1/monte-sierpe/img-01.jpg",
-   "planos": [
-    "assets/planos/monte-sierpe/sierpe-X01-2d-107m2.png",
-    "assets/planos/monte-sierpe/sierpe-X02-2d-107m2.png",
-    "assets/planos/monte-sierpe/sierpe-X05-2d-105m2.png",
-    "assets/planos/monte-sierpe/sierpe-x102-2d-103m2.png",
-    "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png"
-   ],
-   "brochure": "assets/brochures/MonteSierpe-Make-brochure.pdf",
-   "typologies": [
-    {
-     "unidad": "x102 (Piso 1)",
-     "dorm": 2,
-     "m2": 103.9,
-     "precio_usd": 274118,
-     "precio_m2": 2638,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "x107 (Piso 1)",
-     "dorm": 2,
-     "m2": 103.4,
-     "precio_usd": 248824,
-     "precio_m2": 2406,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "X01 (Pisos 2-3, típico)",
-     "dorm": 2,
-     "m2": 107.4,
-     "precio_usd": 274118,
-     "precio_m2": 2552,
-     "tipo": "flat",
-     "piso": "2-3",
-     "flat": true
-    },
-    {
-     "unidad": "X02 (Pisos 2-3, típico)",
-     "dorm": 2,
-     "m2": 107.4,
-     "precio_usd": 274118,
-     "precio_m2": 2552,
-     "tipo": "flat",
-     "piso": "2-3",
-     "flat": true
-    },
-    {
-     "unidad": "X05 (Piso 6)",
-     "dorm": 2,
-     "m2": 105.3,
-     "precio_usd": 263529,
-     "precio_m2": 2503,
-     "tipo": "flat",
-     "piso": "6",
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 2,
-     "m2": 105.3,
-     "precio_usd": 263529,
-     "precio_m2": 2503,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    2
-   ],
-   "comentario": "Proyecto de Make Inmobiliaria con entrega inmediata; flats de 2-3 dorm (103-107 m2) desde US$200,000. Su precio por m2 (~$2,300) queda por debajo de GEU, pero exige un ticket de entrada bastante mayor. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
-   "amenidades": [],
-   "total_pisos": 7,
-   "fuentes": [
-    "https://makeinmobiliaria.pe/proyecto/monte-sierpe/",
-    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/monte-sierpe-3477",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria",
-    "https://www.adondevivir.com/departamentos-en-venta-en-chacarilla-del-estanque-zona-de-santiago-de-surco-a-estrenar.html",
-    "https://litpropiedades.com/propiedad/departamento/tu-hogar-ideal-en-surco-donde-empiezan-tus-mejores-momentos"
-   ],
-   "portales": {
-    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria"
-   },
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/monte-sierpe/img-01.jpg",
-    "assets/img-f1/monte-sierpe/img-02.jpg",
-    "assets/img-f1/monte-sierpe/img-03.jpg",
-    "assets/img-f1/monte-sierpe/img-04.jpg",
-    "assets/img-f1/monte-sierpe/img-05.jpg"
-   ],
-   "stock": {
-    "n": 6,
-    "label": "6 disponibles"
-   }
-  },
-  {
-   "id": "monte-real-265",
-   "name": "Monte Real",
-   "dev": "EE Inmobiliaria (Espacios y Estructuras Inmobiliaria S.A.C., RUC 20552655932)",
-   "addr": "Jr. Monte Real 265 (antes N° 217), Urb. Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata",
-   "entrega": "Entrega inmediata (proyecto de estreno; en Nexo figura fecha de entrega may-2024)",
-   "lat": -12.111953752823906,
-   "lng": -76.9849292166872,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 311765,
-   "precio_hasta_usd": null,
-   "dorms": "3",
-   "m2": "167.82",
-   "wa": "999278271",
-   "web": "https://eeinmobiliaria.com/proyectos/monte-real/",
-   "img": "assets/img-f1/monte-real-265/img-01.jpg",
-   "planos": [
-    "assets/planos/monte-real-265/plano-01.jpg"
-   ],
-   "brochure": "assets/brochures/monte-real-265-f1.pdf",
-   "typologies": [
-    {
-     "unidad": "Modelo 103 (ultima unidad disponible)",
-     "dorm": 3,
-     "m2": 167.82,
-     "precio_usd": 311765,
-     "precio_m2": 1858,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "Flat tipico 2 al 6 (referencial agotado / sin precio vigente)",
-     "dorm": 3,
-     "m2": 138,
+     "m2": 126,
      "precio_usd": null,
      "precio_m2": null,
      "tipo": "flat",
-     "piso": "2 al 6",
+     "piso": null,
      "flat": true
+    },
+    {
+     "unidad": "Tipologías 4d",
+     "dorm": 4,
+     "m2": 254,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": null,
+     "flat": false
     }
    ],
    "flats_summary": [],
-   "dorms_disponibles": [],
-   "comentario": "Jr. Monte Real 265 (antes publicitado como N° 217). Proyecto entregado con última unidad disponible (Dpto 103, 167.82 m²).",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://eeinmobiliaria.com/proyectos/monte-real/",
-    "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2728-monte-real-santiago-de-surco-lima-lima-ee-inmobiliaria",
-    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-real-286",
-    "https://www.tiktok.com/@eeinmobiliaria/video/7332535434368552198",
-    "https://www.tiktok.com/@eeinmobiliaria/video/7403745449477295366",
-    "https://tangible.pe/blog/oferta-inmobiliaria/departamentos-en-surco/departamentos-en-venta-en-chacarilla",
-    "https://eeinmobiliaria.com/wp-content/uploads/2025/02/BROCHURE_MONTE_REAL_2025-1.pdf",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2728-monte-real-217-santiago-de-surco-lima-lima-ee-inmobiliaria"
+   "dorms_disponibles": [
+    3,
+    4
    ],
-   "portales": {},
+   "comentario": "Único competidor directo en preventa: 10 residencias boutique en 5 pisos. AYD no publica precios (solo cotización directa). Dirección con numeración por confirmar.",
+   "fuentes": [
+    "https://inmobiliariaayd.com/proyecto/conde-ii/",
+    "https://inmobiliariaayd.com"
+   ],
    "anuncios": null,
    "mostrar": true,
-   "gallery": [
-    "assets/img-f1/monte-real-265/img-01.jpg",
-    "assets/img-f1/monte-real-265/img-02.jpg",
-    "assets/img-f1/monte-real-265/img-03.jpg",
-    "assets/img-f1/monte-real-265/img-04.jpg",
-    "assets/img-f1/monte-real-265/img-05.jpg"
-   ],
+   "amenidades": [],
+   "total_pisos": 5,
+   "portales": {},
    "cochera_status": "nd",
    "stock": {
-    "n": 1,
-    "label": "Última unidad"
-   }
-  },
-  {
-   "id": "santorini",
-   "name": "Santorini",
-   "dev": "Morgenstern Inmobiliaria",
-   "addr": "Calle Monteflor 693, esquina con Calle Montereal, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque Miró Quesada)",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
-   "entrega": "Marzo 2027",
-   "lat": -12.111757041644427,
-   "lng": -76.98512695370027,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 286450,
-   "precio_hasta_usd": 611000,
-   "dorms": "1–4",
-   "m2": "123–366",
-   "wa": "999024346",
-   "web": "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/",
-   "img": "assets/img-f1/santorini/img-01.jpg",
-   "planos": [
-    "assets/planos/santorini/plano-01.png",
-    "assets/planos/santorini/plano-02.png",
-    "assets/planos/santorini/plano-03.jpg",
-    "assets/planos/santorini/plano-04.jpg",
-    "assets/planos/santorini/plano-05.jpg",
-    "assets/planos/santorini/plano-06.png",
-    "assets/planos/santorini/plano-07.jpg",
-    "assets/planos/santorini/plano-08.png",
-    "assets/planos/santorini/plano-09.png",
-    "assets/planos/santorini/plano-10.png",
-    "assets/planos/santorini/plano-11.png",
-    "assets/planos/santorini/plano-12.png",
-    "assets/planos/santorini/plano-a-12.jpg",
-    "assets/planos/santorini/plano-a-13.jpg",
-    "assets/planos/santorini/plano-a-14.jpg",
-    "assets/planos/santorini/plano-b-16.jpg",
-    "assets/planos/santorini/plano-b-17.jpg",
-    "assets/planos/santorini/plano-b-18.jpg",
-    "assets/planos/santorini/plano-b-19.jpg",
-    "assets/planos/santorini/plano-b-20.jpg"
-   ],
-   "brochure": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
-   "typologies": [
-    {
-     "unidad": "201B",
-     "dorm": 2,
-     "m2": 125.0,
-     "precio_usd": 272500,
-     "precio_m2": 2180,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "301B",
-     "dorm": 2,
-     "m2": 125.0,
-     "precio_usd": 272500,
-     "precio_m2": 2180,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "501B",
-     "dorm": 2,
-     "m2": 123.0,
-     "precio_usd": 271450,
-     "precio_m2": 2207,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "202B",
-     "dorm": 2,
-     "m2": 130.5,
-     "precio_usd": 287000,
-     "precio_m2": 2199,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "502B",
-     "dorm": 2,
-     "m2": 129.0,
-     "precio_usd": 283000,
-     "precio_m2": 2194,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "501A",
-     "dorm": 3,
-     "m2": 155.0,
-     "precio_usd": 362000,
-     "precio_m2": 2335,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "301A",
-     "dorm": 3,
-     "m2": 159.8,
-     "precio_usd": 372000,
-     "precio_m2": 2328,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "602A PH",
-     "dorm": 3,
-     "m2": 303,
-     "precio_usd": 578000,
-     "precio_m2": 1908,
-     "tipo": "duplex",
-     "piso": "6"
-    },
-    {
-     "unidad": "101",
-     "dorm": 1,
-     "m2": 199,
-     "precio_usd": 302000,
-     "precio_m2": 1518,
-     "tipo": "flat",
-     "piso": "1"
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 2,
-     "m2": 125.0,
-     "precio_usd": 272500,
-     "precio_m2": 2180,
-     "comparable_confirmado": true
-    },
-    {
-     "dorm": 3,
-     "m2": 159.8,
-     "precio_usd": 372000,
-     "precio_m2": 2328,
-     "comparable_confirmado": true
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "23 deptos frente a parque; >50% vendido, 9 disponibles. El brochure publica cada unidad con precio con 1 o 2 estacionamientos; valores por m² netos de estacionamiento. Entrega marzo 2027.",
-   "amenidades": [],
-   "total_pisos": 6,
-   "fuentes": [
-    "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/",
-    "https://urbania.pe/inmueble/proyecto/ememhvin-proyecto-proyecto-horizontal-vertical-en-chacarilla-del-estanque-santiago-de-surco-chacarilla-del-estanque-morgenstern-inmobiliaria-145105295"
-   ],
-   "portales": {
-    "urbania": "https://urbania.pe/inmueble/proyecto/ememhvin-proyecto-proyecto-horizontal-vertical-en-chacarilla-del-estanque-santiago-de-surco-chacarilla-del-estanque-morgenstern-inmobiliaria-145105295"
+    "n": 10,
+    "label": "En planos · 10 und."
    },
-   "anuncios": null,
-   "mostrar": true,
-   "gallery": [
-    "assets/img-f1/santorini/img-01.jpg",
-    "assets/img-f1/santorini/img-02.jpg",
-    "assets/img-f1/santorini/img-03.jpeg",
-    "assets/img-f1/santorini/img-04.jpg",
-    "assets/img-f1/santorini/img-05.png"
-   ],
-   "cochera_status": "si",
-   "stock": {
-    "n": 9,
-    "label": "9 quedan"
-   }
+   "geo_aprox": true,
+   "geo_nota": "Extremo sur de la Calle Conde de la Vega del Ren: la numeración de esa calle no está mapeada en OSM."
   },
   {
    "id": "conde-de-la-vega-460",
@@ -3426,6 +916,2741 @@ window.PORTAL_DATA = {
     "label": "9 flats típicos · 12 con precio"
    },
    "lista_precios": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf"
+  },
+  {
+   "id": "dmont-dicon",
+   "name": "D'Mont",
+   "dev": "Grupo Dicon",
+   "addr": "Jirón Monte Blanco 256, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Última unidad (D-101, piso 1)",
+   "entrega": "Setiembre 2026",
+   "lat": -12.11343,
+   "lng": -76.985402,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 237206,
+   "precio_hasta_usd": 237206,
+   "dorms": "3",
+   "m2": "116–116",
+   "wa": "998113990",
+   "web": "https://grupodicon.com.pe/proyecto/dmont-surco-chacarilla/",
+   "img": "assets/img-f1/dmont-dicon/img-01.jpg",
+   "planos": [
+    "assets/planos/dmont-dicon/plano-d101-1.jpg"
+   ],
+   "brochure": "assets/brochures/dmont-dicon-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "D-101",
+     "dorm": 3,
+     "m2": 115.71,
+     "precio_usd": 237206,
+     "precio_m2": 2050,
+     "tipo": "flat",
+     "piso": "1"
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Última unidad: D-101 (piso 1, 115.71 m², 3 dorm) US$237,206; cochera simple aparte US$14,000. Entrega setiembre 2026.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://grupodicon.com.pe/proyecto/dmont-surco-chacarilla/",
+    "https://grupodicon.com.pe/site/media/Book-Dmont-Web_compressed.pdf",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3750-dmont-monte-blanco-256-santiago-de-surco-lima-lima-grupo-dicon"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/dmont-dicon/img-01.jpg",
+    "assets/img-f1/dmont-dicon/img-02.jpg",
+    "assets/img-f1/dmont-dicon/img-03.jpg",
+    "assets/img-f1/dmont-dicon/img-04.jpg",
+    "assets/img-f1/dmont-dicon/img-05.jpg"
+   ],
+   "cochera_status": "no",
+   "stock": {
+    "n": 1,
+    "label": "Última unidad"
+   }
+  },
+  {
+   "id": "dmont-2",
+   "name": "D'Mont 2",
+   "dev": "Grupo Dicon",
+   "addr": "Jr. Monte Real 422, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "En construcción",
+   "lat": -12.111703553764334,
+   "lng": -76.98553394529374,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 181190,
+   "precio_hasta_usd": null,
+   "dorms": "3",
+   "m2": "82–242",
+   "wa": "933209656",
+   "web": "https://grupodicon.com.pe/proyecto/dmont-2/",
+   "img": "assets/img-f1/dmont-2/img-01.jpg",
+   "planos": [
+    "assets/planos/dmont-2/plano-01.jpg",
+    "assets/planos/dmont-2/plano-02.jpg",
+    "assets/planos/dmont-2/plano-03.jpg",
+    "assets/planos/dmont-2/plano-04.jpg",
+    "assets/planos/dmont-2/plano-05.jpg"
+   ],
+   "brochure": "assets/brochures/dmont-2-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "Flat 101",
+     "dorm": 3,
+     "m2": 122.2,
+     "precio_usd": 264210,
+     "precio_m2": 2162,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "Flat 201",
+     "dorm": 3,
+     "m2": 121.6,
+     "precio_usd": 263064,
+     "precio_m2": 2163,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 202",
+     "dorm": 3,
+     "m2": 121.8,
+     "precio_usd": 263453,
+     "precio_m2": 2163,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 302",
+     "dorm": 3,
+     "m2": 123.5,
+     "precio_usd": 265184,
+     "precio_m2": 2147,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 304",
+     "dorm": 3,
+     "m2": 84.5,
+     "precio_usd": 183328,
+     "precio_m2": 2170,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 401",
+     "dorm": 3,
+     "m2": 121.6,
+     "precio_usd": 263064,
+     "precio_m2": 2163,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 402",
+     "dorm": 3,
+     "m2": 121.8,
+     "precio_usd": 263453,
+     "precio_m2": 2163,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 501",
+     "dorm": 3,
+     "m2": 123.3,
+     "precio_usd": 264794,
+     "precio_m2": 2148,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 502",
+     "dorm": 3,
+     "m2": 123.5,
+     "precio_usd": 265184,
+     "precio_m2": 2147,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 504",
+     "dorm": 3,
+     "m2": 84.5,
+     "precio_usd": 181190,
+     "precio_m2": 2144,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "Dúplex 603",
+     "dorm": null,
+     "m2": 157.3,
+     "precio_usd": 299558,
+     "precio_m2": 1904,
+     "tipo": "duplex",
+     "piso": "6",
+     "flat": false
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 84.5,
+     "precio_usd": 181190,
+     "precio_m2": 2144,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Grupo Dicon publica lista de precios por unidad en su web oficial (11 unidades, 81–243 m²). Falta confirmar con el asesor si los precios incluyen cochera y cuántas unidades quedan disponibles; en los otros proyectos de Dicon la cochera se vende aparte.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://grupodicon.com.pe/proyecto/dmont-2/",
+    "https://grupodicon.com.pe/site/media/Brochure-web_compressed.pdf"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/dmont-2/img-01.jpg",
+    "assets/img-f1/dmont-2/img-02.jpg",
+    "assets/img-f1/dmont-2/img-03.jpg",
+    "assets/img-f1/dmont-2/img-04.jpg",
+    "assets/img-f1/dmont-2/img-05.jpg"
+   ],
+   "cochera_status": "nd"
+  },
+  {
+   "id": "estelar-1080",
+   "name": "Estelar 1080",
+   "dev": "Galeon",
+   "addr": "Av. Velasco Astete 1080, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "~Febrero 2027",
+   "lat": -12.112102950138416,
+   "lng": -76.98446300308579,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 202941,
+   "precio_hasta_usd": 266032,
+   "dorms": "2–3",
+   "m2": "80–224",
+   "wa": "976367206",
+   "web": "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
+   "img": "assets/planos/estelar-1080/estelar-12.png",
+   "planos": [
+    "assets/planos/estelar-1080/estelar-12.png",
+    "assets/planos/estelar-1080/estelar-14.png",
+    "assets/planos/estelar-1080/estelar-17.png",
+    "assets/planos/estelar-1080/estelar-brochure-p1.jpg",
+    "assets/planos/estelar-1080/estelar-captura.png"
+   ],
+   "brochure": "assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf",
+   "typologies": [
+    {
+     "unidad": "Flat 2 dorm (típico)",
+     "dorm": 2,
+     "m2": 80,
+     "precio_usd": 197407,
+     "precio_m2": 2467,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 3 dorm + 1 estac.",
+     "dorm": 3,
+     "m2": 112.5,
+     "precio_usd": 266032,
+     "precio_m2": 2364,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 2,
+     "m2": 80,
+     "precio_usd": 197407,
+     "precio_m2": 2468,
+     "comparable_confirmado": false
+    },
+    {
+     "dorm": 3,
+     "m2": 112.5,
+     "precio_usd": 266032,
+     "precio_m2": 2365,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
+   "comentario": "Proyecto de Galeon en construcción (entrega feb-2027); flats de 2-3 dorm desde US$184,000 a ~$2,360-2,470/m2. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
+    "https://www.adondevivir.com/propiedades/proyecto/ememefin-velasco-astete-1080-surco-147154828.html",
+    "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-galeon-inmobiliaria-147108629"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true
+  },
+  {
+   "id": "floresta-living-444",
+   "name": "Floresta Living 444",
+   "dev": "EE Inmobiliaria",
+   "addr": "Av. de la Floresta 442, Urb. Chacarilla del Estanque, Santiago de Surco (borde Oeste, dentro de la urbanizacion).",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "Diciembre 2026",
+   "lat": -12.116010161531724,
+   "lng": -76.98720446798781,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 196471,
+   "precio_hasta_usd": 319733,
+   "dorms": "2–3",
+   "m2": "85–197.66",
+   "wa": "988609572",
+   "web": "https://eeinmobiliaria.com/proyectos/",
+   "img": "assets/img-f1/floresta-living-444/img-01.jpg",
+   "planos": [
+    "assets/planos/floresta-living-444/plano-01.jpg",
+    "assets/planos/floresta-living-444/plano-02.jpg",
+    "assets/planos/floresta-living-444/plano-03.jpg",
+    "assets/planos/floresta-living-444/plano-04.jpg"
+   ],
+   "brochure": "assets/brochures/floresta-living-444-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "Tipo 03",
+     "dorm": 3,
+     "m2": 85,
+     "precio_usd": 196471,
+     "precio_m2": 2311,
+     "tipo": "flat",
+     "piso": "3-4",
+     "flat": true
+    },
+    {
+     "unidad": "Dpto. 101",
+     "dorm": 3,
+     "m2": 119.9,
+     "precio_usd": 257647,
+     "precio_m2": 2149,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "Dpto. 102",
+     "dorm": 3,
+     "m2": 197.7,
+     "precio_usd": 352647,
+     "precio_m2": 1784,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "Duplex 603",
+     "dorm": 2,
+     "m2": 110.3,
+     "precio_usd": 222941,
+     "precio_m2": 2022,
+     "tipo": "duplex",
+     "piso": "6",
+     "flat": false
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 85,
+     "precio_usd": 196471,
+     "precio_m2": 2311,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Edificio de EE Inmobiliaria, en obra con entrega a dic-2026; flats de 2-3 dorm (85-198 m2) desde US$178,133, ingreso ~US$10 mil por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/floresta-living-444-3795",
+    "https://eeinmobiliaria.com/proyectos/floresta-living-444/",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3795-floresta-living-444-santiago-de-surco-lima-lima-ee-inmobiliaria",
+    "https://micasapropia.interbank.pe/proyectos/floresta-living-444/"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/floresta-living-444-3795"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/floresta-living-444/img-01.jpg",
+    "assets/img-f1/floresta-living-444/img-02.jpg",
+    "assets/img-f1/floresta-living-444/img-03.jpg",
+    "assets/img-f1/floresta-living-444/img-04.jpg",
+    "assets/img-f1/floresta-living-444/img-05.jpg"
+   ]
+  },
+  {
+   "id": "hana",
+   "name": "HANA",
+   "dev": "Odima Inmobiliaria",
+   "addr": "Jr. Conde de la Vega del Ren 149, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entrega inmediata — ÚLTIMA unidad",
+   "entrega": "Entrega inmediata (últimas unidades)",
+   "lat": -12.117556047760015,
+   "lng": -76.983405589272,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 264706,
+   "precio_hasta_usd": 264706,
+   "dorms": "2–4",
+   "m2": "108–209",
+   "wa": "972920864",
+   "web": "https://odima.pe/proyecto/hana/",
+   "img": "assets/planos/hana/hana-17.png",
+   "planos": [
+    "assets/planos/hana/hana-17.png",
+    "assets/planos/hana/hana-18.png",
+    "assets/planos/hana/hana-19.png",
+    "assets/planos/hana/hana-dpto102-plano.png",
+    "assets/planos/hana/hana-planta-1piso.png",
+    "assets/planos/hana/plano-102-vigente.jpg"
+   ],
+   "brochure": "assets/brochures/HANA-Odima-brochure.pdf",
+   "typologies": [
+    {
+     "unidad": "Tipo 102",
+     "dorm": 3,
+     "m2": 96.31,
+     "precio_usd": 249706,
+     "precio_m2": 2593,
+     "tipo": "flat",
+     "piso": "1"
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    2
+   ],
+   "comentario": "Última unidad disponible: Dpto Tipo 102 (96.31 m², 3 dorm, primer piso elevado, vista externa) — S/900,000 con cochera incluida, precio final. Certificación EDGE.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://odima.pe/proyecto/hana/",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2663-hana-chacarilla-santiago-de-surco-lima-lima-odima-inmobiliaria",
+    "https://odima.pe/wp-content/uploads/2026/02/HANA-BC_compressed.pdf",
+    "https://odima.pe/wp-content/uploads/2024/02/HANA_DIGITAL-VERTICAL-FINAL.pdf"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2663-hana-chacarilla-santiago-de-surco-lima-lima-odima-inmobiliaria"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "cochera_status": "si",
+   "stock": {
+    "n": 1,
+    "label": "Última unidad"
+   }
+  },
+  {
+   "id": "jardines-monte-real",
+   "name": "Jardines de Monte Real",
+   "dev": "Central Inmobiliaria",
+   "addr": "Jr. Monte Real 496, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción — últimas unidades",
+   "entrega": "Marzo/Abril 2027",
+   "lat": -12.11186929636266,
+   "lng": -76.98578255636211,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 246028,
+   "precio_hasta_usd": 329187,
+   "dorms": "1–4",
+   "m2": "63–145",
+   "wa": "994298155",
+   "web": "https://centralinmobiliaria.pe",
+   "img": "assets/img-f1/jardines-monte-real/img-01.jpg",
+   "planos": [
+    "assets/planos/jardines-de-monte-real/plano-107-precio.jpg",
+    "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg"
+   ],
+   "brochure": "assets/brochures/jardines-monte-real-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "X08 (408/508)",
+     "dorm": 3,
+     "m2": 94.2,
+     "precio_usd": 246028,
+     "precio_m2": 2612,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": true
+    },
+    {
+     "unidad": "107",
+     "dorm": 2,
+     "m2": 129.42,
+     "precio_usd": 329187,
+     "precio_m2": 2543,
+     "tipo": "flat",
+     "piso": "1"
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 94.2,
+     "precio_usd": 246028,
+     "precio_m2": 2612,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
+   "comentario": "Últimas unidades (Flat 107 en piso 1 y Flat X08 en pisos 4-5). Entrega marzo/abril 2027, financia BCP. Situación de cochera por confirmar.",
+   "amenidades": [],
+   "total_pisos": "6 + rooftop",
+   "fuentes": [
+    "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/jardines-de-monte-real-3770",
+    "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP.pdf"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/jardines-monte-real/img-01.jpg",
+    "assets/img-f1/jardines-monte-real/img-02.jpg"
+   ],
+   "cochera_status": "nd",
+   "stock": {
+    "n": 3,
+    "label": "Últimas ~3"
+   }
+  },
+  {
+   "id": "la-floresta-boulevard",
+   "name": "La Floresta Boulevard",
+   "dev": "Boulevard (boulevard.com.pe)",
+   "addr": "Calle Montepío 120-130, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque La Floresta)",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "",
+   "lat": -12.111313355375833,
+   "lng": -76.98854344646954,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 154000,
+   "precio_hasta_usd": 330000,
+   "dorms": "1–3",
+   "m2": "51–147",
+   "wa": "945678879",
+   "web": "https://floresta.boulevard.com.pe/la-floresta/",
+   "img": "assets/img-f1/la-floresta-boulevard/img-01.jpg",
+   "planos": [
+    "assets/planos/la-floresta-boulevard/plano-01.jpg",
+    "assets/planos/la-floresta-boulevard/plano-02.jpg",
+    "assets/planos/la-floresta-boulevard/plano-03.jpg",
+    "assets/planos/la-floresta-boulevard/plano-04.jpg",
+    "assets/planos/la-floresta-boulevard/plano-05.jpg",
+    "assets/planos/la-floresta-boulevard/plano-06.jpg",
+    "assets/planos/la-floresta-boulevard/plano-07.jpg",
+    "assets/planos/la-floresta-boulevard/plano-08.jpg",
+    "assets/planos/la-floresta-boulevard/plano-09.jpg",
+    "assets/planos/la-floresta-boulevard/plano-10.jpg",
+    "assets/planos/la-floresta-boulevard/plano-11.jpg",
+    "assets/planos/la-floresta-boulevard/plano-12.jpg",
+    "assets/planos/la-floresta-boulevard/plano-13.jpg",
+    "assets/planos/la-floresta-boulevard/plano-14.jpg",
+    "assets/planos/la-floresta-boulevard/plano-15.jpg",
+    "assets/planos/la-floresta-boulevard/plano-16.jpg",
+    "assets/planos/la-floresta-boulevard/plano-17.jpg",
+    "assets/planos/la-floresta-boulevard/plano-18.jpg",
+    "assets/planos/la-floresta-boulevard/plano-19.jpg",
+    "assets/planos/la-floresta-boulevard/plano-20.jpg"
+   ],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Flat típico ~123 m² (confirmado asesor)",
+     "dorm": 3,
+     "m2": 123,
+     "precio_usd": 325000,
+     "precio_usd_neto": 308000,
+     "precio_m2": 2504,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_usd": 17000,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true,
+     "nota": "US$325,000 incluye 1 cochera; cochera simple se vende en US$17,000 → neto US$308,000 (2,504/m²). Dorm por confirmar."
+    },
+    {
+     "unidad": "Flat 1 dormitorio",
+     "dorm": 1,
+     "m2": 51,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "nota": "Precio por confirmar — el asesor aún no lo envió (2026-07)."
+    }
+   ],
+   "flats_summary": [
+    {
+     "unidad": "Flat ~123 m² (asesor)",
+     "dorm": 3,
+     "m2": 123,
+     "precio_usd": 308000,
+     "precio_m2": 2504,
+     "precio_usd_lista": 325000,
+     "precio_m2_lista": 2642,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_usd": 17000,
+     "comparable_confirmado": true,
+     "nota": "Confirmado por el asesor (WhatsApp, 2026-07): US$325,000 (123 m²) incluye 1 cochera; neto de cochera (US$17,000) = US$308,000 → 2,504/m². Falta precio de 1 dorm."
+    }
+   ],
+   "dorms_disponibles": [
+    1
+   ],
+   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). Falta que envíen el precio del 1 dormitorio. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas.",
+   "amenidades": [],
+   "total_pisos": null,
+   "fuentes": [
+    "https://floresta.boulevard.com.pe/la-floresta/",
+    "https://floresta.boulevard.com.pe/1-dormitorio/",
+    "https://floresta.boulevard.com.pe/2-dormitorios/",
+    "https://floresta.boulevard.com.pe/2-dormitorios-estudio/",
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-la-floresta-boulevard-670"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/la-floresta-boulevard/img-01.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-02.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-03.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-04.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-05.jpg"
+   ],
+   "stock": {
+    "n": null,
+    "label": "78 deptos · 2 torres"
+   },
+   "cochera_status": "incluida"
+  },
+  {
+   "id": "monte-carmelo-250",
+   "name": "Monte Carmelo 250",
+   "dev": "Edifikarte",
+   "addr": "Jr. Monte Carmelo 250, Urb. Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción — frente al parque Monte Carmelo",
+   "entrega": "Pendiente confirmar",
+   "lat": -12.1170263,
+   "lng": -76.9851212,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "2–4",
+   "m2": "80–274",
+   "wa": "981386111",
+   "web": "https://www.edifikarte.com.pe",
+   "img": null,
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Flat 2d",
+     "dorm": 2,
+     "m2": 80,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": null,
+     "flat": true
+    },
+    {
+     "unidad": "Flat 3d",
+     "dorm": 3,
+     "m2": null,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": null,
+     "flat": true
+    },
+    {
+     "unidad": "Dúplex 4d",
+     "dorm": 4,
+     "m2": 274,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": null,
+     "flat": false
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    2,
+    3,
+    4
+   ],
+   "comentario": "Edifikarte no publica precios en web ni portales: política de cotización directa (Jenny Miranda). 7 pisos, 80–274 m². Mismo desarrollador que Monte Mayor 177.",
+   "fuentes": [
+    "https://www.edifikarte.com.pe"
+   ],
+   "anuncios": null,
+   "mostrar": true,
+   "amenidades": [],
+   "total_pisos": 7,
+   "portales": {},
+   "cochera_status": "nd",
+   "stock": null,
+   "geo_aprox": true,
+   "geo_nota": "Interpolada sobre Jr. Monte Carmelo entre los nº 341 y 551, ambos verificados."
+  },
+  {
+   "id": "monte-carmelo-551",
+   "name": "Monte Carmelo 551",
+   "dev": "Balance Grupo Inmobiliario",
+   "addr": "Jr. Monte Carmelo 551, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "30 de noviembre de 2026",
+   "lat": -12.11457421674685,
+   "lng": -76.98530634199747,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 264147,
+   "precio_hasta_usd": 305118,
+   "dorms": "2–3",
+   "m2": "108–142",
+   "wa": "952496382",
+   "web": "https://balance.pe/proyecto/monte-carmelo-551/",
+   "img": "assets/img-f1/monte-carmelo-551/img-01.jpg",
+   "planos": [
+    "assets/planos/monte-carmelo-551/plano-01.jpg",
+    "assets/planos/monte-carmelo-551/plano-02.jpg",
+    "assets/planos/monte-carmelo-551/plano-03.jpg",
+    "assets/planos/monte-carmelo-551/plano-04.jpg",
+    "assets/planos/monte-carmelo-551/plano-05.png",
+    "assets/planos/monte-carmelo-551/plano-06.png",
+    "assets/planos/monte-carmelo-551/plano-07.png",
+    "assets/planos/monte-carmelo-551/plano-08.jpg",
+    "assets/planos/monte-carmelo-551/plano-09.jpg",
+    "assets/planos/monte-carmelo-551/plano-10.jpg",
+    "assets/planos/monte-carmelo-551/plano-11.jpg",
+    "assets/planos/monte-carmelo-551/plano-12.jpg",
+    "assets/planos/monte-carmelo-551/plano-13.jpg",
+    "assets/planos/monte-carmelo-551/plano-14.jpg",
+    "assets/planos/monte-carmelo-551/plano-15.jpg",
+    "assets/planos/monte-carmelo-551/plano-16.jpg",
+    "assets/planos/monte-carmelo-551/plano-17.jpg",
+    "assets/planos/monte-carmelo-551/plano-18.jpg"
+   ],
+   "brochure": "assets/brochures/Monte_Carmelo_551-brochure.pdf",
+   "typologies": [
+    {
+     "unidad": "Flat SS01 (semisótano)",
+     "dorm": 3,
+     "m2": 142.46,
+     "area_techada": 109.3,
+     "area_libre": 33.16,
+     "precio_soles": 1037400,
+     "precio_usd": 305118,
+     "precio_m2": 2142,
+     "precio_usd_neto": 288941,
+     "precio_m2_neto": 2028,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_soles": 55000,
+     "tipo": "flat",
+     "piso": "SS",
+     "flat": false,
+     "motivo_no_comparable": "semisotano / area libre"
+    },
+    {
+     "unidad": "Flat 301 (piso 3)",
+     "dorm": 3,
+     "m2": 108.03,
+     "area_techada": 108.03,
+     "area_libre": 0,
+     "precio_soles": 898100,
+     "precio_usd": 264147,
+     "precio_m2": 2445,
+     "precio_usd_neto": 247971,
+     "precio_m2_neto": 2295,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_soles": 55000,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 202 (piso 2)",
+     "dorm": 3,
+     "m2": 108.0,
+     "area_techada": 108.0,
+     "area_libre": 0,
+     "precio_soles": 912200,
+     "precio_usd": 268294,
+     "precio_m2": 2484,
+     "precio_usd_neto": 252118,
+     "precio_m2_neto": 2334,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_soles": 55000,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 303 (piso 3)",
+     "dorm": 3,
+     "m2": 108.5,
+     "area_techada": 108.5,
+     "area_libre": 0,
+     "precio_soles": 901800,
+     "precio_usd": 265235,
+     "precio_m2": 2445,
+     "precio_usd_neto": 249059,
+     "precio_m2_neto": 2295,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_soles": 55000,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "unidad": "Flat típico promedio (202, 301 y 303)",
+     "dorm": 3,
+     "m2": 108.18,
+     "precio_usd": 249716,
+     "precio_m2": 2308,
+     "precio_usd_lista_promedio": 265892,
+     "precio_m2_lista": 2458,
+     "precio_soles_lista_promedio": 904033,
+     "precio_soles_neto_promedio": 849033,
+     "cochera_incluida": "1 cochera",
+     "ajuste_cochera_soles": 55000,
+     "comparable_confirmado": true,
+     "nota": "Promedio ponderado de flats típicos 202, 301 y 303. Precio neto descuenta 1 cochera de S/55,000; no incluye depósito."
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Balance Grupo Inmobiliario en el cuadrante, en obra con entrega dic-2026. Información actualizada por asesor (WhatsApp 02-jul-2026): precios enviados para SS01, 202, 301 y 303 incluyen 1 cochera; no incluyen depósito. Para comparación contra GEU se netea la cochera referencial de S/55,000.",
+   "amenidades": [],
+   "total_pisos": 5,
+   "fuentes": [
+    "https://balance.pe/proyecto/monte-carmelo-551/",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3722-monte-carmelo-551-santiago-de-surco-lima-lima-balance-grupo-inmobiliario",
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-carmelo-662",
+    "https://balance.pe/site/media/Brochure-Monte-carmelo-551-web.pdf",
+    "https://www.facebook.com/balance.inmobiliaria/posts/1191382622999771/"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3722-monte-carmelo-551-santiago-de-surco-lima-lima-balance-grupo-inmobiliario",
+    "bcp": "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-carmelo-662",
+    "adondevivir": "https://www.adondevivir.com/departamentos-en-venta-en-santiago-de-surco-con-duplex-y-frente-al-parque-con-3-dormitorios.html"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "cochera_status": "si",
+   "cochera_nota": "Precios enviados incluyen 1 cochera; no incluyen depósito. Para comparación neta se descuenta S/55,000 por cochera.",
+   "gallery": [
+    "assets/img-f1/monte-carmelo-551/img-01.jpg",
+    "assets/img-f1/monte-carmelo-551/img-02.png",
+    "assets/img-f1/monte-carmelo-551/img-03.png",
+    "assets/img-f1/monte-carmelo-551/img-04.png",
+    "assets/img-f1/monte-carmelo-551/img-05.png"
+   ],
+   "stock": {
+    "n": 6,
+    "label": "6 disponibles"
+   },
+   "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf"
+  },
+  {
+   "id": "monte-mar-167",
+   "name": "Monte Mar 167",
+   "dev": "Grupo Chacarilla Sur",
+   "addr": "Calle Monte Mar 167, Urb. Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Últimas unidades — 3 disponibles (proyecto casi agotado)",
+   "entrega": "Entrega inmediata",
+   "lat": -12.1108,
+   "lng": -76.982,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 288235,
+   "precio_hasta_usd": null,
+   "dorms": "3",
+   "m2": "121–269",
+   "wa": "984261016",
+   "web": "https://grupochacarillasur.com/montemar-167/",
+   "img": null,
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Dpto 101 (terraza + jardín)",
+     "dorm": 3,
+     "m2": 121,
+     "precio_usd": 288235,
+     "precio_m2": 2382,
+     "tipo": "primer_piso",
+     "piso": 1,
+     "flat": false
+    },
+    {
+     "unidad": "Dpto 103 (terraza + jardín)",
+     "dorm": 3,
+     "m2": 121,
+     "precio_usd": 288235,
+     "precio_m2": 2382,
+     "tipo": "primer_piso",
+     "piso": 1,
+     "flat": false
+    },
+    {
+     "unidad": "Tipo 203",
+     "dorm": 3,
+     "m2": null,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": 2,
+     "flat": true
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Casi agotado: solo 3 unidades. Las 2 con precio son de primer piso (terraza + jardín), por eso NO entran en la banda de flats típicos. Web propia responde 404; datos vía portal Interbank.",
+   "fuentes": [
+    "https://micasapropia.interbank.pe/proyectos/surco-montemar-167/",
+    "https://grupochacarillasur.com/montemar-167/"
+   ],
+   "anuncios": null,
+   "mostrar": true,
+   "amenidades": [
+    "2 ascensores directos por depto",
+    "Zona de parrillas",
+    "Frente a parque Andrés Townsend",
+    "Pisos bamboo",
+    "Tablero granito/cuarzo"
+   ],
+   "total_pisos": 6,
+   "portales": {
+    "interbank": "https://micasapropia.interbank.pe/proyectos/surco-montemar-167/"
+   },
+   "cochera_status": "si",
+   "cochera_nota": "2 estacionamientos paralelos incluidos (confirmado con asesor, jun–jul 2026) → neto −US$30k.",
+   "stock": {
+    "n": 3,
+    "label": "Últimas 3 unidades"
+   },
+   "geo_aprox": true,
+   "geo_nota": "La Calle Monte Mar no está mapeada en OSM; referencia = media cuadra del Parque Andrés Townsend."
+  },
+  {
+   "id": "monte-mayor-177",
+   "name": "Monte Mayor 177",
+   "dev": "Edifikarte",
+   "addr": "Calle Monte Mayor 177, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entrega inmediata — última unidad",
+   "entrega": "Agosto 2024 (ya entregado)",
+   "lat": -12.11442877256639,
+   "lng": -76.98753819552181,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 241176,
+   "precio_hasta_usd": 241176,
+   "dorms": "2–4",
+   "m2": "87–233",
+   "wa": "981386111",
+   "web": "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
+   "img": "assets/img/monte-mayor-177.jpg",
+   "planos": [
+    "assets/planos/monte-mayor-177/monte_mayor-18.png",
+    "assets/planos/monte-mayor-177/monte_mayor-20.png",
+    "assets/planos/monte-mayor-177/monte_mayor-21.png",
+    "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg"
+   ],
+   "brochure": "assets/brochures/Monte_Mayor_177-brochure.pdf",
+   "typologies": [
+    {
+     "unidad": "203",
+     "dorm": 2,
+     "m2": 86.95,
+     "precio_usd": 211176,
+     "precio_m2": 2429,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 2,
+     "m2": 86.95,
+     "precio_usd": 211176,
+     "precio_m2": 2429,
+     "comparable_confirmado": true
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Última unidad: flat 87 m², 2 dorm (piso 2), S/820,000 con 2 estacionamientos paralelos y depósito incluidos; valor por m² neto de cocheras.",
+   "amenidades": [],
+   "total_pisos": 7,
+   "fuentes": [
+    "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2762-monte-mayor-177-santiago-de-surco-lima-lima-grupo-edifikarte",
+    "https://reuschereyna.com/proyecto/monte-mayor-177/"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2762-monte-mayor-177-santiago-de-surco-lima-lima-grupo-edifikarte"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "cochera_status": "si",
+   "stock": {
+    "n": 1,
+    "label": "Última unidad"
+   }
+  },
+  {
+   "id": "monte-mayor-183",
+   "name": "Monte Mayor 183",
+   "dev": "Azzurra Constructores",
+   "addr": "Calle Monte Mayor 183, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción — últimas 4 unidades",
+   "entrega": "1er trimestre 2027 (portal; web oficial no publica)",
+   "lat": -12.114388330633895,
+   "lng": -76.9869248368436,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 187000,
+   "precio_hasta_usd": 447000,
+   "dorms": "1–3",
+   "m2": "64–240",
+   "wa": "944216477",
+   "web": "https://azzurra.com.pe/proyectos/monte-mayor-183/",
+   "img": "assets/img-f1/monte-mayor-183/img-01.jpg",
+   "planos": [
+    "assets/planos/monte-mayor-183/plano-01.jpg",
+    "assets/planos/monte-mayor-183/plano-02.jpg",
+    "assets/planos/monte-mayor-183/plano-03.jpg",
+    "assets/planos/monte-mayor-183/plano-x02-1.jpg",
+    "assets/planos/monte-mayor-183/lista-precios-1.jpg"
+   ],
+   "brochure": "assets/brochures/monte-mayor-183-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "Flat 101",
+     "dorm": 1,
+     "m2": 73.13,
+     "m2_techada": 73.13,
+     "m2_libre": 0,
+     "precio_lista_usd": 202000,
+     "cochera_incluida": "1 SIMPLE",
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 187000,
+     "precio_m2": 2557,
+     "precio_m2_techada": 2557,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false,
+     "nota_precio": "Precio lista 202,000 incluye 1 simple; neto descuenta US$15,000.",
+     "motivo_no_comparable": "piso 1",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 102",
+     "dorm": 2,
+     "m2": 239.69,
+     "m2_techada": 132.98,
+     "m2_libre": 106.71,
+     "precio_lista_usd": 477000,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": 447000,
+     "precio_m2": 1865,
+     "precio_m2_techada": 3361,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false,
+     "nota_precio": "Precio lista 477,000 incluye 2 simples; neto descuenta US$30,000.",
+     "motivo_no_comparable": "piso 1, area libre 45%",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 201",
+     "dorm": 2,
+     "m2": 64.49,
+     "m2_techada": 64.49,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "1 SIMPLE",
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 202",
+     "dorm": 3,
+     "m2": 115.56,
+     "m2_techada": 115.56,
+     "m2_libre": 0,
+     "precio_lista_usd": 319000,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": 289000,
+     "precio_m2": 2501,
+     "precio_m2_techada": 2501,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": 319000,
+     "nota_precio": "Precio lista 319,000 incluye 2 simples; neto descuenta US$30,000.",
+     "motivo_no_comparable": null,
+     "comparable_confirmado": true
+    },
+    {
+     "unidad": "Flat 203",
+     "dorm": 3,
+     "m2": 110.26,
+     "m2_techada": 110.26,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 301",
+     "dorm": 2,
+     "m2": 64.49,
+     "m2_techada": 64.49,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "1 SIMPLE",
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 302",
+     "dorm": 3,
+     "m2": 115.56,
+     "m2_techada": 115.56,
+     "m2_libre": 0,
+     "precio_lista_usd": 320000,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": 290000,
+     "precio_m2": 2510,
+     "precio_m2_techada": 2510,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": 320000,
+     "nota_precio": "Precio lista 320,000 incluye 2 simples; neto descuenta US$30,000.",
+     "motivo_no_comparable": null,
+     "comparable_confirmado": true
+    },
+    {
+     "unidad": "Flat 303",
+     "dorm": 3,
+     "m2": 110.26,
+     "m2_techada": 110.26,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 401",
+     "dorm": 2,
+     "m2": 64.49,
+     "m2_techada": 64.49,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "1 SIMPLE",
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 402",
+     "dorm": 3,
+     "m2": 115.56,
+     "m2_techada": 115.56,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 403",
+     "dorm": 3,
+     "m2": 110.26,
+     "m2_techada": 110.26,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 501",
+     "dorm": 2,
+     "m2": 64.49,
+     "m2_techada": 64.49,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "1 SIMPLE",
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 502",
+     "dorm": 3,
+     "m2": 115.56,
+     "m2_techada": 115.56,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 503",
+     "dorm": 3,
+     "m2": 110.26,
+     "m2_techada": 110.26,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": null,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 601",
+     "dorm": 2,
+     "m2": 64.49,
+     "m2_techada": 64.49,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "1 SIMPLE",
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "6",
+     "flat": false,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "piso 6, vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 602",
+     "dorm": 3,
+     "m2": 115.56,
+     "m2_techada": 115.56,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "6",
+     "flat": false,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "piso 6, vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Flat 603",
+     "dorm": 3,
+     "m2": 110.26,
+     "m2_techada": 110.26,
+     "m2_libre": 0,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "flat",
+     "piso": "6",
+     "flat": false,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "piso 6, vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Penthouse 701",
+     "dorm": 3,
+     "m2": 130.68,
+     "m2_techada": 120.04,
+     "m2_libre": 10.64,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "penthouse",
+     "piso": "7",
+     "flat": false,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "penthouse, piso 7, area libre 8%, vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Penthouse 702",
+     "dorm": 3,
+     "m2": 224.51,
+     "m2_techada": 192.51,
+     "m2_libre": 32,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "penthouse",
+     "piso": "7",
+     "flat": false,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "penthouse, piso 7, area libre 14%, vendido/sin precio",
+     "comparable_confirmado": false
+    },
+    {
+     "unidad": "Penthouse 703",
+     "dorm": 3,
+     "m2": 221.45,
+     "m2_techada": 180,
+     "m2_libre": 41.45,
+     "precio_lista_usd": null,
+     "cochera_incluida": "2 SIMPLES",
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": null,
+     "precio_m2": null,
+     "precio_m2_techada": null,
+     "tipo": "penthouse",
+     "piso": "7",
+     "flat": false,
+     "nota_precio": "Vendido / sin precio disponible en lista.",
+     "motivo_no_comparable": "penthouse, piso 7, area libre 19%, vendido/sin precio",
+     "comparable_confirmado": false
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 115.56,
+     "precio_usd": 289000,
+     "precio_m2": 2501,
+     "comparable_confirmado": true
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Lista de precios por unidad con cochera y depósito incluidos (lista Azzurra 24-jun). Últimas 4 unidades (101, 102, 202, 302).",
+   "amenidades": [
+    "Lobby",
+    "Estacionamiento de bicicletas",
+    "Certificación EDGE",
+    "Control de acceso"
+   ],
+   "total_pisos": 7,
+   "fuentes": [
+    "https://azzurra.com.pe/proyectos/monte-mayor-183/",
+    "https://www.azzurra.com.pe/montemayor183-chacarilla-surco",
+    "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-MM-240626.pdf",
+    "https://www.facebook.com/azzurraconstructoresoficial/posts/monte-mayor-183-redefine-la-elegancia-en-el-distrito-de-surco",
+    "https://tangible.pe/blog/oferta-inmobiliaria/departamentos-en-surco/departamentos-de-lujo-en-venta",
+    "Lista de precios y brochure oficiales del desarrollador (jun-2026)"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/monte-mayor-183/img-01.jpg",
+    "assets/img-f1/monte-mayor-183/img-02.png"
+   ],
+   "destacado": true,
+   "cochera_status": "si",
+   "stock": {
+    "n": 4,
+    "label": "4 quedan"
+   },
+   "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf"
+  },
+  {
+   "id": "monte-real-265",
+   "name": "Monte Real",
+   "dev": "EE Inmobiliaria (Espacios y Estructuras Inmobiliaria S.A.C., RUC 20552655932)",
+   "addr": "Jr. Monte Real 265 (antes N° 217), Urb. Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entrega inmediata",
+   "entrega": "Entrega inmediata (proyecto de estreno; en Nexo figura fecha de entrega may-2024)",
+   "lat": -12.111953752823906,
+   "lng": -76.9849292166872,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 311765,
+   "precio_hasta_usd": null,
+   "dorms": "3",
+   "m2": "167.82",
+   "wa": "999278271",
+   "web": "https://eeinmobiliaria.com/proyectos/monte-real/",
+   "img": "assets/img-f1/monte-real-265/img-01.jpg",
+   "planos": [
+    "assets/planos/monte-real-265/plano-01.jpg"
+   ],
+   "brochure": "assets/brochures/monte-real-265-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "Modelo 103 (ultima unidad disponible)",
+     "dorm": 3,
+     "m2": 167.82,
+     "precio_usd": 311765,
+     "precio_m2": 1858,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "Flat tipico 2 al 6 (referencial agotado / sin precio vigente)",
+     "dorm": 3,
+     "m2": 138,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 6",
+     "flat": true
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [],
+   "comentario": "Jr. Monte Real 265 (antes publicitado como N° 217). Proyecto entregado con última unidad disponible (Dpto 103, 167.82 m²).",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://eeinmobiliaria.com/proyectos/monte-real/",
+    "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2728-monte-real-santiago-de-surco-lima-lima-ee-inmobiliaria",
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-real-286",
+    "https://www.tiktok.com/@eeinmobiliaria/video/7332535434368552198",
+    "https://www.tiktok.com/@eeinmobiliaria/video/7403745449477295366",
+    "https://tangible.pe/blog/oferta-inmobiliaria/departamentos-en-surco/departamentos-en-venta-en-chacarilla",
+    "https://eeinmobiliaria.com/wp-content/uploads/2025/02/BROCHURE_MONTE_REAL_2025-1.pdf",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2728-monte-real-217-santiago-de-surco-lima-lima-ee-inmobiliaria"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/monte-real-265/img-01.jpg",
+    "assets/img-f1/monte-real-265/img-02.jpg",
+    "assets/img-f1/monte-real-265/img-03.jpg",
+    "assets/img-f1/monte-real-265/img-04.jpg",
+    "assets/img-f1/monte-real-265/img-05.jpg"
+   ],
+   "cochera_status": "nd",
+   "stock": {
+    "n": 1,
+    "label": "Última unidad"
+   }
+  },
+  {
+   "id": "monte-sierpe",
+   "name": "Monte Sierpe",
+   "dev": "Make Inmobiliaria",
+   "addr": "Calle Monte Sierpe 106, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entrega inmediata (jun-2026)",
+   "entrega": "Entrega inmediata (según web Make, jun-2026)",
+   "lat": -12.112716,
+   "lng": -76.986573,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 248824,
+   "precio_hasta_usd": 248533,
+   "dorms": "2–3",
+   "m2": "103–107",
+   "wa": "943729552",
+   "web": "https://makeinmobiliaria.pe/proyecto/monte-sierpe/",
+   "img": "assets/img-f1/monte-sierpe/img-01.jpg",
+   "planos": [
+    "assets/planos/monte-sierpe/sierpe-X01-2d-107m2.png",
+    "assets/planos/monte-sierpe/sierpe-X02-2d-107m2.png",
+    "assets/planos/monte-sierpe/sierpe-X05-2d-105m2.png",
+    "assets/planos/monte-sierpe/sierpe-x102-2d-103m2.png",
+    "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png"
+   ],
+   "brochure": "assets/brochures/MonteSierpe-Make-brochure.pdf",
+   "typologies": [
+    {
+     "unidad": "x102 (Piso 1)",
+     "dorm": 2,
+     "m2": 103.9,
+     "precio_usd": 274118,
+     "precio_m2": 2638,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "x107 (Piso 1)",
+     "dorm": 2,
+     "m2": 103.4,
+     "precio_usd": 248824,
+     "precio_m2": 2406,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "X01 (Pisos 2-3, típico)",
+     "dorm": 2,
+     "m2": 107.4,
+     "precio_usd": 274118,
+     "precio_m2": 2552,
+     "tipo": "flat",
+     "piso": "2-3",
+     "flat": true
+    },
+    {
+     "unidad": "X02 (Pisos 2-3, típico)",
+     "dorm": 2,
+     "m2": 107.4,
+     "precio_usd": 274118,
+     "precio_m2": 2552,
+     "tipo": "flat",
+     "piso": "2-3",
+     "flat": true
+    },
+    {
+     "unidad": "X05 (Piso 6)",
+     "dorm": 2,
+     "m2": 105.3,
+     "precio_usd": 263529,
+     "precio_m2": 2503,
+     "tipo": "flat",
+     "piso": "6",
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 2,
+     "m2": 105.3,
+     "precio_usd": 263529,
+     "precio_m2": 2503,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    2
+   ],
+   "comentario": "Proyecto de Make Inmobiliaria con entrega inmediata; flats de 2-3 dorm (103-107 m2) desde US$200,000. Su precio por m2 (~$2,300) queda por debajo de GEU, pero exige un ticket de entrada bastante mayor. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "amenidades": [],
+   "total_pisos": 7,
+   "fuentes": [
+    "https://makeinmobiliaria.pe/proyecto/monte-sierpe/",
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/monte-sierpe-3477",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria",
+    "https://www.adondevivir.com/departamentos-en-venta-en-chacarilla-del-estanque-zona-de-santiago-de-surco-a-estrenar.html",
+    "https://litpropiedades.com/propiedad/departamento/tu-hogar-ideal-en-surco-donde-empiezan-tus-mejores-momentos"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/monte-sierpe/img-01.jpg",
+    "assets/img-f1/monte-sierpe/img-02.jpg",
+    "assets/img-f1/monte-sierpe/img-03.jpg",
+    "assets/img-f1/monte-sierpe/img-04.jpg",
+    "assets/img-f1/monte-sierpe/img-05.jpg"
+   ],
+   "stock": {
+    "n": 6,
+    "label": "6 disponibles"
+   }
+  },
+  {
+   "id": "monte-umbroso",
+   "name": "Monte Umbroso",
+   "dev": "Transforma Proyectos Inmobiliarios S.A.C.",
+   "addr": "Alameda Monte Umbroso 520, Urb. Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En venta / construcción",
+   "entrega": "Pendiente confirmar",
+   "lat": -12.114061640626225,
+   "lng": -76.98035437139151,
+   "isGEU": false,
+   "en_cuadrante": false,
+   "precio_desde_usd": 193463,
+   "precio_hasta_usd": 337517,
+   "dorms": "1–3",
+   "m2": "67–158",
+   "wa": null,
+   "web": "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
+   "img": "assets/img-f1/monte-umbroso/img-01.jpg",
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Flat",
+     "dorm": 1,
+     "m2": 67,
+     "precio_usd": 193463,
+     "precio_m2": 2888,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Flat",
+     "dorm": 3,
+     "m2": 98,
+     "precio_usd": 271878,
+     "precio_m2": 2774,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Flat",
+     "dorm": 3,
+     "m2": 145,
+     "precio_usd": 372261,
+     "precio_m2": 2567,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Flat",
+     "dorm": 2,
+     "m2": 158,
+     "precio_usd": 350944,
+     "precio_m2": 2221,
+     "tipo": "flat",
+     "piso": "?",
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 1,
+     "m2": 67,
+     "precio_usd": 193463,
+     "precio_m2": 2888,
+     "comparable_confirmado": false
+    },
+    {
+     "dorm": 3,
+     "m2": 145,
+     "precio_usd": 372261,
+     "precio_m2": 2567,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    1,
+    2,
+    3
+   ],
+   "comentario": "Transforma Proyectos Inmobiliarios; proyecto en construcción en la Alameda Monte Umbroso, Chacarilla. Publica precios de unidades en portales, sin lista completa por tipología. La ficha indica cochera incluida en el precio (por confirmar con el asesor).",
+   "amenidades": [
+    "Rooftop",
+    "Cocinas equipadas",
+    "Estacionamiento por depto"
+   ],
+   "total_pisos": 7,
+   "fuentes": [
+    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144372",
+    "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
+    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144367",
+    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144395",
+    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144400",
+    "https://limaspace.com/listing/proyecto-de-alameda-monte-umbroso-chacarilla-suj10/",
+    "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159"
+   ],
+   "portales": {
+    "urbania": "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
+    "adondevivir": "https://www.adondevivir.com/departamentos-q-monte-umbroso-santiago-de-surco.html"
+   },
+   "anuncios": null,
+   "mostrar": false,
+   "gallery": [
+    "assets/img-f1/monte-umbroso/img-01.jpg",
+    "assets/img-f1/monte-umbroso/img-02.jpg"
+   ],
+   "cochera_status": "si",
+   "retirado": "Retirado 2026-07-02: agotado, sin unidades disponibles (confirmado cliente)."
+  },
+  {
+   "id": "monteflor",
+   "name": "Monteflor",
+   "dev": "Arch Inversiones Inmobiliarias",
+   "addr": "Jr. Monte Flor 523-525, esquina con Monte Real, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "Agosto 2026 (aprox.)",
+   "lat": -12.111928239024742,
+   "lng": -76.98275878252593,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 188000,
+   "precio_hasta_usd": 385000,
+   "dorms": "2–4",
+   "m2": "64–240",
+   "wa": "981349116",
+   "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
+   "img": "assets/img-f1/monteflor/img-01.jpg",
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Depto 154 m² (InfoCasas L3DCAC)",
+     "dorm": 3,
+     "m2": 154,
+     "precio_soles": 1323630,
+     "precio_usd": 389303,
+     "precio_m2": 2528,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true
+    },
+    {
+     "unidad": "Depto 135 m² (InfoCasas Y7B5FF)",
+     "dorm": 3,
+     "m2": 135,
+     "precio_soles": 1140270,
+     "precio_usd": 335374,
+     "precio_m2": 2484,
+     "tipo": "flat",
+     "piso": "intermedio",
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "unidad": "InfoCasas ref L3DCAC",
+     "dorm": 3,
+     "m2": 154,
+     "precio_usd": 389303,
+     "precio_m2": 2528,
+     "comparable_confirmado": false,
+     "nota": "Anuncio InfoCasas (broker Exklusiv). S/1,323,630 · 154 m² · 3 dorm. Referencial, sin confirmar con desarrollador."
+    },
+    {
+     "unidad": "InfoCasas ref Y7B5FF",
+     "dorm": 3,
+     "m2": 135,
+     "precio_usd": 335374,
+     "precio_m2": 2484,
+     "comparable_confirmado": false,
+     "nota": "Anuncio InfoCasas (broker). S/1,140,270 · 135 m² · 3 dorm. Referencial."
+    }
+   ],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
+   "comentario": "Monteflor (Arch Inversiones). SIN lista de precios oficial ni cotización del asesor; no figura en Nexo. Únicos datos: 2 anuncios de InfoCasas (broker Exklusiv) — 154 m² S/1,323,630 y 135 m² S/1,140,270, ambos 3 dorm. Precios referenciales, no confirmados con el desarrollador. Se removió una entrada de 79.6 m² que no tenía fuente verificable.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
+    "https://www.infocasas.com.pe/monteflor/191143770 (Ref L3DCAC: 154 m², 3 dorm, S/1,323,630, En construcción, BBVA)",
+    "https://www.infocasas.com.pe/monteflor/191143752 (Ref Y7B5FF: 135 m², 3 dorm, S/1,140,270, En construcción)",
+    "https://www.archinversiones.com/proyectos/ (sitio del desarrollador)",
+    "https://www.youtube.com/watch?v=CDdcrkr19pM (video Monteflor | Arch Inversiones)",
+    "https://www.youtube.com/watch?v=IHo6Mza5oak (Monteflor - Como llegar)",
+    "https://www.facebook.com/ArchInversionesInmobiliarias/videos/inicio-de-obra-proyecto-monteflor/237308579097608/ (inicio de obra)"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/monteflor/img-01.jpg"
+   ]
+  },
+  {
+   "id": "parque-monte-carmelo",
+   "name": "Parque Monte Carmelo",
+   "dev": "EE Inmobiliaria",
+   "addr": "Jr. Monte Carmelo 341, Chacarilla del Estanque, Santiago de Surco (frente Parque Doig)",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "19 de noviembre de 2027",
+   "lat": -12.116213971563159,
+   "lng": -76.98519706005884,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 189412,
+   "precio_hasta_usd": 393382,
+   "dorms": "1–4",
+   "m2": "85–208",
+   "wa": "988609572",
+   "web": "https://eeinmobiliaria.com/proyectos/parque-monte-carmelo/",
+   "img": "assets/img/parque-monte-carmelo.png",
+   "planos": [
+    "assets/planos/parque-monte-carmelo/dpto-101.png",
+    "assets/planos/parque-monte-carmelo/dpto-102.png",
+    "assets/planos/parque-monte-carmelo/dpto-104.png",
+    "assets/planos/parque-monte-carmelo/tipico-01a.png",
+    "assets/planos/parque-monte-carmelo/tipico-01b.png",
+    "assets/planos/parque-monte-carmelo/tipico-03.png",
+    "assets/planos/parque-monte-carmelo/tipico-04.png",
+    "assets/planos/parque-monte-carmelo/tipico-05.png",
+    "assets/planos/parque-monte-carmelo/duplex-701.png",
+    "assets/planos/parque-monte-carmelo/duplex-702.png",
+    "assets/planos/parque-monte-carmelo/duplex-703.png",
+    "assets/planos/parque-monte-carmelo/duplex-704.png",
+    "assets/planos/parque-monte-carmelo/duplex-705.png"
+   ],
+   "brochure": "assets/brochures/BROCHURE_PARQUE_MONTE_CARMELO_2026-JUNIO.pdf",
+   "typologies": [
+    {
+     "unidad": "Típico 04 (204-604)",
+     "dorm": 3,
+     "m2": 85.16,
+     "precio_usd": 197941,
+     "precio_m2": 2324,
+     "tipo": "flat",
+     "piso": "2-6",
+     "flat": true,
+     "area_techada_m2": 85.16,
+     "area_total_m2": 85.16,
+     "unidades_count": 5,
+     "comparable_confirmado": true,
+     "precio_soles": 673000
+    },
+    {
+     "unidad": "Típico 05 (205-605)",
+     "dorm": 3,
+     "m2": 86.24,
+     "precio_usd": 200588,
+     "precio_m2": 2326,
+     "tipo": "flat",
+     "piso": "2-6",
+     "flat": true,
+     "area_techada_m2": 86.24,
+     "area_total_m2": 86.24,
+     "unidades_count": 5,
+     "comparable_confirmado": true,
+     "precio_soles": 682000
+    },
+    {
+     "unidad": "Típico 03 (203-603)",
+     "dorm": 3,
+     "m2": 103.91,
+     "precio_usd": 258235,
+     "precio_m2": 2485,
+     "tipo": "flat",
+     "piso": "2-6",
+     "flat": true,
+     "area_techada_m2": 103.91,
+     "area_total_m2": 103.91,
+     "unidades_count": 5,
+     "comparable_confirmado": true,
+     "precio_soles": 878000
+    },
+    {
+     "unidad": "Típico 01-A (201)/01-B (301,501)",
+     "dorm": 3,
+     "m2": 103.46,
+     "precio_usd": 257059,
+     "precio_m2": 2485,
+     "tipo": "flat",
+     "piso": "2,3,5",
+     "flat": true,
+     "area_total_m2": 103.46,
+     "unidades_count": 3,
+     "comparable_confirmado": true,
+     "precio_soles": 874000
+    },
+    {
+     "unidad": "101",
+     "dorm": 3,
+     "m2": 127.87,
+     "precio_usd": 282941,
+     "precio_m2": 2213,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false,
+     "area_techada_m2": 99.97,
+     "area_total_m2": 127.87,
+     "motivo_no_comparable": "piso 1",
+     "precio_soles": 962000
+    },
+    {
+     "unidad": "102",
+     "dorm": 3,
+     "m2": 140.86,
+     "precio_usd": 320882,
+     "precio_m2": 2278,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false,
+     "area_techada_m2": 117.47,
+     "area_total_m2": 140.86,
+     "motivo_no_comparable": "piso 1",
+     "precio_soles": 1091000
+    },
+    {
+     "unidad": "Dúplex 702 (DUO/flex)",
+     "dorm": 1,
+     "m2": 128.46,
+     "precio_usd": 244706,
+     "precio_m2": 1905,
+     "tipo": "duplex",
+     "piso": "7-8",
+     "flat": false,
+     "area_techada_m2": 84.25,
+     "area_total_m2": 128.46,
+     "motivo_no_comparable": "duplex"
+    },
+    {
+     "unidad": "Dúplex 704",
+     "dorm": 3,
+     "m2": 168.7,
+     "precio_usd": 319706,
+     "precio_m2": 1895,
+     "tipo": "duplex",
+     "piso": "7-8",
+     "flat": false,
+     "area_techada_m2": 109.19,
+     "area_total_m2": 168.7,
+     "motivo_no_comparable": "duplex",
+     "precio_soles": 1087000
+    },
+    {
+     "unidad": "Dúplex 705",
+     "dorm": 3,
+     "m2": 169.79,
+     "precio_usd": 311471,
+     "precio_m2": 1834,
+     "tipo": "duplex",
+     "piso": "7-8",
+     "flat": false,
+     "area_techada_m2": 110.28,
+     "area_total_m2": 169.79,
+     "motivo_no_comparable": "duplex"
+    },
+    {
+     "unidad": "Dúplex 701",
+     "dorm": 4,
+     "m2": 207.35,
+     "precio_usd": 405000,
+     "precio_m2": 1953,
+     "tipo": "duplex",
+     "piso": "7-8",
+     "flat": false,
+     "area_techada_m2": 133.15,
+     "area_total_m2": 207.35,
+     "motivo_no_comparable": "duplex",
+     "precio_soles": 1377000
+    },
+    {
+     "unidad": "Dúplex 703",
+     "dorm": 4,
+     "m2": 208.31,
+     "precio_usd": 407059,
+     "precio_m2": 1954,
+     "tipo": "duplex",
+     "piso": "7-8",
+     "flat": false,
+     "area_techada_m2": 133.78,
+     "area_total_m2": 208.31,
+     "motivo_no_comparable": "duplex",
+     "precio_soles": 1384000
+    }
+   ],
+   "flats_summary": [
+    {
+     "unidad": "Flat típico promedio (18 flats T01/T03/T04/T05)",
+     "dorm": 3,
+     "m2": 93.72,
+     "precio_usd": 225278,
+     "precio_m2": 2396,
+     "comparable_confirmado": true,
+     "cochera_incluida": "No (confirmado con asesor 2026-07-02): estacionamiento aparte S/48,000–99,000, algunos con depósito",
+     "nota": "Promedio ponderado por 18 flats típicos (T01/T03/T04/T05), precios de Nexo Inmobiliario 2026-07-07 (T04 S/673,000·85.16m², T05 S/682,000·86.24m², T03 S/878,000·103.91m², T01 S/874,000·103.46m²). Estacionamiento NO incluido (asesor 2026-07-02) → precio ya neto sin cochera."
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m².",
+   "amenidades": [],
+   "total_pisos": 7,
+   "fuentes": [
+    "https://eeinmobiliaria.com/proyectos/parque-monte-carmelo/",
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152",
+    "adondevivir": "https://www.adondevivir.com/propiedades/dpto-frente-a-parque-en-monte-carmelo-chacarilla-52520180.html"
+   },
+   "anuncios": {
+    "imgs": [
+     "assets/ads/parque-monte-carmelo-1.jpg"
+    ],
+    "fb_ids": [
+     "2066156823936800",
+     "1063487949426321"
+    ],
+    "copy": "“El edificio que soñabas en Surco ya es realidad. Jr. Monte Carmelo 341. Depas desde 85 m², precio desde S/644,000.” (EN LANZAMIENTO · 2,3 y 4 dorm)"
+   },
+   "mostrar": true,
+   "gallery": [
+    "assets/img/parque-monte-carmelo.png",
+    "assets/img/parque-monte-carmelo.jpg",
+    "assets/ads/parque-monte-carmelo-1.jpg"
+   ],
+   "stock": {
+    "n": 24,
+    "label": "24 disponibles"
+   },
+   "cochera_status": "no"
+  },
+  {
+   "id": "precursores-525",
+   "name": "Precursores 525",
+   "dev": "Grupo Chacarilla Sur",
+   "addr": "Av. Precursores 525, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción — últimos departamentos",
+   "entrega": "Noviembre 2026",
+   "lat": -12.116567517125498,
+   "lng": -76.98061927217682,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 203700,
+   "precio_hasta_usd": null,
+   "dorms": "2–3",
+   "m2": "83–227",
+   "wa": "949107186",
+   "web": "https://precursoreschacarillasur.com.pe/",
+   "img": "assets/img/precursores-525.jpg",
+   "planos": [
+    "assets/planos/precursores-525/precu-15.png",
+    "assets/planos/precursores-525/precu-17.png",
+    "assets/planos/precursores-525/precu-18.png",
+    "assets/planos/precursores-525/precu-duplex-603.jpg",
+    "assets/planos/precursores-525/precu-flat-101.jpg",
+    "assets/planos/precursores-525/precu-flat-102.jpg",
+    "assets/planos/precursores-525/precu-flat-x04-304.jpg"
+   ],
+   "brochure": "assets/brochures/Precu_Brochure_AC.pdf",
+   "typologies": [
+    {
+     "unidad": "101 (vista parque)",
+     "dorm": 3,
+     "m2": 199,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "X04/304",
+     "dorm": 2,
+     "m2": 84,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "Flat mínimo brochure",
+     "dorm": 2,
+     "m2": 83,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "varios",
+     "flat": true
+    },
+    {
+     "unidad": "Dúplex X02/202",
+     "dorm": 2,
+     "m2": 96,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "2",
+     "flat": false
+    },
+    {
+     "unidad": "Dúplex 603 (vista parque)",
+     "dorm": 3,
+     "m2": 227,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "6",
+     "flat": false
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    2
+   ],
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega set-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://precursoreschacarillasur.com.pe/",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
+   ],
+   "portales": {
+    "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
+   },
+   "anuncios": null,
+   "mostrar": true
+  },
+  {
+   "id": "precursores-ii",
+   "name": "Precursores II",
+   "dev": "IPIROS",
+   "addr": "Av. de los Precursores 789, Chacarilla, Santiago de Surco, Lima",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Pronta entrega (jul-2026) — 3 unidades",
+   "entrega": "Julio 2026",
+   "lat": -12.11512850307942,
+   "lng": -76.97923436666099,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 385000,
+   "precio_hasta_usd": 410000,
+   "dorms": "3",
+   "m2": "89–189",
+   "wa": "996898925",
+   "web": "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-ipiros-3608299",
+   "img": "assets/img-f1/precursores-ii/img-01.jpg",
+   "planos": [
+    "assets/planos/precursores-ii/plano-01.jpg",
+    "assets/planos/precursores-ii/plano-02.jpg",
+    "assets/planos/precursores-ii/plano-14.jpg",
+    "assets/planos/precursores-ii/plano-15.jpg",
+    "assets/planos/precursores-ii/plano-16.jpg",
+    "assets/planos/precursores-ii/lista-precios-1.jpg"
+   ],
+   "brochure": "assets/brochures/precursores-ii-brochure.pdf",
+   "typologies": [
+    {
+     "unidad": "201",
+     "dorm": 3,
+     "m2": 149.04,
+     "precio_usd": 355000,
+     "precio_m2": 2382,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "503",
+     "dorm": 3,
+     "m2": 149.35,
+     "precio_usd": 360000,
+     "precio_m2": 2410,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "601 dúplex",
+     "dorm": 3,
+     "m2": 189.02,
+     "precio_usd": 380000,
+     "precio_m2": 2010,
+     "tipo": "duplex",
+     "piso": "6"
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 149.04,
+     "precio_usd": 355000,
+     "precio_m2": 2382,
+     "comparable_confirmado": true
+    }
+   ],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
+   "comentario": "Sobre Av. de los Precursores (borde). 19 deptos de 3 dorm; quedan 3 unidades (2 flats + dúplex con terraza y piscina). Precio incluye 2 cocheras paralelas y depósito; valores por m² netos de cochera. Entrega julio 2026.",
+   "amenidades": [],
+   "total_pisos": 7,
+   "fuentes": [
+    "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-ipiros-3608299",
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-precursores-ii-650",
+    "https://www.adondevivir.com/propiedades/proyecto/ememefin-en-construccion-precursores-ii-54284387.html"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/precursores-ii/img-01.jpg",
+    "assets/img-f1/precursores-ii/img-02.jpg",
+    "assets/img-f1/precursores-ii/img-03.jpg",
+    "assets/img-f1/precursores-ii/img-04.jpg"
+   ],
+   "cochera_status": "si",
+   "stock": {
+    "n": 3,
+    "label": "3 quedan"
+   },
+   "lista_precios": "assets/brochures/precursores-ii-lista-precios.pdf"
+  },
+  {
+   "id": "santorini",
+   "name": "Santorini",
+   "dev": "Morgenstern Inmobiliaria",
+   "addr": "Calle Monteflor 693, esquina con Calle Montereal, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque Miró Quesada)",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "Marzo 2027",
+   "lat": -12.111757041644427,
+   "lng": -76.98512695370027,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 286450,
+   "precio_hasta_usd": 611000,
+   "dorms": "1–4",
+   "m2": "123–366",
+   "wa": "999024346",
+   "web": "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/",
+   "img": "assets/img-f1/santorini/img-01.jpg",
+   "planos": [
+    "assets/planos/santorini/plano-01.png",
+    "assets/planos/santorini/plano-02.png",
+    "assets/planos/santorini/plano-03.jpg",
+    "assets/planos/santorini/plano-04.jpg",
+    "assets/planos/santorini/plano-05.jpg",
+    "assets/planos/santorini/plano-06.png",
+    "assets/planos/santorini/plano-07.jpg",
+    "assets/planos/santorini/plano-08.png",
+    "assets/planos/santorini/plano-09.png",
+    "assets/planos/santorini/plano-10.png",
+    "assets/planos/santorini/plano-11.png",
+    "assets/planos/santorini/plano-12.png",
+    "assets/planos/santorini/plano-a-12.jpg",
+    "assets/planos/santorini/plano-a-13.jpg",
+    "assets/planos/santorini/plano-a-14.jpg",
+    "assets/planos/santorini/plano-b-16.jpg",
+    "assets/planos/santorini/plano-b-17.jpg",
+    "assets/planos/santorini/plano-b-18.jpg",
+    "assets/planos/santorini/plano-b-19.jpg",
+    "assets/planos/santorini/plano-b-20.jpg"
+   ],
+   "brochure": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
+   "typologies": [
+    {
+     "unidad": "201B",
+     "dorm": 2,
+     "m2": 125.0,
+     "precio_usd": 272500,
+     "precio_m2": 2180,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "301B",
+     "dorm": 2,
+     "m2": 125.0,
+     "precio_usd": 272500,
+     "precio_m2": 2180,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "501B",
+     "dorm": 2,
+     "m2": 123.0,
+     "precio_usd": 271450,
+     "precio_m2": 2207,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "202B",
+     "dorm": 2,
+     "m2": 130.5,
+     "precio_usd": 287000,
+     "precio_m2": 2199,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "502B",
+     "dorm": 2,
+     "m2": 129.0,
+     "precio_usd": 283000,
+     "precio_m2": 2194,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "501A",
+     "dorm": 3,
+     "m2": 155.0,
+     "precio_usd": 362000,
+     "precio_m2": 2335,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true
+    },
+    {
+     "unidad": "301A",
+     "dorm": 3,
+     "m2": 159.8,
+     "precio_usd": 372000,
+     "precio_m2": 2328,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "602A PH",
+     "dorm": 3,
+     "m2": 303,
+     "precio_usd": 578000,
+     "precio_m2": 1908,
+     "tipo": "duplex",
+     "piso": "6"
+    },
+    {
+     "unidad": "101",
+     "dorm": 1,
+     "m2": 199,
+     "precio_usd": 302000,
+     "precio_m2": 1518,
+     "tipo": "flat",
+     "piso": "1"
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 2,
+     "m2": 125.0,
+     "precio_usd": 272500,
+     "precio_m2": 2180,
+     "comparable_confirmado": true
+    },
+    {
+     "dorm": 3,
+     "m2": 159.8,
+     "precio_usd": 372000,
+     "precio_m2": 2328,
+     "comparable_confirmado": true
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "23 deptos frente a parque; >50% vendido, 9 disponibles. El brochure publica cada unidad con precio con 1 o 2 estacionamientos; valores por m² netos de estacionamiento. Entrega marzo 2027.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/",
+    "https://urbania.pe/inmueble/proyecto/ememhvin-proyecto-proyecto-horizontal-vertical-en-chacarilla-del-estanque-santiago-de-surco-chacarilla-del-estanque-morgenstern-inmobiliaria-145105295"
+   ],
+   "portales": {
+    "urbania": "https://urbania.pe/inmueble/proyecto/ememhvin-proyecto-proyecto-horizontal-vertical-en-chacarilla-del-estanque-santiago-de-surco-chacarilla-del-estanque-morgenstern-inmobiliaria-145105295"
+   },
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/santorini/img-01.jpg",
+    "assets/img-f1/santorini/img-02.jpg",
+    "assets/img-f1/santorini/img-03.jpeg",
+    "assets/img-f1/santorini/img-04.jpg",
+    "assets/img-f1/santorini/img-05.png"
+   ],
+   "cochera_status": "si",
+   "stock": {
+    "n": 9,
+    "label": "9 quedan"
+   }
+  },
+  {
+   "id": "spazio",
+   "name": "Spazio",
+   "dev": "Grupo Dicon",
+   "addr": "Av. De los Precursores 166-172, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción",
+   "entrega": "2026",
+   "lat": -12.11850208401939,
+   "lng": -76.98248346969847,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 192428,
+   "precio_hasta_usd": 387491,
+   "dorms": "3–6",
+   "m2": "83–83",
+   "wa": "957733272",
+   "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
+   "img": "assets/img-f1/spazio/img-01.webp",
+   "planos": [
+    "assets/planos/spazio/plano-01.webp",
+    "assets/planos/spazio/plano-02.webp",
+    "assets/planos/spazio/plano-03.webp",
+    "assets/planos/spazio/plano-04.webp",
+    "assets/planos/spazio/plano-05.webp",
+    "assets/planos/spazio/plano-06.webp",
+    "assets/planos/spazio/plano-07.webp",
+    "assets/planos/spazio/plano-08.webp",
+    "assets/planos/spazio/plano-09.webp",
+    "assets/planos/spazio/plano-13.jpg",
+    "assets/planos/spazio/plano-14.jpg",
+    "assets/planos/spazio/plano-15.jpg",
+    "assets/planos/spazio/plano-16.jpg",
+    "assets/planos/spazio/plano-17.jpg",
+    "assets/planos/spazio/plano-18.jpg"
+   ],
+   "brochure": "assets/brochures/spazio-f1.pdf",
+   "typologies": [
+    {
+     "unidad": "Flat 101",
+     "dorm": null,
+     "m2": 100.9,
+     "precio_usd": 209914,
+     "precio_m2": 2080,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "Flat 102",
+     "dorm": null,
+     "m2": 97.2,
+     "precio_usd": 189819,
+     "precio_m2": 1952,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "Flat 201",
+     "dorm": null,
+     "m2": 104.7,
+     "precio_usd": 217838,
+     "precio_m2": 2080,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 203/303/403/503",
+     "dorm": null,
+     "m2": 83.1,
+     "precio_usd": 174468,
+     "precio_m2": 2100,
+     "tipo": "flat",
+     "piso": "2-5",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 204/304/404/504",
+     "dorm": null,
+     "m2": 84.4,
+     "precio_usd": 177219,
+     "precio_m2": 2100,
+     "tipo": "flat",
+     "piso": "2-5",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 301",
+     "dorm": null,
+     "m2": 104.7,
+     "precio_usd": 217838,
+     "precio_m2": 2080,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "Duplex 701",
+     "dorm": null,
+     "m2": 209.2,
+     "precio_usd": 372316,
+     "precio_m2": 1779,
+     "tipo": "duplex",
+     "piso": "7",
+     "flat": false
+    },
+    {
+     "unidad": "Duplex 702",
+     "dorm": null,
+     "m2": 208.2,
+     "precio_usd": 371148,
+     "precio_m2": 1782,
+     "tipo": "duplex",
+     "piso": "7",
+     "flat": false
+    },
+    {
+     "unidad": "Triplex 603",
+     "dorm": null,
+     "m2": 247.3,
+     "precio_usd": 387491,
+     "precio_m2": 1567,
+     "tipo": "duplex",
+     "piso": "6-7",
+     "flat": false
+    },
+    {
+     "unidad": "Triplex 604",
+     "dorm": null,
+     "m2": 229.7,
+     "precio_usd": 362284,
+     "precio_m2": 1577,
+     "tipo": "duplex",
+     "piso": "6-7",
+     "flat": false
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Proyecto de Grupo Dicon en Av. Precursores, en obra con entrega 2026; flats grandes de 3 a 6 dorms desde US$174,468, ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
+    "https://grupodicon.com.pe/site/media/Book-Spazio-Comercial-Web_compressed-1.pdf",
+    "https://grupodicon.com.pe/departamentos-boutique/"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/spazio/img-01.webp",
+    "assets/img-f1/spazio/img-02.webp"
+   ]
+  },
+  {
+   "id": "terraverde",
+   "name": "Terraverde",
+   "dev": "ByB Bienes Raíces (Moving to Lima) — contacto Carlos Fernández",
+   "addr": "Calle Monte Carmelo N°16X, Dpto. 101, Urb. Chacarilla del Estanque, Santiago de Surco, Lima (referencias cruzadas indican numeración Monte Carmelo 167)",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entrega inmediata",
+   "entrega": "Entregado mar-2021 — unidades a estrenar vía broker (ByB, Carlos Fernández)",
+   "lat": -12.117662111777141,
+   "lng": -76.98515196061585,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 263000,
+   "precio_hasta_usd": 441000,
+   "dorms": "3",
+   "m2": "120–243",
+   "wa": null,
+   "web": "https://www.infocasas.com.pe/venta-surco-preciosos-departamentos-en-proyecto-en-chacarilla-del-estanque/186999982",
+   "img": "assets/img-f1/terraverde/img-01.jpg",
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Flat 3 dorm (Dpto. 101, 1er piso)",
+     "dorm": 3,
+     "m2": 156,
+     "precio_usd": 322000,
+     "precio_m2": 2064,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Unidades a estrenar en venta vía broker (ByB Bienes Raíces).",
+   "amenidades": [],
+   "total_pisos": 6,
+   "fuentes": [
+    "https://www.infocasas.com.pe/venta-surco-preciosos-departamentos-en-proyecto-en-chacarilla-del-estanque/186999982",
+    "https://urbania.pe/inmueble/proyecto-terraverde-inmobiliaria-exklusiv-santiago-de-surco-chacarilla-del-estanque-inmobiliaria-exklusiv-sac-empresa-8004824",
+    "https://www.infocasas.com.pe/inmobiliarias/870724-byb-bienes-raices-moving-to-lima/propiedades",
+    "https://www.datosperu.org/empresa-inmobiliaria-exklusiv-sac-20600107055.php"
+   ],
+   "portales": {},
+   "anuncios": null,
+   "mostrar": true,
+   "gallery": [
+    "assets/img-f1/terraverde/img-01.jpg"
+   ],
+   "cochera_status": "nd",
+   "stock": {
+    "n": 1,
+    "label": "A estrenar (broker)"
+   }
   }
  ]
-};
+}
