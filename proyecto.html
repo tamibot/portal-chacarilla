@@ -67,17 +67,19 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260708c"></script>
+<script src="data/portal-data.js?v=20260722a"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
 const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
 const fmtUsd=n=>n?'US$'+n.toLocaleString('en-US'):null;
 const waFmt=w=>w?w.replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3'):'';
-const waHref=p=>{
-  if(!p.wa)return '';
-  const msg=`Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
-  return `https://wa.me/51${p.wa}?text=${encodeURIComponent(msg)}`;
+const waHref=(p,num)=>{
+  const n=num||p.wa; if(!n)return '';
+  const msg=p.isGEU
+    ? `Hola, quiero información del proyecto ${p.name} (Chacarilla, Surco).`
+    : `Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
+  return `https://wa.me/51${n}?text=${encodeURIComponent(msg)}`;
 };
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const initials=n=>n.replace(/[^A-Za-zÁÉÍÓÚÑ ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
@@ -142,7 +144,8 @@ function render(){
       <div style="margin-top:12px">${fb}</div>`;
   }
 
-  const wa=p.wa?`<a class="btn wa" href="${waHref(p)}" target="_blank">📱 WhatsApp +51 ${waFmt(p.wa)}</a>`:'';
+  const wa=(p.wa?`<a class="btn wa" href="${waHref(p)}" target="_blank">📱 ${p.wa_label||'WhatsApp'} +51 ${waFmt(p.wa)}</a>`:'')
+    +(p.wa_asesora?`<a class="btn wa" href="${waHref(p,p.wa_asesora)}" target="_blank">📱 ${p.asesora||'Asesora'} +51 ${waFmt(p.wa_asesora)}</a>`:'');
   const web=p.web?`<a class="btn web" href="${p.web}" target="_blank">🌐 Web oficial</a>`:'';
   const broch=p.brochure?`<a class="btn broch" href="${p.brochure}" target="_blank">📄 Ver brochure (PDF)</a>`:'';
   const lista=p.lista_precios?`<a class="btn broch" href="${p.lista_precios}" target="_blank">💲 Lista de precios (PDF)</a>`:'';

@@ -1,13 +1,13 @@
 window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
-  "fecha": "2026-07-02",
-  "total": 23,
-  "en_cuadrante": 23,
-  "con_precio": 44,
-  "competidores_activos": 30,
+  "fecha": "2026-07-22",
+  "total": 22,
+  "en_cuadrante": 22,
+  "con_precio": 98,
+  "competidores_activos": 21,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 17
+  "comparables_confirmados": 10
  },
  "quadrant": [
   [
@@ -62,7 +62,7 @@ window.PORTAL_DATA = {
    "precio_desde_usd": 167805,
    "dorms": "1–3",
    "m2": "65–180",
-   "wa": null,
+   "wa": "924691568",
    "web": null,
    "img": "assets/img/ave-del-sur-220.jpg",
    "planos": [],
@@ -137,7 +137,10 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 39,
     "label": "Lanzamiento · 39 und."
-   }
+   },
+   "wa_label": "Central del proyecto",
+   "wa_asesora": "902312242",
+   "asesora": "Camu Planas"
   },
   {
    "id": "la-floresta-boulevard",

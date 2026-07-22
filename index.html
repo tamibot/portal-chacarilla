@@ -184,17 +184,21 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260708c"></script>
+<script src="data/portal-data.js?v=20260722a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
+// ponytail: contador derivado del data, no hardcodeado (antes decía 25 fijo)
+const N_COMP=P.filter(p=>p.mostrar!==false&&!p.isGEU).length;
 const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata','Entregado':'st-entregado'};
 const fmtUsd=n=>n?'US$'+n.toLocaleString('en-US'):null;
 const waFmt=w=>w?w.replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3'):'';
-const waHref=p=>{
-  if(!p.wa)return '';
-  const msg=`Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
-  return `https://wa.me/51${p.wa}?text=${encodeURIComponent(msg)}`;
+const waHref=(p,num)=>{
+  const n=num||p.wa; if(!n)return '';
+  const msg=p.isGEU
+    ? `Hola, quiero información del proyecto ${p.name} (Chacarilla, Surco).`
+    : `Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
+  return `https://wa.me/51${n}?text=${encodeURIComponent(msg)}`;
 };
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const typText=(p)=>[p.estado_raw,p.comentario,...(p.typologies||[]).map(t=>`${t.unidad||''} ${t.tipo||''} ${t.piso||''}`)].join(' ').toLowerCase();
@@ -245,7 +249,7 @@ function thumbHtml(p,cls){
   const precios=inq.map(p=>p.precio_desde_usd).filter(Boolean);
   const pm2=[];P.filter(p=>p.mostrar).forEach(p=>comparableRows(p).forEach(f=>pm2.push(f.precio_m2)));
   document.getElementById('hkpis').innerHTML=`
-    <div class="hkpi"><strong>25</strong>competidores</div><div class="hdiv"></div>
+    <div class="hkpi"><strong>${N_COMP}</strong>competidores</div><div class="hdiv"></div>
     <div class="hkpi"><strong>US$${Math.round(Math.min(...precios)/1000)}k–${Math.round(Math.max(...precios)/1000)}k</strong>rango desde</div><div class="hdiv"></div>
     <div class="hkpi"><strong>$${Math.min(...pm2).toLocaleString()}–$${Math.max(...pm2).toLocaleString()}</strong>USD/m²</div><div class="hdiv"></div>
     <div class="hkpi"><strong>Nov-2027</strong>entrega GEU</div>`;
@@ -308,7 +312,8 @@ function showDetail(p){
   } else {
     tlist=`<div class="tlist"><div class="tlabel">TIPOLOGÍAS</div><div style="font-size:11px;color:#999">${p.dorms} dorm · ${p.m2} m²${p.precio_desde_usd?' · desde '+fmtUsd(p.precio_desde_usd):' · sin lista de precios pública'}</div></div>`;
   }
-  const wa=p.wa?`<a class="wa" href="${waHref(p)}" target="_blank">📱 WhatsApp +51 ${waFmt(p.wa)}</a>`:'';
+  const wa=(p.wa?`<a class="wa" href="${waHref(p)}" target="_blank">📱 ${p.wa_label||'WhatsApp'} +51 ${waFmt(p.wa)}</a>`:'')
+    +(p.wa_asesora?`<a class="wa" style="margin-left:12px" href="${waHref(p,p.wa_asesora)}" target="_blank">📱 ${p.asesora||'Asesora'} +51 ${waFmt(p.wa_asesora)}</a>`:'');
   const ficha=p.isGEU?'':`<button class="btnficha" onclick="window.open('proyecto.html?id=${p.id}','_blank')">Ver ficha completa →</button>`;
   const dtl=document.getElementById('dtl');
   dtl.innerHTML=`<div class="dhead">${img}<div style="flex:1">
@@ -497,7 +502,7 @@ function buildStats(){
      <table class="t"><thead><tr><th>Tipología</th><th>Área total</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${grows}</tbody></table>
      
    </div>
-   <div class="sec">Resumen del cuadrante (25 competidores)</div>
+   <div class="sec">Resumen del cuadrante (${N_COMP} competidores)</div>
    <div class="kgrid" style="max-width:1180px">
      <div class="k"><div class="kv">${inq.length}</div><div class="kl">Con precio publicado</div></div>
      <div class="k"><div class="kv" style="color:#3B6D11">US$${Math.round(precios[0]/1000)}k</div><div class="kl">Precio desde más bajo</div></div>
@@ -568,7 +573,7 @@ function buildAnalysis(){
    <h2 style="font-size:15px;font-weight:800;margin-bottom:4px">Análisis del cuadrante — Chacarilla del Estanque (julio 2026)</h2>
    <div style="font-size:11px;color:#999;margin-bottom:14px">Dirección de cada proyecto verificada una a una · Precios y disponibilidad confirmados con los asesores comerciales (jun–jul 2026) · TC ${D.meta.tc} · m² sobre flats típicos de pisos intermedios.</div>
    <div class="kgrid" style="max-width:1180px;margin-bottom:18px">
-     <div class="k"><div class="kv">25</div><div class="kl">Proyectos que compiten hoy</div></div>
+     <div class="k"><div class="kv">${N_COMP}</div><div class="kl">Proyectos que compiten hoy</div></div>
      <div class="k"><div class="kv">${nComparable}</div><div class="kl">Con precio por m² comparable</div></div>
      <div class="k"><div class="kv">6</div><div class="kl">En últimas unidades</div></div>
      <div class="k"><div class="kv" style="color:#A32D2D">$${GEU_F.toLocaleString()}/m²</div><div class="kl">GEU flats comparables</div></div>
