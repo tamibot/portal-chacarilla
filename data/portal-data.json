@@ -2,10 +2,10 @@
  "meta": {
   "tc": 3.4,
   "fecha": "2026-07-22",
-  "total": 24,
-  "en_cuadrante": 24,
+  "total": 23,
+  "en_cuadrante": 23,
   "con_precio": 100,
-  "competidores_activos": 23,
+  "competidores_activos": 22,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 10,
   "en_ultimas_unidades": 8,
@@ -2500,7 +2500,7 @@
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": true,
+   "mostrar": false,
    "gallery": [
     "assets/img-f1/monte-real-265/img-01.jpg",
     "assets/img-f1/monte-real-265/img-02.jpg",
@@ -2512,7 +2512,8 @@
    "stock": {
     "n": 1,
     "label": "Última unidad"
-   }
+   },
+   "motivo_retiro": "Proyecto ya entregado; queda una sola unidad (Dpto 103, 167.82 m²). No compite con una preventa a nov-2027."
   },
   {
    "id": "monte-sierpe",
