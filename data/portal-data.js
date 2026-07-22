@@ -9,7 +9,9 @@ window.PORTAL_DATA = {
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 10,
   "en_ultimas_unidades": 8,
-  "sin_precio_publico": 2
+  "sin_precio_publico": 2,
+  "cochera_incluida": 12,
+  "cochera_aparte": 3
  },
  "quadrant": [
   [
@@ -1225,11 +1227,14 @@ window.PORTAL_DATA = {
    "fuentes": [
     "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
     "https://www.adondevivir.com/propiedades/proyecto/ememefin-velasco-astete-1080-surco-147154828.html",
-    "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-galeon-inmobiliaria-147108629"
+    "https://urbania.pe/inmueble/proyecto/ememefin-proyecto-edificios-en-santiago-de-surco-lima-santiago-de-surco-galeon-inmobiliaria-147108629",
+    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07"
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": true
+   "mostrar": true,
+   "cochera_status": "si",
+   "cochera_nota": "Cochera de regalo (Galeón) — promoción anunciada en Meta, jul-2026. Verificar vigencia."
   },
   {
    "id": "floresta-living-444",
@@ -1650,17 +1655,19 @@ window.PORTAL_DATA = {
    ],
    "comentario": "Edifikarte no publica precios en web ni portales: política de cotización directa (Jenny Miranda). 7 pisos, 80–274 m². Mismo desarrollador que Monte Mayor 177.",
    "fuentes": [
-    "https://www.edifikarte.com.pe"
+    "https://www.edifikarte.com.pe",
+    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07"
    ],
    "anuncios": null,
    "mostrar": true,
    "amenidades": [],
    "total_pisos": 7,
    "portales": {},
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": null,
    "geo_aprox": true,
-   "geo_nota": "Interpolada sobre Jr. Monte Carmelo entre los nº 341 y 551, ambos verificados."
+   "geo_nota": "Interpolada sobre Jr. Monte Carmelo entre los nº 341 y 551, ambos verificados.",
+   "cochera_nota": "Cochera de regalo (Edifikarte, campaña 'Grati Days' 15–19 jul 2026) — promoción, verificar vigencia."
   },
   {
    "id": "monte-carmelo-551",
@@ -2606,7 +2613,8 @@ window.PORTAL_DATA = {
     "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/monte-sierpe-3477",
     "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria",
     "https://www.adondevivir.com/departamentos-en-venta-en-chacarilla-del-estanque-zona-de-santiago-de-surco-a-estrenar.html",
-    "https://litpropiedades.com/propiedad/departamento/tu-hogar-ideal-en-surco-donde-empiezan-tus-mejores-momentos"
+    "https://litpropiedades.com/propiedad/departamento/tu-hogar-ideal-en-surco-donde-empiezan-tus-mejores-momentos",
+    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria"
@@ -2623,7 +2631,9 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 6,
     "label": "6 disponibles"
-   }
+   },
+   "cochera_status": "si",
+   "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026."
   },
   {
    "id": "monte-umbroso",
