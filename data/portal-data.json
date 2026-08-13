@@ -11,7 +11,8 @@
   "en_ultimas_unidades": 8,
   "sin_precio_publico": 2,
   "cochera_incluida": 12,
-  "cochera_aparte": 3
+  "cochera_aparte": 3,
+  "verif_web_fecha": "2026-08-13"
  },
  "quadrant": [
   [
@@ -311,7 +312,14 @@
     "assets/img-f1/aura-sul/img-03.webp",
     "assets/img-f1/aura-sul/img-04.webp"
    ],
-   "cochera_status": "no"
+   "cochera_status": "no",
+   "verif_web": {
+    "precio_portal": "desde US$229,552",
+    "estado_portal": "En construcción · 23 deptos",
+    "nota": "Coincide con nuestra data. Sin fecha de entrega publicada.",
+    "fuente": "grupodicon.com.pe",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "conde-ii",
@@ -918,7 +926,14 @@
     "n": 9,
     "label": "9 flats típicos · 12 con precio"
    },
-   "lista_precios": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf"
+   "lista_precios": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf",
+   "verif_web": {
+    "precio_portal": "no publica (política 'consultar')",
+    "estado_portal": "En construcción · 26 deptos, 8 pisos",
+    "nota": "85–221 m². Un aviso suelto menciona entrega feb-2026 (no confirmado). Nuestro US$253,000 es de lista del asesor.",
+    "fuente": "azzurra.com.pe/proyectos/conde-de-la-vega-460",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "dmont-dicon",
@@ -1592,7 +1607,14 @@
     "n": null,
     "label": "78 deptos · 2 torres"
    },
-   "cochera_status": "incluida"
+   "cochera_status": "incluida",
+   "verif_web": {
+    "precio_portal": "no publica (validación BCP en curso)",
+    "estado_portal": "etapa temprana/preventa",
+    "nota": "1–3 dorm desde 51 m². Cochera de regalo por compra de 2–3 dorm (confirma nuestra data 'incluida').",
+    "fuente": "floresta.boulevard.com.pe · BCP",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "monte-carmelo-250",
@@ -1830,7 +1852,14 @@
     "n": 6,
     "label": "6 disponibles"
    },
-   "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf"
+   "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf",
+   "verif_web": {
+    "precio_portal": "desde S/750,300 (~US$220,700)",
+    "estado_portal": "En construcción · entrega 31-dic-2026",
+    "nota": "Nexo/BCP. Promo: descuento hasta S/25,000 + regalo. Nuestro US$264,147 es promedio neto de flats típicos; el de Nexo es el 'desde' bruto de la unidad más chica.",
+    "fuente": "nexoinmobiliario.pe · proyectosinmobiliariosbcp.com",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "monte-mar-167",
@@ -1983,6 +2012,14 @@
    "stock": {
     "n": 1,
     "label": "Última unidad"
+   },
+   "verif_web": {
+    "precio_portal": "conflicto: S/780,000 vs S/1,100,000",
+    "estado_portal": "entrega inmediata / obra",
+    "nota": "Fuentes indexadas discrepan en precio. Web sin precio, brochure de 2023. 86–231 m². Confirmar con asesor.",
+    "fuente": "edifikarte.com.pe/proyectos/monte-mayor-177",
+    "conflicto": "precio",
+    "fecha": "2026-08-13"
    }
   },
   {
@@ -2435,7 +2472,14 @@
     "n": 4,
     "label": "4 quedan"
    },
-   "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf"
+   "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf",
+   "verif_web": {
+    "precio_portal": "no publica (política 'consultar')",
+    "estado_portal": "En construcción · etapa temprana · 20 deptos",
+    "nota": "64–239 m², 2–3 dorm. Nuestro US$187,000 viene de la lista PDF del asesor, no de web.",
+    "fuente": "azzurra.com.pe/montemayor183-chacarilla-surco",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "monte-real-265",
@@ -3075,7 +3119,15 @@
     "n": 24,
     "label": "24 disponibles"
    },
-   "cochera_status": "no"
+   "cochera_status": "no",
+   "verif_web": {
+    "precio_portal": "desde S/684,000 (~US$201,200)",
+    "estado_portal": "En planos/lanzamiento · entrega 30-ene-2028",
+    "nota": "Nexo lo marca EN PLANOS y entrega 2028, no 'en construcción'. Financia Interbank. REVISAR estado.",
+    "fuente": "nexoinmobiliario.pe/.../parque-monte-carmelo-4152",
+    "conflicto": "estado",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "precursores-525",
@@ -3269,7 +3321,15 @@
     "n": 3,
     "label": "3 quedan"
    },
-   "lista_precios": "assets/brochures/precursores-ii-lista-precios.pdf"
+   "lista_precios": "assets/brochures/precursores-ii-lista-precios.pdf",
+   "verif_web": {
+    "precio_portal": "desde S/792,000",
+    "estado_portal": "En construcción · entrega ABRIL 2027 · 19 deptos",
+    "nota": "Portal dice EN CONSTRUCCIÓN entrega abr-2027; nuestra data lo tiene 'entrega inmediata, 3 quedan'. CONFLICTO fuerte — puede afectar si es comparable.",
+    "fuente": "adondevivir.com · urbania.pe",
+    "conflicto": "estado_entrega",
+    "fecha": "2026-08-13"
+   }
   },
   {
    "id": "santorini",
@@ -3445,6 +3505,13 @@
    "stock": {
     "n": 9,
     "label": "9 quedan"
+   },
+   "verif_web": {
+    "precio_portal": "desde US$274,550",
+    "estado_portal": "~47% vendido · 23 deptos (19 flats+4 dúplex)",
+    "nota": "Portal (referencial). Web oficial sin precio. Nuestro US$286,450 viene de lista del asesor.",
+    "fuente": "morgensterninmobiliaria.pe + portales",
+    "fecha": "2026-08-13"
    }
   },
   {
