@@ -437,7 +437,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Edifikarte. Apareció cuando consultamos por Conde de la Vega 128 (agotado) y la asesora derivó a este: 'últimos dúplex de 2 y 3 dorm, 95/122/161 m²'. El dúplex 603 (122.52 m², 3 dorm) va S/1,100,000 con 2 estac + depósito. En entrega inmediata según edifikarte.com.pe — es referencia de cierre, casi agotado.",
+   "comentario": "Edifikarte. NO es un lanzamiento nuevo: es un proyecto en cierre (entrega inmediata) que detectamos en campo. Quedan solo los últimos dúplex de 2 y 3 dorm (95/122/161 m²). El dúplex 603 (122.52 m²) va S/1,100,000 con 2 estac + depósito.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
     "Chat asesor Jenny Miranda (Evolution API, jul-2026)"
@@ -453,7 +453,6 @@ window.PORTAL_DATA = {
     "n": 2,
     "label": "Últimos dúplex"
    },
-   "descubierto": "2026-08-13",
    "geo_aprox": true,
    "geo_nota": "Interpolado sobre Conde de la Vega del Ren entre los nº 119 y 460 (ambos verificados).",
    "verif_web": {
@@ -462,7 +461,8 @@ window.PORTAL_DATA = {
     "estado_portal": "Entrega inmediata (web oficial)",
     "nota": "Confirmado en edifikarte.com.pe. Mención derivada de la consulta por Conde 128; no hubo mystery shopping dedicado.",
     "fuente": "edifikarte.com.pe · chat Jenny Miranda jul-2026"
-   }
+   },
+   "es_nuevo_lanzamiento": false
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1317,7 +1317,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Proyecto de Galeon en construcción (entrega feb-2027); flats de 2-3 dorm desde US$184,000 a ~$2,360-2,470/m2. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Galeón, Isabel Ruiz. Av. Velasco Astete 1080, en preventa/construcción, entrega jul-2027, financia BBVA (10% inicial). Sus tipologías de 2 dorm chicas (~80 m²) están AGOTADAS; queda principalmente 3 dorm (108 m²+).",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -1331,7 +1331,11 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "cochera_status": "si",
    "cochera_nota": "Cochera de regalo (Galeón) — promoción anunciada en Meta, jul-2026. Verificar vigencia.",
-   "entrega_confirmada_campo": "Julio 2027"
+   "entrega_confirmada_campo": "Julio 2027",
+   "stock": {
+    "n": null,
+    "label": "2 dorm agotados · queda 3 dorm"
+   }
   },
   {
    "id": "floresta-living-444",
@@ -1709,8 +1713,8 @@ window.PORTAL_DATA = {
    "name": "Monte Alegre",
    "dev": "Edifikarte",
    "addr": "Calle Monte Alegre, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En Lanzamiento (web Edifikarte) · 7 pisos",
+   "estado_grupo": "En planos",
+   "estado_raw": "En preventa / lanzamiento (web Edifikarte)",
    "entrega": "Por confirmar",
    "lat": -12.11587,
    "lng": -76.98609,
@@ -1742,7 +1746,7 @@ window.PORTAL_DATA = {
     3,
     4
    ],
-   "comentario": "Proyecto en lanzamiento de Edifikarte (mismo dev que Monte Mayor 177), listado en su web como 'En Lanzamiento'. 115–276 m², flats 3–4 dorm. Sin precio público: cotización con Jenny Miranda. Numeración de calle por confirmar.",
+   "comentario": "Lanzamiento NUEVO de Edifikarte (mismo dev que Monte Mayor 177), en preventa. Listado 'En Lanzamiento' en su web. 115–276 m², flats 3–4 dorm. Sin precio público: cotización con Jenny Miranda. Es el único proyecto genuinamente nuevo detectado en el cuadrante (ago-2026).",
    "fuentes": [
     "https://www.edifikarte.com.pe/ (listado, En Lanzamiento)"
    ],
@@ -1762,7 +1766,8 @@ window.PORTAL_DATA = {
     "estado_portal": "En Lanzamiento (web oficial)",
     "nota": "Confirmado en edifikarte.com.pe como 'Monte Alegre' (sin número). El '109' de una búsqueda previa era incorrecto.",
     "fuente": "edifikarte.com.pe"
-   }
+   },
+   "es_nuevo_lanzamiento": true
   },
   {
    "id": "monte-carmelo-250",
@@ -2107,7 +2112,7 @@ window.PORTAL_DATA = {
    "en_cuadrante": true,
    "precio_desde_usd": 241176,
    "precio_hasta_usd": 241176,
-   "dorms": "2–4",
+   "dorms": "3",
    "m2": "87–233",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
@@ -2143,7 +2148,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Última unidad: flat 87 m², 2 dorm (piso 2), S/820,000 con 2 estacionamientos paralelos y depósito incluidos; valor por m² neto de cocheras.",
+   "comentario": "Edifikarte, Jenny Miranda. AHORA (14-ago): ya NO quedan de 2 dormitorios — el flat de 87 m² se vendió. Solo queda dúplex (3 dorm). En junio ofrecían el último flat 2D de 87 m² en S/820,000.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -2159,7 +2164,7 @@ window.PORTAL_DATA = {
    "cochera_status": "si",
    "stock": {
     "n": 1,
-    "label": "Última unidad"
+    "label": "Solo dúplex (2 dorm agotado)"
    },
    "verif_web": {
     "precio_portal": "conflicto: S/780,000 vs S/1,100,000",
@@ -2172,7 +2177,7 @@ window.PORTAL_DATA = {
     "fecha_resolucion": "2026-08-13"
    },
    "entrega_confirmada_campo": "Entrega inmediata (último flat)",
-   "campo_ago": "13-ago: Jenny (Edifikarte) confirma 'solo dúplex' — los flats de 87 m² ya se agotaron.",
+   "campo_ago": "14-ago: 'solo dúplex'. Los 2 dorm (flat 87 m²) se agotaron.",
    "campo_fecha": "2026-08-13"
   },
   {
