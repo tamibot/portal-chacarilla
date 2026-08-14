@@ -151,6 +151,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div class="tab" data-tab="stat" onclick="showTab('stat')">📊 Estadísticas</div>
     <div class="tab" data-tab="price" onclick="showTab('price')">💰 Precio por m²</div>
     <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📈 Análisis del cuadrante</div>
+    <div class="tab" data-tab="updates" onclick="showTab('updates')">🔔 Actualizaciones</div>
   </div>
   <div id="mapaview">
     <div id="sb">
@@ -181,10 +182,11 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
   <div id="statview"></div>
   <div id="priceview"></div>
   <div id="analysisview"></div>
+  <div id="updatesview"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260722b"></script>
+<script src="data/portal-data.js?v=20260814a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -628,10 +630,48 @@ function showTab(t){
   document.getElementById('statview').style.display=t==='stat'?'block':'none';
   document.getElementById('priceview').style.display=t==='price'?'block':'none';
   document.getElementById('analysisview').style.display=t==='analysis'?'block':'none';
+  document.getElementById('updatesview').style.display=t==='updates'?'block':'none';
   if(t==='mapa')setTimeout(()=>map.invalidateSize(),20);
   if(t==='stat')buildStats();
   if(t==='price')buildPrice();
   if(t==='analysis')buildAnalysis();
+  if(t==='updates')buildUpdates();
+}
+
+/* Actualizaciones · movimiento de la zona (curado, espejo de la lámina del PPT de lanzamiento) */
+function buildUpdates(){
+  const RED='#ce3c31', AMBER='#b9863b', GRN='#2F7D54';
+  const rows=[
+   ["D'Mont","Grupo Dicon","VENDIDO 100%",RED,"$2,050","Se vendió por completo — salió del mercado."],
+   ["D'Mont 2","Grupo Dicon","QUEDAN 8 DE 23",GRN,"$2,150","Su reemplazo, en preventa: 15 vendidos, quedan 8. Precios web <b>sin cochera</b> (+US$25,000 aparte). Flat 3 dorm ~122 m²: US$263,064."],
+   ["HANA","Odima","ÚLTIMA UNIDAD",AMBER,"$2,590","Un solo depa; bajó a S/852,000 (amoblado + cochera) para cerrarlo."],
+   ["Monte Mayor 177","Edifikarte","2 DORM SEPARADO",AMBER,"$2,430","El único flat de 2 dorm quedó separado (minuta en stand-by). En 3 dorm, solo dúplex."],
+   ["Monte Mayor 183","Azzurra","3 DE 20",RED,"$2,500","«Voló»: quedan 3 de 20 deptos (el mes pasado eran 4)."],
+   ["Conde de la Vega 460","Azzurra","12 DE 26",AMBER,"$2,570","Preventa boutique. Quedan 12 de 26 deptos; desde US$253,000."],
+   ["Estelar 1080","Galeón","SIN 2 DORM",RED,"$2,420","Agotó los 2 dormitorios; queda 3 dorm."],
+   ["Aura Sul","Grupo Dicon","ÚLTIMAS UNIDADES",RED,"$2,290","De la tipología consultada quedan 2 (pisos 4 y 5, 100 m²); se vendió el 203."],
+   ["Precursores 525","Chacarilla Sur","ÚLTIMO DÚPLEX",RED,"—","Solo queda el dúplex 603 (227 m²): US$544,425. Entrega nov-2026."],
+   ["Precursores II","IPIROS","3 DE 19",RED,"$2,380","Av. Precursores 789, pronta entrega. Quedan 3 de 19 (3 dorm, US$385–410k)."],
+   ["Jardines de Monte Real","Central","SEPARÁNDOSE",AMBER,"$2,580","3 dorm 94 m²: piso 4 en separación; queda 4 y 5. S/836,496 con estac."],
+   ["Santorini","Morgenstern","+50% VENDIDO",AMBER,"$2,190","Más de la mitad vendido; cambia rápido. Entrega mar-2027."],
+   ["Monte Alegre 109","Edifikarte","NUEVO · PLANOS",GRN,"—","Lanzamiento en Calle Monte Alegre 109. Flats 3–4 dorm, 115–276 m², 7 pisos. Sin lista de precios aún."],
+  ];
+  const tr=rows.map(r=>`<tr>
+     <td><b>${r[0]}</b><div style="font-size:11px;color:#8a8a8a">${r[1]}</div></td>
+     <td><span style="font-size:10.5px;font-weight:700;color:${r[3]};background:${r[3]}1e;padding:3px 9px;border-radius:5px;white-space:nowrap">${r[2]}</span></td>
+     <td style="white-space:nowrap;font-weight:700;color:${r[4]==='—'?'#c2beb2':'#15402c'}">${r[4]}</td>
+     <td style="font-size:12.5px;line-height:1.45">${r[5]}</td></tr>`).join('');
+  const chip=(n,t,d,dc)=>`<div style="flex:1;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px">
+     <div style="font-size:26px;font-weight:800;color:#15402c">${n} <span style="font-size:13px;font-weight:700;color:${dc}">${d}</span></div>
+     <div style="font-size:12px;color:#7a7a7a;margin-top:2px">${t}</div></div>`;
+  document.getElementById('updatesview').innerHTML=`
+   <h2 style="margin-bottom:2px">Actualizaciones de la zona</h2>
+   <div style="font-size:12px;color:#999;margin-bottom:14px">Movimiento del cuadrante · verificado con asesores y listas oficiales · actualizado 14 ago 2026</div>
+   <div style="display:flex;gap:12px;margin-bottom:16px;max-width:760px">
+     ${chip(16,'En construcción','+1',GRN)}${chip(6,'Entrega inmediata','−1',RED)}${chip(2,'En planos','+1',GRN)}</div>
+   <div style="font-size:12.5px;color:#555;margin:-6px 0 16px;max-width:900px"><b style="color:${RED}">−1</b> en entrega inmediata (D'Mont vendido), <b style="color:${GRN}">+1</b> en construcción (D'Mont 2) y <b style="color:${GRN}">+1</b> en planos (Monte Alegre). Solo 2 proyectos en planos compiten con una preventa.</div>
+   <table class="t"><thead><tr><th style="width:20%">Proyecto</th><th style="width:15%">Situación</th><th style="width:9%">$/m² típ.</th><th>Qué pasó</th></tr></thead><tbody>${tr}</tbody></table>
+   <div class="foot" style="margin-top:10px">$/m² del flat típico, unidad sola sin cochera (bench jun–jul · pisos 2–6, sin 1er piso ni dúplex). Nuestro típico: <b>$2,475/m²</b> — al centro del mercado. Datos confirmados con los asesores comerciales por WhatsApp y con las listas de precios oficiales.</div>`;
 }
 
 /* INIT: solo proyectos con precio en el cuadrante */

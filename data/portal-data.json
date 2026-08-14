@@ -320,6 +320,11 @@
     "nota": "Coincide con nuestra data. Sin fecha de entrega publicada.",
     "fuente": "grupodicon.com.pe",
     "fecha": "2026-08-13"
+   },
+   "campo_ago": "14-ago: se vendió el Flat 203; quedan piso 4 y 5 (Flat 403/503, 100.39 m²). Asesor Hugo.",
+   "stock": {
+    "n": 2,
+    "label": "Quedan piso 4 y 5"
    }
   },
   {
@@ -1081,16 +1086,17 @@
    "dev": "Grupo Dicon",
    "addr": "Jr. Monte Real 422, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
+   "estado_raw": "En construcción — quedan 8 de 23 (15 vendidos)",
    "entrega": "En construcción",
    "lat": -12.111703553764334,
    "lng": -76.98553394529374,
    "isGEU": false,
    "en_cuadrante": true,
+   "stock": {"n": 8, "label": "8 de 23 · quedan 8"},
    "precio_desde_usd": 181190,
-   "precio_hasta_usd": null,
-   "dorms": "3",
-   "m2": "82–242",
+   "precio_hasta_usd": 299558,
+   "dorms": "2–3",
+   "m2": "82–157",
    "wa": "933209656",
    "web": "https://grupodicon.com.pe/proyecto/dmont-2/",
    "img": "assets/img-f1/dmont-2/img-01.jpg",
@@ -1243,7 +1249,7 @@
     "assets/img-f1/dmont-2/img-04.jpg",
     "assets/img-f1/dmont-2/img-05.jpg"
    ],
-   "cochera_status": "nd",
+   "cochera_status": "no",
    "verif_web": {
     "nota_campo": "Dicon terminó de vender D'Mont y ahora comercializa D'Mont 2 como su proyecto en preventa (cliente, ago-2026)."
    }
@@ -1582,11 +1588,11 @@
    ],
    "cochera_status": "nd",
    "stock": {
-    "n": 3,
-    "label": "Últimas ~3"
+    "n": 2,
+    "label": "Piso 4 y 5 (uno separándose)"
    },
    "entrega_confirmada_campo": "Marzo–Abril 2027",
-   "campo_ago": "13-ago: Central Inmobiliaria confirma S/836,496 con 1 estacionamiento (~US$246,028).",
+   "campo_ago": "14-ago: 3 dorm 94 m² en piso 4 y 5. El piso 4 tiene un cliente en proceso de separación; hasta que no separe sigue libre. S/836,496 con 1 estacionamiento. Entrega mar-2027.",
    "campo_fecha": "2026-08-13"
   },
   {
@@ -1710,11 +1716,11 @@
   },
   {
    "id": "monte-alegre",
-   "name": "Monte Alegre",
+   "name": "Monte Alegre 109",
    "dev": "Edifikarte",
-   "addr": "Calle Monte Alegre, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "addr": "Calle Monte Alegre 109, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En planos",
-   "estado_raw": "En preventa / lanzamiento (web Edifikarte)",
+   "estado_raw": "En preventa · 3–4 dorm, 115–276 m², 7 pisos; sin lista de precios aún",
    "entrega": "Por confirmar",
    "lat": -12.11587,
    "lng": -76.98609,
@@ -1746,9 +1752,9 @@
     3,
     4
    ],
-   "comentario": "Lanzamiento NUEVO de Edifikarte (mismo dev que Monte Mayor 177), en preventa. Listado 'En Lanzamiento' en su web. 115–276 m², flats 3–4 dorm. Sin precio público: cotización con Jenny Miranda. Es el único proyecto genuinamente nuevo detectado en el cuadrante (ago-2026).",
+   "comentario": "Lanzamiento NUEVO de Edifikarte (mismo dev que Monte Mayor 177), en preventa. Calle Monte Alegre 109, Chacarilla. Flats de 3–4 dorm, 115–276 m², 7 pisos. Sin precio público — Edifikarte cotiza directo. Aún no listado en portales (solo web oficial). Es el único lanzamiento genuinamente nuevo del cuadrante (ago-2026).",
    "fuentes": [
-    "https://www.edifikarte.com.pe/ (listado, En Lanzamiento)"
+    "https://www.edifikarte.com.pe/proyectos/monte-alegre/"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -1759,7 +1765,7 @@
    "stock": null,
    "descubierto": "2026-08-13",
    "geo_aprox": true,
-   "geo_nota": "Verificado: la Calle Monte Alegre está 100% dentro del cuadrante (7/7 puntos OSM), así que el proyecto está dentro aunque falte confirmar la numeración exacta.",
+   "geo_nota": "Calle Monte Alegre 109. Verificado: la calle está 100% dentro del cuadrante (7/7 puntos OSM).",
    "verif_web": {
     "fecha": "2026-08-13",
     "precio_portal": "no publica",
@@ -2148,7 +2154,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Edifikarte, Jenny Miranda. AHORA (14-ago): ya NO quedan de 2 dormitorios — el flat de 87 m² se vendió. Solo queda dúplex (3 dorm). En junio ofrecían el último flat 2D de 87 m² en S/820,000.",
+   "comentario": "Edifikarte, Jenny Miranda. El único flat de 2 dorm (87 m², S/820,000) está SEPARADO, con la firma de minuta en stand-by. En 3 dorm solo quedan dúplex (Conde de la Vega 251). 2 estac + depósito incluidos.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -2164,7 +2170,7 @@
    "cochera_status": "si",
    "stock": {
     "n": 1,
-    "label": "Solo dúplex (2 dorm agotado)"
+    "label": "2 dorm separado (minuta en stand-by)"
    },
    "verif_web": {
     "precio_portal": "conflicto: S/780,000 vs S/1,100,000",
@@ -2186,14 +2192,14 @@
    "dev": "Azzurra Constructores",
    "addr": "Calle Monte Mayor 183, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — últimas 4 unidades",
+   "estado_raw": "En construcción — últimas 3 unidades (lista 21-jul-2026)",
    "entrega": "1er trimestre 2027 (portal; web oficial no publica)",
    "lat": -12.114388330633895,
    "lng": -76.9869248368436,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 187000,
-   "precio_hasta_usd": 447000,
+   "precio_desde_usd": 202000,
+   "precio_hasta_usd": 477000,
    "dorms": "1–3",
    "m2": "64–240",
    "wa": "944216477",
@@ -2627,8 +2633,8 @@
    "destacado": true,
    "cochera_status": "si",
    "stock": {
-    "n": 4,
-    "label": "4 quedan"
+    "n": 3,
+    "label": "Voló · solo quedan 3 depas"
    },
    "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf",
    "verif_web": {
@@ -2637,7 +2643,8 @@
     "nota": "64–239 m², 2–3 dorm. Nuestro US$187,000 viene de la lista PDF del asesor, no de web.",
     "fuente": "azzurra.com.pe/montemayor183-chacarilla-surco",
     "fecha": "2026-08-13"
-   }
+   },
+   "campo_ago": "14-ago: Jenniffer (Azzurra) — \"Monte Mayor voló, solo me quedan 3 depas\". Estacionamientos 5×2.50 m."
   },
   {
    "id": "monte-real-265",
@@ -2832,12 +2839,13 @@
     "assets/img-f1/monte-sierpe/img-05.jpg"
    ],
    "stock": {
-    "n": 6,
-    "label": "6 disponibles"
+    "n": null,
+    "label": "Vendió el 408 · quedan tipos X10 (105.89 m²)"
    },
    "cochera_status": "si",
    "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026.",
-   "entrega_confirmada_campo": "Terminado / entrega inmediata"
+   "entrega_confirmada_campo": "Terminado / entrega inmediata",
+   "campo_ago": "14-ago: vendieron el 408. Quedan disponibles (Tipo X10, 105.89 m², 3 dorm+estudio, 4 baños). Terminado, entrega inmediata, EDGE, BCP."
   },
   {
    "id": "monte-umbroso",
@@ -3296,14 +3304,14 @@
    "dev": "Grupo Chacarilla Sur",
    "addr": "Av. Precursores 525, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — últimos departamentos",
+   "estado_raw": "En construcción — último dúplex penthouse (Dúplex 603)",
    "entrega": "Noviembre 2026",
    "lat": -12.116567517125498,
    "lng": -76.98061927217682,
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 203700,
-   "precio_hasta_usd": null,
+   "precio_hasta_usd": 544425,
    "dorms": "2–3",
    "m2": "83–227",
    "wa": "949107186",
@@ -3375,7 +3383,7 @@
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega set-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -3386,7 +3394,12 @@
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
    },
    "anuncios": null,
-   "mostrar": true
+   "mostrar": true,
+   "stock": {
+    "n": 1,
+    "label": "Solo queda un dúplex penthouse"
+   },
+   "campo_ago": "14-ago: Joyce (Chacarilla Sur) — solo queda un dúplex penthouse. Desde US$203,700, entrega nov-2026, BCP."
   },
   {
    "id": "precursores-ii",
@@ -3667,8 +3680,8 @@
    ],
    "cochera_status": "si",
    "stock": {
-    "n": 9,
-    "label": "9 quedan"
+    "n": null,
+    "label": "+50% vendido"
    },
    "verif_web": {
     "precio_portal": "desde US$274,550",
@@ -3676,7 +3689,8 @@
     "nota": "Portal (referencial). Web oficial sin precio. Nuestro US$286,450 viene de lista del asesor.",
     "fuente": "morgensterninmobiliaria.pe + portales",
     "fecha": "2026-08-13"
-   }
+   },
+   "campo_ago": "14-ago: +50% vendido, disponibilidad cambia rápido. Entrega marzo 2027. Rossana Patiño."
   },
   {
    "id": "spazio",
@@ -3896,6 +3910,68 @@
     "label": "A estrenar (broker)"
    },
    "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas."
+  },
+  {
+   "id": "dmont-2-nuevo",
+   "name": "D'Mont 2",
+   "dev": "Grupo Dicon",
+   "addr": "Jr. Monte Real 422, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En preventa (reemplaza a D'Mont, agotado)",
+   "entrega": "Por confirmar",
+   "lat": -12.1148,
+   "lng": -76.9835,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 263064,
+   "precio_hasta_usd": null,
+   "dorms": "3",
+   "m2": "121.62",
+   "wa": "933209656",
+   "web": null,
+   "img": null,
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Flat 401 / 201",
+     "dorm": 3,
+     "m2": 121.62,
+     "precio_usd": 263064,
+     "precio_m2": 2163,
+     "tipo": "flat",
+     "piso": 4,
+     "flat": true
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 121.62,
+     "precio_usd": 263064,
+     "precio_m2": 2163,
+     "comparable_confirmado": false
+    }
+   ],
+   "dorms_disponibles": [
+    3
+   ],
+   "comentario": "Grupo Dicon. Reemplaza a D'Mont (agotado). Flat de 3 dorm 121.62 m² (401/201): US$263,064 + cochera US$25,000 = US$288,064 (~S/979,000). Financia BCP, reserva US$1,000, inicial 10%. Vista a Jr. Monte Real, cocina americana, gas natural.",
+   "fuentes": [
+    "Chat asesor Niriam Sierra (Grupo Dicon, Evolution API, ago-2026)"
+   ],
+   "anuncios": null,
+   "mostrar": false,
+   "amenidades": [],
+   "total_pisos": null,
+   "portales": {},
+   "cochera_status": "no",
+   "cochera_nota": "Cochera individual US$25,000 aparte (doble lineal US$25,000 según Dicon).",
+   "stock": {
+    "n": null,
+    "label": "Preventa"
+   },
+   "descubierto": "2026-08-14"
   }
  ]
 }
