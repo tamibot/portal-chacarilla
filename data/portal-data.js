@@ -1,7 +1,7 @@
 window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
-  "fecha": "2026-07-22",
+  "fecha": "2026-08-14",
   "total": 24,
   "en_cuadrante": 24,
   "con_precio": 100,
