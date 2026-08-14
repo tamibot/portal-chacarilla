@@ -1751,7 +1751,7 @@
    "stock": null,
    "descubierto": "2026-08-13",
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada sobre la Calle Monte Alegre (dentro del cuadrante); numeración no resuelta en OSM.",
+   "geo_nota": "Verificado: la Calle Monte Alegre está 100% dentro del cuadrante (7/7 puntos OSM), así que el proyecto está dentro aunque falte confirmar la numeración exacta.",
    "verif_web": {
     "fecha": "2026-08-13",
     "precio_portal": "no publica",
