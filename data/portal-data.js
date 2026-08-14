@@ -1226,7 +1226,7 @@ window.PORTAL_DATA = {
      "m2": 84.5,
      "precio_usd": 181190,
      "precio_m2": 2144,
-     "comparable_confirmado": false
+     "comparable_confirmado": true
     }
    ],
    "dorms_disponibles": [
