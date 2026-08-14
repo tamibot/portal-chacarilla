@@ -2,10 +2,10 @@
  "meta": {
   "tc": 3.4,
   "fecha": "2026-07-22",
-  "total": 23,
-  "en_cuadrante": 23,
+  "total": 24,
+  "en_cuadrante": 24,
   "con_precio": 100,
-  "competidores_activos": 22,
+  "competidores_activos": 23,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 10,
   "en_ultimas_unidades": 8,
@@ -387,6 +387,75 @@
    },
    "geo_aprox": true,
    "geo_nota": "Extremo sur de la Calle Conde de la Vega del Ren: la numeración de esa calle no está mapeada en OSM."
+  },
+  {
+   "id": "conde-de-la-vega-251",
+   "name": "Conde de la Vega 251",
+   "dev": "Edifikarte",
+   "addr": "Jr. Conde de la Vega del Ren 251, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "Últimos dúplex disponibles",
+   "entrega": "Entrega inmediata (algunas unidades)",
+   "lat": -12.1158,
+   "lng": -76.98163,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "2–3",
+   "m2": "95–161",
+   "wa": "981386111",
+   "web": "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
+   "img": null,
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Dúplex 603",
+     "dorm": 3,
+     "m2": 122.52,
+     "precio_usd": null,
+     "precio_soles": 1100000,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": 6,
+     "flat": false
+    },
+    {
+     "unidad": "Dúplex 2-3d",
+     "dorm": 2,
+     "m2": 95,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": null,
+     "flat": false
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
+   "comentario": "Edifikarte, detectado en el propio chat con la asesora (jul-2026): 'últimos dúplex de 2 y 3 dorm, 95/122/161 m²'. El dúplex 603 (122.52 m², 3 dorm) va a S/1,100,000 con 2 estac + depósito. Cotización directa con Jenny Miranda.",
+   "fuentes": [
+    "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
+    "Chat asesor Jenny Miranda (Evolution API, jul-2026)"
+   ],
+   "anuncios": null,
+   "mostrar": true,
+   "amenidades": [],
+   "total_pisos": 6,
+   "portales": {},
+   "cochera_status": "si",
+   "cochera_nota": "El dúplex 603 incluye 2 estacionamientos + 1 depósito en el precio.",
+   "stock": {
+    "n": 2,
+    "label": "Últimos dúplex"
+   },
+   "descubierto": "2026-08-13",
+   "geo_aprox": true,
+   "geo_nota": "Interpolado sobre Conde de la Vega del Ren entre los nº 119 y 460 (ambos verificados)."
   },
   {
    "id": "conde-de-la-vega-460",
@@ -984,7 +1053,7 @@
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": true,
+   "mostrar": false,
    "gallery": [
     "assets/img-f1/dmont-dicon/img-01.jpg",
     "assets/img-f1/dmont-dicon/img-02.jpg",
@@ -996,7 +1065,8 @@
    "stock": {
     "n": 1,
     "label": "Última unidad"
-   }
+   },
+   "motivo_retiro": "Agotado — vendido en su totalidad (confirmado por el cliente, ago-2026). Dicon ahora comercializa D'Mont 2."
   },
   {
    "id": "dmont-2",
@@ -1149,7 +1219,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Grupo Dicon publica lista de precios por unidad en su web oficial (11 unidades, 81–243 m²). Falta confirmar con el asesor si los precios incluyen cochera y cuántas unidades quedan disponibles; en los otros proyectos de Dicon la cochera se vende aparte.",
+   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -1166,7 +1236,10 @@
     "assets/img-f1/dmont-2/img-04.jpg",
     "assets/img-f1/dmont-2/img-05.jpg"
    ],
-   "cochera_status": "nd"
+   "cochera_status": "nd",
+   "verif_web": {
+    "nota_campo": "Dicon terminó de vender D'Mont y ahora comercializa D'Mont 2 como su proyecto en preventa (cliente, ago-2026)."
+   }
   },
   {
    "id": "estelar-1080",
@@ -1621,6 +1694,59 @@
    }
   },
   {
+   "id": "monte-alegre-109",
+   "name": "Monte Alegre 109",
+   "dev": "Edifikarte",
+   "addr": "Calle Monte Alegre 109, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En lanzamiento / construcción · 7 pisos",
+   "entrega": "Por confirmar",
+   "lat": -12.11587,
+   "lng": -76.98609,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "3–4",
+   "m2": "115–276",
+   "wa": "981386111",
+   "web": "https://www.edifikarte.com.pe/",
+   "img": null,
+   "planos": [],
+   "brochure": null,
+   "typologies": [
+    {
+     "unidad": "Flat/Dúplex 3-4d",
+     "dorm": 3,
+     "m2": 115,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": null,
+     "flat": true
+    }
+   ],
+   "flats_summary": [],
+   "dorms_disponibles": [
+    3,
+    4
+   ],
+   "comentario": "Proyecto nuevo de Edifikarte (mismo dev que Monte Mayor 177), detectado ago-2026. Edifikarte no publica precio: cotización directa con Jenny Miranda. 115–276 m², 7 pisos.",
+   "fuentes": [
+    "https://www.edifikarte.com.pe/"
+   ],
+   "anuncios": null,
+   "mostrar": true,
+   "amenidades": [],
+   "total_pisos": 7,
+   "portales": {},
+   "cochera_status": "nd",
+   "stock": null,
+   "descubierto": "2026-08-13",
+   "geo_aprox": true,
+   "geo_nota": "Ubicación aproximada sobre la Calle Monte Alegre (dentro del cuadrante); numeración no resuelta en OSM."
+  },
+  {
    "id": "monte-carmelo-250",
    "name": "Monte Carmelo 250",
    "dev": "Edifikarte",
@@ -2024,7 +2150,7 @@
     "fuente": "edifikarte.com.pe/proyectos/monte-mayor-177",
     "conflicto": null,
     "fecha": "2026-08-13",
-    "resuelto_campo": "NO era conflicto de precio: S/820,000 = flat 87m² 2dorm (último, entrega inmediata, 2 estac+depósito incluidos); el S/1,100,000 es el DÚPLEX 603 de 122.52m² 3dorm — otro producto. Confirmado por Jenny Miranda (Edifikarte, 17-jun y 1-jul-2026).",
+    "resuelto_campo": "Chat con Jenny Miranda (Edifikarte): el flat 87 m² 2dorm sigue en S/820,000 (último, entrega inmediata, 2 estac+dep). El S/1,100,000 NO es de este proyecto — es el dúplex 603 de Conde de la Vega 251, otro edificio de Edifikarte.",
     "fecha_resolucion": "2026-08-13"
    },
    "entrega_confirmada_campo": "Entrega inmediata (último flat)"
