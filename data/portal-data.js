@@ -1447,7 +1447,7 @@ window.PORTAL_DATA = {
    "lng": -76.983405589272,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 264706,
+   "precio_desde_usd": 250588,
    "precio_hasta_usd": 264706,
    "dorms": "2–4",
    "m2": "108–209",
@@ -1478,7 +1478,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Última unidad disponible: Dpto Tipo 102 (96.31 m², 3 dorm, primer piso elevado, vista externa) — S/900,000 con cochera incluida, precio final. Certificación EDGE.",
+   "comentario": "Odima, Conde de la Vega del Ren 149, 17 dptos, financia BCP. Única unidad: DPTO 102 (3 dorm, 97 m², 1er piso elevado). PROMO ago-2026: bajó de S/900,000 a S/852,000 (depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de mejora). Entrega inmediata.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -1497,7 +1497,9 @@ window.PORTAL_DATA = {
     "n": 1,
     "label": "Última unidad"
    },
-   "entrega_confirmada_campo": "Entrega inmediata"
+   "entrega_confirmada_campo": "Entrega inmediata",
+   "campo_ago": "13-ago: bajó a S/852,000 con promo (antes S/900,000). Rebeca/Odima.",
+   "campo_fecha": "2026-08-13"
   },
   {
    "id": "jardines-monte-real",
@@ -1579,7 +1581,9 @@ window.PORTAL_DATA = {
     "n": 3,
     "label": "Últimas ~3"
    },
-   "entrega_confirmada_campo": "Marzo–Abril 2027"
+   "entrega_confirmada_campo": "Marzo–Abril 2027",
+   "campo_ago": "13-ago: Central Inmobiliaria confirma S/836,496 con 1 estacionamiento (~US$246,028).",
+   "campo_fecha": "2026-08-13"
   },
   {
    "id": "la-floresta-boulevard",
@@ -2167,7 +2171,9 @@ window.PORTAL_DATA = {
     "resuelto_campo": "Chat con Jenny Miranda (Edifikarte): el flat 87 m² 2dorm sigue en S/820,000 (último, entrega inmediata, 2 estac+dep). El S/1,100,000 NO es de este proyecto — es el dúplex 603 de Conde de la Vega 251, otro edificio de Edifikarte.",
     "fecha_resolucion": "2026-08-13"
    },
-   "entrega_confirmada_campo": "Entrega inmediata (último flat)"
+   "entrega_confirmada_campo": "Entrega inmediata (último flat)",
+   "campo_ago": "13-ago: Jenny (Edifikarte) confirma 'solo dúplex' — los flats de 87 m² ya se agotaron.",
+   "campo_fecha": "2026-08-13"
   },
   {
    "id": "monte-mayor-183",
