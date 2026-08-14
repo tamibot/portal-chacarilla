@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260813a"></script>
+<script src="data/portal-data.js?v=20260813b"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -184,6 +184,7 @@ function render(){
      ${p.verif_web.conflicto?'⚠️ <b>Divergencia con nuestra data</b> — ':'🔎 '}
      <b>Portal:</b> ${p.verif_web.precio_portal||'—'} · ${p.verif_web.estado_portal||''}<br>
      ${p.verif_web.nota||''}<br><span style="color:#999;font-size:11px">Fuente: ${p.verif_web.fuente||''}</span>
+     ${p.verif_web.resuelto_campo?`<div style="margin-top:8px;padding-top:8px;border-top:1px solid #d8e8d8;color:#15402c"><b>✅ Resuelto con campo (${p.verif_web.fecha_resolucion}):</b> ${p.verif_web.resuelto_campo}</div>`:''}
    </div>`:''}
 
    <div class="sec">Ubicación</div>

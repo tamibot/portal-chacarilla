@@ -12,7 +12,8 @@ window.PORTAL_DATA = {
   "sin_precio_publico": 2,
   "cochera_incluida": 12,
   "cochera_aparte": 3,
-  "verif_web_fecha": "2026-08-13"
+  "verif_web_fecha": "2026-08-13",
+  "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)"
  },
  "quadrant": [
   [
@@ -1249,7 +1250,8 @@ window.PORTAL_DATA = {
    "anuncios": null,
    "mostrar": true,
    "cochera_status": "si",
-   "cochera_nota": "Cochera de regalo (Galeón) — promoción anunciada en Meta, jul-2026. Verificar vigencia."
+   "cochera_nota": "Cochera de regalo (Galeón) — promoción anunciada en Meta, jul-2026. Verificar vigencia.",
+   "entrega_confirmada_campo": "Julio 2027"
   },
   {
    "id": "floresta-living-444",
@@ -1414,7 +1416,8 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 1,
     "label": "Última unidad"
-   }
+   },
+   "entrega_confirmada_campo": "Entrega inmediata"
   },
   {
    "id": "jardines-monte-real",
@@ -1495,7 +1498,8 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 3,
     "label": "Últimas ~3"
-   }
+   },
+   "entrega_confirmada_campo": "Marzo–Abril 2027"
   },
   {
    "id": "la-floresta-boulevard",
@@ -2018,9 +2022,12 @@ window.PORTAL_DATA = {
     "estado_portal": "entrega inmediata / obra",
     "nota": "Fuentes indexadas discrepan en precio. Web sin precio, brochure de 2023. 86–231 m². Confirmar con asesor.",
     "fuente": "edifikarte.com.pe/proyectos/monte-mayor-177",
-    "conflicto": "precio",
-    "fecha": "2026-08-13"
-   }
+    "conflicto": null,
+    "fecha": "2026-08-13",
+    "resuelto_campo": "NO era conflicto de precio: S/820,000 = flat 87m² 2dorm (último, entrega inmediata, 2 estac+depósito incluidos); el S/1,100,000 es el DÚPLEX 603 de 122.52m² 3dorm — otro producto. Confirmado por Jenny Miranda (Edifikarte, 17-jun y 1-jul-2026).",
+    "fecha_resolucion": "2026-08-13"
+   },
+   "entrega_confirmada_campo": "Entrega inmediata (último flat)"
   },
   {
    "id": "monte-mayor-183",
@@ -2678,7 +2685,8 @@ window.PORTAL_DATA = {
     "label": "6 disponibles"
    },
    "cochera_status": "si",
-   "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026."
+   "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026.",
+   "entrega_confirmada_campo": "Terminado / entrega inmediata"
   },
   {
    "id": "monte-umbroso",
@@ -3125,8 +3133,10 @@ window.PORTAL_DATA = {
     "estado_portal": "En planos/lanzamiento · entrega 30-ene-2028",
     "nota": "Nexo lo marca EN PLANOS y entrega 2028, no 'en construcción'. Financia Interbank. REVISAR estado.",
     "fuente": "nexoinmobiliario.pe/.../parque-monte-carmelo-4152",
-    "conflicto": "estado",
-    "fecha": "2026-08-13"
+    "conflicto": null,
+    "fecha": "2026-08-13",
+    "resuelto_campo": "Asesora Cecilia Estrada (EE, jun-jul 2026): proyecto en construcción con certificación EDGE, sala activa. Nexo lo etiqueta 'en planos' pero es ficha vieja; el proyecto NO retrocedió. Entrega ~nov-2027/ene-2028.",
+    "fecha_resolucion": "2026-08-13"
    }
   },
   {
@@ -3327,9 +3337,12 @@ window.PORTAL_DATA = {
     "estado_portal": "En construcción · entrega ABRIL 2027 · 19 deptos",
     "nota": "Portal dice EN CONSTRUCCIÓN entrega abr-2027; nuestra data lo tiene 'entrega inmediata, 3 quedan'. CONFLICTO fuerte — puede afectar si es comparable.",
     "fuente": "adondevivir.com · urbania.pe",
-    "conflicto": "estado_entrega",
-    "fecha": "2026-08-13"
-   }
+    "conflicto": null,
+    "fecha": "2026-08-13",
+    "resuelto_campo": "Asesor (WhatsApp 1-jul-2026) envió 'PRECIOS DE VENTA PRONTA ENTREGA' + '2 cocheras paralelas y depósito' incluidas. Es PRONTA ENTREGA, no construcción-2027: la ficha de Nexo/Adondevivir está desactualizada. Nuestra data es la vigente.",
+    "fecha_resolucion": "2026-08-13"
+   },
+   "entrega_confirmada_campo": "Pronta entrega (confirmado jul-2026)"
   },
   {
    "id": "santorini",
