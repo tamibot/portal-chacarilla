@@ -393,9 +393,9 @@
    "name": "Conde de la Vega 251",
    "dev": "Edifikarte",
    "addr": "Jr. Conde de la Vega del Ren 251, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "Últimos dúplex disponibles",
-   "entrega": "Entrega inmediata (algunas unidades)",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entrega inmediata · últimos dúplex",
+   "entrega": "Entrega inmediata",
    "lat": -12.1158,
    "lng": -76.98163,
    "isGEU": false,
@@ -437,7 +437,7 @@
     2,
     3
    ],
-   "comentario": "Edifikarte, detectado en el propio chat con la asesora (jul-2026): 'últimos dúplex de 2 y 3 dorm, 95/122/161 m²'. El dúplex 603 (122.52 m², 3 dorm) va a S/1,100,000 con 2 estac + depósito. Cotización directa con Jenny Miranda.",
+   "comentario": "Edifikarte. Apareció cuando consultamos por Conde de la Vega 128 (agotado) y la asesora derivó a este: 'últimos dúplex de 2 y 3 dorm, 95/122/161 m²'. El dúplex 603 (122.52 m², 3 dorm) va S/1,100,000 con 2 estac + depósito. En entrega inmediata según edifikarte.com.pe — es referencia de cierre, casi agotado.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
     "Chat asesor Jenny Miranda (Evolution API, jul-2026)"
@@ -455,7 +455,14 @@
    },
    "descubierto": "2026-08-13",
    "geo_aprox": true,
-   "geo_nota": "Interpolado sobre Conde de la Vega del Ren entre los nº 119 y 460 (ambos verificados)."
+   "geo_nota": "Interpolado sobre Conde de la Vega del Ren entre los nº 119 y 460 (ambos verificados).",
+   "verif_web": {
+    "fecha": "2026-08-13",
+    "precio_portal": "no publica",
+    "estado_portal": "Entrega inmediata (web oficial)",
+    "nota": "Confirmado en edifikarte.com.pe. Mención derivada de la consulta por Conde 128; no hubo mystery shopping dedicado.",
+    "fuente": "edifikarte.com.pe · chat Jenny Miranda jul-2026"
+   }
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1694,12 +1701,12 @@
    }
   },
   {
-   "id": "monte-alegre-109",
-   "name": "Monte Alegre 109",
+   "id": "monte-alegre",
+   "name": "Monte Alegre",
    "dev": "Edifikarte",
-   "addr": "Calle Monte Alegre 109, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "addr": "Calle Monte Alegre, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En construcción",
-   "estado_raw": "En lanzamiento / construcción · 7 pisos",
+   "estado_raw": "En Lanzamiento (web Edifikarte) · 7 pisos",
    "entrega": "Por confirmar",
    "lat": -12.11587,
    "lng": -76.98609,
@@ -1731,9 +1738,9 @@
     3,
     4
    ],
-   "comentario": "Proyecto nuevo de Edifikarte (mismo dev que Monte Mayor 177), detectado ago-2026. Edifikarte no publica precio: cotización directa con Jenny Miranda. 115–276 m², 7 pisos.",
+   "comentario": "Proyecto en lanzamiento de Edifikarte (mismo dev que Monte Mayor 177), listado en su web como 'En Lanzamiento'. 115–276 m², flats 3–4 dorm. Sin precio público: cotización con Jenny Miranda. Numeración de calle por confirmar.",
    "fuentes": [
-    "https://www.edifikarte.com.pe/"
+    "https://www.edifikarte.com.pe/ (listado, En Lanzamiento)"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -1744,7 +1751,14 @@
    "stock": null,
    "descubierto": "2026-08-13",
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada sobre la Calle Monte Alegre (dentro del cuadrante); numeración no resuelta en OSM."
+   "geo_nota": "Ubicación aproximada sobre la Calle Monte Alegre (dentro del cuadrante); numeración no resuelta en OSM.",
+   "verif_web": {
+    "fecha": "2026-08-13",
+    "precio_portal": "no publica",
+    "estado_portal": "En Lanzamiento (web oficial)",
+    "nota": "Confirmado en edifikarte.com.pe como 'Monte Alegre' (sin número). El '109' de una búsqueda previa era incorrecto.",
+    "fuente": "edifikarte.com.pe"
+   }
   },
   {
    "id": "monte-carmelo-250",
