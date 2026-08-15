@@ -155,7 +155,7 @@
    "dev": "Grupo Dicon",
    "addr": "Av. del Sur 330, Urb. Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
+   "estado_raw": "En construcción · del flat típico de 100 m² quedan pisos 4 y 5 (se vendió el 203)",
    "entrega": "En construcción (sin fecha publicada)",
    "lat": -12.11398358899467,
    "lng": -76.98274239727259,
@@ -323,8 +323,8 @@
    },
    "campo_ago": "14-ago: se vendió el Flat 203; quedan piso 4 y 5 (Flat 403/503, 100.39 m²). Asesor Hugo.",
    "stock": {
-    "n": 2,
-    "label": "Quedan piso 4 y 5"
+    "n": null,
+    "label": "Flat típico 100 m²: quedan pisos 4 y 5 (203 vendido)"
    }
   },
   {

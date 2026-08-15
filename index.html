@@ -151,7 +151,6 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div class="tab" data-tab="stat" onclick="showTab('stat')">📊 Estadísticas</div>
     <div class="tab" data-tab="price" onclick="showTab('price')">💰 Precio por m²</div>
     <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📈 Análisis del cuadrante</div>
-    <div class="tab" data-tab="dorm" onclick="showTab('dorm')">💵 Costo típico x dorm</div>
     <div class="tab" data-tab="updates" onclick="showTab('updates')">🔔 Actualizaciones</div>
   </div>
   <div id="mapaview">
@@ -183,12 +182,11 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
   <div id="statview"></div>
   <div id="priceview"></div>
   <div id="analysisview"></div>
-  <div id="dormview"></div>
   <div id="updatesview"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260814c"></script>
+<script src="data/portal-data.js?v=20260814d"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -545,13 +543,14 @@ function buildPrice(){
     const out=!p.en_cuadrante&&!p.isGEU?'<span class="badge b-out">Fuera</span>':'';
     return`<tr class="${p.isGEU?'geurow':'clickrow'}" ${p.isGEU?'':`onclick="window.open('proyecto.html?id=${p.id}','_blank')"`}><td>${p.name} ${p.isGEU?'★':''}${out}</td>${cols}</tr>`;}).join('');
   document.getElementById('priceview').innerHTML=`
-   <h2 style="font-size:15px;font-weight:800;margin-bottom:5px">Precio por m² · Flats típicos (pisos 2–7)</h2>
+   <h2 style="font-size:15px;font-weight:800;margin-bottom:5px">Precio por m² · Flats típicos (pisos intermedios, sin 1er ni último)</h2>
    <div style="font-size:11px;color:#aaa;margin-bottom:16px;line-height:1.6">Una fila por proyecto; columnas por nº de dormitorios. Excluye 1er piso, dúplex y PH. TC ${D.meta.tc} S/USD. Clic en fila → ficha.<br>
      <span style="color:#A32D2D;font-weight:600">Rojo &gt;$2,200/m²</span> · <span style="color:#8a5a12;font-weight:600">Ámbar $1,800–2,200</span> · <span style="color:#3B6D11;font-weight:600">Verde &lt;$1,800</span></div>
    <table class="t"><thead>
      <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th></tr>
      <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>
-   <div class="foot">Solo proyectos del cuadrante con precios por tipología confirmados por el desarrollador o su asesor comercial. Los proyectos que no publican lista de precios no aparecen en esta tabla.</div>`;
+   ${dormSections()}
+   <div class="foot">Solo proyectos del cuadrante con precios por tipología confirmados por el desarrollador o su asesor comercial. Precio neto por unidad sola, cochera descontada donde el asesor lo confirmó. Los proyectos que no publican lista de precios no aparecen aquí.</div>`;
 }
 
 
@@ -632,16 +631,14 @@ function showTab(t){
   document.getElementById('statview').style.display=t==='stat'?'block':'none';
   document.getElementById('priceview').style.display=t==='price'?'block':'none';
   document.getElementById('analysisview').style.display=t==='analysis'?'block':'none';
-  document.getElementById('dormview').style.display=t==='dorm'?'block':'none';
   document.getElementById('updatesview').style.display=t==='updates'?'block':'none';
   if(t==='mapa')setTimeout(()=>map.invalidateSize(),20);
   if(t==='stat')buildStats();
   if(t==='price')buildPrice();
   if(t==='analysis')buildAnalysis();
-  if(t==='dorm')buildDorm();
   if(t==='updates')buildUpdates();
 }
-function buildDorm(){
+function dormSections(){
   const dorms=[1,2,3];
   const blk=d=>{
     const list=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante)))
@@ -660,11 +657,10 @@ function buildDorm(){
     return`<div class="sec">Flats de ${d} ${d===1?'dormitorio':'dormitorios'} · ${list.length} proyectos · mediana <b>$${med.toLocaleString()}/m²</b></div>
       <table class="t" style="max-width:840px;margin-bottom:24px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>m²</th><th>Precio</th><th>USD/m²</th><th>Estado</th></tr></thead><tbody>${tr}</tbody></table>`;
   };
-  document.getElementById('dormview').innerHTML=`
-   <h2 style="margin-bottom:2px">Costo de típicos · separado por dormitorios</h2>
-   <div style="font-size:12px;color:#999;margin-bottom:18px">Flats típicos comparables (unidad sola sin cochera, pisos 2–6). Ordenado por US$/m², menor = más competitivo. Clic en fila → ficha del proyecto.</div>
-   ${dorms.map(blk).join('')}
-   <div class="foot">Precio neto por unidad, cochera descontada donde el asesor lo confirmó. TC ${D.meta.tc} S/USD. Los proyectos sin lista por tipología no aparecen aquí.</div>`;
+  return `
+   <div class="sec" style="margin-top:26px">Costo del típico · separado por dormitorios</div>
+   <div style="font-size:11px;color:#aaa;margin-bottom:16px">Mismo dato, ordenado por US$/m² (menor = más competitivo) y agrupado por nº de dormitorios. Clic en fila → ficha del proyecto.</div>
+   ${dorms.map(blk).join('')}`;
 }
 
 /* Actualizaciones · movimiento de la zona (curado, espejo de la lámina del PPT de lanzamiento) */
