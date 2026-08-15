@@ -65,9 +65,9 @@ window.PORTAL_DATA = {
    "lng": -76.98308499330894,
    "isGEU": true,
    "en_cuadrante": true,
-   "precio_desde_usd": 167805,
-   "dorms": "1–3",
-   "m2": "65–180",
+   "precio_desde_usd": 173235,
+   "dorms": "1–4",
+   "m2": "68–329",
    "wa": "924691568",
    "web": null,
    "img": "assets/img/ave-del-sur-220.jpg",
@@ -78,56 +78,88 @@ window.PORTAL_DATA = {
      "unidad": "Dpto 204",
      "dorm": 2,
      "m2": 67.8,
-     "precio_usd": 167805,
-     "precio_m2": 2475,
+     "m2_techada": 67.8,
+     "precio_lista_usd": 188235,
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 173235,
+     "precio_m2": 2555,
      "tipo": "flat",
-     "piso": null,
-     "flat": true
+     "piso": null
     },
     {
-     "unidad": "Dpto 202",
-     "dorm": 2,
+     "unidad": "Dpto 302",
+     "dorm": 1,
      "m2": 70.9,
-     "precio_usd": 175478,
-     "precio_m2": 2475,
+     "m2_techada": 70.9,
+     "precio_lista_usd": 197059,
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 182059,
+     "precio_m2": 2568,
      "tipo": "flat",
-     "piso": null,
-     "flat": true
+     "piso": null
     },
     {
      "unidad": "Dpto 201",
      "dorm": 3,
      "m2": 138.4,
-     "precio_usd": 342540,
-     "precio_m2": 2475,
+     "m2_techada": 138.4,
+     "precio_lista_usd": 367647,
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 352647,
+     "precio_m2": 2548,
      "tipo": "flat",
-     "piso": null,
-     "flat": true
+     "piso": null
     },
     {
      "unidad": "Dpto 203",
      "dorm": 3,
      "m2": 165,
-     "precio_usd": 408375,
-     "precio_m2": 2475,
+     "m2_techada": 165,
+     "precio_lista_usd": 435294,
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 420294,
+     "precio_m2": 2547,
      "tipo": "flat",
-     "piso": null,
-     "flat": true
+     "piso": null
+    },
+    {
+     "unidad": "Dúplex 705",
+     "dorm": 2,
+     "m2": 132.7,
+     "m2_techada": 104.2,
+     "precio_lista_usd": 305882,
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 290882,
+     "precio_m2": 2192,
+     "tipo": "duplex",
+     "piso": null
+    },
+    {
+     "unidad": "Dúplex 701",
+     "dorm": 4,
+     "m2": 272.9,
+     "m2_techada": 219.6,
+     "precio_lista_usd": 619118,
+     "ajuste_cochera_usd": 15000,
+     "precio_usd": 604118,
+     "precio_m2": 2214,
+     "tipo": "duplex",
+     "piso": null
     }
    ],
    "flats_summary": [
     {
      "dorm": 2,
      "m2": 67.8,
-     "precio_usd": 167805,
-     "precio_m2": 2475,
+     "precio_usd": 173235,
+     "precio_m2": 2555,
      "comparable_confirmado": true
     },
     {
      "dorm": 3,
      "m2": 138.4,
-     "precio_usd": 342540,
-     "precio_m2": 2475,
+     "precio_usd": 352647,
+     "precio_m2": 2548,
      "comparable_confirmado": true
     }
    ],
@@ -135,7 +167,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Nuestro proyecto: 39 residencias en 7 pisos, flats y dúplex de 1 a 4 dormitorios, con cocheras y depósitos independientes.",
+   "comentario": "Preventa vigente (lista ago-2026). El precio publicado incluye 1 cochera simple; el US$/m² del portal descuenta la cochera (US$15,000) para comparar en la misma base que la competencia. Flats 1–3 dorm, dúplex 2 y 4 dorm. Entrega noviembre 2027.",
    "fuentes": [],
    "anuncios": null,
    "mostrar": true,
@@ -147,7 +179,9 @@ window.PORTAL_DATA = {
    "wa_label": "Central del proyecto",
    "wa_asesora": "902312242",
    "asesora": "Camu Planas",
-   "cochera_nota": "Cochera y depósito se venden aparte: US$15–16k la simple, US$27k la doble."
+   "cochera_nota": "Cochera y depósito se venden aparte: US$15–16k la simple, US$27k la doble.",
+   "precio_hasta_usd": 721765,
+   "estado_raw": "En preventa · lanzamiento agosto 2026"
   },
   {
    "id": "aura-sul",

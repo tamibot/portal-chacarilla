@@ -186,7 +186,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260814d"></script>
+<script src="data/portal-data.js?v=20260815a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -569,7 +569,7 @@ function buildAnalysis(){
     else if(t.tipo==='duplex'||t.tipo==='triplex')dupx.push(t.precio_m2);
   });});
   const all=[...flats[1],...flats[2],...flats[3]];
-  const GEU_F=2475,GEU_D=2153;
+  const GEU_F=2562,GEU_D=2206;
   const gapAll=+(((GEU_F-median(all))/median(all)*100).toFixed(1));
   const nComparable=comp.filter(p=>dataLevel(p)==='completa').length+1;
   const trow=(lbl,v,geu)=>{if(!v.length)return'';const md=median(v),gap=+(((geu-md)/md*100).toFixed(1));
@@ -586,8 +586,8 @@ function buildAnalysis(){
   const maxE=Math.max(...Object.values(estCnt));
   const estRows=Object.entries(estCnt).sort((a,b)=>b[1]-a[1]).map(([e,n])=>`<div class="brow"><div class="bname">${e}</div><div class="btrack"><div class="bfill" style="width:${(n/maxE*100).toFixed(0)}%"></div></div><div class="bval">${n}</div><div class="bstt"></div></div>`).join('');
   document.getElementById('analysisview').innerHTML=`
-   <h2 style="font-size:15px;font-weight:800;margin-bottom:4px">Análisis del cuadrante — Chacarilla del Estanque (julio 2026)</h2>
-   <div style="font-size:11px;color:#999;margin-bottom:14px">Dirección de cada proyecto verificada una a una · Precios y disponibilidad confirmados con los asesores comerciales (jun–jul 2026) · TC ${D.meta.tc} · m² sobre flats típicos de pisos intermedios.</div>
+   <h2 style="font-size:15px;font-weight:800;margin-bottom:4px">Análisis del cuadrante — Chacarilla del Estanque (agosto 2026)</h2>
+   <div style="font-size:11px;color:#999;margin-bottom:14px">Dirección de cada proyecto verificada una a una · Precios y disponibilidad confirmados con los asesores comerciales (jun–ago 2026) · TC ${D.meta.tc} · m² sobre flats típicos de pisos intermedios.</div>
    <div class="kgrid" style="max-width:1180px;margin-bottom:18px">
      <div class="k"><div class="kv">${N_COMP}</div><div class="kl">Proyectos que compiten hoy</div></div>
      <div class="k"><div class="kv">${nComparable}</div><div class="kl">Con precio por m² comparable</div></div>
@@ -600,13 +600,13 @@ function buildAnalysis(){
      ${trow('Flat 1 dormitorio',flats[1],GEU_F)}${trow('Flat 2 dormitorios',flats[2],GEU_F)}${trow('Flat 3 dormitorios',flats[3],GEU_F)}
      ${trow('GENERAL FLATS (m² comparable)',all,GEU_F)}${trow('Dúplex / PH (m² área total)',dupx,GEU_D)}
    </tbody></table>
-   <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). GEU ($2,475/m²) queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — al centro del mercado. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
+   <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). En preventa GEU subió a <b>$${GEU_F.toLocaleString()}/m²</b>, que queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — mitad superior del rango, con cochera incluida en el precio de lista. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
    <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
    ${barRows}
    <div style="font-size:10px;color:#aaa;margin:6px 0 14px">⬛ borde = proyecto ubicado sobre una avenida-límite del cuadrante. Donde el asesor confirmó la política de cochera (Santorini, Monte Mayor 177 y 183, Precursores II, Conde de la Vega 460), la barra muestra el precio neto sin cochera; en los demás es el precio de lista publicado. Los proyectos que no aparecen en el gráfico no publican precios por unidad.</div>
    <div class="sec">Ajuste por cochera — precios netos confirmados con cada asesor</div>
    <table class="t" style="max-width:1080px"><thead><tr><th>Proyecto</th><th>Unidades típicas</th><th>Desde (lista)</th><th>Cochera / depósito</th><th>US$/m² neto</th><th>Disponibilidad</th></tr></thead><tbody>
-   <tr class="geurow"><td><b>AVE. DEL SUR 220 (GEU)</b></td><td>Flats 1–3d (67.8–165 m²)</td><td>US$167,805</td><td>Aparte ($15–16k / $27k)</td><td><b style="color:#A32D2D">$2,475</b></td><td>Lanzamiento · 39 und.</td></tr>
+   <tr class="geurow"><td><b>AVE. DEL SUR 220 (GEU)</b></td><td>Flats 1–3d + dúplex 2–4d (67.8–329 m²)</td><td>US$173,235</td><td>1 incluida · adicional $15k</td><td><b style="color:#A32D2D">$2,562</b></td><td>Preventa · 39 und.</td></tr>
    <tr><td><b>Santorini</b></td><td>7 flats 2-3d, pisos 2-5</td><td>US$286,450 c/1 estac</td><td>1-2 estac. incl. → −$15k</td><td><b>$2,180–2,335</b></td><td>9 disp. (>50% vendido) · mar-27</td></tr>
    <tr><td><b>Aura Sul</b></td><td>6 flats 3d</td><td>US$229,552</td><td>Aparte ($15k/$25k)</td><td><b>$2,286–2,287</b></td><td>En construcción</td></tr>
    <tr><td><b>Monte Mayor 177</b></td><td>Flat 203, 87 m², 2d</td><td>S/820,000</td><td>2 paralelos + depósito incl. → −$30k</td><td><b>$2,429</b></td><td>ÚLTIMA unidad</td></tr>
@@ -618,11 +618,11 @@ function buildAnalysis(){
    <tr style="color:#777"><td><b>Monte Mar 167</b> †</td><td>121 m² — piso por confirmar</td><td>S/980,000</td><td>2 paralelos incl. → −$30k</td><td><b>$2,134</b> †</td><td>Últimas 3</td></tr>
    </tbody></table>
    <div style="font-size:10px;color:#999;max-width:1080px;margin:2px 0 8px">† Unidades finales con cálculo completo (piso 1 / piso por confirmar): referencia de cierre, no integran la banda de flats típicos.</div>
-   <div class="alert" style="max-width:1080px">🎯 <b>Rango confirmado del cuadrante: $2,180–2,797/m² neto · GEU ($2,475) queda al centro (+1.6% sobre la mediana de estos proyectos).</b> Situación de cochera verificada con cada asesor comercial (jun–jul 2026). El cuadrante se está quedando sin stock: ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
+   <div class="alert" style="max-width:1080px">🎯 <b>Rango confirmado del cuadrante: $2,144–2,797/m² neto · GEU en preventa ($${GEU_F.toLocaleString()}) queda +7.6% sobre la mediana ($2,382), en la mitad superior del rango.</b> Situación de cochera verificada con cada asesor comercial (jun–ago 2026). El cuadrante se está quedando sin stock: ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
    <div class="sec">Estado de la oferta (${comp.length} proyectos)</div>
    ${estRows}
    <div class="alert" style="max-width:980px">La competencia activa real de la preventa GEU son los <b>en construcción</b> y <b>en planos</b>; los de entrega inmediata compiten por urgencia de mudanza y los entregados solo aportan referencia de cierre.</div>
-   <div class="foot">Dirección de cada proyecto verificada una a una dentro del cuadrante (jun–jul 2026) · Los nombres comerciales que corresponden a un mismo edificio se muestran como una sola ficha · Tipo de cambio: S/ 3.40 por US$.</div>`;
+   <div class="foot">Dirección de cada proyecto verificada una a una dentro del cuadrante (jun–ago 2026) · Los nombres comerciales que corresponden a un mismo edificio se muestran como una sola ficha · Tipo de cambio: S/ 3.40 por US$.</div>`;
 }
 
 function showTab(t){
@@ -696,7 +696,7 @@ function buildUpdates(){
      ${chip(16,'En construcción','+1',GRN)}${chip(6,'Entrega inmediata','−1',RED)}${chip(2,'En planos','+1',GRN)}</div>
    <div style="font-size:12.5px;color:#555;margin:-6px 0 16px;max-width:900px"><b style="color:${RED}">−1</b> en entrega inmediata (D'Mont vendido), <b style="color:${GRN}">+1</b> en construcción (D'Mont 2) y <b style="color:${GRN}">+1</b> en planos (Monte Alegre). Solo 2 proyectos en planos compiten con una preventa.</div>
    <table class="t"><thead><tr><th style="width:20%">Proyecto</th><th style="width:15%">Situación</th><th style="width:9%">$/m² típ.</th><th>Qué pasó</th></tr></thead><tbody>${tr}</tbody></table>
-   <div class="foot" style="margin-top:10px">$/m² del flat típico, unidad sola sin cochera (bench jun–jul · pisos 2–6, sin 1er piso ni dúplex). Nuestro típico: <b>$2,475/m²</b> — al centro del mercado. Datos confirmados con los asesores comerciales por WhatsApp y con las listas de precios oficiales.</div>`;
+   <div class="foot" style="margin-top:10px">$/m² del flat típico, unidad sola sin cochera (bench jun–jul · pisos 2–6, sin 1er piso ni dúplex). Nuestro típico en preventa: <b>$2,562/m²</b> (+7.6% sobre la mediana de la zona). Datos confirmados con los asesores comerciales por WhatsApp y con las listas de precios oficiales.</div>`;
 }
 
 /* INIT: solo proyectos con precio en el cuadrante */
