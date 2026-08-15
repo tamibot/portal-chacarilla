@@ -151,6 +151,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div class="tab" data-tab="stat" onclick="showTab('stat')">📊 Estadísticas</div>
     <div class="tab" data-tab="price" onclick="showTab('price')">💰 Precio por m²</div>
     <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📈 Análisis del cuadrante</div>
+    <div class="tab" data-tab="dorm" onclick="showTab('dorm')">💵 Costo típico x dorm</div>
     <div class="tab" data-tab="updates" onclick="showTab('updates')">🔔 Actualizaciones</div>
   </div>
   <div id="mapaview">
@@ -182,11 +183,12 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
   <div id="statview"></div>
   <div id="priceview"></div>
   <div id="analysisview"></div>
+  <div id="dormview"></div>
   <div id="updatesview"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260814b"></script>
+<script src="data/portal-data.js?v=20260814c"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -630,12 +632,39 @@ function showTab(t){
   document.getElementById('statview').style.display=t==='stat'?'block':'none';
   document.getElementById('priceview').style.display=t==='price'?'block':'none';
   document.getElementById('analysisview').style.display=t==='analysis'?'block':'none';
+  document.getElementById('dormview').style.display=t==='dorm'?'block':'none';
   document.getElementById('updatesview').style.display=t==='updates'?'block':'none';
   if(t==='mapa')setTimeout(()=>map.invalidateSize(),20);
   if(t==='stat')buildStats();
   if(t==='price')buildPrice();
   if(t==='analysis')buildAnalysis();
+  if(t==='dorm')buildDorm();
   if(t==='updates')buildUpdates();
+}
+function buildDorm(){
+  const dorms=[1,2,3];
+  const blk=d=>{
+    const list=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante)))
+      .map(p=>{const f=comparableRows(p).find(x=>x.dorm===d);return f?{p,f}:null;})
+      .filter(Boolean).sort((a,b)=>a.f.precio_m2-b.f.precio_m2);
+    if(!list.length)return`<div class="sec">Flats de ${d} ${d===1?'dormitorio':'dormitorios'}</div><div style="color:#aaa;font-size:12px;margin:-4px 0 22px">Ningún proyecto con ${d} dorm típico comparable todavía.</div>`;
+    const med=median(list.map(x=>x.f.precio_m2));
+    const tr=list.map((x,i)=>{const p=x.p,f=x.f;
+      const st=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]||''}">${p.estado_grupo||''}</span>`;
+      return`<tr class="${p.isGEU?'geurow':'clickrow'}" ${p.isGEU?'':`onclick="window.open('proyecto.html?id=${p.id}','_blank')"`}>
+        <td style="text-align:center;color:#b0b0b0">${i+1}</td>
+        <td><b>${p.name}</b> ${p.isGEU?'★':''}<div style="font-size:10px;color:#999">${p.dev||''}</div></td>
+        <td>${f.m2} m²</td><td>${fmtUsd(f.precio_usd)}</td>
+        <td><span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></td>
+        <td>${st}</td></tr>`;}).join('');
+    return`<div class="sec">Flats de ${d} ${d===1?'dormitorio':'dormitorios'} · ${list.length} proyectos · mediana <b>$${med.toLocaleString()}/m²</b></div>
+      <table class="t" style="max-width:840px;margin-bottom:24px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>m²</th><th>Precio</th><th>USD/m²</th><th>Estado</th></tr></thead><tbody>${tr}</tbody></table>`;
+  };
+  document.getElementById('dormview').innerHTML=`
+   <h2 style="margin-bottom:2px">Costo de típicos · separado por dormitorios</h2>
+   <div style="font-size:12px;color:#999;margin-bottom:18px">Flats típicos comparables (unidad sola sin cochera, pisos 2–6). Ordenado por US$/m², menor = más competitivo. Clic en fila → ficha del proyecto.</div>
+   ${dorms.map(blk).join('')}
+   <div class="foot">Precio neto por unidad, cochera descontada donde el asesor lo confirmó. TC ${D.meta.tc} S/USD. Los proyectos sin lista por tipología no aparecen aquí.</div>`;
 }
 
 /* Actualizaciones · movimiento de la zona (curado, espejo de la lámina del PPT de lanzamiento) */

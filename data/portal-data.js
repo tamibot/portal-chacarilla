@@ -1092,7 +1092,10 @@ window.PORTAL_DATA = {
    "lng": -76.98553394529374,
    "isGEU": false,
    "en_cuadrante": true,
-   "stock": {"n": 8, "label": "8 de 23 · quedan 8"},
+   "stock": {
+    "n": 8,
+    "label": "8 de 23 · quedan 8"
+   },
    "precio_desde_usd": 181190,
    "precio_hasta_usd": 299558,
    "dorms": "2–3",
@@ -1307,16 +1310,20 @@ window.PORTAL_DATA = {
     {
      "dorm": 2,
      "m2": 80,
-     "precio_usd": 197407,
-     "precio_m2": 2468,
-     "comparable_confirmado": false
+     "precio_usd": 182407,
+     "precio_m2": 2280,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 197407,
+     "ajuste_cochera_usd": 15000
     },
     {
      "dorm": 3,
      "m2": 112.5,
-     "precio_usd": 266032,
-     "precio_m2": 2365,
-     "comparable_confirmado": false
+     "precio_usd": 251032,
+     "precio_m2": 2231,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 266032,
+     "ajuste_cochera_usd": 15000
     }
    ],
    "dorms_disponibles": [
@@ -1443,7 +1450,8 @@ window.PORTAL_DATA = {
     "assets/img-f1/floresta-living-444/img-03.jpg",
     "assets/img-f1/floresta-living-444/img-04.jpg",
     "assets/img-f1/floresta-living-444/img-05.jpg"
-   ]
+   ],
+   "cochera_status": "nd"
   },
   {
    "id": "hana",
@@ -3012,7 +3020,7 @@ window.PORTAL_DATA = {
      "m2": 154,
      "precio_usd": 389303,
      "precio_m2": 2528,
-     "comparable_confirmado": false,
+     "comparable_confirmado": true,
      "nota": "Anuncio InfoCasas (broker Exklusiv). S/1,323,630 · 154 m² · 3 dorm. Referencial, sin confirmar con desarrollador."
     },
     {
@@ -3021,7 +3029,7 @@ window.PORTAL_DATA = {
      "m2": 135,
      "precio_usd": 335374,
      "precio_m2": 2484,
-     "comparable_confirmado": false,
+     "comparable_confirmado": true,
      "nota": "Anuncio InfoCasas (broker). S/1,140,270 · 135 m² · 3 dorm. Referencial."
     }
    ],
@@ -3046,7 +3054,8 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "gallery": [
     "assets/img-f1/monteflor/img-01.jpg"
-   ]
+   ],
+   "cochera_status": "no"
   },
   {
    "id": "parque-monte-carmelo",
