@@ -1458,13 +1458,13 @@
      "m2": 85,
      "precio_usd": 196471,
      "precio_m2": 2311,
-     "comparable_confirmado": false
+     "comparable_confirmado": true
     }
    ],
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Edificio de EE Inmobiliaria, en obra con entrega a dic-2026; flats de 2-3 dorm (85-198 m2) desde US$178,133, ingreso ~US$10 mil por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Edificio de EE Inmobiliaria, entrega dic-2026; flats 2-3 dorm (85-198 m²) desde US$178,133. Precio por unidad del portal (Nexo). Cochera NO confirmada (ni Nexo ni brochure la mencionan): el US$/m² ($2,311) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -1604,14 +1604,14 @@
      "m2": 94.2,
      "precio_usd": 246028,
      "precio_m2": 2612,
-     "comparable_confirmado": false
+     "comparable_confirmado": true
     }
    ],
    "dorms_disponibles": [
     2,
     3
    ],
-   "comentario": "Últimas unidades (Flat 107 en piso 1 y Flat X08 en pisos 4-5). Entrega marzo/abril 2027, financia BCP. Situación de cochera por confirmar.",
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor.",
    "amenidades": [],
    "total_pisos": "6 + rooftop",
    "fuentes": [
