@@ -2798,66 +2798,78 @@
      "unidad": "x102 (Piso 1)",
      "dorm": 2,
      "m2": 103.9,
-     "precio_usd": 274118,
-     "precio_m2": 2638,
+     "precio_usd": 254118,
+     "precio_m2": 2446,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "precio_lista_usd": 274118,
+     "ajuste_cochera_usd": 20000
     },
     {
      "unidad": "x107 (Piso 1)",
      "dorm": 2,
      "m2": 103.4,
-     "precio_usd": 248824,
-     "precio_m2": 2406,
+     "precio_usd": 228824,
+     "precio_m2": 2213,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "precio_lista_usd": 248824,
+     "ajuste_cochera_usd": 20000
     },
     {
      "unidad": "X01 (Pisos 2-3, típico)",
      "dorm": 2,
      "m2": 107.4,
-     "precio_usd": 274118,
-     "precio_m2": 2552,
+     "precio_usd": 254118,
+     "precio_m2": 2366,
      "tipo": "flat",
      "piso": "2-3",
-     "flat": true
+     "flat": true,
+     "precio_lista_usd": 274118,
+     "ajuste_cochera_usd": 20000
     },
     {
      "unidad": "X02 (Pisos 2-3, típico)",
      "dorm": 2,
      "m2": 107.4,
-     "precio_usd": 274118,
-     "precio_m2": 2552,
+     "precio_usd": 254118,
+     "precio_m2": 2366,
      "tipo": "flat",
      "piso": "2-3",
-     "flat": true
+     "flat": true,
+     "precio_lista_usd": 274118,
+     "ajuste_cochera_usd": 20000
     },
     {
      "unidad": "X05 (Piso 6)",
      "dorm": 2,
      "m2": 105.3,
-     "precio_usd": 263529,
-     "precio_m2": 2503,
+     "precio_usd": 243529,
+     "precio_m2": 2313,
      "tipo": "flat",
      "piso": "6",
-     "flat": true
+     "flat": true,
+     "precio_lista_usd": 263529,
+     "ajuste_cochera_usd": 20000
     }
    ],
    "flats_summary": [
     {
      "dorm": 2,
      "m2": 105.3,
-     "precio_usd": 263529,
-     "precio_m2": 2503,
-     "comparable_confirmado": false
+     "precio_usd": 243529,
+     "precio_m2": 2313,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 263529,
+     "ajuste_cochera_usd": 20000
     }
    ],
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Proyecto de Make Inmobiliaria con entrega inmediata; flats de 2-3 dorm (103-107 m2) desde US$200,000. Su precio por m2 (~$2,300) queda por debajo de GEU, pero exige un ticket de entrada bastante mayor. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m².",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
