@@ -186,7 +186,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260815a"></script>
+<script src="data/portal-data.js?v=20260815b"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -476,8 +476,9 @@ function buildStats(){
   const pm2v=[];inq.forEach(p=>comparableRows(p).forEach(f=>pm2v.push(f.precio_m2)));
   const pm2avg=Math.round(pm2v.reduce((a,b)=>a+b,0)/pm2v.length);
   const geuBest=Math.min(...geu.flats_summary.map(f=>f.precio_m2));
-  // GEU tabla de precios real
-  const grows=geu.typologies.map(u=>`<tr class="geurow">
+  const geu2d=(geu.flats_summary.find(f=>f.dorm===2)||{}).precio_m2||geuBest;
+  // GEU tabla de precios real (solo flats típicos; los dúplex se listan aparte en Análisis)
+  const grows=geu.typologies.filter(u=>u.tipo==='flat').map(u=>`<tr class="geurow">
      <td>Flat ${u.dorm} dorm</td><td>${u.m2} m²</td><td>${fmtUsd(u.precio_usd)} *</td>
      <td><span class="tpm2 ${pm2cls(u.precio_m2)}">$${u.precio_m2.toLocaleString()}/m²</span></td></tr>`).join('');
   // ranking $/m²
@@ -509,13 +510,13 @@ function buildStats(){
        <div class="k"><div class="kv">${geu.dorms} dorm</div><div class="kl">Dormitorios</div></div>
        <div class="k"><div class="kv">${geu.m2} m²</div><div class="kl">Rango de áreas</div></div>
        <div class="k"><div class="kv">${fmtUsd(geu.precio_desde_usd)}</div><div class="kl">Precio desde</div></div>
-       <div class="k"><div class="kv">$${geuBest.toLocaleString()}/m²</div><div class="kl">USD/m² flat 2 dorm</div></div>
+       <div class="k"><div class="kv">$${geu2d.toLocaleString()}/m²</div><div class="kl">USD/m² flat 2 dorm (neto)</div></div>
      </div>
      <div class="sec" style="margin-top:16px;border:none;padding:0">Precio por m² · depas típicos (por tipología)</div>
      <div style="font-size:12px;color:#666;margin-bottom:4px;font-weight:600">📍 Dirección exacta: ${geu.addr}</div>
      <div style="font-size:10.5px;color:#aaa;margin-bottom:10px">Solo flats típicos de pisos 2–6. No se consideran 1er piso, Colección Terra (área libre) ni dúplex.</div>
      <table class="t"><thead><tr><th>Tipología</th><th>Área total</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${grows}</tbody></table>
-     
+     <div style="font-size:10px;color:#aaa;margin-top:6px">* Precio neto por unidad. La lista de preventa <b>incluye 1 cochera</b> (US$15,000); aquí se descuenta para comparar en la misma base que la competencia.</div>
    </div>
    <div class="sec">Resumen del cuadrante (${N_COMP} competidores)</div>
    <div class="kgrid" style="max-width:1180px">
