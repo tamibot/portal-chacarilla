@@ -1,18 +1,18 @@
 window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
-  "fecha": "2026-08-14",
-  "total": 24,
-  "en_cuadrante": 24,
+  "fecha": "2026-08-16",
+  "total": 28,
+  "en_cuadrante": 23,
   "con_precio": 100,
   "competidores_activos": 23,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 10,
+  "comparables_confirmados": 16,
   "en_ultimas_unidades": 8,
-  "sin_precio_publico": 2,
+  "sin_precio_publico": 4,
   "cochera_incluida": 12,
-  "cochera_aparte": 3,
-  "verif_web_fecha": "2026-08-13",
+  "cochera_aparte": 4,
+  "verif_web_fecha": "2026-08-16",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)"
  },
  "quadrant": [
@@ -3965,68 +3965,6 @@ window.PORTAL_DATA = {
     "label": "A estrenar (broker)"
    },
    "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas."
-  },
-  {
-   "id": "dmont-2-nuevo",
-   "name": "D'Mont 2",
-   "dev": "Grupo Dicon",
-   "addr": "Jr. Monte Real 422, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En preventa (reemplaza a D'Mont, agotado)",
-   "entrega": "Por confirmar",
-   "lat": -12.1148,
-   "lng": -76.9835,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": 263064,
-   "precio_hasta_usd": null,
-   "dorms": "3",
-   "m2": "121.62",
-   "wa": "933209656",
-   "web": null,
-   "img": null,
-   "planos": [],
-   "brochure": null,
-   "typologies": [
-    {
-     "unidad": "Flat 401 / 201",
-     "dorm": 3,
-     "m2": 121.62,
-     "precio_usd": 263064,
-     "precio_m2": 2163,
-     "tipo": "flat",
-     "piso": 4,
-     "flat": true
-    }
-   ],
-   "flats_summary": [
-    {
-     "dorm": 3,
-     "m2": 121.62,
-     "precio_usd": 263064,
-     "precio_m2": 2163,
-     "comparable_confirmado": false
-    }
-   ],
-   "dorms_disponibles": [
-    3
-   ],
-   "comentario": "Grupo Dicon. Reemplaza a D'Mont (agotado). Flat de 3 dorm 121.62 m² (401/201): US$263,064 + cochera US$25,000 = US$288,064 (~S/979,000). Financia BCP, reserva US$1,000, inicial 10%. Vista a Jr. Monte Real, cocina americana, gas natural.",
-   "fuentes": [
-    "Chat asesor Niriam Sierra (Grupo Dicon, Evolution API, ago-2026)"
-   ],
-   "anuncios": null,
-   "mostrar": false,
-   "amenidades": [],
-   "total_pisos": null,
-   "portales": {},
-   "cochera_status": "no",
-   "cochera_nota": "Cochera individual US$25,000 aparte (doble lineal US$25,000 según Dicon).",
-   "stock": {
-    "n": null,
-    "label": "Preventa"
-   },
-   "descubierto": "2026-08-14"
   }
  ]
 }

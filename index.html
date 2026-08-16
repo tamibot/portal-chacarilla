@@ -186,7 +186,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260815d"></script>
+<script src="data/portal-data.js?v=20260816a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -602,6 +602,7 @@ function buildAnalysis(){
      ${trow('GENERAL FLATS (m² comparable)',all,GEU_F)}${trow('Dúplex / PH (m² área total)',dupx,GEU_D)}
    </tbody></table>
    <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). En preventa GEU subió a <b>$${GEU_F.toLocaleString()}/m²</b>, que queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — mitad superior del rango, con cochera incluida en el precio de lista. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
+   ${ticketSection()}
    <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
    ${barRows}
    <div style="font-size:10px;color:#aaa;margin:6px 0 14px">⬛ borde = proyecto ubicado sobre una avenida-límite del cuadrante. Donde el asesor confirmó la política de cochera (Santorini, Monte Mayor 177 y 183, Precursores II, Conde de la Vega 460), la barra muestra el precio neto sin cochera; en los demás es el precio de lista publicado. Los proyectos que no aparecen en el gráfico no publican precios por unidad.</div>
@@ -624,6 +625,23 @@ function buildAnalysis(){
    ${estRows}
    <div class="alert" style="max-width:980px">La competencia activa real de la preventa GEU son los <b>en construcción</b> y <b>en planos</b>; los de entrega inmediata compiten por urgencia de mudanza y los entregados solo aportan referencia de cierre.</div>
    <div class="foot">Dirección de cada proyecto verificada una a una dentro del cuadrante (jun–ago 2026) · Los nombres comerciales que corresponden a un mismo edificio se muestran como una sola ficha · Tipo de cambio: S/ 3.40 por US$.</div>`;
+}
+function ticketSection(){
+  const list=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&p.precio_desde_usd).sort((a,b)=>a.precio_desde_usd-b.precio_desde_usd);
+  const maxT=Math.max(...list.map(p=>p.precio_desde_usd));
+  const geuRank=list.findIndex(p=>p.isGEU)+1;
+  const rows=list.map((p,i)=>{
+    const soles=Math.round(p.precio_desde_usd*D.meta.tc);
+    const st=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]||''}">${p.estado_grupo||''}</span>`;
+    return `<tr class="${p.isGEU?'geurow':'clickrow'}" ${p.isGEU?'':`onclick="window.open('proyecto.html?id=${p.id}','_blank')"`}>
+      <td style="text-align:center;color:#b0b0b0">${i+1}</td>
+      <td><b>${p.name}</b> ${p.isGEU?'★':''}<div style="font-size:10px;color:#999">${p.dev||''}</div></td>
+      <td><b>${fmtUsd(p.precio_desde_usd)}</b><div style="font-size:10px;color:#999">S/ ${soles.toLocaleString()}</div></td>
+      <td>${p.dorms||'—'} dorm</td><td>${st}</td></tr>`;}).join('');
+  return `<div class="sec" style="margin-top:26px">Ranking por ticket de entrada (precio desde)</div>
+   <div style="font-size:11px;color:#aaa;margin-bottom:6px">El precio más bajo para entrar a cada proyecto — unidad sola, neta de cochera. Responde "¿cuál es el más accesible?", distinto del US$/m². Clic → ficha.</div>
+   <div class="alert" style="max-width:720px;margin:0 0 12px">💡 <b>GEU entra #${geuRank} de ${list.length}</b> ($173,235) — el segundo ticket más bajo del cuadrante, y <b>con 1 cochera incluida</b> (los demás la cobran aparte). Gancho de accesibilidad sin bajar el precio.</div>
+   <table class="t" style="max-width:720px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>Ticket desde</th><th>Entrada</th><th>Estado</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
 
 function showTab(t){
