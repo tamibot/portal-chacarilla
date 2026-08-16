@@ -108,7 +108,11 @@ a{color:inherit;text-decoration:none}
 .leaflet-tooltip.hovercard:before{display:none!important}
 /* STATS + PRICE */
 #topfilters{display:none;flex-wrap:wrap;gap:6px;align-items:center;padding:10px 16px;background:#fff;border-bottom:1px solid #e6e2dc;position:sticky;top:0;z-index:5}
-#statview,#priceview,#analysisview{display:none;flex:1;overflow-y:auto;padding:22px 26px;background:#fafaf8}
+#anaWrap{display:none;flex:1;overflow-y:auto;background:#fafaf8;padding:22px 26px;position:relative}
+#anaWrap.show{display:block}
+#anaWrap>#statview,#anaWrap>#analysisview,#anaWrap>#priceview{display:block;overflow:visible;padding:0;background:none}
+#anaWrap>#analysisview,#anaWrap>#priceview{margin-top:26px;padding-top:22px;border-top:2px solid #ece7d9}
+#anaNav{display:flex;gap:8px;flex-wrap:wrap;position:sticky;top:0;background:#fafaf8;z-index:6;padding:2px 0 14px;margin-bottom:6px}
 .brow{display:flex;align-items:center;gap:8px;margin:2.5px 0;max-width:980px}.bname{width:190px;font-size:11px;text-align:right;white-space:nowrap;overflow:hidden}
 .btrack{flex:1;background:#ece9e4;border-radius:3px;height:13px}.bfill{height:13px;border-radius:3px;background:#3a3a3a}
 .bval{width:74px;font-weight:700;font-size:11px}.bstt{width:130px;font-size:9.5px}
@@ -148,9 +152,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
   </div>
   <div id="tabs">
     <div class="tab on" data-tab="mapa" onclick="showTab('mapa')">🗺 Mapa competitivo</div>
-    <div class="tab" data-tab="stat" onclick="showTab('stat')">📊 Estadísticas</div>
-    <div class="tab" data-tab="price" onclick="showTab('price')">💰 Precio por m²</div>
-    <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📈 Análisis del cuadrante</div>
+    <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📊 Análisis del cuadrante</div>
     <div class="tab" data-tab="updates" onclick="showTab('updates')">🔔 Actualizaciones</div>
   </div>
   <div id="mapaview">
@@ -179,14 +181,17 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
       <div id="dtl"></div>
     </div>
   </div>
-  <div id="statview"></div>
-  <div id="priceview"></div>
-  <div id="analysisview"></div>
+  <div id="anaWrap">
+    <div id="anaNav"></div>
+    <div id="statview"></div>
+    <div id="analysisview"></div>
+    <div id="priceview"></div>
+  </div>
   <div id="updatesview"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260816b"></script>
+<script src="data/portal-data.js?v=20260816d"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -481,12 +486,6 @@ function buildStats(){
   const grows=geu.typologies.filter(u=>u.tipo==='flat').map(u=>`<tr class="geurow">
      <td>Flat ${u.dorm} dorm</td><td>${u.m2} m²</td><td>${fmtUsd(u.precio_usd)} *</td>
      <td><span class="tpm2 ${pm2cls(u.precio_m2)}">$${u.precio_m2.toLocaleString()}/m²</span></td></tr>`).join('');
-  // ranking $/m²
-  const rk=inq.filter(p=>comparableRows(p).length).map(p=>({name:p.name,dev:p.dev,v:Math.min(...comparableRows(p).map(f=>f.precio_m2)),id:p.id,geu:false}));
-  rk.push({name:geu.name,dev:'GEU',v:geuBest,geu:true});rk.sort((a,b)=>a.v-b.v);
-  const rkRows=rk.map((x,i)=>`<tr class="${x.geu?'geurow':'clickrow'}" ${x.geu?'':`onclick="window.open('proyecto.html?id=${x.id}','_blank')"`}>
-     <td><span class="rank ${i<3?'r'+(i+1):''}">${i+1}</span></td><td>${x.name}${x.geu?' ★':''}</td>
-     <td style="font-size:10px;color:#999">${x.dev}</td><td><span class="tpm2 ${pm2cls(x.v)}">$${x.v.toLocaleString()}/m²</span></td></tr>`).join('');
   // comparativo cuadrante
   const comp=[...inq].sort((a,b)=>(a.precio_desde_usd||9e9)-(b.precio_desde_usd||9e9));
   let ci=0;
@@ -527,9 +526,7 @@ function buildStats(){
      <div class="k"><div class="kv" style="color:#8a5a12">$${pm2avg.toLocaleString()}/m²</div><div class="kl">USD/m² promedio flats</div></div>
      <div class="k"><div class="kv" style="color:#185FA5">$${geuBest.toLocaleString()}/m²</div><div class="kl">GEU flat 2 dorm</div></div>
    </div>
-   <div class="sec">Ranking USD/m² · flats típicos (menor = más competitivo)</div>
-   <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>USD/m² (mejor flat)</th></tr></thead><tbody>${rkRows}</tbody></table>
-   <div class="sec">Comparativo del cuadrante · metraje y $/m² por tipología · clic en una fila abre su ficha</div>
+   <div class="sec">Directorio del cuadrante · metraje, $/m² por tipología y contacto · clic en una fila abre su ficha</div>
    <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
    <div class="foot">Solo proyectos dentro del cuadrante Av. Primavera — Av. de la Floresta — Av. de los Precursores. TC ${D.meta.tc} S/USD. $/m² sobre flats típicos (sin 1er ni último piso, sin dúplex/PH). Fuentes: webs oficiales, BCP/Nexo, brochures PDF; verificado con doble revisión.</div>`;
 }
@@ -647,15 +644,16 @@ function ticketSection(){
 function showTab(t){
   document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('on',e.dataset.tab===t));
   document.getElementById('mapaview').style.display=t==='mapa'?'flex':'none';
-  document.getElementById('statview').style.display=t==='stat'?'block':'none';
-  document.getElementById('priceview').style.display=t==='price'?'block':'none';
-  document.getElementById('analysisview').style.display=t==='analysis'?'block':'none';
+  const ana=t==='analysis';
+  document.getElementById('anaWrap').classList.toggle('show',ana);
   document.getElementById('updatesview').style.display=t==='updates'?'block':'none';
   if(t==='mapa')setTimeout(()=>map.invalidateSize(),20);
-  if(t==='stat')buildStats();
-  if(t==='price')buildPrice();
-  if(t==='analysis')buildAnalysis();
+  if(ana){buildStats();buildAnalysis();buildPrice();buildAnaNav();}
   if(t==='updates')buildUpdates();
+}
+function buildAnaNav(){
+  const items=[['statview','Nuestro proyecto'],['analysisview','Comparación vs la zona'],['priceview','Precios por tipología']];
+  document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button onclick="var w=document.getElementById('anaWrap'),e=document.getElementById('${id}');w.scrollTo({top:Math.max(0,e.offsetTop-52),behavior:'smooth'})" style="background:#fff;border:1px solid #d9d3c4;border-radius:20px;padding:6px 15px;font-size:12px;font-weight:600;color:#15402c;cursor:pointer">${l}</button>`).join('');
 }
 function dormSections(){
   const dorms=[1,2,3];
