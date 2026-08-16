@@ -3018,8 +3018,8 @@ window.PORTAL_DATA = {
    "lng": -76.986573,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 248824,
-   "precio_hasta_usd": 248533,
+   "precio_desde_usd": 228824,
+   "precio_hasta_usd": 254118,
    "dorms": "2–3",
    "m2": "103–107",
    "wa": "943729552",
@@ -3143,7 +3143,7 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
-     "desde": 248824,
+     "desde": 228824,
      "pm2": 2313
     }
    ]
