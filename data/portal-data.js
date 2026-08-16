@@ -297,7 +297,19 @@ window.PORTAL_DATA = {
    "asesora": "Camu Planas",
    "cochera_nota": "Cochera y depósito se venden aparte: US$15–16k la simple, US$27k la doble.",
    "precio_hasta_usd": 721765,
-   "estado_raw": "En preventa · lanzamiento agosto 2026"
+   "estado_raw": "En preventa · lanzamiento agosto 2026",
+   "precio_hist": [
+    {
+     "corte": "2026-06-28",
+     "desde": 167805,
+     "pm2": 2475
+    },
+    {
+     "corte": "2026-08-16",
+     "desde": 173235,
+     "pm2": 2548
+    }
+   ]
   },
   {
    "id": "aura-sul",
@@ -475,7 +487,14 @@ window.PORTAL_DATA = {
    "stock": {
     "n": null,
     "label": "Flat típico 100 m²: quedan pisos 4 y 5 (203 vendido)"
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 229552,
+     "pm2": 2286
+    }
+   ]
   },
   {
    "id": "conde-ii",
@@ -541,7 +560,14 @@ window.PORTAL_DATA = {
     "label": "En planos · 10 und."
    },
    "geo_aprox": true,
-   "geo_nota": "Extremo sur de la Calle Conde de la Vega del Ren: la numeración de esa calle no está mapeada en OSM."
+   "geo_nota": "Extremo sur de la Calle Conde de la Vega del Ren: la numeración de esa calle no está mapeada en OSM.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": null,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "conde-de-la-vega-251",
@@ -617,7 +643,14 @@ window.PORTAL_DATA = {
     "nota": "Confirmado en edifikarte.com.pe. Mención derivada de la consulta por Conde 128; no hubo mystery shopping dedicado.",
     "fuente": "edifikarte.com.pe · chat Jenny Miranda jul-2026"
    },
-   "es_nuevo_lanzamiento": false
+   "es_nuevo_lanzamiento": false,
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": null,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1165,7 +1198,14 @@ window.PORTAL_DATA = {
     "nota": "85–221 m². Un aviso suelto menciona entrega feb-2026 (no confirmado). Nuestro US$253,000 es de lista del asesor.",
     "fuente": "azzurra.com.pe/proyectos/conde-de-la-vega-460",
     "fecha": "2026-08-13"
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 253000,
+     "pm2": 2568
+    }
+   ]
   },
   {
    "id": "dmont-dicon",
@@ -1405,7 +1445,14 @@ window.PORTAL_DATA = {
    "cochera_status": "no",
    "verif_web": {
     "nota_campo": "Dicon terminó de vender D'Mont y ahora comercializa D'Mont 2 como su proyecto en preventa (cliente, ago-2026)."
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 181190,
+     "pm2": 2144
+    }
+   ]
   },
   {
    "id": "estelar-1080",
@@ -1498,7 +1545,14 @@ window.PORTAL_DATA = {
    "stock": {
     "n": null,
     "label": "2 dorm agotados · queda 3 dorm"
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 202941,
+     "pm2": 2231
+    }
+   ]
   },
   {
    "id": "floresta-living-444",
@@ -1601,7 +1655,14 @@ window.PORTAL_DATA = {
     "assets/img-f1/floresta-living-444/img-04.jpg",
     "assets/img-f1/floresta-living-444/img-05.jpg"
    ],
-   "cochera_status": "nd"
+   "cochera_status": "nd",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 196471,
+     "pm2": 2311
+    }
+   ]
   },
   {
    "id": "hana",
@@ -1667,7 +1728,14 @@ window.PORTAL_DATA = {
    },
    "entrega_confirmada_campo": "Entrega inmediata",
    "campo_ago": "13-ago: bajó a S/852,000 con promo (antes S/900,000). Rebeca/Odima.",
-   "campo_fecha": "2026-08-13"
+   "campo_fecha": "2026-08-13",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 250588,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "jardines-monte-real",
@@ -1751,7 +1819,14 @@ window.PORTAL_DATA = {
    },
    "entrega_confirmada_campo": "Marzo–Abril 2027",
    "campo_ago": "14-ago: 3 dorm 94 m² en piso 4 y 5. El piso 4 tiene un cliente en proceso de separación; hasta que no separe sigue libre. S/836,496 con 1 estacionamiento. Entrega mar-2027.",
-   "campo_fecha": "2026-08-13"
+   "campo_fecha": "2026-08-13",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 246028,
+     "pm2": 2612
+    }
+   ]
   },
   {
    "id": "la-floresta-boulevard",
@@ -1870,7 +1945,14 @@ window.PORTAL_DATA = {
     "nota": "1–3 dorm desde 51 m². Cochera de regalo por compra de 2–3 dorm (confirma nuestra data 'incluida').",
     "fuente": "floresta.boulevard.com.pe · BCP",
     "fecha": "2026-08-13"
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 154000,
+     "pm2": 2504
+    }
+   ]
   },
   {
    "id": "monte-alegre",
@@ -1931,7 +2013,14 @@ window.PORTAL_DATA = {
     "nota": "Confirmado en edifikarte.com.pe como 'Monte Alegre' (sin número). El '109' de una búsqueda previa era incorrecto.",
     "fuente": "edifikarte.com.pe"
    },
-   "es_nuevo_lanzamiento": true
+   "es_nuevo_lanzamiento": true,
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": null,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "monte-carmelo-250",
@@ -2006,7 +2095,14 @@ window.PORTAL_DATA = {
    "stock": null,
    "geo_aprox": true,
    "geo_nota": "Interpolada sobre Jr. Monte Carmelo entre los nº 341 y 551, ambos verificados.",
-   "cochera_nota": "Cochera de regalo (Edifikarte, campaña 'Grati Days' 15–19 jul 2026) — promoción, verificar vigencia."
+   "cochera_nota": "Cochera de regalo (Edifikarte, campaña 'Grati Days' 15–19 jul 2026) — promoción, verificar vigencia.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": null,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "monte-carmelo-551",
@@ -2176,7 +2272,14 @@ window.PORTAL_DATA = {
     "nota": "Nexo/BCP. Promo: descuento hasta S/25,000 + regalo. Nuestro US$264,147 es promedio neto de flats típicos; el de Nexo es el 'desde' bruto de la unidad más chica.",
     "fuente": "nexoinmobiliario.pe · proyectosinmobiliariosbcp.com",
     "fecha": "2026-08-13"
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 264147,
+     "pm2": 2308
+    }
+   ]
   },
   {
    "id": "monte-mar-167",
@@ -2260,7 +2363,14 @@ window.PORTAL_DATA = {
     "label": "Últimas 3 unidades"
    },
    "geo_aprox": true,
-   "geo_nota": "La Calle Monte Mar no está mapeada en OSM; referencia = media cuadra del Parque Andrés Townsend."
+   "geo_nota": "La Calle Monte Mar no está mapeada en OSM; referencia = media cuadra del Parque Andrés Townsend.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 288235,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "monte-mayor-177",
@@ -2342,7 +2452,14 @@ window.PORTAL_DATA = {
    },
    "entrega_confirmada_campo": "Entrega inmediata (último flat)",
    "campo_ago": "14-ago: 'solo dúplex'. Los 2 dorm (flat 87 m²) se agotaron.",
-   "campo_fecha": "2026-08-13"
+   "campo_fecha": "2026-08-13",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 241176,
+     "pm2": 2429
+    }
+   ]
   },
   {
    "id": "monte-mayor-183",
@@ -2802,7 +2919,14 @@ window.PORTAL_DATA = {
     "fuente": "azzurra.com.pe/montemayor183-chacarilla-surco",
     "fecha": "2026-08-13"
    },
-   "campo_ago": "14-ago: Jenniffer (Azzurra) — \"Monte Mayor voló, solo me quedan 3 depas\". Estacionamientos 5×2.50 m."
+   "campo_ago": "14-ago: Jenniffer (Azzurra) — \"Monte Mayor voló, solo me quedan 3 depas\". Estacionamientos 5×2.50 m.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 202000,
+     "pm2": 2501
+    }
+   ]
   },
   {
    "id": "monte-real-265",
@@ -3015,7 +3139,14 @@ window.PORTAL_DATA = {
    "cochera_status": "si",
    "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026.",
    "entrega_confirmada_campo": "Terminado / entrega inmediata",
-   "campo_ago": "14-ago: vendieron el 408. Quedan disponibles (Tipo X10, 105.89 m², 3 dorm+estudio, 4 baños). Terminado, entrega inmediata, EDGE, BCP."
+   "campo_ago": "14-ago: vendieron el 408. Quedan disponibles (Tipo X10, 105.89 m², 3 dorm+estudio, 4 baños). Terminado, entrega inmediata, EDGE, BCP.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 248824,
+     "pm2": 2313
+    }
+   ]
   },
   {
    "id": "monte-umbroso",
@@ -3217,7 +3348,14 @@ window.PORTAL_DATA = {
    "gallery": [
     "assets/img-f1/monteflor/img-01.jpg"
    ],
-   "cochera_status": "no"
+   "cochera_status": "no",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 188000,
+     "pm2": 2484
+    }
+   ]
   },
   {
    "id": "parque-monte-carmelo",
@@ -3467,7 +3605,14 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-13",
     "resuelto_campo": "Asesora Cecilia Estrada (EE, jun-jul 2026): proyecto en construcción con certificación EDGE, sala activa. Nexo lo etiqueta 'en planos' pero es ficha vieja; el proyecto NO retrocedió. Entrega ~nov-2027/ene-2028.",
     "fecha_resolucion": "2026-08-13"
-   }
+   },
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 189412,
+     "pm2": 2396
+    }
+   ]
   },
   {
    "id": "precursores-525",
@@ -3570,7 +3715,14 @@ window.PORTAL_DATA = {
     "n": 1,
     "label": "Solo queda un dúplex penthouse"
    },
-   "campo_ago": "14-ago: Joyce (Chacarilla Sur) — solo queda un dúplex penthouse. Desde US$203,700, entrega nov-2026, BCP."
+   "campo_ago": "14-ago: Joyce (Chacarilla Sur) — solo queda un dúplex penthouse. Desde US$203,700, entrega nov-2026, BCP.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 203700,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "precursores-ii",
@@ -3677,7 +3829,14 @@ window.PORTAL_DATA = {
     "resuelto_campo": "Asesor (WhatsApp 1-jul-2026) envió 'PRECIOS DE VENTA PRONTA ENTREGA' + '2 cocheras paralelas y depósito' incluidas. Es PRONTA ENTREGA, no construcción-2027: la ficha de Nexo/Adondevivir está desactualizada. Nuestra data es la vigente.",
     "fecha_resolucion": "2026-08-13"
    },
-   "entrega_confirmada_campo": "Pronta entrega (confirmado jul-2026)"
+   "entrega_confirmada_campo": "Pronta entrega (confirmado jul-2026)",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 385000,
+     "pm2": 2382
+    }
+   ]
   },
   {
    "id": "santorini",
@@ -3861,7 +4020,14 @@ window.PORTAL_DATA = {
     "fuente": "morgensterninmobiliaria.pe + portales",
     "fecha": "2026-08-13"
    },
-   "campo_ago": "14-ago: +50% vendido, disponibilidad cambia rápido. Entrega marzo 2027. Rossana Patiño."
+   "campo_ago": "14-ago: +50% vendido, disponibilidad cambia rápido. Entrega marzo 2027. Rossana Patiño.",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 286450,
+     "pm2": 2180
+    }
+   ]
   },
   {
    "id": "spazio",
@@ -4021,7 +4187,14 @@ window.PORTAL_DATA = {
     "assets/img-f1/spazio/img-01.webp",
     "assets/img-f1/spazio/img-02.webp"
    ],
-   "dorms_nota": "Dormitorios sin confirmar con el asesor (el comentario dice 3–6, no verificado)."
+   "dorms_nota": "Dormitorios sin confirmar con el asesor (el comentario dice 3–6, no verificado).",
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 192428,
+     "pm2": null
+    }
+   ]
   },
   {
    "id": "terraverde",
