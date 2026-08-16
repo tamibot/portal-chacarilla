@@ -109,10 +109,13 @@ a{color:inherit;text-decoration:none}
 /* STATS + PRICE */
 #topfilters{display:none;flex-wrap:wrap;gap:6px;align-items:center;padding:10px 16px;background:#fff;border-bottom:1px solid #e6e2dc;position:sticky;top:0;z-index:5}
 #anaWrap{display:none;flex:1;overflow-y:auto;background:#fafaf8;padding:22px 26px;position:relative}
+#updatesview,#timelapseview{display:none;flex:1;overflow-y:auto;padding:22px 26px;background:#fafaf8}
 #anaWrap.show{display:block}
 #anaWrap>#statview,#anaWrap>#analysisview,#anaWrap>#priceview{display:block;overflow:visible;padding:0;background:none}
-#anaWrap>#analysisview,#anaWrap>#priceview{margin-top:26px;padding-top:22px;border-top:2px solid #ece7d9}
-#anaNav{display:flex;gap:8px;flex-wrap:wrap;position:sticky;top:0;background:#fafaf8;z-index:6;padding:2px 0 14px;margin-bottom:6px}
+#anaNav{display:flex;gap:8px;flex-wrap:wrap;position:sticky;top:0;background:#fafaf8;z-index:6;padding:2px 0 16px;margin-bottom:8px;border-bottom:1px solid #ece7d9}
+.anatab{background:#fff;border:1px solid #d9d3c4;border-radius:20px;padding:7px 16px;font-size:12.5px;font-weight:600;color:#5a6b60;cursor:pointer;transition:all .12s}
+.anatab:hover{border-color:#15402c;color:#15402c}
+.anatab.on{background:#15402c;border-color:#15402c;color:#fff}
 .brow{display:flex;align-items:center;gap:8px;margin:2.5px 0;max-width:980px}.bname{width:190px;font-size:11px;text-align:right;white-space:nowrap;overflow:hidden}
 .btrack{flex:1;background:#ece9e4;border-radius:3px;height:13px}.bfill{height:13px;border-radius:3px;background:#3a3a3a}
 .bval{width:74px;font-weight:700;font-size:11px}.bstt{width:130px;font-size:9.5px}
@@ -152,8 +155,9 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
   </div>
   <div id="tabs">
     <div class="tab on" data-tab="mapa" onclick="showTab('mapa')">🗺 Mapa competitivo</div>
-    <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📊 Análisis del cuadrante</div>
+    <div class="tab" data-tab="analysis" onclick="showTab('analysis')">📊 Análisis</div>
     <div class="tab" data-tab="updates" onclick="showTab('updates')">🔔 Actualizaciones</div>
+    <div class="tab" data-tab="timelapse" onclick="showTab('timelapse')">🎬 Time lapse</div>
   </div>
   <div id="mapaview">
     <div id="sb">
@@ -188,10 +192,11 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="priceview"></div>
   </div>
   <div id="updatesview"></div>
+  <div id="timelapseview"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260816d"></script>
+<script src="data/portal-data.js?v=20260816e"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -647,13 +652,50 @@ function showTab(t){
   const ana=t==='analysis';
   document.getElementById('anaWrap').classList.toggle('show',ana);
   document.getElementById('updatesview').style.display=t==='updates'?'block':'none';
+  document.getElementById('timelapseview').style.display=t==='timelapse'?'block':'none';
   if(t==='mapa')setTimeout(()=>map.invalidateSize(),20);
   if(ana){buildStats();buildAnalysis();buildPrice();buildAnaNav();}
   if(t==='updates')buildUpdates();
+  if(t==='timelapse')buildTimelapse();
+}
+let tlFilter='';
+function buildTimelapse(){
+  const MES=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const fmtF=s=>{const a=s.split('-');return `${+a[2]} ${MES[+a[1]]} ${a[0]}`;};
+  const TCOL={mensaje:'#2F7D54',llamada:'#185FA5',visita:'#8a5a12',web:'#6d776e',cambio:'#ce3c31'};
+  const TLAB={mensaje:'WhatsApp',llamada:'Llamada',visita:'Visita',web:'Web',cambio:'Cambio'};
+  const all=(D.meta.bitacora||[]).slice().sort((a,b)=>b.fecha.localeCompare(a.fecha));
+  const proys=[...new Set(all.map(e=>e.proyecto))];
+  const data=tlFilter?all.filter(e=>e.proyecto===tlFilter):all;
+  const chips=`<button class="anatab${tlFilter===''?' on':''}" onclick="tlFilter='';buildTimelapse()">Todos (${all.length})</button>`+
+    proys.map(p=>`<button class="anatab${tlFilter===p?' on':''}" onclick="tlFilter=${JSON.stringify(p).replace(/"/g,'&quot;')};buildTimelapse()">${p}</button>`).join('');
+  const feed=data.map(e=>`<div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px solid #eee">
+     <div style="flex:0 0 84px;font-size:11.5px;color:#8a8a8a;font-weight:600">${fmtF(e.fecha)}</div>
+     <div style="flex:1">
+       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px">
+         <span style="font-weight:700;font-size:12.5px;color:#15402c">${e.proyecto}</span>
+         ${e.dev?`<span style="font-size:10.5px;color:#999">${e.dev}</span>`:''}
+         <span style="font-size:9.5px;font-weight:700;color:${TCOL[e.tipo]||'#888'};background:${TCOL[e.tipo]||'#888'}1e;padding:1px 8px;border-radius:5px">${TLAB[e.tipo]||e.tipo}</span>
+         ${e.autor?`<span style="font-size:10.5px;color:#aaa">· ${e.autor}</span>`:''}
+       </div>
+       <div style="font-size:12.5px;color:#444;line-height:1.5">${e.texto}</div>
+     </div></div>`).join('');
+  document.getElementById('timelapseview').innerHTML=`
+   <h2 style="margin-bottom:2px">Time lapse · monitoreo de actividad</h2>
+   <div style="font-size:12px;color:#999;margin-bottom:14px">Registro cronológico de lo que nos dicen los asesores — comentarios, llamadas, mensajes y cambios. Cada interacción queda fechada para ver la evolución de la zona en el tiempo.</div>
+   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">${chips}</div>
+   <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
+   <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
 function buildAnaNav(){
   const items=[['statview','Nuestro proyecto'],['analysisview','Comparación vs la zona'],['priceview','Precios por tipología']];
-  document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button onclick="var w=document.getElementById('anaWrap'),e=document.getElementById('${id}');w.scrollTo({top:Math.max(0,e.offsetTop-52),behavior:'smooth'})" style="background:#fff;border:1px solid #d9d3c4;border-radius:20px;padding:6px 15px;font-size:12px;font-weight:600;color:#15402c;cursor:pointer">${l}</button>`).join('');
+  document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
+  showAnaSub('statview');
+}
+function showAnaSub(id){
+  ['statview','analysisview','priceview'].forEach(v=>document.getElementById(v).style.display=v===id?'block':'none');
+  document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
+  const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
 function dormSections(){
   const dorms=[1,2,3];

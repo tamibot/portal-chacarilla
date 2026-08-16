@@ -28,7 +28,72 @@
     "resumen": "D'Mont vendido → D'Mont 2 en preventa (8/23). Monte Mayor 183 3/20, Conde de la Vega 460 12/26, Precursores II 3/19, Monte Sierpe vendió el 408, Aura Sul vendió el 203. Monte Alegre 109 nuevo en planos. Todos los competidores con precio quedaron comparables. GEU pasó a precios de preventa ($2,562/m² típico)."
    }
   ],
-  "proximo_corte": "2026-09-19"
+  "proximo_corte": "2026-09-19",
+  "bitacora": [
+   {
+    "fecha": "2026-08-14",
+    "proyecto": "Monte Mayor 183",
+    "dev": "Azzurra",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Jenniffer S.",
+    "texto": "«Proyecto Monte Mayor voló! Solo me quedan 3 depas.» Confirma 3 de 20 (el mes pasado eran 4)."
+   },
+   {
+    "fecha": "2026-08-14",
+    "proyecto": "Precursores 525",
+    "dev": "Chacarilla Sur",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Joyce A.",
+    "texto": "Queda solo el dúplex penthouse 603 (227 m²): US$544,425. Entrega noviembre 2026."
+   },
+   {
+    "fecha": "2026-08-14",
+    "proyecto": "Monte Sierpe",
+    "dev": "Make",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Nadia",
+    "texto": "«Vendimos el 408.» Envía fichas de tipología (X2 104 m², 107 103 m²). Cochera Make US$20k."
+   },
+   {
+    "fecha": "2026-08-14",
+    "proyecto": "Aura Sul",
+    "dev": "Grupo Dicon",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Asesor Dicon",
+    "texto": "Se vendió el 203. Del flat típico 100 m² quedan pisos 4 y 5. Cochera aparte ($15k/$25k). Bot deriva a proyecto LoBo."
+   },
+   {
+    "fecha": "2026-08-14",
+    "proyecto": "D'Mont 2",
+    "dev": "Grupo Dicon",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Asesor Dicon",
+    "texto": "D'Mont agotado. D'Mont 2 en preventa: 15 vendidos, quedan 8 de 23. Precios web sin cochera (+US$25k). Flat 3d ~122 m²: US$263,064."
+   },
+   {
+    "fecha": "2026-08-14",
+    "proyecto": "Conde de la Vega 460",
+    "dev": "Azzurra",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Azzurra",
+    "texto": "Preventa boutique: quedan 12 de 26. Lista de precios del 18-may sigue vigente (desde US$253,000). Ya no hay cocheras adicionales."
+   },
+   {
+    "fecha": "2026-06-28",
+    "proyecto": "— Cuadrante",
+    "dev": "",
+    "tipo": "cambio",
+    "canal": "Benchmark",
+    "autor": "Equipo Creators",
+    "texto": "Relevamiento inicial (Corte 1): 23 competidores mapeados, direcciones y precios verificados uno a uno, cochera confirmada con cada asesor."
+   }
+  ]
  },
  "quadrant": [
   [
