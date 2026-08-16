@@ -31,6 +31,42 @@ window.PORTAL_DATA = {
   "proximo_corte": "2026-09-19",
   "bitacora": [
    {
+    "fecha": "2026-08-16",
+    "proyecto": "Estelar 1080",
+    "dev": "Galeón",
+    "tipo": "cambio",
+    "canal": "Confirmado",
+    "autor": "—",
+    "texto": "Cochera confirmada incluida (US$15,000). Neto: 2D 80 m² $2,280/m², 3D 112.5 m² $2,231/m². Ahora comparable."
+   },
+   {
+    "fecha": "2026-08-16",
+    "proyecto": "Monteflor",
+    "dev": "Arch Inversiones",
+    "tipo": "cambio",
+    "canal": "Confirmado",
+    "autor": "—",
+    "texto": "Confirmado que NO incluye cochera → el precio de lista ya es unidad sola. Comparable a $2,484–2,528/m²."
+   },
+   {
+    "fecha": "2026-08-16",
+    "proyecto": "Jardines de Monte Real",
+    "dev": "Central",
+    "tipo": "cambio",
+    "canal": "Ficha asesor",
+    "autor": "—",
+    "texto": "Precio por unidad del asesor (X08 94.2 m² S/836,496 → $2,612/m²). Cochera aún sin confirmar; comparable sobre precio de lista."
+   },
+   {
+    "fecha": "2026-08-16",
+    "proyecto": "Floresta Living 444",
+    "dev": "EE Inmobiliaria",
+    "tipo": "cambio",
+    "canal": "Nexo",
+    "autor": "—",
+    "texto": "Precio por unidad de Nexo (Tipo 03 85 m² S/668,000 → $2,311/m²). Cochera sin confirmar; comparable sobre precio de lista."
+   },
+   {
     "fecha": "2026-08-14",
     "proyecto": "Monte Mayor 183",
     "dev": "Azzurra",

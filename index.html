@@ -196,7 +196,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260816e"></script>
+<script src="data/portal-data.js?v=20260816g"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -260,6 +260,17 @@ function dataLabel(p){
   if(dl==='general')return 'Precio referencial (sin típico)';
   return 'Sin precio público';
 }
+// Frescura por proyecto: última verificación = la fecha más reciente en el Time lapse
+// que mencione al proyecto, o el relevamiento inicial (Corte 1) para todos.
+const BASE_VERIF='2026-06-28';
+function projLastVerif(p){
+  let last=BASE_VERIF;
+  (D.meta.bitacora||[]).forEach(e=>{if((e.proyecto===p.name||e.proyecto===p.id)&&e.fecha>last)last=e.fecha;});
+  return last;
+}
+function daysSince(iso){const a=iso.split('-').map(Number);const t=new Date(a[0],a[1]-1,a[2]);return Math.max(0,Math.floor((new Date()-t)/86400000));}
+function verifInfo(p){const fecha=projLastVerif(p);const dias=daysSince(fecha);return {fecha,dias,color:dias<=35?'#2F7D54':dias<=70?'#b9863b':'#ce3c31',fresh:dias<=35};}
+function verifBadge(p){const v=verifInfo(p);const t=v.dias===0?'hoy':`hace ${v.dias}d`;return `<span title="Última verificación con asesor/lista: ${v.fecha}" style="font-size:10px;font-weight:700;color:${v.color};white-space:nowrap">● verif. ${t}</span>`;}
 function colorOf(p){return p.isGEU?'#185FA5':(p.en_cuadrante?(STCOL[p.estado_grupo]||'#777'):'#9a958c');}
 function initials(n){return n.replace(/[^A-Za-zÁÉÍÓÚÑ ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();}
 function thumbHtml(p,cls){
@@ -433,7 +444,7 @@ function buildList(){
         <div class="pdev">${p.dev}</div>
         <div class="pprice">${priceline}</div>
         <div class="pmeta">${p.dorms||'—'} dorm · ${p.m2} m²</div>
-        <div style="margin-top:3px">${st}</div></div></div>`;
+        <div style="margin-top:3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">${st}${p.isGEU?'':verifBadge(p)}</div></div></div>`;
   }).join('');
 }
 function buildFullList(){
@@ -503,7 +514,7 @@ function buildStats(){
       <td style="font-size:10px;color:#999">${p.dev}</td><td>${p.m2} m²</td><td>${p.dorms||'—'}</td>
       <td><b>${fmtUsd(p.precio_desde_usd)||'<span class=nd>consultar</span>'}</b></td>
       <td style="font-size:10.5px;line-height:1.5">${fl}</td>
-      <td><span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span></td><td>${wa}</td></tr>`;}).join('');
+      <td><span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span></td><td>${verifBadge(p)}</td><td>${wa}</td></tr>`;}).join('');
   document.getElementById('statview').innerHTML=`
    <div class="card geucard">
      <h3><span style="width:12px;height:12px;border-radius:50%;background:#185FA5;display:inline-block"></span>${geu.name} — Nuestro Proyecto <span class="badge b-geu">GEU</span></h3>
@@ -532,7 +543,8 @@ function buildStats(){
      <div class="k"><div class="kv" style="color:#185FA5">$${geuBest.toLocaleString()}/m²</div><div class="kl">GEU flat 2 dorm</div></div>
    </div>
    <div class="sec">Directorio del cuadrante · metraje, $/m² por tipología y contacto · clic en una fila abre su ficha</div>
-   <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
+   <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>Verificado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
+   <div style="font-size:10.5px;color:#999;margin-top:6px"><b>Verificado</b> = última vez que confirmamos el dato con el asesor o su lista (se alimenta del Time lapse). <span style="color:#2F7D54;font-weight:700">●</span> ≤35 días · <span style="color:#b9863b;font-weight:700">●</span> 36–70 · <span style="color:#ce3c31;font-weight:700">●</span> +70, toca re-confirmar.</div>
    <div class="foot">Solo proyectos dentro del cuadrante Av. Primavera — Av. de la Floresta — Av. de los Precursores. TC ${D.meta.tc} S/USD. $/m² sobre flats típicos (sin 1er ni último piso, sin dúplex/PH). Fuentes: webs oficiales, BCP/Nexo, brochures PDF; verificado con doble revisión.</div>`;
 }
 
@@ -680,9 +692,16 @@ function buildTimelapse(){
        </div>
        <div style="font-size:12.5px;color:#444;line-height:1.5">${e.texto}</div>
      </div></div>`).join('');
+  const comps=P.filter(p=>p.mostrar&&!p.isGEU);
+  const fresh=comps.filter(p=>verifInfo(p).fresh).length, stale=comps.length-fresh;
+  const staleList=comps.filter(p=>!verifInfo(p).fresh).sort((a,b)=>verifInfo(b).dias-verifInfo(a).dias);
   document.getElementById('timelapseview').innerHTML=`
    <h2 style="margin-bottom:2px">Time lapse · monitoreo de actividad</h2>
    <div style="font-size:12px;color:#999;margin-bottom:14px">Registro cronológico de lo que nos dicen los asesores — comentarios, llamadas, mensajes y cambios. Cada interacción queda fechada para ver la evolución de la zona en el tiempo.</div>
+   <div style="display:flex;gap:12px;margin-bottom:16px;max-width:760px;flex-wrap:wrap">
+     <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#2F7D54">${fresh}</div><div style="font-size:11.5px;color:#7a7a7a">verificados ≤35 días</div></div>
+     <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#ce3c31">${stale}</div><div style="font-size:11.5px;color:#7a7a7a">por re-confirmar${staleList.length?`: ${staleList.slice(0,3).map(p=>p.name).join(', ')}${staleList.length>3?'…':''}`:''}</div></div>
+   </div>
    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">${chips}</div>
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
