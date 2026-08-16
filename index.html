@@ -186,7 +186,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260816a"></script>
+<script src="data/portal-data.js?v=20260816b"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -708,9 +708,20 @@ function buildUpdates(){
   const chip=(n,t,d,dc)=>`<div style="flex:1;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px">
      <div style="font-size:26px;font-weight:800;color:#15402c">${n} <span style="font-size:13px;font-weight:700;color:${dc}">${d}</span></div>
      <div style="font-size:12px;color:#7a7a7a;margin-top:2px">${t}</div></div>`;
+  const MES=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const fmtF=s=>{const a=s.split('-');return `${+a[2]} ${MES[+a[1]]} ${a[0]}`;};
+  const cortes=(D.meta.cortes||[]).slice().reverse();
+  const cur=cortes.find(c=>c.estado==='actual')||cortes[0], prev=cortes.find(c=>c.estado!=='actual');
+  const timeline=cortes.map(c=>`<div style="display:flex;gap:14px;padding:9px 0;border-bottom:1px solid #eee">
+     <div style="flex:0 0 120px;font-size:12px"><b style="color:${c.estado==='actual'?'#15402c':'#8a8a8a'}">${fmtF(c.fecha)}</b>${c.estado==='actual'?' <span style="background:#15402c;color:#fff;font-size:8.5px;padding:1px 6px;border-radius:8px">ÚLTIMO</span>':''}</div>
+     <div style="flex:1"><b style="font-size:12.5px;color:#15402c">${c.titulo}</b><div style="font-size:11.5px;color:#666;line-height:1.5;margin-top:2px">${c.resumen}</div></div></div>`).join('');
   document.getElementById('updatesview').innerHTML=`
    <h2 style="margin-bottom:2px">Actualizaciones de la zona</h2>
-   <div style="font-size:12px;color:#999;margin-bottom:14px">Movimiento del cuadrante · verificado con asesores y listas oficiales · actualizado 14 ago 2026</div>
+   <div style="font-size:12px;color:#999;margin-bottom:16px">Corte mensual del cuadrante · último ${fmtF(cur.fecha)}${prev?` · anterior ${fmtF(prev.fecha)}`:''}${D.meta.proximo_corte?` · próximo ~${fmtF(D.meta.proximo_corte)}`:''}</div>
+   <div style="background:#faf8f2;border:1px solid #ece7d9;border-radius:12px;padding:8px 18px 6px;margin-bottom:20px;max-width:900px">
+     <div style="font-size:10.5px;letter-spacing:1.5px;color:#2F7D54;font-weight:700;margin:6px 0 2px">HISTÓRICO DE CORTES</div>
+     ${timeline}</div>
+   <div class="sec" style="margin-bottom:12px">Movimiento del último corte · ${fmtF(cur.fecha)}</div>
    <div style="display:flex;gap:12px;margin-bottom:16px;max-width:760px">
      ${chip(16,'En construcción','+1',GRN)}${chip(6,'Entrega inmediata','−1',RED)}${chip(2,'En planos','+1',GRN)}</div>
    <div style="font-size:12.5px;color:#555;margin:-6px 0 16px;max-width:900px"><b style="color:${RED}">−1</b> en entrega inmediata (D'Mont vendido), <b style="color:${GRN}">+1</b> en construcción (D'Mont 2) y <b style="color:${GRN}">+1</b> en planos (Monte Alegre). Solo 2 proyectos en planos compiten con una preventa.</div>

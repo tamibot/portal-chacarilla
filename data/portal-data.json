@@ -13,7 +13,22 @@
   "cochera_incluida": 12,
   "cochera_aparte": 4,
   "verif_web_fecha": "2026-08-16",
-  "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)"
+  "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
+  "cortes": [
+   {
+    "fecha": "2026-06-28",
+    "titulo": "Corte 1 · Benchmark inicial",
+    "estado": "cerrado",
+    "resumen": "Primer relevamiento del cuadrante (jun–jul). 23 competidores mapeados, direcciones y precios verificados uno a uno, política de cochera confirmada con cada asesor por WhatsApp."
+   },
+   {
+    "fecha": "2026-08-16",
+    "titulo": "Corte 2 · Pre-lanzamiento",
+    "estado": "actual",
+    "resumen": "D'Mont vendido → D'Mont 2 en preventa (8/23). Monte Mayor 183 3/20, Conde de la Vega 460 12/26, Precursores II 3/19, Monte Sierpe vendió el 408, Aura Sul vendió el 203. Monte Alegre 109 nuevo en planos. Todos los competidores con precio quedaron comparables. GEU pasó a precios de preventa ($2,562/m² típico)."
+   }
+  ],
+  "proximo_corte": "2026-09-19"
  },
  "quadrant": [
   [
