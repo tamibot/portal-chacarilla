@@ -277,6 +277,13 @@
      "precio_usd": 352647,
      "precio_m2": 2548,
      "comparable_confirmado": true
+    },
+    {
+     "dorm": 1,
+     "m2": 70.9,
+     "precio_usd": 182059,
+     "precio_m2": 2568,
+     "comparable_confirmado": true
     }
    ],
    "dorms_disponibles": [
@@ -1161,6 +1168,13 @@
      "ajuste_cochera_usd": "15k simple / 28k lineal / 30k 2 simples",
      "comparable_confirmado": true,
      "nota": "Promedio ponderado neto de 9 flats disponibles; excluye piso 1, dúplex, penthouse y vendidos."
+    },
+    {
+     "dorm": 1,
+     "m2": 85.1,
+     "precio_usd": 238000,
+     "precio_m2": 2797,
+     "comparable_confirmado": true
     }
    ],
    "dorms_disponibles": [

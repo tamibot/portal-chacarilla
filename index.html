@@ -212,7 +212,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260816n"></script>
+<script src="data/portal-data.js?v=20260816o"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -549,18 +549,18 @@ function buildStats(){
      <td>Flat ${u.dorm} dorm</td><td>${u.m2} m²</td><td>${fmtUsd(u.precio_usd)} *</td>
      <td><span class="tpm2 ${pm2cls(u.precio_m2)}">$${u.precio_m2.toLocaleString()}/m²</span></td></tr>`).join('');
   // comparativo cuadrante
-  const comp=[...inq].sort((a,b)=>(a.precio_desde_usd||9e9)-(b.precio_desde_usd||9e9));
+  const comp=[geu,...inq].sort((a,b)=>(a.precio_desde_usd||9e9)-(b.precio_desde_usd||9e9));
   let ci=0;
   const crows=comp.map(p=>{ci++;
     const fl=comparableRows(p).map(f=>`${f.dorm}d · ${f.m2}m² · <b>$${f.precio_m2.toLocaleString()}/m²</b>`).join('<br>')||'<span class="nd">Sin lista de precios pública</span>';
     const wa=p.wa?`<a class="wa" href="${waHref(p)}" target="_blank">WhatsApp ${waFmt(p.wa)}</a>`:'<span class="nd">—</span>';
-    return `<tr class="clickrow" onclick="window.open('proyecto.html?id=${p.id}','_blank')">
+    return `<tr class="${p.isGEU?'geurow':'clickrow'}" onclick="window.open('proyecto.html?id=${p.id}','_blank')">
       <td><span class="rank ${ci<=3?'r'+ci:''}">${ci}</span></td>
-      <td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${colorOf(p)}"></span> ${p.name}</td>
+      <td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${colorOf(p)}"></span> ${p.name}${p.isGEU?' ★':''}</td>
       <td style="font-size:10px;color:#999">${p.dev}</td><td>${p.m2} m²</td><td>${p.dorms||'—'}</td>
       <td><b>${fmtUsd(p.precio_desde_usd)||'<span class=nd>consultar</span>'}</b> ${priceDelta(p)}</td>
       <td style="font-size:10.5px;line-height:1.5">${fl}</td>
-      <td><span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span></td><td>${verifBadge(p)}</td><td>${wa}</td></tr>`;}).join('');
+      <td><span class="stbadge ${STCLASS[p.estado_grupo]}">${p.estado_grupo}</span></td><td>${p.isGEU?'<span style="font-size:10px;color:#185FA5;font-weight:700">nuestro</span>':verifBadge(p)}</td><td>${wa}</td></tr>`;}).join('');
   document.getElementById('statview').innerHTML=`
    <div class="card geucard">
      <h3><span style="width:12px;height:12px;border-radius:50%;background:#185FA5;display:inline-block"></span>${geu.name} — Nuestro Proyecto <span class="badge b-geu">GEU</span></h3>
@@ -578,6 +578,7 @@ function buildStats(){
      <div style="font-size:10.5px;color:#aaa;margin-bottom:10px">Solo flats típicos de pisos 2–6. No se consideran 1er piso, Colección Terra (área libre) ni dúplex.</div>
      <table class="t"><thead><tr><th>Tipología</th><th>Área total</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${grows}</tbody></table>
      <div style="font-size:10px;color:#aaa;margin-top:6px">* Precio neto por unidad. La lista de preventa <b>incluye 1 cochera</b> (US$15,000); aquí se descuenta para comparar en la misma base que la competencia.</div>
+     ${(()=>{const h=(geu.precio_hist||[]).filter(x=>x.pm2);if(h.length<2)return '';const a=h[0],b=h[h.length-1];const pct=Math.round((b.pm2-a.pm2)/a.pm2*100);const fc=c=>`${MES3[+c.split('-')[1]]}-${c.split('-')[0]}`;return `<div style="font-size:11.5px;color:#444;margin-top:8px;background:#f4f1ea;border-radius:8px;padding:8px 12px">📈 <b>Histórico del típico:</b> $${a.pm2.toLocaleString()}/m² <span style="color:#999">(${fc(a.corte)} · corte 1)</span> → <b>$${b.pm2.toLocaleString()}/m²</b> <span style="color:#999">(${fc(b.corte)})</span> <span style="color:#A32D2D;font-weight:700">▲${pct}%</span> · subió al pasar a preventa.</div>`;})()}
    </div>
    <div class="sec">Resumen del cuadrante (${N_COMP} competidores)</div>
    <div class="kgrid" style="max-width:1180px">
@@ -588,7 +589,7 @@ function buildStats(){
      <div class="k"><div class="kv" style="color:#8a5a12">$${pm2avg.toLocaleString()}/m²</div><div class="kl">USD/m² promedio flats</div></div>
      <div class="k"><div class="kv" style="color:#185FA5">$${geuBest.toLocaleString()}/m²</div><div class="kl">GEU flat 2 dorm</div></div>
    </div>
-   <div class="sec">Directorio del cuadrante · metraje, $/m² por tipología y contacto · clic en una fila abre su ficha</div>
+   <div class="sec">Directorio del cuadrante · <b>ordenado por precio desde, de menor a mayor</b> · incluye nuestro proyecto ★ · clic en una fila abre su ficha</div>
    <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>Verificado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
    <div style="font-size:10.5px;color:#999;margin-top:6px"><b>Verificado</b> = última vez que confirmamos el dato con el asesor o su lista (se alimenta del Time lapse). <span style="color:#2F7D54;font-weight:700">●</span> ≤35 días · <span style="color:#b9863b;font-weight:700">●</span> 36–70 · <span style="color:#ce3c31;font-weight:700">●</span> +70, toca re-confirmar.</div>
    <div class="foot">Solo proyectos dentro del cuadrante Av. Primavera — Av. de la Floresta — Av. de los Precursores. TC ${D.meta.tc} S/USD. $/m² sobre flats típicos (sin 1er ni último piso, sin dúplex/PH). Fuentes: webs oficiales, BCP/Nexo, brochures PDF; verificado con doble revisión.</div>`;
@@ -598,7 +599,7 @@ function buildStats(){
 function buildPrice(){
   const inq=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&comparableRows(p).length).sort((a,b)=>(a.isGEU?0:1)-(b.isGEU?0:1)||comparableRows(a)[0].precio_m2-comparableRows(b)[0].precio_m2);
   const rows=inq.map(p=>{
-    const cols=[2,3].map(d=>{const f=comparableRows(p).find(x=>x.dorm===d);
+    const cols=[1,2,3].map(d=>{const f=comparableRows(p).find(x=>x.dorm===d);
       if(!f)return`<td class="sep nd">—</td><td class="nd">—</td><td class="nd">—</td>`;
       return`<td class="sep">${f.m2} m²</td><td>${fmtUsd(f.precio_usd)}</td><td><span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></td>`;}).join('');
     const out=!p.en_cuadrante&&!p.isGEU?'<span class="badge b-out">Fuera</span>':'';
@@ -608,8 +609,8 @@ function buildPrice(){
    <div style="font-size:11px;color:#aaa;margin-bottom:16px;line-height:1.6">Una fila por proyecto; columnas por nº de dormitorios. Excluye 1er piso, dúplex y PH. TC ${D.meta.tc} S/USD. Clic en fila → ficha.<br>
      <span style="color:#A32D2D;font-weight:600">Rojo &gt;$2,200/m²</span> · <span style="color:#8a5a12;font-weight:600">Ámbar $1,800–2,200</span> · <span style="color:#3B6D11;font-weight:600">Verde &lt;$1,800</span></div>
    <table class="t"><thead>
-     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th></tr>
-     <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>
+     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dormitorio</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th></tr>
+     <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>
    ${dormSections()}
    <div class="foot">Solo proyectos del cuadrante con precios por tipología confirmados por el desarrollador o su asesor comercial. Precio neto por unidad sola, cochera descontada donde el asesor lo confirmó. Los proyectos que no publican lista de precios no aparecen aquí.</div>`;
 }
