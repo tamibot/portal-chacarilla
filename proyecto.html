@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260813c"></script>
+<script src="data/portal-data.js?v=20260816n"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -84,6 +84,12 @@ const waHref=(p,num)=>{
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const initials=n=>n.replace(/[^A-Za-zÁÉÍÓÚÑ ]/g,'').split(' ').filter(Boolean).slice(0,2).map(w=>w[0]).join('').toUpperCase();
 const tipoLabel={flat:'Flat',duplex:'Dúplex',pent:'Penthouse',triplex:'Triplex',primer_piso:'1er piso',flat_duplex_varios:'Flat/Dúplex'};
+const MES3=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const fmtFechaCorta=iso=>{const a=String(iso||'').split('-');return a.length===3?(+a[2])+' '+MES3[+a[1]]+' '+a[0]:iso;};
+const BASE_VERIF='2026-06-28';
+function projLastVerif(pr){let last=BASE_VERIF;(D.meta.bitacora||[]).forEach(e=>{if((e.proyecto===pr.name||e.proyecto===pr.id)&&e.fecha>last)last=e.fecha;});return last;}
+function daysSince(iso){const a=String(iso).split('-').map(Number);const t=new Date(a[0],a[1]-1,a[2]);return Math.max(0,Math.floor((new Date()-t)/86400000));}
+function verifInfo(pr){const f=projLastVerif(pr);const dias=daysSince(f);return{fecha:f,dias,color:dias<=35?'#2d6a4f':dias<=70?'#b9863b':'#ce3c31'};}
 const id=new URLSearchParams(location.search).get('id');
 const p=P.find(x=>x.id===id);
 
@@ -126,6 +132,15 @@ function render(){
     }).join('')+`</div>`;
   } else planosHtml=`<div class="empty">Planos no disponibles para este proyecto.</div>`;
 
+  // time lapse del proyecto + frescura + historial de precio
+  const evs=(D.meta.bitacora||[]).filter(e=>e.proyecto===p.name);
+  const vi=verifInfo(p);
+  const tlHtml=evs.length?evs.map(e=>`<div style="padding:9px 0;border-bottom:1px solid #f0ede8"><b style="color:var(--verde)">${fmtFechaCorta(e.fecha)}</b>${e.autor&&e.autor!=='—'?' · '+e.autor:''} <span style="color:#aaa;font-size:11px">(${e.canal||e.tipo})</span><div style="font-size:13px;color:#444;margin-top:3px;line-height:1.5">${e.texto}</div></div>`).join(''):'<div class="empty">Sin novedades registradas todavía.</div>';
+  const ph=(p.precio_hist||[]).filter(x=>x.desde);
+  let phHtml='';
+  if(ph.length>=2){const a=ph[ph.length-2],b=ph[ph.length-1];const pct=Math.round((b.desde-a.desde)/a.desde*100),up=pct>0;
+    phHtml=`<div style="font-size:12.5px;color:#555;margin-bottom:12px">Precio desde: <b>${fmtUsd(a.desde)}</b> <span style="color:#999">(${fmtFechaCorta(a.corte)})</span> → <b>${fmtUsd(b.desde)}</b> <span style="color:#999">(${fmtFechaCorta(b.corte)})</span> <span style="color:${up?'#A32D2D':'#3B6D11'};font-weight:800">${pct===0?'=':(up?'▲':'▼')+Math.abs(pct)+'%'}</span></div>`;}
+
   // fuentes
   const allsrc=[...(p.fuentes||[]),...Object.values(p.portales||{})].filter((v,i,a)=>v&&a.indexOf(v)===i);
   const srcHtml=allsrc.length?`<div class="srclist">`+allsrc.map(u=>`<div>🔗 <a href="${u}" target="_blank">${u}</a></div>`).join('')+`</div>`:`<div class="empty">—</div>`;
@@ -163,6 +178,7 @@ function render(){
          <div class="chip"><b>${p.m2} m²</b><span>Áreas</span></div>
          <div class="chip"><b>${p.entrega||'—'}</b><span>Entrega</span></div>
          ${p.total_pisos?`<div class="chip"><b>${p.total_pisos}</b><span>Pisos</span></div>`:''}
+         ${p.isGEU?'':`<div class="chip"><b style="color:${vi.color}">${vi.dias===0?'hoy':'hace '+vi.dias+'d'}</b><span>Verificado</span></div>`}
        </div>
        <div class="cta">${wa}${web}${broch}${lista}</div>
      </div>
@@ -178,6 +194,9 @@ function render(){
    ${adsHtml}
 
    ${amenHtml?`<div class="sec">Amenidades</div>${amenHtml}`:''}
+
+   <div class="sec">Monitoreo · Time lapse <span style="font-weight:600;color:${vi.color};font-size:11px;text-transform:none;letter-spacing:0">● verificado ${vi.dias===0?'hoy':'hace '+vi.dias+' días'}</span></div>
+   ${phHtml}${tlHtml}
 
    ${p.verif_web?`<div class="sec">Verificación web · ${p.verif_web.fecha}</div>
    <div class="alert"${p.verif_web.conflicto?' style="background:#FBECEC;border-color:#e0a0a0"':''}>
