@@ -47,7 +47,8 @@
      "https://inmobiliariaayd.com",
      "Chat WhatsApp con Washington Benavides (26-jun a 19-ago 2026)"
     ],
-    "proyecto_id": "monte-umbroso-247"
+    "proyecto_id": "monte-umbroso-247",
+    "tag": "nuevo"
    },
    {
     "fecha": "2026-08-16",
@@ -56,7 +57,8 @@
     "tipo": "cambio",
     "canal": "Confirmado",
     "autor": "—",
-    "texto": "Cochera confirmada incluida (US$15,000). Neto: 2D 80 m² $2,280/m², 3D 112.5 m² $2,231/m². Ahora comparable."
+    "texto": "Cochera confirmada incluida (US$15,000). Neto: 2D 80 m² $2,280/m², 3D 112.5 m² $2,231/m². Ahora comparable.",
+    "tag": "actualizacion"
    },
    {
     "fecha": "2026-08-16",
@@ -65,7 +67,8 @@
     "tipo": "cambio",
     "canal": "Confirmado",
     "autor": "—",
-    "texto": "Confirmado que NO incluye cochera → el precio de lista ya es unidad sola. Comparable a $2,484–2,528/m²."
+    "texto": "Confirmado que NO incluye cochera → el precio de lista ya es unidad sola. Comparable a $2,484–2,528/m².",
+    "tag": "actualizacion"
    },
    {
     "fecha": "2026-08-16",
@@ -74,7 +77,8 @@
     "tipo": "cambio",
     "canal": "Ficha asesor",
     "autor": "—",
-    "texto": "Precio por unidad del asesor (X08 94.2 m² S/836,496 → $2,612/m²). Cochera aún sin confirmar; comparable sobre precio de lista."
+    "texto": "Precio por unidad del asesor (X08 94.2 m² S/836,496 → $2,612/m²). Cochera aún sin confirmar; comparable sobre precio de lista.",
+    "tag": "actualizacion"
    },
    {
     "fecha": "2026-08-16",
@@ -83,7 +87,8 @@
     "tipo": "cambio",
     "canal": "Nexo",
     "autor": "—",
-    "texto": "Precio por unidad de Nexo (Tipo 03 85 m² S/668,000 → $2,311/m²). Cochera sin confirmar; comparable sobre precio de lista."
+    "texto": "Precio por unidad de Nexo (Tipo 03 85 m² S/668,000 → $2,311/m²). Cochera sin confirmar; comparable sobre precio de lista.",
+    "tag": "actualizacion"
    },
    {
     "fecha": "2026-08-14",
@@ -92,7 +97,8 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Jenniffer S.",
-    "texto": "«Proyecto Monte Mayor voló! Solo me quedan 3 depas.» Confirma 3 de 20 (el mes pasado eran 4)."
+    "texto": "«Proyecto Monte Mayor voló! Solo me quedan 3 depas.» Confirma 3 de 20 (el mes pasado eran 4).",
+    "tag": "cambio"
    },
    {
     "fecha": "2026-08-14",
@@ -101,7 +107,8 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Joyce A.",
-    "texto": "Queda solo el dúplex penthouse 603 (227 m²): US$544,425. Entrega noviembre 2026."
+    "texto": "Queda solo el dúplex penthouse 603 (227 m²): US$544,425. Entrega noviembre 2026.",
+    "tag": "cambio"
    },
    {
     "fecha": "2026-08-14",
@@ -110,7 +117,8 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Nadia",
-    "texto": "«Vendimos el 408.» Envía fichas de tipología (X2 104 m², 107 103 m²). Cochera Make US$20k."
+    "texto": "«Vendimos el 408.» Envía fichas de tipología (X2 104 m², 107 103 m²). Cochera Make US$20k.",
+    "tag": "cambio"
    },
    {
     "fecha": "2026-08-14",
@@ -119,7 +127,8 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Asesor Dicon",
-    "texto": "Se vendió el 203. Del flat típico 100 m² quedan pisos 4 y 5. Cochera aparte ($15k/$25k). Bot deriva a proyecto LoBo."
+    "texto": "Se vendió el 203. Del flat típico 100 m² quedan pisos 4 y 5. Cochera aparte ($15k/$25k). Bot deriva a proyecto LoBo.",
+    "tag": "cambio"
    },
    {
     "fecha": "2026-08-14",
@@ -128,7 +137,8 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Asesor Dicon",
-    "texto": "D'Mont agotado. D'Mont 2 en preventa: 15 vendidos, quedan 8 de 23. Precios web sin cochera (+US$25k). Flat 3d ~122 m²: US$263,064."
+    "texto": "D'Mont agotado. D'Mont 2 en preventa: 15 vendidos, quedan 8 de 23. Precios web sin cochera (+US$25k). Flat 3d ~122 m²: US$263,064.",
+    "tag": "nuevo"
    },
    {
     "fecha": "2026-08-14",
@@ -137,7 +147,8 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Azzurra",
-    "texto": "Preventa boutique: quedan 12 de 26. Lista de precios del 18-may sigue vigente (desde US$253,000). Ya no hay cocheras adicionales."
+    "texto": "Preventa boutique: quedan 12 de 26. Lista de precios del 18-may sigue vigente (desde US$253,000). Ya no hay cocheras adicionales.",
+    "tag": "actualizacion"
    },
    {
     "fecha": "2026-06-28",
@@ -146,7 +157,8 @@
     "tipo": "cambio",
     "canal": "Benchmark",
     "autor": "Equipo Creators",
-    "texto": "Relevamiento inicial (Corte 1): 23 competidores mapeados, direcciones y precios verificados uno a uno, cochera confirmada con cada asesor."
+    "texto": "Relevamiento inicial (Corte 1): 23 competidores mapeados, direcciones y precios verificados uno a uno, cochera confirmada con cada asesor.",
+    "tag": "actualizacion"
    }
   ]
  },

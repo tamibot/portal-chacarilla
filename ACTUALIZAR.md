@@ -41,12 +41,16 @@ En `meta.bitacora`, agregá **arriba** un objeto por cada conversación:
 
 ```json
 { "fecha": "2026-09-15", "proyecto": "Monte Mayor 183", "dev": "Azzurra",
-  "tipo": "mensaje", "canal": "WhatsApp", "autor": "Jenniffer",
-  "texto": "Qué dijeron, en una o dos líneas." }
+  "tag": "cambio", "autor": "Jenniffer", "canal": "WhatsApp",
+  "texto": "Qué dijeron, en una o dos líneas.",
+  "imgs": ["assets/planos/monte-mayor-183/plano-01.jpg"],
+  "fuentes": ["https://...", "Chat WhatsApp con Jenniffer"] }
 ```
 
-`tipo`: `mensaje` · `llamada` · `visita` · `web` · `cambio`. Esto alimenta el
-Time lapse **y** la frescura (el proyecto vuelve a verde con la fecha nueva).
+`tag` (es la etiqueta del filtro en Time lapse): `nuevo` · `actualizacion` ·
+`cambio` · `agotado` (se acabó). `imgs` y `fuentes` son opcionales (se muestran
+como miniaturas y enlaces). Esto alimenta el Time lapse **y** la frescura (el
+proyecto vuelve a verde con la fecha nueva).
 
 ## Paso 4 · Cerrar el corte (script)
 
