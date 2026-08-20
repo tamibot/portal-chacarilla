@@ -212,7 +212,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260819c"></script>
+<script src="data/portal-data.js?v=20260819d"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -243,6 +243,10 @@ const waHref=(p,num)=>{
 };
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const typText=(p)=>[p.estado_raw,p.comentario,...(p.typologies||[]).map(t=>`${t.unidad||''} ${t.tipo||''} ${t.piso||''}`)].join(' ').toLowerCase();
+function cocheraLabel(p){const s=parkingStatus(p);
+  if(s==='si')return '<span style="color:#2F7D54;font-weight:700;white-space:nowrap">✓ Incluida</span>';
+  if(s==='no')return '<span style="color:#6d776e;white-space:nowrap">Aparte</span>';
+  return '<span style="color:#b9863b;font-weight:700;white-space:nowrap">No se sabe</span>';}
 function parkingStatus(p){
   if(p.cochera_status)return p.cochera_status;
   const txt=typText(p);
@@ -580,15 +584,6 @@ function buildStats(){
      <div style="font-size:10px;color:#aaa;margin-top:6px">* Precio neto por unidad. La lista de preventa <b>incluye 1 cochera</b> (US$15,000); aquí se descuenta para comparar en la misma base que la competencia.</div>
      ${(()=>{const h=(geu.precio_hist||[]).filter(x=>x.pm2);if(h.length<2)return '';const a=h[0],b=h[h.length-1];const pct=Math.round((b.pm2-a.pm2)/a.pm2*100);const fc=c=>`${MES3[+c.split('-')[1]]}-${c.split('-')[0]}`;return `<div style="font-size:11.5px;color:#444;margin-top:8px;background:#f4f1ea;border-radius:8px;padding:8px 12px">📈 <b>Histórico del típico:</b> $${a.pm2.toLocaleString()}/m² <span style="color:#999">(${fc(a.corte)} · corte 1)</span> → <b>$${b.pm2.toLocaleString()}/m²</b> <span style="color:#999">(${fc(b.corte)})</span> <span style="color:#A32D2D;font-weight:700">▲${pct}%</span> · subió al pasar a preventa.</div>`;})()}
    </div>
-   <div class="sec">Resumen del cuadrante (${N_COMP} competidores)</div>
-   <div class="kgrid" style="max-width:1180px">
-     <div class="k"><div class="kv">${inq.length}</div><div class="kl">Con precio publicado</div></div>
-     <div class="k"><div class="kv" style="color:#3B6D11">US$${Math.round(precios[0]/1000)}k</div><div class="kl">Precio desde más bajo</div></div>
-     <div class="k"><div class="kv" style="color:#A32D2D">US$${Math.round(precios[precios.length-1]/1000)}k</div><div class="kl">Precio desde más alto</div></div>
-     <div class="k"><div class="kv" style="color:#8a5a12">US$${Math.round(avg/1000)}k</div><div class="kl">Precio desde promedio</div></div>
-     <div class="k"><div class="kv" style="color:#8a5a12">$${pm2avg.toLocaleString()}/m²</div><div class="kl">USD/m² promedio flats</div></div>
-     <div class="k"><div class="kv" style="color:#185FA5">$${geuBest.toLocaleString()}/m²</div><div class="kl">GEU flat 2 dorm</div></div>
-   </div>
    <div class="sec">Directorio del cuadrante · <b>ordenado por precio desde, de menor a mayor</b> · incluye nuestro proyecto ★ · clic en una fila abre su ficha</div>
    <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>Verificado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
    <div style="font-size:10.5px;color:#999;margin-top:6px"><b>Verificado</b> = última vez que confirmamos el dato con el asesor o su lista (se alimenta del Time lapse). <span style="color:#2F7D54;font-weight:700">●</span> ≤35 días · <span style="color:#b9863b;font-weight:700">●</span> 36–70 · <span style="color:#ce3c31;font-weight:700">●</span> +70, toca re-confirmar.</div>
@@ -603,13 +598,13 @@ function buildPrice(){
       if(!f)return`<td class="sep nd">—</td><td class="nd">—</td><td class="nd">—</td>`;
       return`<td class="sep">${f.m2} m²</td><td>${fmtUsd(f.precio_usd)}</td><td><span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></td>`;}).join('');
     const out=!p.en_cuadrante&&!p.isGEU?'<span class="badge b-out">Fuera</span>':'';
-    return`<tr class="${p.isGEU?'geurow':'clickrow'}" ${p.isGEU?'':`onclick="window.open('proyecto.html?id=${p.id}','_blank')"`}><td>${p.name} ${p.isGEU?'★':''}${out}</td>${cols}</tr>`;}).join('');
+    return`<tr class="${p.isGEU?'geurow':'clickrow'}" onclick="window.open('proyecto.html?id=${p.id}','_blank')" style="cursor:pointer"><td>${p.name} ${p.isGEU?'★':''}${out}</td>${cols}<td class="sep" style="text-align:center">${cocheraLabel(p)}</td></tr>`;}).join('');
   document.getElementById('priceview').innerHTML=`
    <h2 style="font-size:15px;font-weight:800;margin-bottom:5px">Precio por m² · Flats típicos (pisos intermedios, sin 1er ni último)</h2>
-   <div style="font-size:11px;color:#aaa;margin-bottom:16px;line-height:1.6">Una fila por proyecto; columnas por nº de dormitorios. Excluye 1er piso, dúplex y PH. TC ${D.meta.tc} S/USD. Clic en fila → ficha.<br>
-     <span style="color:#A32D2D;font-weight:600">Rojo &gt;$2,200/m²</span> · <span style="color:#8a5a12;font-weight:600">Ámbar $1,800–2,200</span> · <span style="color:#3B6D11;font-weight:600">Verde &lt;$1,800</span></div>
+   <div style="font-size:11px;color:#aaa;margin-bottom:16px;line-height:1.6">Una fila por proyecto; columnas por nº de dormitorios (flats típicos, sin 1er piso ni dúplex). <b>Clic en cualquier fila → ficha del proyecto.</b> TC ${D.meta.tc} S/USD.<br>
+     Columna <b>Cochera</b>: <span style="color:#2F7D54;font-weight:600">✓ Incluida</span> (el $/m² ya la incluye) · <span style="color:#6d776e">Aparte</span> (unidad sola) · <span style="color:#b9863b;font-weight:600">No se sabe</span> (sin confirmar — considerar con cuidado).</div>
    <table class="t"><thead>
-     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dormitorio</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th></tr>
+     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dormitorio</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th><th rowspan="2" class="sep" style="text-align:center">Cochera</th></tr>
      <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>
    ${dormSections()}
    <div class="foot">Solo proyectos del cuadrante con precios por tipología confirmados por el desarrollador o su asesor comercial. Precio neto por unidad sola, cochera descontada donde el asesor lo confirmó. Los proyectos que no publican lista de precios no aparecen aquí.</div>`;
@@ -728,23 +723,34 @@ function buildTimelapse(){
   const data=tlFilter?all.filter(e=>e.proyecto===tlFilter):all;
   const chips=`<button class="anatab${tlFilter===''?' on':''}" onclick="tlFilter='';buildTimelapse()">Todos (${all.length})</button>`+
     proys.map(p=>`<button class="anatab${tlFilter===p?' on':''}" onclick="tlFilter=${JSON.stringify(p).replace(/"/g,'&quot;')};buildTimelapse()">${p}</button>`).join('');
-  const feed=data.map(e=>`<div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px solid #eee">
-     <div style="flex:0 0 84px;font-size:11.5px;color:#8a8a8a;font-weight:600">${fmtF(e.fecha)}</div>
-     <div style="flex:1">
-       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px">
-         <span style="font-weight:700;font-size:12.5px;color:#15402c">${e.proyecto}</span>
-         ${e.dev?`<span style="font-size:10.5px;color:#999">${e.dev}</span>`:''}
-         <span style="font-size:9.5px;font-weight:700;color:${TCOL[e.tipo]||'#888'};background:${TCOL[e.tipo]||'#888'}1e;padding:1px 8px;border-radius:5px">${TLAB[e.tipo]||e.tipo}</span>
-         ${e.autor?`<span style="font-size:10.5px;color:#aaa">· ${e.autor}</span>`:''}
-       </div>
-       <div style="font-size:12.5px;color:#444;line-height:1.5">${e.texto}</div>
-     </div></div>`).join('');
+  const MESL=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  const monthName=ym=>{const a=ym.split('-');return `${MESL[+a[1]]} ${a[0]}`;};
+  const byMonth={};data.forEach(e=>{const ym=e.fecha.slice(0,7);(byMonth[ym]=byMonth[ym]||[]).push(e);});
+  const months=Object.keys(byMonth).sort().reverse();
+  const entryHtml=e=>{
+    const pid=e.proyecto_id||(P.find(x=>x.name===e.proyecto)||{}).id;
+    const nameHtml=pid?`<a href="proyecto.html?id=${pid}" target="_blank" style="font-weight:700;font-size:12.5px;color:#15402c;border-bottom:1px dotted #15402c;text-decoration:none">${e.proyecto}</a>`:`<span style="font-weight:700;font-size:12.5px;color:#15402c">${e.proyecto}</span>`;
+    const imgs=(e.imgs||[]).map(s=>`<img src="${s}" loading="lazy" onclick="window.open('${s}','_blank')" onerror="this.style.display='none'" title="Clic para ampliar" style="height:74px;border:1px solid #e6e1d4;border-radius:6px;cursor:zoom-in;flex:0 0 auto;background:#fff">`).join('');
+    const src=(e.fuentes||[]).map(u=>String(u).startsWith('http')?`<a href="${u}" target="_blank" style="color:#185FA5;font-size:10.5px">🔗 ${u.replace(/^https?:\/\//,'').slice(0,42)}</a>`:`<span style="font-size:10.5px;color:#999">📎 ${u}</span>`).join(' · ');
+    return `<div style="display:flex;gap:14px;padding:13px 0;border-bottom:1px solid #eee">
+       <div style="flex:0 0 78px;font-size:11.5px;color:#8a8a8a;font-weight:600">${fmtF(e.fecha)}</div>
+       <div style="flex:1">
+         <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px">${nameHtml}
+           ${e.dev?`<span style="font-size:10.5px;color:#999">${e.dev}</span>`:''}
+           <span style="font-size:9.5px;font-weight:700;color:${TCOL[e.tipo]||'#888'};background:${TCOL[e.tipo]||'#888'}1e;padding:1px 8px;border-radius:5px">${TLAB[e.tipo]||e.tipo}</span>
+           ${e.autor&&e.autor!=='—'?`<span style="font-size:10.5px;color:#aaa">· ${e.autor}</span>`:''}
+         </div>
+         <div style="font-size:12.5px;color:#444;line-height:1.5">${e.texto}</div>
+         ${imgs?`<div style="display:flex;gap:6px;margin-top:8px;overflow-x:auto">${imgs}</div>`:''}
+         ${src?`<div style="margin-top:6px">${src}</div>`:''}
+       </div></div>`;};
+  const feed=months.map(ym=>`<div style="font-size:12px;font-weight:800;letter-spacing:1px;color:#2F7D54;text-transform:uppercase;padding:16px 0 6px">${monthName(ym)} · ${byMonth[ym].length} ${byMonth[ym].length===1?'registro':'registros'}</div>${byMonth[ym].map(entryHtml).join('')}`).join('');
   const comps=P.filter(p=>p.mostrar&&!p.isGEU);
   const fresh=comps.filter(p=>verifInfo(p).fresh).length, stale=comps.length-fresh;
   const staleList=comps.filter(p=>!verifInfo(p).fresh).sort((a,b)=>verifInfo(b).dias-verifInfo(a).dias);
   document.getElementById('timelapseview').innerHTML=`
    <h2 style="margin-bottom:2px">Time lapse · monitoreo de actividad</h2>
-   <div style="font-size:12px;color:#999;margin-bottom:14px">Registro cronológico de lo que nos dicen los asesores — comentarios, llamadas, mensajes y cambios. Cada interacción queda fechada para ver la evolución de la zona en el tiempo.</div>
+   <div style="font-size:12px;color:#999;margin-bottom:14px">Registro cronológico de lo que nos dicen los asesores — comentarios, llamadas, mensajes, imágenes y fuentes — <b>agrupado por mes</b>. Clic en el nombre del proyecto abre su ficha; clic en una imagen la amplía.</div>
    <div style="display:flex;gap:12px;margin-bottom:16px;max-width:760px;flex-wrap:wrap">
      <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#2F7D54">${fresh}</div><div style="font-size:11.5px;color:#7a7a7a">verificados ≤35 días</div></div>
      <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#ce3c31">${stale}</div><div style="font-size:11.5px;color:#7a7a7a">por re-confirmar${staleList.length?`: ${staleList.slice(0,3).map(p=>p.name).join(', ')}${staleList.length>3?'…':''}`:''}</div></div>
@@ -753,14 +759,16 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],arg:['argview']};
 function buildAnaNav(){
-  const items=[['statview','Nuestro proyecto'],['analysisview','Comparación vs la zona'],['priceview','Precios por tipología'],['argview','Argumentario']];
+  const items=[['pos','Nuestra posición'],['price','Precios por tipología'],['arg','Argumentario']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
-  showAnaSub('statview');
+  showAnaSub('pos');
 }
 function showAnaSub(id){
-  ['statview','analysisview','priceview','argview'].forEach(v=>document.getElementById(v).style.display=v===id?'block':'none');
+  const show=ANA_GROUPS[id]||[id];
+  ['statview','analysisview','priceview','argview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
@@ -807,14 +815,14 @@ function dormSections(){
     const med=median(list.map(x=>x.f.precio_m2));
     const tr=list.map((x,i)=>{const p=x.p,f=x.f;
       const st=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]||''}">${p.estado_grupo||''}</span>`;
-      return`<tr class="${p.isGEU?'geurow':'clickrow'}" ${p.isGEU?'':`onclick="window.open('proyecto.html?id=${p.id}','_blank')"`}>
+      return`<tr class="${p.isGEU?'geurow':'clickrow'}" onclick="window.open('proyecto.html?id=${p.id}','_blank')" style="cursor:pointer">
         <td style="text-align:center;color:#b0b0b0">${i+1}</td>
         <td><b>${p.name}</b> ${p.isGEU?'★':''}<div style="font-size:10px;color:#999">${p.dev||''}</div></td>
         <td>${f.m2} m²</td><td>${fmtUsd(f.precio_usd)}</td>
         <td><span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></td>
-        <td>${st}</td></tr>`;}).join('');
+        <td>${cocheraLabel(p)}</td><td>${st}</td></tr>`;}).join('');
     return`<div class="sec">Flats de ${d} ${d===1?'dormitorio':'dormitorios'} · ${list.length} proyectos · mediana <b>$${med.toLocaleString()}/m²</b></div>
-      <table class="t" style="max-width:840px;margin-bottom:24px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>m²</th><th>Precio</th><th>USD/m²</th><th>Estado</th></tr></thead><tbody>${tr}</tbody></table>`;
+      <table class="t" style="max-width:900px;margin-bottom:24px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>m²</th><th>Precio</th><th>USD/m²</th><th>Cochera</th><th>Estado</th></tr></thead><tbody>${tr}</tbody></table>`;
   };
   return `
    <div class="sec" style="margin-top:26px">Costo del típico · separado por dormitorios</div>

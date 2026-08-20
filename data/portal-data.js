@@ -37,7 +37,17 @@ window.PORTAL_DATA = {
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Washington Benavides",
-    "texto": "Nuevo proyecto boutique de AyD frente al Parque Bella Luz: 12 deptos (6 pisos), entrega dic-2027. Lista oficial de pre-lanzamiento: típico 150 m² 3 dorm S/1,419,000 (US$417,353 · $2782/m²); flat 1er piso 94 m² S/960,350. Cochera S/54k aparte. Contacto: Washington Benavides — Inmobiliaria AyD, 980 765 183, ventasproyectos2@inmobiliariaayd.com."
+    "texto": "Nuevo proyecto boutique de AyD frente al Parque Bella Luz: 12 deptos (6 pisos), entrega dic-2027. Lista oficial de pre-lanzamiento: típico 150 m² 3 dorm S/1,419,000 (US$417,353 · $2782/m²); flat 1er piso 94 m² S/960,350. Cochera S/54k aparte. Contacto: Washington Benavides — Inmobiliaria AyD, 980 765 183, ventasproyectos2@inmobiliariaayd.com.",
+    "imgs": [
+     "assets/img/monte-umbroso-247.jpg",
+     "assets/planos/monte-umbroso-247/plano-tipico-tipo1.jpg",
+     "assets/planos/monte-umbroso-247/precios-flat-301.jpg"
+    ],
+    "fuentes": [
+     "https://inmobiliariaayd.com",
+     "Chat WhatsApp con Washington Benavides (26-jun a 19-ago 2026)"
+    ],
+    "proyecto_id": "monte-umbroso-247"
    },
    {
     "fecha": "2026-08-16",
