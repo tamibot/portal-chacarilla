@@ -31,6 +31,15 @@ window.PORTAL_DATA = {
   "proximo_corte": "2026-09-19",
   "bitacora": [
    {
+    "fecha": "2026-08-19",
+    "proyecto": "Monte Umbroso 247",
+    "dev": "Inmobiliaria AyD",
+    "tipo": "mensaje",
+    "canal": "WhatsApp",
+    "autor": "Washington Benavides",
+    "texto": "Nuevo proyecto boutique de AyD frente al Parque Bella Luz: 12 deptos (6 pisos), entrega dic-2027. Lista oficial de pre-lanzamiento: típico 150 m² 3 dorm S/1,419,000 (US$417,353 · $2782/m²); flat 1er piso 94 m² S/960,350. Cochera S/54k aparte. Contacto: Washington Benavides — Inmobiliaria AyD, 980 765 183, ventasproyectos2@inmobiliariaayd.com."
+   },
+   {
     "fecha": "2026-08-16",
     "proyecto": "Estelar 1080",
     "dev": "Galeón",
@@ -4268,6 +4277,97 @@ window.PORTAL_DATA = {
     "label": "A estrenar (broker)"
    },
    "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas."
+  },
+  {
+   "id": "monte-umbroso-247",
+   "name": "Monte Umbroso 247",
+   "dev": "Inmobiliaria AyD",
+   "addr": "Av. Monte Umbroso 247, Bella Luz, Chacarilla del Estanque, Santiago de Surco (frente al Parque Bella Luz)",
+   "estado_grupo": "En planos",
+   "estado_raw": "Pre-lanzamiento · lista oficial ago-2026 (boutique, 12 deptos, 6 pisos)",
+   "entrega": "Diciembre 2027",
+   "lat": -12.1137029,
+   "lng": -76.979907,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": 282456,
+   "precio_hasta_usd": null,
+   "dorms": "3–4",
+   "m2": "94–322",
+   "wa": "980765183",
+   "wa_label": "Washington B. · AyD",
+   "web": "https://inmobiliariaayd.com",
+   "img": "assets/img/monte-umbroso-247.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/planos/monte-umbroso-247/plano-tipico-tipo1.jpg",
+    "assets/planos/monte-umbroso-247/plano-flat101-2dorm.jpg",
+    "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
+    "assets/planos/monte-umbroso-247/precios-flat-102.jpg"
+   ],
+   "typologies": [
+    {
+     "unidad": "Flat 301 (típico, piso 3)",
+     "dorm": 3,
+     "m2": 150,
+     "m2_techada": 150,
+     "precio_lista_usd": 417353,
+     "ajuste_cochera_usd": 0,
+     "precio_usd": 417353,
+     "precio_m2": 2782,
+     "tipo": "flat",
+     "piso": "3",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 102 (1er piso)",
+     "dorm": 3,
+     "m2": 94,
+     "m2_techada": 94,
+     "precio_lista_usd": 282456,
+     "ajuste_cochera_usd": 0,
+     "precio_usd": 282456,
+     "precio_m2": 3005,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false
+    }
+   ],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 150,
+     "precio_usd": 417353,
+     "precio_m2": 2782,
+     "comparable_confirmado": true
+    }
+   ],
+   "cochera_status": "no",
+   "stock": {
+    "n": 12,
+    "label": "Pre-lanzamiento · 12 deptos (6 pisos)"
+   },
+   "mostrar": true,
+   "geo_aprox": true,
+   "geo_nota": "Frente al Parque Bella Luz, sobre la Av. Monte Umbroso; el número 247 no está mapeado en OSM.",
+   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). Cochera aparte (S/54,000 c/u). Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento con lista oficial (ago-2026) y descuento de preventa.",
+   "fuentes": [
+    "https://inmobiliariaayd.com"
+   ],
+   "amenidades": [
+    "Ascensor directo",
+    "Gas natural Cálidda",
+    "2 sótanos de cocheras",
+    "Respaldo financiero BCP"
+   ],
+   "total_pisos": 6,
+   "precio_hist": [
+    {
+     "corte": "2026-08-16",
+     "desde": 282456,
+     "pm2": 2782
+    }
+   ]
   }
  ]
 }
