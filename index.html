@@ -212,7 +212,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260819e"></script>
+<script src="data/portal-data.js?v=20260819f"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -716,13 +716,13 @@ let tlFilter='';
 function buildTimelapse(){
   const MES=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
   const fmtF=s=>{const a=s.split('-');return `${+a[2]} ${MES[+a[1]]} ${a[0]}`;};
-  const TAGCOL={nuevo:'#2F7D54',actualizacion:'#185FA5',cambio:'#b9863b',agotado:'#ce3c31'};
-  const TAGLAB={nuevo:'Nuevo',actualizacion:'Actualización',cambio:'Cambio',agotado:'Se acabó'};
+  const TAGCOL={nuevo:'#2F7D54',precio:'#185FA5',venta:'#7a4f9a',estado:'#b9863b',promo:'#c2185b',agotado:'#ce3c31'};
+  const TAGLAB={nuevo:'Nuevo',precio:'Actualización precio',venta:'Actualización venta',estado:'Cambio estado',promo:'Nueva promo',agotado:'Se acabó'};
   const all=(D.meta.bitacora||[]).slice().sort((a,b)=>b.fecha.localeCompare(a.fecha));
-  const tg=e=>e.tag||'actualizacion';
-  const data=tlFilter?all.filter(e=>tg(e)===tlFilter):all;
-  const TAGF=[['','Todos'],['nuevo','Nuevo'],['actualizacion','Actualización'],['cambio','Cambio'],['agotado','Se acabó']];
-  const cnt=t=>all.filter(e=>tg(e)===t).length;
+  const tags=e=>e.tags||(e.tag?[e.tag]:['precio']);
+  const data=tlFilter?all.filter(e=>tags(e).includes(tlFilter)):all;
+  const TAGF=[['','Todos'],['nuevo','Nuevo'],['precio','Actualización precio'],['venta','Actualización venta'],['estado','Cambio estado'],['promo','Nueva promo'],['agotado','Se acabó']];
+  const cnt=t=>all.filter(e=>tags(e).includes(t)).length;
   const chips=TAGF.map(([t,l])=>`<button class="anatab${tlFilter===t?' on':''}" onclick="tlFilter='${t}';buildTimelapse()">${l} (${t?cnt(t):all.length})</button>`).join('');
   const MESL=['','Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
   const monthName=ym=>{const a=ym.split('-');return `${MESL[+a[1]]} ${a[0]}`;};
@@ -738,10 +738,11 @@ function buildTimelapse(){
        <div style="flex:1">
          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px">${nameHtml}
            ${e.dev?`<span style="font-size:10.5px;color:#999">${e.dev}</span>`:''}
-           <span style="font-size:9.5px;font-weight:700;color:${TAGCOL[tg(e)]||'#888'};background:${TAGCOL[tg(e)]||'#888'}1e;padding:1px 8px;border-radius:5px">${TAGLAB[tg(e)]||tg(e)}</span>
+           ${tags(e).map(t=>`<span style="font-size:9px;font-weight:700;color:${TAGCOL[t]||'#888'};background:${TAGCOL[t]||'#888'}1e;padding:1px 7px;border-radius:5px">${TAGLAB[t]||t}</span>`).join(' ')}
            ${e.autor&&e.autor!=='—'?`<span style="font-size:10.5px;color:#aaa">· ${e.autor}</span>`:''}
          </div>
          <div style="font-size:12.5px;color:#444;line-height:1.5">${e.texto}</div>
+         ${e.cita?`<div style="font-size:11.5px;color:#555;font-style:italic;border-left:3px solid #d9d3c4;padding:5px 11px;margin-top:7px;background:#faf8f2;border-radius:0 6px 6px 0">🗨 <b style="font-style:normal;color:#8a8a8a;font-size:9.5px;letter-spacing:.5px">RESPALDO:</b> ${e.cita}</div>`:''}
          ${imgs?`<div style="display:flex;gap:6px;margin-top:8px;overflow-x:auto">${imgs}</div>`:''}
          ${src?`<div style="margin-top:6px">${src}</div>`:''}
        </div></div>`;};

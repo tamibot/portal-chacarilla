@@ -48,7 +48,11 @@ window.PORTAL_DATA = {
      "Chat WhatsApp con Washington Benavides (26-jun a 19-ago 2026)"
     ],
     "proyecto_id": "monte-umbroso-247",
-    "tag": "nuevo"
+    "tags": [
+     "nuevo",
+     "promo"
+    ],
+    "cita": "«Finalmente tenemos todo listo, ya contamos con la lista de precios oficial de MONTE UMBROSO 247 (frente al Parque Bella Luz)... proyecto boutique de solo 12 departamentos (6 pisos). Entrega: Diciembre 2027.» — Washington Benavides, 19-ago"
    },
    {
     "fecha": "2026-08-16",
@@ -58,7 +62,10 @@ window.PORTAL_DATA = {
     "canal": "Confirmado",
     "autor": "—",
     "texto": "Cochera confirmada incluida (US$15,000). Neto: 2D 80 m² $2,280/m², 3D 112.5 m² $2,231/m². Ahora comparable.",
-    "tag": "actualizacion"
+    "tags": [
+     "precio"
+    ],
+    "cita": "Cochera confirmada incluida (US$15,000) — dato de campo del equipo (no cita directa del asesor)."
    },
    {
     "fecha": "2026-08-16",
@@ -68,7 +75,10 @@ window.PORTAL_DATA = {
     "canal": "Confirmado",
     "autor": "—",
     "texto": "Confirmado que NO incluye cochera → el precio de lista ya es unidad sola. Comparable a $2,484–2,528/m².",
-    "tag": "actualizacion"
+    "tags": [
+     "precio"
+    ],
+    "cita": "Confirmado que NO incluye cochera — dato de campo del equipo."
    },
    {
     "fecha": "2026-08-16",
@@ -78,7 +88,10 @@ window.PORTAL_DATA = {
     "canal": "Ficha asesor",
     "autor": "—",
     "texto": "Precio por unidad del asesor (X08 94.2 m² S/836,496 → $2,612/m²). Cochera aún sin confirmar; comparable sobre precio de lista.",
-    "tag": "actualizacion"
+    "tags": [
+     "precio"
+    ],
+    "cita": "Precio por unidad de la ficha del asesor (Central): X08 94.2 m² S/836,496 — dato de campo del equipo."
    },
    {
     "fecha": "2026-08-16",
@@ -88,7 +101,10 @@ window.PORTAL_DATA = {
     "canal": "Nexo",
     "autor": "—",
     "texto": "Precio por unidad de Nexo (Tipo 03 85 m² S/668,000 → $2,311/m²). Cochera sin confirmar; comparable sobre precio de lista.",
-    "tag": "actualizacion"
+    "tags": [
+     "precio"
+    ],
+    "cita": "Precio por unidad del portal Nexo (Tipo 03 85 m² S/668,000) — dato de campo del equipo."
    },
    {
     "fecha": "2026-08-14",
@@ -98,7 +114,10 @@ window.PORTAL_DATA = {
     "canal": "WhatsApp",
     "autor": "Jenniffer S.",
     "texto": "«Proyecto Monte Mayor voló! Solo me quedan 3 depas.» Confirma 3 de 20 (el mes pasado eran 4).",
-    "tag": "cambio"
+    "tags": [
+     "venta"
+    ],
+    "cita": "«¡Proyecto Monte Mayor voló! Solo me quedan 3 depas.» — Jenniffer S., Azzurra, 14-ago"
    },
    {
     "fecha": "2026-08-14",
@@ -108,7 +127,10 @@ window.PORTAL_DATA = {
     "canal": "WhatsApp",
     "autor": "Joyce A.",
     "texto": "Queda solo el dúplex penthouse 603 (227 m²): US$544,425. Entrega noviembre 2026.",
-    "tag": "cambio"
+    "tags": [
+     "venta"
+    ],
+    "cita": "«Nos está quedando un dúplex penthouse (603). Entrega noviembre 2026.» — Joyce A., Grupo Chacarilla Sur"
    },
    {
     "fecha": "2026-08-14",
@@ -118,7 +140,10 @@ window.PORTAL_DATA = {
     "canal": "WhatsApp",
     "autor": "Nadia",
     "texto": "«Vendimos el 408.» Envía fichas de tipología (X2 104 m², 107 103 m²). Cochera Make US$20k.",
-    "tag": "cambio"
+    "tags": [
+     "venta"
+    ],
+    "cita": "«Buenos días, vendimos el 408. Le envío los disponibles.» — Nadia, Make, 14-ago"
    },
    {
     "fecha": "2026-08-14",
@@ -128,7 +153,10 @@ window.PORTAL_DATA = {
     "canal": "WhatsApp",
     "autor": "Asesor Dicon",
     "texto": "Se vendió el 203. Del flat típico 100 m² quedan pisos 4 y 5. Cochera aparte ($15k/$25k). Bot deriva a proyecto LoBo.",
-    "tag": "cambio"
+    "tags": [
+     "venta"
+    ],
+    "cita": "«Se vendió el flat 203; quedan pisos 4 y 5.» — asesor Grupo Dicon"
    },
    {
     "fecha": "2026-08-14",
@@ -138,7 +166,11 @@ window.PORTAL_DATA = {
     "canal": "WhatsApp",
     "autor": "Asesor Dicon",
     "texto": "D'Mont agotado. D'Mont 2 en preventa: 15 vendidos, quedan 8 de 23. Precios web sin cochera (+US$25k). Flat 3d ~122 m²: US$263,064.",
-    "tag": "nuevo"
+    "tags": [
+     "nuevo",
+     "venta"
+    ],
+    "cita": "«D'Mont ya se vendió por completo; ahora estamos vendiendo D'Mont 2 en preventa.» — asesor Grupo Dicon"
    },
    {
     "fecha": "2026-08-14",
@@ -148,7 +180,10 @@ window.PORTAL_DATA = {
     "canal": "WhatsApp",
     "autor": "Azzurra",
     "texto": "Preventa boutique: quedan 12 de 26. Lista de precios del 18-may sigue vigente (desde US$253,000). Ya no hay cocheras adicionales.",
-    "tag": "actualizacion"
+    "tags": [
+     "precio"
+    ],
+    "cita": "«En Conde de la Vega tenemos dptos. desde los $308,700.» — Washington Benavides / Azzurra. Lista oficial 18-may vigente."
    },
    {
     "fecha": "2026-06-28",
@@ -158,7 +193,10 @@ window.PORTAL_DATA = {
     "canal": "Benchmark",
     "autor": "Equipo Creators",
     "texto": "Relevamiento inicial (Corte 1): 23 competidores mapeados, direcciones y precios verificados uno a uno, cochera confirmada con cada asesor.",
-    "tag": "actualizacion"
+    "tags": [
+     "precio"
+    ],
+    "cita": "Relevamiento inicial del cuadrante: 23 competidores mapeados y precios verificados uno a uno (jun–jul 2026)."
    }
   ]
  },
