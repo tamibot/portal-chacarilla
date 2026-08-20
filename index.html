@@ -224,7 +224,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260819i"></script>
+<script src="data/portal-data.js?v=20260819j"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -607,10 +607,7 @@ function buildStats(){
        <div style="font-size:11px;letter-spacing:1px;color:#A32D2D;font-weight:800;margin-bottom:8px">⚠ DÓNDE CUIDARNOS</div>
        <div style="font-size:12.5px;line-height:1.75;color:#5a2020">▪ En <b>US$/m² estamos ${gap>0?'+':''}${gap}% sobre la mediana</b> de la zona — mitad superior del rango.<br>▪ El <b>dúplex</b> es de los más caros por m² del cuadrante.<br>▪ Hay que <b>justificar el premium</b> con producto: amplitud, cochera incluida, entrega 2027 (más recorrido de obra).</div></div>
    </div>`;})()}
-   <div class="sec">Directorio del cuadrante · <b>ordenado por precio desde, de menor a mayor</b> · incluye nuestro proyecto ★ · clic en una fila abre su ficha</div>
-   <table class="t"><thead><tr><th>#</th><th>Proyecto</th><th>Desarrollador</th><th>m² rango</th><th>Dorm</th><th>Desde</th><th>Metraje · USD/m² por tipología (típicos)</th><th>Estado</th><th>Verificado</th><th>WhatsApp</th></tr></thead><tbody>${crows}</tbody></table>
-   <div style="font-size:10.5px;color:#999;margin-top:6px"><b>Verificado</b> = última vez que confirmamos el dato con el asesor o su lista (se alimenta del Time lapse). <span style="color:#2F7D54;font-weight:700">●</span> ≤35 días · <span style="color:#b9863b;font-weight:700">●</span> 36–70 · <span style="color:#ce3c31;font-weight:700">●</span> +70, toca re-confirmar.</div>
-   <div class="foot">Solo proyectos dentro del cuadrante Av. Primavera — Av. de la Floresta — Av. de los Precursores. TC ${D.meta.tc} S/USD. $/m² sobre flats típicos (sin 1er ni último piso, sin dúplex/PH). Fuentes: webs oficiales, BCP/Nexo, brochures PDF; verificado con doble revisión.</div>`;
+   <div class="foot">Los contactos (WhatsApp) y datos de cada proyecto están en su ficha (clic en cualquier tarjeta del mapa o fila de la matriz) y en el Time lapse. Fuentes: webs oficiales, brochures PDF y asesores.</div>`;
 }
 
 /* PRECIO/M² */
