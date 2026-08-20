@@ -590,7 +590,7 @@ window.PORTAL_DATA = {
    "m2": "126–254",
    "wa": "994363232",
    "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
-   "img": null,
+   "img": "assets/img/conde-ii.jpg",
    "planos": [],
    "brochure": null,
    "typologies": [
