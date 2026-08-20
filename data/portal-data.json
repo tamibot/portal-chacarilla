@@ -37,7 +37,7 @@
     "tipo": "mensaje",
     "canal": "WhatsApp",
     "autor": "Washington Benavides",
-    "texto": "Nuevo proyecto boutique de AyD frente al Parque Bella Luz: 12 deptos (6 pisos), entrega dic-2027. Lista oficial de pre-lanzamiento: típico 150 m² 3 dorm S/1,419,000 (US$417,353 · $2782/m²); flat 1er piso 94 m² S/960,350. Cochera S/54k aparte. Contacto: Washington Benavides — Inmobiliaria AyD, 980 765 183, ventasproyectos2@inmobiliariaayd.com.",
+    "texto": "Nuevo proyecto boutique de AyD frente al Parque Bella Luz: 12 deptos (6 pisos), entrega dic-2027. Lista oficial de pre-lanzamiento: típico 150 m² 3 dorm S/1,419,000 lista → con descuento de preventa S/1,303,900 (US$383,500 · $2,557/m² sin cochera); flat 1er piso 94 m² S/960,350. Cochera S/54k aparte. Contacto: Washington Benavides — Inmobiliaria AyD, 980 765 183.",
     "imgs": [
      "assets/img/monte-umbroso-247.jpg",
      "assets/planos/monte-umbroso-247/plano-tipico-tipo1.jpg",
@@ -575,52 +575,72 @@
   {
    "id": "conde-ii",
    "name": "Conde II",
-   "dev": "AYD Inmobiliaria",
-   "addr": "Calle Conde de la Vega del Ren 119, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En planos",
-   "estado_raw": "En planos (pre-construcción) — 10 unidades boutique",
-   "entrega": "Pendiente confirmar",
+   "dev": "Inmobiliaria AyD",
+   "addr": "Calle Conde de la Vega del Ren 119, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción (obra 2026) · preventa · solo 10 depas, varios vendidos",
+   "entrega": "2027",
    "lat": -12.1187009,
    "lng": -76.982851,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": null,
+   "precio_desde_usd": 308700,
    "precio_hasta_usd": null,
    "dorms": "3–4",
-   "m2": "126–254",
-   "wa": "994363232",
+   "m2": "100–254",
+   "wa": "980765183",
    "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
    "img": "assets/img/conde-ii.jpg",
-   "planos": [],
+   "planos": [
+    "assets/planos/conde-ii/pg-13.jpg",
+    "assets/planos/conde-ii/pg-14.jpg",
+    "assets/planos/conde-ii/pg-15.jpg",
+    "assets/planos/conde-ii/pg-16.jpg",
+    "assets/planos/conde-ii/plano-01.jpg",
+    "assets/planos/conde-ii/plano-02.jpg",
+    "assets/planos/conde-ii/plano-b01.jpg",
+    "assets/planos/conde-ii/plano-b02.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
-     "unidad": "Tipo 201/202/401",
+     "unidad": "Flat típico 201/401",
      "dorm": 3,
      "m2": 126,
-     "precio_usd": null,
-     "precio_m2": null,
+     "m2_techada": 124,
+     "precio_lista_usd": 308700,
+     "ajuste_cochera_usd": 0,
+     "precio_usd": 308700,
+     "precio_m2": 2450,
      "tipo": "flat",
-     "piso": null,
+     "piso": "2-4",
      "flat": true
     },
     {
-     "unidad": "Tipologías 4d",
+     "unidad": "Dúplex 501",
      "dorm": 4,
      "m2": 254,
      "precio_usd": null,
      "precio_m2": null,
-     "tipo": "flat",
-     "piso": null,
+     "tipo": "duplex",
+     "piso": "5",
      "flat": false
     }
    ],
-   "flats_summary": [],
+   "flats_summary": [
+    {
+     "dorm": 3,
+     "m2": 126,
+     "precio_usd": 308700,
+     "precio_m2": 2450,
+     "comparable_confirmado": true
+    }
+   ],
    "dorms_disponibles": [
     3,
     4
    ],
-   "comentario": "Único competidor directo en preventa: 10 residencias boutique en 5 pisos. AYD no publica precios (solo cotización directa). Dirección con numeración por confirmar.",
+   "comentario": "Proyecto boutique de Inmobiliaria AyD en Calle Conde de la Vega del Ren 119, a pasos del Parque Bella Luz. Solo 10 departamentos, entrega 2027. Flats típicos de 126 m² (3 dorm, 3.5 baños, cuarto de servicio) desde US,700 (~,450/m²) y dúplex de 254 m². Ya vendidos: flats 101 (182 m²), 102 (100 m²) y dúplex 502. Personalización de acabados y distribución. Cochera por confirmar con el asesor.",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/conde-ii/",
     "https://inmobiliariaayd.com"
@@ -632,18 +652,19 @@
    "portales": {},
    "cochera_status": "nd",
    "stock": {
-    "n": 10,
-    "label": "En planos · 10 und."
+    "n": 4,
+    "label": "Solo 10 depas · vendidos 101, 102 y dúplex 502; quedan flats típicos 126 m² + dúplex 501"
    },
-   "geo_aprox": true,
-   "geo_nota": "Extremo sur de la Calle Conde de la Vega del Ren: la numeración de esa calle no está mapeada en OSM.",
+   "geo_aprox": false,
+   "geo_nota": "",
    "precio_hist": [
     {
      "corte": "2026-08-16",
      "desde": null,
      "pm2": null
     }
-   ]
+   ],
+   "wa_label": "Washington B. · AyD"
   },
   {
    "id": "conde-de-la-vega-251",
