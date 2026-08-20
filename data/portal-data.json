@@ -4290,7 +4290,7 @@
    "lng": -76.979907,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 282456,
+   "precio_desde_usd": 259426,
    "precio_hasta_usd": null,
    "dorms": "3–4",
    "m2": "94–322",
@@ -4313,8 +4313,8 @@
      "m2_techada": 150,
      "precio_lista_usd": 417353,
      "ajuste_cochera_usd": 0,
-     "precio_usd": 417353,
-     "precio_m2": 2782,
+     "precio_usd": 383500,
+     "precio_m2": 2557,
      "tipo": "flat",
      "piso": "3",
      "flat": true
@@ -4326,8 +4326,8 @@
      "m2_techada": 94,
      "precio_lista_usd": 282456,
      "ajuste_cochera_usd": 0,
-     "precio_usd": 282456,
-     "precio_m2": 3005,
+     "precio_usd": 259426,
+     "precio_m2": 2760,
      "tipo": "flat",
      "piso": "1",
      "flat": false
@@ -4337,8 +4337,8 @@
     {
      "dorm": 3,
      "m2": 150,
-     "precio_usd": 417353,
-     "precio_m2": 2782,
+     "precio_usd": 383500,
+     "precio_m2": 2557,
      "comparable_confirmado": true
     }
    ],
@@ -4350,7 +4350,7 @@
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Frente al Parque Bella Luz, sobre la Av. Monte Umbroso; el número 247 no está mapeado en OSM.",
-   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). Cochera aparte (S/54,000 c/u): el precio del departamento y el US$/m² del portal ($2,782, flat típico 150 m²) NO incluyen cochera, para comparar en la misma base que el resto del cuadrante. Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento con lista oficial (ago-2026) y descuento de preventa.",
+   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026).",
    "fuentes": [
     "https://inmobiliariaayd.com"
    ],
@@ -4364,8 +4364,8 @@
    "precio_hist": [
     {
      "corte": "2026-08-16",
-     "desde": 282456,
-     "pm2": 2782
+     "desde": 259426,
+     "pm2": 2557
     }
    ]
   }
