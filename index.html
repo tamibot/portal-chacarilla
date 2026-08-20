@@ -224,7 +224,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260819j"></script>
+<script src="data/portal-data.js?v=20260819k"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -610,24 +610,52 @@ function buildStats(){
    <div class="foot">Los contactos (WhatsApp) y datos de cada proyecto están en su ficha (clic en cualquier tarjeta del mapa o fila de la matriz) y en el Time lapse. Fuentes: webs oficiales, brochures PDF y asesores.</div>`;
 }
 
-/* PRECIO/M² */
+/* RANKING FILTRABLE */
 function buildPrice(){
-  const inq=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&comparableRows(p).length).sort((a,b)=>(a.isGEU?0:1)-(b.isGEU?0:1)||comparableRows(a)[0].precio_m2-comparableRows(b)[0].precio_m2);
-  const rows=inq.map(p=>{
+  const dormsF=[[0,'General'],[1,'1 dorm'],[2,'2 dorm'],[3,'3 dorm'],[4,'4 dorm']];
+  const metsF=[['pm2','Precio por m²'],['ticket','Ticket de entrada']];
+  const items=P.filter(p=>p.isGEU||(p.mostrar&&p.en_cuadrante)).map(p=>{
+    let val,main,sub;
+    if(rankDorm===0){
+      const cr=comparableRows(p);
+      if(rankMetric==='pm2'){if(!cr.length)return null;val=Math.min(...cr.map(f=>f.precio_m2));main=`$${val.toLocaleString()}/m²`;sub='mejor flat típico';}
+      else{if(!p.precio_desde_usd)return null;val=p.precio_desde_usd;main=fmtUsd(val);sub='precio desde';}
+    }else{
+      const u=unitForDorm(p,rankDorm);if(!u)return null;
+      if(rankMetric==='pm2'){val=u.pm2;main=`$${u.pm2.toLocaleString()}/m²`;sub=`${u.m2} m² · ${fmtUsd(u.precio)}`;}
+      else{val=u.precio;main=fmtUsd(u.precio);sub=`${u.m2} m² · $${u.pm2.toLocaleString()}/m²`;}
+    }
+    return {p,val,main,sub};
+  }).filter(Boolean).sort((a,b)=>a.val-b.val);
+  const med=items.length?median(items.map(x=>x.val)):0;
+  const rk=items.map((r,i)=>{const p=r.p;
+    const st=p.isGEU?'<span class="stbadge st-constr">GEU</span>':`<span class="stbadge ${STCLASS[p.estado_grupo]||''}">${p.estado_grupo||''}</span>`;
+    const val=rankMetric==='pm2'?`<span class="tpm2 ${pm2cls(r.val)}">${r.main}</span>`:`<b style="color:#15402c">${r.main}</b>`;
+    return `<tr class="${p.isGEU?'geurow':'clickrow'}" onclick="window.open('proyecto.html?id=${p.id}','_blank')" style="cursor:pointer">
+      <td style="text-align:center;color:#b0b0b0">${i+1}</td>
+      <td><b>${p.name}</b> ${p.isGEU?'★':''}<div style="font-size:10px;color:#999">${p.dev||''}</div></td>
+      <td>${val}</td><td style="font-size:11px;color:#777">${r.sub}</td>
+      <td>${cocheraLabel(p)}</td><td>${st}</td></tr>`;}).join('')||'<tr><td colspan="6" style="color:#aaa;padding:16px">Sin datos para este filtro todavía.</td></tr>';
+  const chips=(arr,cur,fn)=>arr.map(x=>`<button class="anatab${cur===x[0]?' on':''}" onclick="${fn}('${x[0]}')">${x[1]}</button>`).join('');
+  const metLbl=metsF.find(m=>m[0]===rankMetric)[1], dLbl=dormsF.find(x=>x[0]===rankDorm)[1];
+  // matriz completa (secundaria)
+  const mrows=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&comparableRows(p).length).sort((a,b)=>(a.isGEU?0:1)-(b.isGEU?0:1)||comparableRows(a)[0].precio_m2-comparableRows(b)[0].precio_m2).map(p=>{
     const cols=[1,2,3].map(d=>{const f=comparableRows(p).find(x=>x.dorm===d);
       if(!f)return`<td class="sep nd">—</td><td class="nd">—</td><td class="nd">—</td>`;
       return`<td class="sep">${f.m2} m²</td><td>${fmtUsd(f.precio_usd)}</td><td><span class="tpm2 ${pm2cls(f.precio_m2)}">$${f.precio_m2.toLocaleString()}/m²</span></td>`;}).join('');
-    const out=!p.en_cuadrante&&!p.isGEU?'<span class="badge b-out">Fuera</span>':'';
-    return`<tr class="${p.isGEU?'geurow':'clickrow'}" onclick="window.open('proyecto.html?id=${p.id}','_blank')" style="cursor:pointer"><td>${p.name} ${p.isGEU?'★':''}${out}</td>${cols}<td class="sep" style="text-align:center">${cocheraLabel(p)}</td></tr>`;}).join('');
+    return`<tr class="${p.isGEU?'geurow':'clickrow'}" onclick="window.open('proyecto.html?id=${p.id}','_blank')" style="cursor:pointer"><td>${p.name} ${p.isGEU?'★':''}</td>${cols}<td class="sep" style="text-align:center">${cocheraLabel(p)}</td></tr>`;}).join('');
   document.getElementById('priceview').innerHTML=`
-   <h2 style="font-size:15px;font-weight:800;margin-bottom:5px">Precio por m² · Flats típicos (pisos intermedios, sin 1er ni último)</h2>
-   <div style="font-size:11px;color:#aaa;margin-bottom:16px;line-height:1.6">Una fila por proyecto; columnas por nº de dormitorios (flats típicos, sin 1er piso ni dúplex). <b>Clic en cualquier fila → ficha del proyecto.</b> TC ${D.meta.tc} S/USD.<br>
-     Columna <b>Cochera</b>: <span style="color:#2F7D54;font-weight:600">✓ Incluida</span> (el $/m² ya la incluye) · <span style="color:#6d776e">Aparte</span> (unidad sola) · <span style="color:#b9863b;font-weight:600">No se sabe</span> (sin confirmar — considerar con cuidado).</div>
+   <h2 style="font-size:15px;font-weight:800;margin-bottom:5px">Ranking del cuadrante</h2>
+   <div style="font-size:11px;color:#aaa;margin-bottom:12px;line-height:1.6">Elegí la <b>métrica</b> y la <b>tipología</b>. Ordenado de más competitivo a menos (menor arriba). Clic en fila → ficha.</div>
+   <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px"><span style="font-size:10px;color:#bbb;font-weight:700;letter-spacing:1px">MÉTRICA:</span>${chips(metsF,rankMetric,'setRankMetric')}</div>
+   <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-size:10px;color:#bbb;font-weight:700;letter-spacing:1px">TIPOLOGÍA:</span>${chips(dormsF,rankDorm,'setRankDorm')}</div>
+   <div style="font-size:12px;color:#777;margin-bottom:10px"><b>${items.length}</b> proyectos · ${metLbl} · ${dLbl}${items.length?` · mediana <b>${rankMetric==='pm2'?'$'+med.toLocaleString()+'/m²':fmtUsd(med)}</b>`:''}</div>
+   <table class="t" style="max-width:900px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>${metLbl}</th><th>Detalle</th><th>Cochera</th><th>Estado</th></tr></thead><tbody>${rk}</tbody></table>
+   <div class="sec" style="margin-top:32px">Tabla completa · US$/m² por tipología</div>
    <table class="t"><thead>
-     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dormitorio</th><th colspan="3" class="sep" style="text-align:center">2 dormitorios</th><th colspan="3" class="sep" style="text-align:center">3 dormitorios</th><th rowspan="2" class="sep" style="text-align:center">Cochera</th></tr>
-     <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${rows}</tbody></table>
-   ${dormSections()}
-   <div class="foot">Solo proyectos del cuadrante con precios por tipología confirmados por el desarrollador o su asesor comercial. Precio neto por unidad sola, cochera descontada donde el asesor lo confirmó. Los proyectos que no publican lista de precios no aparecen aquí.</div>`;
+     <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dorm</th><th colspan="3" class="sep" style="text-align:center">2 dorm</th><th colspan="3" class="sep" style="text-align:center">3 dorm</th><th rowspan="2" class="sep" style="text-align:center">Cochera</th></tr>
+     <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${mrows}</tbody></table>
+   <div class="foot">Precio neto por unidad sola, cochera descontada donde el asesor lo confirmó. En "Ticket de entrada" se ordena por el precio del depto; en "Precio por m²" por el US$/m². 4 dorm = dúplex (m² total).</div>`;
 }
 
 
@@ -733,6 +761,14 @@ function showTab(t){
   if(t==='timelapse')buildTimelapse();
 }
 let tlFilter='';
+let rankMetric='pm2', rankDorm=0;
+function setRankMetric(v){rankMetric=v;buildPrice();}
+function setRankDorm(v){rankDorm=+v;buildPrice();}
+function unitForDorm(p,d){
+  if(d>=1&&d<=3){const f=comparableRows(p).find(x=>x.dorm===d);return f?{m2:f.m2,precio:f.precio_usd,pm2:f.precio_m2}:null;}
+  if(d===4){const t=(p.typologies||[]).find(x=>x.dorm===4&&x.precio_m2&&x.precio_usd);return t?{m2:t.m2,precio:t.precio_usd,pm2:t.precio_m2}:null;}
+  return null;
+}
 function buildTimelapse(){
   const MES=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
   const fmtF=s=>{const a=s.split('-');return `${+a[2]} ${MES[+a[1]]} ${a[0]}`;};
@@ -783,7 +819,7 @@ function buildTimelapse(){
 }
 const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],arg:['argview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Precios por tipología'],['arg','Argumentario']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['arg','Argumentario']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
   showAnaSub('pos');

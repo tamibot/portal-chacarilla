@@ -2976,6 +2976,14 @@
    ],
    "flats_summary": [
     {
+     "dorm": 1,
+     "m2": 73.13,
+     "precio_usd": 187000,
+     "precio_m2": 2557,
+     "comparable_confirmado": true,
+     "nota_piso": "1er piso"
+    },
+    {
      "dorm": 3,
      "m2": 115.56,
      "precio_usd": 289000,
