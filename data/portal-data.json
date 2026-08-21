@@ -601,7 +601,7 @@
     "assets/planos/conde-ii/plano-b01.jpg",
     "assets/planos/conde-ii/plano-b02.jpg"
    ],
-   "brochure": null,
+   "brochure": "assets/brochures/conde-ii-brochure-2026.pdf",
    "typologies": [
     {
      "unidad": "Flat típico 201/401",
@@ -643,7 +643,8 @@
    "comentario": "Proyecto boutique de Inmobiliaria AyD en Calle Conde de la Vega del Ren 119, a pasos del Parque Bella Luz. Solo 10 departamentos, entrega 2027. Flats típicos de 126 m² (3 dorm, 3.5 baños, cuarto de servicio) desde US,700 (~,450/m²) y dúplex de 254 m². Ya vendidos: flats 101 (182 m²), 102 (100 m²) y dúplex 502. Personalización de acabados y distribución. Cochera por confirmar con el asesor.",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/conde-ii/",
-    "https://inmobiliariaayd.com"
+    "https://inmobiliariaayd.com",
+    "Brochure oficial + WhatsApp Washington Benavides (30-jun-2026)"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -4456,7 +4457,8 @@
      "desde": 259426,
      "pm2": 2557
     }
-   ]
+   ],
+   "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg"
   }
  ]
 }
