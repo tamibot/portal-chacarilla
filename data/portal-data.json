@@ -32,6 +32,40 @@
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "Astete Living",
+    "dev": "Por confirmar",
+    "proyecto_id": "astete-living",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "PROYECTO NUEVO detectado: cerco con la marca «ASTETE Living» y la leyenda «PRÓXIMO PROYECTO» sobre Av. Velasco Astete. Aún sin obra, sin desarrollador ni precios publicados.",
+    "cita": "Cerco fotografiado el 22-ago-2026 a las 15:30 (GPS -12.12009, -76.98452).",
+    "imgs": [
+     "assets/campo/astete-living.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · fotos IMG_7954–7957"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "— Cuadrante",
+    "dev": "",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría de mapa",
+    "autor": "Equipo Creators",
+    "texto": "Auditoría de coordenadas con las 134 fotos GPS del recorrido: 13 proyectos con ubicación CONFIRMADA por foto (<45 m), 12 coherentes con el recorrido, y 4 sin foto que la respalde (quedan marcados como aproximados). Se corrigió Monte Carmelo 250, que estaba 424 m fuera de sitio.",
+    "cita": "Cruce automático de las coordenadas del portal contra el GPS de las fotos del 22-ago-2026 (23 paradas del recorrido).",
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · 134 fotos con GPS"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "Narciso",
     "dev": "Inmobiliaria AyD",
     "proyecto_id": "narciso-ayd",
@@ -460,7 +494,9 @@
      "desde": 173235,
      "pm2": 2548
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 4 m)."
   },
   {
    "id": "aura-sul",
@@ -645,7 +681,9 @@
      "desde": 229552,
      "pm2": 2286
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 83 m)."
   },
   {
    "id": "conde-ii",
@@ -732,7 +770,7 @@
     "label": "Solo 10 depas · vendidos 101, 102 y dúplex 502; quedan flats típicos 126 m² + dúplex 501"
    },
    "geo_aprox": false,
-   "geo_nota": "",
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 62 m).",
    "precio_hist": [
     {
      "corte": "2026-08-16",
@@ -808,7 +846,7 @@
     "label": "Últimos dúplex"
    },
    "geo_aprox": true,
-   "geo_nota": "Interpolado sobre Conde de la Vega del Ren entre los nº 119 y 460 (ambos verificados).",
+   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida.",
    "verif_web": {
     "fecha": "2026-08-13",
     "precio_portal": "no publica",
@@ -1385,7 +1423,9 @@
      "desde": 253000,
      "pm2": 2568
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 27 m)."
   },
   {
    "id": "dmont-dicon",
@@ -1632,7 +1672,9 @@
      "desde": 181190,
      "pm2": 2144
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 37 m)."
   },
   {
    "id": "estelar-1080",
@@ -1732,7 +1774,9 @@
      "desde": 202941,
      "pm2": 2231
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 76 m)."
   },
   {
    "id": "floresta-living-444",
@@ -1842,7 +1886,9 @@
      "desde": 196471,
      "pm2": 2311
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 57 m)."
   },
   {
    "id": "hana",
@@ -1915,7 +1961,9 @@
      "desde": 250588,
      "pm2": null
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 77 m)."
   },
   {
    "id": "jardines-monte-real",
@@ -2006,7 +2054,9 @@
      "desde": 246028,
      "pm2": 2612
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 59 m)."
   },
   {
    "id": "la-floresta-boulevard",
@@ -2132,7 +2182,9 @@
      "desde": 154000,
      "pm2": 2504
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 23 m)."
   },
   {
    "id": "monte-alegre",
@@ -2184,8 +2236,8 @@
    "cochera_status": "nd",
    "stock": null,
    "descubierto": "2026-08-13",
-   "geo_aprox": true,
-   "geo_nota": "Calle Monte Alegre 109. Verificado: la calle está 100% dentro del cuadrante (7/7 puntos OSM).",
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 23 m).",
    "verif_web": {
     "fecha": "2026-08-13",
     "precio_portal": "no publica",
@@ -2274,7 +2326,7 @@
    "cochera_status": "si",
    "stock": null,
    "geo_aprox": false,
-   "geo_nota": "",
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 25 m).",
    "cochera_nota": "Cochera de regalo (Edifikarte, campaña 'Grati Days' 15–19 jul 2026) — promoción, verificar vigencia.",
    "precio_hist": [
     {
@@ -2459,7 +2511,9 @@
      "desde": 264147,
      "pm2": 2308
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 19 m)."
   },
   {
    "id": "monte-mar-167",
@@ -2543,7 +2597,7 @@
     "label": "Últimas 3 unidades"
    },
    "geo_aprox": true,
-   "geo_nota": "La Calle Monte Mar no está mapeada en OSM; referencia = media cuadra del Parque Andrés Townsend.",
+   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida.",
    "precio_hist": [
     {
      "corte": "2026-08-16",
@@ -2639,7 +2693,9 @@
      "desde": 241176,
      "pm2": 2429
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 67 m)."
   },
   {
    "id": "monte-mayor-183",
@@ -3114,7 +3170,9 @@
      "desde": 202000,
      "pm2": 2501
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 3 m)."
   },
   {
    "id": "monte-real-265",
@@ -3334,7 +3392,9 @@
      "desde": 228824,
      "pm2": 2313
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 89 m)."
   },
   {
    "id": "monte-umbroso",
@@ -3543,7 +3603,9 @@
      "desde": 188000,
      "pm2": 2484
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 97 m)."
   },
   {
    "id": "parque-monte-carmelo",
@@ -3800,7 +3862,9 @@
      "desde": 189412,
      "pm2": 2396
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 44 m)."
   },
   {
    "id": "precursores-525",
@@ -3910,7 +3974,9 @@
      "desde": 203700,
      "pm2": null
     }
-   ]
+   ],
+   "geo_aprox": true,
+   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida."
   },
   {
    "id": "precursores-ii",
@@ -4024,7 +4090,9 @@
      "desde": 385000,
      "pm2": 2382
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 82 m)."
   },
   {
    "id": "santorini",
@@ -4215,7 +4283,9 @@
      "desde": 286450,
      "pm2": 2180
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 18 m)."
   },
   {
    "id": "spazio",
@@ -4382,7 +4452,9 @@
      "desde": 192428,
      "pm2": null
     }
-   ]
+   ],
+   "geo_aprox": false,
+   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 84 m)."
   },
   {
    "id": "terraverde",
@@ -4514,7 +4586,7 @@
    },
    "mostrar": true,
    "geo_aprox": true,
-   "geo_nota": "Frente al Parque Bella Luz, sobre la Av. Monte Umbroso; el número 247 no está mapeado en OSM.",
+   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida.",
    "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026).",
    "fuentes": [
     "https://inmobiliariaayd.com"
@@ -4576,7 +4648,8 @@
     "https://inmobiliariaayd.com"
    ],
    "amenidades": [],
-   "precio_hist": []
+   "precio_hist": [],
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 3 m)."
   },
   {
    "id": "precursores-verde",
@@ -4621,7 +4694,45 @@
     "Jardín lounge",
     "Certificación EDGE"
    ],
-   "precio_hist": []
+   "precio_hist": [],
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 2 m)."
+  },
+  {
+   "id": "astete-living",
+   "name": "Astete Living",
+   "dev": "Por confirmar",
+   "addr": "Av. Velasco Astete (altura cuadra 10), Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En planos",
+   "estado_raw": "Anunciado como «Próximo proyecto» · detectado en campo 22-ago-2026",
+   "entrega": "Por confirmar",
+   "lat": -12.12009,
+   "lng": -76.98452,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": null,
+   "web": null,
+   "img": "assets/campo/astete-living.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/campo/astete-living.jpg"
+   ],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": false,
+   "comentario": "Proyecto NUEVO detectado en recorrido de campo (22-ago-2026). Cerco negro sobre Av. Velasco Astete con la marca «ASTETE Living» y la leyenda «PRÓXIMO PROYECTO» — todavía no inicia obra. Sin desarrollador, precios ni fecha publicados aún. Vale seguirlo: es el borde sur del cuadrante.",
+   "fuentes": [
+    "Cerco de obra fotografiado en campo 22-ago-2026"
+   ],
+   "amenidades": [],
+   "precio_hist": [],
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 0 m)."
   }
  ]
 }
