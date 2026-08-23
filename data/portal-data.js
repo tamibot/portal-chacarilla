@@ -32,6 +32,65 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "Narciso",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "narciso-ayd",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "PROYECTO NUEVO detectado en recorrido. Cartel de obra de AYD NARCISO S.A.C.: 10 departamentos, 5 pisos + azotea, 2 sótanos, 19 estacionamientos, 13 meses de ejecución. Licencia 0231-2026-SGLH-GDU-MSS (nueva, de este año).",
+    "cita": "Cartel de licencia de obra fotografiado el 22-ago-2026 a las 14:39 en Calle Conde de la Vega del Ren (GPS -12.112494, -76.981103).",
+    "imgs": [
+     "assets/campo/narciso-ayd.jpg",
+     "assets/campo/narciso-ayd-2.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · fotos IMG_7881–7884"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Precursores Verde",
+    "dev": "Guerin",
+    "proyecto_id": "precursores-verde",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "PROYECTO NUEVO detectado en recorrido. Guerin Proyectos en Av. de los Precursores 278-280: 8 pisos + azotea, 3 sótanos, vivienda multifamiliar sostenible con certificación EDGE, financiado por BCP. Coworking, parrilla y jardín lounge. WhatsApp 908 875 600.",
+    "cita": "Cartel de obra fotografiado el 22-ago-2026 a las 15:20 (GPS -12.112983, -76.979264). Licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025 al 17/03/2028.",
+    "imgs": [
+     "assets/campo/precursores-verde.jpg",
+     "assets/campo/precursores-verde-2.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · fotos IMG_7930–7935"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Monte Carmelo 250",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-carmelo-250",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "Ubicación CORREGIDA: estaba 424 m fuera de sitio en el mapa. Verificado en campo en la esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Obra activa con malla; cartel comercial: 2 dorm desde 80 m², 3 dorm desde 116 m², flats y dúplex, tel. 981 386 111.",
+    "cita": "Foto del cartel y de la señalización de calle el 22-ago-2026 a las 15:42 (GPS -12.120253, -76.983039).",
+    "imgs": [
+     "assets/campo/monte-carmelo-250.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_7979"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "La Floresta Boulevard",
     "dev": "Boulevard",
     "proyecto_id": "la-floresta-boulevard",
@@ -2149,19 +2208,19 @@ window.PORTAL_DATA = {
    "dev": "Edifikarte",
    "addr": "Jr. Monte Carmelo 250, Urb. Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — frente al parque Monte Carmelo",
+   "estado_raw": "En construcción · verificado en campo 22-ago-2026 (obra con malla, cartel activo)",
    "entrega": "Pendiente confirmar",
-   "lat": -12.1170263,
-   "lng": -76.9851212,
+   "lat": -12.120253,
+   "lng": -76.983039,
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
-   "dorms": "2–4",
-   "m2": "80–274",
+   "dorms": "2–3",
+   "m2": "80–116",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe",
-   "img": "assets/img/monte-carmelo-250.jpg",
+   "img": "assets/campo/monte-carmelo-250.jpg",
    "planos": [],
    "brochure": null,
    "typologies": [
@@ -2202,7 +2261,7 @@ window.PORTAL_DATA = {
     3,
     4
    ],
-   "comentario": "Edifikarte no publica precios en web ni portales: política de cotización directa (Jenny Miranda). 7 pisos, 80–274 m². Mismo desarrollador que Monte Mayor 177.",
+   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor.",
    "fuentes": [
     "https://www.edifikarte.com.pe",
     "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07"
@@ -2214,8 +2273,8 @@ window.PORTAL_DATA = {
    "portales": {},
    "cochera_status": "si",
    "stock": null,
-   "geo_aprox": true,
-   "geo_nota": "Interpolada sobre Jr. Monte Carmelo entre los nº 341 y 551, ambos verificados.",
+   "geo_aprox": false,
+   "geo_nota": "",
    "cochera_nota": "Cochera de regalo (Edifikarte, campaña 'Grati Days' 15–19 jul 2026) — promoción, verificar vigencia.",
    "precio_hist": [
     {
@@ -4475,6 +4534,94 @@ window.PORTAL_DATA = {
     }
    ],
    "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg"
+  },
+  {
+   "id": "narciso-ayd",
+   "name": "Narciso",
+   "dev": "Inmobiliaria AyD (AYD Narciso S.A.C.)",
+   "addr": "Calle Conde de la Vega del Ren ~116, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En obra (estructura) · descubierto en campo 22-ago-2026",
+   "entrega": "Por confirmar (13 meses de ejecución según licencia)",
+   "lat": -12.112494,
+   "lng": -76.981103,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": "980765183",
+   "wa_label": "Washington B. · AyD",
+   "web": "https://inmobiliariaayd.com",
+   "img": "assets/campo/narciso-ayd.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/campo/narciso-ayd.jpg",
+    "assets/campo/narciso-ayd-2.jpg"
+   ],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": {
+    "n": 10,
+    "label": "10 departamentos (según licencia de obra)"
+   },
+   "mostrar": true,
+   "geo_aprox": false,
+   "total_pisos": 5,
+   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: propietario AYD NARCISO S.A.C. (Inmobiliaria AyD / Grupo Aspira), licencia 0231-2026-SGLH-GDU-MSS. 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, uso residencial, 13 meses de ejecución. Sin lista de precios aún — es del mismo asesor que Conde II y Monte Umbroso (Washington Benavides).",
+   "fuentes": [
+    "Cartel de obra fotografiado en campo 22-ago-2026",
+    "https://inmobiliariaayd.com"
+   ],
+   "amenidades": [],
+   "precio_hist": []
+  },
+  {
+   "id": "precursores-verde",
+   "name": "Precursores Verde",
+   "dev": "Guerin Proyectos S.A.C.",
+   "addr": "Av. de los Precursores 278-280, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En obra · descubierto en campo 22-ago-2026",
+   "entrega": "Por confirmar (obra 2025–2028 según licencia)",
+   "lat": -12.112983,
+   "lng": -76.979264,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": "908875600",
+   "wa_label": "Guerin",
+   "web": "https://www.guerin.pe",
+   "img": "assets/campo/precursores-verde.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/campo/precursores-verde.jpg",
+    "assets/campo/precursores-verde-2.jpg"
+   ],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": false,
+   "total_pisos": 8,
+   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: Guerin Proyectos S.A.C., constructora Alcamo S.A.C., licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025–17/03/2028. Vivienda multifamiliar sostenible: 8 pisos + azotea, 3 sótanos. Certificación EDGE, financiado por BCP. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600.",
+   "fuentes": [
+    "Cartel de obra fotografiado en campo 22-ago-2026",
+    "https://www.guerin.pe"
+   ],
+   "amenidades": [
+    "Coworking",
+    "Zona de parrilla",
+    "Jardín lounge",
+    "Certificación EDGE"
+   ],
+   "precio_hist": []
   }
  ]
 }
