@@ -31,6 +31,22 @@
   "proximo_corte": "2026-09-19",
   "bitacora": [
    {
+    "fecha": "2026-08-22",
+    "proyecto": "La Floresta Boulevard",
+    "dev": "Boulevard",
+    "proyecto_id": "la-floresta-boulevard",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "Verificado en campo: obra activa con malla y andamios (estructura ya en altura, ~8 pisos). El cartel de obra anuncia «Flats desde 51 a 126 m²» — nuestro registro decía 51–147 m², a revisar. Entrada habilitada por la calle; frente sobre la vía con conos de obra.",
+    "cita": "Foto de campo del 22-ago-2026, 4:15 p.m. (recorrido por la zona, cerca de Av. Primavera). Cartel de obra visible con el render y el rango de metrajes.",
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_8053 (iPhone)"
+    ]
+   },
+   {
     "fecha": "2026-08-19",
     "proyecto": "Monte Umbroso 247",
     "dev": "Inmobiliaria AyD",
@@ -1939,7 +1955,7 @@
    "dev": "Boulevard (boulevard.com.pe)",
    "addr": "Calle Montepío 120-130, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque La Floresta)",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
+   "estado_raw": "En construcción · obra activa verificada en campo (22-ago-2026): estructura en altura, malla y andamios",
    "entrega": "",
    "lat": -12.111313355375833,
    "lng": -76.98854344646954,
