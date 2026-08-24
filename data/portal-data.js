@@ -2875,9 +2875,9 @@ window.PORTAL_DATA = {
   },
   {
    "id": "monte-mar-167",
-   "name": "Monte Mar 167",
-   "dev": "Grupo Chacarilla Sur",
-   "addr": "Calle Monte Mar 167, Urb. Chacarilla del Estanque, Santiago de Surco, Lima",
+   "name": "Montemar 269",
+   "dev": "Edifikarte",
+   "addr": "Calle Montemar 269, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
    "estado_raw": "Últimas unidades — 3 disponibles (proyecto casi agotado)",
    "entrega": "Entrega inmediata",
@@ -2887,10 +2887,10 @@ window.PORTAL_DATA = {
    "en_cuadrante": true,
    "precio_desde_usd": 288235,
    "precio_hasta_usd": null,
-   "dorms": "3",
-   "m2": "121–269",
-   "wa": "984261016",
-   "web": "https://grupochacarillasur.com/montemar-167/",
+   "dorms": "2–4",
+   "m2": "80–136",
+   "wa": "981386111",
+   "web": "https://www.edifikarte.com.pe/proyectos/montemar-269/",
    "img": "assets/img/monte-mar-167.jpg",
    "planos": [],
    "brochure": null,
@@ -2930,10 +2930,9 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Casi agotado: solo 3 unidades. Las 2 con precio son de primer piso (terraza + jardín), por eso NO entran en la banda de flats típicos. Web propia responde 404; datos vía portal Interbank.",
+   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial.",
    "fuentes": [
-    "https://micasapropia.interbank.pe/proyectos/surco-montemar-167/",
-    "https://grupochacarillasur.com/montemar-167/"
+    "https://www.edifikarte.com.pe/proyectos/montemar-269/"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -2963,7 +2962,8 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad»."
   },
   {
    "id": "monte-mayor-177",
@@ -2985,6 +2985,9 @@ window.PORTAL_DATA = {
    "web": "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
    "img": "assets/img/monte-mayor-177.jpg",
    "planos": [
+    "assets/planos/monte-mayor-177-oficial/duplex-702.jpg",
+    "assets/planos/monte-mayor-177-oficial/duplex-703.jpg",
+    "assets/planos/monte-mayor-177-oficial/flat-203.jpg",
     "assets/planos/monte-mayor-177/monte_mayor-18.png",
     "assets/planos/monte-mayor-177/monte_mayor-20.png",
     "assets/planos/monte-mayor-177/monte_mayor-21.png",
@@ -3060,7 +3063,8 @@ window.PORTAL_DATA = {
    "caseta_nota": "Sin caseta de ventas: letrero en vereda.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Terminado · ÚLTIMA unidad en venta (2 dorm, 86 m²)",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "planos_fuente": "Planos de tipología de la web oficial de Edifikarte + lista del asesor"
   },
   {
    "id": "monte-mayor-183",
@@ -5098,6 +5102,11 @@ window.PORTAL_DATA = {
    "img": "assets/campo/precursores-verde.jpg",
    "brochure": null,
    "planos": [
+    "assets/planos/precursores-verde/plano-01.jpg",
+    "assets/planos/precursores-verde/plano-02.jpg",
+    "assets/planos/precursores-verde/plano-03.jpg",
+    "assets/planos/precursores-verde/plano-04.jpg",
+    "assets/planos/precursores-verde/plano-tipologia.jpg",
     "assets/campo/precursores-verde.jpg",
     "assets/campo/precursores-verde-2.jpg"
    ],
@@ -5129,7 +5138,8 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · se anuncian los últimos departamentos",
    "descubierto_campo": "2026-08-22",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "planos_fuente": "Plano de tipología de la web oficial de Guerin"
   },
   {
    "id": "astete-living",
