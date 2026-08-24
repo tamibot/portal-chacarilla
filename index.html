@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824j"></script>
+<script src="data/portal-data.js?v=20260824k"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -722,8 +722,8 @@ function buildPrice(){
 /* ANÁLISIS DEL CUADRANTE */
 const BORDE_SET=new Set(['Estelar 1080','Floresta Living 444','Precursores 525','Precursores II','Spazio']);
 const EXCL_PROJ=new Set([]);
-function exclUnit(name,t){return name==='Monte Umbroso'&&t.m2>=150&&t.m2<=165;}
-function pisoOk(ps){ps=String(ps||'').toLowerCase().trim();if(/semis|ss|azotea|s[oó]tano|últ|ult/.test(ps))return false;if(ps==='1'||ps==='1er'||ps.startsWith('1 '))return false;return true;}
+function exclUnit(name,t){if(name==='Monte Umbroso'&&t.m2>=150&&t.m2<=165)return true;const u=String(t.unidad||'').toLowerCase();if(/semis[oó]tano|\bss\s?\d|1er piso|primer piso|\(piso 1\)/.test(u))return true;return false;}
+function pisoOk(ps){ps=String(ps||'').toLowerCase().trim();if(/semis|s[oó]tano|azotea|roof|últ|ult|penthouse|\bph\b/.test(ps))return false;if(/(^|[^\d])1(er|ro)?([^\d]|$)/.test(ps))return false;return true;}
 function median(v){const a=[...v].sort((x,y)=>x-y);const m=Math.floor(a.length/2);return a.length%2?a[m]:Math.floor((a[m-1]+a[m])/2);}
 function buildAnalysis(){
   const comp=P.filter(p=>!p.isGEU&&p.mostrar);

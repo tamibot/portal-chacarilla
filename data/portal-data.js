@@ -32,6 +32,74 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-24",
+    "proyecto": "La Floresta Boulevard",
+    "dev": "Boulevard",
+    "proyecto_id": "la-floresta-boulevard",
+    "tags": [
+     "precio",
+     "promo",
+     "venta"
+    ],
+    "canal": "WhatsApp (CRM)",
+    "autor": "Benchmark",
+    "texto": "Cotización real de la asesora Mónica: flats de 2 dorm + estudio, vista interior, pisos 2 al 6 — 79.06 m² a US$202,000 y 81.46 m² a US$207,900, ambos CON 1 estacionamiento incluido de regalo. Está en «los últimos días de precios de preventa». Obra iniciada hacia nov-2025, entrega abril 2027. Sala de ventas en la propia obra, todos los días de 11 a 18 h. Financia BCP. Netos de cochera (US$17,000) dan US$2,340 y US$2,343 por m².",
+    "cita": "«Nos encontramos en los últimos días de precios de pre-venta… 79.06m2, $202,000, por la compra de su Dpto le brindamos 1 Estacionamiento» — Mónica, La Floresta Boulevard",
+    "fuentes": [
+     "Conversación de WhatsApp en el CRM (jul-2026)"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Santorini",
+    "dev": "Grupo Moryasoc Proyecto 31 S.A.C.",
+    "proyecto_id": "santorini",
+    "tags": [
+     "precio",
+     "venta"
+    ],
+    "canal": "Tarifario del proyecto",
+    "autor": "Benchmark",
+    "texto": "Su tarifario cotiza cada tipología en dos versiones: con 1 y con 2 estacionamientos, y el delta es constante — US$18,000 por la segunda cochera. Eso confirma que el precio de lista YA incluye 1 estacionamiento y permite netear. Con ese ajuste sus 5 flats típicos entran al comparativo: de US$2,156 a US$2,316 por m². Varias unidades ya figuran vendidas (401A, 103A, 202A a 502A, 601A, 401B).",
+    "cita": "«301A: US$387,000 con 1 estacionamiento / US$405,000 con 2» — tarifario de Santorini",
+    "fuentes": [
+     "referencias/tipologias-competencia.json (relevamiento jun-2026)"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Conde de la Vega 128",
+    "dev": "Edifikarte",
+    "proyecto_id": "conde-de-la-vega-128",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Base de datos interna",
+    "autor": "Benchmark",
+    "texto": "Estaba levantado en nuestra base desde junio pero nunca entró al mapa: Edifikarte, Jr. Conde de la Vega del Ren 128, 5 pisos, 23 departamentos de 3 dormitorios de 109.01 a 242.99 m², desde US$261,600. Comparte calle con Conde II (119), HANA (149) y Conde de la Vega 251. Se sumó con sus 14 planos y su brochure.",
+    "cita": "Base de datos de competencia, relevamiento de junio-2026.",
+    "imgs": [],
+    "fuentes": [
+     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-128/"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Ave. del Sur 220",
+    "dev": "Grupo Espacio Urbano (GEU)",
+    "proyecto_id": "ave-del-sur-220",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría interna",
+    "autor": "Benchmark",
+    "texto": "Barrido completo de todo el material acumulado: 68 conversaciones del CRM, la base de datos de competencia de junio (36 proyectos), los archivos de tipologías, cocheras, precios de portales y auditorías, más los 43 brochures y las 27 fotos de campo. De ahí salieron dos comparables nuevos (Santorini y La Floresta Boulevard), un competidor que faltaba en el mapa (Conde de la Vega 128), 12 proyectos más al archivo de la zona y la corrección del filtro que dejaba colar primeros pisos y semisótanos al US$/m². La mediana de la zona queda en US$2,365/m² y nuestro gap en +8.3%.",
+    "cita": "Auditoría del 24-ago-2026 sobre todas las fuentes del repositorio.",
+    "fuentes": [
+     "Vista Análisis → Cobertura de datos"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
     "proyecto": "Jardines de Monte Real",
     "dev": "Central Inmobiliaria",
     "proyecto_id": "jardines-monte-real",
@@ -1114,32 +1182,6 @@ window.PORTAL_DATA = {
     "fuente": "https://inmobiliariaayd.com/proyecto/conde-de-la-vega-159/"
    },
    {
-    "nombre": "Conde de la Vega 128",
-    "dev": "Edifikarte",
-    "addr": "Calle Conde de la Vega del Ren 128, Chacarilla, Surco",
-    "zona": "dentro del cuadrante",
-    "estado": "Entregado",
-    "nota": "6 pisos y 23 departamentos. Ya no figura entre los proyectos en venta de Edifikarte.",
-    "planos": [
-     "assets/planos/conde-vega-128/plano-01.jpg",
-     "assets/planos/conde-vega-128/plano-02.jpg",
-     "assets/planos/conde-vega-128/plano-03.jpg",
-     "assets/planos/conde-vega-128/plano-04.jpg",
-     "assets/planos/conde-vega-128/plano-05.jpg",
-     "assets/planos/conde-vega-128/plano-06.jpg",
-     "assets/planos/conde-vega-128/plano-07.jpg",
-     "assets/planos/conde-vega-128/plano-08.jpg",
-     "assets/planos/conde-vega-128/plano-09.jpg",
-     "assets/planos/conde-vega-128/plano-10.jpg",
-     "assets/planos/conde-vega-128/plano-11.jpg",
-     "assets/planos/conde-vega-128/plano-12.jpg",
-     "assets/planos/conde-vega-128/plano-13.jpg",
-     "assets/planos/conde-vega-128/plano-14.jpg"
-    ],
-    "brochure": "assets/brochures/conde-vega-128-f1.pdf",
-    "fuente": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2106-conde-de-la-vega-128-santiago-de-surco-lima-lima-grupo-edifikarte"
-   },
-   {
     "nombre": "Monte Mayor 153",
     "dev": "Por confirmar",
     "addr": "Calle Monte Mayor 153, Chacarilla, Surco",
@@ -1268,6 +1310,76 @@ window.PORTAL_DATA = {
     "planos": [],
     "brochure": "assets/brochures/batallon-tarma-684-f1.pdf",
     "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "Inizzio",
+    "dev": "Sembra Inmobiliaria",
+    "addr": "Chacarilla del Estanque (dirección exacta por confirmar)",
+    "zona": "por confirmar",
+    "estado": "Entrega inmediata · casi agotado",
+    "nota": "54–113 m² · desde US$137 040 · ≈US$2000/m² referencial. Proyecto casi vendido, entrega inmediata. Precios desde S/513,900 (InfoCasas) — Nexo muestra \"desde S/597,342\" posiblemente precio filtrado diferente.",
+    "planos": [],
+    "brochure": null,
+    "fuente": "https://sembra.pe/proyecto/inizzio/"
+   },
+   {
+    "nombre": "Bosco",
+    "dev": "Conforta Inmobiliaria",
+    "addr": "Calle Miguel Aljovín 850-854, Santiago de Surco",
+    "zona": "fuera del cuadrante",
+    "estado": "En construcción",
+    "nota": "28 deptos · 7 pisos · 63.9–108.67 m² · desde US$146 441. Tabla completa de tipologías pendiente. Requiere contacto directo o brochure. WA: 983253076 / 947430045.",
+    "planos": [],
+    "brochure": null,
+    "fuente": "https://confortainmobiliaria.com/bosco/"
+   },
+   {
+    "nombre": "Samoa",
+    "dev": "EE Inmobiliaria",
+    "addr": "Chacarilla del Estanque (dirección exacta por confirmar)",
+    "zona": "por confirmar",
+    "estado": "En construcción",
+    "nota": "desde US$187 200. Precio confirmado por BCP (proyecto 625): S/702,000-S/1,291,980. Tipologías por unidad pendientes.",
+    "planos": [],
+    "brochure": null,
+    "fuente": "https://eeinmobiliaria.com"
+   },
+   {
+    "nombre": "Influye",
+    "dev": "Inmgenio",
+    "addr": "Av. Coronel Reynaldo Vivanco 150, Chacarilla del Estanque",
+    "zona": "por confirmar",
+    "estado": "En construcción",
+    "nota": "86–190 m² · desde US$183 000 · ≈US$2128/m² referencial. Inmgenio, Av. Coronel Reynaldo Vivanco 150 (avenida interna de Chacarilla del Estanque, CONFIRMADO en zona). Desde US$183,000, 86-190m², 2-3 dorms. Co",
+    "planos": [],
+    "brochure": null,
+    "fuente": "https://www.inmgenio.pe/proyectos/en-venta/"
+   },
+   {
+    "nombre": "La Niña 238",
+    "dev": "Galeon",
+    "addr": "Jr. La Niña 238, Chacarilla del Estanque",
+    "zona": "dentro del cuadrante",
+    "estado": "Entregado (~2020)",
+    "nota": "150–402 m². Galeón, Jr. La Niña 238, Chacarilla del Estanque. Entrega original ago-2020 (YA ENTREGADO, no aparece en cartera activa de Galeón). 3 dorms, 150-402m²",
+    "planos": [],
+    "brochure": null,
+    "fuente": "https://www.galeon.com.pe"
+   },
+   {
+    "nombre": "Residencial Hermano Lobo",
+    "dev": "Grupo Dicon",
+    "addr": "San Borja",
+    "zona": "fuera del cuadrante",
+    "estado": "Entregado",
+    "nota": "24 deptos · 5 pisos · 119.42–214.0 m² · desde US$307 000. Tipologías detalladas en tipologias-competencia.json (key: lobo). FUERA DEL CUADRANTE — incluido por ser del mismo desarrollador (Dicon) que Aura Sul ",
+    "planos": [
+     "assets/planos/lobo-san-borja/lobo-flat102-plano.jpg",
+     "assets/planos/lobo-san-borja/lobo-flat103-plano.jpg",
+     "assets/planos/lobo-san-borja/lobo-flat104-plano.jpg"
+    ],
+    "brochure": "assets/brochures/LoBo-brochure.pdf",
+    "fuente": "https://grupodicon.com.pe/proyecto/residencial-hermano-lobo-san-borja/"
    }
   ],
   "pedidos_ronda": {
@@ -1521,6 +1633,39 @@ window.PORTAL_DATA = {
      ],
      "pide": "lista de precios + cochera + promoción",
      "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    }
+   ]
+  },
+  "fuentes_barridas": {
+   "fecha": "2026-08-24",
+   "items": [
+    {
+     "fuente": "conversaciones del CRM Kommo (68 chats)",
+     "resultado": "Cotización real de La Floresta Boulevard con precios por unidad y estacionamiento incluido"
+    },
+    {
+     "fuente": "referencias/base-datos-competencia.json (36 proyectos)",
+     "resultado": "Amenidades, financiamiento, conceptos de comunicación, stock y 14 proyectos que no estaban en el mapa"
+    },
+    {
+     "fuente": "referencias/tipologias-competencia.json",
+     "resultado": "Tarifario de Santorini por unidad con y sin 2ª cochera"
+    },
+    {
+     "fuente": "referencias/planos-cochera-competencia.json",
+     "resultado": "Política de estacionamiento de 13 proyectos, contrastada contra sus brochures"
+    },
+    {
+     "fuente": "referencias/auditoria-precios-y-whatsapp.md + whatsapp-links-competencia.json",
+     "resultado": "Teléfonos con fuente y nombres de asesores; corrección de 4 mal atribuidos"
+    },
+    {
+     "fuente": "assets/brochures (43 PDF) y assets/campo (27 fotos)",
+     "resultado": "Documentos enlazados a cada ficha y datos leídos de los carteles de obra"
+    },
+    {
+     "fuente": "conversaciones/whatsapp-geu-rochi-completo.txt",
+     "resultado": "Sin datos de competencia — es coordinación interna del equipo"
     }
    ]
   }
@@ -1956,7 +2101,8 @@ window.PORTAL_DATA = {
    ],
    "wa_label": "Grupo Dicon",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Aura Sul por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "como_presenta": "Concepto con el que se anuncian: «Departamentos boutique en Chacarilla»."
   },
   {
    "id": "conde-ii",
@@ -3474,7 +3620,12 @@ window.PORTAL_DATA = {
    "wa_label": "Cecilia",
    "foto_campo": "2026-08-22",
    "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Floresta Living 444 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad"
+   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "financia": "Interbank",
+   "stock": {
+    "n": 5,
+    "label": "5 disponibles de 18 (relevamiento jun-2026)"
+   }
   },
   {
    "id": "hana",
@@ -3766,7 +3917,7 @@ window.PORTAL_DATA = {
    "addr": "Calle Montepío 120-130, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque La Floresta)",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción · obra activa verificada en campo (22-ago-2026): estructura en altura, malla y andamios",
-   "entrega": "",
+   "entrega": "Abril 2027 (aprox., según la asesora)",
    "lat": -12.111313355375833,
    "lng": -76.98854344646954,
    "isGEU": false,
@@ -3775,7 +3926,7 @@ window.PORTAL_DATA = {
    "precio_hasta_usd": 330000,
    "dorms": "1–3",
    "m2": "51–147",
-   "wa": "945678879",
+   "wa": "908800562",
    "web": "https://floresta.boulevard.com.pe/la-floresta/",
    "img": "assets/img-f1/la-floresta-boulevard/img-01.jpg",
    "planos": [
@@ -3826,6 +3977,32 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "intermedio",
      "nota": "Precio por confirmar — el asesor aún no lo envió (2026-07)."
+    },
+    {
+     "unidad": "Flat vista interior · 2 dorm + estudio, cocina cerrada (pisos 2 al 6)",
+     "dorm": 2,
+     "m2": 79.06,
+     "precio_usd": 185000,
+     "precio_m2": 2340,
+     "tipo": "flat",
+     "piso": "2 al 6",
+     "flat": true,
+     "precio_usd_lista": 202000,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 17000
+    },
+    {
+     "unidad": "Flat vista interior · 2 dorm + estudio, con puntos de gas (pisos 2 al 6)",
+     "dorm": 2,
+     "m2": 81.46,
+     "precio_usd": 190900,
+     "precio_m2": 2343,
+     "tipo": "flat",
+     "piso": "2 al 6",
+     "flat": true,
+     "precio_usd_lista": 207900,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 17000
     }
    ],
    "flats_summary": [
@@ -3841,12 +4018,38 @@ window.PORTAL_DATA = {
      "ajuste_cochera_usd": 17000,
      "comparable_confirmado": true,
      "nota": "Confirmado por el asesor (WhatsApp, 2026-07): US$325,000 (123 m²) incluye 1 cochera; neto de cochera (US$17,000) = US$308,000 → 2,504/m². Falta precio de 1 dorm."
+    },
+    {
+     "unidad": "Flat vista interior · 2 dorm + estudio, cocina cerrada (pisos 2 al 6)",
+     "dorm": 2,
+     "m2": 79.06,
+     "precio_usd": 185000,
+     "precio_m2": 2340,
+     "precio_usd_lista": 202000,
+     "precio_m2_lista": 2555,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 17000,
+     "comparable_confirmado": true,
+     "nota": "Cotizado por Mónica (WhatsApp, jul-2026): US$202,000 con 1 estacionamiento incluido. Neto de cochera (US$17,000) = US$185,000 → US$2,340/m²."
+    },
+    {
+     "unidad": "Flat vista interior · 2 dorm + estudio, con puntos de gas (pisos 2 al 6)",
+     "dorm": 2,
+     "m2": 81.46,
+     "precio_usd": 190900,
+     "precio_m2": 2343,
+     "precio_usd_lista": 207900,
+     "precio_m2_lista": 2552,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 17000,
+     "comparable_confirmado": true,
+     "nota": "Cotizado por Mónica (WhatsApp, jul-2026): US$207,900 con 1 estacionamiento incluido. Neto de cochera = US$190,900 → US$2,343/m²."
     }
    ],
    "dorms_disponibles": [
     1
    ],
-   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). Falta que envíen el precio del 1 dormitorio. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas.",
+   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). Falta que envíen el precio del 1 dormitorio. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas. Cotización real de la asesora Mónica (WhatsApp, jul-2026): flats de 2 dorm + estudio de 79.06 m² a US$202,000 y de 81.46 m² a US$207,900, ambos CON 1 estacionamiento incluido. Financia BCP. Sala de ventas en la obra, todos los días de 11 a 18 h.",
    "amenidades": [],
    "total_pisos": null,
    "fuentes": [
@@ -3854,7 +4057,8 @@ window.PORTAL_DATA = {
     "https://floresta.boulevard.com.pe/1-dormitorio/",
     "https://floresta.boulevard.com.pe/2-dormitorios/",
     "https://floresta.boulevard.com.pe/2-dormitorios-estudio/",
-    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-la-floresta-boulevard-670"
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-la-floresta-boulevard-670",
+    "Conversación real por WhatsApp con la asesora (CRM, jul-2026)"
    ],
    "portales": {},
    "anuncios": null,
@@ -3887,22 +4091,32 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador).",
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: cartel de obra grande con el render sobre el cerco; entrada de obra habilitada.",
+   "caseta_ventas": "si",
+   "caseta_nota": "Sala de ventas en la propia obra, Calle Montepío 120. Atienden de 11:00 a 18:00, de lunes a domingo.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra avanzada: estructura en altura con malla y andamios",
+   "estado_obra": "Obra iniciada hacia noviembre de 2025 («la obra se inició hace 8 meses» dicho en julio-2026); entrega prevista abril 2027.",
    "cuadrante_verificado": "2026-08-22",
    "contactos": [
     {
+     "nombre": "Mónica",
+     "numero": "908800562",
+     "fuente": "Conversación real por WhatsApp con la asesora (CRM, jul-2026) — número desde el que escribe la asesora"
+    },
+    {
      "nombre": null,
      "numero": "945678879",
-     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+     "fuente": "Chat de WhatsApp del proyecto (13-ago-2026)"
     }
    ],
-   "wa_label": "Boulevard",
+   "wa_label": "Mónica · La Floresta Boulevard",
    "foto_campo": "2026-08-22",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de La Floresta Boulevard por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "asesora": "Mónica",
+   "horario_ventas": "Lunes a domingo, 11:00–18:00, en la obra (Montepío 120)",
+   "promocion": "«Estamos en los últimos días de precios de preventa» (jul-2026). Además, por la compra del departamento regalan 1 estacionamiento.",
+   "politica_precio": "El precio de lista INCLUYE 1 estacionamiento («por la compra de su Dpto le brindamos 1 Estacionamiento»). El US$/m² del portal lo descuenta a US$17,000, valor que la propia asesora confirmó.",
+   "como_presenta": "Mónica abre presentando ubicación y parque («frente al parque La Floresta»), luego el financiamiento BCP, después mete urgencia («últimos días de precios de preventa») y recién ahí manda unidades concretas con m², precio y el estacionamiento de regalo. Cierra invitando a la sala de ventas de la obra y hace seguimiento a los pocos días."
   },
   {
    "id": "monte-alegre",
@@ -4493,7 +4707,8 @@ window.PORTAL_DATA = {
    ],
    "wa_label": "Balance Grupo Inmobiliario",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "como_presenta": "Concepto con el que se anuncian: «Frente al parque — dúplex y flats»."
   },
   {
    "id": "monte-mar-167",
@@ -4701,7 +4916,8 @@ window.PORTAL_DATA = {
     }
    ],
    "asesora": "Jenny",
-   "wa_label": "Jenny"
+   "wa_label": "Jenny",
+   "financia": "Interbank"
   },
   {
    "id": "monte-mayor-177",
@@ -5409,7 +5625,18 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "dorms_disponibles": [],
    "comentario": "Jr. Monte Real 265 (antes publicitado como N° 217). Proyecto entregado con última unidad disponible (Dpto 103, 167.82 m²).",
-   "amenidades": [],
+   "amenidades": [
+    "Lobby + ascensores",
+    "Piscina",
+    "Área de parrillas",
+    "Cochera",
+    "Gas natural",
+    "Seguridad 24/7",
+    "Pet-friendly",
+    "Terrazas privadas por depto",
+    "Cocina equipada (horno+encimera+campana)",
+    "Walk-in closets"
+   ],
    "total_pisos": 6,
    "fuentes": [
     "https://eeinmobiliaria.com/proyectos/monte-real/",
@@ -5469,7 +5696,8 @@ window.PORTAL_DATA = {
     }
    ],
    "asesora": "Cecilia",
-   "wa_label": "Cecilia"
+   "wa_label": "Cecilia",
+   "financia": "BCP"
   },
   {
    "id": "monte-sierpe",
@@ -6083,7 +6311,7 @@ window.PORTAL_DATA = {
      "dorm": 3,
      "m2": 93.72,
      "precio_usd": 225278,
-     "precio_m2": 2396,
+     "precio_m2": 2404,
      "comparable_confirmado": true,
      "cochera_incluida": "No (confirmado con asesor 2026-07-02): estacionamiento aparte S/48,000–99,000, algunos con depósito",
      "nota": "Promedio ponderado por 18 flats típicos (T01/T03/T04/T05), precios de Nexo Inmobiliario 2026-07-07 (T04 S/673,000·85.16m², T05 S/682,000·86.24m², T03 S/878,000·103.91m², T01 S/874,000·103.46m²). Estacionamiento NO incluido (asesor 2026-07-02) → precio ya neto sin cochera."
@@ -6176,7 +6404,8 @@ window.PORTAL_DATA = {
    "asesora": "Cecilia",
    "wa_label": "Cecilia",
    "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Parque Monte Carmelo por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "como_presenta": "Concepto con el que se anuncian: «Frente al parque Monte Carmelo»."
   },
   {
    "id": "precursores-525",
@@ -6476,7 +6705,7 @@ window.PORTAL_DATA = {
    "lng": -76.98512695370027,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 286450,
+   "precio_desde_usd": 268450,
    "precio_hasta_usd": 611000,
    "dorms": "1–4",
    "m2": "123–366",
@@ -6509,74 +6738,69 @@ window.PORTAL_DATA = {
    "brochure": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
    "typologies": [
     {
-     "unidad": "201B",
-     "dorm": 2,
-     "m2": 125.0,
-     "precio_usd": 272500,
-     "precio_m2": 2180,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "301B",
-     "dorm": 2,
-     "m2": 125.0,
-     "precio_usd": 272500,
-     "precio_m2": 2180,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "501B",
-     "dorm": 2,
-     "m2": 123.0,
-     "precio_usd": 271450,
-     "precio_m2": 2207,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "202B",
-     "dorm": 2,
-     "m2": 130.5,
-     "precio_usd": 287000,
-     "precio_m2": 2199,
-     "tipo": "flat",
-     "piso": "2",
-     "flat": true
-    },
-    {
-     "unidad": "502B",
-     "dorm": 2,
-     "m2": 129.0,
-     "precio_usd": 283000,
-     "precio_m2": 2194,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "501A",
-     "dorm": 3,
-     "m2": 155.0,
-     "precio_usd": 362000,
-     "precio_m2": 2335,
-     "tipo": "flat",
-     "piso": "5",
-     "flat": true
-    },
-    {
-     "unidad": "301A",
+     "unidad": "301A · flat Torre A",
      "dorm": 3,
      "m2": 159.8,
-     "precio_usd": 372000,
-     "precio_m2": 2328,
+     "precio_usd": 369000,
+     "precio_m2": 2309,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "precio_usd_lista": 387000,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000
+    },
+    {
+     "unidad": "501A · flat Torre A",
+     "dorm": 3,
+     "m2": 155.0,
+     "precio_usd": 359000,
+     "precio_m2": 2316,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true,
+     "precio_usd_lista": 377000,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000
+    },
+    {
+     "unidad": "201B / 301B · flat Torre B",
+     "dorm": 2,
+     "m2": 125.0,
+     "precio_usd": 269500,
+     "precio_m2": 2156,
+     "tipo": "flat",
+     "piso": "2 y 3",
+     "flat": true,
+     "precio_usd_lista": 287500,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000
+    },
+    {
+     "unidad": "501B · flat Torre B",
+     "dorm": 2,
+     "m2": 123.0,
+     "precio_usd": 268450,
+     "precio_m2": 2183,
+     "tipo": "flat",
+     "piso": "5",
+     "flat": true,
+     "precio_usd_lista": 286450,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000
+    },
+    {
+     "unidad": "202B · flat Torre B",
+     "dorm": 2,
+     "m2": 130.5,
+     "precio_usd": 284000,
+     "precio_m2": 2176,
+     "tipo": "flat",
+     "piso": "2",
+     "flat": true,
+     "precio_usd_lista": 302000,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000
     },
     {
      "unidad": "602A PH",
@@ -6586,37 +6810,79 @@ window.PORTAL_DATA = {
      "precio_m2": 1908,
      "tipo": "duplex",
      "piso": "6"
-    },
-    {
-     "unidad": "101",
-     "dorm": 1,
-     "m2": 199,
-     "precio_usd": 302000,
-     "precio_m2": 1518,
-     "tipo": "flat",
-     "piso": "1"
     }
    ],
    "flats_summary": [
     {
-     "dorm": 2,
-     "m2": 125.0,
-     "precio_usd": 272500,
-     "precio_m2": 2180,
-     "comparable_confirmado": true
-    },
-    {
+     "unidad": "301A · flat Torre A",
      "dorm": 3,
      "m2": 159.8,
-     "precio_usd": 372000,
-     "precio_m2": 2328,
-     "comparable_confirmado": true
+     "precio_usd": 369000,
+     "precio_m2": 2309,
+     "precio_usd_lista": 387000,
+     "precio_m2_lista": 2422,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000,
+     "comparable_confirmado": true,
+     "nota": "Tarifario del proyecto: US$387 000 con 1 estacionamiento. Neto de cochera (US$18 000) = US$369 000 → US$2 309/m²."
+    },
+    {
+     "unidad": "501A · flat Torre A",
+     "dorm": 3,
+     "m2": 155.0,
+     "precio_usd": 359000,
+     "precio_m2": 2316,
+     "precio_usd_lista": 377000,
+     "precio_m2_lista": 2432,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000,
+     "comparable_confirmado": true,
+     "nota": "Tarifario del proyecto: US$377 000 con 1 estacionamiento. Neto de cochera (US$18 000) = US$359 000 → US$2 316/m²."
+    },
+    {
+     "unidad": "201B / 301B · flat Torre B",
+     "dorm": 2,
+     "m2": 125.0,
+     "precio_usd": 269500,
+     "precio_m2": 2156,
+     "precio_usd_lista": 287500,
+     "precio_m2_lista": 2300,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000,
+     "comparable_confirmado": true,
+     "nota": "Tarifario del proyecto: US$287 500 con 1 estacionamiento. Neto de cochera (US$18 000) = US$269 500 → US$2 156/m²."
+    },
+    {
+     "unidad": "501B · flat Torre B",
+     "dorm": 2,
+     "m2": 123.0,
+     "precio_usd": 268450,
+     "precio_m2": 2183,
+     "precio_usd_lista": 286450,
+     "precio_m2_lista": 2329,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000,
+     "comparable_confirmado": true,
+     "nota": "Tarifario del proyecto: US$286 450 con 1 estacionamiento. Neto de cochera (US$18 000) = US$268 450 → US$2 183/m²."
+    },
+    {
+     "unidad": "202B · flat Torre B",
+     "dorm": 2,
+     "m2": 130.5,
+     "precio_usd": 284000,
+     "precio_m2": 2176,
+     "precio_usd_lista": 302000,
+     "precio_m2_lista": 2314,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000,
+     "comparable_confirmado": true,
+     "nota": "Tarifario del proyecto: US$302 000 con 1 estacionamiento. Neto de cochera (US$18 000) = US$284 000 → US$2 176/m²."
     }
    ],
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal.",
+   "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal. Tarifario del proyecto: los precios incluyen 1 estacionamiento y la 2.ª cochera paralela suma US$18,000 en todas las tipologías (ej. 301A: US$387,000 con 1 vs US$405,000 con 2). Con ese ajuste sus flats entran al comparativo: de US$2,156 a US$2,316 por m² netos de cochera. Varias unidades ya figuran VENDIDAS en su web.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -6638,7 +6904,7 @@ window.PORTAL_DATA = {
    "cochera_status": "si",
    "stock": {
     "n": null,
-    "label": "+50% vendido"
+    "label": "Varias unidades vendidas (401A, 103A, 202A-502A, 601A, 401B)"
    },
    "verif_web": {
     "precio_portal": "desde US$274,550",
@@ -6685,7 +6951,9 @@ window.PORTAL_DATA = {
    "pisos": 6,
    "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30",
    "pedido": "Hola Rossana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Santorini por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "politica_precio": "El precio de lista de cada departamento YA incluye 1 estacionamiento. La 2.ª cochera paralela cuesta US$18,000 adicionales (delta constante en todas las tipologías del tarifario). El US$/m² del portal descuenta esos US$18,000.",
+   "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos."
   },
   {
    "id": "spazio",
@@ -7426,7 +7694,11 @@ window.PORTAL_DATA = {
    "stock": null,
    "mostrar": true,
    "geo_aprox": true,
-   "amenidades": [],
+   "amenidades": [
+    "Coworking / home office",
+    "Rooftop con parrilla",
+    "Zona de juegos para niños"
+   ],
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia.",
@@ -7898,7 +8170,89 @@ window.PORTAL_DATA = {
     }
    ],
    "pedido": "Hola! Consulta por el proyecto Le Parc, en Av. de los Precursores 421. Sigue en venta? Me pueden enviar los planos, metrajes disponibles y la lista de precios?",
-   "pedido_que": "confirmar estado + precios"
+   "pedido_que": "confirmar estado + precios",
+   "como_presenta": "Concepto con el que se anuncian: «Le Parc — lifestyle en Chacarilla»."
+  },
+  {
+   "id": "conde-de-la-vega-128",
+   "name": "Conde de la Vega 128",
+   "dev": "Edifikarte",
+   "addr": "Jr. Conde de la Vega del Ren 128, Urb. Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción · 23 departamentos",
+   "estado_obra": "Por verificar en el próximo recorrido de campo.",
+   "entrega": "Por confirmar",
+   "lat": -12.118357,
+   "lng": -76.983017,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "dorms": "3",
+   "m2": "109.01 – 242.99",
+   "pisos": 5,
+   "unidades": 23,
+   "precio_desde_usd": 261600,
+   "precio_hasta_usd": null,
+   "wa": "981386111",
+   "wa_label": "Jenny",
+   "asesora": "Jenny",
+   "contactos": [
+    {
+     "nombre": "Jenny",
+     "numero": "981386111",
+     "fuente": "Auditoría de fuentes de competencia (jun-2026) — central comercial de Edifikarte"
+    },
+    {
+     "nombre": null,
+     "numero": "923054353",
+     "fuente": "Auditoría de fuentes de competencia (jun-2026)"
+    }
+   ],
+   "web": "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-128/",
+   "img": null,
+   "brochure": null,
+   "planos": [
+    "assets/planos/conde-vega-128/plano-01.jpg",
+    "assets/planos/conde-vega-128/plano-02.jpg",
+    "assets/planos/conde-vega-128/plano-03.jpg",
+    "assets/planos/conde-vega-128/plano-04.jpg",
+    "assets/planos/conde-vega-128/plano-05.jpg",
+    "assets/planos/conde-vega-128/plano-06.jpg",
+    "assets/planos/conde-vega-128/plano-07.jpg",
+    "assets/planos/conde-vega-128/plano-08.jpg",
+    "assets/planos/conde-vega-128/plano-09.jpg",
+    "assets/planos/conde-vega-128/plano-10.jpg",
+    "assets/planos/conde-vega-128/plano-11.jpg",
+    "assets/planos/conde-vega-128/plano-12.jpg",
+    "assets/planos/conde-vega-128/plano-13.jpg",
+    "assets/planos/conde-vega-128/plano-14.jpg"
+   ],
+   "planos_fuente": "Brochure oficial en archivo (14 láminas).",
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "geo_nota": "Ubicación interpolada sobre Jr. Conde de la Vega del Ren, entre el 119 (Conde II) y el 149 (HANA), ambos verificados en campo. Pendiente de foto.",
+   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera.",
+   "amenidades": [],
+   "precio_hist": [],
+   "fuentes": [
+    "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-128/",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2106-conde-de-la-vega-128-santiago-de-surco-lima-lima-grupo-edifikarte",
+    "Base de datos de competencia (relevamiento jun-2026)"
+   ],
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Edifikarte · Conde de la Vega 128",
+     "archivo": "assets/brochures/conde-vega-128-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ],
+   "pedido": "Hola Jenny! Consulta por Conde de la Vega 128: me pasas la lista de precios con lo que queda disponible? el precio incluye cochera? y para cuándo entregan?",
+   "pedido_que": "lista de precios + cochera + entrega"
   }
  ]
 };

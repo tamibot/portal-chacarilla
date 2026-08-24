@@ -118,3 +118,37 @@ pero queda el histórico. No lo borres.
 **Marcar un flat como comparable:** en su `flats_summary`, poné
 `comparable_confirmado: true` (con `m2`, `precio_usd`, `precio_m2` netos de
 cochera). Sale automáticamente en todos los rankings.
+
+---
+
+## Paso 0 · Barrido de fuentes (antes de salir a preguntar)
+
+Antes de escribirle a nadie, exprimir lo que ya está en el repo. Sale gratis y
+suele tapar la mitad de los huecos. Este es el inventario y qué da cada uno:
+
+| Fuente | Qué se saca |
+|---|---|
+| `crm-kommo/raw/convos.json` | Cotizaciones que los asesores de la competencia mandaron por WhatsApp: precio por unidad, qué incluye, promo vigente, horario de sala de ventas |
+| `referencias/base-datos-competencia.json` | 36 proyectos con amenidades, financiamiento, concepto de comunicación, stock y proyectos que todavía no están en el mapa |
+| `referencias/tipologias-competencia.json` | Tarifarios por unidad. Ojo con los que cotizan “con 1 / con 2 estacionamientos”: el delta ES el valor de la cochera |
+| `referencias/planos-cochera-competencia.json` | Si el brochure dice o no que la cochera va incluida, proyecto por proyecto |
+| `referencias/auditoria-precios-y-whatsapp.md`<br>`referencias/whatsapp-links-competencia.json` | Teléfonos **con fuente** y nombres de asesores. Es la referencia para no atribuir mal un número |
+| `assets/brochures/*.pdf` | `pdftotext -layout` encuentra listas de precios con estado VENDIDO por unidad |
+| `assets/campo/*.jpg` | Los carteles de obra traen teléfono, metrajes, entrega, stock (“últimas unidades”) y los datos de la licencia |
+
+Reglas que se aplican siempre en este paso:
+
+1. **Un número sin fuente no se carga.** Cada contacto va en `contactos` con
+   `{nombre, numero, fuente}`. Si no hay fuente comprobable, el proyecto queda
+   sin WhatsApp — es preferible a escribirle al asesor equivocado.
+2. **Cochera incluida ⇒ netear.** El `$/m²` del portal es siempre unidad sola.
+   Se guarda `precio_usd_lista`, `ajuste_cochera_usd` y el `precio_usd` neto, y
+   la nota dice de dónde salió el valor de la cochera.
+3. **Las fotos mandan sobre los nombres de archivo.** Más de una foto estaba
+   archivada con el nombre de otro proyecto. Antes de usarla, leer el cartel.
+4. **Lo que no entra al benchmark va a `meta.archivo_zona`**, no se borra:
+   entregados, antecedentes y proyectos fuera del cuadrante, con su brochure y
+   sus planos accesibles.
+
+Lo barrido queda anotado en `meta.fuentes_barridas` con la fecha, para no
+repetir trabajo el mes siguiente.
