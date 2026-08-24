@@ -80,6 +80,55 @@ if poly:
         if bool(p.get("en_cuadrante")) != real:
             err(f'{p["id"]}: en_cuadrante={p.get("en_cuadrante")} pero geométricamente está {"DENTRO" if real else "FUERA"} del cuadrante')
 
+# 2c) COHERENCIA DEL RELATO: que el estado, la entrega, el stock y la obra cuenten lo mismo
+MES={'enero':1,'febrero':2,'marzo':3,'abril':4,'mayo':5,'junio':6,'julio':7,'agosto':8,'septiembre':9,
+ 'setiembre':9,'octubre':10,'noviembre':11,'diciembre':12,'ene':1,'feb':2,'mar':3,'abr':4,'may':5,
+ 'jun':6,'jul':7,'ago':8,'sep':9,'oct':10,'nov':11,'dic':12}
+def entrega_ym(txt):
+    """(año, mes) de un texto de entrega libre. None si no hay año o si el texto
+    no compromete una fecha (rangos de licencia, 'por confirmar', 'aprox')."""
+    t=(txt or '').lower()
+    if re.search(r'por confirmar|sin confirmar|por definir|aprox|licencia|vencida', t): return None
+    años=re.findall(r'(20\d\d)',t)
+    if not años: return None
+    if len(años)>1: return None           # rango: no compromete una fecha
+    mo=None
+    for k,v in MES.items():
+        if re.search(r'\b'+k,t): mo=v; break
+    return (int(años[0]), mo or 12)
+
+HOY=datetime.date.today()
+HOY_YM=(HOY.year,HOY.month)
+for p in projects:
+    if p.get("mostrar") is False or p.get("isGEU"): continue
+    pid=p.get("id","?"); eg=p.get("estado_grupo") or ""
+    ent=entrega_ym(p.get("entrega"))
+    obra=(p.get("estado_obra") or "").lower()
+    stock=((p.get("stock") or {}).get("label") or "").lower()
+    excusa=p.get("coherencia_alerta")   # incoherencia ya detectada y declarada: no vuelve a gritar
+
+    # entrega futura no puede convivir con "entrega inmediata"
+    if eg=="Entrega inmediata" and ent and ent>HOY_YM and not excusa:
+        err(f'{pid}: dice "Entrega inmediata" pero su entrega ({p.get("entrega")}) todavia no llega')
+    # un proyecto en planos no remata stock ni tiene obra terminada
+    if eg=="En planos":
+        if re.search(r'ltim|agotad|vendid', stock) and not excusa:
+            err(f'{pid}: esta "En planos" pero su stock dice "{stock}"')
+        if re.search(r'terminad|entregad|acabado', obra) and not excusa:
+            err(f'{pid}: esta "En planos" pero su estado de obra dice "{obra[:60]}"')
+    # entrega vencida sin haber pasado a entregado
+    if ent and ent<HOY_YM and eg in ("En construccion","En construcción","En planos") and not excusa:
+        err(f'{pid}: su entrega ({p.get("entrega")}) ya vencio y sigue como "{eg}"')
+    # obra en ejecucion no es entrega inmediata
+    if eg=="Entrega inmediata" and re.search(r'obra en ejecuci|en obra|sin obra|grua|grúa', obra) and not excusa:
+        err(f'{pid}: dice "Entrega inmediata" pero su estado de obra dice "{obra[:60]}"')
+    # todo proyecto visible declara de donde sale su estado
+    evd=p.get("estado_evidencia") or {}
+    if not evd.get("tipo"):
+        warn(f'{pid}: sin estado_evidencia (no se sabe de que fuente sale su estado)')
+    elif not iso_ok(evd.get("fecha","")):
+        err(f'{pid}: estado_evidencia con fecha invalida {evd.get("fecha")}')
+
 # 3) meta: cortes, bitácora, fechas, contadores
 for c in meta.get("cortes", []):
     if not iso_ok(c.get("fecha", "")): err(f"corte con fecha inválida: {c.get('fecha')}")

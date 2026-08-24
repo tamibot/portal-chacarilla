@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824k"></script>
+<script src="data/portal-data.js?v=20260824m"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -917,6 +917,9 @@ function buildCobertura(){
     ['Ubicación exacta', p=>p.geo_aprox?no:si],
     ['Contacto verificado', p=>(p.contactos||[]).length?si:no],
     ['Foto de campo', p=>p.foto_campo?si:no],
+    ['Estado al día', p=>{const e=p.estado_evidencia||{};
+       if(p.coherencia_alerta)return '<span style="color:#ce3c31;font-weight:800" title="Dato en revisión">⚠</span>';
+       return (e.tipo==='whatsapp'||e.tipo==='campo'||e.tipo==='web_oficial')?si:'<span style="color:#b9863b;font-weight:700" title="El estado viene del relevamiento inicial, sin confirmación posterior">~</span>';}],
   ];
   const score=p=>cols.reduce((a,[,fn])=>a+(fn(p).includes('#2F7D54')?1:0),0);
   const rows=comps.map(p=>{
@@ -938,7 +941,31 @@ function buildCobertura(){
    </div>
    <table class="t"><thead><tr><th style="width:20%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}<th style="text-align:center">Completo</th></tr></thead><tbody>${rows}</tbody></table>
    <div class="foot" style="margin-top:10px">Los ✕ de Planos / Brochure / Tarifario son los pedidos abiertos por WhatsApp (ver Time lapse). Último rastreo en internet de todo el cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>
+   ${coherenciaHtml()}
    ${archivoZonaHtml()}`;
+}
+
+/* COHERENCIA · lo que no cuadra entre estado, entrega, stock y obra */
+function coherenciaHtml(){
+  const comps=P.filter(p=>p.mostrar&&!p.isGEU);
+  const alertas=comps.filter(p=>p.coherencia_alerta);
+  const viejos=comps.filter(p=>!p.coherencia_alerta&&(p.estado_evidencia||{}).tipo==='base_interna');
+  const J=D.meta.jerarquia_fuentes||{};
+  const grupos={};comps.forEach(p=>{const t=(p.estado_evidencia||{}).tipo||'—';(grupos[t]=grupos[t]||[]).push(p.name);});
+  return `<div class="sec" style="margin-top:30px">Coherencia del estado · de dónde sabemos qué</div>
+   <div style="font-size:12px;color:#999;margin-bottom:14px;max-width:900px">${J.regla||''}</div>
+   <div style="display:flex;gap:9px;flex-wrap:wrap;margin-bottom:14px;max-width:960px">
+     ${(J.orden||[]).map(t=>{const n=(grupos[t]||[]).length;if(!n)return '';
+       return `<div style="background:#fff;border:1px solid #e6e1d4;border-radius:11px;padding:9px 14px;min-width:140px" title="${(grupos[t]||[]).join(', ')}">
+         <div style="font-size:18px;font-weight:800;color:${t==='whatsapp'||t==='campo'?'#2F7D54':t==='base_interna'?'#b9863b':'#5b7e91'}">${n}</div>
+         <div style="font-size:10.5px;color:#7a7a7a">${(J.etiquetas||{})[t]||t}</div></div>`;}).join('')}
+   </div>
+   ${alertas.length?`<div style="background:#FBECEC;border:1px solid #e0b4b4;border-radius:12px;padding:13px 17px;max-width:960px;margin-bottom:12px">
+     <div style="font-size:13px;font-weight:700;color:#7a2020;margin-bottom:6px">⚠️ ${alertas.length} datos que no cuadran y hay que confirmar</div>
+     ${alertas.map(p=>`<div style="font-size:11.5px;color:#5a3030;line-height:1.55;padding:3px 0"><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#7a2020">${p.name}</a> — ${p.coherencia_alerta}</div>`).join('')}</div>`:''}
+   ${viejos.length?`<div style="background:#faf8f2;border:1px solid #ece7d9;border-radius:12px;padding:13px 17px;max-width:960px">
+     <div style="font-size:13px;font-weight:700;color:#8a5a12;margin-bottom:4px">🗂 ${viejos.length} proyectos con el estado sin reconfirmar</div>
+     <div style="font-size:11.5px;color:#6b6355;line-height:1.55">Su estado viene del relevamiento inicial de junio y nadie lo ha confirmado desde entonces: ${viejos.map(p=>p.name).join(' · ')}.</div></div>`:''}`;
 }
 
 /* ARCHIVO DE LA ZONA · brochures y planos de proyectos que no entran al benchmark */

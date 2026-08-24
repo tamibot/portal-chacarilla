@@ -32,6 +32,58 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-24",
+    "proyecto": "Floresta Living 444",
+    "dev": "EE Inmobiliaria",
+    "proyecto_id": "floresta-living-444",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría de coherencia",
+    "autor": "Benchmark",
+    "texto": "Estaba marcado «entrega inmediata» con fecha de entrega en diciembre-2026: no puede ser las dos cosas. Se corrigió a «en construcción / en acabados». Además, EE Inmobiliaria ya no lo lista ni entre sus proyectos en venta ni entre los entregados (revisado el 24-ago-2026), pero en el recorrido del 22-ago seguía con el cartel de licencia puesto y publicidad de venta activa. Queda en revisión hasta que Cecilia lo confirme.",
+    "cita": "Cartel en fachada: «EDIFICACIÓN DE VIVIENDA MULTIFAMILIAR · 6 PISOS + AZOTEA · Depas de 2 y 3 dorm · flats desde 85 m²» — 22-ago-2026",
+    "imgs": [
+     "assets/campo/floresta-living-cartel.jpg"
+    ],
+    "fuentes": [
+     "https://eeinmobiliaria.com/proyectos/",
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Monte Flor",
+    "dev": "Constructora Magnífica",
+    "proyecto_id": "monteflor",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría de coherencia",
+    "autor": "Benchmark",
+    "texto": "Su fecha de entrega (agosto-2026) ya venció y lo seguíamos mostrando como «en construcción». No sabemos si entregó o si se corrió: queda marcado en revisión y entra a la ronda de pedidos con la pregunta directa de entrega.",
+    "cita": "Auditoría de coherencia del 24-ago-2026: entrega declarada ago-2026, estado declarado «en construcción».",
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Ave. del Sur 220",
+    "dev": "Grupo Espacio Urbano (GEU)",
+    "proyecto_id": "ave-del-sur-220",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría interna",
+    "autor": "Benchmark",
+    "texto": "Se montó una auditoría de coherencia que corre en cada publicación: ya no se puede publicar un proyecto que diga «entrega inmediata» con la entrega en el futuro, uno «en planos» que remate últimas unidades o tenga obra terminada, ni uno cuya fecha de entrega venció y sigue en construcción. Además cada proyecto declara ahora DE DÓNDE sale su estado y con qué fecha, con la regla de que manda lo más reciente y, a igualdad, manda WhatsApp. Hoy: 2 proyectos con estado dicho por el asesor, 10 vistos en campo, 4 confirmados en web oficial, 6 por brochure y 13 que arrastran el relevamiento de junio sin reconfirmar.",
+    "cita": "Nuevas reglas en scripts/validar.py, bloque «coherencia del relato».",
+    "fuentes": [
+     "Vista Análisis → Cobertura de datos → Coherencia del estado"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
     "proyecto": "La Floresta Boulevard",
     "dev": "Boulevard",
     "proyecto_id": "la-floresta-boulevard",
@@ -1385,8 +1437,8 @@ window.PORTAL_DATA = {
   "pedidos_ronda": {
    "numero": 2,
    "fecha": "2026-08-24",
-   "foco": "cochera incluida, promoción vigente y tarifario por unidad",
-   "nota": "Un mensaje por asesor, no por proyecto: varios llevan 2 a 4 proyectos con el mismo WhatsApp.",
+   "foco": "cochera incluida, promoción vigente, tarifario por unidad y confirmar fecha de entrega",
+   "nota": "Un mensaje por asesor, no por proyecto. Se pregunta la entrega a los que llevan meses sin reconfirmar o cuya fecha ya venció.",
    "lista": [
     {
      "numero": "981386111",
@@ -1396,10 +1448,11 @@ window.PORTAL_DATA = {
       "Conde de la Vega 251",
       "Monte Carmelo 250",
       "Montemar 269",
-      "Monte Mayor 177"
+      "Monte Mayor 177",
+      "Conde de la Vega 128"
      ],
-     "pide": "tarifario por unidad + promoción",
-     "mensaje": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Conde de la Vega 251, Monte Carmelo 250, Montemar 269 y Monte Mayor 177) por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "tarifario por unidad + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Conde de la Vega 251, Monte Carmelo 250, Montemar 269, Monte Mayor 177 y Conde de la Vega 128) por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "988609572",
@@ -1409,8 +1462,8 @@ window.PORTAL_DATA = {
       "Floresta Living 444",
       "Parque Monte Carmelo"
      ],
-     "pide": "tarifario por unidad + cochera + promoción",
-     "mensaje": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Floresta Living 444 y Parque Monte Carmelo) por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "tarifario por unidad + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Floresta Living 444 y Parque Monte Carmelo) por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "944216477",
@@ -1431,8 +1484,8 @@ window.PORTAL_DATA = {
       "Precursores 525",
       "Living Monte Real"
      ],
-     "pide": "lista de precios + tarifario por unidad + cochera + promoción",
-     "mensaje": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Precursores 525 y Living Monte Real) por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "lista de precios + tarifario por unidad + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Precursores 525 y Living Monte Real) por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "920374177",
@@ -1451,18 +1504,18 @@ window.PORTAL_DATA = {
      "proyectos": [
       "FLEXI III"
      ],
-     "pide": "lista de precios + cochera + promoción",
-     "mensaje": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de FLEXI III por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "lista de precios + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de FLEXI III por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "996898925",
-     "nombre": "Indira",
+     "nombre": "Indira Ramos",
      "dev": "IPIROS",
      "proyectos": [
       "Precursores II"
      ],
      "pide": "promoción",
-     "mensaje": "Hola Indira! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. Tienen alguna promoción o descuento este mes? Gracias!"
+     "mensaje": "Hola Indira Ramos! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. Tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "966351473",
@@ -1473,6 +1526,16 @@ window.PORTAL_DATA = {
      ],
      "pide": "tarifario por unidad + promoción",
      "mensaje": "Hola Isabel! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Estelar 1080 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "908800562",
+     "nombre": "Mónica",
+     "dev": "Boulevard",
+     "proyectos": [
+      "La Floresta Boulevard"
+     ],
+     "pide": "tarifario por unidad",
+     "mensaje": "Hola Mónica! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. Me pasas la lista de precios de La Floresta Boulevard por unidad, con lo que queda disponible? Gracias!"
     },
     {
      "numero": "943729552",
@@ -1486,13 +1549,13 @@ window.PORTAL_DATA = {
     },
     {
      "numero": "994448991",
-     "nombre": "Rebeca",
+     "nombre": "Rebeca Ruiz",
      "dev": "Odima Inmobiliaria",
      "proyectos": [
       "HANA"
      ],
      "pide": "tarifario por unidad + promoción",
-     "mensaje": "Hola Rebeca! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+     "mensaje": "Hola Rebeca Ruiz! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "999024346",
@@ -1535,16 +1598,6 @@ window.PORTAL_DATA = {
      "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de D'Mont 2 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
-     "numero": "945678879",
-     "nombre": null,
-     "dev": "Boulevard",
-     "proyectos": [
-      "La Floresta Boulevard"
-     ],
-     "pide": "tarifario por unidad + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de La Floresta Boulevard por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
-    },
-    {
      "numero": "924447479",
      "nombre": null,
      "dev": "Edifikarte",
@@ -1561,8 +1614,8 @@ window.PORTAL_DATA = {
      "proyectos": [
       "Monte Carmelo 551"
      ],
-     "pide": "tarifario por unidad + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "tarifario por unidad + confirmar entrega + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "981349116",
@@ -1571,8 +1624,8 @@ window.PORTAL_DATA = {
      "proyectos": [
       "Monte Flor"
      ],
-     "pide": "tarifario por unidad + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Flor por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "tarifario por unidad + confirmar entrega + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Flor por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "957733272",
@@ -1601,8 +1654,8 @@ window.PORTAL_DATA = {
      "proyectos": [
       "Precursores Verde"
      ],
-     "pide": "lista de precios + cochera + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Precursores Verde por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "lista de precios + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Precursores Verde por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "916123888",
@@ -1611,8 +1664,8 @@ window.PORTAL_DATA = {
      "proyectos": [
       "The Eleven"
      ],
-     "pide": "lista de precios + cochera + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "lista de precios + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
      "numero": "908914344",
@@ -1631,8 +1684,8 @@ window.PORTAL_DATA = {
      "proyectos": [
       "Floresta 343"
      ],
-     "pide": "lista de precios + cochera + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+     "pide": "lista de precios + confirmar entrega + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     }
    ]
   },
@@ -1668,6 +1721,25 @@ window.PORTAL_DATA = {
      "resultado": "Sin datos de competencia — es coordinación interna del equipo"
     }
    ]
+  },
+  "jerarquia_fuentes": {
+   "orden": [
+    "whatsapp",
+    "campo",
+    "web_oficial",
+    "brochure",
+    "portal",
+    "base_interna"
+   ],
+   "regla": "Manda lo más reciente, y a igualdad de fecha manda WhatsApp: lo que dice hoy el asesor por chat pesa más que la web, el brochure o un portal, porque esos tardan semanas en actualizarse. Un dato de campo posterior a un chat sí lo reemplaza (vimos la obra después de que nos escribieran).",
+   "etiquetas": {
+    "whatsapp": "💬 Asesor por WhatsApp",
+    "campo": "📷 Visto en campo",
+    "web_oficial": "🌐 Web oficial",
+    "brochure": "📕 Brochure",
+    "portal": "🔎 Portal inmobiliario",
+    "base_interna": "🗂 Relevamiento interno"
+   }
   }
  },
  "quadrant": [
@@ -2102,7 +2174,12 @@ window.PORTAL_DATA = {
    "wa_label": "Grupo Dicon",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Aura Sul por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
-   "como_presenta": "Concepto con el que se anuncian: «Departamentos boutique en Chacarilla»."
+   "como_presenta": "Concepto con el que se anuncian: «Departamentos boutique en Chacarilla».",
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "Grupo Dicon lo lista hoy como «En Construcción»."
+   }
   },
   {
    "id": "conde-ii",
@@ -2313,7 +2390,12 @@ window.PORTAL_DATA = {
    ],
    "foto_campo": "2026-08-22",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Conde II por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? Gracias!",
-   "pedido_que": "cochera + tarifario por unidad"
+   "pedido_que": "cochera + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "whatsapp",
+    "fecha": "2026-08-21",
+    "nota": "Brochure 2026 enviado por AyD: construcción 2026, entrega 2027. Placa de obra: 13 meses de plazo."
+   }
   },
   {
    "id": "conde-de-la-vega-251",
@@ -2441,7 +2523,12 @@ window.PORTAL_DATA = {
    "foto_campo": "2026-08-22",
    "como_presenta": "En obra sólo comunican el remate: «ÚLTIMOS DÚPLEX», con los metrajes y el WhatsApp de Edifikarte.",
    "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Conde de la Vega 251 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Edificio terminado y habitado, cartel «ÚLTIMOS DÚPLEX» en fachada."
+   }
   },
   {
    "id": "conde-de-la-vega-460",
@@ -3048,7 +3135,12 @@ window.PORTAL_DATA = {
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
    "pedido": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción"
+   "pedido_que": "promoción",
+   "estado_evidencia": {
+    "tipo": "brochure",
+    "fecha": "2026-05-18",
+    "nota": "Lista de precios oficial de Azzurra: 14 de 26 vendidas."
+   }
   },
   {
    "id": "dmont-dicon",
@@ -3345,7 +3437,12 @@ window.PORTAL_DATA = {
    ],
    "wa_label": "Grupo Dicon",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de D'Mont 2 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "Grupo Dicon lo lista hoy como «En Construcción», desde US$263,064."
+   }
   },
   {
    "id": "estelar-1080",
@@ -3481,16 +3578,21 @@ window.PORTAL_DATA = {
    "foto_campo": "2026-08-22",
    "como_presenta": "Venden el piso alto como argumento: «Tu nuevo 5° piso en Chacarilla», de 80 a 108 m², con financiamiento BBVA.",
    "pedido": "Hola Isabel! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Estelar 1080 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Sala de ventas de Galeon atendida en la esquina; obra en curso."
+   }
   },
   {
    "id": "floresta-living-444",
    "name": "Floresta Living 444",
    "dev": "EE Inmobiliaria",
    "addr": "Av. de la Floresta 442, Urb. Chacarilla del Estanque, Santiago de Surco (borde Oeste, dentro de la urbanizacion).",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "TERMINADO · entrega inmediata",
-   "entrega": "Diciembre 2026",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En acabados · venta activa (estado por reconfirmar)",
+   "entrega": "Diciembre 2026 (por reconfirmar con la asesora)",
    "lat": -12.116010161531724,
    "lng": -76.98720446798781,
    "isGEU": false,
@@ -3598,7 +3700,7 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: tótem en la vereda.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "Terminado",
+   "estado_obra": "Edificio levantado. En el recorrido del 22-ago-2026 seguía con el cartel de licencia de obra puesto y con publicidad de venta activa («Depas de 2 y 3 dorm, flats desde 85 m²»), o sea en acabados, no entregado.",
    "cuadrante_verificado": "2026-08-22",
    "documentos": [
     {
@@ -3625,7 +3727,13 @@ window.PORTAL_DATA = {
    "stock": {
     "n": 5,
     "label": "5 disponibles de 18 (relevamiento jun-2026)"
-   }
+   },
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Cartel de obra y publicidad de venta vigentes en fachada. ⚠ EE Inmobiliaria ya no lo lista ni en «en venta» ni en «entregados» (revisado 24-ago-2026): hay que preguntarle a Cecilia en qué quedó."
+   },
+   "coherencia_alerta": "Figuraba como «entrega inmediata» con entrega en diciembre-2026: se corrigió a «en construcción». Falta que la asesora confirme la fecha real."
   },
   {
    "id": "hana",
@@ -3743,7 +3851,12 @@ window.PORTAL_DATA = {
    "asesora": "Rebeca Ruiz",
    "wa_label": "Rebeca Ruiz",
    "pedido": "Hola Rebeca! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "brochure",
+    "fecha": "2026-02-01",
+    "nota": "Brochure oficial: los tres sótanos figuran íntegramente VENDIDOS."
+   }
   },
   {
    "id": "jardines-monte-real",
@@ -3908,7 +4021,12 @@ window.PORTAL_DATA = {
    "pisos": 6,
    "como_presenta": "La valla vende «ÚLTIMAS UNIDADES» con entrega marzo 2027, flats desde 127 m² y dúplex desde 209 m², y 7 áreas sociales. Financia BCP y exhibe certificación AIS.",
    "pedido": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Jardines de Monte Real por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad"
+   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Valla de obra: entrega marzo 2027, «últimas unidades»."
+   }
   },
   {
    "id": "la-floresta-boulevard",
@@ -4116,7 +4234,12 @@ window.PORTAL_DATA = {
    "horario_ventas": "Lunes a domingo, 11:00–18:00, en la obra (Montepío 120)",
    "promocion": "«Estamos en los últimos días de precios de preventa» (jul-2026). Además, por la compra del departamento regalan 1 estacionamiento.",
    "politica_precio": "El precio de lista INCLUYE 1 estacionamiento («por la compra de su Dpto le brindamos 1 Estacionamiento»). El US$/m² del portal lo descuenta a US$17,000, valor que la propia asesora confirmó.",
-   "como_presenta": "Mónica abre presentando ubicación y parque («frente al parque La Floresta»), luego el financiamiento BCP, después mete urgencia («últimos días de precios de preventa») y recién ahí manda unidades concretas con m², precio y el estacionamiento de regalo. Cierra invitando a la sala de ventas de la obra y hace seguimiento a los pocos días."
+   "como_presenta": "Mónica abre presentando ubicación y parque («frente al parque La Floresta»), luego el financiamiento BCP, después mete urgencia («últimos días de precios de preventa») y recién ahí manda unidades concretas con m², precio y el estacionamiento de regalo. Cierra invitando a la sala de ventas de la obra y hace seguimiento a los pocos días.",
+   "estado_evidencia": {
+    "tipo": "whatsapp",
+    "fecha": "2026-07-21",
+    "nota": "Mónica: obra iniciada ~nov-2025, entrega abril 2027, en «últimos días de precios de preventa»."
+   }
   },
   {
    "id": "monte-alegre",
@@ -4365,7 +4488,12 @@ window.PORTAL_DATA = {
      "fuente": "Web oficial de Edifikarte (24-ago-2026)"
     }
    ],
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "brochure",
+    "fecha": "2026-07-01",
+    "nota": "Brochure de julio-2026 + valla con precios de entrada; obra aún no iniciada."
+   }
   },
   {
    "id": "monte-carmelo-250",
@@ -4494,7 +4622,12 @@ window.PORTAL_DATA = {
    "foto_campo": "2026-08-22",
    "como_presenta": "Venden zona e inversión: «Tu depa en la mejor zona de Chacarilla» y «Tu inversión segura en el mejor lugar».",
    "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 250 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "monte-carmelo-551",
@@ -4708,7 +4841,12 @@ window.PORTAL_DATA = {
    "wa_label": "Balance Grupo Inmobiliario",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
-   "como_presenta": "Concepto con el que se anuncian: «Frente al parque — dúplex y flats»."
+   "como_presenta": "Concepto con el que se anuncian: «Frente al parque — dúplex y flats».",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "monte-mar-167",
@@ -4917,7 +5055,12 @@ window.PORTAL_DATA = {
    ],
    "asesora": "Jenny",
    "wa_label": "Jenny",
-   "financia": "Interbank"
+   "financia": "Interbank",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "monte-mayor-177",
@@ -5047,7 +5190,12 @@ window.PORTAL_DATA = {
    "wa_label": "Jenny",
    "foto_campo": "2026-08-22",
    "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Mayor 177 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Cartel «ÚLTIMO DEPA · 2 dorms 86 m²» en la reja; edificio entregado desde ago-2024."
+   }
   },
   {
    "id": "monte-mayor-183",
@@ -5573,7 +5721,12 @@ window.PORTAL_DATA = {
    "wa_label": "Jenniffer",
    "foto_campo": "2026-08-22",
    "pedido": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción"
+   "pedido_que": "promoción",
+   "estado_evidencia": {
+    "tipo": "brochure",
+    "fecha": "2026-06-24",
+    "nota": "Lista de precios oficial de Azzurra con estado por unidad: 16 de 20 vendidas."
+   }
   },
   {
    "id": "monte-real-265",
@@ -5876,7 +6029,12 @@ window.PORTAL_DATA = {
    "caseta_nota": "Sin caseta: carteles «ÚLTIMOS DEPAS» colgados en la propia fachada del edificio terminado.",
    "caseta_fecha": "2026-08-22",
    "pedido": "Hola Nadia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Sierpe por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad"
+   "pedido_que": "promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Edificio terminado con carteles «ÚLTIMOS DEPAS» en fachada."
+   }
   },
   {
    "id": "monte-umbroso",
@@ -5999,7 +6157,7 @@ window.PORTAL_DATA = {
    "addr": "Calle Monte Umbroso 166 con Monte Flor, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
-   "entrega": "Agosto 2026 (aprox.)",
+   "entrega": "Agosto 2026 — fecha vencida, sin confirmar si ya entregó",
    "lat": -12.111928239024742,
    "lng": -76.98275878252593,
    "isGEU": false,
@@ -6111,7 +6269,13 @@ window.PORTAL_DATA = {
     }
    ],
    "wa_label": "Constructora Magnífica",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Valla del proyecto vigente en la esquina de Monte Umbroso con Monte Flor. No se pudo ver el avance de obra desde la calle."
+   },
+   "coherencia_alerta": "La fecha de entrega que teníamos (ago-2026) ya venció y seguimos marcándolo en construcción. Hay que confirmar con Constructora Magnífica si entregó o se corrió."
   },
   {
    "id": "parque-monte-carmelo",
@@ -6405,7 +6569,12 @@ window.PORTAL_DATA = {
    "wa_label": "Cecilia",
    "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Parque Monte Carmelo por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
-   "como_presenta": "Concepto con el que se anuncian: «Frente al parque Monte Carmelo»."
+   "como_presenta": "Concepto con el que se anuncian: «Frente al parque Monte Carmelo».",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "precursores-525",
@@ -6546,7 +6715,12 @@ window.PORTAL_DATA = {
    "wa_label": "Joyce",
    "foto_campo": "2026-08-22",
    "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Precursores 525 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad"
+   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "precursores-ii",
@@ -6691,7 +6865,12 @@ window.PORTAL_DATA = {
    "asesora": "Indira Ramos",
    "wa_label": "Indira Ramos",
    "pedido": "Hola Indira! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción"
+   "pedido_que": "promoción",
+   "estado_evidencia": {
+    "tipo": "brochure",
+    "fecha": "2026-06-01",
+    "nota": "Lista de precios oficial con estado por unidad: 16 vendidas."
+   }
   },
   {
    "id": "santorini",
@@ -6953,7 +7132,12 @@ window.PORTAL_DATA = {
    "pedido": "Hola Rossana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Santorini por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
    "politica_precio": "El precio de lista de cada departamento YA incluye 1 estacionamiento. La 2.ª cochera paralela cuesta US$18,000 adicionales (delta constante en todas las tipologías del tarifario). El US$/m² del portal descuenta esos US$18,000.",
-   "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos."
+   "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos.",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Cartel informativo de obra vigente: 14 meses de plazo, sin punto de venta en sitio."
+   }
   },
   {
    "id": "spazio",
@@ -7129,7 +7313,7 @@ window.PORTAL_DATA = {
     "n": 20,
     "label": "20 de 27 disponibles (panel de la sala de ventas)"
    },
-   "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)",
+   "estado_obra": "Obra en curso con sala de ventas propia atendida (dos banderolas «INFORMES» en la puerta). Grupo Dicon lo lista como «En Construcción» en su web al 24-ago-2026.",
    "cuadrante_verificado": "2026-08-22",
    "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00",
    "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon + panel de la sala de ventas",
@@ -7153,7 +7337,12 @@ window.PORTAL_DATA = {
    "wa_label": "Grupo Dicon",
    "foto_campo": "2026-08-22",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Spazio por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad"
+   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "Grupo Dicon lo lista hoy como «En Construcción»; en campo (22-ago) tiene sala de ventas atendida."
+   }
   },
   {
    "id": "terraverde",
@@ -7332,7 +7521,12 @@ window.PORTAL_DATA = {
     }
    ],
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) sigue vigente la lista de precios que me pasaste de Monte Umbroso 247? cambió algo? Gracias!",
-   "pedido_que": "reconfirmar precios"
+   "pedido_que": "reconfirmar precios",
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "AyD lo mantiene «EN PLANOS» en su web."
+   }
   },
   {
    "id": "narciso-ayd",
@@ -7429,7 +7623,7 @@ window.PORTAL_DATA = {
    "addr": "Av. de los Precursores 280, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En obra · ÚLTIMOS departamentos",
-   "entrega": "Por confirmar (obra 2025–2028 según licencia)",
+   "entrega": "Septiembre 2026 (relevamiento jun-2026, por reconfirmar)",
    "lat": -12.112983,
    "lng": -76.979264,
    "isGEU": false,
@@ -7512,7 +7706,13 @@ window.PORTAL_DATA = {
     }
    ],
    "horario_ventas": "Tienen departamento piloto visitable («Visite nuestro piloto» en el cartel)",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Cartel de obra: «ÚLTIMOS DEPTOS» y depa piloto visitable."
+   },
+   "coherencia_alerta": "La entrega de sep-2026 viene del relevamiento de junio y está por vencer: confirmar con Guerin si se mantiene."
   },
   {
    "id": "astete-living",
@@ -7561,7 +7761,12 @@ window.PORTAL_DATA = {
    "pedido": "Hola! Vi el anuncio de Astete Living en Velasco Astete 1419. Me pueden pasar información del proyecto: planos, metrajes y precios? Y para cuándo es el lanzamiento?",
    "pedido_que": "info del proyecto (no hay nada publicado)",
    "contactos": [],
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "flexi-iii",
@@ -7618,7 +7823,12 @@ window.PORTAL_DATA = {
     }
    ],
    "asesora": "Diana",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "living-monte-real",
@@ -7673,7 +7883,12 @@ window.PORTAL_DATA = {
      "fuente": "Cartel/valla fotografiada en el recorrido del 22-ago-2026 — el número está impreso en el cartel del proyecto"
     }
    ],
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Obra avanzada con cartel de venta y WhatsApp visible."
+   }
   },
   {
    "isGEU": false,
@@ -7737,7 +7952,12 @@ window.PORTAL_DATA = {
     }
    ],
    "wa_label": "Proyectos PyR",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "isGEU": false,
@@ -7782,7 +8002,12 @@ window.PORTAL_DATA = {
    "pedido": "Hola! Una consulta: tienen algún proyecto en Calle Monte Alegre 137, en Chacarilla? Me interesa la zona y quisiera información.",
    "pedido_que": "confirmar inmobiliaria y proyecto",
    "wa_label": null,
-   "contactos": []
+   "contactos": [],
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "isGEU": false,
@@ -7827,7 +8052,12 @@ window.PORTAL_DATA = {
    "pedido": "Hola! Buenas. Me interesa el proyecto frente al Parque La Floresta. Me pasan los planos por tipología y la lista de precios? También quería saber si la cochera va incluida en el precio.",
    "pedido_que": "planos + tarifario + nombre del proyecto",
    "wa_label": null,
-   "contactos": []
+   "contactos": [],
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "id": "ten-apartments",
@@ -7950,7 +8180,12 @@ window.PORTAL_DATA = {
      "fuente": "Cartel/tótem fotografiado en el recorrido del 22-ago-2026"
     }
    ],
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "estado_evidencia": {
+    "tipo": "brochure",
+    "fecha": "2026-08-19",
+    "nota": "Brochure de agosto-2026: en construcción, entrega 31-dic-2027."
+   }
   },
   {
    "isGEU": false,
@@ -8099,7 +8334,12 @@ window.PORTAL_DATA = {
      "numero": "908892190",
      "fuente": "Web oficial de Vibra Inmobiliaria (24-ago-2026)"
     }
-   ]
+   ],
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   },
   {
    "isGEU": false,
@@ -8127,7 +8367,7 @@ window.PORTAL_DATA = {
    "dev": "V&V Grupo Inmobiliario",
    "addr": "Av. de los Precursores 421, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Estado por confirmar (brochure en archivo)",
+   "estado_raw": "Estado sin confirmar — brochure en archivo, sin fuente reciente",
    "estado_obra": "Por verificar en el próximo recorrido de campo.",
    "entrega": "Por confirmar",
    "lat": -12.115046,
@@ -8171,7 +8411,13 @@ window.PORTAL_DATA = {
    ],
    "pedido": "Hola! Consulta por el proyecto Le Parc, en Av. de los Precursores 421. Sigue en venta? Me pueden enviar los planos, metrajes disponibles y la lista de precios?",
    "pedido_que": "confirmar estado + precios",
-   "como_presenta": "Concepto con el que se anuncian: «Le Parc — lifestyle en Chacarilla»."
+   "como_presenta": "Concepto con el que se anuncian: «Le Parc — lifestyle en Chacarilla».",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-01",
+    "nota": "Sólo tenemos su brochure archivado. V&V no publica ficha activa y no hay contacto verificado."
+   },
+   "coherencia_alerta": "Estado sin respaldo: el brochure no dice fecha de entrega y no tenemos contacto. Verificar en el próximo recorrido."
   },
   {
    "id": "conde-de-la-vega-128",
@@ -8252,7 +8498,12 @@ window.PORTAL_DATA = {
     }
    ],
    "pedido": "Hola Jenny! Consulta por Conde de la Vega 128: me pasas la lista de precios con lo que queda disponible? el precio incluye cochera? y para cuándo entregan?",
-   "pedido_que": "lista de precios + cochera + entrega"
+   "pedido_que": "lista de precios + cochera + entrega",
+   "estado_evidencia": {
+    "tipo": "base_interna",
+    "fecha": "2026-06-28",
+    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+   }
   }
  ]
 };

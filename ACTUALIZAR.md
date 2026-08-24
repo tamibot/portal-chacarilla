@@ -152,3 +152,38 @@ Reglas que se aplican siempre en este paso:
 
 Lo barrido queda anotado en `meta.fuentes_barridas` con la fecha, para no
 repetir trabajo el mes siguiente.
+
+---
+
+## Regla de oro · qué fuente manda
+
+Manda **lo más reciente**, y a igualdad de fecha manda **WhatsApp**: lo que dice
+hoy el asesor por chat pesa más que la web, el brochure o un portal, porque esos
+tardan semanas en actualizarse. Un dato de campo posterior a un chat sí lo
+reemplaza (vimos la obra después de que nos escribieran).
+
+Orden: `whatsapp` → `campo` → `web_oficial` → `brochure` → `portal` → `base_interna`.
+
+Cada proyecto declara de dónde sale su estado:
+
+```json
+"estado_evidencia": { "tipo": "whatsapp", "fecha": "2026-07-21",
+  "nota": "Mónica: obra iniciada ~nov-2025, entrega abril 2027." }
+```
+
+## El relato tiene que cerrar
+
+`scripts/validar.py` **bloquea la publicación** si el estado, la entrega, el
+stock y la obra se contradicen:
+
+- «Entrega inmediata» con fecha de entrega futura
+- «Entrega inmediata» con obra en ejecución o sin obra
+- «En planos» que remata últimas unidades o tiene obra terminada
+- Entrega vencida y el proyecto sigue «en construcción» o «en planos»
+- Proyecto visible sin `estado_evidencia`
+
+Cuando la contradicción es real y todavía no se puede resolver, se declara en
+`coherencia_alerta` con qué falta preguntar. Eso desbloquea la publicación, sale
+en rojo en **Cobertura de datos → Coherencia del estado**, y mete al proyecto en
+la ronda de pedidos con la pregunta de entrega. Lo que no se hace nunca es
+inventar la fecha para que cuadre.

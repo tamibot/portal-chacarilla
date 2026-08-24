@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824k"></script>
+<script src="data/portal-data.js?v=20260824m"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -211,6 +211,11 @@ function render(){
    ${p.promocion?`<div class="alert" style="background:#FBECF2;border-color:#e6c0d2;color:#5a2038">🎁 <b>Promoción vigente:</b> ${p.promocion}</div>`:''}
    ${p.como_presenta?`<div class="alert" style="background:#EEF2F7;border-color:#c6d2e0;color:#22303f">🗣 <b>Cómo lo presentan:</b> ${p.como_presenta}</div>`:''}
    ${p.tarifario?`<div style="margin-top:12px"><a class="btn broch" href="${p.tarifario}" target="_blank">💲 Ver tarifario / cotización</a></div>`:''}
+   ${(()=>{const e=p.estado_evidencia;if(!e)return '';const L=(D.meta.jerarquia_fuentes||{}).etiquetas||{};
+     const fresco=e.tipo==='whatsapp'||e.tipo==='campo';
+     return `<div class="alert" style="background:${fresco?'#EAF3DE':'#faf8f2'};border-color:${fresco?'#cfe0b8':'#ece7d9'};color:#2a3a20">
+       ${L[e.tipo]||'🗂'} <b>De dónde sale el estado:</b> ${e.nota} <span style="color:#8a8577">(${fmtFechaCorta(e.fecha)})</span></div>`;})()}
+   ${p.coherencia_alerta?`<div class="alert" style="background:#FBECEC;border-color:#e0b4b4;color:#7a2020">⚠️ <b>Dato en revisión:</b> ${p.coherencia_alerta}</div>`:''}
    ${p.estado_obra?`<div class="alert" style="background:#f4f1ea;border-color:#d9d3c4;color:#3a3a2a">🏗 <b>Estado de obra (visita ${p.caseta_fecha||D.meta.ultimo_recorrido||''}):</b> ${p.estado_obra}</div>`:''}
    ${p.caseta_nota?`<div class="alert" style="background:#f2f7f2;border-color:#cfe0b8;color:#2a3a20">🏠 <b>Punto de venta (visita ${p.caseta_fecha||''}):</b> ${p.caseta_nota}</div>`:''}
    <div class="sec">Monitoreo · Time lapse <span style="font-weight:600;color:${vi.color};font-size:11px;text-transform:none;letter-spacing:0">● verificado ${vi.dias===0?'hoy':'hace '+vi.dias+' días'}</span></div>
