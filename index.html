@@ -227,7 +227,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260823h"></script>
+<script src="data/portal-data.js?v=20260823i"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -258,11 +258,10 @@ const waHref=(p,num)=>{
 };
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const typText=(p)=>[p.estado_raw,p.comentario,...(p.typologies||[]).map(t=>`${t.unidad||''} ${t.tipo||''} ${t.piso||''}`)].join(' ').toLowerCase();
-function casetaLabel(p){const c=p.caseta_ventas;
-  if(c==='si')return '<span style="color:#2F7D54;font-weight:700;white-space:nowrap" title="'+(p.caseta_nota||'')+'">🏠 Sala de ventas</span>';
-  if(c==='banner')return '<span style="color:#b9863b;white-space:nowrap" title="'+(p.caseta_nota||'')+'">🪧 Solo cartel</span>';
-  if(c==='no')return '<span style="color:#9a958c;white-space:nowrap" title="'+(p.caseta_nota||'')+'">— Sin punto de venta</span>';
-  return '<span style="color:#c2beb2;white-space:nowrap">no observado</span>';}
+const CASETA={si:['🏠 Caseta atendida','#2F7D54'],cerrada:['🏠 Caseta cerrada','#b9863b'],
+  banner:['🪧 Solo cartel','#8a5a12'],no:['✕ Nada en obra','#9a958c'],nd:['· no observado','#c2beb2']};
+function casetaLabel(p){const k=p.caseta_ventas||'nd';const [t,c]=CASETA[k]||CASETA.nd;
+  return `<span style="color:${c};font-weight:${k==='si'?700:400};white-space:nowrap" title="${(p.caseta_nota||'').replace(/"/g,'')}">${t}</span>`;}
 function cocheraLabel(p){const s=parkingStatus(p);
   if(s==='si')return '<span style="color:#2F7D54;font-weight:700;white-space:nowrap">✓ Incluida</span>';
   if(s==='no')return '<span style="color:#6d776e;white-space:nowrap">Aparte</span>';

@@ -32,6 +32,83 @@
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "The Eleven",
+    "dev": "Proyectos PyR",
+    "proyecto_id": "the-leven",
+    "tags": [
+     "nuevo",
+     "venta"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "Nombre real confirmado: «THE ELEVEN», de Proyectos PyR. Entrega inmediata, financiado por Scotiabank. Contacto 916 123 888 · ventas@proyectospyr.com.",
+    "cita": "Tótem de la marca fotografiado el 2026-08-22.",
+    "imgs": [
+     "assets/campo/the-eleven.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22 · foto IMG_7959"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "TEN Apartments",
+    "dev": "por confirmar",
+    "proyecto_id": "ten-apartments",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "PROYECTO NUEVO: cerco negro sobre Av. Velasco Astete rotulado «TEN Apartments — LIVE HERE, LIVE NOW», 1 a 3 dormitorios, WhatsApp 908 914 344. Obra con grúa torre.",
+    "cita": "Cerco rotulado fotografiado el 2026-08-22.",
+    "imgs": [
+     "assets/campo/ten-apartments.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22 · fotos IMG_7975–7978"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Monte Alegre 109",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-alegre",
+    "tags": [
+     "precio"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "Valla comercial: «ESPACIOS EXCLUSIVOS» — 3 dorms desde 115 m², 133 m² y 150 m²; 4 dorms desde 190 m².",
+    "cita": "Valla fotografiada el 2026-08-22.",
+    "imgs": [
+     "assets/campo/monte-alegre-valla.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22 · foto IMG_8003"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Santorini",
+    "dev": "Grupo Moryasoc",
+    "proyecto_id": "santorini",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "Cartel informativo de obra: propietario Grupo Moryasoc Proyecto 31 S.A.C., licencia 0401-2025, 6 pisos y azotea, 3 sótanos, 14 meses. NO tiene caseta de ventas ni publicidad comercial en la obra.",
+    "cita": "Cartel de obra fotografiado el 2026-08-22.",
+    "imgs": [
+     "assets/campo/santorini-cartel-obra.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22 · fotos IMG_8042–8046"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "— Cuadrante",
     "dev": "",
     "tags": [
@@ -838,7 +915,7 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 83 m.",
    "cuadrante_verificado": "2026-08-22",
-   "caseta_ventas": "si",
+   "caseta_ventas": "cerrada",
    "caseta_nota": "Caseta de ventas en el terreno, pero estaba CERRADA en la visita.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción"
@@ -2411,7 +2488,9 @@
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/",
    "img": "assets/img/monte-alegre.jpg",
-   "planos": [],
+   "planos": [
+    "assets/campo/monte-alegre-valla.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -2430,7 +2509,7 @@
     3,
     4
    ],
-   "comentario": "Lanzamiento NUEVO de Edifikarte (mismo dev que Monte Mayor 177), en preventa. Calle Monte Alegre 109, Chacarilla. Flats de 3–4 dorm, 115–276 m², 7 pisos. Sin precio público — Edifikarte cotiza directo. Aún no listado en portales (solo web oficial). Es el único lanzamiento genuinamente nuevo del cuadrante (ago-2026).",
+   "comentario": "Edifikarte, Calle Monte Alegre 109. Valla comercial fotografiada en campo (22-ago-2026): «ESPACIOS EXCLUSIVOS» — 3 dormitorios desde 115 m², 133 m² y 150 m²; 4 dormitorios desde 190 m². Próximo proyecto, aún sin lista de precios.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/monte-alegre/"
    ],
@@ -4346,7 +4425,7 @@
   {
    "id": "santorini",
    "name": "Santorini",
-   "dev": "Mongester Inmobiliaria",
+   "dev": "Grupo Moryasoc Proyecto 31 S.A.C. (Mongester)",
    "addr": "Calle Monte Real 380 con Monte Flor 693, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
@@ -4382,7 +4461,8 @@
     "assets/planos/santorini/plano-b-17.jpg",
     "assets/planos/santorini/plano-b-18.jpg",
     "assets/planos/santorini/plano-b-19.jpg",
-    "assets/planos/santorini/plano-b-20.jpg"
+    "assets/planos/santorini/plano-b-20.jpg",
+    "assets/campo/santorini-cartel-obra.jpg"
    ],
    "brochure": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
    "typologies": [
@@ -4494,7 +4574,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "23 deptos frente a parque; >50% vendido, 9 disponibles. El brochure publica cada unidad con precio con 1 o 2 estacionamientos; valores por m² netos de estacionamiento. Entrega marzo 2027.",
+   "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -4535,10 +4615,10 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador).",
-   "estado_obra": "En construcción",
+   "estado_obra": "En obra · 6 pisos y azotea, 3 sótanos (cartel de obra). Sin señalización comercial.",
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_nota": "Sin caseta y sin publicidad comercial en la obra: solo el cartel informativo de obra que exige la municipalidad.",
    "caseta_fecha": "2026-08-22"
   },
   {
@@ -5025,7 +5105,7 @@
   },
   {
    "id": "flexi-iii",
-   "name": "FLEXI II / III",
+   "name": "FLEXI III",
    "dev": "Central Inmobiliaria",
    "addr": "Av. de los Precursores 152, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En planos",
@@ -5058,7 +5138,7 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: portón rotulado con la marca y un QR («Descubre FLEXI III»).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» y las anotaciones de campo lo registran como «FLEXI II»: confirmar el nombre comercial con el asesor. Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados.",
+   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados.",
    "fuentes": [
     "Recorrido de campo 2026-08-22 · foto IMG_7918"
    ],
@@ -5118,11 +5198,13 @@
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": null,
-   "web": null,
-   "img": null,
+   "wa": "916123888",
+   "web": "https://www.proyectospyr.com",
+   "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
-   "planos": [],
+   "planos": [
+    "assets/campo/the-eleven.jpg"
+   ],
    "typologies": [],
    "flats_summary": [],
    "cochera_status": "nd",
@@ -5134,24 +5216,25 @@
    "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia.",
    "fuentes": [
-    "Anotaciones de campo del recorrido 2026-08-22"
+    "Recorrido de campo 22-ago-2026 · fotos IMG_7958–7959",
+    "https://www.proyectospyr.com"
    ],
    "id": "the-leven",
-   "name": "The Leven",
-   "dev": "Por confirmar",
+   "name": "The Eleven",
+   "dev": "Proyectos PyR",
    "addr": "Av. de los Precursores 1443, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
-   "estado_raw": "ÚLTIMO departamento (cartel en fachada)",
-   "estado_obra": "Terminado · último departamento en venta",
+   "estado_raw": "ENTREGA INMEDIATA · últimas unidades",
+   "estado_obra": "Terminado · entrega inmediata",
    "entrega": "Por confirmar",
-   "lat": -12.118,
-   "lng": -76.976,
-   "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta de ventas: solo cartel en la fachada.",
+   "lat": -12.120753,
+   "lng": -76.98471,
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: tótem de la marca en la reja, con QR y contacto.",
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": false,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. ÚLTIMO departamento (cartel en fachada). Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
+   "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia."
   },
   {
    "isGEU": false,
@@ -5234,6 +5317,50 @@
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
    "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
+  },
+  {
+   "id": "ten-apartments",
+   "name": "TEN Apartments",
+   "dev": "EE Inmobiliaria (por confirmar)",
+   "addr": "Av. Velasco Astete, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En obra · grúa torre en sitio",
+   "estado_obra": "En obra con grúa torre; cerco negro rotulado con la marca",
+   "entrega": "Por confirmar",
+   "lat": -12.12004,
+   "lng": -76.98297,
+   "isGEU": false,
+   "en_cuadrante": false,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "1–3",
+   "m2": "Por confirmar",
+   "wa": "908914344",
+   "wa_label": "TEN Apartments",
+   "web": null,
+   "img": "assets/campo/ten-apartments.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/campo/ten-apartments.jpg"
+   ],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la numeración exacta.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: cerco negro rotulado con la marca, metrajes y WhatsApp.",
+   "caseta_fecha": "2026-08-22",
+   "descubierto_campo": "2026-08-22",
+   "cuadrante_verificado": "2026-08-22",
+   "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Cerco negro sobre Av. Velasco Astete rotulado «TEN Apartments — LIVE HERE, LIVE NOW», 1 a 3 dormitorios, WhatsApp 908 914 344. Obra con grúa torre. Faltan precios y tipologías.",
+   "fuentes": [
+    "Recorrido de campo 2026-08-22 · fotos IMG_7975–7978"
+   ],
+   "amenidades": [],
+   "precio_hist": []
   }
  ]
 }
