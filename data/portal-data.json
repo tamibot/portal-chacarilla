@@ -32,6 +32,44 @@
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "Conde de la Vega 251",
+    "dev": "Edifikarte",
+    "proyecto_id": "conde-de-la-vega-251",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "Ubicación CORREGIDA (estaba 126 m fuera de sitio). Verificado con la fachada: número 251 a la vista y letrero «ÚLTIMOS DÚPLEX — 2 dorm 95-122 m², 3 dorm 161 m²», Edifikarte, tel. 981 386 111.",
+    "cita": "Foto de la fachada con el número 251 y el letrero de ventas, 22-ago-2026 14:45 (GPS -12.11507, -76.98252).",
+    "imgs": [
+     "assets/campo/conde-de-la-vega-251.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_7898"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Monteflor",
+    "dev": "por confirmar",
+    "proyecto_id": "monteflor",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin (recorrido de zona)",
+    "texto": "DISCREPANCIA a resolver: valla de «Monte Flor Chacarilla-Surco» sobre Av. de los Precursores anunciando «desde 193 m²» y 3 dormitorios, con logo Reusche Reyna y tel. 975 244 600 — no coincide con nuestra ficha (Arch Inversiones, 64-240 m², tel. 981 349 116). Puede ser otro proyecto, otra etapa, o publicidad fuera de sitio.",
+    "cita": "Valla fotografiada el 22-ago-2026 15:21 (GPS -12.11460, -76.97976), a ~500 m de la ubicación que teníamos para Monteflor.",
+    "imgs": [
+     "assets/campo/monteflor-valla.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_7944"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "Astete Living",
     "dev": "Por confirmar",
     "proyecto_id": "astete-living",
@@ -496,7 +534,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 4 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 4 m del marcador)."
   },
   {
    "id": "aura-sul",
@@ -683,7 +721,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 83 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 83 m."
   },
   {
    "id": "conde-ii",
@@ -770,7 +808,7 @@
     "label": "Solo 10 depas · vendidos 101, 102 y dúplex 502; quedan flats típicos 126 m² + dúplex 501"
    },
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 62 m).",
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 62 m.",
    "precio_hist": [
     {
      "corte": "2026-08-16",
@@ -786,10 +824,10 @@
    "dev": "Edifikarte",
    "addr": "Jr. Conde de la Vega del Ren 251, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata · últimos dúplex",
+   "estado_raw": "Entrega inmediata · últimos dúplex (letrero en fachada, 22-ago-2026)",
    "entrega": "Entrega inmediata",
-   "lat": -12.1158,
-   "lng": -76.98163,
+   "lat": -12.11507,
+   "lng": -76.98252,
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": null,
@@ -798,8 +836,10 @@
    "m2": "95–161",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
-   "img": "assets/img/conde-de-la-vega-251.jpg",
-   "planos": [],
+   "img": "assets/campo/conde-de-la-vega-251.jpg",
+   "planos": [
+    "assets/campo/conde-de-la-vega-251.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -829,7 +869,7 @@
     2,
     3
    ],
-   "comentario": "Edifikarte. NO es un lanzamiento nuevo: es un proyecto en cierre (entrega inmediata) que detectamos en campo. Quedan solo los últimos dúplex de 2 y 3 dorm (95/122/161 m²). El dúplex 603 (122.52 m²) va S/1,100,000 con 2 estac + depósito.",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero en fachada «ÚLTIMOS DÚPLEX» — 2 dorm de 95–122 m² y 3 dorm de 161 m². Contacto en el letrero: 981 386 111. Falta la lista de precios por unidad.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
     "Chat asesor Jenny Miranda (Evolution API, jul-2026)"
@@ -845,8 +885,8 @@
     "n": 2,
     "label": "Últimos dúplex"
    },
-   "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida.",
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026: se fotografió la fachada con el número 251 y el letrero de ventas.",
    "verif_web": {
     "fecha": "2026-08-13",
     "precio_portal": "no publica",
@@ -1425,7 +1465,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 27 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 27 m del marcador)."
   },
   {
    "id": "dmont-dicon",
@@ -1674,7 +1714,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 37 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 37 m del marcador)."
   },
   {
    "id": "estelar-1080",
@@ -1776,7 +1816,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 76 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m."
   },
   {
    "id": "floresta-living-444",
@@ -1888,7 +1928,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 57 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m."
   },
   {
    "id": "hana",
@@ -1963,7 +2003,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 77 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 77 m."
   },
   {
    "id": "jardines-monte-real",
@@ -2056,7 +2096,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 59 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 59 m."
   },
   {
    "id": "la-floresta-boulevard",
@@ -2184,7 +2224,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 23 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador)."
   },
   {
    "id": "monte-alegre",
@@ -2237,7 +2277,7 @@
    "stock": null,
    "descubierto": "2026-08-13",
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 23 m).",
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador).",
    "verif_web": {
     "fecha": "2026-08-13",
     "precio_portal": "no publica",
@@ -2326,7 +2366,7 @@
    "cochera_status": "si",
    "stock": null,
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 25 m).",
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 25 m del marcador).",
    "cochera_nota": "Cochera de regalo (Edifikarte, campaña 'Grati Days' 15–19 jul 2026) — promoción, verificar vigencia.",
    "precio_hist": [
     {
@@ -2513,7 +2553,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 19 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 19 m del marcador)."
   },
   {
    "id": "monte-mar-167",
@@ -2597,7 +2637,7 @@
     "label": "Últimas 3 unidades"
    },
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida.",
+   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
    "precio_hist": [
     {
      "corte": "2026-08-16",
@@ -2695,7 +2735,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 67 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 67 m."
   },
   {
    "id": "monte-mayor-183",
@@ -3172,7 +3212,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 3 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador)."
   },
   {
    "id": "monte-real-265",
@@ -3394,7 +3434,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 89 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 89 m."
   },
   {
    "id": "monte-umbroso",
@@ -3604,8 +3644,8 @@
      "pm2": 2484
     }
    ],
-   "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 97 m)."
+   "geo_aprox": true,
+   "geo_nota": "Ubicación por confirmar. En campo (22-ago-2026) se fotografió una valla de «Monte Flor Chacarilla-Surco» sobre Av. de los Precursores, a ~500 m de esta posición, con datos que NO coinciden con nuestra ficha (anuncia «desde 193 m²» y 3 dormitorios, logo Reusche Reyna, tel. 975 244 600). Verificar si es el mismo proyecto, otra etapa, o una valla publicitaria colocada fuera del sitio."
   },
   {
    "id": "parque-monte-carmelo",
@@ -3864,7 +3904,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 44 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 44 m del marcador)."
   },
   {
    "id": "precursores-525",
@@ -3976,7 +4016,7 @@
     }
    ],
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida."
+   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar."
   },
   {
    "id": "precursores-ii",
@@ -4092,7 +4132,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 82 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 82 m."
   },
   {
    "id": "santorini",
@@ -4285,7 +4325,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 18 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador)."
   },
   {
    "id": "spazio",
@@ -4454,7 +4494,7 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación coherente con el recorrido de campo del 22-ago-2026 (foto a 84 m)."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m."
   },
   {
    "id": "terraverde",
@@ -4586,7 +4626,7 @@
    },
    "mostrar": true,
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada: la numeración de esta calle no está mapeada en OSM y no hay foto de campo que la confirme. Pendiente de verificar en la próxima salida.",
+   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
    "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026).",
    "fuentes": [
     "https://inmobiliariaayd.com"
@@ -4649,7 +4689,7 @@
    ],
    "amenidades": [],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 3 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador)."
   },
   {
    "id": "precursores-verde",
@@ -4695,7 +4735,7 @@
     "Certificación EDGE"
    ],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 2 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador)."
   },
   {
    "id": "astete-living",
@@ -4732,7 +4772,7 @@
    ],
    "amenidades": [],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto a 0 m)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador)."
   }
  ]
 }
