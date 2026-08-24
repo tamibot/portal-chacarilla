@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260823e"></script>
+<script src="data/portal-data.js?v=20260823f"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -196,6 +196,7 @@ function render(){
 
    ${amenHtml?`<div class="sec">Amenidades</div>${amenHtml}`:''}
 
+   ${p.estado_obra?`<div class="alert" style="background:#f4f1ea;border-color:#d9d3c4;color:#3a3a2a">🏗 <b>Estado de obra (visita ${p.caseta_fecha||D.meta.ultimo_recorrido||''}):</b> ${p.estado_obra}</div>`:''}
    ${p.caseta_nota?`<div class="alert" style="background:#f2f7f2;border-color:#cfe0b8;color:#2a3a20">🏠 <b>Punto de venta (visita ${p.caseta_fecha||''}):</b> ${p.caseta_nota}</div>`:''}
    <div class="sec">Monitoreo · Time lapse <span style="font-weight:600;color:${vi.color};font-size:11px;text-transform:none;letter-spacing:0">● verificado ${vi.dias===0?'hoy':'hace '+vi.dias+' días'}</span></div>
    ${phHtml}${tlHtml}

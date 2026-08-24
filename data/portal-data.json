@@ -32,6 +32,45 @@
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "FLEXI III",
+    "dev": "Central Inmobiliaria",
+    "proyecto_id": "flexi-iii",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "PROYECTO NUEVO: portón amarillo rotulado «FLEXI III — Elige cómo quieres vivir», de Central Inmobiliaria. Terreno cercado, aún sin obra. Tiene QR para más información.",
+    "cita": "Portón rotulado fotografiado el 2026-08-22 a las 14:57.",
+    "imgs": [
+     "assets/campo/flexi-iii.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22 · foto IMG_7918"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Living Monte Real",
+    "dev": "Grupo Chacarilla Sur",
+    "proyecto_id": "living-monte-real",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "PROYECTO NUEVO de Grupo Chacarilla Sur sobre Jr. Monte Real: cerco granate con «1.2.3 DORMS — desde 85 m² hasta 193 m²» y WhatsApp 949 107 186 (misma asesora de Precursores 525). Obra avanzada.",
+    "cita": "Cerco de marca fotografiado el 2026-08-22 a las 16:00.",
+    "imgs": [
+     "assets/campo/living-monte-real.jpg",
+     "assets/campo/living-monte-real-obra.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "— Cuadrante",
     "dev": "",
     "tags": [
@@ -592,7 +631,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 4 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 4 m del marcador).",
+   "estado_obra": "En construcción · obra iniciada"
   },
   {
    "id": "aura-sul",
@@ -875,7 +915,8 @@
      "pm2": null
     }
    ],
-   "wa_label": "Washington B. · AyD"
+   "wa_label": "Washington B. · AyD",
+   "estado_obra": "En obra · cerco azul, estructura en altura"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -963,7 +1004,8 @@
    ],
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: letrero «ÚLTIMOS DÚPLEX» en la reja del edificio ya terminado.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "Terminado y habitado · últimos dúplex en venta"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1528,7 +1570,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 27 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 27 m del marcador).",
+   "estado_obra": "En obra · cerco de Azzurra con banderolas de informes"
   },
   {
    "id": "dmont-dicon",
@@ -1883,7 +1926,8 @@
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m.",
    "caseta_ventas": "si",
    "caseta_nota": "Sala de ventas en el propio terreno: letrero «SALA DE VENTAS AQUÍ» con flecha (Galeón). Tel. en cartel: 976 357 594 / 988 351 473.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra · con sala de ventas en el terreno"
   },
   {
    "id": "floresta-living-444",
@@ -1999,7 +2043,8 @@
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m.",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: tótem de EE Inmobiliaria en la vereda (999 276 371 / 988 609 572).",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra · tótem comercial en vereda"
   },
   {
    "id": "hana",
@@ -2171,7 +2216,8 @@
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 59 m.",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: carteles «ÚLTIMAS UNIDADES» sobre el cerco de obra.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra · carteles de «últimas unidades» sobre el cerco"
   },
   {
    "id": "la-floresta-boulevard",
@@ -2302,7 +2348,8 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador).",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cartel de obra grande con el render sobre el cerco; entrada de obra habilitada.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra avanzada: estructura en altura con malla y andamios"
   },
   {
    "id": "monte-alegre",
@@ -2370,7 +2417,8 @@
      "desde": null,
      "pm2": null
     }
-   ]
+   ],
+   "estado_obra": "En planos / inicio de obra"
   },
   {
    "id": "monte-carmelo-250",
@@ -2383,7 +2431,7 @@
    "lat": -12.120253,
    "lng": -76.983039,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "2–3",
@@ -2455,7 +2503,8 @@
    ],
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: valla comercial sobre el cerco de obra (981 386 111).",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra · estructura con malla, cartel comercial activo"
   },
   {
    "id": "monte-carmelo-551",
@@ -2820,7 +2869,8 @@
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 67 m.",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: letrero «ÚLTIMO DEPA · 2 DORMS 86 m²» de Edifikarte sobre la vereda (981 386 111).",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "Terminado · ÚLTIMA unidad en venta (2 dorm, 86 m²)"
   },
   {
    "id": "monte-mayor-183",
@@ -3301,7 +3351,8 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador).",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: banner de Azzurra sobre el cerco de obra (944 216 477 · azzurra.com.pe).",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En construcción · banner de Azzurra sobre el cerco"
   },
   {
    "id": "monte-real-265",
@@ -4416,7 +4467,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador).",
+   "estado_obra": "En construcción"
   },
   {
    "id": "spazio",
@@ -4593,7 +4645,8 @@
    "stock": {
     "n": 20,
     "label": "20 de 27 disponibles (panel de la sala de ventas)"
-   }
+   },
+   "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)"
   },
   {
    "id": "terraverde",
@@ -4744,7 +4797,8 @@
      "pm2": 2557
     }
    ],
-   "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg"
+   "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
+   "estado_obra": "En planos · pre-lanzamiento comercial"
   },
   {
    "id": "narciso-ayd",
@@ -4791,7 +4845,8 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador).",
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cartel de licencia de obra, aún en estructura.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra gruesa: encofrado y armadura a la vista, primeros niveles"
   },
   {
    "id": "precursores-verde",
@@ -4840,7 +4895,8 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador).",
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: cartel de obra y valla de marca sobre el cerco.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra · cerco de marca y cartel de licencia instalados"
   },
   {
    "id": "astete-living",
@@ -4880,7 +4936,93 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador).",
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cerco anunciando «próximo proyecto».",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "Sin obra · terreno cercado anunciando «próximo proyecto»"
+  },
+  {
+   "id": "flexi-iii",
+   "name": "FLEXI III",
+   "dev": "Central Inmobiliaria",
+   "addr": "Chacarilla del Estanque, Santiago de Surco (cerca de Conde de la Vega del Ren)",
+   "estado_grupo": "En planos",
+   "estado_raw": "Terreno cercado · pre-obra",
+   "estado_obra": "Terreno cercado y rotulado, aún sin estructura",
+   "entrega": "Por confirmar",
+   "lat": -12.11131,
+   "lng": -76.97948,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": "994298155",
+   "wa_label": "Central Inmobiliaria",
+   "web": null,
+   "img": "assets/campo/flexi-iii.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/campo/flexi-iii.jpg"
+   ],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la dirección exacta.",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin punto de venta en sitio: portón rotulado con la marca y un QR («Descubre FLEXI III»).",
+   "caseta_fecha": "2026-08-22",
+   "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Portón amarillo rotulado «FLEXI III — Elige cómo quieres vivir», de Central Inmobiliaria (la misma de Jardines de Monte Real). Terreno cercado, todavía sin obra visible. Sin tipologías ni precios publicados.",
+   "fuentes": [
+    "Recorrido de campo 2026-08-22 · foto IMG_7918"
+   ],
+   "amenidades": [],
+   "precio_hist": []
+  },
+  {
+   "id": "living-monte-real",
+   "name": "Living Monte Real",
+   "dev": "Grupo Chacarilla Sur",
+   "addr": "Jr. Monte Real, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En obra · fachada avanzada, cerco de marca instalado",
+   "estado_obra": "Obra avanzada: fachada y locales a nivel de vereda ya cerrados con cerco de marca",
+   "entrega": "Por confirmar",
+   "lat": -12.11192,
+   "lng": -76.98646,
+   "isGEU": false,
+   "en_cuadrante": true,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "1–3",
+   "m2": "85–193",
+   "wa": "949107186",
+   "wa_label": "Joyce · Chacarilla Sur",
+   "web": null,
+   "img": "assets/campo/living-monte-real.jpg",
+   "brochure": null,
+   "planos": [
+    "assets/campo/living-monte-real.jpg",
+    "assets/campo/living-monte-real-obra.jpg"
+   ],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la numeración exacta.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: cerco de obra rotulado con la marca, metrajes y WhatsApp (949 107 186).",
+   "caseta_fecha": "2026-08-22",
+   "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Cerco granate de Grupo Chacarilla Sur sobre Jr. Monte Real: «1.2.3 DORMS — desde 85 m² hasta 193 m²», WhatsApp 949 107 186 (la misma asesora de Precursores 525). Obra avanzada. Faltan precios por unidad.",
+   "fuentes": [
+    "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
+   ],
+   "amenidades": [],
+   "precio_hist": []
   }
  ]
 }
