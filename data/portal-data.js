@@ -31,6 +31,98 @@ window.PORTAL_DATA = {
   "proximo_corte": "2026-09-19",
   "bitacora": [
    {
+    "fecha": "2026-08-24",
+    "proyecto": "TEN Apartments",
+    "dev": "EE Inmobiliaria",
+    "proyecto_id": "ten-apartments",
+    "tags": [
+     "nuevo",
+     "precio",
+     "estado"
+    ],
+    "canal": "Web oficial + brochure",
+    "autor": "Benchmark",
+    "texto": "Datos oficiales confirmados: Av. Reynaldo Vivanco 531 esq. Av. Monterrico Chico (no Velasco Astete), 6 pisos, 1 y 2 dormitorios de 64.04 a 122.05 m², lista S/ 501,000 a S/ 839,000, entrega 31-dic-2027. Queda fuera del cuadrante: es Monterrico. Se descargaron las 21 láminas de tipología del brochure de agosto-2026.",
+    "cita": "«Ten Apartments ofrece departamentos de 1 y 2 dormitorios, con áreas desde 64 m² hasta 122 m²… Bajo el concepto Live here, live now.» — eeinmobiliaria.com, 24-ago-2026",
+    "imgs": [
+     "assets/planos/ten-apartments/Dpto 102 - 86.40 m2 - 2 dorm + estudio.jpg"
+    ],
+    "fuentes": [
+     "https://eeinmobiliaria.com/proyectos/ten-apartments/",
+     "https://eeinmobiliaria.com/wp-content/uploads/2026/07/Ten_Brochure_26_DP_AGOSTO-19-08-26.pdf",
+     "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/ten-apartments-3631"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "FLEXI III",
+    "dev": "Central Inmobiliaria",
+    "proyecto_id": "flexi-iii",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Web oficial",
+    "autor": "Benchmark",
+    "texto": "Confirmado en la web de Central Inmobiliaria: FLEXI III figura como «Próximo lanzamiento Surco», todavía sin ficha ni precios. Sus antecesores FLEXI I (Chacarilla) y FLEXI II son edificios de 31 departamentos, flats y dúplex de 73 a 214 m², 2 a 4 dorms, con certificación EDGE — es la referencia más cercana de lo que puede salir.",
+    "cita": "«PRÓXIMO LANZAMIENTO SURCO FLEXI III» — banner de centralinmobiliaria.pe, 24-ago-2026",
+    "fuentes": [
+     "https://www.centralinmobiliaria.pe/",
+     "https://www.centralinmobiliaria.pe/proyectos/flexi-ii/"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Parque Monte Carmelo",
+    "dev": "EE Inmobiliaria",
+    "proyecto_id": "parque-monte-carmelo",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Brochure oficial",
+    "autor": "Benchmark",
+    "texto": "Brochure edición agosto-2026 descargado y contrastado: las 13 tipologías que ya teníamos siguen vigentes (Dptos 101-104, Típicos 01-A/03/04/05 y Dúplex 701-705, de 85 a 205 m² totales). Sin cambios de distribución.",
+    "cita": "Brochure «BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf», 41 páginas, publicado por EE Inmobiliaria.",
+    "fuentes": [
+     "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Monte Real",
+    "dev": "EE Inmobiliaria",
+    "proyecto_id": "monte-real-265",
+    "tags": [
+     "precio"
+    ],
+    "canal": "Web oficial + brochure",
+    "autor": "Benchmark",
+    "texto": "Se sumaron a la ficha el plano oficial del Dpto. 103 (138.03 m² techada / 167.82 m² ocupada, 3 dorm) y la hoja de cotización que la propia inmobiliaria publica en su web. Sigue siendo la última unidad disponible; el flat típico de los pisos 2 al 6 ya está agotado.",
+    "cita": "«N° Dormitorios 3 · Metraje desde 167 m² · Precios desde S/ 1'060,000» — eeinmobiliaria.com/proyectos/monte-real/, 24-ago-2026",
+    "imgs": [
+     "assets/planos/monte-real-265/cotizacion-dpto-103.jpg"
+    ],
+    "fuentes": [
+     "https://eeinmobiliaria.com/proyectos/monte-real/",
+     "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Astete Living",
+    "dev": "EDSA Inmobiliaria",
+    "proyecto_id": "astete-living",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Búsqueda en internet",
+    "autor": "Benchmark",
+    "texto": "Rastreo en Nexo, Urbania, Adondevivir y buscadores: EDSA Inmobiliaria todavía no publica ficha de Astete Living. Ojo con la confusión: el proyecto «Velasco Astete» que sí aparece en Nexo es otro (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2-3 dorms, 63-149 m², desde S/ 470,000, entrega oct-2027) y está fuera del cuadrante. Queda pedido directo por WhatsApp.",
+    "cita": "Búsqueda del 24-ago-2026: sin resultados propios para «Astete Living» ni «Velasco Astete 1419».",
+    "fuentes": [
+     "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/velasco-astete-3955"
+    ]
+   },
+   {
     "fecha": "2026-08-22",
     "proyecto": "The Eleven",
     "dev": "Proyectos PyR",
@@ -2599,7 +2691,9 @@ window.PORTAL_DATA = {
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "pedido": "Hola! Retomo por Monte Alegre 109. Me pueden enviar los planos de las tipologías y la lista de precios vigente? Y si el precio incluye cochera.",
+   "pedido_que": "planos + tarifario"
   },
   {
    "id": "monte-carmelo-250",
@@ -2971,7 +3065,9 @@ window.PORTAL_DATA = {
     }
    ],
    "cuadrante_verificado": "2026-08-22",
-   "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad»."
+   "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad».",
+   "pedido": "Hola! Retomo por Montemar 269. Me pueden enviar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera. Gracias!",
+   "pedido_que": "planos + tarifario"
   },
   {
    "id": "monte-mayor-177",
@@ -3580,9 +3676,11 @@ window.PORTAL_DATA = {
    "web": "https://eeinmobiliaria.com/proyectos/monte-real/",
    "img": "assets/img-f1/monte-real-265/img-01.jpg",
    "planos": [
-    "assets/planos/monte-real-265/plano-01.jpg"
+    "assets/planos/monte-real-265/plano-01.jpg",
+    "assets/planos/monte-real-265/Dpto 103 - 138.03 m2 techada - 167.82 m2 ocupada.jpg",
+    "assets/planos/monte-real-265/cotizacion-dpto-103.jpg"
    ],
-   "brochure": "assets/brochures/monte-real-265-f1.pdf",
+   "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
    "typologies": [
     {
      "unidad": "Modelo 103 (ultima unidad disponible)",
@@ -3636,7 +3734,9 @@ window.PORTAL_DATA = {
     "n": 1,
     "label": "Última unidad"
    },
-   "motivo_retiro": "Proyecto ya entregado; queda una sola unidad (Dpto 103, 167.82 m²). No compite con una preventa a nov-2027."
+   "motivo_retiro": "Proyecto ya entregado; queda una sola unidad (Dpto 103, 167.82 m²). No compite con una preventa a nov-2027.",
+   "planos_fuente": "Brochure oficial EE Inmobiliaria 2026 + hoja de cotización del Dpto. 103 publicada en su web.",
+   "tarifario": "assets/planos/monte-real-265/cotizacion-dpto-103.jpg"
   },
   {
    "id": "monte-sierpe",
@@ -4000,7 +4100,9 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
    "caseta_fecha": "2026-08-22",
-   "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola."
+   "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola.",
+   "pedido": "Hola! Vi la valla de Monte Flor en Chacarilla. Me pasan los planos de las tipologías y la lista de precios? Y si la cochera va incluida o aparte.",
+   "pedido_que": "planos + tarifario"
   },
   {
    "id": "parque-monte-carmelo",
@@ -4036,7 +4138,7 @@ window.PORTAL_DATA = {
     "assets/planos/parque-monte-carmelo/duplex-704.png",
     "assets/planos/parque-monte-carmelo/duplex-705.png"
    ],
-   "brochure": "assets/brochures/BROCHURE_PARQUE_MONTE_CARMELO_2026-JUNIO.pdf",
+   "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf",
    "typologies": [
     {
      "unidad": "Típico 04 (204-604)",
@@ -4214,7 +4316,8 @@ window.PORTAL_DATA = {
    "total_pisos": 7,
    "fuentes": [
     "https://eeinmobiliaria.com/proyectos/parque-monte-carmelo/",
-    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152"
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152",
+    "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/parque-monte-carmelo-4152",
@@ -4264,7 +4367,8 @@ window.PORTAL_DATA = {
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cartel en la casa del terreno, que aún no ha sido demolida.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "Pre-obra: la casa del terreno sigue en pie, con cartel del proyecto"
+   "estado_obra": "Pre-obra: la casa del terreno sigue en pie, con cartel del proyecto",
+   "planos_fuente": "Web oficial EE Inmobiliaria; verificado contra el brochure edición agosto-2026 (mismas 13 tipologías)."
   },
   {
    "id": "precursores-525",
@@ -5098,7 +5202,9 @@ window.PORTAL_DATA = {
    "estado_obra": "En obra gruesa: encofrado y armadura a la vista, primeros niveles",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "como_presenta": "Sin material comercial en obra todavía; solo el cartel de licencia."
+   "como_presenta": "Sin material comercial en obra todavía; solo el cartel de licencia.",
+   "pedido": "Hola Washington! Una consulta: vi una obra de ustedes en Conde de la Vega del Ren (el cartel dice AyD Narciso SAC). Es un proyecto nuevo? Cómo se va a llamar y cuándo lanzan? Me gustaría estar en la lista.",
+   "pedido_que": "confirmar nombre y lanzamiento"
   },
   {
    "id": "precursores-verde",
@@ -5159,7 +5265,9 @@ window.PORTAL_DATA = {
    "estado_obra": "En obra · se anuncian los últimos departamentos",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "planos_fuente": "Plano de tipología de la web oficial de Guerin"
+   "planos_fuente": "Plano de tipología de la web oficial de Guerin",
+   "pedido": "Hola! Me interesa Precursores Verde, en Av. Precursores 280. Me pueden enviar los planos por tipología y la lista de precios? Vi que anuncian últimas unidades, cuáles quedan?",
+   "pedido_que": "tarifario + stock"
   },
   {
    "id": "astete-living",
@@ -5177,7 +5285,7 @@ window.PORTAL_DATA = {
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": null,
+   "wa": "945678879",
    "web": null,
    "img": "assets/campo/astete-living.jpg",
    "brochure": null,
@@ -5190,9 +5298,10 @@ window.PORTAL_DATA = {
    "stock": null,
    "mostrar": true,
    "geo_aprox": false,
-   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías.",
+   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías. Búsqueda en internet 24-ago-2026: EDSA Inmobiliaria no publica ficha de este proyecto y no aparece en Nexo, Urbania ni Adondevivir. Ojo: el proyecto «Velasco Astete» que sí figura en Nexo es OTRO (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2–3 dorms, 63–149 m², desde S/ 470,000) y está fuera del cuadrante.",
    "fuentes": [
-    "Cerco de obra fotografiado en campo 22-ago-2026"
+    "Cerco de obra fotografiado en campo 22-ago-2026",
+    "Búsqueda web 24-ago-2026 (Nexo, Urbania, Adondevivir): sin ficha publicada de Astete Living"
    ],
    "amenidades": [],
    "precio_hist": [],
@@ -5202,7 +5311,10 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Sin obra: la casa del terreno sigue en pie, pintada y rotulada con la marca",
    "descubierto_campo": "2026-08-22",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "wa_label": "EDSA Inmobiliaria",
+   "pedido": "Hola! Vi el anuncio de Astete Living en Velasco Astete 1419. Me pueden pasar información del proyecto: planos, metrajes y precios? Y para cuándo es el lanzamiento?",
+   "pedido_que": "info del proyecto (no hay nada publicado)"
   },
   {
    "id": "flexi-iii",
@@ -5223,7 +5335,7 @@ window.PORTAL_DATA = {
    "m2": "Por confirmar",
    "wa": "994298155",
    "wa_label": "Central Inmobiliaria",
-   "web": null,
+   "web": "https://www.centralinmobiliaria.pe/",
    "img": "assets/campo/flexi-iii.jpg",
    "brochure": null,
    "planos": [
@@ -5239,14 +5351,18 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: portón rotulado con la marca y un QR («Descubre FLEXI III»).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados.",
+   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados. Confirmado en la web de Central Inmobiliaria (ago-2026): aparece el banner «PRÓXIMO LANZAMIENTO SURCO FLEXI III», sin ficha de proyecto ni precios todavía. Sus antecesores FLEXI I (Chacarilla) y FLEXI II son edificios de 31 departamentos, flats y dúplex de 73 a 214 m², 2 a 4 dorms, con certificación EDGE.",
    "fuentes": [
-    "Recorrido de campo 2026-08-22 · foto IMG_7918"
+    "Recorrido de campo 2026-08-22 · foto IMG_7918",
+    "https://www.centralinmobiliaria.pe/ (banner «Próximo lanzamiento Surco FLEXI III», consultado 24-ago-2026)",
+    "https://www.centralinmobiliaria.pe/proyectos/flexi-ii/"
    ],
    "amenidades": [],
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "pedido": "Hola! Vi el cartel de FLEXI III en Precursores 152. Me pueden enviar los planos y precios cuando los tengan? Quiero estar en la lista del lanzamiento.",
+   "pedido_que": "fecha de lanzamiento + precios"
   },
   {
    "id": "living-monte-real",
@@ -5291,7 +5407,9 @@ window.PORTAL_DATA = {
    "amenidades": [],
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "pedido": "Hola! Estoy viendo opciones por Chacarilla y me interesa Monte 2, en Monte Real. Me pueden pasar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera o va aparte. Gracias!",
+   "pedido_que": "planos + tarifario"
   },
   {
    "isGEU": false,
@@ -5335,7 +5453,9 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": false,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia."
+   "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia.",
+   "pedido": "Hola! Me interesa The Eleven. Vi que tienen entrega inmediata. Me pueden enviar los planos, los metrajes disponibles y la lista de precios? Incluye cochera?",
+   "pedido_que": "planos + tarifario"
   },
   {
    "isGEU": false,
@@ -5343,7 +5463,7 @@ window.PORTAL_DATA = {
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": null,
+   "wa": "981386111",
    "web": null,
    "img": null,
    "brochure": null,
@@ -5376,7 +5496,9 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. Registrado en el recorrido; faltan datos comerciales. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. Registrado en el recorrido; faltan datos comerciales. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor.",
+   "pedido": "Hola! Una consulta: tienen algún proyecto en Calle Monte Alegre 137, en Chacarilla? Me interesa la zona y quisiera información.",
+   "pedido_que": "confirmar inmobiliaria y proyecto"
   },
   {
    "isGEU": false,
@@ -5384,7 +5506,7 @@ window.PORTAL_DATA = {
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": null,
+   "wa": "988609572",
    "web": null,
    "img": null,
    "brochure": null,
@@ -5417,51 +5539,115 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor.",
+   "pedido": "Hola! Buenas. Me interesa el proyecto frente al Parque La Floresta. Me pasan los planos por tipología y la lista de precios? También quería saber si la cochera va incluida en el precio.",
+   "pedido_que": "planos + tarifario + nombre del proyecto"
   },
   {
    "id": "ten-apartments",
    "name": "TEN Apartments",
-   "dev": "EE Inmobiliaria (por confirmar)",
-   "addr": "Av. Velasco Astete, Santiago de Surco",
+   "dev": "EE Inmobiliaria (Espacios y Estructuras Inmobiliaria S.A.C.)",
+   "addr": "Av. Reynaldo Vivanco 531 esq. Av. Monterrico Chico, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En obra · grúa torre en sitio",
    "estado_obra": "En obra con grúa torre; cerco negro rotulado con la marca",
-   "entrega": "Por confirmar",
+   "entrega": "31 de diciembre de 2027",
    "lat": -12.12004,
    "lng": -76.98297,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": null,
-   "precio_hasta_usd": null,
-   "dorms": "1–3",
-   "m2": "Por confirmar",
+   "precio_desde_usd": 147353,
+   "precio_hasta_usd": 246765,
+   "dorms": "1–2",
+   "m2": "64.04 – 122.05",
    "wa": "908914344",
    "wa_label": "TEN Apartments",
-   "web": null,
+   "web": "https://eeinmobiliaria.com/proyectos/ten-apartments/",
    "img": "assets/campo/ten-apartments.jpg",
-   "brochure": null,
+   "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2026/07/Ten_Brochure_26_DP_AGOSTO-19-08-26.pdf",
    "planos": [
+    "assets/planos/ten-apartments/Dpto 102 - 86.40 m2 - 2 dorm + estudio.jpg",
+    "assets/planos/ten-apartments/Dptos 103 y 104 - 64.91 y 87.36 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 105 y 106 - 95.25 y 64.04 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 107 y 108 - 86.78 y 100.40 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 109 y 110 - 122.05 y 101.69 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 111 y 112 - 85.95 y 78.31 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 114 y 115 - 82.63 y 84.35 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 116 y 118 - 92.77 y 86.49 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 119 y 206 - 89.20 y 69.04 m2.jpg",
+    "assets/planos/ten-apartments/Dptos 207 y 208 - 87.27 y 99.07 m2.jpg",
+    "assets/planos/ten-apartments/Tipo 21 y sotano.jpg",
+    "assets/planos/ten-apartments/Tipos 1 y 2 - 86.56 y 99.19 m2.jpg",
+    "assets/planos/ten-apartments/Tipos 11 y 12 - 86.42 y 64.28 m2.jpg",
+    "assets/planos/ten-apartments/Tipos 13 y 14 - 64.04 m2.jpg",
+    "assets/planos/ten-apartments/Tipos 15 y 16.jpg",
+    "assets/planos/ten-apartments/Tipos 17 y 18.jpg",
+    "assets/planos/ten-apartments/Tipos 19 y 20.jpg",
+    "assets/planos/ten-apartments/Tipos 3 y 4 - 86.55 y 87.62 m2.jpg",
+    "assets/planos/ten-apartments/Tipos 5 y 6 - 95.09 y 105.03 m2.jpg",
+    "assets/planos/ten-apartments/Tipos 7 y 8 - 96.59 m2.jpg",
+    "assets/planos/ten-apartments/Tipos 9 y 10 - 86.45 m2.jpg",
     "assets/campo/ten-apartments.jpg"
    ],
-   "typologies": [],
+   "typologies": [
+    {
+     "unidad": "DPTO. 106 · unidad de entrada (precio de lista, sin confirmar si incluye estacionamiento)",
+     "dorm": 1,
+     "m2": 64.04,
+     "precio_usd": 147353,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": true
+    },
+    {
+     "unidad": "DPTO. 606 · tope de lista (precio de lista, sin confirmar si incluye estacionamiento)",
+     "dorm": 2,
+     "m2": null,
+     "precio_usd": 246765,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "6",
+     "flat": true
+    }
+   ],
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
    "mostrar": true,
-   "geo_aprox": true,
-   "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la numeración exacta.",
+   "geo_aprox": false,
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026 y confirmada con la dirección oficial del brochure (Av. Reynaldo Vivanco esq. Av. Monterrico Chico). Queda FUERA del cuadrante: es Monterrico, no Chacarilla.",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cerco negro rotulado con la marca, metrajes y WhatsApp.",
    "caseta_fecha": "2026-08-22",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Cerco negro sobre Av. Velasco Astete rotulado «TEN Apartments — LIVE HERE, LIVE NOW», 1 a 3 dormitorios, WhatsApp 908 914 344. Obra con grúa torre. Faltan precios y tipologías.",
+   "comentario": "Proyecto detectado en el recorrido del 22-ago-2026 y confirmado con fuente oficial: EE Inmobiliaria, Av. Reynaldo Vivanco 531 esq. Av. Monterrico Chico, 6 pisos, 1 y 2 dormitorios de 64.04 a 122.05 m², precios de lista S/ 501,000 a S/ 839,000, entrega 31-dic-2027. Está FUERA del cuadrante (Monterrico). Brochure de agosto-2026 con 21 láminas de tipologías descargado a la plataforma.",
    "fuentes": [
-    "Recorrido de campo 2026-08-22 · fotos IMG_7975–7978"
+    "Recorrido de campo 2026-08-22 · fotos IMG_7975–7978",
+    "https://eeinmobiliaria.com/proyectos/ten-apartments/",
+    "https://eeinmobiliaria.com/wp-content/uploads/2026/07/Ten_Brochure_26_DP_AGOSTO-19-08-26.pdf",
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/ten-apartments-3631"
    ],
-   "amenidades": [],
-   "precio_hist": []
+   "amenidades": [
+    "Áreas verdes",
+    "Gimnasio",
+    "Jardín interior",
+    "Lobby",
+    "Sala bar",
+    "Sala de niños",
+    "Salón gourmet",
+    "Terraza",
+    "Zona de lavandería",
+    "Zona de parrillas"
+   ],
+   "precio_hist": [],
+   "pisos": 6,
+   "como_presenta": "Se presenta bajo el concepto «Live here, live now», con más de 7 áreas comunes y depa piloto visitable. Vende 1 y 2 dormitorios (varios con estudio) de 64 a 122 m².",
+   "politica_precio": "Por confirmar si el precio de lista incluye estacionamiento (el brochure de agosto-2026 no lo indica).",
+   "planos_fuente": "Brochure oficial EE Inmobiliaria, edición agosto-2026 (21 láminas de tipología).",
+   "pedido": "Hola! Me interesa TEN Apartments. Vi los precios en la web. Una consulta: el precio de lista incluye estacionamiento o va aparte? Y cuánto cuesta la cochera?",
+   "pedido_que": "confirmar si el precio incluye estacionamiento"
   }
  ]
-}
+};

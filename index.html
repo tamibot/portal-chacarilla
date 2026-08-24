@@ -241,7 +241,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824c"></script>
+<script src="data/portal-data.js?v=20260824e"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -263,13 +263,16 @@ const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmedia
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata','Entregado':'st-entregado'};
 const fmtUsd=n=>n?'US$'+n.toLocaleString('en-US'):null;
 const waFmt=w=>w?w.replace(/(\d{3})(\d{3})(\d{3})/,'$1 $2 $3'):'';
-const waHref=(p,num)=>{
+const waHref=(p,num,texto)=>{
   const n=num||p.wa; if(!n)return '';
-  const msg=p.isGEU
+  const msg=texto||(p.isGEU
     ? `Hola, quiero información del proyecto ${p.name} (Chacarilla, Surco).`
-    : `Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`;
+    : `Hola, ¿me pueden enviar información y la lista de precios del proyecto ${p.name}? Gracias.`);
   return `https://wa.me/51${n}?text=${encodeURIComponent(msg)}`;
 };
+// proyectos a los que todavía les debemos pedir data para cerrar el corte
+function pedidos(){return P.filter(p=>p.mostrar&&!p.isGEU&&p.pedido&&p.wa);}
+function pedidoHref(p){return waHref(p,p.wa,p.pedido);}
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const typText=(p)=>[p.estado_raw,p.comentario,...(p.typologies||[]).map(t=>`${t.unidad||''} ${t.tipo||''} ${t.piso||''}`)].join(' ').toLowerCase();
 const CASETA={si:['🏠 Caseta atendida','#2F7D54'],cerrada:['🏠 Caseta cerrada','#b9863b'],
@@ -456,6 +459,7 @@ function showDetail(p){
     ${planosHtml}
     ${tlHtml}
     <div class="dfoot">${wa}
+      ${p.pedido&&p.wa?`<a class="wa" style="margin-left:12px;color:#8a5a12" href="${pedidoHref(p)}" target="_blank" title="Abre WhatsApp con el mensaje ya escrito">📩 Pedir ${p.pedido_que||'información'}</a>`:''}
       <span style="margin-left:auto"></span>${ficha}</div>`;
   dtl.classList.add('open');
   map.panTo([p.lat,p.lng],{animate:true});
@@ -867,6 +871,12 @@ function buildTimelapse(){
      <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#2F7D54">${fresh}</div><div style="font-size:11.5px;color:#7a7a7a">verificados ≤35 días</div></div>
      <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#ce3c31">${stale}</div><div style="font-size:11.5px;color:#7a7a7a">por re-confirmar${staleList.length?`: ${staleList.slice(0,3).map(p=>p.name).join(', ')}${staleList.length>3?'…':''}`:''}</div></div>
    </div>
+   ${(()=>{const pd=pedidos();return pd.length?`<div style="background:#fff;border:1px solid #e6e1d4;border-left:4px solid #b9863b;border-radius:12px;padding:14px 18px;margin-bottom:18px;max-width:940px">
+     <div style="font-size:13px;font-weight:700;color:#15402c;margin-bottom:3px">📩 Pedidos pendientes para cerrar el corte (${pd.length})</div>
+     <div style="font-size:11.5px;color:#8a8577;margin-bottom:10px">Proyectos que todavía no nos entregan planos, tarifario o confirmación. Clic abre WhatsApp con el mensaje ya redactado.</div>
+     <div style="display:flex;flex-wrap:wrap;gap:7px">${pd.map(p=>`<a href="${pedidoHref(p)}" target="_blank" style="display:inline-flex;flex-direction:column;gap:1px;text-decoration:none;background:#f7f4ec;border:1px solid #e6e1d4;border-radius:9px;padding:7px 11px;min-width:180px">
+       <span style="font-size:12px;font-weight:700;color:#15402c">${p.name}</span>
+       <span style="font-size:10.5px;color:#8a5a12">📱 +51 ${waFmt(p.wa)} · ${p.pedido_que||'información'}</span></a>`).join('')}</div></div>`:''})()}
    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px">${chips}</div>
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
