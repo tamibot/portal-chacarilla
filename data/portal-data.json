@@ -1793,6 +1793,14 @@
    "web": "https://grupodicon.com.pe/proyecto/dmont-2/",
    "img": "assets/img-f1/dmont-2/img-01.jpg",
    "planos": [
+    "assets/planos/dmont-2/duplex-603.jpg",
+    "assets/planos/dmont-2/flat-101.jpg",
+    "assets/planos/dmont-2/flat-201.jpg",
+    "assets/planos/dmont-2/flat-202.jpg",
+    "assets/planos/dmont-2/flat-302.jpg",
+    "assets/planos/dmont-2/flat-401.jpg",
+    "assets/planos/dmont-2/flat-402.jpg",
+    "assets/planos/dmont-2/flat-502.jpg",
     "assets/planos/dmont-2/plano-01.jpg",
     "assets/planos/dmont-2/plano-02.jpg",
     "assets/planos/dmont-2/plano-03.jpg",
@@ -1954,7 +1962,8 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 37 m del marcador).",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon"
   },
   {
    "id": "estelar-1080",
@@ -4666,22 +4675,19 @@
    "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
    "img": "assets/campo/spazio-panel-ventas.jpg",
    "planos": [
-    "assets/planos/spazio/plano-01.webp",
-    "assets/planos/spazio/plano-02.webp",
-    "assets/planos/spazio/plano-03.webp",
-    "assets/planos/spazio/plano-04.webp",
-    "assets/planos/spazio/plano-05.webp",
-    "assets/planos/spazio/plano-06.webp",
-    "assets/planos/spazio/plano-07.webp",
-    "assets/planos/spazio/plano-08.webp",
-    "assets/planos/spazio/plano-09.webp",
-    "assets/planos/spazio/plano-13.jpg",
-    "assets/planos/spazio/plano-14.jpg",
-    "assets/planos/spazio/plano-15.jpg",
-    "assets/planos/spazio/plano-16.jpg",
-    "assets/planos/spazio/plano-17.jpg",
-    "assets/planos/spazio/plano-18.jpg",
-    "assets/campo/spazio-panel-ventas.jpg"
+    "assets/planos/spazio/duplex-701.jpg",
+    "assets/planos/spazio/duplex-702.jpg",
+    "assets/planos/spazio/flat-101.jpg",
+    "assets/planos/spazio/flat-102.jpg",
+    "assets/planos/spazio/flat-201.jpg",
+    "assets/planos/spazio/flat-203-303-403-503.jpg",
+    "assets/planos/spazio/flat-204-304-404-504.jpg",
+    "assets/planos/spazio/flat-302-502.jpg",
+    "assets/planos/spazio/flat-601.jpg",
+    "assets/planos/spazio/flat-603.jpg",
+    "assets/planos/spazio/flat-604.jpg",
+    "assets/campo/spazio-panel-ventas.jpg",
+    "assets/planos/spazio/spazio-panel-ventas.jpg"
    ],
    "brochure": "assets/brochures/spazio-f1.pdf",
    "typologies": [
@@ -4824,7 +4830,8 @@
    },
    "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)",
    "cuadrante_verificado": "2026-08-22",
-   "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00"
+   "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00",
+   "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon + panel de la sala de ventas"
   },
   {
    "id": "terraverde",
