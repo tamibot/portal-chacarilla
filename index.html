@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824h"></script>
+<script src="data/portal-data.js?v=20260824i"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -912,6 +912,8 @@ function buildCobertura(){
     ['Cochera', p=>{const k=parkingStatus(p);return k==='nd'?no:si;}],
     ['Punto de venta', p=>p.caseta_ventas&&p.caseta_ventas!=='nd'?si:no],
     ['Ubicación exacta', p=>p.geo_aprox?no:si],
+    ['Contacto verificado', p=>(p.contactos||[]).length?si:no],
+    ['Foto de campo', p=>p.foto_campo?si:no],
   ];
   const score=p=>cols.reduce((a,[,fn])=>a+(fn(p).includes('#2F7D54')?1:0),0);
   const rows=comps.map(p=>{

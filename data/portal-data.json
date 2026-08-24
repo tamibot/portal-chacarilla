@@ -32,6 +32,101 @@
   "bitacora": [
    {
     "fecha": "2026-08-24",
+    "proyecto": "Living Monte Real",
+    "dev": "Grupo Chacarilla Sur",
+    "proyecto_id": "living-monte-real",
+    "tags": [
+     "nuevo",
+     "estado"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "El cartel de obra aclara el nombre y los datos: se llama LIVING Monte Real (no «Monte 2»), tiene 1, 2 y 3 dormitorios de 85 a 193 m² y su WhatsApp es 949 107 186. El logo es el de Grupo Chacarilla Sur, no el de Dicon como teníamos anotado — y 949 107 186 es el número de Joyce, su asesora comercial.",
+    "cita": "«LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186» — cartel fotografiado el 22-ago-2026",
+    "imgs": [
+     "assets/campo/living-monte-real.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Precursores Verde",
+    "dev": "Guerin Proyectos S.A.C.",
+    "proyecto_id": "precursores-verde",
+    "tags": [
+     "venta",
+     "promo"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "El cartel de obra confirma todo: desde 64 m² hasta 174 m², 1|2|3 dormitorios, financiado por BCP, «ÚLTIMOS DEPTOS» y depa piloto visitable. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600 — con esto se corrige el número que teníamos de una fuente anterior.",
+    "cita": "«guerin · PRECURSORES VERDE · desde 64 m² hasta 174 m² · 1|2|3 dormitorios · ÚLTIMOS DEPTOS · 908 875 600» — cartel de obra, 22-ago-2026",
+    "imgs": [
+     "assets/campo/precursores-verde.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Spazio",
+    "dev": "Grupo Dicon",
+    "proyecto_id": "spazio",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "Tiene sala de ventas propia y atendida, con dos banderolas «INFORMES» en la puerta. Se presentan como «SPAZIO Residencial · FLEX APARTMENTS» bajo el claim «Tu espacio, tu historia», y exhiben el sello Best Place to Live por tercer año consecutivo. Contacto 957 733 272.",
+    "cita": "Fachada de la sala de ventas fotografiada el 22-ago-2026 (la imagen estaba archivada con el nombre equivocado y se reasignó).",
+    "imgs": [
+     "assets/campo/spazio-sala-ventas.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Monte Alegre 109",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-alegre",
+    "tags": [
+     "precio"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "La valla precisa los tramos de entrada por tipología: 3 dormitorios desde 115 m², 133 m² y 150 m²; 4 dormitorios desde 190 m². Dos contactos en la valla: 924 447 479 y 981 386 111.",
+    "cita": "«EDIFIKARTE · MONTE ALEGRE · ESPACIOS EXCLUSIVOS · 3 dorms: desde 115 m², 133 m², 150 m² · 4 dorms: desde 190 m²» — valla, 22-ago-2026",
+    "imgs": [
+     "assets/campo/monte-alegre-valla.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Astete Living",
+    "dev": "EDSA Inmobiliaria",
+    "proyecto_id": "astete-living",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría interna",
+    "autor": "Benchmark",
+    "texto": "Auditoría de teléfonos: se cruzaron los WhatsApp del portal contra la auditoría de fuentes y contra los chats reales. Tres proyectos tenían un número que en realidad pertenece a otro (Astete Living llevaba el de La Floresta Boulevard, Parque La Floresta el de Cecilia de EE Inmobiliaria y Monte Alegre 137 uno de Edifikarte puesto por suposición). Se retiraron: es preferible no tener número a escribirle al asesor equivocado.",
+    "cita": "Cruce del 24-ago-2026 entre data del portal, la auditoría de fuentes de junio y los chats de agosto.",
+    "fuentes": [
+     "Auditoría de fuentes de competencia (jun-2026)",
+     "Chats reales de WhatsApp (13-ago-2026)"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
     "proyecto": "Conde II",
     "dev": "Inmobiliaria AyD",
     "proyecto_id": "conde-ii",
@@ -1477,7 +1572,20 @@
      "fecha": null,
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "967530422",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "933209656",
+     "fuente": "Menú de contacto de la web de Grupo Dicon"
+    }
+   ],
+   "wa_label": "Grupo Dicon"
   },
   {
    "id": "conde-ii",
@@ -1495,7 +1603,7 @@
    "precio_hasta_usd": null,
    "dorms": "3",
    "m2": "100 – 254",
-   "wa": "980765183",
+   "wa": "994363232",
    "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
    "img": "assets/img/conde-ii.jpg",
    "planos": [
@@ -1513,7 +1621,8 @@
     "assets/planos/conde-ii/plano-b01.jpg",
     "assets/planos/conde-ii/plano-b02.jpg",
     "assets/campo/narciso-ayd.jpg",
-    "assets/campo/narciso-ayd-2.jpg"
+    "assets/campo/narciso-ayd-2.jpg",
+    "assets/campo/conde-ii-obra.jpg"
    ],
    "brochure": "assets/brochures/conde-ii-brochure-2026.pdf",
    "typologies": [
@@ -1630,7 +1739,7 @@
      "pm2": null
     }
    ],
-   "wa_label": "Washington B. · AyD",
+   "wa_label": "Inmobiliaria AyD",
    "estado_obra": "Obra en ejecución con cerco azul rotulado «Tu nueva historia comienza aquí · 3 dormitorios · desde 126 m²». La placa de permisos declara 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, uso residencial, plazo de obra 13 meses. Licencia 0231-2026-SGLM-GDU-MSS a nombre de AYD NARCISO S.A.C. (la SPV que construye).",
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "banner",
@@ -1667,7 +1776,25 @@
    "estacionamientos": 19,
    "unidades": 10,
    "licencia": "0231-2026-SGLM-GDU-MSS · titular AYD NARCISO S.A.C. · plazo 13 meses",
-   "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30"
+   "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "994363232",
+     "fuente": "Web oficial de Inmobiliaria AyD"
+    },
+    {
+     "nombre": null,
+     "numero": "980765183",
+     "fuente": "Web oficial de Inmobiliaria AyD"
+    },
+    {
+     "nombre": null,
+     "numero": "957307920",
+     "fuente": "Web oficial de Inmobiliaria AyD"
+    }
+   ],
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -1782,7 +1909,17 @@
      "fecha": "2023-10",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Jenny",
+     "numero": "981386111",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    }
+   ],
+   "asesora": "Jenny",
+   "wa_label": "Jenny",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1819,8 +1956,7 @@
     "assets/planos/conde-de-la-vega-460/plano-b05.jpg",
     "assets/planos/conde-de-la-vega-460/plano-b06.png",
     "assets/planos/conde-de-la-vega-460/plano-b07.jpg",
-    "assets/planos/conde-de-la-vega-460/plano-b08.jpg",
-    "assets/campo/conde-460-informes.jpg"
+    "assets/planos/conde-de-la-vega-460/plano-b08.jpg"
    ],
    "brochure": "assets/brochures/conde-de-la-vega-460-f1.pdf",
    "typologies": [
@@ -2379,7 +2515,16 @@
      "tipo": "tarifario"
     }
    ],
-   "tarifario": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf"
+   "tarifario": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf",
+   "contactos": [
+    {
+     "nombre": "Jenniffer",
+     "numero": "944216477",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Jenniffer",
+   "wa_label": "Jenniffer"
   },
   {
    "id": "dmont-dicon",
@@ -2451,7 +2596,15 @@
      "fecha": null,
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "998113990",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "wa_label": "Grupo Dicon"
   },
   {
    "id": "dmont-2",
@@ -2658,7 +2811,15 @@
      "fecha": null,
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "933209656",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "wa_label": "Grupo Dicon"
   },
   {
    "id": "estelar-1080",
@@ -2776,7 +2937,17 @@
      "fecha": "2026-04-13",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Isabel",
+     "numero": "976367206",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Isabel",
+   "wa_label": "Isabel",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "floresta-living-444",
@@ -2903,7 +3074,17 @@
      "fecha": null,
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Cecilia",
+     "numero": "988609572",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Cecilia",
+   "wa_label": "Cecilia",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "hana",
@@ -2921,7 +3102,7 @@
    "precio_hasta_usd": 264706,
    "dorms": "2–4",
    "m2": "108–209",
-   "wa": "972920864",
+   "wa": "994448991",
    "web": "https://odima.pe/proyecto/hana/",
    "img": "assets/planos/hana/hana-17.png",
    "planos": [
@@ -3005,7 +3186,21 @@
      "tipo": "brochure"
     }
    ],
-   "planos_fuente": "Brochure oficial Odima, edición febrero-2026 (plantas del 1er piso, Dpto. 102 y los 3 sótanos)."
+   "planos_fuente": "Brochure oficial Odima, edición febrero-2026 (plantas del 1er piso, Dpto. 102 y los 3 sótanos).",
+   "contactos": [
+    {
+     "nombre": "Rebeca Ruiz",
+     "numero": "994448991",
+     "fuente": "Web oficial de Odima"
+    },
+    {
+     "nombre": null,
+     "numero": "972920864",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Rebeca Ruiz",
+   "wa_label": "Rebeca Ruiz"
   },
   {
    "id": "jardines-monte-real",
@@ -3137,7 +3332,17 @@
      "tipo": "brochure"
     }
    ],
-   "planos_fuente": "Brochure oficial Central Inmobiliaria, edición 22-jun-2026 (14 láminas de tipología)."
+   "planos_fuente": "Brochure oficial Central Inmobiliaria, edición 22-jun-2026 (14 láminas de tipología).",
+   "contactos": [
+    {
+     "nombre": "Diana",
+     "numero": "994298155",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Diana",
+   "wa_label": "Diana",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "la-floresta-boulevard",
@@ -3178,7 +3383,8 @@
     "assets/planos/la-floresta-boulevard/plano-17.jpg",
     "assets/planos/la-floresta-boulevard/plano-18.jpg",
     "assets/planos/la-floresta-boulevard/plano-19.jpg",
-    "assets/planos/la-floresta-boulevard/plano-20.jpg"
+    "assets/planos/la-floresta-boulevard/plano-20.jpg",
+    "assets/campo/la-floresta-boulevard-obra.jpg"
    ],
    "brochure": null,
    "typologies": [
@@ -3270,7 +3476,16 @@
    "caseta_nota": "Sin caseta: cartel de obra grande con el render sobre el cerco; entrada de obra habilitada.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra avanzada: estructura en altura con malla y andamios",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "945678879",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "wa_label": "Boulevard",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "monte-alegre",
@@ -3288,7 +3503,7 @@
    "precio_hasta_usd": null,
    "dorms": "3–4",
    "m2": "115 – 276",
-   "wa": "981386111",
+   "wa": "924447479",
    "web": "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
    "img": "assets/img/monte-alegre.jpg",
    "planos": [
@@ -3453,7 +3668,7 @@
     3,
     4
    ],
-   "comentario": "Ficha oficial de Edifikarte (consultada 24-ago-2026): 7 pisos, departamentos de 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas: flats de 118 a 152 m², primeros pisos de 129 a 197 m² y dúplex de 143 a 307 m². Todavía sin lista de precios pública — pedido abierto por WhatsApp.",
+   "comentario": "Ficha oficial de Edifikarte (consultada 24-ago-2026): 7 pisos, departamentos de 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas: flats de 118 a 152 m², primeros pisos de 129 a 197 m² y dúplex de 143 a 307 m². Todavía sin lista de precios pública — pedido abierto por WhatsApp. La valla fotografiada el 22-ago-2026 precisa los tramos de entrada: 3 dorms desde 115 m², 133 m² y 150 m²; 4 dorms desde 190 m². Contactos en la valla: 924 447 479 y 981 386 111.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf"
@@ -3492,7 +3707,7 @@
    "pedido_que": "planos + tarifario",
    "pisos": 7,
    "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (21 láminas de tipología).",
-   "wa_label": "Edifikarte ventas",
+   "wa_label": "Edifikarte · Monte Alegre",
    "documentos": [
     {
      "titulo": "Brochure oficial Edifikarte · Monte Alegre 109 (jul-2026)",
@@ -3501,7 +3716,25 @@
      "fecha": "2026-07",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "924447479",
+     "fuente": "Cartel/valla fotografiada en el recorrido del 22-ago-2026 — impreso en la valla de Edifikarte"
+    },
+    {
+     "nombre": "Jenny",
+     "numero": "981386111",
+     "fuente": "Chat real de WhatsApp con la asesora"
+    },
+    {
+     "nombre": null,
+     "numero": "934411415",
+     "fuente": "Web oficial de Edifikarte (24-ago-2026)"
+    }
+   ],
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "monte-carmelo-250",
@@ -3533,7 +3766,8 @@
     "assets/planos/monte-carmelo-250/flat-604.jpg",
     "assets/planos/monte-carmelo-250/flat-s01a.jpg",
     "assets/planos/monte-carmelo-250/flat-s02.jpg",
-    "assets/planos/monte-carmelo-250/flat-s03.jpg"
+    "assets/planos/monte-carmelo-250/flat-s03.jpg",
+    "assets/campo/monte-carmelo-250.jpg"
    ],
    "brochure": null,
    "typologies": [
@@ -3611,7 +3845,22 @@
      "fecha": null,
      "tipo": "ficha"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Jenny",
+     "numero": "981386111",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "934411415",
+     "fuente": "Web oficial de Edifikarte (24-ago-2026)"
+    }
+   ],
+   "asesora": "Jenny",
+   "wa_label": "Jenny",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "monte-carmelo-551",
@@ -3814,7 +4063,15 @@
      "fecha": "2026",
      "tipo": "plano"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "952496382",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "wa_label": "Balance Grupo Inmobiliario"
   },
   {
    "id": "monte-mar-167",
@@ -4008,7 +4265,21 @@
      "tipo": "brochure"
     }
    ],
-   "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (18 láminas de tipología)."
+   "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (18 láminas de tipología).",
+   "contactos": [
+    {
+     "nombre": "Jenny",
+     "numero": "981386111",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "984261016",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Jenny",
+   "wa_label": "Jenny"
   },
   {
    "id": "monte-mayor-177",
@@ -4126,7 +4397,17 @@
      "fecha": "2023-10",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Jenny",
+     "numero": "981386111",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Jenny",
+   "wa_label": "Jenny",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "monte-mayor-183",
@@ -4640,7 +4921,17 @@
      "tipo": "tarifario"
     }
    ],
-   "tarifario": "assets/brochures/monte-mayor-183-lista-precios.pdf"
+   "tarifario": "assets/brochures/monte-mayor-183-lista-precios.pdf",
+   "contactos": [
+    {
+     "nombre": "Jenniffer",
+     "numero": "944216477",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Jenniffer",
+   "wa_label": "Jenniffer",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "monte-real-265",
@@ -4658,7 +4949,7 @@
    "precio_hasta_usd": null,
    "dorms": "3",
    "m2": "167.82",
-   "wa": "999278271",
+   "wa": "988609572",
    "web": "https://eeinmobiliaria.com/proyectos/monte-real/",
    "img": "assets/img-f1/monte-real-265/img-01.jpg",
    "planos": [
@@ -4738,7 +5029,21 @@
      "fecha": null,
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Cecilia",
+     "numero": "988609572",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "999278271",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    }
+   ],
+   "asesora": "Cecilia",
+   "wa_label": "Cecilia"
   },
   {
    "id": "monte-sierpe",
@@ -4901,7 +5206,16 @@
      "fecha": "2025-10",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Nadia",
+     "numero": "943729552",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Nadia",
+   "wa_label": "Nadia"
   },
   {
    "id": "monte-umbroso",
@@ -5033,7 +5347,7 @@
    "precio_hasta_usd": 385000,
    "dorms": "2–4",
    "m2": "64–240",
-   "wa": "975244600",
+   "wa": "981349116",
    "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
    "img": "assets/img-f1/monteflor/img-01.jpg",
    "planos": [
@@ -5122,7 +5436,21 @@
    "caseta_fecha": "2026-08-22",
    "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola.",
    "pedido": "Hola! Vi la valla de Monte Flor en Chacarilla. Me pasan los planos de las tipologías y la lista de precios? Y si la cochera va incluida o aparte.",
-   "pedido_que": "planos + tarifario"
+   "pedido_que": "planos + tarifario",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "981349116",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "975244600",
+     "fuente": "Cartel/tótem fotografiado en el recorrido del 22-ago-2026"
+    }
+   ],
+   "wa_label": "Constructora Magnífica",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "parque-monte-carmelo",
@@ -5404,7 +5732,16 @@
      "fecha": "2026-06",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Cecilia",
+     "numero": "988609572",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Cecilia",
+   "wa_label": "Cecilia"
   },
   {
    "id": "precursores-525",
@@ -5432,7 +5769,8 @@
     "assets/planos/precursores-525/precu-duplex-603.jpg",
     "assets/planos/precursores-525/precu-flat-101.jpg",
     "assets/planos/precursores-525/precu-flat-102.jpg",
-    "assets/planos/precursores-525/precu-flat-x04-304.jpg"
+    "assets/planos/precursores-525/precu-flat-x04-304.jpg",
+    "assets/campo/chacarillasur-precursores.jpg"
    ],
    "brochure": "assets/brochures/Precu_Brochure_AC.pdf",
    "typologies": [
@@ -5532,7 +5870,17 @@
      "fecha": "2026",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Joyce",
+     "numero": "949107186",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Joyce",
+   "wa_label": "Joyce",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "precursores-ii",
@@ -5666,7 +6014,16 @@
      "tipo": "tarifario"
     }
    ],
-   "tarifario": "assets/brochures/precursores-ii-lista-precios.pdf"
+   "tarifario": "assets/brochures/precursores-ii-lista-precios.pdf",
+   "contactos": [
+    {
+     "nombre": "Indira Ramos",
+     "numero": "996898925",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Indira Ramos",
+   "wa_label": "Indira Ramos"
   },
   {
    "id": "santorini",
@@ -5874,7 +6231,17 @@
      "fecha": "2026-06",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": "Rossana",
+     "numero": "999024346",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "asesora": "Rossana",
+   "wa_label": "Rossana",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "spazio",
@@ -5894,7 +6261,7 @@
    "m2": "83–247",
    "wa": "957733272",
    "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
-   "img": "assets/campo/spazio-panel-ventas.jpg",
+   "img": "assets/campo/spazio-sala-ventas.jpg",
    "planos": [
     "assets/planos/spazio/duplex-701.jpg",
     "assets/planos/spazio/duplex-702.jpg",
@@ -5908,7 +6275,8 @@
     "assets/planos/spazio/flat-603.jpg",
     "assets/planos/spazio/flat-604.jpg",
     "assets/campo/spazio-panel-ventas.jpg",
-    "assets/planos/spazio/spazio-panel-ventas.jpg"
+    "assets/planos/spazio/spazio-panel-ventas.jpg",
+    "assets/campo/spazio-sala-ventas.jpg"
    ],
    "brochure": "assets/brochures/spazio-f1.pdf",
    "typologies": [
@@ -6017,7 +6385,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad.",
+   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -6043,7 +6411,7 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m.",
    "caseta_ventas": "si",
-   "caseta_nota": "Caseta de ventas atendida. Horario: lunes a viernes de 9:00 a 18:00 y sábados de 9:00 a 17:00.",
+   "caseta_nota": "Sala de ventas propia con dos banderolas «INFORMES» en la puerta y sello «Best Place to Live» (3er año consecutivo).",
    "caseta_fecha": "2026-08-22",
    "stock": {
     "n": 20,
@@ -6053,7 +6421,7 @@
    "cuadrante_verificado": "2026-08-22",
    "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00",
    "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon + panel de la sala de ventas",
-   "como_presenta": "Grupo Dicon atiende en sala de ventas con panel de disponibilidad a la vista (L–V 9–18 h, S 9–17 h).",
+   "como_presenta": "Grupo Dicon atiende en sala de ventas con panel de disponibilidad a la vista (L–V 9–18 h, S 9–17 h). En obra se presentan como «SPAZIO Residencial · FLEX APARTMENTS» bajo el claim «Tu espacio, tu historia», con sello Best Place to Live.",
    "documentos": [
     {
      "titulo": "Brochure oficial Grupo Dicon · Spazio",
@@ -6062,7 +6430,16 @@
      "fecha": null,
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "957733272",
+     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    }
+   ],
+   "wa_label": "Grupo Dicon",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "terraverde",
@@ -6140,7 +6517,7 @@
    "dorms": "3–4",
    "m2": "153–321",
    "wa": "980765183",
-   "wa_label": "Washington B. · AyD",
+   "wa_label": "Inmobiliaria AyD",
    "web": "https://inmobiliariaayd.com/proyecto/monte-umbroso/",
    "img": "assets/img/monte-umbroso-247.jpg",
    "brochure": null,
@@ -6232,7 +6609,14 @@
    "politica_precio": "El precio de lista es SOLO el departamento. Los estacionamientos se cotizan aparte (S/54,000 cada uno).",
    "promocion": "Descuento de preventa aplicado en la propia hoja de cotización: en el flat típico 301 el paquete baja de S/1,527,000 a S/1,411,900 (−S/115,100). Además dan «prioridad en el Pre-Lanzamiento antes del lanzamiento comercial» a quienes consultaron antes.",
    "tarifario": "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
-   "planos_fuente": "Planos de tipología de la web oficial de Inmobiliaria AyD + fichas del asesor"
+   "planos_fuente": "Planos de tipología de la web oficial de Inmobiliaria AyD + fichas del asesor",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "980765183",
+     "fuente": "Web oficial de Inmobiliaria AyD"
+    }
+   ]
   },
   {
    "id": "narciso-ayd",
@@ -6336,10 +6720,10 @@
    "en_cuadrante": true,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
-   "dorms": "Por confirmar",
-   "m2": "Por confirmar",
+   "dorms": "1–3",
+   "m2": "64 – 174",
    "wa": "908875600",
-   "wa_label": "Guerin",
+   "wa_label": "Guerin · Precursores Verde",
    "web": "https://www.guerin.pe",
    "img": "assets/campo/precursores-verde.jpg",
    "brochure": "https://www.guerin.pe/wp-content/uploads/2026/04/Brochure-Precursores-verde_Guerin.pdf",
@@ -6368,12 +6752,12 @@
    "cochera_status": "nd",
    "stock": {
     "n": null,
-    "label": "Últimos departamentos"
+    "label": "Últimos departamentos (anunciado en el cartel de obra)"
    },
    "mostrar": true,
    "geo_aprox": false,
    "total_pisos": 8,
-   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: Guerin Proyectos S.A.C., constructora Alcamo S.A.C., licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025–17/03/2028. Vivienda multifamiliar sostenible: 8 pisos + azotea, 3 sótanos. Certificación EDGE, financiado por BCP. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600.",
+   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: Guerin Proyectos S.A.C., constructora Alcamo S.A.C., licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025–17/03/2028. Vivienda multifamiliar sostenible: 8 pisos + azotea, 3 sótanos. Certificación EDGE, financiado por BCP. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600. El cartel de obra fotografiado el 22-ago-2026 confirma: Guerin, «PRECURSORES VERDE», desde 64 m² hasta 174 m², 1|2|3 dormitorios, financiado por BCP, «ÚLTIMOS DEPTOS», depa piloto visitable y WhatsApp 908 875 600. Áreas comunes: coworking, zona de parrilla y jardín lounge.",
    "fuentes": [
     "Cartel de obra fotografiado en campo 22-ago-2026",
     "https://www.guerin.pe",
@@ -6382,8 +6766,7 @@
    "amenidades": [
     "Coworking",
     "Zona de parrilla",
-    "Jardín lounge",
-    "Certificación EDGE"
+    "Jardín lounge"
    ],
    "precio_hist": [],
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador).",
@@ -6404,7 +6787,16 @@
      "fecha": "2026-04",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "908875600",
+     "fuente": "Cartel/valla fotografiada en el recorrido del 22-ago-2026 — impreso en el cartel de obra de Guerin"
+    }
+   ],
+   "horario_ventas": "Tienen departamento piloto visitable («Visite nuestro piloto» en el cartel)",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "astete-living",
@@ -6422,7 +6814,7 @@
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": "945678879",
+   "wa": null,
    "web": null,
    "img": "assets/campo/astete-living.jpg",
    "brochure": null,
@@ -6435,7 +6827,7 @@
    "stock": null,
    "mostrar": true,
    "geo_aprox": false,
-   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías. Búsqueda en internet 24-ago-2026: EDSA Inmobiliaria no publica ficha de este proyecto y no aparece en Nexo, Urbania ni Adondevivir. Ojo: el proyecto «Velasco Astete» que sí figura en Nexo es OTRO (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2–3 dorms, 63–149 m², desde S/ 470,000) y está fuera del cuadrante.",
+   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías. Búsqueda en internet 24-ago-2026: EDSA Inmobiliaria no publica ficha de este proyecto y no aparece en Nexo, Urbania ni Adondevivir. Ojo: el proyecto «Velasco Astete» que sí figura en Nexo es OTRO (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2–3 dorms, 63–149 m², desde S/ 470,000) y está fuera del cuadrante. ⚠ Sin WhatsApp verificado. El 945 678 879 que figuraba correspondía en realidad a La Floresta Boulevard — se retiró.",
    "fuentes": [
     "Cerco de obra fotografiado en campo 22-ago-2026",
     "Búsqueda web 24-ago-2026 (Nexo, Urbania, Adondevivir): sin ficha publicada de Astete Living"
@@ -6449,9 +6841,11 @@
    "estado_obra": "Sin obra: la casa del terreno sigue en pie, pintada y rotulada con la marca",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "wa_label": "EDSA Inmobiliaria",
+   "wa_label": null,
    "pedido": "Hola! Vi el anuncio de Astete Living en Velasco Astete 1419. Me pueden pasar información del proyecto: planos, metrajes y precios? Y para cuándo es el lanzamiento?",
-   "pedido_que": "info del proyecto (no hay nada publicado)"
+   "pedido_que": "info del proyecto (no hay nada publicado)",
+   "contactos": [],
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "flexi-iii",
@@ -6471,7 +6865,7 @@
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
    "wa": "994298155",
-   "wa_label": "Central Inmobiliaria",
+   "wa_label": "Diana",
    "web": "https://www.centralinmobiliaria.pe/",
    "img": "assets/campo/flexi-iii.jpg",
    "brochure": null,
@@ -6499,12 +6893,21 @@
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "pedido": "Hola! Vi el cartel de FLEXI III en Precursores 152. Me pueden enviar los planos y precios cuando los tengan? Quiero estar en la lista del lanzamiento.",
-   "pedido_que": "fecha de lanzamiento + precios"
+   "pedido_que": "fecha de lanzamiento + precios",
+   "contactos": [
+    {
+     "nombre": "Diana",
+     "numero": "994298155",
+     "fuente": "Mismo contacto comercial de Central Inmobiliaria (Jardines de Monte Real)"
+    }
+   ],
+   "asesora": "Diana",
+   "foto_campo": "2026-08-22"
   },
   {
    "id": "living-monte-real",
-   "name": "Monte 2",
-   "dev": "Grupo Dicon",
+   "name": "Living Monte Real",
+   "dev": "Grupo Chacarilla Sur (por confirmar — el logo del cartel es el suyo)",
    "addr": "Jr. Monte Real, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En obra · con caseta de ventas",
@@ -6517,9 +6920,9 @@
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "1–3",
-   "m2": "85–193",
+   "m2": "85 – 193",
    "wa": "949107186",
-   "wa_label": "Joyce · Chacarilla Sur",
+   "wa_label": "Living Monte Real",
    "web": null,
    "img": "assets/campo/living-monte-real.jpg",
    "brochure": null,
@@ -6537,16 +6940,25 @@
    "caseta_ventas": "si",
    "caseta_nota": "Caseta de ventas en el terreno (anotación de campo).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Cerco granate de Grupo Chacarilla Sur sobre Jr. Monte Real: «1.2.3 DORMS — desde 85 m² hasta 193 m²», WhatsApp 949 107 186 (la misma asesora de Precursores 525). Obra avanzada. Faltan precios por unidad.",
+   "comentario": "Confirmado con la foto del recorrido: el cartel dice «LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · WhatsApp 949 107 186». Antes lo teníamos como «Monte 2» de Dicon; el logo del cartel es el de Grupo Chacarilla Sur (el mismo de Precursores 525), y 949 107 186 es el número de Joyce, su asesora. Falta confirmar el desarrollador con ella.",
    "fuentes": [
+    "Cartel/valla fotografiada en el recorrido del 22-ago-2026",
     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
    ],
    "amenidades": [],
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "pedido": "Hola! Estoy viendo opciones por Chacarilla y me interesa Monte 2, en Monte Real. Me pueden pasar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera o va aparte. Gracias!",
-   "pedido_que": "planos + tarifario"
+   "pedido": "Hola Joyce! Vi el cartel de Living Monte Real, en Jr. Monte Real. Me pueden pasar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera.",
+   "pedido_que": "planos + tarifario",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "949107186",
+     "fuente": "Cartel/valla fotografiada en el recorrido del 22-ago-2026 — el número está impreso en el cartel del proyecto"
+    }
+   ],
+   "foto_campo": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -6554,7 +6966,7 @@
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": "916123888",
+   "wa": "999988287",
    "web": "https://www.proyectospyr.com",
    "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
@@ -6592,7 +7004,21 @@
    "cuadrante_verificado": "2026-08-22",
    "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia.",
    "pedido": "Hola! Me interesa The Eleven. Vi que tienen entrega inmediata. Me pueden enviar los planos, los metrajes disponibles y la lista de precios? Incluye cochera?",
-   "pedido_que": "planos + tarifario"
+   "pedido_que": "planos + tarifario",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "999988287",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "916123888",
+     "fuente": "Cartel/tótem fotografiado en el recorrido del 22-ago-2026"
+    }
+   ],
+   "wa_label": "Proyectos PyR",
+   "foto_campo": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -6600,7 +7026,7 @@
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": "981386111",
+   "wa": null,
    "web": null,
    "img": null,
    "brochure": null,
@@ -6633,9 +7059,11 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. Registrado en el recorrido; faltan datos comerciales. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor.",
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. Registrado en el recorrido; faltan datos comerciales. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor. ⚠ Sin WhatsApp verificado. El número que figuraba era el de Edifikarte, asignado por suposición — se retiró hasta confirmar quién desarrolla.",
    "pedido": "Hola! Una consulta: tienen algún proyecto en Calle Monte Alegre 137, en Chacarilla? Me interesa la zona y quisiera información.",
-   "pedido_que": "confirmar inmobiliaria y proyecto"
+   "pedido_que": "confirmar inmobiliaria y proyecto",
+   "wa_label": null,
+   "contactos": []
   },
   {
    "isGEU": false,
@@ -6643,7 +7071,7 @@
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": "988609572",
+   "wa": null,
    "web": null,
    "img": null,
    "brochure": null,
@@ -6676,9 +7104,11 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor.",
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor. ⚠ Sin WhatsApp verificado. El 988 609 572 que figuraba es el de Cecilia (EE Inmobiliaria) — se retiró.",
    "pedido": "Hola! Buenas. Me interesa el proyecto frente al Parque La Floresta. Me pasan los planos por tipología y la lista de precios? También quería saber si la cochera va incluida en el precio.",
-   "pedido_que": "planos + tarifario + nombre del proyecto"
+   "pedido_que": "planos + tarifario + nombre del proyecto",
+   "wa_label": null,
+   "contactos": []
   },
   {
    "id": "ten-apartments",
@@ -6698,7 +7128,7 @@
    "dorms": "1–2",
    "m2": "64.04 – 122.05",
    "wa": "908914344",
-   "wa_label": "TEN Apartments",
+   "wa_label": "EE Inmobiliaria",
    "web": "https://eeinmobiliaria.com/proyectos/ten-apartments/",
    "img": "assets/campo/ten-apartments.jpg",
    "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2026/07/Ten_Brochure_26_DP_AGOSTO-19-08-26.pdf",
@@ -6793,7 +7223,15 @@
      "fecha": "2026-08-19",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "908914344",
+     "fuente": "Cartel/tótem fotografiado en el recorrido del 22-ago-2026"
+    }
+   ],
+   "foto_campo": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -6833,7 +7271,7 @@
    "pisos": 8,
    "unidades": 29,
    "estacionamientos": 40,
-   "wa": "908892190",
+   "wa": "960279665",
    "wa_label": "Vibra Inmobiliaria",
    "web": "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343",
    "planos": [
@@ -6930,7 +7368,19 @@
     }
    ],
    "pedido": "Hola! Me interesa Floresta 343, en Av. de la Floresta. Me pueden enviar la lista de precios y confirmar si el precio incluye estacionamiento? Y para cuándo es la entrega?",
-   "pedido_que": "lista de precios + entrega"
+   "pedido_que": "lista de precios + entrega",
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "960279665",
+     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "908892190",
+     "fuente": "Web oficial de Vibra Inmobiliaria (24-ago-2026)"
+    }
+   ]
   },
   {
    "isGEU": false,
