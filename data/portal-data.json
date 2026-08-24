@@ -12,7 +12,7 @@
   "sin_precio_publico": 4,
   "cochera_incluida": 12,
   "cochera_aparte": 4,
-  "verif_web_fecha": "2026-08-16",
+  "verif_web_fecha": "2026-08-24",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
   "cortes": [
    {
@@ -1177,7 +1177,7 @@
     "assets/planos/conde-de-la-vega-251/flat-503.jpg",
     "assets/campo/conde-de-la-vega-251.jpg"
    ],
-   "brochure": null,
+   "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf",
    "typologies": [
     {
      "unidad": "Dúplex 603",
@@ -1209,7 +1209,8 @@
    "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero en fachada «ÚLTIMOS DÚPLEX» — 2 dorm de 95–122 m² y 3 dorm de 161 m². Contacto en el letrero: 981 386 111. Falta la lista de precios por unidad.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
-    "Chat asesor Jenny Miranda (Evolution API, jul-2026)"
+    "Chat asesor Jenny Miranda (Evolution API, jul-2026)",
+    "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -1244,7 +1245,16 @@
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Terminado y habitado · últimos dúplex en venta",
    "cuadrante_verificado": "2026-08-22",
-   "planos_fuente": "Planos de tipología descargados de la web oficial de Edifikarte"
+   "planos_fuente": "Planos de tipología descargados de la web oficial de Edifikarte",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Edifikarte · Conde de la Vega 251",
+     "archivo": "assets/docs/conde-de-la-vega-251-brochure.pdf",
+     "url": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf",
+     "fecha": "2023-10",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1770,13 +1780,14 @@
     2,
     3
    ],
-   "comentario": "Lista oficial Azzurra CDLV 460 (18-may-2026) y brochure 01-jun-2026. Se cargan 26 unidades por tipología (flats, dúplex, penthouses y vendidos); la comparación usa solo 9 flats típicos disponibles de pisos 2-5, netos de estacionamiento incluido.",
+   "comentario": "Lista oficial Azzurra CDLV 460 (18-may-2026) y brochure 01-jun-2026. Se cargan 26 unidades por tipología (flats, dúplex, penthouses y vendidos); la comparación usa solo 9 flats típicos disponibles de pisos 2-5, netos de estacionamiento incluido. Brochure oficial del 01-jun-2026: 26 unidades (19 flats + 7 dúplex), de 65 a 356 m², 1 a 3 dormitorios, 40 estacionamientos, parking de bicicletas y certificación EDGE.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
     "https://azzurra.com.pe/proyectos/conde-de-la-vega-460/",
     "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf",
-    "assets/brochures/conde-de-la-vega-460-f1.pdf"
+    "assets/brochures/conde-de-la-vega-460-f1.pdf",
+    "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-CDLV-010626-2.pdf"
    ],
    "portales": {},
    "anuncios": [],
@@ -1816,7 +1827,16 @@
    "caseta_nota": "Sin caseta de ventas.",
    "caseta_fecha": "2026-08-22",
    "politica_precio": "La lista de Azzurra incluye 1 o 2 estacionamientos según la unidad.",
-   "como_presenta": "Azzurra lo presenta como preventa boutique de 26 departamentos, con lista de precios por unidad."
+   "como_presenta": "Azzurra lo presenta como preventa boutique de 26 departamentos, con lista de precios por unidad.",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Azzurra · edición 01-jun-2026",
+     "archivo": "assets/docs/conde-de-la-vega-460-brochure.pdf",
+     "url": "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-CDLV-010626-2.pdf",
+     "fecha": "2026-06-01",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "dmont-dicon",
@@ -2331,7 +2351,12 @@
     "assets/planos/hana/hana-19.png",
     "assets/planos/hana/hana-dpto102-plano.png",
     "assets/planos/hana/hana-planta-1piso.png",
-    "assets/planos/hana/plano-102-vigente.jpg"
+    "assets/planos/hana/plano-102-vigente.jpg",
+    "assets/planos/hana-oficial/Dpto 102 - 56.31 m2 techada - 96.31 m2 total.jpg",
+    "assets/planos/hana-oficial/Planta 1er piso - Dptos 101 y 102.jpg",
+    "assets/planos/hana-oficial/Sotano 01 - estacionamientos (estado de venta).jpg",
+    "assets/planos/hana-oficial/Sotano 02 - estacionamientos (estado de venta).jpg",
+    "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg"
    ],
    "brochure": "assets/brochures/HANA-Odima-brochure.pdf",
    "typologies": [
@@ -2349,7 +2374,7 @@
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Odima, Conde de la Vega del Ren 149, 17 dptos, financia BCP. Única unidad: DPTO 102 (3 dorm, 97 m², 1er piso elevado). PROMO ago-2026: bajó de S/900,000 a S/852,000 (depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de mejora). Entrega inmediata.",
+   "comentario": "Odima, Conde de la Vega del Ren 149, 17 dptos, financia BCP. Única unidad: DPTO 102 (3 dorm, 97 m², 1er piso elevado). PROMO ago-2026: bajó de S/900,000 a S/852,000 (depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de mejora). Entrega inmediata. Brochure oficial de feb-2026: 17 departamentos de 3 y 4 dormitorios, de 85 a 290 m². En las plantas de los tres sótanos TODOS los estacionamientos y depósitos aparecen rotulados «VENDIDO» — señal de que el proyecto está prácticamente colocado.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -2384,7 +2409,17 @@
    "estado_obra": "Último departamento en venta",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Odima · HANA Chacarilla",
+     "archivo": "assets/docs/hana-brochure.pdf",
+     "url": "https://odima.pe/wp-content/uploads/2026/02/HANA-BC_compressed.pdf",
+     "fecha": "2026-02",
+     "tipo": "brochure"
+    }
+   ],
+   "planos_fuente": "Brochure oficial Odima, edición febrero-2026 (plantas del 1er piso, Dpto. 102 y los 3 sótanos)."
   },
   {
    "id": "jardines-monte-real",
@@ -2403,11 +2438,25 @@
    "dorms": "1–4",
    "m2": "63–145",
    "wa": "994298155",
-   "web": "https://centralinmobiliaria.pe",
+   "web": "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
    "img": "assets/img-f1/jardines-monte-real/img-01.jpg",
    "planos": [
     "assets/planos/jardines-de-monte-real/plano-107-precio.jpg",
     "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg",
+    "assets/planos/jardines-monte-real-oficial/DÚPLEX 602 - 232.05 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/DÚPLEX 609 - 259.88 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT 107 - 129.42 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT 201 - 135.13 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT 205 - 106.64 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT 209 - 124 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT X01 - 131.43 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT X04 - 107.62 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT X08 - 94.20 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/FLAT X09 - 127.77 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/Lamina 25 - 278.44 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/Lamina 27 - 211.57 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/Lamina 28 - 209.55 m2.jpg",
+    "assets/planos/jardines-monte-real-oficial/Lamina 29 - 216.52 m2.jpg",
     "assets/campo/jardines-monte-real-obra.jpg"
    ],
    "brochure": "assets/brochures/jardines-monte-real-f1.pdf",
@@ -2445,13 +2494,15 @@
     2,
     3
    ],
-   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor.",
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo.",
    "amenidades": [],
    "total_pisos": "6 + rooftop",
    "fuentes": [
     "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
     "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/jardines-de-monte-real-3770",
-    "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP.pdf"
+    "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP.pdf",
+    "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria"
@@ -2483,7 +2534,17 @@
    "caseta_nota": "Sin caseta de ventas: carteles sobre el cerco.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · carteles de «últimas unidades» sobre el cerco",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Central Inmobiliaria · edición 22-jun-2026",
+     "archivo": "assets/docs/jardines-monte-real-brochure.pdf",
+     "url": "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
+     "fecha": "2026-06-22",
+     "tipo": "brochure"
+    }
+   ],
+   "planos_fuente": "Brochure oficial Central Inmobiliaria, edición 22-jun-2026 (14 láminas de tipología)."
   },
   {
    "id": "la-floresta-boulevard",
@@ -2973,7 +3034,16 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 19 m del marcador).",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Balance · Monte Carmelo 551",
+     "archivo": "assets/docs/monte-carmelo-551-brochure.pdf",
+     "url": "https://balance.pe/site/media/Brochure-Monte-carmelo-551-web.pdf",
+     "fecha": "2026",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "monte-mar-167",
@@ -2989,52 +3059,142 @@
    "en_cuadrante": true,
    "precio_desde_usd": 288235,
    "precio_hasta_usd": null,
-   "dorms": "2–4",
-   "m2": "80–136",
+   "dorms": "2–3",
+   "m2": "81.37 – 182.67",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/proyectos/montemar-269/",
    "img": "assets/img/monte-mar-167.jpg",
-   "planos": [],
-   "brochure": null,
+   "planos": [
+    "assets/planos/montemar-269-oficial/DÚPLEX 002 3 - 153.75 m2.jpg",
+    "assets/planos/montemar-269-oficial/DÚPLEX 003 3 - 141.44 m2.jpg",
+    "assets/planos/montemar-269-oficial/DÚPLEX 004 3 - 182.67 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 001 3 - 140.23 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 101 3 - 153.25 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 102 3 - 102.33 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 201 3 - 134.05 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 202 2 - 81.37 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 203 3 - 132.71 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 204 3 - 113.05 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 301 3 - 134.05 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 302 2 - 81.37 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 303 3 - 132.71 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 304 3 - 113.05 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 401 3 - 134.05 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 402 2 - 81.37 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 403 3 - 132.71 m2.jpg",
+    "assets/planos/montemar-269-oficial/TIPO 404 3 - 113.05 m2.jpg"
+   ],
+   "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf",
    "typologies": [
     {
-     "unidad": "Dpto 101 (terraza + jardín)",
+     "unidad": "TIPO 001",
      "dorm": 3,
-     "m2": 121,
-     "precio_usd": 288235,
-     "precio_m2": 2382,
+     "m2": 140.23,
+     "precio_usd": null,
+     "precio_m2": null,
      "tipo": "primer_piso",
-     "piso": 1,
+     "piso": "1",
      "flat": false
     },
     {
-     "unidad": "Dpto 103 (terraza + jardín)",
+     "unidad": "TIPO 101",
      "dorm": 3,
-     "m2": 121,
-     "precio_usd": 288235,
-     "precio_m2": 2382,
+     "m2": 153.25,
+     "precio_usd": null,
+     "precio_m2": null,
      "tipo": "primer_piso",
-     "piso": 1,
+     "piso": "1",
      "flat": false
     },
     {
-     "unidad": "Tipo 203",
+     "unidad": "TIPO 102",
      "dorm": 3,
-     "m2": null,
+     "m2": 102.33,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "primer_piso",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "TIPO 201 / 301 / 401",
+     "dorm": 3,
+     "m2": 134.05,
      "precio_usd": null,
      "precio_m2": null,
      "tipo": "flat",
-     "piso": 2,
+     "piso": "2 al 4",
      "flat": true
+    },
+    {
+     "unidad": "TIPO 202 / 302 / 402",
+     "dorm": 2,
+     "m2": 81.37,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true
+    },
+    {
+     "unidad": "TIPO 203 / 303 / 403",
+     "dorm": 3,
+     "m2": 132.71,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true
+    },
+    {
+     "unidad": "TIPO 204 / 304 / 404",
+     "dorm": 3,
+     "m2": 113.05,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true
+    },
+    {
+     "unidad": "DÚPLEX 002",
+     "dorm": 3,
+     "m2": 153.75,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "—",
+     "flat": false
+    },
+    {
+     "unidad": "DÚPLEX 003",
+     "dorm": 3,
+     "m2": 141.44,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "—",
+     "flat": false
+    },
+    {
+     "unidad": "DÚPLEX 004",
+     "dorm": 3,
+     "m2": 182.67,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "—",
+     "flat": false
     }
    ],
    "flats_summary": [],
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial.",
+   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp.",
    "fuentes": [
-    "https://www.edifikarte.com.pe/proyectos/montemar-269/"
+    "https://www.edifikarte.com.pe/proyectos/montemar-269/",
+    "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -3067,7 +3227,17 @@
    "cuadrante_verificado": "2026-08-22",
    "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad».",
    "pedido": "Hola! Retomo por Montemar 269. Me pueden enviar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera. Gracias!",
-   "pedido_que": "planos + tarifario"
+   "pedido_que": "planos + tarifario",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Edifikarte · Montemar 269 (jul-2026)",
+     "archivo": "assets/docs/monte-mar-167-brochure.pdf",
+     "url": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf",
+     "fecha": "2026-07",
+     "tipo": "brochure"
+    }
+   ],
+   "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (18 láminas de tipología)."
   },
   {
    "id": "monte-mayor-177",
@@ -3129,7 +3299,8 @@
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
     "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2762-monte-mayor-177-santiago-de-surco-lima-lima-grupo-edifikarte",
-    "https://reuschereyna.com/proyecto/monte-mayor-177/"
+    "https://reuschereyna.com/proyecto/monte-mayor-177/",
+    "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Monte-Mayor-177.pdf"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2762-monte-mayor-177-santiago-de-surco-lima-lima-grupo-edifikarte"
@@ -3168,7 +3339,16 @@
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Terminado · ÚLTIMA unidad en venta (2 dorm, 86 m²)",
    "cuadrante_verificado": "2026-08-22",
-   "planos_fuente": "Planos de tipología de la web oficial de Edifikarte + lista del asesor"
+   "planos_fuente": "Planos de tipología de la web oficial de Edifikarte + lista del asesor",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Edifikarte · Monte Mayor 177",
+     "archivo": "assets/docs/monte-mayor-177-brochure.pdf",
+     "url": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Monte-Mayor-177.pdf",
+     "fecha": "2023-10",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "monte-mayor-183",
@@ -3195,6 +3375,9 @@
     "assets/planos/monte-mayor-183/plano-03.jpg",
     "assets/planos/monte-mayor-183/plano-x02-1.jpg",
     "assets/planos/monte-mayor-183/lista-precios-1.jpg",
+    "assets/planos/monte-mayor-183-oficial/Flat 101 - 73.13 m2.jpg",
+    "assets/planos/monte-mayor-183-oficial/Flat 102 - 132.98 m2 techada - 239.69 m2 total.jpg",
+    "assets/planos/monte-mayor-183-oficial/Flat 202 - 115.56 m2.jpg",
     "assets/campo/monte-mayor-183-valla.jpg"
    ],
    "brochure": "assets/brochures/monte-mayor-183-f1.pdf",
@@ -3614,7 +3797,8 @@
     "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-MM-240626.pdf",
     "https://www.facebook.com/azzurraconstructoresoficial/posts/monte-mayor-183-redefine-la-elegancia-en-el-distrito-de-surco",
     "https://tangible.pe/blog/oferta-inmobiliaria/departamentos-en-surco/departamentos-de-lujo-en-venta",
-    "Lista de precios y brochure oficiales del desarrollador (jun-2026)"
+    "Lista de precios y brochure oficiales del desarrollador (jun-2026)",
+    "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-MM-21.07.26.pdf"
    ],
    "portales": {},
    "anuncios": null,
@@ -3654,7 +3838,16 @@
    "cuadrante_verificado": "2026-08-22",
    "ref_urbana": "Al lado de un colegio nido y cerca del colegio Santa María Marianistas",
    "politica_precio": "La lista de precios de Azzurra incluye cochera y depósito en el precio publicado.",
-   "como_presenta": "Azzurra transmite urgencia por escasez: «Proyecto Monte Mayor voló, solo me quedan 3 depas»."
+   "como_presenta": "Azzurra transmite urgencia por escasez: «Proyecto Monte Mayor voló, solo me quedan 3 depas».",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Azzurra · edición 21-jul-2026",
+     "archivo": "assets/docs/monte-mayor-183-brochure.pdf",
+     "url": "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-MM-21.07.26.pdf",
+     "fecha": "2026-07-21",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "monte-real-265",
@@ -3736,7 +3929,16 @@
    },
    "motivo_retiro": "Proyecto ya entregado; queda una sola unidad (Dpto 103, 167.82 m²). No compite con una preventa a nov-2027.",
    "planos_fuente": "Brochure oficial EE Inmobiliaria 2026 + hoja de cotización del Dpto. 103 publicada en su web.",
-   "tarifario": "assets/planos/monte-real-265/cotizacion-dpto-103.jpg"
+   "tarifario": "assets/planos/monte-real-265/cotizacion-dpto-103.jpg",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial EE Inmobiliaria · Monte Real 2026",
+     "archivo": "assets/docs/monte-real-265-brochure.pdf",
+     "url": "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
+     "fecha": "2026",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "monte-sierpe",
@@ -3841,7 +4043,7 @@
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m².",
+   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -3850,7 +4052,8 @@
     "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria",
     "https://www.adondevivir.com/departamentos-en-venta-en-chacarilla-del-estanque-zona-de-santiago-de-surco-a-estrenar.html",
     "https://litpropiedades.com/propiedad/departamento/tu-hogar-ideal-en-surco-donde-empiezan-tus-mejores-momentos",
-    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07"
+    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07",
+    "https://makeinmobiliaria.pe/wp-content/uploads/2025/10/BROCHURE-DIGITAL-VERTICAL_MONTESIERPEIMPRESION.pdf"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3477-monte-sierpe-santiago-de-surco-lima-lima-make-inmobiliaria"
@@ -3882,7 +4085,16 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 89 m.",
    "cuadrante_verificado": "2026-08-22",
-   "politica_precio": "El precio de lista incluye 1 cochera (US$20,000 de valor). El US$/m² del portal la descuenta."
+   "politica_precio": "El precio de lista incluye 1 cochera (US$20,000 de valor). El US$/m² del portal la descuenta.",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Make Inmobiliaria · Monte Sierpe",
+     "archivo": "assets/docs/monte-sierpe-brochure.pdf",
+     "url": "https://makeinmobiliaria.pe/wp-content/uploads/2025/10/BROCHURE-DIGITAL-VERTICAL_MONTESIERPEIMPRESION.pdf",
+     "fecha": "2025-10",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "monte-umbroso",
@@ -3968,7 +4180,7 @@
     2,
     3
    ],
-   "comentario": "Transforma Proyectos Inmobiliarios; proyecto en construcción en la Alameda Monte Umbroso, Chacarilla. Publica precios de unidades en portales, sin lista completa por tipología. La ficha indica cochera incluida en el precio (por confirmar con el asesor).",
+   "comentario": "Transforma Proyectos Inmobiliarios; proyecto en construcción en la Alameda Monte Umbroso, Chacarilla. Publica precios de unidades en portales, sin lista completa por tipología. La ficha indica cochera incluida en el precio (por confirmar con el asesor). Búsqueda en portales (24-ago-2026): el proyecto figura con 7 pisos y 28 departamentos. Las unidades publicadas en InfoCasas/Urbania (carga de jul-2024, precios NO vigentes) eran: 1 dorm 67 m² S/657,773 · 3 dorm 98 m² S/924,385 · 3 dorm 145 m² S/1,265,688 · 2 dorm 158 m² S/1,193,211. No se cargan al comparativo por antigüedad y por no saber si incluyen cochera.",
    "amenidades": [
     "Rooftop",
     "Cocinas equipadas",
@@ -3982,7 +4194,8 @@
     "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144395",
     "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144400",
     "https://limaspace.com/listing/proyecto-de-alameda-monte-umbroso-chacarilla-suj10/",
-    "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159"
+    "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
+    "https://www.youtube.com/watch?v=ZS8n6zHxTB8"
    ],
    "portales": {
     "urbania": "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
@@ -4368,7 +4581,16 @@
    "caseta_nota": "Sin caseta: cartel en la casa del terreno, que aún no ha sido demolida.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Pre-obra: la casa del terreno sigue en pie, con cartel del proyecto",
-   "planos_fuente": "Web oficial EE Inmobiliaria; verificado contra el brochure edición agosto-2026 (mismas 13 tipologías)."
+   "planos_fuente": "Web oficial EE Inmobiliaria; verificado contra el brochure edición agosto-2026 (mismas 13 tipologías).",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial EE Inmobiliaria · edición agosto-2026",
+     "archivo": "assets/docs/parque-monte-carmelo-brochure.pdf",
+     "url": "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf",
+     "fecha": "2026-08-12",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "precursores-525",
@@ -5226,13 +5448,24 @@
    "wa_label": "Guerin",
    "web": "https://www.guerin.pe",
    "img": "assets/campo/precursores-verde.jpg",
-   "brochure": null,
+   "brochure": "https://www.guerin.pe/wp-content/uploads/2026/04/Brochure-Precursores-verde_Guerin.pdf",
    "planos": [
     "assets/planos/precursores-verde/plano-01.jpg",
     "assets/planos/precursores-verde/plano-02.jpg",
     "assets/planos/precursores-verde/plano-03.jpg",
     "assets/planos/precursores-verde/plano-04.jpg",
     "assets/planos/precursores-verde/plano-tipologia.jpg",
+    "assets/planos/precursores-verde-oficial/DÚPLEX 801 - 90.80 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 101 - 88.73 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 102 - 66.40 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 201 401 601 - 86.70 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 202 402 602 - 95.60 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 203 303 403 503 603 - 64.00 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 301 501 - 86.50 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 302 502 - 95.80 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 701 - 86.50 m2.jpg",
+    "assets/planos/precursores-verde-oficial/FLAT 702 - 125.52 m2.jpg",
+    "assets/planos/precursores-verde-oficial/Lamina 26 - 116.79 m2.jpg",
     "assets/campo/precursores-verde.jpg",
     "assets/campo/precursores-verde-2.jpg"
    ],
@@ -5249,7 +5482,8 @@
    "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: Guerin Proyectos S.A.C., constructora Alcamo S.A.C., licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025–17/03/2028. Vivienda multifamiliar sostenible: 8 pisos + azotea, 3 sótanos. Certificación EDGE, financiado por BCP. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600.",
    "fuentes": [
     "Cartel de obra fotografiado en campo 22-ago-2026",
-    "https://www.guerin.pe"
+    "https://www.guerin.pe",
+    "https://www.guerin.pe/wp-content/uploads/2026/04/Brochure-Precursores-verde_Guerin.pdf"
    ],
    "amenidades": [
     "Coworking",
@@ -5267,7 +5501,16 @@
    "cuadrante_verificado": "2026-08-22",
    "planos_fuente": "Plano de tipología de la web oficial de Guerin",
    "pedido": "Hola! Me interesa Precursores Verde, en Av. Precursores 280. Me pueden enviar los planos por tipología y la lista de precios? Vi que anuncian últimas unidades, cuáles quedan?",
-   "pedido_que": "tarifario + stock"
+   "pedido_que": "tarifario + stock",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Guerin · Precursores Verde",
+     "archivo": "assets/docs/precursores-verde-brochure.pdf",
+     "url": "https://www.guerin.pe/wp-content/uploads/2026/04/Brochure-Precursores-verde_Guerin.pdf",
+     "fecha": "2026-04",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "astete-living",
@@ -5647,7 +5890,16 @@
    "politica_precio": "Por confirmar si el precio de lista incluye estacionamiento (el brochure de agosto-2026 no lo indica).",
    "planos_fuente": "Brochure oficial EE Inmobiliaria, edición agosto-2026 (21 láminas de tipología).",
    "pedido": "Hola! Me interesa TEN Apartments. Vi los precios en la web. Una consulta: el precio de lista incluye estacionamiento o va aparte? Y cuánto cuesta la cochera?",
-   "pedido_que": "confirmar si el precio incluye estacionamiento"
+   "pedido_que": "confirmar si el precio incluye estacionamiento",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial EE Inmobiliaria · edición agosto-2026",
+     "archivo": "assets/docs/ten-apartments-brochure.pdf",
+     "url": "https://eeinmobiliaria.com/wp-content/uploads/2026/07/Ten_Brochure_26_DP_AGOSTO-19-08-26.pdf",
+     "fecha": "2026-08-19",
+     "tipo": "brochure"
+    }
+   ]
   }
  ]
 }

@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824e"></script>
+<script src="data/portal-data.js?v=20260824f"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -143,7 +143,17 @@ function render(){
 
   // fuentes
   const allsrc=[...(p.fuentes||[]),...Object.values(p.portales||{})].filter((v,i,a)=>v&&a.indexOf(v)===i);
-  const srcHtml=allsrc.length?`<div class="srclist">`+allsrc.map(u=>`<div>🔗 <a href="${u}" target="_blank">${u}</a></div>`).join('')+`</div>`:`<div class="empty">—</div>`;
+  const srcHtml=allsrc.length?`<div class="srclist">`+allsrc.map(u=>u.startsWith('http')
+      ?`<div>🔗 <a href="${u}" target="_blank">${u}</a></div>`
+      :`<div style="color:#6d776e">📌 ${u}</div>`).join('')+`</div>`:`<div class="empty">—</div>`;
+
+  // documentos descargados (respaldo local: si mañana borran el PDF de su web, acá sigue)
+  const ICO={brochure:'📕',tarifario:'💲',plano:'📐',ficha:'📄'};
+  const docsHtml=(p.documentos&&p.documentos.length)?`<div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:4px">`+
+    p.documentos.map(x=>`<a href="${x.archivo}" target="_blank" style="display:flex;flex-direction:column;gap:2px;text-decoration:none;background:#fff;border:1px solid #e6e1d4;border-radius:10px;padding:10px 14px;min-width:230px">
+      <span style="font-size:12.5px;font-weight:700;color:#15402c">${ICO[x.tipo]||'📎'} ${x.titulo}</span>
+      <span style="font-size:10.5px;color:#8a8577">Guardado en la plataforma${x.fecha?` · edición ${x.fecha}`:''}</span>
+      ${x.url?`<span style="font-size:10px;color:#b9863b;word-break:break-all">origen: ${x.url}</span>`:''}</a>`).join('')+`</div>`:'';
 
   // amenidades
   const amenHtml=(p.amenidades&&p.amenidades.length)?`<div class="amen">`+p.amenidades.map(a=>`<span>${a}</span>`).join('')+`</div>`:'';
@@ -218,8 +228,12 @@ function render(){
    ${p.geo_aprox?`<div class="alert">📍 <b>Ubicación aproximada.</b> ${p.geo_nota||''}</div>`:''}
    <div id="map"></div>
 
+   ${docsHtml?`<div class="sec">Respaldos guardados <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">copia propia — no depende de que la web del competidor siga arriba</span></div>${docsHtml}`:''}
+
    <div class="sec">Fuentes</div>
-   ${srcHtml}`;
+   ${srcHtml}
+   ${p.planos_fuente?`<div style="font-size:11.5px;color:#8a8577;margin-top:8px">📐 <b>Origen de los planos:</b> ${p.planos_fuente}</div>`:''}
+   ${D.meta.verif_web_fecha?`<div style="font-size:11.5px;color:#8a8577;margin-top:4px">🔎 Último rastreo en internet de todo el cuadrante: ${fmtFechaCorta(D.meta.verif_web_fecha)}</div>`:''}`;
 
   // mapa de ubicación
   if(p.lat!=null){

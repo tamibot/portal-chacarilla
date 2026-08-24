@@ -235,13 +235,14 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="analysisview"></div>
     <div id="priceview"></div>
     <div id="argview"></div>
+    <div id="covview"></div>
   </div>
   <div id="updatesview"></div>
   <div id="timelapseview"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824e"></script>
+<script src="data/portal-data.js?v=20260824f"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -881,19 +882,58 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],arg:['argview']};
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],arg:['argview'],cov:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['arg','Argumentario']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['arg','Argumentario'],['cov','Cobertura de datos']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
+  buildCobertura();
   showAnaSub('pos');
 }
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
-  ['statview','analysisview','priceview','argview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  ['statview','analysisview','priceview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
+
+/* COBERTURA DE DATOS · qué tenemos y qué falta de cada proyecto */
+function buildCobertura(){
+  const comps=P.filter(p=>p.mostrar&&!p.isGEU).sort((a,b)=>(b.en_cuadrante-a.en_cuadrante)||a.name.localeCompare(b.name));
+  const si='<span style="color:#2F7D54;font-weight:800">✓</span>', no='<span style="color:#ce3c31;font-weight:800">✕</span>';
+  const nPlan=p=>(p.planos||[]).filter(x=>!x.includes('assets/campo/')).length;
+  const cols=[
+    ['Planos', p=>nPlan(p)?`<span style="color:#2F7D54;font-weight:800">${nPlan(p)}</span>`:no],
+    ['Brochure', p=>(p.documentos||[]).some(d=>d.tipo==='brochure')?si:(p.brochure?'<span style="color:#b9863b;font-weight:700" title="Solo link, sin copia guardada">link</span>':no)],
+    ['Tarifario', p=>p.tarifario?si:no],
+    ['Precios', p=>p.precio_desde_usd?si:no],
+    ['$/m² comparable', p=>comparableRows(p).length?si:no],
+    ['Cochera', p=>{const k=parkingStatus(p);return k==='nd'?no:si;}],
+    ['Punto de venta', p=>p.caseta_ventas&&p.caseta_ventas!=='nd'?si:no],
+    ['Ubicación exacta', p=>p.geo_aprox?no:si],
+  ];
+  const score=p=>cols.reduce((a,[,fn])=>a+(fn(p).includes('#2F7D54')?1:0),0);
+  const rows=comps.map(p=>{
+    const sc=score(p), pct=Math.round(sc/cols.length*100);
+    const col=pct>=75?'#2F7D54':pct>=50?'#b9863b':'#ce3c31';
+    return `<tr><td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#15402c">${p.name}</a>
+      ${p.en_cuadrante?'':'<span style="font-size:9px;color:#9a958c"> · fuera</span>'}
+      <div class="muted" style="font-size:10px">${p.dev}</div></td>
+      ${cols.map(([,fn])=>`<td style="text-align:center">${fn(p)}</td>`).join('')}
+      <td style="text-align:center;font-weight:800;color:${col}">${pct}%</td></tr>`;}).join('');
+  const tot=cols.map(([t,fn])=>[t,comps.filter(p=>fn(p).includes('#2F7D54')).length]);
+  document.getElementById('covview').innerHTML=`
+   <h2 style="margin-bottom:2px">Cobertura de datos</h2>
+   <div style="font-size:12px;color:#999;margin-bottom:16px">Qué información tenemos realmente de cada competidor y qué falta. Todo lo marcado ✓ tiene su respaldo guardado en la plataforma (planos, brochure o cita del asesor) — clic en el nombre abre la ficha con las fuentes.</div>
+   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;max-width:960px">
+     ${tot.map(([t,n])=>`<div style="flex:1;min-width:110px;background:#fff;border:1px solid #e6e1d4;border-radius:11px;padding:10px 13px">
+       <div style="font-size:19px;font-weight:800;color:${n/comps.length>=.6?'#2F7D54':'#b9863b'}">${n}<span style="font-size:11px;color:#bbb">/${comps.length}</span></div>
+       <div style="font-size:10.5px;color:#7a7a7a">${t}</div></div>`).join('')}
+   </div>
+   <table class="t"><thead><tr><th style="width:20%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}<th style="text-align:center">Completo</th></tr></thead><tbody>${rows}</tbody></table>
+   <div class="foot" style="margin-top:10px">Los ✕ de Planos / Brochure / Tarifario son los pedidos abiertos por WhatsApp (ver Time lapse). Último rastreo en internet de todo el cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>`;
+}
+
 function buildArgumentario(){
   const comps=P.filter(p=>!p.isGEU&&p.mostrar);
   const all=[];comps.forEach(p=>(p.typologies||[]).forEach(t=>{if(t.precio_m2&&t.tipo==='flat'&&[1,2,3].includes(t.dorm)&&pisoOk(t.piso)&&!exclUnit(p.name,t))all.push(t.precio_m2);}));
