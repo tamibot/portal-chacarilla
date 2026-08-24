@@ -593,7 +593,31 @@
    "wa": "924691568",
    "web": null,
    "img": "assets/img/ave-del-sur-220.jpg",
-   "planos": [],
+   "planos": [
+    "assets/planos/ave-del-sur-220/duplex-701-01.jpg",
+    "assets/planos/ave-del-sur-220/duplex-701-02.jpg",
+    "assets/planos/ave-del-sur-220/duplex-702-01.jpg",
+    "assets/planos/ave-del-sur-220/duplex-702-02.jpg",
+    "assets/planos/ave-del-sur-220/duplex-703-01.jpg",
+    "assets/planos/ave-del-sur-220/duplex-703-02.jpg",
+    "assets/planos/ave-del-sur-220/duplex-705-01.jpg",
+    "assets/planos/ave-del-sur-220/duplex-705-02.jpg",
+    "assets/planos/ave-del-sur-220/flat-101.jpg",
+    "assets/planos/ave-del-sur-220/flat-102.jpg",
+    "assets/planos/ave-del-sur-220/flat-103.jpg",
+    "assets/planos/ave-del-sur-220/flat-104-604.jpg",
+    "assets/planos/ave-del-sur-220/flat-105-605.jpg",
+    "assets/planos/ave-del-sur-220/flat-201.jpg",
+    "assets/planos/ave-del-sur-220/flat-202.jpg",
+    "assets/planos/ave-del-sur-220/flat-203.jpg",
+    "assets/planos/ave-del-sur-220/flat-301-601.jpg",
+    "assets/planos/ave-del-sur-220/flat-302-602.jpg",
+    "assets/planos/ave-del-sur-220/flat-303-603.jpg",
+    "assets/planos/ave-del-sur-220/flat-patio-s02.jpg",
+    "assets/planos/ave-del-sur-220/flat-patio-s03.jpg",
+    "assets/planos/ave-del-sur-220/flat-patio-s04.jpg",
+    "assets/planos/ave-del-sur-220/flat-patio-s05.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -726,7 +750,8 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 4 m del marcador).",
    "estado_obra": "En construcción · obra iniciada",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "planos_fuente": "Planos oficiales del proyecto (set actualizado 07-jul-2026)"
   },
   {
    "id": "aura-sul",

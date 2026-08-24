@@ -171,6 +171,14 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 .foot{font-size:10px;color:#bbb;margin-top:12px;line-height:1.7;max-width:1180px}
 .tpm2.hi{background:#FBECEC;color:#A32D2D}.tpm2.mid{background:#FBF1E0;color:#8a5a12}.tpm2.lo{background:#EAF3DE;color:#3B6D11}
 .sep{border-left:2px solid var(--linea)}
+#lbx{position:fixed;inset:0;background:rgba(12,14,12,.94);display:none;align-items:center;justify-content:center;flex-direction:column;z-index:9000;cursor:zoom-out}
+#lbx img{max-width:92vw;max-height:76vh;border-radius:8px;background:#fff;cursor:default}
+#lbxclose{position:absolute;top:14px;right:22px;color:#fff;font-size:26px;cursor:pointer;opacity:.85;line-height:1}
+#lbxcap{color:#e8e6e0;font-size:13px;margin-top:14px;text-align:center;max-width:80vw;text-transform:capitalize}
+#lbxnav{display:flex;align-items:center;gap:18px;margin-top:10px}
+#lbxnav button{background:rgba(255,255,255,.16);color:#fff;border:none;border-radius:50%;width:38px;height:38px;font-size:20px;cursor:pointer}
+#lbxnav button:hover{background:rgba(255,255,255,.3)}
+#lbxn{color:#cfcfc8;font-size:12px;min-width:52px;text-align:center}
 </style>
 </head>
 <body>
@@ -213,6 +221,12 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
         <div class="legitem"><span class="legdot" style="background:#bbb;filter:grayscale(1)"></span>Fuera del cuadrante</div>
       </div>
       <div id="dtl"></div>
+      <div id="lbx" onclick="if(event.target.id==='lbx'||event.target.id==='lbxclose')this.style.display='none'">
+        <span id="lbxclose">✕</span>
+        <img id="lbximg" src="">
+        <div id="lbxcap"></div>
+        <div id="lbxnav"><button onclick="lbxGo(-1)">‹</button><span id="lbxn"></span><button onclick="lbxGo(1)">›</button></div>
+      </div>
     </div>
   </div>
   <div id="anaWrap">
@@ -227,7 +241,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260823i"></script>
+<script src="data/portal-data.js?v=20260823j"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -414,9 +428,12 @@ function showDetail(p){
   const wa=(p.wa?`<a class="wa" href="${waHref(p)}" target="_blank">📱 ${p.wa_label||'WhatsApp'} +51 ${waFmt(p.wa)}</a>`:'')
     +(p.wa_asesora?`<a class="wa" style="margin-left:12px" href="${waHref(p,p.wa_asesora)}" target="_blank">📱 ${p.asesora||'Asesora'} +51 ${waFmt(p.wa_asesora)}</a>`:'');
   const ficha=p.isGEU?'':`<button class="btnficha" onclick="window.open('proyecto.html?id=${p.id}','_blank')">Ver ficha completa →</button>`;
-  const planos=(p.planos||[]);
-  const planosHtml=planos.length?`<div class="tlist"><div class="tlabel">PLANOS (${planos.length}) · clic para ampliar</div>
-    <div style="display:flex;gap:8px;overflow-x:auto;padding:5px 0 2px">${planos.map(pl=>`<img src="${pl}" loading="lazy" onclick="window.open('${pl}','_blank')" onerror="this.style.display='none'" title="Clic para ampliar" style="height:128px;border:1px solid #e6e1d4;border-radius:6px;cursor:pointer;flex:0 0 auto;background:#fff">`).join('')}</div></div>`:'';
+  const todos=(p.planos||[]);
+  const planos=todos.filter(x=>!x.includes('assets/campo/'));
+  const campo=todos.filter(x=>x.includes('assets/campo/'));
+  const galeria=(arr,titulo,tag)=>arr.length?`<div class="tlist"><div class="tlabel">${titulo} (${arr.length}) · clic para ampliar</div>
+    <div style="display:flex;gap:8px;overflow-x:auto;padding:5px 0 2px">${arr.map((pl,i)=>`<img src="${pl}" loading="lazy" onclick="lbxOpen(${JSON.stringify(arr).replace(/"/g,'&quot;')},${i})" onerror="this.style.display='none'" title="Clic para ampliar" style="height:128px;border:1px solid #e6e1d4;border-radius:6px;cursor:zoom-in;flex:0 0 auto;background:#fff">`).join('')}</div></div>`:'';
+  const planosHtml=galeria(planos,'📐 PLANOS DE TIPOLOGÍA','planos')+galeria(campo,'📷 FOTOS DE CAMPO','campo');
   const evs=(D.meta.bitacora||[]).filter(e=>e.proyecto===p.name);
   const verifTxt=p.isGEU?'':`<span style="font-size:10.5px;color:${verifInfo(p).color};font-weight:700;margin-left:8px">● verif. ${verifInfo(p).dias===0?'hoy':'hace '+verifInfo(p).dias+'d'}</span>`;
   const tlHtml=evs.length?`<div class="tlist"><div class="tlabel">TIME LAPSE · NOVEDADES DE ESTE PROYECTO${verifTxt}</div>
@@ -568,6 +585,16 @@ function buildFullList(){
     <div class="listnote">${list.length} proyectos dentro del cuadrante según los filtros. Ordenados por precio por m² del flat típico.</div>
     <table class="listtable"><thead><tr><th>Proyecto</th><th>Dirección</th><th>Estado</th><th>Dorm/m²</th><th>Precio desde</th><th>USD/m² típico</th><th>Departamentos típicos</th><th>Cochera / stock</th></tr></thead><tbody>${rows}</tbody></table>`;
 }
+let LBX=[],LBXi=0;
+function lbxOpen(arr,i,cap){LBX=arr;LBXi=i;const b=document.getElementById('lbx');
+  document.getElementById('lbximg').src=LBX[i];document.getElementById('lbxcap').textContent=cap||planoCap(LBX[i]);
+  document.getElementById('lbxn').textContent=(i+1)+' / '+LBX.length;b.style.display='flex';}
+function lbxGo(d){if(!LBX.length)return;LBXi=(LBXi+d+LBX.length)%LBX.length;
+  document.getElementById('lbximg').src=LBX[LBXi];document.getElementById('lbxcap').textContent=planoCap(LBX[LBXi]);
+  document.getElementById('lbxn').textContent=(LBXi+1)+' / '+LBX.length;}
+document.addEventListener('keydown',e=>{const b=document.getElementById('lbx');if(!b||b.style.display!=='flex')return;
+  if(e.key==='Escape')b.style.display='none';if(e.key==='ArrowRight')lbxGo(1);if(e.key==='ArrowLeft')lbxGo(-1);});
+function planoCap(src){return decodeURIComponent(src.split('/').pop()).replace(/\.(jpg|jpeg|png|webp)$/i,'').replace(/[-_]/g,' ');}
 function clickItem(id){const p=P.find(x=>x.id===id);if(p&&p.lat!=null)showDetail(p);}
 function refresh(){
   P.forEach(p=>{const mk=MK[p.id];if(!mk)return;fmatch(p)?(!map.hasLayer(mk.m)&&map.addLayer(mk.m)):(map.hasLayer(mk.m)&&map.removeLayer(mk.m));});
