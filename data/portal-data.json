@@ -32,6 +32,121 @@
   "bitacora": [
    {
     "fecha": "2026-08-24",
+    "proyecto": "Jardines de Monte Real",
+    "dev": "Central Inmobiliaria",
+    "proyecto_id": "jardines-monte-real",
+    "tags": [
+     "venta",
+     "estado",
+     "precio"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "La valla de obra da todo: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales (lobby, SUM, zona de bicicletas, parque interior, pet spa, sala de reuniones y parrillas). Financia BCP, certificación AIS. Contactos de la valla: 920 374 177 y 964 104 126. El propietario es Central Proyectos Inmobiliarios S.A.C.",
+    "cita": "«ENTREGA MARZO 2027 · ÚLTIMAS UNIDADES · FLATS DESDE 127 m² · DÚPLEX DESDE 209 m²» — valla de obra, 22-ago-2026",
+    "imgs": [
+     "assets/campo/living-monte-real-obra.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Monte Sierpe",
+    "dev": "Make Inmobiliaria",
+    "proyecto_id": "monte-sierpe",
+    "tags": [
+     "venta",
+     "agotado"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "El edificio ya está terminado y cuelga dos carteles rojos en su propia fachada: «ÚLTIMOS DEPAS · 943 729 552». Está en fase de remate de stock.",
+    "cita": "«ÚLTIMOS DEPAS · 943 729 552» — carteles en la fachada, 22-ago-2026",
+    "imgs": [
+     "assets/campo/monte-sierpe-ultimos-depas.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Santorini",
+    "dev": "Grupo Moryasoc Proyecto 31 S.A.C.",
+    "proyecto_id": "santorini",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "Cartel informativo de obra legible: licencia 0401-2025-SGLM-GDU-MSS modalidad C, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, plazo de ejecución 14 meses. En obra no hay nada comercial — ni caseta ni banner de venta.",
+    "cita": "«NÚMERO DE PISOS: 06 PISOS Y AZOTEA · NÚMERO DE SÓTANOS: 03 · TIEMPO DE EJECUCIÓN: 14 MESES» — cartel informativo de obra, 22-ago-2026",
+    "imgs": [
+     "assets/campo/santorini-cartel-obra.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Conde de la Vega 251",
+    "dev": "Edifikarte",
+    "proyecto_id": "conde-de-la-vega-251",
+    "tags": [
+     "venta",
+     "agotado"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "Cartel en fachada: «ÚLTIMOS DÚPLEX» — 2 dorms de 95 m² y 122 m², 3 dorms de 161 m². De los 25 departamentos del proyecto ya sólo comunican dúplex.",
+    "cita": "«ÚLTIMOS DÚPLEX · 2 DORMS 95 m² - 122 m² · 3 DORMS 161 m² · 981 386 111» — cartel en fachada, 22-ago-2026",
+    "imgs": [
+     "assets/campo/conde-de-la-vega-251.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Estelar 1080",
+    "dev": "Galeon",
+    "proyecto_id": "estelar-1080",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Foto de campo",
+    "autor": "Benchmark",
+    "texto": "Galeon tiene sala de ventas atendida en la esquina. La valla vende el piso alto como argumento: «Tu nuevo 5° piso en Chacarilla», de 80 m² a 108 m², financiado por BBVA. Número de la valla: 966 351 473 (distinto al de Isabel, 976 367 206).",
+    "cita": "«Tu nuevo 5° piso en CHACARILLA · 80m² a 108m² · 966 351 473» — valla y sala de ventas, 22-ago-2026",
+    "imgs": [
+     "assets/campo/estelar-sala-ventas.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Ave. del Sur 220",
+    "dev": "Grupo Espacio Urbano (GEU)",
+    "proyecto_id": "ave-del-sur-220",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Plan de trabajo",
+    "autor": "Benchmark",
+    "texto": "Se armó la ronda 2 de pedidos: 24 mensajes que cubren 30 proyectos, uno por asesor y no uno por proyecto (Jenny de Edifikarte lleva 4, Cecilia de EE lleva 2, Jenniffer de Azzurra 2, Joyce de Grupo Chacarilla Sur 2). El foco cambia: la ronda 1 preguntaba «¿sigue disponible?»; esta pregunta si la cochera va incluida y cuánto vale, qué promoción tienen este mes y pide el tarifario por unidad. Son los tres huecos más grandes del benchmark.",
+    "cita": "Diagnóstico del 24-ago-2026: promoción registrada en 2 de 34 proyectos, tarifario en 4 de 34.",
+    "fuentes": [
+     "Vista Análisis → Cobertura de datos"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
     "proyecto": "Living Monte Real",
     "dev": "Grupo Chacarilla Sur",
     "proyecto_id": "living-monte-real",
@@ -1154,7 +1269,261 @@
     "brochure": "assets/brochures/batallon-tarma-684-f1.pdf",
     "fuente": "Brochure en archivo"
    }
-  ]
+  ],
+  "pedidos_ronda": {
+   "numero": 2,
+   "fecha": "2026-08-24",
+   "foco": "cochera incluida, promoción vigente y tarifario por unidad",
+   "nota": "Un mensaje por asesor, no por proyecto: varios llevan 2 a 4 proyectos con el mismo WhatsApp.",
+   "lista": [
+    {
+     "numero": "981386111",
+     "nombre": "Jenny",
+     "dev": "Edifikarte",
+     "proyectos": [
+      "Conde de la Vega 251",
+      "Monte Carmelo 250",
+      "Montemar 269",
+      "Monte Mayor 177"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Conde de la Vega 251, Monte Carmelo 250, Montemar 269 y Monte Mayor 177) por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "988609572",
+     "nombre": "Cecilia",
+     "dev": "EE Inmobiliaria",
+     "proyectos": [
+      "Floresta Living 444",
+      "Parque Monte Carmelo"
+     ],
+     "pide": "tarifario por unidad + cochera + promoción",
+     "mensaje": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Floresta Living 444 y Parque Monte Carmelo) por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "944216477",
+     "nombre": "Jenniffer",
+     "dev": "Azzurra Constructores",
+     "proyectos": [
+      "Conde de la Vega 460",
+      "Monte Mayor 183"
+     ],
+     "pide": "promoción",
+     "mensaje": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. Tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "949107186",
+     "nombre": "Joyce",
+     "dev": "Grupo Chacarilla Sur",
+     "proyectos": [
+      "Precursores 525",
+      "Living Monte Real"
+     ],
+     "pide": "lista de precios + tarifario por unidad + cochera + promoción",
+     "mensaje": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de sus proyectos en Chacarilla (Precursores 525 y Living Monte Real) por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "920374177",
+     "nombre": "Diana",
+     "dev": "Central Inmobiliaria",
+     "proyectos": [
+      "Jardines de Monte Real"
+     ],
+     "pide": "tarifario por unidad + cochera + promoción",
+     "mensaje": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Jardines de Monte Real por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "994298155",
+     "nombre": "Diana",
+     "dev": "Central Inmobiliaria",
+     "proyectos": [
+      "FLEXI III"
+     ],
+     "pide": "lista de precios + cochera + promoción",
+     "mensaje": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de FLEXI III por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "996898925",
+     "nombre": "Indira",
+     "dev": "IPIROS",
+     "proyectos": [
+      "Precursores II"
+     ],
+     "pide": "promoción",
+     "mensaje": "Hola Indira! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. Tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "966351473",
+     "nombre": "Isabel",
+     "dev": "Galeon",
+     "proyectos": [
+      "Estelar 1080"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola Isabel! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Estelar 1080 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "943729552",
+     "nombre": "Nadia",
+     "dev": "Make Inmobiliaria",
+     "proyectos": [
+      "Monte Sierpe"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola Nadia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Sierpe por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "994448991",
+     "nombre": "Rebeca",
+     "dev": "Odima Inmobiliaria",
+     "proyectos": [
+      "HANA"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola Rebeca! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "999024346",
+     "nombre": "Rossana",
+     "dev": "Grupo Moryasoc Proyecto 31 S.A.C.",
+     "proyectos": [
+      "Santorini"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola Rossana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Santorini por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "967530422",
+     "nombre": null,
+     "dev": "Grupo Dicon",
+     "proyectos": [
+      "Aura Sul"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Aura Sul por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "994363232",
+     "nombre": null,
+     "dev": "Inmobiliaria AyD",
+     "proyectos": [
+      "Conde II"
+     ],
+     "pide": "tarifario por unidad + cochera",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Conde II por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? Gracias!"
+    },
+    {
+     "numero": "933209656",
+     "nombre": null,
+     "dev": "Grupo Dicon",
+     "proyectos": [
+      "D'Mont 2"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de D'Mont 2 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "945678879",
+     "nombre": null,
+     "dev": "Boulevard",
+     "proyectos": [
+      "La Floresta Boulevard"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de La Floresta Boulevard por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "924447479",
+     "nombre": null,
+     "dev": "Edifikarte",
+     "proyectos": [
+      "Monte Alegre 109"
+     ],
+     "pide": "lista de precios + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Alegre 109 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "952496382",
+     "nombre": null,
+     "dev": "Balance Grupo Inmobiliario",
+     "proyectos": [
+      "Monte Carmelo 551"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "981349116",
+     "nombre": null,
+     "dev": "Constructora Magnífica",
+     "proyectos": [
+      "Monte Flor"
+     ],
+     "pide": "tarifario por unidad + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Flor por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "957733272",
+     "nombre": null,
+     "dev": "Grupo Dicon",
+     "proyectos": [
+      "Spazio"
+     ],
+     "pide": "tarifario por unidad + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Spazio por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "980765183",
+     "nombre": null,
+     "dev": "Inmobiliaria AyD",
+     "proyectos": [
+      "Monte Umbroso 247"
+     ],
+     "pide": "reconfirmar precios",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. Sigue vigente lo último que me pasaste de Monte Umbroso 247? cambió algún precio? Gracias!"
+    },
+    {
+     "numero": "908875600",
+     "nombre": null,
+     "dev": "Guerin Proyectos S.A.C.",
+     "proyectos": [
+      "Precursores Verde"
+     ],
+     "pide": "lista de precios + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Precursores Verde por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "916123888",
+     "nombre": null,
+     "dev": "Proyectos PyR",
+     "proyectos": [
+      "The Eleven"
+     ],
+     "pide": "lista de precios + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "908914344",
+     "nombre": null,
+     "dev": "EE Inmobiliaria",
+     "proyectos": [
+      "TEN Apartments"
+     ],
+     "pide": "tarifario por unidad + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de TEN Apartments por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    },
+    {
+     "numero": "960279665",
+     "nombre": null,
+     "dev": "Vibra Inmobiliaria",
+     "proyectos": [
+      "Floresta 343"
+     ],
+     "pide": "lista de precios + cochera + promoción",
+     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
+    }
+   ]
+  }
  },
  "quadrant": [
   [
@@ -1585,7 +1954,9 @@
      "fuente": "Menú de contacto de la web de Grupo Dicon"
     }
    ],
-   "wa_label": "Grupo Dicon"
+   "wa_label": "Grupo Dicon",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Aura Sul por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "conde-ii",
@@ -1794,7 +2165,9 @@
      "fuente": "Web oficial de Inmobiliaria AyD"
     }
    ],
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Conde II por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? Gracias!",
+   "pedido_que": "cochera + tarifario por unidad"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -1852,7 +2225,7 @@
     2,
     3
    ],
-   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero en fachada «ÚLTIMOS DÚPLEX» — 2 dorm de 95–122 m² y 3 dorm de 161 m². Contacto en el letrero: 981 386 111. Falta la lista de precios por unidad. Ficha comercial (Nexo / BCP, consultada 24-ago-2026): edificio de 25 departamentos de 2 y 3 dormitorios desde 70 m², con estacionamientos paralelos y depósitos; precios de lista desde S/ 662,000. Financia BCP.",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero en fachada «ÚLTIMOS DÚPLEX» — 2 dorm de 95–122 m² y 3 dorm de 161 m². Contacto en el letrero: 981 386 111. Falta la lista de precios por unidad. Ficha comercial (Nexo / BCP, consultada 24-ago-2026): edificio de 25 departamentos de 2 y 3 dormitorios desde 70 m², con estacionamientos paralelos y depósitos; precios de lista desde S/ 662,000. Financia BCP. El cartel en la fachada (22-ago-2026) anuncia «ÚLTIMOS DÚPLEX»: 2 dorms de 95 m² y 122 m², y 3 dorms de 161 m². Contacto 981 386 111.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
     "Chat asesor Jenny Miranda (Evolution API, jul-2026)",
@@ -1868,8 +2241,8 @@
    "cochera_status": "si",
    "cochera_nota": "El dúplex 603 incluye 2 estacionamientos + 1 depósito en el precio.",
    "stock": {
-    "n": 2,
-    "label": "Últimos dúplex"
+    "n": null,
+    "label": "Últimos dúplex (cartel en fachada, ago-2026)"
    },
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026: se fotografió la fachada con el número 251 y el letrero de ventas.",
@@ -1919,7 +2292,10 @@
    ],
    "asesora": "Jenny",
    "wa_label": "Jenny",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "como_presenta": "En obra sólo comunican el remate: «ÚLTIMOS DÚPLEX», con los metrajes y el WhatsApp de Edifikarte.",
+   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Conde de la Vega 251 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -2524,7 +2900,9 @@
     }
    ],
    "asesora": "Jenniffer",
-   "wa_label": "Jenniffer"
+   "wa_label": "Jenniffer",
+   "pedido": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción"
   },
   {
    "id": "dmont-dicon",
@@ -2819,7 +3197,9 @@
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
     }
    ],
-   "wa_label": "Grupo Dicon"
+   "wa_label": "Grupo Dicon",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de D'Mont 2 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "estelar-1080",
@@ -2837,7 +3217,7 @@
    "precio_hasta_usd": 266032,
    "dorms": "2–3",
    "m2": "80–224",
-   "wa": "976367206",
+   "wa": "966351473",
    "web": "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
    "img": "assets/planos/estelar-1080/estelar-12.png",
    "planos": [
@@ -2895,7 +3275,7 @@
     2,
     3
    ],
-   "comentario": "Galeón, Isabel Ruiz. Av. Velasco Astete 1080, en preventa/construcción, entrega jul-2027, financia BBVA (10% inicial). Sus tipologías de 2 dorm chicas (~80 m²) están AGOTADAS; queda principalmente 3 dorm (108 m²+).",
+   "comentario": "Galeón, Isabel Ruiz. Av. Velasco Astete 1080, en preventa/construcción, entrega jul-2027, financia BBVA (10% inicial). Sus tipologías de 2 dorm chicas (~80 m²) están AGOTADAS; queda principalmente 3 dorm (108 m²+). La sala de ventas de Galeon está en la esquina y la valla vende «Tu nuevo 5° piso en Chacarilla, de 80 m² a 108 m²», financiado por BBVA. Contacto de la valla: 966 351 473.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -2924,7 +3304,7 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m.",
    "caseta_ventas": "si",
-   "caseta_nota": "Caseta de ventas atendida en el terreno (letrero «Sala de ventas aquí»).",
+   "caseta_nota": "Sala de ventas de Galeon Inmobiliaria en la esquina, con módulo atendido.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción",
    "cuadrante_verificado": "2026-08-22",
@@ -2940,14 +3320,22 @@
    ],
    "contactos": [
     {
+     "nombre": null,
+     "numero": "966351473",
+     "fuente": "Cartel de obra fotografiado en el recorrido del 22-ago-2026 — impreso en la valla y en la sala de ventas de Galeon"
+    },
+    {
      "nombre": "Isabel",
      "numero": "976367206",
-     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+     "fuente": "Chat real de WhatsApp con la asesora (13-ago-2026)"
     }
    ],
    "asesora": "Isabel",
-   "wa_label": "Isabel",
-   "foto_campo": "2026-08-22"
+   "wa_label": "Galeon · Estelar 1080",
+   "foto_campo": "2026-08-22",
+   "como_presenta": "Venden el piso alto como argumento: «Tu nuevo 5° piso en Chacarilla», de 80 a 108 m², con financiamiento BBVA.",
+   "pedido": "Hola Isabel! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Estelar 1080 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "floresta-living-444",
@@ -3084,7 +3472,9 @@
    ],
    "asesora": "Cecilia",
    "wa_label": "Cecilia",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Floresta Living 444 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad"
   },
   {
    "id": "hana",
@@ -3200,25 +3590,27 @@
     }
    ],
    "asesora": "Rebeca Ruiz",
-   "wa_label": "Rebeca Ruiz"
+   "wa_label": "Rebeca Ruiz",
+   "pedido": "Hola Rebeca! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "jardines-monte-real",
    "name": "Jardines de Monte Real",
-   "dev": "Central Inmobiliaria",
+   "dev": "Central Inmobiliaria (Central Proyectos Inmobiliarios S.A.C.)",
    "addr": "Jr. Monte Real 496, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En construcción",
    "estado_raw": "En obra · ÚLTIMOS departamentos",
-   "entrega": "Marzo/Abril 2027",
+   "entrega": "Marzo 2027",
    "lat": -12.11186929636266,
    "lng": -76.98578255636211,
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 246028,
    "precio_hasta_usd": 329187,
-   "dorms": "1–4",
-   "m2": "63–145",
-   "wa": "994298155",
+   "dorms": "3",
+   "m2": "127 – 260",
+   "wa": "920374177",
    "web": "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
    "img": "assets/img-f1/jardines-monte-real/img-01.jpg",
    "planos": [
@@ -3238,7 +3630,8 @@
     "assets/planos/jardines-monte-real-oficial/Lamina 27 - 211.57 m2.jpg",
     "assets/planos/jardines-monte-real-oficial/Lamina 28 - 209.55 m2.jpg",
     "assets/planos/jardines-monte-real-oficial/Lamina 29 - 216.52 m2.jpg",
-    "assets/campo/jardines-monte-real-obra.jpg"
+    "assets/campo/jardines-monte-real-obra.jpg",
+    "assets/campo/living-monte-real-obra.jpg"
    ],
    "brochure": "assets/brochures/jardines-monte-real-f1.pdf",
    "typologies": [
@@ -3275,8 +3668,16 @@
     2,
     3
    ],
-   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo.",
-   "amenidades": [],
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.)",
+   "amenidades": [
+    "Lobby",
+    "SUM",
+    "Zona de bicicletas",
+    "Parque interior",
+    "Pet spa",
+    "Sala de reuniones",
+    "Zona de parrillas"
+   ],
    "total_pisos": "6 + rooftop",
    "fuentes": [
     "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
@@ -3296,8 +3697,8 @@
    ],
    "cochera_status": "nd",
    "stock": {
-    "n": 2,
-    "label": "Piso 4 y 5 (uno separándose)"
+    "n": null,
+    "label": "Últimas unidades (anunciado en la valla de obra, ago-2026)"
    },
    "entrega_confirmada_campo": "Marzo–Abril 2027",
    "campo_ago": "14-ago: 3 dorm 94 m² en piso 4 y 5. El piso 4 tiene un cliente en proceso de separación; hasta que no separe sigue libre. S/836,496 con 1 estacionamiento. Entrega mar-2027.",
@@ -3314,7 +3715,7 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: carteles sobre el cerco.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · carteles de «últimas unidades» sobre el cerco",
+   "estado_obra": "Obra en ejecución con malla verde. Cartel informativo: propietario Central Proyectos Inmobiliarios S.A.C., 6 pisos + azotea, uso residencial, en Calle Monte Real lote 11, Urb. Chacarilla del Estanque.",
    "cuadrante_verificado": "2026-08-22",
    "documentos": [
     {
@@ -3335,14 +3736,28 @@
    "planos_fuente": "Brochure oficial Central Inmobiliaria, edición 22-jun-2026 (14 láminas de tipología).",
    "contactos": [
     {
+     "nombre": null,
+     "numero": "920374177",
+     "fuente": "Cartel de obra fotografiado en el recorrido del 22-ago-2026 — impreso en la valla de Central Inmobiliaria"
+    },
+    {
+     "nombre": null,
+     "numero": "964104126",
+     "fuente": "Cartel de obra fotografiado en el recorrido del 22-ago-2026 — segundo número de la misma valla"
+    },
+    {
      "nombre": "Diana",
      "numero": "994298155",
-     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+     "fuente": "Chat real de WhatsApp con la asesora (13-ago-2026)"
     }
    ],
    "asesora": "Diana",
-   "wa_label": "Diana",
-   "foto_campo": "2026-08-22"
+   "wa_label": "Central Inmobiliaria",
+   "foto_campo": "2026-08-22",
+   "pisos": 6,
+   "como_presenta": "La valla vende «ÚLTIMAS UNIDADES» con entrega marzo 2027, flats desde 127 m² y dúplex desde 209 m², y 7 áreas sociales. Financia BCP y exhibe certificación AIS.",
+   "pedido": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Jardines de Monte Real por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad"
   },
   {
    "id": "la-floresta-boulevard",
@@ -3485,7 +3900,9 @@
     }
    ],
    "wa_label": "Boulevard",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de La Floresta Boulevard por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "monte-alegre",
@@ -3703,8 +4120,8 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "Hola! Retomo por Monte Alegre 109. Me pueden enviar los planos de las tipologías y la lista de precios vigente? Y si el precio incluye cochera.",
-   "pedido_que": "planos + tarifario",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Alegre 109 con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "pisos": 7,
    "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (21 láminas de tipología).",
    "wa_label": "Edifikarte · Monte Alegre",
@@ -3808,7 +4225,7 @@
     3,
     4
    ],
-   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, de 109.01 a 242.99 m², precios de lista desde S/ 981,000.",
+   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, de 109.01 a 242.99 m², precios de lista desde S/ 981,000. La valla de obra (22-ago-2026) dice «Tu depa en la mejor zona de Chacarilla · 2 | 3 dormitorios · FLATS Y DÚPLEX · Contáctanos 981 386 111» y suma el claim «Tu inversión segura en el mejor lugar».",
    "fuentes": [
     "https://www.edifikarte.com.pe",
     "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07",
@@ -3831,8 +4248,8 @@
      "pm2": null
     }
    ],
-   "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta de ventas: valla comercial sobre el cerco.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: valla de obra rotulada con la marca, tipologías, QR y WhatsApp.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · estructura con malla, cartel comercial activo",
    "cuadrante_verificado": "2026-08-22",
@@ -3860,7 +4277,10 @@
    ],
    "asesora": "Jenny",
    "wa_label": "Jenny",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "como_presenta": "Venden zona e inversión: «Tu depa en la mejor zona de Chacarilla» y «Tu inversión segura en el mejor lugar».",
+   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 250 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "monte-carmelo-551",
@@ -4071,7 +4491,9 @@
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
     }
    ],
-   "wa_label": "Balance Grupo Inmobiliario"
+   "wa_label": "Balance Grupo Inmobiliario",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "monte-mar-167",
@@ -4254,8 +4676,8 @@
    ],
    "cuadrante_verificado": "2026-08-22",
    "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad».",
-   "pedido": "Hola! Retomo por Montemar 269. Me pueden enviar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera. Gracias!",
-   "pedido_que": "planos + tarifario",
+   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Montemar 269 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad",
    "documentos": [
     {
      "titulo": "Brochure oficial Edifikarte · Montemar 269 (jul-2026)",
@@ -4407,7 +4829,9 @@
    ],
    "asesora": "Jenny",
    "wa_label": "Jenny",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Mayor 177 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "monte-mayor-183",
@@ -4931,7 +5355,9 @@
    ],
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción"
   },
   {
    "id": "monte-real-265",
@@ -5069,7 +5495,8 @@
     "assets/planos/monte-sierpe/sierpe-X02-2d-107m2.png",
     "assets/planos/monte-sierpe/sierpe-X05-2d-105m2.png",
     "assets/planos/monte-sierpe/sierpe-x102-2d-103m2.png",
-    "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png"
+    "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png",
+    "assets/campo/monte-sierpe-ultimos-depas.jpg"
    ],
    "brochure": "assets/brochures/MonteSierpe-Make-brochure.pdf",
    "typologies": [
@@ -5148,7 +5575,7 @@
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas.",
+   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -5174,7 +5601,7 @@
    ],
    "stock": {
     "n": null,
-    "label": "Vendió el 408 · quedan tipos X10 (105.89 m²)"
+    "label": "Últimos departamentos (anunciado en la fachada, ago-2026)"
    },
    "cochera_status": "si",
    "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026.",
@@ -5215,7 +5642,13 @@
     }
    ],
    "asesora": "Nadia",
-   "wa_label": "Nadia"
+   "wa_label": "Nadia",
+   "foto_campo": "2026-08-22",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: carteles «ÚLTIMOS DEPAS» colgados en la propia fachada del edificio terminado.",
+   "caseta_fecha": "2026-08-22",
+   "pedido": "Hola Nadia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Sierpe por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "monte-umbroso",
@@ -5402,7 +5835,7 @@
     2,
     3
    ],
-   "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad.",
+   "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad. La valla confirma: «Monte Flor · CHACARILLA - SURCO · 2 y 3 dormitorios · +51 975 244 600 · Constructora Magnífica».",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -5435,8 +5868,8 @@
    "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
    "caseta_fecha": "2026-08-22",
    "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola.",
-   "pedido": "Hola! Vi la valla de Monte Flor en Chacarilla. Me pasan los planos de las tipologías y la lista de precios? Y si la cochera va incluida o aparte.",
-   "pedido_que": "planos + tarifario",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Flor por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad",
    "contactos": [
     {
      "nombre": null,
@@ -5741,7 +6174,9 @@
     }
    ],
    "asesora": "Cecilia",
-   "wa_label": "Cecilia"
+   "wa_label": "Cecilia",
+   "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Parque Monte Carmelo por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "precursores-525",
@@ -5880,7 +6315,9 @@
    ],
    "asesora": "Joyce",
    "wa_label": "Joyce",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Precursores 525 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad"
   },
   {
    "id": "precursores-ii",
@@ -6023,7 +6460,9 @@
     }
    ],
    "asesora": "Indira Ramos",
-   "wa_label": "Indira Ramos"
+   "wa_label": "Indira Ramos",
+   "pedido": "Hola Indira! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción"
   },
   {
    "id": "santorini",
@@ -6218,10 +6657,10 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador).",
-   "estado_obra": "En obra · 6 pisos y azotea, 3 sótanos (cartel de obra). Sin señalización comercial.",
+   "estado_obra": "Obra en ejecución. Cartel informativo: propietario Grupo Moryasoc Proyecto 31 S.A.C., licencia 0401-2025-SGLM-GDU-MSS (modalidad C), edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, plazo de ejecución 14 meses.",
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta y sin publicidad comercial en la obra: solo el cartel informativo de obra que exige la municipalidad.",
+   "caseta_nota": "Nada en obra más que el cartel de permisos: sin caseta, sin banner comercial.",
    "caseta_fecha": "2026-08-22",
    "documentos": [
     {
@@ -6241,7 +6680,12 @@
    ],
    "asesora": "Rossana",
    "wa_label": "Rossana",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "licencia": "0401-2025-SGLM-GDU-MSS (modalidad C) · Grupo Moryasoc Proyecto 31 S.A.C. · plazo 14 meses",
+   "pisos": 6,
+   "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30",
+   "pedido": "Hola Rossana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Santorini por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "promoción + tarifario por unidad"
   },
   {
    "id": "spazio",
@@ -6439,7 +6883,9 @@
     }
    ],
    "wa_label": "Grupo Dicon",
-   "foto_campo": "2026-08-22"
+   "foto_campo": "2026-08-22",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Spazio por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad"
   },
   {
    "id": "terraverde",
@@ -6616,7 +7062,9 @@
      "numero": "980765183",
      "fuente": "Web oficial de Inmobiliaria AyD"
     }
-   ]
+   ],
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) sigue vigente la lista de precios que me pasaste de Monte Umbroso 247? cambió algo? Gracias!",
+   "pedido_que": "reconfirmar precios"
   },
   {
    "id": "narciso-ayd",
@@ -6777,8 +7225,8 @@
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "planos_fuente": "Plano de tipología de la web oficial de Guerin",
-   "pedido": "Hola! Me interesa Precursores Verde, en Av. Precursores 280. Me pueden enviar los planos por tipología y la lista de precios? Vi que anuncian últimas unidades, cuáles quedan?",
-   "pedido_que": "tarifario + stock",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Precursores Verde con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "documentos": [
     {
      "titulo": "Brochure oficial Guerin · Precursores Verde",
@@ -6892,8 +7340,8 @@
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "pedido": "Hola! Vi el cartel de FLEXI III en Precursores 152. Me pueden enviar los planos y precios cuando los tengan? Quiero estar en la lista del lanzamiento.",
-   "pedido_que": "fecha de lanzamiento + precios",
+   "pedido": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de FLEXI III con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
     {
      "nombre": "Diana",
@@ -6927,8 +7375,7 @@
    "img": "assets/campo/living-monte-real.jpg",
    "brochure": null,
    "planos": [
-    "assets/campo/living-monte-real.jpg",
-    "assets/campo/living-monte-real-obra.jpg"
+    "assets/campo/living-monte-real.jpg"
    ],
    "typologies": [],
    "flats_summary": [],
@@ -6949,8 +7396,8 @@
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "pedido": "Hola Joyce! Vi el cartel de Living Monte Real, en Jr. Monte Real. Me pueden pasar los planos de las tipologías y la lista de precios? Y si el precio incluye cochera.",
-   "pedido_que": "planos + tarifario",
+   "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Living Monte Real con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
     {
      "nombre": null,
@@ -6966,7 +7413,7 @@
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
    "m2": "Por confirmar",
-   "wa": "999988287",
+   "wa": "916123888",
    "web": "https://www.proyectospyr.com",
    "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
@@ -7002,19 +7449,19 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": false,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia.",
-   "pedido": "Hola! Me interesa The Eleven. Vi que tienen entrega inmediata. Me pueden enviar los planos, los metrajes disponibles y la lista de precios? Incluye cochera?",
-   "pedido_que": "planos + tarifario",
+   "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia. El tótem confirma: THE ELEVEN, +51 916 123 888, ventas@proyectospyr.com, financiado por Scotiabank y «Entrega inmediata».",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
     {
      "nombre": null,
-     "numero": "999988287",
-     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
+     "numero": "916123888",
+     "fuente": "Cartel de obra fotografiado en el recorrido del 22-ago-2026 — tótem del proyecto, junto a ventas@proyectospyr.com"
     },
     {
      "nombre": null,
-     "numero": "916123888",
-     "fuente": "Cartel/tótem fotografiado en el recorrido del 22-ago-2026"
+     "numero": "999988287",
+     "fuente": "Auditoría de fuentes de competencia (jun-2026)"
     }
    ],
    "wa_label": "Proyectos PyR",
@@ -7213,8 +7660,8 @@
    "como_presenta": "Se presenta bajo el concepto «Live here, live now», con más de 7 áreas comunes y depa piloto visitable. Vende 1 y 2 dormitorios (varios con estudio) de 64 a 122 m².",
    "politica_precio": "Por confirmar si el precio de lista incluye estacionamiento (el brochure de agosto-2026 no lo indica).",
    "planos_fuente": "Brochure oficial EE Inmobiliaria, edición agosto-2026 (21 láminas de tipología).",
-   "pedido": "Hola! Me interesa TEN Apartments. Vi los precios en la web. Una consulta: el precio de lista incluye estacionamiento o va aparte? Y cuánto cuesta la cochera?",
-   "pedido_que": "confirmar si el precio incluye estacionamiento",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de TEN Apartments por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad",
    "documentos": [
     {
      "titulo": "Brochure oficial EE Inmobiliaria · edición agosto-2026",
@@ -7367,8 +7814,8 @@
      "tipo": "brochure"
     }
    ],
-   "pedido": "Hola! Me interesa Floresta 343, en Av. de la Floresta. Me pueden enviar la lista de precios y confirmar si el precio incluye estacionamiento? Y para cuándo es la entrega?",
-   "pedido_que": "lista de precios + entrega",
+   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
     {
      "nombre": null,
