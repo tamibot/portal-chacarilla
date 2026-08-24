@@ -1438,6 +1438,28 @@
     ],
     "brochure": "assets/brochures/LoBo-brochure.pdf",
     "fuente": "https://grupodicon.com.pe/proyecto/residencial-hermano-lobo-san-borja/"
+   },
+   {
+    "nombre": "Obra en Monte Alegre 137",
+    "dev": "Sin identificar",
+    "addr": "Calle Monte Alegre 137, Chacarilla del Estanque, Santiago de Surco",
+    "zona": "dentro del cuadrante",
+    "estado": "Pendiente de identificar",
+    "nota": "Obra vista en el recorrido del 22-ago-2026. Sin cartel, valla ni licencia que identifique a la inmobiliaria, y sin rastro en portales ni buscadores. Pendiente de identificar en el próximo recorrido.",
+    "planos": [],
+    "brochure": null,
+    "fuente": "Recorrido de campo 2026-08-22"
+   },
+   {
+    "nombre": "Obra frente al Parque La Floresta",
+    "dev": "Sin identificar",
+    "addr": "Frente al Parque La Floresta, Chacarilla del Estanque, Santiago de Surco",
+    "zona": "dentro del cuadrante",
+    "estado": "Pendiente de identificar",
+    "nota": "Obra anotada en el recorrido del 22-ago-2026, sin cartel legible. No confundir con La Floresta Boulevard (Montepío 120-130), que sí está identificado y sí compite. Pendiente de identificar en el próximo recorrido.",
+    "planos": [],
+    "brochure": null,
+    "fuente": "Recorrido de campo 2026-08-22"
    }
   ],
   "pedidos_ronda": {
@@ -1746,6 +1768,19 @@
     "portal": "🔎 Portal inmobiliario",
     "base_interna": "🗂 Relevamiento interno"
    }
+  },
+  "fuentes_precio": {
+   "etiquetas": {
+    "tarifario": "Lista de precios oficial por unidad",
+    "whatsapp": "Cotización del asesor por WhatsApp",
+    "web_oficial": "Web oficial del desarrollador",
+    "brochure": "Brochure oficial",
+    "campo": "Cartel o panel en obra",
+    "portal": "Portal inmobiliario (Nexo, BCP, InfoCasas, Urbania)",
+    "lista_interna": "Lista de precios propia",
+    "base_interna": "Relevamiento interno"
+   },
+   "regla": "Toda comparación de precio sale de una de estas seis fuentes y cada proyecto declara la suya. Cuando hay lista de precios por unidad, esa manda; cuando el asesor cotizó por WhatsApp, esa cotización pisa a la web y al brochure porque es lo más fresco. El precio de un portal solo se usa si no hay nada mejor."
   }
  },
  "quadrant": [
@@ -1967,7 +2002,11 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 4 m del marcador).",
    "estado_obra": "En construcción · obra iniciada",
    "cuadrante_verificado": "2026-08-22",
-   "planos_fuente": "Planos oficiales del proyecto (set actualizado 07-jul-2026)"
+   "planos_fuente": "Planos oficiales del proyecto (set actualizado 07-jul-2026)",
+   "precio_fuente": {
+    "tipo": "lista_interna",
+    "nota": "Lista de precios de preventa del propio proyecto (material del cliente, ago-2026)."
+   }
   },
   {
    "id": "aura-sul",
@@ -2195,7 +2234,26 @@
     "tipo": "web_oficial",
     "fecha": "2026-08-24",
     "nota": "Grupo Dicon lo lista hoy como «En Construcción»."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "web_oficial",
+    "nota": "Precios por unidad publicados en la web de Grupo Dicon, con su política de cochera confirmada por el asesor."
+   },
+   "ventas": {
+    "vendidas": 1,
+    "total": null,
+    "fuente": "El 203 figura vendido en su web; quedan los pisos 4 y 5 del flat típico.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "Flat típico 100 m²: quedan pisos 4 y 5 (203 vendido)",
+     "vendidas": 1,
+     "total": null
+    }
+   ]
   },
   {
    "id": "conde-ii",
@@ -2416,7 +2474,26 @@
     "tipo": "whatsapp",
     "fecha": "2026-08-21",
     "nota": "Brochure 2026 enviado por AyD: construcción 2026, entrega 2027. Placa de obra: 13 meses de plazo."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de AyD edición 2026, recibido por WhatsApp, con el estado de venta por tipología."
+   },
+   "ventas": {
+    "vendidas": 3,
+    "total": 6,
+    "fuente": "Brochure de AyD edición 2026: VENDIDO en Flat 101, Flat 102 y Dúplex 502, de 6 tipologías.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 3,
+     "label": "3 de 6 tipologías disponibles (3 ya vendidas)",
+     "vendidas": 3,
+     "total": 6
+    }
+   ]
   },
   {
    "id": "conde-de-la-vega-251",
@@ -2554,7 +2631,26 @@
     "tipo": "campo",
     "fecha": "2026-08-22",
     "nota": "Edificio terminado y habitado, cartel «ÚLTIMOS DÚPLEX» en fachada."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Ficha de Nexo y BCP Proyectos; el cartel en fachada confirma los metrajes de lo que queda."
+   },
+   "ventas": {
+    "vendidas": null,
+    "total": 25,
+    "fuente": "Cartel en fachada: de 25 departamentos ya solo comunican «últimos dúplex».",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "Últimos dúplex (cartel en fachada, ago-2026)",
+     "vendidas": null,
+     "total": 25
+    }
+   ]
   },
   {
    "id": "conde-de-la-vega-460",
@@ -3171,7 +3267,26 @@
     "tipo": "brochure",
     "fecha": "2026-05-18",
     "nota": "Lista de precios oficial de Azzurra: 14 de 26 vendidas."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "tarifario",
+    "nota": "Lista de precios oficial de Azzurra del 18-may-2026, unidad por unidad y con estado de venta. Guardada en la plataforma."
+   },
+   "ventas": {
+    "vendidas": 14,
+    "total": 26,
+    "fuente": "Lista de precios oficial de Azzurra del 18-may-2026: 14 filas marcadas VENDIDO de 26 unidades.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 12,
+     "label": "12 de 26 disponibles (lista 18-may-2026)",
+     "vendidas": 14,
+     "total": 26
+    }
+   ]
   },
   {
    "id": "dmont-dicon",
@@ -3478,7 +3593,26 @@
     "tipo": "web_oficial",
     "fecha": "2026-08-24",
     "nota": "Grupo Dicon lo lista hoy como «En Construcción», desde US$263,064."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "web_oficial",
+    "nota": "Precios por unidad publicados en la web de Grupo Dicon (desde US$263,064). La cochera va aparte, confirmado."
+   },
+   "ventas": {
+    "vendidas": 15,
+    "total": 23,
+    "fuente": "Web de Grupo Dicon: 8 disponibles de 23.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 8,
+     "label": "8 de 23 · quedan 8",
+     "vendidas": 15,
+     "total": 23
+    }
+   ]
   },
   {
    "id": "estelar-1080",
@@ -3624,7 +3758,20 @@
     "tipo": "campo",
     "fecha": "2026-08-22",
     "nota": "Sala de ventas de Galeon atendida en la esquina; obra en curso."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de Galeon (13-abr-2026) y valla de obra."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "2 dorm agotados · queda 3 dorm",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "floresta-living-444",
@@ -3779,7 +3926,26 @@
     "fecha": "2026-08-22",
     "nota": "Cartel de obra y publicidad de venta vigentes en fachada. ⚠ EE Inmobiliaria ya no lo lista ni en «en venta» ni en «entregados» (revisado 24-ago-2026): hay que preguntarle a Cecilia en qué quedó."
    },
-   "coherencia_alerta": "Figuraba como «entrega inmediata» con entrega en diciembre-2026: se corrigió a «en construcción». Falta que la asesora confirme la fecha real."
+   "coherencia_alerta": "Figuraba como «entrega inmediata» con entrega en diciembre-2026: se corrigió a «en construcción». Falta que la asesora confirme la fecha real.",
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Ficha de Nexo Inmobiliario (relevamiento jun-2026); el cartel de obra confirma metrajes y dormitorios."
+   },
+   "ventas": {
+    "vendidas": 13,
+    "total": 18,
+    "fuente": "Ficha de Nexo Inmobiliario (relevamiento jun-2026): 5 disponibles de 18.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 5,
+     "label": "5 disponibles de 18 (relevamiento jun-2026)",
+     "vendidas": 13,
+     "total": 18
+    }
+   ]
   },
   {
    "id": "hana",
@@ -3907,7 +4073,26 @@
     "tipo": "brochure",
     "fecha": "2026-02-01",
     "nota": "Brochure oficial: los tres sótanos figuran íntegramente VENDIDOS."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de Odima (feb-2026), con las plantas de sótano que muestran el estado de venta."
+   },
+   "ventas": {
+    "vendidas": null,
+    "total": 17,
+    "fuente": "Brochure de Odima: los tres sótanos figuran íntegramente VENDIDOS sobre 17 departamentos.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 1,
+     "label": "Última unidad",
+     "vendidas": null,
+     "total": 17
+    }
+   ]
   },
   {
    "id": "jardines-monte-real",
@@ -4082,7 +4267,20 @@
     "tipo": "campo",
     "fecha": "2026-08-22",
     "nota": "Valla de obra: entrega marzo 2027, «últimas unidades»."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "campo",
+    "nota": "Valla de obra fotografiada el 22-ago-2026 (metrajes y stock) más la ficha de Nexo para el precio."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "Últimas unidades (anunciado en la valla de obra, ago-2026)",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "la-floresta-boulevard",
@@ -4300,7 +4498,20 @@
     "tipo": "whatsapp",
     "fecha": "2026-07-21",
     "nota": "Mónica: obra iniciada ~nov-2025, entrega abril 2027, en «últimos días de precios de preventa»."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "whatsapp",
+    "nota": "Cotización que mandó Mónica, su asesora, por WhatsApp (jul-2026): precio por unidad con el estacionamiento incluido."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "78 deptos · 2 torres",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-alegre",
@@ -4559,7 +4770,20 @@
     "tipo": "brochure",
     "fecha": "2026-07-01",
     "nota": "Brochure de julio-2026 + valla con precios de entrada; obra aún no iniciada."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de Edifikarte de julio-2026 y valla con los tramos de entrada por tipología."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-carmelo-250",
@@ -4698,7 +4922,20 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "web_oficial",
+    "nota": "Ficha oficial de Edifikarte (desde S/981,000) y valla de obra."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-carmelo-551",
@@ -4922,7 +5159,20 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Ficha de Nexo Inmobiliario y web de Balance Grupo Inmobiliario."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 6,
+     "label": "6 disponibles",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-mar-167",
@@ -5141,7 +5391,26 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Relevamiento en portales; el brochure oficial de julio-2026 confirma metrajes y tipologías."
+   },
+   "ventas": {
+    "vendidas": null,
+    "total": null,
+    "fuente": "Últimas 3 unidades, según relevamiento.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 3,
+     "label": "Últimas 3 unidades",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-mayor-177",
@@ -5281,7 +5550,26 @@
     "tipo": "campo",
     "fecha": "2026-08-22",
     "nota": "Cartel «ÚLTIMO DEPA · 2 dorms 86 m²» en la reja; edificio entregado desde ago-2024."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "campo",
+    "nota": "Cartel «ÚLTIMO DEPA · 2 dorms 86 m²» en la reja, fotografiado el 22-ago-2026, más la ficha de Edifikarte."
+   },
+   "ventas": {
+    "vendidas": null,
+    "total": null,
+    "fuente": "Cartel «ÚLTIMO DEPA» en la reja: queda una sola unidad.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 1,
+     "label": "Último depa · 2 dorm 86 m²",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-mayor-183",
@@ -5817,7 +6105,26 @@
     "tipo": "brochure",
     "fecha": "2026-06-24",
     "nota": "Lista de precios oficial de Azzurra con estado por unidad: 16 de 20 vendidas."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "tarifario",
+    "nota": "Lista de precios oficial de Azzurra, unidad por unidad y con estado de venta. Guardada en la plataforma."
+   },
+   "ventas": {
+    "vendidas": 16,
+    "total": 20,
+    "fuente": "Lista de precios oficial de Azzurra: 16 filas VENDIDO de 20, incluidos los 3 penthouses.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 4,
+     "label": "4 de 20 disponibles — últimas unidades",
+     "vendidas": 16,
+     "total": 20
+    }
+   ]
   },
   {
    "id": "monte-real-265",
@@ -5941,7 +6248,17 @@
    ],
    "asesora": "Cecilia",
    "wa_label": "Cecilia",
-   "financia": "BCP"
+   "financia": "BCP",
+   "precio_fuente": {
+    "tipo": "tarifario",
+    "nota": "Hoja de cotización del Dpto. 103 publicada por EE Inmobiliaria en su web."
+   },
+   "ventas": {
+    "vendidas": null,
+    "total": null,
+    "fuente": "EE Inmobiliaria comunica el Dpto. 103 como última unidad.",
+    "corte": "2026-08-24"
+   }
   },
   {
    "id": "monte-sierpe",
@@ -6130,7 +6447,20 @@
     "tipo": "campo",
     "fecha": "2026-08-22",
     "nota": "Edificio terminado con carteles «ÚLTIMOS DEPAS» en fachada."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "whatsapp",
+    "nota": "Precio por unidad confirmado con Nadia, su asesora, por WhatsApp."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "Últimos departamentos (anunciado en la fachada, ago-2026)",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "monte-umbroso",
@@ -6376,7 +6706,20 @@
     "fecha": "2026-08-22",
     "nota": "Valla del proyecto vigente en la esquina de Monte Umbroso con Monte Flor. No se pudo ver el avance de obra desde la calle."
    },
-   "coherencia_alerta": "La fecha de entrega que teníamos (ago-2026) ya venció y seguimos marcándolo en construcción. Hay que confirmar con Constructora Magnífica si entregó o se corrió."
+   "coherencia_alerta": "La fecha de entrega que teníamos (ago-2026) ya venció y seguimos marcándolo en construcción. Hay que confirmar con Constructora Magnífica si entregó o se corrió.",
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Fichas de InfoCasas por unidad; los metrajes y dormitorios los confirma su propia valla de obra."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "parque-monte-carmelo",
@@ -6680,7 +7023,20 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de EE Inmobiliaria, edición agosto-2026."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 24,
+     "label": "24 disponibles",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "precursores-525",
@@ -6831,7 +7187,26 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Ficha de Nexo Inmobiliario más su brochure oficial de Grupo Chacarilla Sur."
+   },
+   "ventas": {
+    "vendidas": null,
+    "total": 20,
+    "fuente": "Solo queda un dúplex penthouse de 20 unidades.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 1,
+     "label": "Solo queda un dúplex penthouse",
+     "vendidas": null,
+     "total": 20
+    }
+   ]
   },
   {
    "id": "precursores-ii",
@@ -6986,7 +7361,26 @@
     "tipo": "brochure",
     "fecha": "2026-06-01",
     "nota": "Lista de precios oficial con estado por unidad: 16 vendidas."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "tarifario",
+    "nota": "Lista de precios oficial del proyecto, unidad por unidad y con estado de venta. Guardada en la plataforma."
+   },
+   "ventas": {
+    "vendidas": 16,
+    "total": 20,
+    "fuente": "Lista de precios oficial: 16 unidades VENDIDO; quedan el 201 y el 503.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 4,
+     "label": "4 disponibles de 20 — últimas unidades",
+     "vendidas": 16,
+     "total": 20
+    }
+   ]
   },
   {
    "id": "santorini",
@@ -7258,7 +7652,26 @@
     "tipo": "campo",
     "fecha": "2026-08-22",
     "nota": "Cartel informativo de obra vigente: 14 meses de plazo, sin punto de venta en sitio."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "tarifario",
+    "nota": "Tarifario del proyecto, unidad por unidad, cotizado con 1 y con 2 estacionamientos."
+   },
+   "ventas": {
+    "vendidas": 6,
+    "total": null,
+    "fuente": "Web del proyecto: 401A, 103A, 202A-502A, 601A y 401B figuran vendidas.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "Varias unidades vendidas (401A, 103A, 202A-502A, 601A, 401B)",
+     "vendidas": 6,
+     "total": null
+    }
+   ]
   },
   {
    "id": "spazio",
@@ -7468,7 +7881,26 @@
     "tipo": "web_oficial",
     "fecha": "2026-08-24",
     "nota": "Grupo Dicon lo lista hoy como «En Construcción»; en campo (22-ago) tiene sala de ventas atendida."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "campo",
+    "nota": "Panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026."
+   },
+   "ventas": {
+    "vendidas": 7,
+    "total": 27,
+    "fuente": "Panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026: 20 de 27 disponibles.",
+    "corte": "2026-08-24"
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 20,
+     "label": "20 de 27 disponibles (panel de la sala de ventas)",
+     "vendidas": 7,
+     "total": 27
+    }
+   ]
   },
   {
    "id": "terraverde",
@@ -7527,7 +7959,11 @@
     "n": 1,
     "label": "A estrenar (broker)"
    },
-   "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas."
+   "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas.",
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Aviso de InfoCasas del comercializador."
+   }
   },
   {
    "id": "monte-umbroso-247",
@@ -7657,7 +8093,20 @@
     "tipo": "web_oficial",
     "fecha": "2026-08-24",
     "nota": "AyD lo mantiene «EN PLANOS» en su web."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "web_oficial",
+    "nota": "Ficha oficial de Inmobiliaria AyD, con su política de estacionamiento declarada."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": 12,
+     "label": "Pre-lanzamiento · 12 deptos (6 pisos)",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "narciso-ayd",
@@ -7849,7 +8298,20 @@
     "fecha": "2026-08-22",
     "nota": "Cartel de obra: «ÚLTIMOS DEPTOS» y depa piloto visitable."
    },
-   "coherencia_alerta": "La entrega de sep-2026 viene del relevamiento de junio y está por vencer: confirmar con Guerin si se mantiene."
+   "coherencia_alerta": "La entrega de sep-2026 viene del relevamiento de junio y está por vencer: confirmar con Guerin si se mantiene.",
+   "precio_fuente": {
+    "tipo": "campo",
+    "nota": "Cartel de obra de Guerin fotografiado el 22-ago-2026 (metrajes y dormitorios). Sin lista de precios todavía."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": "Últimos departamentos (anunciado en el cartel de obra)",
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "astete-living",
@@ -7909,7 +8371,16 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "flexi-iii",
@@ -7977,12 +8448,21 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "living-monte-real",
-   "name": "Living Monte Real",
-   "dev": "Grupo Chacarilla Sur (por confirmar — el logo del cartel es el suyo)",
+   "name": "Real Living · Monte Real",
+   "dev": "Grupo Chacarilla Sur",
    "addr": "Jr. Monte Real, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En obra · con caseta de ventas",
@@ -8014,7 +8494,7 @@
    "caseta_ventas": "si",
    "caseta_nota": "Caseta de ventas en el terreno (anotación de campo).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Confirmado con la foto del recorrido: el cartel dice «LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · WhatsApp 949 107 186». Antes lo teníamos como «Monte 2» de Dicon; el logo del cartel es el de Grupo Chacarilla Sur (el mismo de Precursores 525), y 949 107 186 es el número de Joyce, su asesora. Falta confirmar el desarrollador con ella.",
+   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada.",
    "fuentes": [
     "Cartel/valla fotografiada en el recorrido del 22-ago-2026",
     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
@@ -8042,17 +8522,30 @@
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
-    "nota": "Obra avanzada con cartel de venta y WhatsApp visible."
-   }
+    "nota": "Cartel y logo de Grupo Chacarilla Sur en el portón de obra; obra avanzada con fachada y locales a la vista."
+   },
+   "precio_fuente": {
+    "tipo": "campo",
+    "nota": "Cartel del proyecto fotografiado el 22-ago-2026 (metrajes y dormitorios). Sin lista de precios todavía."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "isGEU": false,
-   "precio_desde_usd": null,
+   "precio_desde_usd": 212206,
    "precio_hasta_usd": null,
-   "dorms": "Por confirmar",
-   "m2": "Por confirmar",
+   "dorms": "3",
+   "m2": "85 – 136",
    "wa": "916123888",
-   "web": "https://www.proyectospyr.com",
+   "web": "https://www.pyredificaciones.com/proyectos",
    "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
    "planos": [
@@ -8061,7 +8554,10 @@
    "typologies": [],
    "flats_summary": [],
    "cochera_status": "nd",
-   "stock": null,
+   "stock": {
+    "n": null,
+    "label": "Pocas unidades disponibles (declarado por PYR)"
+   },
    "mostrar": true,
    "geo_aprox": true,
    "amenidades": [
@@ -8080,16 +8576,17 @@
    "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia.",
    "fuentes": [
     "Recorrido de campo 22-ago-2026 · fotos IMG_7958–7959",
-    "https://www.proyectospyr.com"
+    "https://www.proyectospyr.com",
+    "https://www.pyredificaciones.com/proyectos"
    ],
    "id": "the-leven",
    "name": "The Eleven",
-   "dev": "Proyectos PyR",
+   "dev": "PYR Edificaciones",
    "addr": "Av. de los Precursores 1443, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
-   "estado_raw": "ENTREGA INMEDIATA · últimas unidades",
+   "estado_raw": "Entrega inmediata · pocas unidades disponibles",
    "estado_obra": "Terminado · entrega inmediata",
-   "entrega": "Por confirmar",
+   "entrega": "Entrega inmediata",
    "lat": -12.120753,
    "lng": -76.98471,
    "caseta_ventas": "banner",
@@ -8097,27 +8594,36 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": false,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Proyectos PyR. Verificado en campo (22-ago-2026): tótem «THE ELEVEN» en la reja, entrega inmediata, financiado por Scotiabank. Contacto: 916 123 888 · ventas@proyectospyr.com · proyectospyr.com. Está al sur del cuadrante, se registra como referencia. El tótem confirma: THE ELEVEN, +51 916 123 888, ventas@proyectospyr.com, financiado por Scotiabank y «Entrega inmediata».",
+   "comentario": "Inmobiliaria confirmada: PYR Edificaciones. 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500. Entrega inmediata con pocas unidades disponibles. PYR lo ubica sobre Av. Velasco Astete; nuestro tótem fotografiado está en el cruce con Av. de los Precursores. Ojo: el 999 988 287 que circulaba como «Brea Balta» pertenece a Grupo Zlatsu y no corresponde a este proyecto — el contacto bueno es el del tótem, 916 123 888.",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
     {
      "nombre": null,
      "numero": "916123888",
-     "fuente": "Cartel de obra fotografiado en el recorrido del 22-ago-2026 — tótem del proyecto, junto a ventas@proyectospyr.com"
-    },
-    {
-     "nombre": null,
-     "numero": "999988287",
-     "fuente": "Auditoría de fuentes de competencia (jun-2026)"
+     "fuente": "Tótem del proyecto fotografiado el 22-ago-2026, junto a ventas@proyectospyr.com"
     }
    ],
-   "wa_label": "Proyectos PyR",
+   "wa_label": "PYR Edificaciones",
    "foto_campo": "2026-08-22",
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "PYR Edificaciones lo lista hoy como «entrega inmediata y pocas unidades disponibles»; el tótem en obra lo confirma."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ],
+   "pisos": 8,
+   "precio_fuente": {
+    "tipo": "web_oficial",
+    "nota": "Web de PYR Edificaciones y ficha del proyecto: 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500."
    }
   },
   {
@@ -8135,7 +8641,7 @@
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": true,
+   "mostrar": false,
    "geo_aprox": true,
    "amenidades": [],
    "precio_hist": [
@@ -8165,7 +8671,7 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. Registrado en el recorrido; faltan datos comerciales. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor. ⚠ Sin WhatsApp verificado. El número que figuraba era el de Edifikarte, asignado por suposición — se retiró hasta confirmar quién desarrolla.",
+   "comentario": "Dirección anotada en el recorrido de campo (Calle Monte Alegre 137), pero no se identificó cartel, valla ni licencia con el nombre de la inmobiliaria, y no aparece en ningún portal ni buscador. Se retira del cuadro de competidores hasta poder identificarlo en campo.",
    "pedido": "Hola! Una consulta: tienen algún proyecto en Calle Monte Alegre 137, en Chacarilla? Me interesa la zona y quisiera información.",
    "pedido_que": "confirmar inmobiliaria y proyecto",
    "wa_label": null,
@@ -8174,7 +8680,8 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "motivo_oculto": "Sin inmobiliaria identificada"
   },
   {
    "isGEU": false,
@@ -8191,7 +8698,7 @@
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": true,
+   "mostrar": false,
    "geo_aprox": true,
    "amenidades": [],
    "precio_hist": [
@@ -8221,7 +8728,7 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor. ⚠ Sin WhatsApp verificado. El 988 609 572 que figuraba es el de Cecilia (EE Inmobiliaria) — se retiró.",
+   "comentario": "Anotado en el recorrido como obra frente al Parque La Floresta, sin cartel legible que identifique inmobiliaria ni nombre comercial. Ojo: no confundir con La Floresta Boulevard, que sí está identificado y sí compite. Se retira hasta poder identificarlo en campo.",
    "pedido": "Hola! Buenas. Me interesa el proyecto frente al Parque La Floresta. Me pasan los planos por tipología y la lista de precios? También quería saber si la cochera va incluida en el precio.",
    "pedido_que": "planos + tarifario + nombre del proyecto",
    "wa_label": null,
@@ -8230,7 +8737,8 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "motivo_oculto": "Sin inmobiliaria identificada"
   },
   {
    "id": "ten-apartments",
@@ -8364,7 +8872,20 @@
     "tipo": "brochure",
     "fecha": "2026-08-19",
     "nota": "Brochure de agosto-2026: en construcción, entrega 31-dic-2027."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de EE Inmobiliaria, edición agosto-2026, y ficha de Nexo."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "isGEU": false,
@@ -8524,7 +9045,20 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "brochure",
+    "nota": "Brochure oficial de Vibra Inmobiliaria (edición mayo)."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "isGEU": false,
@@ -8608,7 +9142,16 @@
     "fecha": "2026-06-01",
     "nota": "Sólo tenemos su brochure archivado. V&V no publica ficha activa y no hay contacto verificado."
    },
-   "coherencia_alerta": "Estado sin respaldo: el brochure no dice fecha de entrega y no tenemos contacto. Verificar en el próximo recorrido."
+   "coherencia_alerta": "Estado sin respaldo: el brochure no dice fecha de entrega y no tenemos contacto. Verificar en el próximo recorrido.",
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   },
   {
    "id": "conde-de-la-vega-128",
@@ -8700,7 +9243,20 @@
     "tipo": "base_interna",
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   }
+   },
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Ficha de Nexo Inmobiliario (desde S/981,000) y web oficial de Edifikarte."
+   },
+   "stock_hist": [
+    {
+     "corte": "2026-08-24",
+     "disponibles": null,
+     "label": null,
+     "vendidas": null,
+     "total": null
+    }
+   ]
   }
  ]
 }

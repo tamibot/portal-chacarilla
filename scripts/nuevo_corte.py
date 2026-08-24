@@ -75,6 +75,15 @@ def main():
     # 1) snapshot de precio por proyecto
     movidos, nuevos = [], 0
     for p in visibles(projects):
+        # foto del stock, para poder medir cuánto vendió cada uno entre corte y corte
+        sh = p.setdefault("stock_hist", [])
+        st = p.get("stock") or {}
+        vt = p.get("ventas") or {}
+        snap = {"corte": fecha, "disponibles": st.get("n"), "label": st.get("label"),
+                "vendidas": vt.get("vendidas"), "total": vt.get("total")}
+        if not any(x.get("corte") == fecha for x in sh):
+            sh.append(snap)
+
         hist = p.setdefault("precio_hist", [])
         if hist and hist[-1].get("corte") == a.fecha:
             continue  # ya tiene foto de este corte (idempotente)

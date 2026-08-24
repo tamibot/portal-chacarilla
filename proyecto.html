@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824n"></script>
+<script src="data/portal-data.js?v=20260824p"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -211,6 +211,10 @@ function render(){
    ${p.promocion?`<div class="alert" style="background:#FBECF2;border-color:#e6c0d2;color:#5a2038">🎁 <b>Promoción vigente:</b> ${p.promocion}</div>`:''}
    ${p.como_presenta?`<div class="alert" style="background:#EEF2F7;border-color:#c6d2e0;color:#22303f">🗣 <b>Cómo lo presentan:</b> ${p.como_presenta}</div>`:''}
    ${p.tarifario?`<div style="margin-top:12px"><a class="btn broch" href="${p.tarifario}" target="_blank">💲 Ver tarifario / cotización</a></div>`:''}
+   ${(()=>{const e=p.precio_fuente;if(!e)return '';const L=(D.meta.fuentes_precio||{}).etiquetas||{};
+     const firme=e.tipo==='tarifario'||e.tipo==='whatsapp'||e.tipo==='lista_interna';
+     return `<div class="alert" style="background:${firme?'#EAF3DE':'#faf8f2'};border-color:${firme?'#cfe0b8':'#ece7d9'};color:#2a3a20">
+       💲 <b>De dónde sale el precio:</b> ${L[e.tipo]||e.tipo} — ${e.nota}</div>`;})()}
    ${(()=>{const e=p.estado_evidencia;if(!e)return '';const L=(D.meta.jerarquia_fuentes||{}).etiquetas||{};
      const fresco=e.tipo==='whatsapp'||e.tipo==='campo';
      return `<div class="alert" style="background:${fresco?'#EAF3DE':'#faf8f2'};border-color:${fresco?'#cfe0b8':'#ece7d9'};color:#2a3a20">
