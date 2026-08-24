@@ -632,7 +632,8 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 4 m del marcador).",
-   "estado_obra": "En construcción · obra iniciada"
+   "estado_obra": "En construcción · obra iniciada",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "aura-sul",
@@ -819,7 +820,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 83 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 83 m.",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "conde-ii",
@@ -916,7 +918,8 @@
     }
    ],
    "wa_label": "Washington B. · AyD",
-   "estado_obra": "En obra · cerco azul, estructura en altura"
+   "estado_obra": "En obra · cerco azul, estructura en altura",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -1005,7 +1008,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: letrero «ÚLTIMOS DÚPLEX» en la reja del edificio ya terminado.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "Terminado y habitado · últimos dúplex en venta"
+   "estado_obra": "Terminado y habitado · últimos dúplex en venta",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1571,7 +1575,8 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 27 m del marcador).",
-   "estado_obra": "En obra · cerco de Azzurra con banderolas de informes"
+   "estado_obra": "En obra · cerco de Azzurra con banderolas de informes",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "dmont-dicon",
@@ -1820,7 +1825,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 37 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 37 m del marcador).",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "estelar-1080",
@@ -1927,7 +1933,8 @@
    "caseta_ventas": "si",
    "caseta_nota": "Sala de ventas en el propio terreno: letrero «SALA DE VENTAS AQUÍ» con flecha (Galeón). Tel. en cartel: 976 357 594 / 988 351 473.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · con sala de ventas en el terreno"
+   "estado_obra": "En obra · con sala de ventas en el terreno",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "floresta-living-444",
@@ -2044,7 +2051,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: tótem de EE Inmobiliaria en la vereda (999 276 371 / 988 609 572).",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · tótem comercial en vereda"
+   "estado_obra": "En obra · tótem comercial en vereda",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "hana",
@@ -2119,7 +2127,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 77 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 77 m.",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "jardines-monte-real",
@@ -2217,7 +2226,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: carteles «ÚLTIMAS UNIDADES» sobre el cerco de obra.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · carteles de «últimas unidades» sobre el cerco"
+   "estado_obra": "En obra · carteles de «últimas unidades» sobre el cerco",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "la-floresta-boulevard",
@@ -2349,7 +2359,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cartel de obra grande con el render sobre el cerco; entrada de obra habilitada.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra avanzada: estructura en altura con malla y andamios"
+   "estado_obra": "En obra avanzada: estructura en altura con malla y andamios",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-alegre",
@@ -2418,7 +2429,8 @@
      "pm2": null
     }
    ],
-   "estado_obra": "En planos / inicio de obra"
+   "estado_obra": "En planos / inicio de obra",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-carmelo-250",
@@ -2504,7 +2516,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: valla comercial sobre el cerco de obra (981 386 111).",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · estructura con malla, cartel comercial activo"
+   "estado_obra": "En obra · estructura con malla, cartel comercial activo",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-carmelo-551",
@@ -2683,7 +2696,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 19 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 19 m del marcador).",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-mar-167",
@@ -2774,7 +2788,8 @@
      "desde": 288235,
      "pm2": null
     }
-   ]
+   ],
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-mayor-177",
@@ -2870,7 +2885,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: letrero «ÚLTIMO DEPA · 2 DORMS 86 m²» de Edifikarte sobre la vereda (981 386 111).",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "Terminado · ÚLTIMA unidad en venta (2 dorm, 86 m²)"
+   "estado_obra": "Terminado · ÚLTIMA unidad en venta (2 dorm, 86 m²)",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-mayor-183",
@@ -3352,7 +3368,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: banner de Azzurra sobre el cerco de obra (944 216 477 · azzurra.com.pe).",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En construcción · banner de Azzurra sobre el cerco"
+   "estado_obra": "En construcción · banner de Azzurra sobre el cerco",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-real-265",
@@ -3574,7 +3591,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 89 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 89 m.",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "monte-umbroso",
@@ -3787,7 +3805,8 @@
     }
    ],
    "geo_aprox": true,
-   "geo_nota": "Ubicación por confirmar. En campo (22-ago-2026) se fotografió una valla de «Monte Flor Chacarilla-Surco» sobre Av. de los Precursores, a ~500 m de esta posición, con datos que NO coinciden con nuestra ficha (anuncia «desde 193 m²» y 3 dormitorios, logo Reusche Reyna, tel. 975 244 600). Verificar si es el mismo proyecto, otra etapa, o una valla publicitaria colocada fuera del sitio."
+   "geo_nota": "Ubicación por confirmar. En campo (22-ago-2026) se fotografió una valla de «Monte Flor Chacarilla-Surco» sobre Av. de los Precursores, a ~500 m de esta posición, con datos que NO coinciden con nuestra ficha (anuncia «desde 193 m²» y 3 dormitorios, logo Reusche Reyna, tel. 975 244 600). Verificar si es el mismo proyecto, otra etapa, o una valla publicitaria colocada fuera del sitio.",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "parque-monte-carmelo",
@@ -4046,7 +4065,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 44 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 44 m del marcador).",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "precursores-525",
@@ -4158,7 +4178,8 @@
     }
    ],
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar."
+   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "precursores-ii",
@@ -4274,7 +4295,8 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 82 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 82 m.",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "santorini",
@@ -4468,7 +4490,8 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador).",
-   "estado_obra": "En construcción"
+   "estado_obra": "En construcción",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "spazio",
@@ -4646,7 +4669,8 @@
     "n": 20,
     "label": "20 de 27 disponibles (panel de la sala de ventas)"
    },
-   "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)"
+   "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "terraverde",
@@ -4798,7 +4822,9 @@
     }
    ],
    "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
-   "estado_obra": "En planos · pre-lanzamiento comercial"
+   "estado_obra": "En planos · pre-lanzamiento comercial",
+   "descubierto": "2026-08-19",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "narciso-ayd",
@@ -4846,7 +4872,9 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cartel de licencia de obra, aún en estructura.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra gruesa: encofrado y armadura a la vista, primeros niveles"
+   "estado_obra": "En obra gruesa: encofrado y armadura a la vista, primeros niveles",
+   "descubierto_campo": "2026-08-22",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "precursores-verde",
@@ -4896,7 +4924,9 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: cartel de obra y valla de marca sobre el cerco.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · cerco de marca y cartel de licencia instalados"
+   "estado_obra": "En obra · cerco de marca y cartel de licencia instalados",
+   "descubierto_campo": "2026-08-22",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "astete-living",
@@ -4937,7 +4967,9 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cerco anunciando «próximo proyecto».",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "Sin obra · terreno cercado anunciando «próximo proyecto»"
+   "estado_obra": "Sin obra · terreno cercado anunciando «próximo proyecto»",
+   "descubierto_campo": "2026-08-22",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "flexi-iii",
@@ -4979,7 +5011,9 @@
     "Recorrido de campo 2026-08-22 · foto IMG_7918"
    ],
    "amenidades": [],
-   "precio_hist": []
+   "precio_hist": [],
+   "descubierto_campo": "2026-08-22",
+   "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "living-monte-real",
@@ -5022,7 +5056,9 @@
     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
    ],
    "amenidades": [],
-   "precio_hist": []
+   "precio_hist": [],
+   "descubierto_campo": "2026-08-22",
+   "cuadrante_verificado": "2026-08-22"
   }
  ]
 }

@@ -64,6 +64,22 @@ for p in projects:
         if not iso_ok(h.get("corte", "")):
             err(f"{pid}: precio_hist con fecha inválida {h.get('corte')}")
 
+# 2b) coherencia geométrica del cuadrante
+poly=d.get('quadrant') or []
+def _dentro(lat,lon,poly):
+    n=len(poly);ins=False;j=n-1
+    for i in range(n):
+        yi,xi=poly[i][0],poly[i][1];yj,xj=poly[j][0],poly[j][1]
+        if ((yi>lat)!=(yj>lat)) and (lon<(xj-xi)*(lat-yi)/((yj-yi) or 1e-12)+xi): ins=not ins
+        j=i
+    return ins
+if poly:
+    for p in projects:
+        if p.get("mostrar") is False or p.get("lat") is None: continue
+        real=_dentro(p["lat"],p["lng"],poly)
+        if bool(p.get("en_cuadrante")) != real:
+            err(f'{p["id"]}: en_cuadrante={p.get("en_cuadrante")} pero geométricamente está {"DENTRO" if real else "FUERA"} del cuadrante')
+
 # 3) meta: cortes, bitácora, fechas, contadores
 for c in meta.get("cortes", []):
     if not iso_ok(c.get("fecha", "")): err(f"corte con fecha inválida: {c.get('fecha')}")
