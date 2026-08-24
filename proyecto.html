@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260823d"></script>
+<script src="data/portal-data.js?v=20260823e"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -179,6 +179,7 @@ function render(){
          <div class="chip"><b>${p.entrega||'—'}</b><span>Entrega</span></div>
          ${p.total_pisos?`<div class="chip"><b>${p.total_pisos}</b><span>Pisos</span></div>`:''}
          ${p.isGEU?'':`<div class="chip"><b style="color:${vi.color}">${vi.dias===0?'hoy':'hace '+vi.dias+'d'}</b><span>Verificado</span></div>`}
+         ${p.caseta_ventas?`<div class="chip"><b style="color:${p.caseta_ventas==='si'?'#2d6a4f':p.caseta_ventas==='banner'?'#b9863b':'#999'}">${p.caseta_ventas==='si'?'Sí':p.caseta_ventas==='banner'?'Solo cartel':'No'}</b><span>Sala de ventas</span></div>`:''}
        </div>
        <div class="cta">${wa}${web}${broch}${lista}</div>
      </div>
@@ -195,6 +196,7 @@ function render(){
 
    ${amenHtml?`<div class="sec">Amenidades</div>${amenHtml}`:''}
 
+   ${p.caseta_nota?`<div class="alert" style="background:#f2f7f2;border-color:#cfe0b8;color:#2a3a20">🏠 <b>Punto de venta (visita ${p.caseta_fecha||''}):</b> ${p.caseta_nota}</div>`:''}
    <div class="sec">Monitoreo · Time lapse <span style="font-weight:600;color:${vi.color};font-size:11px;text-transform:none;letter-spacing:0">● verificado ${vi.dias===0?'hoy':'hace '+vi.dias+' días'}</span></div>
    ${phHtml}${tlHtml}
 

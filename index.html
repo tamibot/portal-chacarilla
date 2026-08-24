@@ -224,7 +224,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260823d"></script>
+<script src="data/portal-data.js?v=20260823e"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -255,6 +255,11 @@ const waHref=(p,num)=>{
 };
 const pm2cls=v=>v>=2200?'hi':v>=1800?'mid':'lo';
 const typText=(p)=>[p.estado_raw,p.comentario,...(p.typologies||[]).map(t=>`${t.unidad||''} ${t.tipo||''} ${t.piso||''}`)].join(' ').toLowerCase();
+function casetaLabel(p){const c=p.caseta_ventas;
+  if(c==='si')return '<span style="color:#2F7D54;font-weight:700;white-space:nowrap" title="'+(p.caseta_nota||'')+'">🏠 Sala de ventas</span>';
+  if(c==='banner')return '<span style="color:#b9863b;white-space:nowrap" title="'+(p.caseta_nota||'')+'">🪧 Solo cartel</span>';
+  if(c==='no')return '<span style="color:#9a958c;white-space:nowrap" title="'+(p.caseta_nota||'')+'">— Sin punto de venta</span>';
+  return '<span style="color:#c2beb2;white-space:nowrap">no observado</span>';}
 function cocheraLabel(p){const s=parkingStatus(p);
   if(s==='si')return '<span style="color:#2F7D54;font-weight:700;white-space:nowrap">✓ Incluida</span>';
   if(s==='no')return '<span style="color:#6d776e;white-space:nowrap">Aparte</span>';
@@ -507,7 +512,7 @@ function buildList(){
         <div class="pdev">${p.dev}</div>
         <div class="pprice">${priceline} ${priceDelta(p)}</div>
         <div class="pmeta">${p.dorms||'—'} dorm · ${p.m2} m²</div>
-        <div class="pchips">${st}${p.isGEU?'':`<span style="font-size:9px;font-weight:600;color:${parkingStatus(p)==='si'?'#2F7D54':parkingStatus(p)==='no'?'#6d776e':'#b9863b'}">🅿 ${parkingStatus(p)==='si'?'cochera incl.':parkingStatus(p)==='no'?'cochera aparte':'cochera ?'}</span>`}${p.isGEU?'':verifBadge(p)}</div></div></div>`;
+        <div class="pchips">${st}${p.isGEU?'':`<span style="font-size:9px;font-weight:600;color:${parkingStatus(p)==='si'?'#2F7D54':parkingStatus(p)==='no'?'#6d776e':'#b9863b'}">🅿 ${parkingStatus(p)==='si'?'cochera incl.':parkingStatus(p)==='no'?'cochera aparte':'cochera ?'}</span>`}${p.isGEU?'':verifBadge(p)}${p.caseta_ventas==='si'?'<span style="font-size:9px;font-weight:700;color:#2F7D54">🏠 sala de ventas</span>':''}</div></div></div>`;
   }).join('');
 }
 function buildFullList(){
@@ -635,7 +640,7 @@ function buildPrice(){
       <td style="text-align:center;color:#b0b0b0">${i+1}</td>
       <td><b>${p.name}</b> ${p.isGEU?'★':''}<div style="font-size:10px;color:#999">${p.dev||''}</div></td>
       <td>${val}</td><td style="font-size:11px;color:#777">${r.sub}</td>
-      <td>${cocheraLabel(p)}</td><td>${st}</td></tr>`;}).join('')||'<tr><td colspan="6" style="color:#aaa;padding:16px">Sin datos para este filtro todavía.</td></tr>';
+      <td>${cocheraLabel(p)}</td><td>${casetaLabel(p)}</td><td>${st}</td></tr>`;}).join('')||'<tr><td colspan="7" style="color:#aaa;padding:16px">Sin datos para este filtro todavía.</td></tr>';
   const chips=(arr,cur,fn)=>arr.map(x=>`<button class="anatab${cur===x[0]?' on':''}" onclick="${fn}('${x[0]}')">${x[1]}</button>`).join('');
   const metLbl=metsF.find(m=>m[0]===rankMetric)[1], dLbl=dormsF.find(x=>x[0]===rankDorm)[1];
   // matriz completa (secundaria)
@@ -650,7 +655,7 @@ function buildPrice(){
    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px"><span style="font-size:10px;color:#bbb;font-weight:700;letter-spacing:1px">MÉTRICA:</span>${chips(metsF,rankMetric,'setRankMetric')}</div>
    <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px"><span style="font-size:10px;color:#bbb;font-weight:700;letter-spacing:1px">TIPOLOGÍA:</span>${chips(dormsF,rankDorm,'setRankDorm')}</div>
    <div style="font-size:12px;color:#777;margin-bottom:10px"><b>${items.length}</b> proyectos · ${metLbl} · ${dLbl}${items.length?` · mediana <b>${rankMetric==='pm2'?'$'+med.toLocaleString()+'/m²':fmtUsd(med)}</b>`:''}</div>
-   <table class="t" style="max-width:900px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>${metLbl}</th><th>Detalle</th><th>Cochera</th><th>Estado</th></tr></thead><tbody>${rk}</tbody></table>
+   <table class="t" style="max-width:900px"><thead><tr><th style="width:34px">#</th><th>Proyecto</th><th>${metLbl}</th><th>Detalle</th><th>Cochera</th><th>Punto de venta</th><th>Estado</th></tr></thead><tbody>${rk}</tbody></table>
    <div class="sec" style="margin-top:32px">Tabla completa · US$/m² por tipología</div>
    <table class="t"><thead>
      <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dorm</th><th colspan="3" class="sep" style="text-align:center">2 dorm</th><th colspan="3" class="sep" style="text-align:center">3 dorm</th><th rowspan="2" class="sep" style="text-align:center">Cochera</th></tr>
@@ -808,7 +813,7 @@ function buildTimelapse(){
   const staleList=comps.filter(p=>!verifInfo(p).fresh).sort((a,b)=>verifInfo(b).dias-verifInfo(a).dias);
   document.getElementById('timelapseview').innerHTML=`
    <h2 style="margin-bottom:2px">Time lapse · monitoreo de actividad</h2>
-   <div style="font-size:12px;color:#999;margin-bottom:14px">Registro cronológico de lo que nos dicen los asesores — comentarios, llamadas, mensajes, imágenes y fuentes — <b>agrupado por mes</b>. Clic en el nombre del proyecto abre su ficha; clic en una imagen la amplía.</div>
+   <div style="font-size:12px;color:#999;margin-bottom:14px">Registro cronológico de lo que nos dicen los asesores — comentarios, llamadas, mensajes, imágenes y fuentes — <b>agrupado por mes</b>. Clic en el nombre del proyecto abre su ficha; clic en una imagen la amplía.${D.meta.ultimo_recorrido?` <b style="color:#2F7D54">Último recorrido de campo: ${fmtFechaCorta(D.meta.ultimo_recorrido)}</b> (134 fotos geolocalizadas en 23 puntos).`:''}</div>
    <div style="display:flex;gap:12px;margin-bottom:16px;max-width:760px;flex-wrap:wrap">
      <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#2F7D54">${fresh}</div><div style="font-size:11.5px;color:#7a7a7a">verificados ≤35 días</div></div>
      <div style="flex:1;min-width:150px;background:#fff;border:1px solid #e6e1d4;border-radius:12px;padding:12px 16px"><div style="font-size:24px;font-weight:800;color:#ce3c31">${stale}</div><div style="font-size:11.5px;color:#7a7a7a">por re-confirmar${staleList.length?`: ${staleList.slice(0,3).map(p=>p.name).join(', ')}${staleList.length>3?'…':''}`:''}</div></div>

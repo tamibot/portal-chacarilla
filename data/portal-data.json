@@ -32,16 +32,69 @@
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "— Cuadrante",
+    "dev": "",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Recorrido de campo",
+    "autor": "Martin",
+    "texto": "Recorrido completo del cuadrante el sábado 22 de agosto de 2026 (14:34 a 16:15 h): 134 fotos geolocalizadas en 23 puntos. Se levantaron 3 proyectos nuevos, se registró el estado de obra de los que ya seguíamos, y se anotó qué proyectos tienen sala de ventas atendida y cuáles solo cartel.",
+    "cita": "Recorrido presencial del 22-ago-2026, 14:34–16:15 h. Todas las fotos con GPS y hora.",
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · 134 fotos geolocalizadas"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Spazio",
+    "dev": "Grupo Dicon",
+    "proyecto_id": "spazio",
+    "tags": [
+     "venta"
+    ],
+    "canal": "Visita a sala de ventas",
+    "autor": "Martin",
+    "texto": "Visita a la sala de ventas. El panel de disponibilidad muestra 27 departamentos (pisos 1–7) con 7 VENDIDOS: quedan 20 disponibles. Dirección confirmada: Av. de los Precursores 166-172.",
+    "cita": "Panel de disponibilidad fotografiado dentro de la sala de ventas de Spazio Residencial el 22-ago-2026.",
+    "imgs": [
+     "assets/campo/spazio-panel-ventas.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_7926"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Monte Mayor 177",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-mayor-177",
+    "tags": [
+     "venta"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "Queda UN solo departamento: letrero en vereda «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111.",
+    "cita": "Letrero fotografiado el 22-ago-2026 (Edifikarte, Monte Mayor 177).",
+    "imgs": [
+     "assets/campo/monte-mayor-177-ultimo.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_8019"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "Conde de la Vega 251",
     "dev": "Edifikarte",
     "proyecto_id": "conde-de-la-vega-251",
     "tags": [
-     "estado"
+     "venta"
     ],
     "canal": "Visita de campo",
-    "autor": "Martin (recorrido de zona)",
-    "texto": "Ubicación CORREGIDA (estaba 126 m fuera de sitio). Verificado con la fachada: número 251 a la vista y letrero «ÚLTIMOS DÚPLEX — 2 dorm 95-122 m², 3 dorm 161 m²», Edifikarte, tel. 981 386 111.",
-    "cita": "Foto de la fachada con el número 251 y el letrero de ventas, 22-ago-2026 14:45 (GPS -12.11507, -76.98252).",
+    "autor": "Martin",
+    "texto": "Edificio terminado con letrero «ÚLTIMOS DÚPLEX»: 2 dorm de 95–122 m² y 3 dorm de 161 m², Edifikarte, tel. 981 386 111. Ubicación confirmada con el número 251 en la fachada.",
+    "cita": "Fachada con el número 251 y letrero de ventas, fotografiada el 22-ago-2026 a las 14:45.",
     "imgs": [
      "assets/campo/conde-de-la-vega-251.jpg"
     ],
@@ -51,21 +104,59 @@
    },
    {
     "fecha": "2026-08-22",
-    "proyecto": "Monteflor",
-    "dev": "por confirmar",
-    "proyecto_id": "monteflor",
+    "proyecto": "Monte Carmelo 250",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-carmelo-250",
     "tags": [
      "estado"
     ],
     "canal": "Visita de campo",
-    "autor": "Martin (recorrido de zona)",
-    "texto": "DISCREPANCIA a resolver: valla de «Monte Flor Chacarilla-Surco» sobre Av. de los Precursores anunciando «desde 193 m²» y 3 dormitorios, con logo Reusche Reyna y tel. 975 244 600 — no coincide con nuestra ficha (Arch Inversiones, 64-240 m², tel. 981 349 116). Puede ser otro proyecto, otra etapa, o publicidad fuera de sitio.",
-    "cita": "Valla fotografiada el 22-ago-2026 15:21 (GPS -12.11460, -76.97976), a ~500 m de la ubicación que teníamos para Monteflor.",
+    "autor": "Martin",
+    "texto": "Obra activa en la esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Valla comercial: flats y dúplex, 2 dorm desde 80 m² y 3 dorm desde 116 m², financiado por BCP, tel. 981 386 111.",
+    "cita": "Valla y señalización de calle fotografiadas el 22-ago-2026 a las 15:42.",
+    "imgs": [
+     "assets/campo/monte-carmelo-250.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_7979"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Monteflor",
+    "dev": "Constructora Magnífica",
+    "proyecto_id": "monteflor",
+    "tags": [
+     "precio"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "Valla de «Monte Flor · Chacarilla - Surco» sobre Av. de los Precursores: 2 y 3 dormitorios desde 193 m², constructora Magnífica, tel. 975 244 600.",
+    "cita": "Valla publicitaria fotografiada el 22-ago-2026 a las 15:21.",
     "imgs": [
      "assets/campo/monteflor-valla.jpg"
     ],
     "fuentes": [
      "Recorrido de campo 22-ago-2026 · foto IMG_7944"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
+    "proyecto": "Estelar 1080",
+    "dev": "Galeón",
+    "proyecto_id": "estelar-1080",
+    "tags": [
+     "venta"
+    ],
+    "canal": "Visita de campo",
+    "autor": "Martin",
+    "texto": "Tiene SALA DE VENTAS en el terreno (letrero «Sala de ventas aquí» con flecha). Contactos en cartel: 976 357 594 / 988 351 473.",
+    "cita": "Letrero de sala de ventas fotografiado el 22-ago-2026 a las 16:05.",
+    "imgs": [
+     "assets/campo/estelar-sala-ventas.jpg"
+    ],
+    "fuentes": [
+     "Recorrido de campo 22-ago-2026 · foto IMG_8037"
     ]
    },
    {
@@ -85,21 +176,6 @@
     ],
     "fuentes": [
      "Recorrido de campo 22-ago-2026 · fotos IMG_7954–7957"
-    ]
-   },
-   {
-    "fecha": "2026-08-22",
-    "proyecto": "— Cuadrante",
-    "dev": "",
-    "tags": [
-     "estado"
-    ],
-    "canal": "Auditoría de mapa",
-    "autor": "Equipo Creators",
-    "texto": "Auditoría de coordenadas con las 134 fotos GPS del recorrido: 13 proyectos con ubicación CONFIRMADA por foto (<45 m), 12 coherentes con el recorrido, y 4 sin foto que la respalde (quedan marcados como aproximados). Se corrigió Monte Carmelo 250, que estaba 424 m fuera de sitio.",
-    "cita": "Cruce automático de las coordenadas del portal contra el GPS de las fotos del 22-ago-2026 (23 paradas del recorrido).",
-    "fuentes": [
-     "Recorrido de campo 22-ago-2026 · 134 fotos con GPS"
     ]
    },
    {
@@ -140,25 +216,6 @@
     ],
     "fuentes": [
      "Recorrido de campo 22-ago-2026 · fotos IMG_7930–7935"
-    ]
-   },
-   {
-    "fecha": "2026-08-22",
-    "proyecto": "Monte Carmelo 250",
-    "dev": "Edifikarte",
-    "proyecto_id": "monte-carmelo-250",
-    "tags": [
-     "estado"
-    ],
-    "canal": "Visita de campo",
-    "autor": "Martin (recorrido de zona)",
-    "texto": "Ubicación CORREGIDA: estaba 424 m fuera de sitio en el mapa. Verificado en campo en la esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Obra activa con malla; cartel comercial: 2 dorm desde 80 m², 3 dorm desde 116 m², flats y dúplex, tel. 981 386 111.",
-    "cita": "Foto del cartel y de la señalización de calle el 22-ago-2026 a las 15:42 (GPS -12.120253, -76.983039).",
-    "imgs": [
-     "assets/campo/monte-carmelo-250.jpg"
-    ],
-    "fuentes": [
-     "Recorrido de campo 22-ago-2026 · foto IMG_7979"
     ]
    },
    {
@@ -345,7 +402,8 @@
     ],
     "cita": "Relevamiento inicial del cuadrante: 23 competidores mapeados y precios verificados uno a uno (jun–jul 2026)."
    }
-  ]
+  ],
+  "ultimo_recorrido": "2026-08-22"
  },
  "quadrant": [
   [
@@ -750,7 +808,8 @@
     "assets/planos/conde-ii/plano-01.jpg",
     "assets/planos/conde-ii/plano-02.jpg",
     "assets/planos/conde-ii/plano-b01.jpg",
-    "assets/planos/conde-ii/plano-b02.jpg"
+    "assets/planos/conde-ii/plano-b02.jpg",
+    "assets/campo/conde-ii-obra.jpg"
    ],
    "brochure": "assets/brochures/conde-ii-brochure-2026.pdf",
    "typologies": [
@@ -901,7 +960,10 @@
      "desde": null,
      "pm2": null
     }
-   ]
+   ],
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: letrero «ÚLTIMOS DÚPLEX» en la reja del edificio ya terminado.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -938,7 +1000,8 @@
     "assets/planos/conde-de-la-vega-460/plano-b05.jpg",
     "assets/planos/conde-de-la-vega-460/plano-b06.png",
     "assets/planos/conde-de-la-vega-460/plano-b07.jpg",
-    "assets/planos/conde-de-la-vega-460/plano-b08.jpg"
+    "assets/planos/conde-de-la-vega-460/plano-b08.jpg",
+    "assets/campo/conde-460-informes.jpg"
    ],
    "brochure": "assets/brochures/conde-de-la-vega-460-f1.pdf",
    "typologies": [
@@ -1740,7 +1803,8 @@
     "assets/planos/estelar-1080/estelar-14.png",
     "assets/planos/estelar-1080/estelar-17.png",
     "assets/planos/estelar-1080/estelar-brochure-p1.jpg",
-    "assets/planos/estelar-1080/estelar-captura.png"
+    "assets/planos/estelar-1080/estelar-captura.png",
+    "assets/campo/estelar-sala-ventas.jpg"
    ],
    "brochure": "assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf",
    "typologies": [
@@ -1816,7 +1880,10 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m.",
+   "caseta_ventas": "si",
+   "caseta_nota": "Sala de ventas en el propio terreno: letrero «SALA DE VENTAS AQUÍ» con flecha (Galeón). Tel. en cartel: 976 357 594 / 988 351 473.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "floresta-living-444",
@@ -1841,7 +1908,8 @@
     "assets/planos/floresta-living-444/plano-01.jpg",
     "assets/planos/floresta-living-444/plano-02.jpg",
     "assets/planos/floresta-living-444/plano-03.jpg",
-    "assets/planos/floresta-living-444/plano-04.jpg"
+    "assets/planos/floresta-living-444/plano-04.jpg",
+    "assets/campo/floresta-living-cartel.jpg"
    ],
    "brochure": "assets/brochures/floresta-living-444-f1.pdf",
    "typologies": [
@@ -1928,7 +1996,10 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: tótem de EE Inmobiliaria en la vereda (999 276 371 / 988 609 572).",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "hana",
@@ -2026,7 +2097,8 @@
    "img": "assets/img-f1/jardines-monte-real/img-01.jpg",
    "planos": [
     "assets/planos/jardines-de-monte-real/plano-107-precio.jpg",
-    "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg"
+    "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg",
+    "assets/campo/jardines-monte-real-obra.jpg"
    ],
    "brochure": "assets/brochures/jardines-monte-real-f1.pdf",
    "typologies": [
@@ -2096,7 +2168,10 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 59 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 59 m.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: carteles «ÚLTIMAS UNIDADES» sobre el cerco de obra.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "la-floresta-boulevard",
@@ -2224,7 +2299,10 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador).",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: cartel de obra grande con el render sobre el cerco; entrada de obra habilitada.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "monte-alegre",
@@ -2374,7 +2452,10 @@
      "desde": null,
      "pm2": null
     }
-   ]
+   ],
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: valla comercial sobre el cerco de obra (981 386 111).",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "monte-carmelo-551",
@@ -2652,7 +2733,7 @@
    "dev": "Edifikarte",
    "addr": "Calle Monte Mayor 177, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata — última unidad",
+   "estado_raw": "Entrega inmediata · ÚLTIMO departamento (2 dorm, 86 m²) — verificado en campo",
    "entrega": "Agosto 2024 (ya entregado)",
    "lat": -12.11442877256639,
    "lng": -76.98753819552181,
@@ -2669,7 +2750,8 @@
     "assets/planos/monte-mayor-177/monte_mayor-18.png",
     "assets/planos/monte-mayor-177/monte_mayor-20.png",
     "assets/planos/monte-mayor-177/monte_mayor-21.png",
-    "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg"
+    "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg",
+    "assets/campo/monte-mayor-177-ultimo.jpg"
    ],
    "brochure": "assets/brochures/Monte_Mayor_177-brochure.pdf",
    "typologies": [
@@ -2696,7 +2778,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Edifikarte, Jenny Miranda. El único flat de 2 dorm (87 m², S/820,000) está SEPARADO, con la firma de minuta en stand-by. En 3 dorm solo quedan dúplex (Conde de la Vega 251). 2 estac + depósito incluidos.",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -2712,7 +2794,7 @@
    "cochera_status": "si",
    "stock": {
     "n": 1,
-    "label": "2 dorm separado (minuta en stand-by)"
+    "label": "Último depa · 2 dorm 86 m²"
    },
    "verif_web": {
     "precio_portal": "conflicto: S/780,000 vs S/1,100,000",
@@ -2735,7 +2817,10 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 67 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 67 m.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: letrero «ÚLTIMO DEPA · 2 DORMS 86 m²» de Edifikarte sobre la vereda (981 386 111).",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "monte-mayor-183",
@@ -2761,7 +2846,8 @@
     "assets/planos/monte-mayor-183/plano-02.jpg",
     "assets/planos/monte-mayor-183/plano-03.jpg",
     "assets/planos/monte-mayor-183/plano-x02-1.jpg",
-    "assets/planos/monte-mayor-183/lista-precios-1.jpg"
+    "assets/planos/monte-mayor-183/lista-precios-1.jpg",
+    "assets/campo/monte-mayor-183-valla.jpg"
    ],
    "brochure": "assets/brochures/monte-mayor-183-f1.pdf",
    "typologies": [
@@ -3212,7 +3298,10 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador).",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: banner de Azzurra sobre el cerco de obra (944 216 477 · azzurra.com.pe).",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "monte-real-265",
@@ -3568,7 +3657,9 @@
    "wa": "981349116",
    "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
    "img": "assets/img-f1/monteflor/img-01.jpg",
-   "planos": [],
+   "planos": [
+    "assets/campo/monteflor-valla.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -3618,7 +3709,7 @@
     2,
     3
    ],
-   "comentario": "Monteflor (Arch Inversiones). SIN lista de precios oficial ni cotización del asesor; no figura en Nexo. Únicos datos: 2 anuncios de InfoCasas (broker Exklusiv) — 154 m² S/1,323,630 y 135 m² S/1,140,270, ambos 3 dorm. Precios referenciales, no confirmados con el desarrollador. Se removió una entrada de 79.6 m² que no tenía fuente verificable.",
+   "comentario": "Verificado en campo (22-ago-2026): valla de «Monte Flor · Chacarilla - Surco» sobre Av. de los Precursores, anunciando 2 y 3 dormitorios desde 193 m², constructora Magnífica, tel. 975 244 600. Pendiente cruzar la ficha comercial completa con el asesor.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -4333,7 +4424,7 @@
    "dev": "Grupo Dicon",
    "addr": "Av. De los Precursores 166-172, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
+   "estado_raw": "En construcción · 20 de 27 unidades disponibles (panel de ventas, 22-ago-2026)",
    "entrega": "2026",
    "lat": -12.11850208401939,
    "lng": -76.98248346969847,
@@ -4345,7 +4436,7 @@
    "m2": "83–247",
    "wa": "957733272",
    "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
-   "img": "assets/img-f1/spazio/img-01.webp",
+   "img": "assets/campo/spazio-panel-ventas.jpg",
    "planos": [
     "assets/planos/spazio/plano-01.webp",
     "assets/planos/spazio/plano-02.webp",
@@ -4361,7 +4452,8 @@
     "assets/planos/spazio/plano-15.jpg",
     "assets/planos/spazio/plano-16.jpg",
     "assets/planos/spazio/plano-17.jpg",
-    "assets/planos/spazio/plano-18.jpg"
+    "assets/planos/spazio/plano-18.jpg",
+    "assets/campo/spazio-panel-ventas.jpg"
    ],
    "brochure": "assets/brochures/spazio-f1.pdf",
    "typologies": [
@@ -4470,7 +4562,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Proyecto de Grupo Dicon en Av. Precursores, en obra con entrega 2026; flats grandes de 3 a 6 dorms desde US$174,468, ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -4494,7 +4586,14 @@
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m."
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m.",
+   "caseta_ventas": "si",
+   "caseta_nota": "Sala de ventas atendida: se fotografió el panel de disponibilidad por unidad dentro del local.",
+   "caseta_fecha": "2026-08-22",
+   "stock": {
+    "n": 20,
+    "label": "20 de 27 disponibles (panel de la sala de ventas)"
+   }
   },
   {
    "id": "terraverde",
@@ -4689,7 +4788,10 @@
    ],
    "amenidades": [],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin punto de venta: solo cartel de licencia de obra, aún en estructura.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "precursores-verde",
@@ -4735,7 +4837,10 @@
     "Certificación EDGE"
    ],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin punto de venta en sitio: cartel de obra y valla de marca sobre el cerco.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "astete-living",
@@ -4772,7 +4877,10 @@
    ],
    "amenidades": [],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador)."
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin punto de venta: solo cerco anunciando «próximo proyecto».",
+   "caseta_fecha": "2026-08-22"
   }
  ]
 }
