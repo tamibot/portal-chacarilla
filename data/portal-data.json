@@ -943,7 +943,8 @@
    "caseta_ventas": "cerrada",
    "caseta_nota": "Caseta de ventas en el terreno, pero estaba CERRADA en la visita.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En construcción"
+   "estado_obra": "En construcción",
+   "politica_precio": "Los precios de lista son del departamento solo. Estacionamiento aparte: US$15,000 el simple y US$25,000 el doble lineal."
   },
   {
    "id": "conde-ii",
@@ -1044,7 +1045,10 @@
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "como_presenta": "AyD lo presenta en PREVENTA: flats de 3 dormitorios de 126 m² y dúplex de 3 o 4 dormitorios de 254 m². Argumento de venta principal: «solo 10 depas», entrega 2027 y personalización.",
+   "politica_precio": "Precio publicado sin detalle de cochera — pendiente de confirmar con el asesor si va incluida o aparte.",
+   "promocion": "Beneficio de personalización: «puedes adaptar ese tercer dormitorio a tus necesidades — oficina, sala de juegos, taller, gimnasio». Personalizan acabados y distribución con acompañamiento de sus arquitectos."
   },
   {
    "id": "conde-de-la-vega-251",
@@ -1066,6 +1070,11 @@
    "web": "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
    "img": "assets/campo/conde-de-la-vega-251.jpg",
    "planos": [
+    "assets/planos/conde-de-la-vega-251/duplex-104.jpg",
+    "assets/planos/conde-de-la-vega-251/duplex-603.jpg",
+    "assets/planos/conde-de-la-vega-251/duplex-605.jpg",
+    "assets/planos/conde-de-la-vega-251/flat-103.jpg",
+    "assets/planos/conde-de-la-vega-251/flat-503.jpg",
     "assets/campo/conde-de-la-vega-251.jpg"
    ],
    "brochure": null,
@@ -1134,7 +1143,8 @@
    "caseta_nota": "Sin caseta: letrero «ÚLTIMOS DÚPLEX» en la reja del edificio ya terminado.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Terminado y habitado · últimos dúplex en venta",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "planos_fuente": "Planos de tipología descargados de la web oficial de Edifikarte"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -1704,7 +1714,9 @@
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "politica_precio": "La lista de Azzurra incluye 1 o 2 estacionamientos según la unidad.",
+   "como_presenta": "Azzurra lo presenta como preventa boutique de 26 departamentos, con lista de precios por unidad."
   },
   {
    "id": "dmont-dicon",
@@ -1963,7 +1975,9 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 37 m del marcador).",
    "cuadrante_verificado": "2026-08-22",
-   "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon"
+   "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon",
+   "como_presenta": "Grupo Dicon lo presenta como el reemplazo de D'Mont (agotado), en preventa.",
+   "politica_precio": "Los precios publicados en su web NO incluyen cochera; la cochera se cotiza aparte (US$25,000)."
   },
   {
    "id": "estelar-1080",
@@ -2071,7 +2085,8 @@
    "caseta_nota": "Caseta de ventas atendida en el terreno (letrero «Sala de ventas aquí»).",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "politica_precio": "El precio incluye cochera (valor US$15,000); el US$/m² del portal la descuenta para comparar."
   },
   {
    "id": "floresta-living-444",
@@ -2597,7 +2612,19 @@
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe",
    "img": "assets/campo/monte-carmelo-250.jpg",
-   "planos": [],
+   "planos": [
+    "assets/planos/monte-carmelo-250/flat-102.jpg",
+    "assets/planos/monte-carmelo-250/flat-103.jpg",
+    "assets/planos/monte-carmelo-250/flat-104.jpg",
+    "assets/planos/monte-carmelo-250/flat-203.jpg",
+    "assets/planos/monte-carmelo-250/flat-204.jpg",
+    "assets/planos/monte-carmelo-250/flat-304.jpg",
+    "assets/planos/monte-carmelo-250/flat-601.jpg",
+    "assets/planos/monte-carmelo-250/flat-604.jpg",
+    "assets/planos/monte-carmelo-250/flat-s01a.jpg",
+    "assets/planos/monte-carmelo-250/flat-s02.jpg",
+    "assets/planos/monte-carmelo-250/flat-s03.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -2663,7 +2690,8 @@
    "caseta_nota": "Sin caseta de ventas: valla comercial sobre el cerco.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · estructura con malla, cartel comercial activo",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "planos_fuente": "Planos de tipología descargados de la web oficial de Edifikarte"
   },
   {
    "id": "monte-carmelo-551",
@@ -3516,7 +3544,9 @@
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción · banner de Azzurra sobre el cerco",
    "cuadrante_verificado": "2026-08-22",
-   "ref_urbana": "Al lado de un colegio nido y cerca del colegio Santa María Marianistas"
+   "ref_urbana": "Al lado de un colegio nido y cerca del colegio Santa María Marianistas",
+   "politica_precio": "La lista de precios de Azzurra incluye cochera y depósito en el precio publicado.",
+   "como_presenta": "Azzurra transmite urgencia por escasez: «Proyecto Monte Mayor voló, solo me quedan 3 depas»."
   },
   {
    "id": "monte-real-265",
@@ -3739,7 +3769,8 @@
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 89 m.",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "politica_precio": "El precio de lista incluye 1 cochera (US$20,000 de valor). El US$/m² del portal la descuenta."
   },
   {
    "id": "monte-umbroso",
@@ -3956,7 +3987,8 @@
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola."
   },
   {
    "id": "parque-monte-carmelo",
@@ -4337,7 +4369,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cerco de obra rotulado.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · ÚLTIMO departamento (dúplex 603)"
+   "estado_obra": "En obra · ÚLTIMO departamento (dúplex 603)",
+   "como_presenta": "Grupo Chacarilla Sur comunica cierre de proyecto: «nos está quedando un dúplex penthouse». Entrega noviembre 2026."
   },
   {
    "id": "precursores-ii",
@@ -4831,7 +4864,8 @@
    "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)",
    "cuadrante_verificado": "2026-08-22",
    "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00",
-   "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon + panel de la sala de ventas"
+   "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon + panel de la sala de ventas",
+   "como_presenta": "Grupo Dicon atiende en sala de ventas con panel de disponibilidad a la vista (L–V 9–18 h, S 9–17 h)."
   },
   {
    "id": "terraverde",
@@ -4985,11 +5019,15 @@
    "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
    "estado_obra": "En planos · pre-lanzamiento comercial",
    "descubierto": "2026-08-19",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "como_presenta": "AyD lo presenta como pre-lanzamiento exclusivo: «proyecto boutique de solo 12 departamentos (6 pisos), la disponibilidad es sumamente reducida». Destacan acabados premium, ascensor directo, gas Cálidda, 2 sótanos de cocheras y el respaldo financiero del BCP. Entrega diciembre 2027.",
+   "politica_precio": "El precio de lista es SOLO el departamento. Los estacionamientos se cotizan aparte (S/54,000 cada uno).",
+   "promocion": "Descuento de preventa aplicado en la propia hoja de cotización: en el flat típico 301 el paquete baja de S/1,527,000 a S/1,411,900 (−S/115,100). Además dan «prioridad en el Pre-Lanzamiento antes del lanzamiento comercial» a quienes consultaron antes.",
+   "tarifario": "assets/planos/monte-umbroso-247/precios-flat-301.jpg"
   },
   {
    "id": "narciso-ayd",
-   "name": "Narciso",
+   "name": "Obra AyD (Conde de la Vega)",
    "dev": "Inmobiliaria AyD (AYD Narciso S.A.C.)",
    "addr": "Calle Conde de la Vega del Ren ~116, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
@@ -5022,7 +5060,7 @@
    "mostrar": true,
    "geo_aprox": false,
    "total_pisos": 5,
-   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: propietario AYD NARCISO S.A.C. (Inmobiliaria AyD / Grupo Aspira), licencia 0231-2026-SGLH-GDU-MSS. 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, uso residencial, 13 meses de ejecución. Sin lista de precios aún — es del mismo asesor que Conde II y Monte Umbroso (Washington Benavides).",
+   "comentario": "Obra con cartel de licencia a nombre de AYD NARCISO S.A.C. (Inmobiliaria AyD / Grupo Aspira): 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, 13 meses de ejecución, licencia 0231-2026-SGLH-GDU-MSS. OJO: en el chat, el asesor de AyD ubica su proyecto comercial «Narciso» en Las Gardenias (fuera de este cuadrante), con flats de 3 dorm desde 97 m² y dúplex de 4 dorm desde 204 m². Falta confirmar con el asesor qué nombre comercial lleva esta obra en Chacarilla.",
    "fuentes": [
     "Cartel de obra fotografiado en campo 22-ago-2026",
     "https://inmobiliariaayd.com"
@@ -5035,7 +5073,8 @@
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra gruesa: encofrado y armadura a la vista, primeros niveles",
    "descubierto_campo": "2026-08-22",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "como_presenta": "Sin material comercial en obra todavía; solo el cartel de licencia."
   },
   {
    "id": "precursores-verde",
