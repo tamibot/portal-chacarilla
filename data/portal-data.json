@@ -7,7 +7,7 @@
   "con_precio": 100,
   "competidores_activos": 23,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 16,
+  "comparables_confirmados": 18,
   "en_ultimas_unidades": 8,
   "sin_precio_publico": 4,
   "cochera_incluida": 12,
@@ -30,6 +30,135 @@
   ],
   "proximo_corte": "2026-09-19",
   "bitacora": [
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Monte Alegre 109",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-alegre",
+    "tags": [
+     "nuevo",
+     "estado"
+    ],
+    "canal": "Web oficial + brochure",
+    "autor": "Benchmark",
+    "texto": "Ficha oficial encontrada: 7 pisos, 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas de tipología (flats de 118 a 152 m², dúplex de 143 a 307 m²). Sigue sin publicar precios.",
+    "cita": "«Monte Alegre 109 · metraje desde 115m² - 276m² · 3 y 4 dorms · 7 pisos» — edifikarte.com.pe, 24-ago-2026",
+    "imgs": [
+     "assets/planos/monte-alegre-109-oficial/TIPO 001 - 3 dorm - 196.74 m2.jpg"
+    ],
+    "fuentes": [
+     "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
+     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Montemar 269",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-mar-167",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Brochure oficial",
+    "autor": "Benchmark",
+    "texto": "Brochure de julio-2026 descargado: 18 láminas de tipología. Flats de 81.37 a 153.25 m² (2 y 3 dorms) y dúplex de 141 a 183 m². Era el único proyecto del cuadrante sin ningún plano.",
+    "cita": "«TIPO 202 · 2 dorms · Área total: 81.37 m2» — brochure Montemar 269, edición julio-2026",
+    "imgs": [
+     "assets/planos/montemar-269-oficial/TIPO 202 2 - 81.37 m2.jpg"
+    ],
+    "fuentes": [
+     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "HANA",
+    "dev": "Odima Inmobiliaria",
+    "proyecto_id": "hana",
+    "tags": [
+     "venta"
+    ],
+    "canal": "Brochure oficial",
+    "autor": "Benchmark",
+    "texto": "El brochure oficial trae las plantas de los tres sótanos y en las tres TODOS los estacionamientos y depósitos figuran rotulados «VENDIDO». Son 17 departamentos de 3 y 4 dormitorios, de 85 a 290 m².",
+    "cita": "Plantas «Sótano 01/02/03» del brochure de Odima (feb-2026): cada cajón lleva el sello VENDIDO.",
+    "imgs": [
+     "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg"
+    ],
+    "fuentes": [
+     "https://odima.pe/wp-content/uploads/2026/02/HANA-BC_compressed.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Jardines de Monte Real",
+    "dev": "Central Inmobiliaria",
+    "proyecto_id": "jardines-monte-real",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Brochure oficial",
+    "autor": "Benchmark",
+    "texto": "Brochure del 22-jun-2026: 6 pisos, 51 departamentos, estacionamiento de autos y bicicletas y parque central. 14 tipologías descargadas — flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo.",
+    "cita": "«FLAT 209 · ÁREA TOTAL 124 m2 · Ascensor directo · Vista al parque» — brochure Jardines de Monte Real, 22-jun-2026",
+    "imgs": [
+     "assets/planos/jardines-monte-real-oficial/FLAT 201 - 135.13 m2.jpg"
+    ],
+    "fuentes": [
+     "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Conde de la Vega 460",
+    "dev": "Azzurra Constructores",
+    "proyecto_id": "conde-de-la-vega-460",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Brochure oficial",
+    "autor": "Benchmark",
+    "texto": "Brochure del 01-jun-2026: 26 unidades (19 flats + 7 dúplex) de 65 a 356 m², 1 a 3 dormitorios, 40 estacionamientos y certificación EDGE.",
+    "cita": "«26 unidades · 19 flats / 7 dúplex · Desde 65m² hasta 356m² · 40 estacionamientos» — brochure Conde de la Vega 460, 01-jun-2026",
+    "fuentes": [
+     "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-CDLV-010626-2.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Precursores Verde",
+    "dev": "Guerin Proyectos S.A.C.",
+    "proyecto_id": "precursores-verde",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Brochure oficial",
+    "autor": "Benchmark",
+    "texto": "Brochure oficial de Guerin descargado: 11 tipologías. Flats de 64.00 a 125.52 m² y dúplex de 90.80 a 116.79 m² techados, con áreas libres de hasta 65 m². Falta la lista de precios.",
+    "cita": "«FLAT 203 303 403 503 603 · Área Total 64.00 m2 · Sala · 1 dormitorio» — brochure Precursores Verde, abril-2026",
+    "imgs": [
+     "assets/planos/precursores-verde-oficial/FLAT 102 - 66.40 m2.jpg"
+    ],
+    "fuentes": [
+     "https://www.guerin.pe/wp-content/uploads/2026/04/Brochure-Precursores-verde_Guerin.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Conde II",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "conde-ii",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Búsqueda en internet",
+    "autor": "Benchmark",
+    "texto": "Barrido de las webs de los 38 proyectos del cuadrante: 14 publican brochure en PDF y ya están guardados en la plataforma. Dicon (Aura Sul, D'Mont, D'Mont 2, Spazio), AyD (Conde II, Monte Umbroso 247), Galeon, Boulevard, Morgenstern y Grupo Chacarilla Sur no publican PDF — de esos seguimos con los planos en imagen que ya teníamos.",
+    "cita": "Rastreo del 24-ago-2026 sobre las 20 webs de proyecto disponibles.",
+    "fuentes": [
+     "Barrido automatizado de las webs oficiales, 24-ago-2026"
+    ]
+   },
    {
     "fecha": "2026-08-24",
     "proyecto": "TEN Apartments",
@@ -1162,7 +1291,7 @@
    "lng": -76.98252,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": null,
+   "precio_desde_usd": 194706,
    "precio_hasta_usd": null,
    "dorms": "2–3",
    "m2": "95–161",
@@ -1206,11 +1335,13 @@
     2,
     3
    ],
-   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero en fachada «ÚLTIMOS DÚPLEX» — 2 dorm de 95–122 m² y 3 dorm de 161 m². Contacto en el letrero: 981 386 111. Falta la lista de precios por unidad.",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero en fachada «ÚLTIMOS DÚPLEX» — 2 dorm de 95–122 m² y 3 dorm de 161 m². Contacto en el letrero: 981 386 111. Falta la lista de precios por unidad. Ficha comercial (Nexo / BCP, consultada 24-ago-2026): edificio de 25 departamentos de 2 y 3 dormitorios desde 70 m², con estacionamientos paralelos y depósitos; precios de lista desde S/ 662,000. Financia BCP.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-251/",
     "Chat asesor Jenny Miranda (Evolution API, jul-2026)",
-    "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf"
+    "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf",
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2941-conde-de-la-vega-251-santiago-de-surco-lima-lima-grupo-edifikarte",
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-conde-de-la-vega-251-397"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -2694,24 +2825,165 @@
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "3–4",
-   "m2": "115–276",
+   "m2": "115 – 276",
    "wa": "981386111",
-   "web": "https://www.edifikarte.com.pe/",
+   "web": "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
    "img": "assets/img/monte-alegre.jpg",
    "planos": [
+    "assets/planos/monte-alegre-109-oficial/DÚPLEX 002 - 3 dorm - 158.89 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/DÚPLEX 003 - 3 dorm - 143.70 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/DÚPLEX 601 - 4 dorm - 280.63 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/DÚPLEX 602 - 4 dorm - 306.77 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/DÚPLEX 603 - 4 dorm - 229.29 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 001 - 3 dorm - 196.74 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion A - 3 dorm - 196.74 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion B - 3 dorm - 196.74 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 101 - 3 dorm - 129.70 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 102 - 3 dorm - 143.97 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 201 - 3 dorm - 136.22 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 202 - 3 dorm - 152.17 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 301 - 3 dorm - 134.25 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 302 - 3 dorm - 149.73 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 401 - 3 dorm - 136.22 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 402 - 3 dorm - 152.17 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 501 - 3 dorm - 134.25 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO 502 - 3 dorm - 149.73 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO X03 - 3 dorm - 118.06 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO X03A - 3 dorm - 118.06 m2.jpg",
+    "assets/planos/monte-alegre-109-oficial/TIPO X03B - 3 dorm - 118.06 m2.jpg",
     "assets/campo/monte-alegre-valla.jpg"
    ],
-   "brochure": null,
+   "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf",
    "typologies": [
     {
-     "unidad": "Flat/Dúplex 3-4d",
+     "unidad": "TIPO 001",
      "dorm": 3,
-     "m2": 115,
+     "m2": 196.74,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "primer_piso",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "DÚPLEX 002",
+     "dorm": 3,
+     "m2": 158.89,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "—",
+     "flat": false
+    },
+    {
+     "unidad": "DÚPLEX 003",
+     "dorm": 3,
+     "m2": 143.7,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "—",
+     "flat": false
+    },
+    {
+     "unidad": "TIPO 101",
+     "dorm": 3,
+     "m2": 129.7,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "primer_piso",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "TIPO 102",
+     "dorm": 3,
+     "m2": 143.97,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "primer_piso",
+     "piso": "1",
+     "flat": false
+    },
+    {
+     "unidad": "TIPO 201 / 401",
+     "dorm": 3,
+     "m2": 136.22,
      "precio_usd": null,
      "precio_m2": null,
      "tipo": "flat",
-     "piso": null,
+     "piso": "2 al 4",
      "flat": true
+    },
+    {
+     "unidad": "TIPO 202 / 402",
+     "dorm": 3,
+     "m2": 152.17,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true
+    },
+    {
+     "unidad": "TIPO 301 / 501",
+     "dorm": 3,
+     "m2": 134.25,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "3 al 5",
+     "flat": true
+    },
+    {
+     "unidad": "TIPO 302 / 502",
+     "dorm": 3,
+     "m2": 149.73,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "3 al 5",
+     "flat": true
+    },
+    {
+     "unidad": "TIPO X03",
+     "dorm": 3,
+     "m2": 118.06,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 5",
+     "flat": true
+    },
+    {
+     "unidad": "DÚPLEX 601",
+     "dorm": 4,
+     "m2": 280.63,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "6",
+     "flat": false
+    },
+    {
+     "unidad": "DÚPLEX 602",
+     "dorm": 4,
+     "m2": 306.77,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "6",
+     "flat": false
+    },
+    {
+     "unidad": "DÚPLEX 603",
+     "dorm": 4,
+     "m2": 229.29,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "6",
+     "flat": false
     }
    ],
    "flats_summary": [],
@@ -2719,9 +2991,10 @@
     3,
     4
    ],
-   "comentario": "Edifikarte, Calle Monte Alegre 109. Valla comercial fotografiada en campo (22-ago-2026): «ESPACIOS EXCLUSIVOS» — 3 dormitorios desde 115 m², 133 m² y 150 m²; 4 dormitorios desde 190 m². Próximo proyecto, aún sin lista de precios.",
+   "comentario": "Ficha oficial de Edifikarte (consultada 24-ago-2026): 7 pisos, departamentos de 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas: flats de 118 a 152 m², primeros pisos de 129 a 197 m² y dúplex de 143 a 307 m². Todavía sin lista de precios pública — pedido abierto por WhatsApp.",
    "fuentes": [
-    "https://www.edifikarte.com.pe/proyectos/monte-alegre/"
+    "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
+    "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -2754,7 +3027,19 @@
    "caseta_nota": "Sin caseta de ventas.",
    "caseta_fecha": "2026-08-22",
    "pedido": "Hola! Retomo por Monte Alegre 109. Me pueden enviar los planos de las tipologías y la lista de precios vigente? Y si el precio incluye cochera.",
-   "pedido_que": "planos + tarifario"
+   "pedido_que": "planos + tarifario",
+   "pisos": 7,
+   "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (21 láminas de tipología).",
+   "wa_label": "Edifikarte ventas",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Edifikarte · Monte Alegre 109 (jul-2026)",
+     "archivo": "assets/docs/monte-alegre-brochure.pdf",
+     "url": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf",
+     "fecha": "2026-07",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "monte-carmelo-250",
@@ -2768,12 +3053,12 @@
    "lng": -76.983039,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": null,
+   "precio_desde_usd": 288529,
    "precio_hasta_usd": null,
    "dorms": "2–3",
    "m2": "80–116",
    "wa": "981386111",
-   "web": "https://www.edifikarte.com.pe",
+   "web": "https://www.edifikarte.com.pe/proyectos/monte-carmelo-250/",
    "img": "assets/campo/monte-carmelo-250.jpg",
    "planos": [
     "assets/planos/monte-carmelo-250/flat-102.jpg",
@@ -2827,10 +3112,11 @@
     3,
     4
    ],
-   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor.",
+   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, de 109.01 a 242.99 m², precios de lista desde S/ 981,000.",
    "fuentes": [
     "https://www.edifikarte.com.pe",
-    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07"
+    "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07",
+    "https://www.edifikarte.com.pe/proyectos/monte-carmelo-250/"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -4677,12 +4963,13 @@
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial.",
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
     "https://precursoreschacarillasur.com.pe/",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur",
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/precursores-525-3562"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3562-precursores-525-santiago-de-surco-lima-lima-grupo-chacarilla-sur"
