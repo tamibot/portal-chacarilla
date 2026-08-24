@@ -961,11 +961,13 @@ window.PORTAL_DATA = {
    "precio_desde_usd": 308700,
    "precio_hasta_usd": null,
    "dorms": "3–4",
-   "m2": "100–254",
+   "m2": "126–254",
    "wa": "980765183",
    "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
    "img": "assets/img/conde-ii.jpg",
    "planos": [
+    "assets/planos/conde-ii-oficial/tipo-1-pisos-2-4.jpg",
+    "assets/planos/conde-ii-oficial/tipo-2-pisos-2-4.jpg",
     "assets/planos/conde-ii/pg-13.jpg",
     "assets/planos/conde-ii/pg-14.jpg",
     "assets/planos/conde-ii/pg-15.jpg",
@@ -1023,7 +1025,12 @@ window.PORTAL_DATA = {
    ],
    "anuncios": null,
    "mostrar": true,
-   "amenidades": [],
+   "amenidades": [
+    "Ascensor directo",
+    "Videovigilancia",
+    "Instalación de gas",
+    "Cerca a parques"
+   ],
    "total_pisos": 5,
    "portales": {},
    "cochera_status": "nd",
@@ -1046,9 +1053,10 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
    "caseta_fecha": "2026-08-22",
-   "como_presenta": "AyD lo presenta en PREVENTA: flats de 3 dormitorios de 126 m² y dúplex de 3 o 4 dormitorios de 254 m². Argumento de venta principal: «solo 10 depas», entrega 2027 y personalización.",
+   "como_presenta": "AyD lo presenta como «Tu nueva historia comienza aquí»: 10 departamentos en 5 pisos, 3 y 4 dormitorios, 126 a 254 m². En la conversación suman el beneficio de personalización del tercer dormitorio.",
    "politica_precio": "Precio publicado sin detalle de cochera — pendiente de confirmar con el asesor si va incluida o aparte.",
-   "promocion": "Beneficio de personalización: «puedes adaptar ese tercer dormitorio a tus necesidades — oficina, sala de juegos, taller, gimnasio». Personalizan acabados y distribución con acompañamiento de sus arquitectos."
+   "promocion": "Beneficio de personalización: «puedes adaptar ese tercer dormitorio a tus necesidades — oficina, sala de juegos, taller, gimnasio». Personalizan acabados y distribución con acompañamiento de sus arquitectos.",
+   "planos_fuente": "Planos de tipología de la web oficial de Inmobiliaria AyD + brochure"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -4945,13 +4953,21 @@ window.PORTAL_DATA = {
    "precio_desde_usd": 259426,
    "precio_hasta_usd": null,
    "dorms": "3–4",
-   "m2": "94–322",
+   "m2": "153–321",
    "wa": "980765183",
    "wa_label": "Washington B. · AyD",
-   "web": "https://inmobiliariaayd.com",
+   "web": "https://inmobiliariaayd.com/proyecto/monte-umbroso/",
    "img": "assets/img/monte-umbroso-247.jpg",
    "brochure": null,
    "planos": [
+    "assets/planos/monte-umbroso-247-oficial/dpto-101.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-102.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-201-401.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-202-402.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-301-501.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-302-502.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-601.jpg",
+    "assets/planos/monte-umbroso-247-oficial/dpto-602.jpg",
     "assets/planos/monte-umbroso-247/plano-tipico-tipo1.jpg",
     "assets/planos/monte-umbroso-247/plano-flat101-2dorm.jpg",
     "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
@@ -5008,9 +5024,11 @@ window.PORTAL_DATA = {
    ],
    "amenidades": [
     "Ascensor directo",
-    "Gas natural Cálidda",
-    "2 sótanos de cocheras",
-    "Respaldo financiero BCP"
+    "Balcones y terrazas",
+    "Instalación de gas",
+    "Videovigilancia",
+    "Pisos de madera bambú",
+    "Frente a parque"
    ],
    "total_pisos": 6,
    "precio_hist": [
@@ -5024,10 +5042,11 @@ window.PORTAL_DATA = {
    "estado_obra": "En planos · pre-lanzamiento comercial",
    "descubierto": "2026-08-19",
    "cuadrante_verificado": "2026-08-22",
-   "como_presenta": "AyD lo presenta como pre-lanzamiento exclusivo: «proyecto boutique de solo 12 departamentos (6 pisos), la disponibilidad es sumamente reducida». Destacan acabados premium, ascensor directo, gas Cálidda, 2 sótanos de cocheras y el respaldo financiero del BCP. Entrega diciembre 2027.",
+   "como_presenta": "AyD lo presenta como «Donde la calma toma forma»: 12 departamentos en 6 pisos, de 3 y 4 dormitorios, 153 a 321 m², frente a parque. Destacan ascensor directo, balcones y terrazas, gas natural, videovigilancia y pisos de bambú. En la conversación refuerzan la escasez («solo 12 departamentos, disponibilidad sumamente reducida») y el respaldo del BCP.",
    "politica_precio": "El precio de lista es SOLO el departamento. Los estacionamientos se cotizan aparte (S/54,000 cada uno).",
    "promocion": "Descuento de preventa aplicado en la propia hoja de cotización: en el flat típico 301 el paquete baja de S/1,527,000 a S/1,411,900 (−S/115,100). Además dan «prioridad en el Pre-Lanzamiento antes del lanzamiento comercial» a quienes consultaron antes.",
-   "tarifario": "assets/planos/monte-umbroso-247/precios-flat-301.jpg"
+   "tarifario": "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
+   "planos_fuente": "Planos de tipología de la web oficial de Inmobiliaria AyD + fichas del asesor"
   },
   {
    "id": "narciso-ayd",
@@ -5064,10 +5083,11 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "geo_aprox": false,
    "total_pisos": 5,
-   "comentario": "Obra con cartel de licencia a nombre de AYD NARCISO S.A.C. (Inmobiliaria AyD / Grupo Aspira): 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, 13 meses de ejecución, licencia 0231-2026-SGLH-GDU-MSS. OJO: en el chat, el asesor de AyD ubica su proyecto comercial «Narciso» en Las Gardenias (fuera de este cuadrante), con flats de 3 dorm desde 97 m² y dúplex de 4 dorm desde 204 m². Falta confirmar con el asesor qué nombre comercial lleva esta obra en Chacarilla.",
+   "comentario": "Obra en Chacarilla con cartel de licencia a nombre de AYD NARCISO S.A.C.: 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, licencia 0231-2026-SGLH-GDU-MSS. VERIFICADO: el proyecto comercial «Narciso» de AyD está en Calle Brea y Pariñas 102 (Las Gardenias), fuera de este cuadrante — son 9 departamentos de 97 a 211 m². Es decir, esta obra de Chacarilla todavía no tiene nombre comercial publicado. Pendiente confirmarlo con el asesor.",
    "fuentes": [
     "Cartel de obra fotografiado en campo 22-ago-2026",
-    "https://inmobiliariaayd.com"
+    "https://inmobiliariaayd.com",
+    "https://inmobiliariaayd.com/proyecto/narciso/"
    ],
    "amenidades": [],
    "precio_hist": [],
