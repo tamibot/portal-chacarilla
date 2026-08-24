@@ -1,17 +1,17 @@
 window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
-  "fecha": "2026-08-16",
-  "total": 28,
+  "fecha": "2026-08-24",
+  "total": 41,
   "en_cuadrante": 23,
   "con_precio": 100,
-  "competidores_activos": 23,
+  "competidores_activos": 35,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 18,
-  "en_ultimas_unidades": 8,
-  "sin_precio_publico": 4,
+  "en_ultimas_unidades": 11,
+  "sin_precio_publico": 10,
   "cochera_incluida": 12,
-  "cochera_aparte": 4,
+  "cochera_aparte": 5,
   "verif_web_fecha": "2026-08-24",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
   "cortes": [
@@ -24,11 +24,17 @@ window.PORTAL_DATA = {
    {
     "fecha": "2026-08-16",
     "titulo": "Corte 2 · Pre-lanzamiento",
-    "estado": "actual",
+    "estado": "cerrado",
     "resumen": "D'Mont vendido → D'Mont 2 en preventa (8/23). Monte Mayor 183 3/20, Conde de la Vega 460 12/26, Precursores II 3/19, Monte Sierpe vendió el 408, Aura Sul vendió el 203. Monte Alegre 109 nuevo en planos. Todos los competidores con precio quedaron comparables. GEU pasó a precios de preventa ($2,562/m² típico)."
+   },
+   {
+    "fecha": "2026-08-24",
+    "titulo": "Corte 3 · Agosto (cierre de mes)",
+    "estado": "actual",
+    "resumen": "Recorrido de campo del 22-ago: 27 carteles de obra leídos, dos proyectos reasignados y contactos verificados con fuente. Se sumaron Floresta 343, Le Parc y Conde de la Vega 128 al mapa. Santorini y La Floresta Boulevard entraron al comparativo tras confirmar su política de cochera. Conde II movió su entrega de 2026 a 2027. Jardines de Monte Real, Monte Sierpe, Conde de la Vega 251 y Precursores Verde anuncian últimas unidades."
    }
   ],
-  "proximo_corte": "2026-09-19",
+  "proximo_corte": "2026-09-24",
   "bitacora": [
    {
     "fecha": "2026-08-24",
@@ -1950,6 +1956,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 173235,
      "pm2": 2548
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 173235,
+     "pm2": 2548
     }
    ],
    "geo_aprox": false,
@@ -2138,6 +2149,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 229552,
+     "pm2": 2286
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 229552,
      "pm2": 2286
     }
@@ -2331,6 +2347,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": null,
      "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 308700,
+     "pm2": 2450
     }
    ],
    "wa_label": "Inmobiliaria AyD",
@@ -2486,6 +2507,11 @@ window.PORTAL_DATA = {
     {
      "corte": "2026-08-16",
      "desde": null,
+     "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 194706,
      "pm2": null
     }
    ],
@@ -3090,6 +3116,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 253000,
      "pm2": 2568
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 253000,
+     "pm2": 2568
     }
    ],
    "geo_aprox": false,
@@ -3411,6 +3442,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 181190,
      "pm2": 2144
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 181190,
+     "pm2": 2144
     }
    ],
    "geo_aprox": false,
@@ -3540,6 +3576,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 202941,
+     "pm2": 2231
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 202941,
      "pm2": 2231
     }
@@ -3693,6 +3734,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 196471,
      "pm2": 2311
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 196471,
+     "pm2": 2311
     }
    ],
    "geo_aprox": false,
@@ -3808,6 +3854,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 250588,
+     "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 250588,
      "pm2": null
     }
@@ -3970,6 +4021,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 246028,
+     "pm2": 2612
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 246028,
      "pm2": 2612
     }
@@ -4205,6 +4261,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 154000,
      "pm2": 2504
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 154000,
+     "pm2": 2340
     }
    ],
    "geo_aprox": false,
@@ -4450,6 +4511,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": null,
      "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
     }
    ],
    "estado_obra": "Próximo proyecto: aún sin obra",
@@ -4587,6 +4653,11 @@ window.PORTAL_DATA = {
     {
      "corte": "2026-08-16",
      "desde": null,
+     "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 288529,
      "pm2": null
     }
    ],
@@ -4801,6 +4872,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 264147,
+     "pm2": 2308
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 264147,
      "pm2": 2308
     }
@@ -5025,6 +5101,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 288235,
      "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 288235,
+     "pm2": null
     }
    ],
    "cuadrante_verificado": "2026-08-22",
@@ -5151,6 +5232,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 241176,
+     "pm2": 2429
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 241176,
      "pm2": 2429
     }
@@ -5674,6 +5760,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 202000,
      "pm2": 2501
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 202000,
+     "pm2": 2501
     }
    ],
    "geo_aprox": false,
@@ -5993,6 +6084,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 228824,
      "pm2": 2313
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 228824,
+     "pm2": 2313
     }
    ],
    "geo_aprox": false,
@@ -6243,6 +6339,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 188000,
+     "pm2": 2484
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 188000,
      "pm2": 2484
     }
@@ -6532,6 +6633,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 189412,
      "pm2": 2396
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 189412,
+     "pm2": 2404
     }
    ],
    "geo_aprox": false,
@@ -6685,6 +6791,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 203700,
      "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 203700,
+     "pm2": null
     }
    ],
    "geo_aprox": true,
@@ -6831,6 +6942,11 @@ window.PORTAL_DATA = {
    "precio_hist": [
     {
      "corte": "2026-08-16",
+     "desde": 385000,
+     "pm2": 2382
+    },
+    {
+     "corte": "2026-08-24",
      "desde": 385000,
      "pm2": 2382
     }
@@ -7098,6 +7214,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 286450,
      "pm2": 2180
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 268450,
+     "pm2": 2156
     }
    ],
    "geo_aprox": false,
@@ -7302,6 +7423,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 192428,
      "pm2": null
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 192428,
+     "pm2": null
     }
    ],
    "geo_aprox": false,
@@ -7502,6 +7628,11 @@ window.PORTAL_DATA = {
      "corte": "2026-08-16",
      "desde": 259426,
      "pm2": 2557
+    },
+    {
+     "corte": "2026-08-24",
+     "desde": 259426,
+     "pm2": 2557
     }
    ],
    "lista_precios": "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
@@ -7678,7 +7809,13 @@ window.PORTAL_DATA = {
     "Zona de parrilla",
     "Jardín lounge"
    ],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador).",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: cartel de obra y valla de marca.",
@@ -7749,7 +7886,13 @@ window.PORTAL_DATA = {
     "Búsqueda web 24-ago-2026 (Nexo, Urbania, Adondevivir): sin ficha publicada de Astete Living"
    ],
    "amenidades": [],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador).",
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cerco anunciando «próximo proyecto».",
@@ -7810,7 +7953,13 @@ window.PORTAL_DATA = {
     "https://www.centralinmobiliaria.pe/proyectos/flexi-ii/"
    ],
    "amenidades": [],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "pedido": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de FLEXI III con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
@@ -7871,7 +8020,13 @@ window.PORTAL_DATA = {
     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
    ],
    "amenidades": [],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Living Monte Real con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
@@ -7914,7 +8069,13 @@ window.PORTAL_DATA = {
     "Rooftop con parrilla",
     "Zona de juegos para niños"
    ],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia.",
    "fuentes": [
@@ -7977,7 +8138,13 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "geo_aprox": true,
    "amenidades": [],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada por la dirección de las anotaciones de campo del 2026-08-22. Falta fotografiarlo para fijarla.",
    "fuentes": [
@@ -8027,7 +8194,13 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "geo_aprox": true,
    "amenidades": [],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada sobre el eje de Av. de la Floresta (junto al parque del mismo nombre). Falta la dirección exacta y fotografiarlo para fijar el punto.",
    "fuentes": [
@@ -8157,7 +8330,13 @@ window.PORTAL_DATA = {
     "Zona de lavandería",
     "Zona de parrillas"
    ],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": 147353,
+     "pm2": null
+    }
+   ],
    "pisos": 6,
    "como_presenta": "Se presenta bajo el concepto «Live here, live now», con más de 7 áreas comunes y depa piloto visitable. Vende 1 y 2 dormitorios (varios con estudio) de 64 a 122 m².",
    "politica_precio": "Por confirmar si el precio de lista incluye estacionamiento (el brochure de agosto-2026 no lo indica).",
@@ -8207,7 +8386,13 @@ window.PORTAL_DATA = {
     "Gas natural",
     "Balcón o terraza en todos los departamentos"
    ],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "cochera_status": "nd",
    "id": "floresta-343",
    "name": "Floresta 343",
@@ -8360,7 +8545,13 @@ window.PORTAL_DATA = {
     "Zona de parrillas y juegos",
     "Estacionamientos para visitas"
    ],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": null,
+     "pm2": null
+    }
+   ],
    "cochera_status": "nd",
    "id": "le-parc",
    "name": "Le Parc",
@@ -8482,7 +8673,13 @@ window.PORTAL_DATA = {
    "geo_nota": "Ubicación interpolada sobre Jr. Conde de la Vega del Ren, entre el 119 (Conde II) y el 149 (HANA), ambos verificados en campo. Pendiente de foto.",
    "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera.",
    "amenidades": [],
-   "precio_hist": [],
+   "precio_hist": [
+    {
+     "corte": "2026-08-24",
+     "desde": 261600,
+     "pm2": null
+    }
+   ],
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-128/",
     "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2106-conde-de-la-vega-128-santiago-de-surco-lima-lima-grupo-edifikarte",
@@ -8506,4 +8703,4 @@ window.PORTAL_DATA = {
    }
   }
  ]
-};
+}
