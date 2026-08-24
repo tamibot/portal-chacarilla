@@ -32,6 +32,135 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-24",
+    "proyecto": "Conde II",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "conde-ii",
+    "tags": [
+     "venta",
+     "estado",
+     "precio"
+    ],
+    "canal": "WhatsApp (brochure enviado por AyD)",
+    "autor": "Benchmark",
+    "texto": "Brochure edición 2026 que nos pasó AyD: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior decía construcción 2025 y entrega 2026, o sea corrieron un año. El cuadro de tipologías marca VENDIDO en el Flat 101 (182 m²), el Flat 102 (100 m²) y el Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² y el Dúplex 501 de 254 m². Además, la placa de obra declara 5 pisos + azotea, 2 sótanos, 19 estacionamientos y 13 meses de plazo (licencia 0231-2026-SGLM-GDU-MSS).",
+    "cita": "«Solo 10 depas · Construcción 2026 · Entrega 2027» y «Vendido · Flat 101 - 182 m2 / Flat 102 - 100 m2 / Dúplex 502 - 252 m2» — brochure Conde II, edición 2026",
+    "imgs": [
+     "assets/planos/conde-ii-ayd-2026/Cuadro de tipologias y estado de venta (ago-2026).jpg"
+    ],
+    "fuentes": [
+     "Brochure AyD Conde II edición 2026 recibido por WhatsApp",
+     "https://inmobiliariaayd.com/proyecto/conde-ii/"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Narciso",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "narciso-ayd",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Web oficial + brochure",
+    "autor": "Benchmark",
+    "texto": "Aclarado de dónde salía la confusión: la obra de Chacarilla que registrábamos como «Obra AyD» es en realidad CONDE II — la placa declara 10 departamentos y el cerco anuncia 3 dorms desde 126 m², la tipología exacta de Conde II; «AYD Narciso S.A.C.» es solo la SPV que construye. El proyecto Narciso está en Calle Narciso de la Colina 142, Urb. Las Gardenias, fuera del cuadrante: 5 pisos, 9 departamentos de 97 a 211 m². Se retiró del mapa y quedó en el archivo.",
+    "cita": "«Calle Narciso de la Colina 142, Urb. Las Gardenias - Surco» — portada del brochure oficial de Narciso (AyD)",
+    "fuentes": [
+     "https://inmobiliariaayd.com/proyecto/narciso/",
+     "https://inmobiliariaayd.com/proyectos/"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Conde de la Vega 460",
+    "dev": "Azzurra Constructores",
+    "proyecto_id": "conde-de-la-vega-460",
+    "tags": [
+     "venta",
+     "precio"
+    ],
+    "canal": "Lista de precios oficial",
+    "autor": "Benchmark",
+    "texto": "Se enlazó a la ficha la lista de precios oficial del 18-may-2026, unidad por unidad y con estado de venta: 14 de 26 unidades ya vendidas, quedan 12. Precios de US$253,000 (flat 503, 85.10 m²) a US$393,000 (penthouse 603). Cada fila indica los estacionamientos incluidos (1 simple, 1 lineal o 2 simples).",
+    "cita": "«FLAT 503 · 85.10 m² · 1 SIMPLE · $253,000.00» — lista de precios Azzurra, 18-may-2026",
+    "imgs": [],
+    "fuentes": [
+     "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Monte Mayor 183",
+    "dev": "Azzurra Constructores",
+    "proyecto_id": "monte-mayor-183",
+    "tags": [
+     "venta",
+     "agotado"
+    ],
+    "canal": "Lista de precios oficial",
+    "autor": "Benchmark",
+    "texto": "La lista oficial marca 16 de 20 unidades vendidas: quedan solo 4 — Flat 101 (73.13 m², US$202,000), Flat 102 (239.69 m² totales, US$477,000), Flat 202 y Flat 302 (115.56 m², US$319,000 y US$320,000). Los tres penthouses están vendidos.",
+    "cita": "«FLAT 101 · 73.13 m² · 1 SIMPLE · $202,000.00» y 16 filas marcadas VENDIDO — lista de precios Azzurra",
+    "fuentes": [
+     "assets/brochures/monte-mayor-183-lista-precios.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Precursores II",
+    "dev": "IPIROS",
+    "proyecto_id": "precursores-ii",
+    "tags": [
+     "venta",
+     "agotado"
+    ],
+    "canal": "Lista de precios oficial",
+    "autor": "Benchmark",
+    "texto": "Lista oficial con estado por unidad: 16 vendidas. Quedan el 201 (149.04 m², 3 dorms, US$385,000, con 2 estacionamientos paralelos y 2 depósitos) y el 503 (149.35 m², US$390,000). Contacto de la obra: Arq. Indira Ramos, 996 898 925.",
+    "cita": "«201 · 149.04 · 3 DORM · PARALELOS Nº 29 Y 30- SOTANO 2 · $385,000.00» — lista de precios Los Precursores II",
+    "fuentes": [
+     "assets/brochures/precursores-ii-lista-precios.pdf"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Floresta 343",
+    "dev": "Vibra Inmobiliaria",
+    "proyecto_id": "floresta-343",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Búsqueda en internet",
+    "autor": "Benchmark",
+    "texto": "Competidor que NO teníamos y sí está dentro del cuadrante: Av. de la Floresta 343, 8 pisos, 29 departamentos, 40 estacionamientos y 38 bike parkings. Tipologías FLEX de 64.01, 87.13, 103.55 y 104.98 m² más un dúplex en el piso 8. Amenidades fuertes para su tamaño: coworking, dos rooftops y pet & bike center. Falta precio y verificarlo en campo.",
+    "cita": "«Solo 8 pisos hacen de Floresta 343 un lugar íntimo» — brochure oficial de Vibra Inmobiliaria",
+    "imgs": [
+     "assets/planos/floresta-343/floresta343-tipo01-02-planta.png"
+    ],
+    "fuentes": [
+     "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
+    "proyecto": "Le Parc",
+    "dev": "V&V Grupo Inmobiliario",
+    "proyecto_id": "le-parc",
+    "tags": [
+     "nuevo"
+    ],
+    "canal": "Archivo interno + búsqueda",
+    "autor": "Benchmark",
+    "texto": "Segundo proyecto que faltaba en el mapa: Av. de los Precursores 421, de V&V. Solo 15 departamentos de 157 a 460 m², 3 dormitorios — la oferta de mayor metraje del cuadrante. Teníamos su brochure y 9 planos archivados sin usar. Falta confirmar si sigue en venta.",
+    "cita": "«Sólo 15 exclusivos departamentos · Departamentos desde 157 mts2 hasta 460 mts2» — brochure Le Parc",
+    "imgs": [
+     "assets/planos/le-parc/plano-b01.jpg"
+    ],
+    "fuentes": [
+     "Brochure oficial en archivo (le-parc-f1.pdf)"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
     "proyecto": "Monte Alegre 109",
     "dev": "Edifikarte",
     "proyecto_id": "monte-alegre",
@@ -756,7 +885,181 @@ window.PORTAL_DATA = {
     "cita": "Relevamiento inicial del cuadrante: 23 competidores mapeados y precios verificados uno a uno (jun–jul 2026)."
    }
   ],
-  "ultimo_recorrido": "2026-08-22"
+  "ultimo_recorrido": "2026-08-22",
+  "archivo_zona": [
+   {
+    "nombre": "Conde de la Vega 159",
+    "dev": "Inmobiliaria AyD",
+    "addr": "Calle Conde de la Vega 159, Chacarilla, Surco",
+    "zona": "dentro del cuadrante",
+    "estado": "Entregado",
+    "nota": "10 departamentos en 5 niveles, 3 dormitorios, de 135 a 269 m². Antecedente directo de Conde II: misma calle, misma inmobiliaria.",
+    "planos": [
+     "assets/planos/conde-de-la-vega-159/plano-01.jpg",
+     "assets/planos/conde-de-la-vega-159/plano-02.jpg",
+     "assets/planos/conde-de-la-vega-159/plano-b01.jpg",
+     "assets/planos/conde-de-la-vega-159/plano-b02.jpg"
+    ],
+    "brochure": "assets/brochures/conde-de-la-vega-159-f1.pdf",
+    "fuente": "https://inmobiliariaayd.com/proyecto/conde-de-la-vega-159/"
+   },
+   {
+    "nombre": "Conde de la Vega 128",
+    "dev": "Edifikarte",
+    "addr": "Calle Conde de la Vega del Ren 128, Chacarilla, Surco",
+    "zona": "dentro del cuadrante",
+    "estado": "Entregado",
+    "nota": "6 pisos y 23 departamentos. Ya no figura entre los proyectos en venta de Edifikarte.",
+    "planos": [
+     "assets/planos/conde-vega-128/plano-01.jpg",
+     "assets/planos/conde-vega-128/plano-02.jpg",
+     "assets/planos/conde-vega-128/plano-03.jpg",
+     "assets/planos/conde-vega-128/plano-04.jpg",
+     "assets/planos/conde-vega-128/plano-05.jpg",
+     "assets/planos/conde-vega-128/plano-06.jpg",
+     "assets/planos/conde-vega-128/plano-07.jpg",
+     "assets/planos/conde-vega-128/plano-08.jpg",
+     "assets/planos/conde-vega-128/plano-09.jpg",
+     "assets/planos/conde-vega-128/plano-10.jpg",
+     "assets/planos/conde-vega-128/plano-11.jpg",
+     "assets/planos/conde-vega-128/plano-12.jpg",
+     "assets/planos/conde-vega-128/plano-13.jpg",
+     "assets/planos/conde-vega-128/plano-14.jpg"
+    ],
+    "brochure": "assets/brochures/conde-vega-128-f1.pdf",
+    "fuente": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2106-conde-de-la-vega-128-santiago-de-surco-lima-lima-grupo-edifikarte"
+   },
+   {
+    "nombre": "Monte Mayor 153",
+    "dev": "Por confirmar",
+    "addr": "Calle Monte Mayor 153, Chacarilla, Surco",
+    "zona": "dentro del cuadrante",
+    "estado": "Por confirmar",
+    "nota": "Brochure y 5 planos en archivo. Misma cuadra que Monte Mayor 177 y 183.",
+    "planos": [
+     "assets/planos/monte-mayor-153/plano-01.jpg",
+     "assets/planos/monte-mayor-153/plano-02.jpg",
+     "assets/planos/monte-mayor-153/plano-03.jpg",
+     "assets/planos/monte-mayor-153/plano-04.jpg",
+     "assets/planos/monte-mayor-153/plano-05.jpg"
+    ],
+    "brochure": "assets/brochures/monte-mayor-153-f1.pdf",
+    "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "Monte Verde",
+    "dev": "Por confirmar",
+    "addr": "Chacarilla del Estanque, Surco (dirección por confirmar)",
+    "zona": "por confirmar",
+    "estado": "Por confirmar",
+    "nota": "Solo 2 planos en archivo, sin brochure ni dirección.",
+    "planos": [
+     "assets/planos/monte-verde/plano-01.jpg",
+     "assets/planos/monte-verde/plano-02.jpg"
+    ],
+    "brochure": null,
+    "fuente": "Archivo interno"
+   },
+   {
+    "nombre": "Central Home Chacarilla",
+    "dev": "EE Inmobiliaria",
+    "addr": "Chacarilla, Santiago de Surco",
+    "zona": "por confirmar",
+    "estado": "En venta",
+    "nota": "Precios de lista desde S/ 395,000 según Nexo. Falta confirmar dirección exacta para saber si entra al cuadrante.",
+    "planos": [
+     "assets/planos/central-home/central-28.png",
+     "assets/planos/central-home/central-31.png",
+     "assets/planos/central-home/central-36.png"
+    ],
+    "brochure": "assets/brochures/CentralHome-EE-brochure.pdf",
+    "fuente": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/central-home-chacarilla-3358"
+   },
+   {
+    "nombre": "Parque La Coruña",
+    "dev": "Por confirmar",
+    "addr": "Calle La Coruña 145, Santiago de Surco",
+    "zona": "fuera del cuadrante",
+    "estado": "Entregado",
+    "nota": "3 dormitorios, flats desde 106 m² y dúplex desde 208 m².",
+    "planos": [
+     "assets/planos/parque-la-coruna/plano-01.jpg",
+     "assets/planos/parque-la-coruna/plano-02.jpg",
+     "assets/planos/parque-la-coruna/plano-03.jpg",
+     "assets/planos/parque-la-coruna/plano-04.jpg"
+    ],
+    "brochure": "assets/brochures/parque-la-coruna-f1.pdf",
+    "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "Inspira 2",
+    "dev": "Por confirmar",
+    "addr": "Santiago de Surco (dirección por confirmar)",
+    "zona": "por confirmar",
+    "estado": "Por confirmar",
+    "nota": "Brochure y 6 planos en archivo.",
+    "planos": [
+     "assets/planos/inspira-2/plano-01.jpg",
+     "assets/planos/inspira-2/plano-02.jpg",
+     "assets/planos/inspira-2/plano-03.jpg",
+     "assets/planos/inspira-2/plano-04.jpg",
+     "assets/planos/inspira-2/plano-05.jpg",
+     "assets/planos/inspira-2/plano-06.jpg"
+    ],
+    "brochure": "assets/brochures/inspira-2-f1.pdf",
+    "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "Elite 14",
+    "dev": "Por confirmar",
+    "addr": "Santiago de Surco (dirección por confirmar)",
+    "zona": "por confirmar",
+    "estado": "Por confirmar",
+    "nota": "Brochure 2026 con tipologías de 3 y 4 dormitorios.",
+    "planos": [
+     "assets/planos/elite-14/elite-7.png"
+    ],
+    "brochure": "assets/brochures/ELITE_14_brochure_2026_Tipologias_3_y_4_final.pdf",
+    "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "La Joya 132",
+    "dev": "Por confirmar",
+    "addr": "Zona Velasco Astete / Angamos, Surco",
+    "zona": "fuera del cuadrante",
+    "estado": "Por confirmar",
+    "nota": "Brochure en archivo.",
+    "planos": [],
+    "brochure": "assets/brochures/la-joya-132-f1.pdf",
+    "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "LoBo",
+    "dev": "Por confirmar",
+    "addr": "San Borja",
+    "zona": "fuera del cuadrante",
+    "estado": "Por confirmar",
+    "nota": "Brochure y 3 planos en archivo. Fuera del área de estudio.",
+    "planos": [
+     "assets/planos/lobo-san-borja/lobo-flat102-plano.jpg",
+     "assets/planos/lobo-san-borja/lobo-flat103-plano.jpg",
+     "assets/planos/lobo-san-borja/lobo-flat104-plano.jpg"
+    ],
+    "brochure": "assets/brochures/LoBo-brochure.pdf",
+    "fuente": "Brochure en archivo"
+   },
+   {
+    "nombre": "Batallón Tarma 684",
+    "dev": "Por confirmar",
+    "addr": "Jirón Batallón Tarma 684, Surco",
+    "zona": "fuera del cuadrante",
+    "estado": "Por confirmar",
+    "nota": "Departamentos de 3 y 4 dormitorios. Fuera del área de estudio.",
+    "planos": [],
+    "brochure": "assets/brochures/batallon-tarma-684-f1.pdf",
+    "fuente": "Brochure en archivo"
+   }
+  ]
  },
  "quadrant": [
   [
@@ -1165,7 +1468,16 @@ window.PORTAL_DATA = {
    "caseta_nota": "Caseta de ventas en el terreno, pero estaba CERRADA en la visita.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción",
-   "politica_precio": "Los precios de lista son del departamento solo. Estacionamiento aparte: US$15,000 el simple y US$25,000 el doble lineal."
+   "politica_precio": "Los precios de lista son del departamento solo. Estacionamiento aparte: US$15,000 el simple y US$25,000 el doble lineal.",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Grupo Dicon · Aura Sul",
+     "archivo": "assets/brochures/aura-sul-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "conde-ii",
@@ -1173,7 +1485,7 @@ window.PORTAL_DATA = {
    "dev": "Inmobiliaria AyD",
    "addr": "Calle Conde de la Vega del Ren 119, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción (obra 2026) · preventa · solo 10 depas, varios vendidos",
+   "estado_raw": "En construcción (obra 2026, entrega 2027)",
    "entrega": "2027",
    "lat": -12.1187009,
    "lng": -76.982851,
@@ -1181,12 +1493,15 @@ window.PORTAL_DATA = {
    "en_cuadrante": true,
    "precio_desde_usd": 308700,
    "precio_hasta_usd": null,
-   "dorms": "3–4",
-   "m2": "126–254",
+   "dorms": "3",
+   "m2": "100 – 254",
    "wa": "980765183",
    "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
    "img": "assets/img/conde-ii.jpg",
    "planos": [
+    "assets/planos/conde-ii-ayd-2026/Cuadro de tipologias y estado de venta (ago-2026).jpg",
+    "assets/planos/conde-ii-ayd-2026/Flat tipico 201 y 401 - 3 dorm - 126 m2 ocupada.jpg",
+    "assets/planos/conde-ii-ayd-2026/Flat tipico 202 - 3 dorm - 126 m2 ocupada.jpg",
     "assets/planos/conde-ii-oficial/tipo-1-pisos-2-4.jpg",
     "assets/planos/conde-ii-oficial/tipo-2-pisos-2-4.jpg",
     "assets/planos/conde-ii/pg-13.jpg",
@@ -1197,32 +1512,76 @@ window.PORTAL_DATA = {
     "assets/planos/conde-ii/plano-02.jpg",
     "assets/planos/conde-ii/plano-b01.jpg",
     "assets/planos/conde-ii/plano-b02.jpg",
-    "assets/campo/conde-ii-obra.jpg"
+    "assets/campo/narciso-ayd.jpg",
+    "assets/campo/narciso-ayd-2.jpg"
    ],
    "brochure": "assets/brochures/conde-ii-brochure-2026.pdf",
    "typologies": [
     {
-     "unidad": "Flat típico 201/401",
+     "unidad": "Flat 101 — VENDIDO",
+     "dorm": 3,
+     "m2": 182,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "primer_piso",
+     "piso": "1",
+     "flat": false,
+     "vendido": true
+    },
+    {
+     "unidad": "Flat 102 — VENDIDO",
+     "dorm": 3,
+     "m2": 100,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "primer_piso",
+     "piso": "1",
+     "flat": false,
+     "vendido": true
+    },
+    {
+     "unidad": "Flat típico 01 (201/301/401)",
      "dorm": 3,
      "m2": 126,
-     "m2_techada": 124,
-     "precio_lista_usd": 308700,
-     "ajuste_cochera_usd": 0,
-     "precio_usd": 308700,
-     "precio_m2": 2450,
+     "precio_usd": null,
+     "precio_m2": null,
      "tipo": "flat",
-     "piso": "2-4",
-     "flat": true
+     "piso": "2 al 4",
+     "flat": true,
+     "vendido": false
+    },
+    {
+     "unidad": "Flat típico 02 (202/302/402)",
+     "dorm": 3,
+     "m2": 126,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true,
+     "vendido": false
     },
     {
      "unidad": "Dúplex 501",
-     "dorm": 4,
+     "dorm": 3,
      "m2": 254,
      "precio_usd": null,
      "precio_m2": null,
      "tipo": "duplex",
      "piso": "5",
-     "flat": false
+     "flat": false,
+     "vendido": false
+    },
+    {
+     "unidad": "Dúplex 502 — VENDIDO",
+     "dorm": 3,
+     "m2": 252,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "5",
+     "flat": false,
+     "vendido": true
     }
    ],
    "flats_summary": [
@@ -1238,11 +1597,14 @@ window.PORTAL_DATA = {
     3,
     4
    ],
-   "comentario": "Proyecto boutique de Inmobiliaria AyD en Calle Conde de la Vega del Ren 119, a pasos del Parque Bella Luz. Solo 10 departamentos, entrega 2027. Flats típicos de 126 m² (3 dorm, 3.5 baños, cuarto de servicio) desde US,700 (~,450/m²) y dúplex de 254 m². Ya vendidos: flats 101 (182 m²), 102 (100 m²) y dúplex 502. Personalización de acabados y distribución. Cochera por confirmar con el asesor.",
+   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución.",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/conde-ii/",
     "https://inmobiliariaayd.com",
-    "Brochure oficial + WhatsApp Washington Benavides (30-jun-2026)"
+    "Brochure oficial + WhatsApp Washington Benavides (30-jun-2026)",
+    "Brochure AyD edición 2026 recibido por WhatsApp",
+    "ventas@inmobiliariaayd.com · 980 765 183",
+    "Placa de permisos de obra fotografiada el 22-ago-2026 (licencia 0231-2026-SGLM-GDU-MSS)"
    ],
    "anuncios": null,
    "mostrar": true,
@@ -1256,8 +1618,8 @@ window.PORTAL_DATA = {
    "portales": {},
    "cochera_status": "nd",
    "stock": {
-    "n": 4,
-    "label": "Solo 10 depas · vendidos 101, 102 y dúplex 502; quedan flats típicos 126 m² + dúplex 501"
+    "n": 3,
+    "label": "3 de 6 tipologías disponibles (3 ya vendidas)"
    },
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 62 m.",
@@ -1269,15 +1631,43 @@ window.PORTAL_DATA = {
     }
    ],
    "wa_label": "Washington B. · AyD",
-   "estado_obra": "En obra · cerco azul, estructura en altura",
+   "estado_obra": "Obra en ejecución con cerco azul rotulado «Tu nueva historia comienza aquí · 3 dormitorios · desde 126 m²». La placa de permisos declara 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, uso residencial, plazo de obra 13 meses. Licencia 0231-2026-SGLM-GDU-MSS a nombre de AYD NARCISO S.A.C. (la SPV que construye).",
    "cuadrante_verificado": "2026-08-22",
-   "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: cerco de obra rotulado con la marca, metrajes y datos de contacto.",
    "caseta_fecha": "2026-08-22",
-   "como_presenta": "AyD lo presenta como «Tu nueva historia comienza aquí»: 10 departamentos en 5 pisos, 3 y 4 dormitorios, 126 a 254 m². En la conversación suman el beneficio de personalización del tercer dormitorio.",
+   "como_presenta": "«Un estilo de vida sofisticado, rodeado de áreas verdes» — venden cercanía a los parques Bella Luz, Miro Quesada y César Vallejo, y la posibilidad de personalizar acabados y distribución.",
    "politica_precio": "Precio publicado sin detalle de cochera — pendiente de confirmar con el asesor si va incluida o aparte.",
    "promocion": "Beneficio de personalización: «puedes adaptar ese tercer dormitorio a tus necesidades — oficina, sala de juegos, taller, gimnasio». Personalizan acabados y distribución con acompañamiento de sus arquitectos.",
-   "planos_fuente": "Planos de tipología de la web oficial de Inmobiliaria AyD + brochure"
+   "planos_fuente": "Brochure oficial AyD edición 2026, recibido por WhatsApp (cuadro de tipologías con estado de venta + plantas de los flats típicos).",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial AyD · edición 2026 (recibido por WhatsApp)",
+     "archivo": "assets/brochures/conde-ii-brochure-2026.pdf",
+     "url": null,
+     "fecha": "2026",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure AyD · edición anterior (construcción 2025 / entrega 2026)",
+     "archivo": "assets/brochures/conde-ii-f1.pdf",
+     "url": null,
+     "fecha": "2025",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure AyD publicado en su web (Conde de la Vega 119)",
+     "archivo": "assets/brochures/conde-ii-ayd-web-CV119.pdf",
+     "url": "https://inmobiliariaayd.com/wp-content/uploads/2025/04/AyD-Brochure-CV119.pdf",
+     "fecha": "2025",
+     "tipo": "brochure"
+    }
+   ],
+   "pisos": 5,
+   "estacionamientos": 19,
+   "unidades": 10,
+   "licencia": "0231-2026-SGLM-GDU-MSS · titular AYD NARCISO S.A.C. · plazo 13 meses",
+   "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -1382,6 +1772,13 @@ window.PORTAL_DATA = {
      "titulo": "Brochure oficial Edifikarte · Conde de la Vega 251",
      "archivo": "assets/docs/conde-de-la-vega-251-brochure.pdf",
      "url": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf",
+     "fecha": "2023-10",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial Edifikarte · copia recibida",
+     "archivo": "assets/brochures/conde-vega-251-f1.pdf",
+     "url": null,
      "fecha": "2023-10",
      "tipo": "brochure"
     }
@@ -1932,8 +2329,8 @@ window.PORTAL_DATA = {
    ],
    "cochera_status": "si",
    "stock": {
-    "n": 9,
-    "label": "9 flats típicos · 12 con precio"
+    "n": 12,
+    "label": "12 de 26 disponibles (lista 18-may-2026)"
    },
    "lista_precios": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf",
    "verif_web": {
@@ -1966,8 +2363,23 @@ window.PORTAL_DATA = {
      "url": "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-CDLV-010626-2.pdf",
      "fecha": "2026-06-01",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial Azzurra · copia recibida",
+     "archivo": "assets/brochures/conde-de-la-vega-460-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "LISTA DE PRECIOS oficial Azzurra · 18-may-2026 (unidad por unidad, con estado de venta)",
+     "archivo": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf",
+     "url": null,
+     "fecha": "2026-05-18",
+     "tipo": "tarifario"
     }
-   ]
+   ],
+   "tarifario": "assets/brochures/conde-de-la-vega-460-lista-precios-18-05-26.pdf"
   },
   {
    "id": "dmont-dicon",
@@ -2030,7 +2442,16 @@ window.PORTAL_DATA = {
     "n": 1,
     "label": "Última unidad"
    },
-   "motivo_retiro": "Agotado — vendido en su totalidad (confirmado por el cliente, ago-2026). Dicon ahora comercializa D'Mont 2."
+   "motivo_retiro": "Agotado — vendido en su totalidad (confirmado por el cliente, ago-2026). Dicon ahora comercializa D'Mont 2.",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Grupo Dicon · D’Mont",
+     "archivo": "assets/brochures/dmont-dicon-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "dmont-2",
@@ -2228,7 +2649,16 @@ window.PORTAL_DATA = {
    "cuadrante_verificado": "2026-08-22",
    "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon",
    "como_presenta": "Grupo Dicon lo presenta como el reemplazo de D'Mont (agotado), en preventa.",
-   "politica_precio": "Los precios publicados en su web NO incluyen cochera; la cochera se cotiza aparte (US$25,000)."
+   "politica_precio": "Los precios publicados en su web NO incluyen cochera; la cochera se cotiza aparte (US$25,000).",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Grupo Dicon · D’Mont 2",
+     "archivo": "assets/brochures/dmont-2-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "estelar-1080",
@@ -2337,7 +2767,16 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción",
    "cuadrante_verificado": "2026-08-22",
-   "politica_precio": "El precio incluye cochera (valor US$15,000); el US$/m² del portal la descuenta para comparar."
+   "politica_precio": "El precio incluye cochera (valor US$15,000); el US$/m² del portal la descuenta para comparar.",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Galeon · Estelar 1080 (13-abr-2026)",
+     "archivo": "assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf",
+     "url": null,
+     "fecha": "2026-04-13",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "floresta-living-444",
@@ -2455,7 +2894,16 @@ window.PORTAL_DATA = {
    "caseta_nota": "Sin caseta de ventas: tótem en la vereda.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Terminado",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial EE Inmobiliaria · Floresta Living 444",
+     "archivo": "assets/brochures/floresta-living-444-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "hana",
@@ -2546,6 +2994,13 @@ window.PORTAL_DATA = {
      "titulo": "Brochure oficial Odima · HANA Chacarilla",
      "archivo": "assets/docs/hana-brochure.pdf",
      "url": "https://odima.pe/wp-content/uploads/2026/02/HANA-BC_compressed.pdf",
+     "fecha": "2026-02",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure Odima · copia recibida por WhatsApp",
+     "archivo": "assets/brochures/HANA-Odima-brochure.pdf",
+     "url": null,
      "fecha": "2026-02",
      "tipo": "brochure"
     }
@@ -2672,6 +3127,13 @@ window.PORTAL_DATA = {
      "archivo": "assets/docs/jardines-monte-real-brochure.pdf",
      "url": "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
      "fecha": "2026-06-22",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure Central Inmobiliaria · copia recibida",
+     "archivo": "assets/brochures/jardines-monte-real-f1.pdf",
+     "url": null,
+     "fecha": null,
      "tipo": "brochure"
     }
    ],
@@ -3140,7 +3602,16 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · estructura con malla, cartel comercial activo",
    "cuadrante_verificado": "2026-08-22",
-   "planos_fuente": "Planos de tipología descargados de la web oficial de Edifikarte"
+   "planos_fuente": "Planos de tipología descargados de la web oficial de Edifikarte",
+   "documentos": [
+    {
+     "titulo": "Ficha oficial Edifikarte · Monte Carmelo 250",
+     "archivo": "assets/brochures/monte-carmelo-250-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "ficha"
+    }
+   ]
   },
   {
    "id": "monte-carmelo-551",
@@ -3328,6 +3799,20 @@ window.PORTAL_DATA = {
      "url": "https://balance.pe/site/media/Brochure-Monte-carmelo-551-web.pdf",
      "fecha": "2026",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure Balance · copia recibida",
+     "archivo": "assets/brochures/Monte_Carmelo_551-brochure.pdf",
+     "url": null,
+     "fecha": "2026",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Planera Monte Carmelo 551",
+     "archivo": "assets/brochures/monte-carmelo-551-planera.pdf",
+     "url": null,
+     "fecha": "2026",
+     "tipo": "plano"
     }
    ]
   },
@@ -3631,6 +4116,13 @@ window.PORTAL_DATA = {
      "titulo": "Brochure oficial Edifikarte · Monte Mayor 177",
      "archivo": "assets/docs/monte-mayor-177-brochure.pdf",
      "url": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Monte-Mayor-177.pdf",
+     "fecha": "2023-10",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure Edifikarte · copia recibida",
+     "archivo": "assets/brochures/Monte_Mayor_177-brochure.pdf",
+     "url": null,
      "fecha": "2023-10",
      "tipo": "brochure"
     }
@@ -4096,8 +4588,8 @@ window.PORTAL_DATA = {
    "destacado": true,
    "cochera_status": "si",
    "stock": {
-    "n": 3,
-    "label": "Voló · solo quedan 3 depas"
+    "n": 4,
+    "label": "4 de 20 disponibles — últimas unidades"
    },
    "lista_precios": "assets/brochures/monte-mayor-183-lista-precios.pdf",
    "verif_web": {
@@ -4132,8 +4624,23 @@ window.PORTAL_DATA = {
      "url": "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-MM-21.07.26.pdf",
      "fecha": "2026-07-21",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial Azzurra · copia recibida",
+     "archivo": "assets/brochures/monte-mayor-183-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "LISTA DE PRECIOS oficial Azzurra (unidad por unidad, con estado de venta)",
+     "archivo": "assets/brochures/monte-mayor-183-lista-precios.pdf",
+     "url": null,
+     "fecha": "2026",
+     "tipo": "tarifario"
     }
-   ]
+   ],
+   "tarifario": "assets/brochures/monte-mayor-183-lista-precios.pdf"
   },
   {
    "id": "monte-real-265",
@@ -4222,6 +4729,13 @@ window.PORTAL_DATA = {
      "archivo": "assets/docs/monte-real-265-brochure.pdf",
      "url": "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
      "fecha": "2026",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial EE Inmobiliaria · copia recibida",
+     "archivo": "assets/brochures/monte-real-265-f1.pdf",
+     "url": null,
+     "fecha": null,
      "tipo": "brochure"
     }
    ]
@@ -4377,6 +4891,13 @@ window.PORTAL_DATA = {
      "titulo": "Brochure oficial Make Inmobiliaria · Monte Sierpe",
      "archivo": "assets/docs/monte-sierpe-brochure.pdf",
      "url": "https://makeinmobiliaria.pe/wp-content/uploads/2025/10/BROCHURE-DIGITAL-VERTICAL_MONTESIERPEIMPRESION.pdf",
+     "fecha": "2025-10",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure Make Inmobiliaria · copia recibida",
+     "archivo": "assets/brochures/MonteSierpe-Make-brochure.pdf",
+     "url": null,
      "fecha": "2025-10",
      "tipo": "brochure"
     }
@@ -4875,6 +5396,13 @@ window.PORTAL_DATA = {
      "url": "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf",
      "fecha": "2026-08-12",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure EE Inmobiliaria · edición junio-2026 (versión anterior)",
+     "archivo": "assets/brochures/BROCHURE_PARQUE_MONTE_CARMELO_2026-JUNIO.pdf",
+     "url": null,
+     "fecha": "2026-06",
+     "tipo": "brochure"
     }
    ]
   },
@@ -4963,7 +5491,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026.",
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m².",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -4995,7 +5523,16 @@ window.PORTAL_DATA = {
    "caseta_nota": "Sin caseta: cerco de obra rotulado.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · ÚLTIMO departamento (dúplex 603)",
-   "como_presenta": "Grupo Chacarilla Sur comunica cierre de proyecto: «nos está quedando un dúplex penthouse». Entrega noviembre 2026."
+   "como_presenta": "Grupo Chacarilla Sur comunica cierre de proyecto: «nos está quedando un dúplex penthouse». Entrega noviembre 2026.",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Grupo Chacarilla Sur · Precursores 525",
+     "archivo": "assets/brochures/Precu_Brochure_AC.pdf",
+     "url": null,
+     "fecha": "2026",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "precursores-ii",
@@ -5088,8 +5625,8 @@ window.PORTAL_DATA = {
    ],
    "cochera_status": "si",
    "stock": {
-    "n": 3,
-    "label": "3 quedan"
+    "n": 4,
+    "label": "4 disponibles de 20 — últimas unidades"
    },
    "lista_precios": "assets/brochures/precursores-ii-lista-precios.pdf",
    "verif_web": {
@@ -5112,7 +5649,24 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 82 m.",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial · Los Precursores II",
+     "archivo": "assets/brochures/precursores-ii-brochure.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "LISTA DE PRECIOS oficial · Los Precursores II (unidad por unidad, con estado de venta)",
+     "archivo": "assets/brochures/precursores-ii-lista-precios.pdf",
+     "url": null,
+     "fecha": "2026",
+     "tipo": "tarifario"
+    }
+   ],
+   "tarifario": "assets/brochures/precursores-ii-lista-precios.pdf"
   },
   {
    "id": "santorini",
@@ -5311,7 +5865,16 @@ window.PORTAL_DATA = {
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta y sin publicidad comercial en la obra: solo el cartel informativo de obra que exige la municipalidad.",
-   "caseta_fecha": "2026-08-22"
+   "caseta_fecha": "2026-08-22",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Morgenstern · Santorini (junio-2026)",
+     "archivo": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
+     "url": null,
+     "fecha": "2026-06",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "spazio",
@@ -5490,7 +6053,16 @@ window.PORTAL_DATA = {
    "cuadrante_verificado": "2026-08-22",
    "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00",
    "planos_fuente": "Planos de tipología de la web oficial de Grupo Dicon + panel de la sala de ventas",
-   "como_presenta": "Grupo Dicon atiende en sala de ventas con panel de disponibilidad a la vista (L–V 9–18 h, S 9–17 h)."
+   "como_presenta": "Grupo Dicon atiende en sala de ventas con panel de disponibilidad a la vista (L–V 9–18 h, S 9–17 h).",
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Grupo Dicon · Spazio",
+     "archivo": "assets/brochures/spazio-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "terraverde",
@@ -5631,9 +6203,10 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
-   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026).",
+   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026). AyD lo mantiene «EN PLANOS» en su web (24-ago-2026) junto con Narciso y Conde II. En el brochure de Conde II edición 2026, la lámina «Proyectos EN VENTA» muestra un segundo proyecto en «Próximo lanzamiento · Chacarilla - Surco»: por descarte es este, ya que Narciso está en Las Gardenias.",
    "fuentes": [
-    "https://inmobiliariaayd.com"
+    "https://inmobiliariaayd.com",
+    "https://inmobiliariaayd.com/proyectos/"
    ],
    "amenidades": [
     "Ascensor directo",
@@ -5663,57 +6236,91 @@ window.PORTAL_DATA = {
   },
   {
    "id": "narciso-ayd",
-   "name": "Obra AyD (Conde de la Vega)",
-   "dev": "Inmobiliaria AyD (AYD Narciso S.A.C.)",
-   "addr": "Calle Conde de la Vega del Ren ~116, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En obra (estructura) · descubierto en campo 22-ago-2026",
+   "name": "Narciso",
+   "dev": "Inmobiliaria AyD",
+   "addr": "Calle Narciso de la Colina 142, Urb. Las Gardenias, Santiago de Surco",
+   "estado_grupo": "En planos",
+   "estado_raw": "En planos",
    "entrega": "Por confirmar (13 meses de ejecución según licencia)",
    "lat": -12.112494,
    "lng": -76.981103,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
-   "dorms": "Por confirmar",
-   "m2": "Por confirmar",
+   "dorms": "3–4",
+   "m2": "97 – 211",
    "wa": "980765183",
    "wa_label": "Washington B. · AyD",
-   "web": "https://inmobiliariaayd.com",
+   "web": "https://inmobiliariaayd.com/proyecto/narciso/",
    "img": "assets/campo/narciso-ayd.jpg",
-   "brochure": null,
+   "brochure": "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
    "planos": [
-    "assets/campo/narciso-ayd.jpg",
-    "assets/campo/narciso-ayd-2.jpg"
+    "assets/planos/narciso-ayd-oficial/Flat 201-401 - 3 dorm - 97 m2.jpg",
+    "assets/planos/narciso-ayd-oficial/Flat 202-402 - 3 dorm - 97 m2.jpg",
+    "assets/planos/narciso-ayd-oficial/Render oficial fachada frontal (feb-2026).jpg"
    ],
-   "typologies": [],
+   "typologies": [
+    {
+     "unidad": "Flat 201 / 401",
+     "dorm": 3,
+     "m2": 97,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 y 4",
+     "flat": true
+    },
+    {
+     "unidad": "Flat 202 / 402",
+     "dorm": 3,
+     "m2": 97,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "2 y 4",
+     "flat": true
+    }
+   ],
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": {
     "n": 10,
     "label": "10 departamentos (según licencia de obra)"
    },
-   "mostrar": true,
-   "geo_aprox": false,
+   "mostrar": false,
+   "geo_aprox": true,
    "total_pisos": 5,
-   "comentario": "Obra en Chacarilla con cartel de licencia a nombre de AYD NARCISO S.A.C.: 5 pisos + azotea, 2 sótanos, 10 departamentos, 19 estacionamientos, licencia 0231-2026-SGLH-GDU-MSS. VERIFICADO: el proyecto comercial «Narciso» de AyD está en Calle Brea y Pariñas 102 (Las Gardenias), fuera de este cuadrante — son 9 departamentos de 97 a 211 m². Es decir, esta obra de Chacarilla todavía no tiene nombre comercial publicado. Pendiente confirmarlo con el asesor.",
+   "comentario": "CORRECCIÓN (24-ago-2026): «Narciso» NO es la obra de Chacarilla. Es otro proyecto de AyD, en Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante. Está EN PLANOS: 5 pisos, 9 departamentos de 3 y 4 dormitorios, de 97 a 211 m². La confusión venía de la placa de obra de Chacarilla, que lleva el nombre de la SPV «AYD NARCISO S.A.C.»; esa obra es en realidad CONDE II (10 departamentos, coincide con la placa y con el cerco que anuncia 3 dorms desde 126 m², la tipología exacta de Conde II).",
    "fuentes": [
-    "Cartel de obra fotografiado en campo 22-ago-2026",
-    "https://inmobiliariaayd.com",
-    "https://inmobiliariaayd.com/proyecto/narciso/"
+    "https://inmobiliariaayd.com/proyecto/narciso/",
+    "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
+    "Brochure Narciso, portada: «Calle Narciso de la Colina 142, Urb. Las Gardenias - Surco»"
    ],
    "amenidades": [],
    "precio_hist": [],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador).",
-   "caseta_ventas": "no",
-   "caseta_nota": "Sin punto de venta: solo cartel de licencia de obra, aún en estructura.",
+   "geo_nota": "Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante de Chacarilla. No se muestra en el mapa por estar fuera del área de estudio.",
+   "caseta_ventas": "nd",
+   "caseta_nota": null,
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra gruesa: encofrado y armadura a la vista, primeros niveles",
+   "estado_obra": "Sin obra iniciada: AyD lo publica como «EN PLANOS».",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "como_presenta": "Sin material comercial en obra todavía; solo el cartel de licencia.",
-   "pedido": "Hola Washington! Una consulta: vi una obra de ustedes en Conde de la Vega del Ren (el cartel dice AyD Narciso SAC). Es un proyecto nuevo? Cómo se va a llamar y cuándo lanzan? Me gustaría estar en la lista.",
-   "pedido_que": "confirmar nombre y lanzamiento"
+   "pedido": null,
+   "pedido_que": null,
+   "planos_fuente": "Web oficial de Inmobiliaria AyD (plantas de los flats 201-401 y 202-402) + render de fachada de febrero-2026.",
+   "pisos": 5,
+   "unidades": 9,
+   "documentos": [
+    {
+     "titulo": "Brochure oficial AyD · Narciso (Las Gardenias)",
+     "archivo": "assets/brochures/narciso-ayd-brochure.pdf",
+     "url": "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
+     "fecha": "2026-02",
+     "tipo": "brochure"
+    }
+   ]
   },
   {
    "id": "precursores-verde",
@@ -6187,6 +6794,214 @@ window.PORTAL_DATA = {
      "tipo": "brochure"
     }
    ]
+  },
+  {
+   "isGEU": false,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "brochure": null,
+   "img": null,
+   "flats_summary": [],
+   "stock": null,
+   "mostrar": true,
+   "amenidades": [
+    "Lobby",
+    "Coworking",
+    "Pet & Bike center",
+    "Rooftop BBQ",
+    "Rooftop Gourmet",
+    "2 patios jardín (Zen y Huerto)",
+    "Áreas verdes",
+    "Gas natural",
+    "Balcón o terraza en todos los departamentos"
+   ],
+   "precio_hist": [],
+   "cochera_status": "nd",
+   "id": "floresta-343",
+   "name": "Floresta 343",
+   "dev": "Vibra Inmobiliaria",
+   "addr": "Av. de la Floresta 343, Urb. Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En venta · 29 departamentos",
+   "estado_obra": "Por verificar en el próximo recorrido de campo.",
+   "entrega": "Por confirmar",
+   "lat": -12.11452,
+   "lng": -76.987629,
+   "en_cuadrante": true,
+   "dorms": "1–2 (+ ambiente flex)",
+   "m2": "64.01 – 104.98",
+   "pisos": 8,
+   "unidades": 29,
+   "estacionamientos": 40,
+   "wa": "908892190",
+   "wa_label": "Vibra Inmobiliaria",
+   "web": "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343",
+   "planos": [
+    "assets/planos/floresta-343/floresta-16.png",
+    "assets/planos/floresta-343/floresta-19.png",
+    "assets/planos/floresta-343/floresta-22.png",
+    "assets/planos/floresta-343/floresta343-duplex803-planta.png",
+    "assets/planos/floresta-343/floresta343-tipo01-02-planta.png",
+    "assets/planos/floresta-343/floresta343-tipo03-04-planta.png",
+    "assets/planos/floresta-343/plano-01.png",
+    "assets/planos/floresta-343/plano-02.png",
+    "assets/planos/floresta-343/plano-03.png"
+   ],
+   "planos_fuente": "Brochure oficial Vibra Inmobiliaria (edición mayo) descargado de su web.",
+   "typologies": [
+    {
+     "unidad": "Tipo 01 (diseño FLEX)",
+     "dorm": 2,
+     "m2": 103.55,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Tipo 02 (diseño FLEX)",
+     "dorm": 2,
+     "m2": 104.98,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Tipo 03 (diseño FLEX)",
+     "dorm": 1,
+     "m2": 64.01,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Tipo 04 (diseño FLEX)",
+     "dorm": 1,
+     "m2": 87.13,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": "típico",
+     "flat": true
+    },
+    {
+     "unidad": "Dúplex 803",
+     "dorm": null,
+     "m2": null,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "duplex",
+     "piso": "8",
+     "flat": false
+    }
+   ],
+   "comentario": "Proyecto que NO teníamos registrado y sí está dentro del cuadrante. Vibra Inmobiliaria, Av. de la Floresta 343: 8 pisos, 29 departamentos, 40 estacionamientos y 38 bike parkings. Tipologías de diseño FLEX: 64.01, 87.13, 103.55 y 104.98 m² más un dúplex en el piso 8. Ojo con los «ambientes»: el propio brochure aclara que el departamento se entrega con 2 dormitorios y el tercer ambiente es referencial. Sin lista de precios pública.",
+   "como_presenta": "«Solo 8 pisos hacen de Floresta 343 un lugar íntimo». Venden intimidad, vista a parque y un paquete de amenidades fuerte para el tamaño del edificio (coworking, dos rooftops, pet & bike center).",
+   "caseta_ventas": "nd",
+   "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
+   "geo_aprox": true,
+   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de la Floresta (entre el 130 y el 442, ambos verificados). Pendiente de confirmar con foto de campo.",
+   "descubierto_campo": null,
+   "cuadrante_verificado": null,
+   "fuentes": [
+    "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343",
+    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-floresta-343-474",
+    "Brochure oficial Vibra (Floresta_Brochure_Mayo.pdf)"
+   ],
+   "documentos": [
+    {
+     "titulo": "Brochure oficial Vibra Inmobiliaria · Floresta 343",
+     "archivo": "assets/brochures/floresta-343-vibra-brochure.pdf",
+     "url": "https://vibrainmobiliaria.com.pe/img/proyectos/floresta-343/pdf/Floresta_Brochure_Mayo.pdf",
+     "fecha": "2026-05",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure Floresta 343 · copia en archivo",
+     "archivo": "assets/brochures/Floresta_343-brochure.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ],
+   "pedido": "Hola! Me interesa Floresta 343, en Av. de la Floresta. Me pueden enviar la lista de precios y confirmar si el precio incluye estacionamiento? Y para cuándo es la entrega?",
+   "pedido_que": "lista de precios + entrega"
+  },
+  {
+   "isGEU": false,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "brochure": null,
+   "img": null,
+   "flats_summary": [],
+   "stock": null,
+   "mostrar": true,
+   "amenidades": [
+    "Ascensores directos",
+    "Lobby",
+    "Gas natural (GNV)",
+    "Terraza interior con espejo de agua",
+    "Sala multiusos",
+    "Cine",
+    "Zona de parrillas y juegos",
+    "Estacionamientos para visitas"
+   ],
+   "precio_hist": [],
+   "cochera_status": "nd",
+   "id": "le-parc",
+   "name": "Le Parc",
+   "dev": "V&V Grupo Inmobiliario",
+   "addr": "Av. de los Precursores 421, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Estado por confirmar (brochure en archivo)",
+   "estado_obra": "Por verificar en el próximo recorrido de campo.",
+   "entrega": "Por confirmar",
+   "lat": -12.115046,
+   "lng": -76.980044,
+   "en_cuadrante": true,
+   "dorms": "3",
+   "m2": "157 – 460",
+   "unidades": 15,
+   "wa": null,
+   "web": "https://vyv.pe/",
+   "planos": [
+    "assets/planos/le-parc/plano-b01.jpg",
+    "assets/planos/le-parc/plano-b02.jpg",
+    "assets/planos/le-parc/plano-b03.jpg",
+    "assets/planos/le-parc/plano-b04.jpg",
+    "assets/planos/le-parc/plano-b05.jpg",
+    "assets/planos/le-parc/plano-b06.jpg",
+    "assets/planos/le-parc/plano-b07.jpg",
+    "assets/planos/le-parc/plano-b08.jpg",
+    "assets/planos/le-parc/plano-b09.jpg"
+   ],
+   "planos_fuente": "Brochure oficial en archivo (9 láminas de tipología).",
+   "typologies": [],
+   "comentario": "Proyecto que NO teníamos registrado y cae dentro del cuadrante: V&V Grupo Inmobiliario, Av. de los Precursores 421. Solo 15 departamentos, de 157 a 460 m², 3 dormitorios. Es la oferta de mayor metraje del cuadrante. Tenemos su brochure y 9 planos en archivo, pero falta confirmar si sigue en venta o ya fue entregado, y su lista de precios.",
+   "caseta_ventas": "nd",
+   "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
+   "geo_aprox": true,
+   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de los Precursores (entre el 280 y el 525, ambos verificados). Pendiente de confirmar con foto de campo.",
+   "fuentes": [
+    "Brochure oficial en archivo (le-parc-f1.pdf)",
+    "https://vyv.pe/departamentos-en-surco/depas-de-lujo-en-surco/"
+   ],
+   "documentos": [
+    {
+     "titulo": "Brochure oficial · Le Parc (Av. Precursores 421)",
+     "archivo": "assets/brochures/le-parc-f1.pdf",
+     "url": null,
+     "fecha": null,
+     "tipo": "brochure"
+    }
+   ],
+   "pedido": "Hola! Consulta por el proyecto Le Parc, en Av. de los Precursores 421. Sigue en venta? Me pueden enviar los planos, metrajes disponibles y la lista de precios?",
+   "pedido_que": "confirmar estado + precios"
   }
  ]
 };

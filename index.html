@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824g"></script>
+<script src="data/portal-data.js?v=20260824h"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -461,6 +461,7 @@ function showDetail(p){
     ${tlHtml}
     <div class="dfoot">${wa}
       ${p.pedido&&p.wa?`<a class="wa" style="margin-left:12px;color:#8a5a12" href="${pedidoHref(p)}" target="_blank" title="Abre WhatsApp con el mensaje ya escrito">📩 Pedir ${p.pedido_que||'información'}</a>`:''}
+      ${(p.documentos||[]).length?`<a class="wa" style="margin-left:12px;color:#15402c" href="${p.documentos[0].archivo}" target="_blank" title="${p.documentos.map(x=>x.titulo).join(' · ').replace(/"/g,'')}">📕 ${p.documentos.length} documento${p.documentos.length>1?'s':''} guardado${p.documentos.length>1?'s':''}</a>`:''}
       <span style="margin-left:auto"></span>${ficha}</div>`;
   dtl.classList.add('open');
   map.panTo([p.lat,p.lng],{animate:true});
@@ -931,7 +932,29 @@ function buildCobertura(){
        <div style="font-size:10.5px;color:#7a7a7a">${t}</div></div>`).join('')}
    </div>
    <table class="t"><thead><tr><th style="width:20%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}<th style="text-align:center">Completo</th></tr></thead><tbody>${rows}</tbody></table>
-   <div class="foot" style="margin-top:10px">Los ✕ de Planos / Brochure / Tarifario son los pedidos abiertos por WhatsApp (ver Time lapse). Último rastreo en internet de todo el cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>`;
+   <div class="foot" style="margin-top:10px">Los ✕ de Planos / Brochure / Tarifario son los pedidos abiertos por WhatsApp (ver Time lapse). Último rastreo en internet de todo el cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>
+   ${archivoZonaHtml()}`;
+}
+
+/* ARCHIVO DE LA ZONA · brochures y planos de proyectos que no entran al benchmark */
+function archivoZonaHtml(){
+  const A=D.meta.archivo_zona||[]; if(!A.length)return '';
+  const ZC={'dentro del cuadrante':'#2F7D54','fuera del cuadrante':'#9a958c','por confirmar':'#b9863b'};
+  return `<div class="sec" style="margin-top:30px">Archivo de la zona · ${A.length} proyectos</div>
+   <div style="font-size:12px;color:#999;margin-bottom:14px;max-width:900px">Brochures y planos que tenemos guardados de proyectos que <b>no</b> entran al benchmark: entregados, antecedentes o fuera del cuadrante. No suman al ranking ni al $/m², pero sirven de referencia histórica y están acá para no perderlos.</div>
+   <div style="display:flex;flex-direction:column;gap:8px;max-width:960px">
+   ${A.map((x,i)=>`<div style="background:#fff;border:1px solid #e6e1d4;border-radius:11px;padding:11px 15px">
+     <div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
+       <b style="font-size:13px;color:#15402c">${x.nombre}</b>
+       <span style="font-size:10.5px;color:#8a8577">${x.dev}</span>
+       <span style="font-size:10px;color:${ZC[x.zona]||'#8a8577'};font-weight:700">${x.zona}</span>
+       <span style="font-size:10px;color:#8a8577">· ${x.estado}</span>
+       <span style="margin-left:auto;display:flex;gap:8px">
+         ${x.brochure?`<a href="${x.brochure}" target="_blank" style="font-size:11px;color:#b9863b;font-weight:700">📕 Brochure</a>`:''}
+         ${x.planos&&x.planos.length?`<a href="#" onclick="lbxOpen(${JSON.stringify(x.planos).replace(/"/g,'&quot;')},0);return false" style="font-size:11px;color:#2F7D54;font-weight:700">📐 ${x.planos.length} planos</a>`:''}
+       </span></div>
+     <div style="font-size:11.5px;color:#555;line-height:1.5;margin-top:3px">📍 ${x.addr} — ${x.nota}</div>
+   </div>`).join('')}</div>`;
 }
 
 function buildArgumentario(){
