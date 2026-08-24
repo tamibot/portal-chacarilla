@@ -32,6 +32,22 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-22",
+    "proyecto": "— Cuadrante",
+    "dev": "",
+    "tags": [
+     "nuevo",
+     "estado"
+    ],
+    "canal": "Anotaciones de campo",
+    "autor": "Martin",
+    "texto": "Se incorporaron las anotaciones del recorrido (26 registros): caseta de ventas y estado de obra proyecto por proyecto, direcciones exactas y desarrolladores. Se sumaron 3 proyectos que no estaban en el portal: The Leven (Precursores 1443), Monte Alegre 137 y Parque La Floresta. Se corrigieron datos de Monte Flor (Constructora Magnífica), Astete Living (EDSA Inmobiliaria), FLEXI (Central, Precursores 152), Santorini (Mongester) y Floresta Living 444 (terminado).",
+    "cita": "Planilla de anotaciones tomada durante el recorrido del 22-ago-2026 (26 registros con inmobiliaria, dirección, caseta, stock y horario).",
+    "fuentes": [
+     "Anotaciones de campo · ANOTACIONES.xlsx · recorrido 22-ago-2026"
+    ]
+   },
+   {
+    "fecha": "2026-08-22",
     "proyecto": "FLEXI III",
     "dev": "Central Inmobiliaria",
     "proyecto_id": "flexi-iii",
@@ -821,7 +837,11 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 83 m.",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "si",
+   "caseta_nota": "Caseta de ventas en el terreno, pero estaba CERRADA en la visita.",
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En construcción"
   },
   {
    "id": "conde-ii",
@@ -919,7 +939,10 @@ window.PORTAL_DATA = {
    ],
    "wa_label": "Washington B. · AyD",
    "estado_obra": "En obra · cerco azul, estructura en altura",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -1575,8 +1598,11 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 27 m del marcador).",
-   "estado_obra": "En obra · cerco de Azzurra con banderolas de informes",
-   "cuadrante_verificado": "2026-08-22"
+   "estado_obra": "En construcción",
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "dmont-dicon",
@@ -1832,7 +1858,7 @@ window.PORTAL_DATA = {
    "id": "estelar-1080",
    "name": "Estelar 1080",
    "dev": "Galeon",
-   "addr": "Av. Velasco Astete 1080, Chacarilla del Estanque, Santiago de Surco",
+   "addr": "Av. Velasco Astete 1080, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
    "entrega": "~Febrero 2027",
@@ -1931,9 +1957,9 @@ window.PORTAL_DATA = {
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m.",
    "caseta_ventas": "si",
-   "caseta_nota": "Sala de ventas en el propio terreno: letrero «SALA DE VENTAS AQUÍ» con flecha (Galeón). Tel. en cartel: 976 357 594 / 988 351 473.",
+   "caseta_nota": "Caseta de ventas atendida en el terreno (letrero «Sala de ventas aquí»).",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · con sala de ventas en el terreno",
+   "estado_obra": "En construcción",
    "cuadrante_verificado": "2026-08-22"
   },
   {
@@ -1941,8 +1967,8 @@ window.PORTAL_DATA = {
    "name": "Floresta Living 444",
    "dev": "EE Inmobiliaria",
    "addr": "Av. de la Floresta 442, Urb. Chacarilla del Estanque, Santiago de Surco (borde Oeste, dentro de la urbanizacion).",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En construcción",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "TERMINADO · entrega inmediata",
    "entrega": "Diciembre 2026",
    "lat": -12.116010161531724,
    "lng": -76.98720446798781,
@@ -2048,10 +2074,10 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m.",
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: tótem de EE Inmobiliaria en la vereda (999 276 371 / 988 609 572).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: tótem en la vereda.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · tótem comercial en vereda",
+   "estado_obra": "Terminado",
    "cuadrante_verificado": "2026-08-22"
   },
   {
@@ -2060,7 +2086,7 @@ window.PORTAL_DATA = {
    "dev": "Odima Inmobiliaria",
    "addr": "Jr. Conde de la Vega del Ren 149, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Entrega inmediata — ÚLTIMA unidad",
+   "estado_raw": "Entrega inmediata · ÚLTIMO departamento",
    "entrega": "Entrega inmediata (últimas unidades)",
    "lat": -12.117556047760015,
    "lng": -76.983405589272,
@@ -2128,7 +2154,11 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 77 m.",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "estado_obra": "Último departamento en venta",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "jardines-monte-real",
@@ -2136,7 +2166,7 @@ window.PORTAL_DATA = {
    "dev": "Central Inmobiliaria",
    "addr": "Jr. Monte Real 496, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En construcción",
-   "estado_raw": "En construcción — últimas unidades",
+   "estado_raw": "En obra · ÚLTIMOS departamentos",
    "entrega": "Marzo/Abril 2027",
    "lat": -12.11186929636266,
    "lng": -76.98578255636211,
@@ -2223,8 +2253,8 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 59 m.",
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: carteles «ÚLTIMAS UNIDADES» sobre el cerco de obra.",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: carteles sobre el cerco.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · carteles de «últimas unidades» sobre el cerco",
    "cuadrante_verificado": "2026-08-22"
@@ -2368,7 +2398,7 @@ window.PORTAL_DATA = {
    "dev": "Edifikarte",
    "addr": "Calle Monte Alegre 109, Chacarilla del Estanque, Santiago de Surco, Lima",
    "estado_grupo": "En planos",
-   "estado_raw": "En preventa · 3–4 dorm, 115–276 m², 7 pisos; sin lista de precios aún",
+   "estado_raw": "Próximo proyecto (Edifikarte)",
    "entrega": "Por confirmar",
    "lat": -12.11587,
    "lng": -76.98609,
@@ -2429,8 +2459,11 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "estado_obra": "En planos / inicio de obra",
-   "cuadrante_verificado": "2026-08-22"
+   "estado_obra": "Próximo proyecto: aún sin obra",
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "monte-carmelo-250",
@@ -2513,8 +2546,8 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: valla comercial sobre el cerco de obra (981 386 111).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: valla comercial sobre el cerco.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · estructura con malla, cartel comercial activo",
    "cuadrante_verificado": "2026-08-22"
@@ -2882,8 +2915,8 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 67 m.",
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: letrero «ÚLTIMO DEPA · 2 DORMS 86 m²» de Edifikarte sobre la vereda (981 386 111).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: letrero en vereda.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Terminado · ÚLTIMA unidad en venta (2 dorm, 86 m²)",
    "cuadrante_verificado": "2026-08-22"
@@ -3365,11 +3398,12 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 3 m del marcador).",
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: banner de Azzurra sobre el cerco de obra (944 216 477 · azzurra.com.pe).",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: banner sobre el cerco de obra.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En construcción · banner de Azzurra sobre el cerco",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "ref_urbana": "Al lado de un colegio nido y cerca del colegio Santa María Marianistas"
   },
   {
    "id": "monte-real-265",
@@ -3709,9 +3743,9 @@ window.PORTAL_DATA = {
   },
   {
    "id": "monteflor",
-   "name": "Monteflor",
-   "dev": "Arch Inversiones Inmobiliarias",
-   "addr": "Jr. Monte Flor 523-525, esquina con Monte Real, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "name": "Monte Flor",
+   "dev": "Constructora Magnífica",
+   "addr": "Calle Monte Umbroso 166 con Monte Flor, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
    "entrega": "Agosto 2026 (aprox.)",
@@ -3723,7 +3757,7 @@ window.PORTAL_DATA = {
    "precio_hasta_usd": 385000,
    "dorms": "2–4",
    "m2": "64–240",
-   "wa": "981349116",
+   "wa": "975244600",
    "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
    "img": "assets/img-f1/monteflor/img-01.jpg",
    "planos": [
@@ -3778,7 +3812,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Verificado en campo (22-ago-2026): valla de «Monte Flor · Chacarilla - Surco» sobre Av. de los Precursores, anunciando 2 y 3 dormitorios desde 193 m², constructora Magnífica, tel. 975 244 600. Pendiente cruzar la ficha comercial completa con el asesor.",
+   "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -3806,13 +3840,16 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": true,
    "geo_nota": "Ubicación por confirmar. En campo (22-ago-2026) se fotografió una valla de «Monte Flor Chacarilla-Surco» sobre Av. de los Precursores, a ~500 m de esta posición, con datos que NO coinciden con nuestra ficha (anuncia «desde 193 m²» y 3 dormitorios, logo Reusche Reyna, tel. 975 244 600). Verificar si es el mismo proyecto, otra etapa, o una valla publicitaria colocada fuera del sitio.",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "parque-monte-carmelo",
    "name": "Parque Monte Carmelo",
    "dev": "EE Inmobiliaria",
-   "addr": "Jr. Monte Carmelo 341, Chacarilla del Estanque, Santiago de Surco (frente Parque Doig)",
+   "addr": "Jr. Monte Carmelo 341, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
    "entrega": "19 de noviembre de 2027",
@@ -4066,7 +4103,11 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 44 m del marcador).",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: cartel en la casa del terreno, que aún no ha sido demolida.",
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "Pre-obra: la casa del terreno sigue en pie, con cartel del proyecto"
   },
   {
    "id": "precursores-525",
@@ -4179,7 +4220,11 @@ window.PORTAL_DATA = {
    ],
    "geo_aprox": true,
    "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "banner",
+   "caseta_nota": "Sin caseta: cerco de obra rotulado.",
+   "caseta_fecha": "2026-08-22",
+   "estado_obra": "En obra · ÚLTIMO departamento (dúplex 603)"
   },
   {
    "id": "precursores-ii",
@@ -4301,8 +4346,8 @@ window.PORTAL_DATA = {
   {
    "id": "santorini",
    "name": "Santorini",
-   "dev": "Morgenstern Inmobiliaria",
-   "addr": "Calle Monteflor 693, esquina con Calle Montereal, Chacarilla del Estanque, Santiago de Surco, Lima (frente al Parque Miró Quesada)",
+   "dev": "Mongester Inmobiliaria",
+   "addr": "Calle Monte Real 380 con Monte Flor 693, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
    "entrega": "Marzo 2027",
@@ -4491,13 +4536,16 @@ window.PORTAL_DATA = {
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 18 m del marcador).",
    "estado_obra": "En construcción",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_fecha": "2026-08-22"
   },
   {
    "id": "spazio",
    "name": "Spazio",
    "dev": "Grupo Dicon",
-   "addr": "Av. De los Precursores 166-172, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "addr": "Av. de los Precursores 166-172, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción · 20 de 27 unidades disponibles (panel de ventas, 22-ago-2026)",
    "entrega": "2026",
@@ -4663,14 +4711,15 @@ window.PORTAL_DATA = {
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m.",
    "caseta_ventas": "si",
-   "caseta_nota": "Sala de ventas atendida: se fotografió el panel de disponibilidad por unidad dentro del local.",
+   "caseta_nota": "Caseta de ventas atendida. Horario: lunes a viernes de 9:00 a 18:00 y sábados de 9:00 a 17:00.",
    "caseta_fecha": "2026-08-22",
    "stock": {
     "n": 20,
     "label": "20 de 27 disponibles (panel de la sala de ventas)"
    },
    "estado_obra": "Terminado o en acabados · sala de ventas atendida (20 de 27 disponibles)",
-   "cuadrante_verificado": "2026-08-22"
+   "cuadrante_verificado": "2026-08-22",
+   "horario_ventas": "L–V 9:00–18:00 · S 9:00–17:00"
   },
   {
    "id": "terraverde",
@@ -4880,9 +4929,9 @@ window.PORTAL_DATA = {
    "id": "precursores-verde",
    "name": "Precursores Verde",
    "dev": "Guerin Proyectos S.A.C.",
-   "addr": "Av. de los Precursores 278-280, Chacarilla del Estanque, Santiago de Surco",
+   "addr": "Av. de los Precursores 280, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
-   "estado_raw": "En obra · descubierto en campo 22-ago-2026",
+   "estado_raw": "En obra · ÚLTIMOS departamentos",
    "entrega": "Por confirmar (obra 2025–2028 según licencia)",
    "lat": -12.112983,
    "lng": -76.979264,
@@ -4904,7 +4953,10 @@ window.PORTAL_DATA = {
    "typologies": [],
    "flats_summary": [],
    "cochera_status": "nd",
-   "stock": null,
+   "stock": {
+    "n": null,
+    "label": "Últimos departamentos"
+   },
    "mostrar": true,
    "geo_aprox": false,
    "total_pisos": 8,
@@ -4922,19 +4974,19 @@ window.PORTAL_DATA = {
    "precio_hist": [],
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador).",
    "caseta_ventas": "no",
-   "caseta_nota": "Sin punto de venta en sitio: cartel de obra y valla de marca sobre el cerco.",
+   "caseta_nota": "Sin caseta de ventas: cartel de obra y valla de marca.",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "En obra · cerco de marca y cartel de licencia instalados",
+   "estado_obra": "En obra · se anuncian los últimos departamentos",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "astete-living",
    "name": "Astete Living",
-   "dev": "Por confirmar",
-   "addr": "Av. Velasco Astete (altura cuadra 10), Chacarilla del Estanque, Santiago de Surco",
+   "dev": "EDSA Inmobiliaria",
+   "addr": "Av. Velasco Astete 1419, Santiago de Surco",
    "estado_grupo": "En planos",
-   "estado_raw": "Anunciado como «Próximo proyecto» · detectado en campo 22-ago-2026",
+   "estado_raw": "Próximo lanzamiento · casa aún en pie, fachada rotulada",
    "entrega": "Por confirmar",
    "lat": -12.12009,
    "lng": -76.98452,
@@ -4957,7 +5009,7 @@ window.PORTAL_DATA = {
    "stock": null,
    "mostrar": true,
    "geo_aprox": false,
-   "comentario": "Proyecto NUEVO detectado en recorrido de campo (22-ago-2026). Cerco negro sobre Av. Velasco Astete con la marca «ASTETE Living» y la leyenda «PRÓXIMO PROYECTO» — todavía no inicia obra. Sin desarrollador, precios ni fecha publicados aún. Vale seguirlo: es el borde sur del cuadrante.",
+   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías.",
    "fuentes": [
     "Cerco de obra fotografiado en campo 22-ago-2026"
    ],
@@ -4967,18 +5019,18 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cerco anunciando «próximo proyecto».",
    "caseta_fecha": "2026-08-22",
-   "estado_obra": "Sin obra · terreno cercado anunciando «próximo proyecto»",
+   "estado_obra": "Sin obra: la casa del terreno sigue en pie, pintada y rotulada con la marca",
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22"
   },
   {
    "id": "flexi-iii",
-   "name": "FLEXI III",
+   "name": "FLEXI II / III",
    "dev": "Central Inmobiliaria",
-   "addr": "Chacarilla del Estanque, Santiago de Surco (cerca de Conde de la Vega del Ren)",
+   "addr": "Av. de los Precursores 152, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En planos",
-   "estado_raw": "Terreno cercado · pre-obra",
-   "estado_obra": "Terreno cercado y rotulado, aún sin estructura",
+   "estado_raw": "Próximo lanzamiento · casa aún en pie, pintada y rotulada",
+   "estado_obra": "Sin obra: la casa del terreno sigue en pie, pintada y rotulada con la marca",
    "entrega": "Por confirmar",
    "lat": -12.11131,
    "lng": -76.97948,
@@ -5006,7 +5058,7 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: portón rotulado con la marca y un QR («Descubre FLEXI III»).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Portón amarillo rotulado «FLEXI III — Elige cómo quieres vivir», de Central Inmobiliaria (la misma de Jardines de Monte Real). Terreno cercado, todavía sin obra visible. Sin tipologías ni precios publicados.",
+   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» y las anotaciones de campo lo registran como «FLEXI II»: confirmar el nombre comercial con el asesor. Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados.",
    "fuentes": [
     "Recorrido de campo 2026-08-22 · foto IMG_7918"
    ],
@@ -5017,11 +5069,11 @@ window.PORTAL_DATA = {
   },
   {
    "id": "living-monte-real",
-   "name": "Living Monte Real",
-   "dev": "Grupo Chacarilla Sur",
+   "name": "Monte 2",
+   "dev": "Grupo Dicon",
    "addr": "Jr. Monte Real, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
-   "estado_raw": "En obra · fachada avanzada, cerco de marca instalado",
+   "estado_raw": "En obra · con caseta de ventas",
    "estado_obra": "Obra avanzada: fachada y locales a nivel de vereda ya cerrados con cerco de marca",
    "entrega": "Por confirmar",
    "lat": -12.11192,
@@ -5048,8 +5100,8 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la numeración exacta.",
-   "caseta_ventas": "banner",
-   "caseta_nota": "Sin caseta: cerco de obra rotulado con la marca, metrajes y WhatsApp (949 107 186).",
+   "caseta_ventas": "si",
+   "caseta_nota": "Caseta de ventas en el terreno (anotación de campo).",
    "caseta_fecha": "2026-08-22",
    "comentario": "Proyecto NUEVO detectado en el recorrido del 22-ago-2026. Cerco granate de Grupo Chacarilla Sur sobre Jr. Monte Real: «1.2.3 DORMS — desde 85 m² hasta 193 m²», WhatsApp 949 107 186 (la misma asesora de Precursores 525). Obra avanzada. Faltan precios por unidad.",
    "fuentes": [
@@ -5059,6 +5111,129 @@ window.PORTAL_DATA = {
    "precio_hist": [],
    "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22"
+  },
+  {
+   "isGEU": false,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": null,
+   "web": null,
+   "img": null,
+   "brochure": null,
+   "planos": [],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "amenidades": [],
+   "precio_hist": [],
+   "descubierto_campo": "2026-08-22",
+   "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia.",
+   "fuentes": [
+    "Anotaciones de campo del recorrido 2026-08-22"
+   ],
+   "id": "the-leven",
+   "name": "The Leven",
+   "dev": "Por confirmar",
+   "addr": "Av. de los Precursores 1443, Santiago de Surco",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "ÚLTIMO departamento (cartel en fachada)",
+   "estado_obra": "Terminado · último departamento en venta",
+   "entrega": "Por confirmar",
+   "lat": -12.118,
+   "lng": -76.976,
+   "caseta_ventas": "no",
+   "caseta_nota": "Sin caseta de ventas: solo cartel en la fachada.",
+   "caseta_fecha": "2026-08-22",
+   "en_cuadrante": false,
+   "cuadrante_verificado": "2026-08-22",
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. ÚLTIMO departamento (cartel en fachada). Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
+  },
+  {
+   "isGEU": false,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": null,
+   "web": null,
+   "img": null,
+   "brochure": null,
+   "planos": [],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "amenidades": [],
+   "precio_hist": [],
+   "descubierto_campo": "2026-08-22",
+   "geo_nota": "Ubicación aproximada por la dirección de las anotaciones de campo del 2026-08-22. Falta fotografiarlo para fijarla.",
+   "fuentes": [
+    "Anotaciones de campo del recorrido 2026-08-22"
+   ],
+   "id": "monte-alegre-137",
+   "name": "Monte Alegre 137",
+   "dev": "Por confirmar",
+   "addr": "Calle Monte Alegre 137, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "Registrado en el recorrido; faltan datos comerciales",
+   "estado_obra": "Por confirmar",
+   "entrega": "Por confirmar",
+   "lat": -12.11616,
+   "lng": -76.98583,
+   "caseta_ventas": "nd",
+   "caseta_nota": "",
+   "caseta_fecha": "2026-08-22",
+   "en_cuadrante": true,
+   "cuadrante_verificado": "2026-08-22",
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. Registrado en el recorrido; faltan datos comerciales. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
+  },
+  {
+   "isGEU": false,
+   "precio_desde_usd": null,
+   "precio_hasta_usd": null,
+   "dorms": "Por confirmar",
+   "m2": "Por confirmar",
+   "wa": null,
+   "web": null,
+   "img": null,
+   "brochure": null,
+   "planos": [],
+   "typologies": [],
+   "flats_summary": [],
+   "cochera_status": "nd",
+   "stock": null,
+   "mostrar": true,
+   "geo_aprox": true,
+   "amenidades": [],
+   "precio_hist": [],
+   "descubierto_campo": "2026-08-22",
+   "geo_nota": "Ubicación aproximada sobre el eje de Av. de la Floresta (junto al parque del mismo nombre). Falta la dirección exacta y fotografiarlo para fijar el punto.",
+   "fuentes": [
+    "Anotaciones de campo del recorrido 2026-08-22"
+   ],
+   "id": "parque-la-floresta",
+   "name": "Parque La Floresta",
+   "dev": "Por confirmar",
+   "addr": "Frente al Parque La Floresta, Chacarilla del Estanque, Santiago de Surco",
+   "estado_grupo": "En construcción",
+   "estado_raw": "En construcción · con caseta de ventas",
+   "estado_obra": "En construcción",
+   "entrega": "Por confirmar",
+   "lat": -12.1163,
+   "lng": -76.9876,
+   "caseta_ventas": "si",
+   "caseta_nota": "Tiene caseta de ventas (anotación de campo).",
+   "caseta_fecha": "2026-08-22",
+   "en_cuadrante": true,
+   "cuadrante_verificado": "2026-08-22",
+   "comentario": "Registrado en las anotaciones del recorrido del 22-ago-2026. En construcción · con caseta de ventas. Ubicación aproximada por dirección — pendiente fotografiar y confirmar datos comerciales con el asesor."
   }
  ]
 }
