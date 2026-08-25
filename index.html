@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260824p"></script>
+<script src="data/portal-data.js?v=20260824q"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -375,17 +375,17 @@ quadLayer.bindTooltip('Mi cuadrante · Chacarilla del Estanque',{sticky:true});
 map.fitBounds(quadLayer.getBounds(),{padding:[35,35]});
 function toggleQuad(){const b=document.getElementById('btnQuad');if(map.hasLayer(quadLayer)){map.removeLayer(quadLayer);b.classList.remove('on');}else{quadLayer.addTo(map);b.classList.add('on');}}
 
-const ES_NUEVO=p=>!!(p.descubierto_campo);
+const ES_NUEVO=p=>!!(p.mapeado_desde);
 function icon(p){
   const c=colorOf(p),s=p.isGEU?27:(p.destacado?20:15),b=p.isGEU?3:(p.destacado?3:2);
   let ring=p.isGEU?`box-shadow:0 0 0 2.5px #fff,0 0 0 5px ${c},0 2px 6px rgba(0,0,0,.4);`:'box-shadow:0 1px 4px rgba(0,0,0,.35);';
-  if(ES_NUEVO(p)&&!p.isGEU) ring=`box-shadow:0 0 0 2.5px #fff,0 0 0 5px #c2185b,0 2px 6px rgba(0,0,0,.4);`;
+  if(ES_NUEVO(p)&&!p.isGEU) ring=`box-shadow:0 0 0 2.5px #fff,0 0 0 4px #8a8577,0 2px 6px rgba(0,0,0,.3);`;
   const dim=p.en_cuadrante||p.isGEU?1:.45;
   const noPrice=!p.isGEU&&p.en_cuadrante&&!p.precio_desde_usd;
   const bg=noPrice?'#fff':c, bd=noPrice?`2px dashed ${c}`:`${b}px solid #fff`;
   const fuera=!p.en_cuadrante&&!p.isGEU;
   const tips=[];
-  if(ES_NUEVO(p))tips.push('NUEVO · detectado en campo');
+  if(ES_NUEVO(p))tips.push('Mapeado en el recorrido del 22-ago-2026');
   if(noPrice)tips.push('Precio a consultar');
   if(fuera)tips.push('Fuera del cuadrante');
   if(p.caseta_ventas==='si')tips.push('Sala de ventas');
@@ -473,7 +473,7 @@ const DORMS=[[0,'Todas'],[1,'1 dorm'],[2,'2 dorm'],[3,'3 dorm']];
 const COCHERA=[['todos','Cochera: todos'],['si','Incluye'],['no','No incluye'],['nd','Sin dato']];
 const DATAF=[['todos','Info: todos'],['completa','Completa'],['tipologias','Precio por tipología'],['general','Solo general'],['stock','Stock conocido'],['incompleta','Incompleta']];
 const FRESHF=[['todos','Todas'],['fresh','● Frescas ≤35d'],['stale','● Por reconfirmar']];
-const NOVF=[['todos','Todos'],['nuevo','🆕 Nuevos del recorrido'],['caseta','🏠 Con sala de ventas'],['fuera','Fuera del cuadrante']];
+const NOVF=[['todos','Todos'],['nuevo','Mapeados en el último recorrido'],['caseta','🏠 Con sala de ventas'],['fuera','Fuera del cuadrante']];
 let curNov='todos';
 function setNov(v,btn){curNov=v;btn.parentNode.querySelectorAll('button[onclick^="setNov"]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');refresh();}
 let curEstado='todos', curDorm=0, curCochera='todos', curData='todos', curFresh='todos', mainView='map';
@@ -490,7 +490,7 @@ function fmatch(p){
   if(curData!=='todos'&&curData!=='stock'&&dataLevel(p)!==curData)return false;
   if(curFresh==='fresh'&&!p.isGEU&&!verifInfo(p).fresh)return false;
   if(curFresh==='stale'&&(p.isGEU||verifInfo(p).fresh))return false;
-  if(curNov==='nuevo'&&!p.descubierto_campo)return false;
+  if(curNov==='nuevo'&&!p.mapeado_desde)return false;
   if(curNov==='caseta'&&p.caseta_ventas!=='si')return false;
   if(curNov==='fuera'&&(p.en_cuadrante||p.isGEU))return false;
   return true;
@@ -553,7 +553,7 @@ function buildList(){
       : `${fmtUsd(p.precio_desde_usd)||'<span style=color:#b8860b>Precio a consultar</span>'}${pr.pm2?` · $${pr.pm2.toLocaleString()}/m²`:''}${!pr.pm2&&p.flats_summary.length?` · <span style=color:#b8860b>$m² no comparable</span>`:''}`;
     return `<div class="pi${p.isGEU?' geuitem':''}" onclick="clickItem('${p.id}')">
       ${thumbHtml(p,'pthumb')}
-      <div class="pbody"><div class="pname">${p.name}${p.isGEU?' <span style="color:var(--azul)">★</span>':''}${p.descubierto_campo?' <span style="font-size:8.5px;font-weight:800;color:#fff;background:#c2185b;padding:1px 5px;border-radius:4px">NUEVO</span>':''}${!p.en_cuadrante&&!p.isGEU?' <span style="font-size:8.5px;font-weight:700;color:#9a6a00;background:#FBEAD2;padding:1px 5px;border-radius:4px">FUERA</span>':''}</div>
+      <div class="pbody"><div class="pname">${p.name}${p.isGEU?' <span style="color:var(--azul)">★</span>':''}${!p.en_cuadrante&&!p.isGEU?' <span style="font-size:8.5px;font-weight:700;color:#9a6a00;background:#FBEAD2;padding:1px 5px;border-radius:4px">FUERA</span>':''}</div>
         <div class="pdev">${p.dev}</div>
         <div class="pprice">${priceline} ${priceDelta(p)}</div>
         <div class="pmeta">${p.dorms||'—'} dorm · ${p.m2} m²</div>
@@ -1038,7 +1038,7 @@ function buildUpdates(){
    ["Precursores II","IPIROS","3 DE 19",RED,"$2,380","Av. Precursores 789, pronta entrega. Quedan 3 de 19 (3 dorm, US$385–410k)."],
    ["Jardines de Monte Real","Central","SEPARÁNDOSE",AMBER,"$2,580","3 dorm 94 m²: piso 4 en separación; queda 4 y 5. S/836,496 con estac."],
    ["Santorini","Morgenstern","+50% VENDIDO",AMBER,"$2,190","Más de la mitad vendido; cambia rápido. Entrega mar-2027."],
-   ["Monte Alegre 109","Edifikarte","NUEVO · PLANOS",GRN,"—","Lanzamiento en Calle Monte Alegre 109. Flats 3–4 dorm, 115–276 m², 7 pisos. Sin lista de precios aún."],
+   ["Monte Alegre 109","Edifikarte","EN PLANOS",GRN,"—","Lanzamiento en Calle Monte Alegre 109. Flats 3–4 dorm, 115–276 m², 7 pisos. Sin lista de precios aún."],
   ];
   const tr=rows.map(r=>`<tr>
      <td><b>${r[0]}</b><div style="font-size:11px;color:#8a8a8a">${r[1]}</div></td>

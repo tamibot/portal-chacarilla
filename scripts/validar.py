@@ -77,6 +77,11 @@ if poly:
     for p in projects:
         if p.get("mostrar") is False or p.get("lat") is None: continue
         real=_dentro(p["lat"],p["lng"],poly)
+        if p.get("borde_avenida"):
+            # excepcion declarada: da sobre una avenida-limite, se registra "en el borde"
+            if p.get("en_cuadrante"):
+                err(f'{p["id"]}: marcado borde_avenida pero sigue como en_cuadrante=True')
+            continue
         if bool(p.get("en_cuadrante")) != real:
             err(f'{p["id"]}: en_cuadrante={p.get("en_cuadrante")} pero geométricamente está {"DENTRO" if real else "FUERA"} del cuadrante')
 

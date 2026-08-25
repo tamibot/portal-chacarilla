@@ -38,6 +38,22 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-24",
+    "proyecto": "Ave. del Sur 220",
+    "dev": "Grupo Espacio Urbano (GEU)",
+    "proyecto_id": "ave-del-sur-220",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría interna",
+    "autor": "Benchmark",
+    "texto": "Se restauró el criterio de borde: los proyectos que dan sobre Velasco Astete, de los Precursores o de la Floresta vuelven a registrarse «en el borde» y no como cuadrante interior. Los límites del cuadrante nunca cambiaron; lo que se había movido era la clasificación de 10 proyectos. Quedan 20 dentro y 13 en el borde.",
+    "cita": "Regla del cuadrante declarada en meta.regla_cuadrante.",
+    "fuentes": [
+     "Auditoría del 24-ago-2026"
+    ]
+   },
+   {
+    "fecha": "2026-08-24",
     "proyecto": "Floresta Living 444",
     "dev": "EE Inmobiliaria",
     "proyecto_id": "floresta-living-444",
@@ -129,7 +145,7 @@ window.PORTAL_DATA = {
     "dev": "Edifikarte",
     "proyecto_id": "conde-de-la-vega-128",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Base de datos interna",
     "autor": "Benchmark",
@@ -277,8 +293,8 @@ window.PORTAL_DATA = {
     "dev": "Grupo Chacarilla Sur",
     "proyecto_id": "living-monte-real",
     "tags": [
-     "nuevo",
-     "estado"
+     "estado",
+     "registro"
     ],
     "canal": "Foto de campo",
     "autor": "Benchmark",
@@ -463,7 +479,7 @@ window.PORTAL_DATA = {
     "dev": "Vibra Inmobiliaria",
     "proyecto_id": "floresta-343",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Búsqueda en internet",
     "autor": "Benchmark",
@@ -482,7 +498,7 @@ window.PORTAL_DATA = {
     "dev": "V&V Grupo Inmobiliario",
     "proyecto_id": "le-parc",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Archivo interno + búsqueda",
     "autor": "Benchmark",
@@ -501,8 +517,8 @@ window.PORTAL_DATA = {
     "dev": "Edifikarte",
     "proyecto_id": "monte-alegre",
     "tags": [
-     "nuevo",
-     "estado"
+     "estado",
+     "registro"
     ],
     "canal": "Web oficial + brochure",
     "autor": "Benchmark",
@@ -522,7 +538,7 @@ window.PORTAL_DATA = {
     "dev": "Edifikarte",
     "proyecto_id": "monte-mar-167",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Brochure oficial",
     "autor": "Benchmark",
@@ -560,7 +576,7 @@ window.PORTAL_DATA = {
     "dev": "Central Inmobiliaria",
     "proyecto_id": "jardines-monte-real",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Brochure oficial",
     "autor": "Benchmark",
@@ -595,7 +611,7 @@ window.PORTAL_DATA = {
     "dev": "Guerin Proyectos S.A.C.",
     "proyecto_id": "precursores-verde",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Brochure oficial",
     "autor": "Benchmark",
@@ -630,9 +646,9 @@ window.PORTAL_DATA = {
     "dev": "EE Inmobiliaria",
     "proyecto_id": "ten-apartments",
     "tags": [
-     "nuevo",
      "precio",
-     "estado"
+     "estado",
+     "registro"
     ],
     "canal": "Web oficial + brochure",
     "autor": "Benchmark",
@@ -722,8 +738,8 @@ window.PORTAL_DATA = {
     "dev": "Proyectos PyR",
     "proyecto_id": "the-leven",
     "tags": [
-     "nuevo",
-     "venta"
+     "venta",
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin",
@@ -742,7 +758,7 @@ window.PORTAL_DATA = {
     "dev": "por confirmar",
     "proyecto_id": "ten-apartments",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin",
@@ -798,8 +814,8 @@ window.PORTAL_DATA = {
     "proyecto": "— Cuadrante",
     "dev": "",
     "tags": [
-     "nuevo",
-     "estado"
+     "estado",
+     "registro"
     ],
     "canal": "Anotaciones de campo",
     "autor": "Martin",
@@ -815,7 +831,7 @@ window.PORTAL_DATA = {
     "dev": "Central Inmobiliaria",
     "proyecto_id": "flexi-iii",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin",
@@ -834,7 +850,7 @@ window.PORTAL_DATA = {
     "dev": "Grupo Chacarilla Sur",
     "proyecto_id": "living-monte-real",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin",
@@ -983,7 +999,7 @@ window.PORTAL_DATA = {
     "dev": "Por confirmar",
     "proyecto_id": "astete-living",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin (recorrido de zona)",
@@ -1002,7 +1018,7 @@ window.PORTAL_DATA = {
     "dev": "Inmobiliaria AyD",
     "proyecto_id": "narciso-ayd",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin (recorrido de zona)",
@@ -1022,7 +1038,7 @@ window.PORTAL_DATA = {
     "dev": "Guerin",
     "proyecto_id": "precursores-verde",
     "tags": [
-     "nuevo"
+     "registro"
     ],
     "canal": "Visita de campo",
     "autor": "Martin (recorrido de zona)",
@@ -1071,8 +1087,8 @@ window.PORTAL_DATA = {
     ],
     "proyecto_id": "monte-umbroso-247",
     "tags": [
-     "nuevo",
-     "promo"
+     "promo",
+     "registro"
     ],
     "cita": "«Finalmente tenemos todo listo, ya contamos con la lista de precios oficial de MONTE UMBROSO 247 (frente al Parque Bella Luz)... proyecto boutique de solo 12 departamentos (6 pisos). Entrega: Diciembre 2027.» — Washington Benavides, 19-ago"
    },
@@ -1189,8 +1205,8 @@ window.PORTAL_DATA = {
     "autor": "Asesor Dicon",
     "texto": "D'Mont agotado. D'Mont 2 en preventa: 15 vendidos, quedan 8 de 23. Precios web sin cochera (+US$25k). Flat 3d ~122 m²: US$263,064.",
     "tags": [
-     "nuevo",
-     "venta"
+     "venta",
+     "registro"
     ],
     "cita": "«D'Mont ya se vendió por completo; ahora estamos vendiendo D'Mont 2 en preventa.» — asesor Grupo Dicon"
    },
@@ -1781,7 +1797,9 @@ window.PORTAL_DATA = {
     "base_interna": "Relevamiento interno"
    },
    "regla": "Toda comparación de precio sale de una de estas seis fuentes y cada proyecto declara la suya. Cuando hay lista de precios por unidad, esa manda; cuando el asesor cotizó por WhatsApp, esa cotización pisa a la web y al brochure porque es lo más fresco. El precio de un portal solo se usa si no hay nada mejor."
-  }
+  },
+  "regla_cuadrante": "El cuadrante es el mismo desde el corte 1 y no se mueve. Los proyectos que dan sobre una de las tres avenidas-límite (Velasco Astete, de los Precursores y de la Floresta) se registran como «en el borde»: compiten y se comparan, pero no se cuentan como parte del cuadrante interior.",
+  "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados."
  },
  "quadrant": [
   [
@@ -3625,7 +3643,7 @@ window.PORTAL_DATA = {
    "lat": -12.112102950138416,
    "lng": -76.98446300308579,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 202941,
    "precio_hasta_usd": 266032,
    "dorms": "2–3",
@@ -3720,7 +3738,7 @@ window.PORTAL_DATA = {
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m.",
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 76 m. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "caseta_ventas": "si",
    "caseta_nota": "Sala de ventas de Galeon Inmobiliaria en la esquina, con módulo atendido.",
    "caseta_fecha": "2026-08-22",
@@ -3771,7 +3789,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "id": "floresta-living-444",
@@ -3784,7 +3803,7 @@ window.PORTAL_DATA = {
    "lat": -12.116010161531724,
    "lng": -76.98720446798781,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 196471,
    "precio_hasta_usd": 319733,
    "dorms": "2–3",
@@ -3889,7 +3908,7 @@ window.PORTAL_DATA = {
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m.",
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 57 m. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: tótem en la vereda.",
    "caseta_fecha": "2026-08-22",
@@ -3945,7 +3964,8 @@ window.PORTAL_DATA = {
      "vendidas": 13,
      "total": 18
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "id": "hana",
@@ -7049,7 +7069,7 @@ window.PORTAL_DATA = {
    "lat": -12.116567517125498,
    "lng": -76.98061927217682,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 203700,
    "precio_hasta_usd": 544425,
    "dorms": "2–3",
@@ -7155,7 +7175,7 @@ window.PORTAL_DATA = {
     }
    ],
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
+   "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "cuadrante_verificado": "2026-08-22",
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cerco de obra rotulado.",
@@ -7206,7 +7226,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": 20
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "id": "precursores-ii",
@@ -7219,7 +7240,7 @@ window.PORTAL_DATA = {
    "lat": -12.11512850307942,
    "lng": -76.97923436666099,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 385000,
    "precio_hasta_usd": 410000,
    "dorms": "3",
@@ -7327,7 +7348,7 @@ window.PORTAL_DATA = {
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 82 m.",
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 82 m. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "cuadrante_verificado": "2026-08-22",
    "documentos": [
     {
@@ -7380,7 +7401,8 @@ window.PORTAL_DATA = {
      "vendidas": 16,
      "total": 20
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "id": "santorini",
@@ -7684,7 +7706,7 @@ window.PORTAL_DATA = {
    "lat": -12.11850208401939,
    "lng": -76.98248346969847,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": 192428,
    "precio_hasta_usd": 387491,
    "dorms": "3–6",
@@ -7844,7 +7866,7 @@ window.PORTAL_DATA = {
     }
    ],
    "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m.",
+   "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 84 m. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "caseta_ventas": "si",
    "caseta_nota": "Sala de ventas propia con dos banderolas «INFORMES» en la puerta y sello «Best Place to Live» (3er año consecutivo).",
    "caseta_fecha": "2026-08-22",
@@ -7900,7 +7922,8 @@ window.PORTAL_DATA = {
      "vendidas": 7,
      "total": 27
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "id": "terraverde",
@@ -8178,7 +8201,6 @@ window.PORTAL_DATA = {
    "caseta_nota": null,
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Sin obra iniciada: AyD lo publica como «EN PLANOS».",
-   "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "como_presenta": "Sin material comercial en obra todavía; solo el cartel de licencia.",
    "pedido": null,
@@ -8194,7 +8216,8 @@ window.PORTAL_DATA = {
      "fecha": "2026-02",
      "tipo": "brochure"
     }
-   ]
+   ],
+   "mapeado_desde": "2026-08-22"
   },
   {
    "id": "precursores-verde",
@@ -8207,7 +8230,7 @@ window.PORTAL_DATA = {
    "lat": -12.112983,
    "lng": -76.979264,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "1–3",
@@ -8265,12 +8288,11 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador).",
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 2 m del marcador). Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas: cartel de obra y valla de marca.",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "En obra · se anuncian los últimos departamentos",
-   "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "planos_fuente": "Plano de tipología de la web oficial de Guerin",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Precursores Verde con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
@@ -8311,7 +8333,9 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "borde_avenida": true,
+   "mapeado_desde": "2026-08-22"
   },
   {
    "id": "astete-living",
@@ -8324,7 +8348,7 @@ window.PORTAL_DATA = {
    "lat": -12.12009,
    "lng": -76.98452,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
@@ -8355,12 +8379,11 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador).",
+   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 0 m del marcador). Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta: solo cerco anunciando «próximo proyecto».",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Sin obra: la casa del terreno sigue en pie, pintada y rotulada con la marca",
-   "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "wa_label": null,
    "pedido": "Hola! Vi el anuncio de Astete Living en Velasco Astete 1419. Me pueden pasar información del proyecto: planos, metrajes y precios? Y para cuándo es el lanzamiento?",
@@ -8380,7 +8403,9 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "borde_avenida": true,
+   "mapeado_desde": "2026-08-22"
   },
   {
    "id": "flexi-iii",
@@ -8394,7 +8419,7 @@ window.PORTAL_DATA = {
    "lat": -12.11131,
    "lng": -76.97948,
    "isGEU": false,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "Por confirmar",
@@ -8413,7 +8438,7 @@ window.PORTAL_DATA = {
    "stock": null,
    "mostrar": true,
    "geo_aprox": true,
-   "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la dirección exacta.",
+   "geo_nota": "Ubicación tomada del recorrido de campo del 2026-08-22; falta la dirección exacta. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: portón rotulado con la marca y un QR («Descubre FLEXI III»).",
    "caseta_fecha": "2026-08-22",
@@ -8431,7 +8456,6 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "pedido": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de FLEXI III con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
@@ -8457,7 +8481,9 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "borde_avenida": true,
+   "mapeado_desde": "2026-08-22"
   },
   {
    "id": "living-monte-real",
@@ -8507,7 +8533,6 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Living Monte Real con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
@@ -8536,7 +8561,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "mapeado_desde": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -8572,8 +8598,7 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "descubierto_campo": "2026-08-22",
-   "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia.",
+   "geo_nota": "Ubicación aproximada por el número de Av. de los Precursores (1443), bastante más al sur que el resto del cuadrante (Spazio está en el 166 y Precursores II en el 789). Queda fuera del área de comparación; se registra como referencia. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "fuentes": [
     "Recorrido de campo 22-ago-2026 · fotos IMG_7958–7959",
     "https://www.proyectospyr.com",
@@ -8624,7 +8649,9 @@ window.PORTAL_DATA = {
    "precio_fuente": {
     "tipo": "web_oficial",
     "nota": "Web de PYR Edificaciones y ficha del proyecto: 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500."
-   }
+   },
+   "borde_avenida": true,
+   "mapeado_desde": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -8651,7 +8678,6 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada por la dirección de las anotaciones de campo del 2026-08-22. Falta fotografiarlo para fijarla.",
    "fuentes": [
     "Anotaciones de campo del recorrido 2026-08-22"
@@ -8681,7 +8707,8 @@ window.PORTAL_DATA = {
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
    },
-   "motivo_oculto": "Sin inmobiliaria identificada"
+   "motivo_oculto": "Sin inmobiliaria identificada",
+   "mapeado_desde": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -8708,7 +8735,6 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "descubierto_campo": "2026-08-22",
    "geo_nota": "Ubicación aproximada sobre el eje de Av. de la Floresta (junto al parque del mismo nombre). Falta la dirección exacta y fotografiarlo para fijar el punto.",
    "fuentes": [
     "Anotaciones de campo del recorrido 2026-08-22"
@@ -8738,7 +8764,8 @@ window.PORTAL_DATA = {
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
    },
-   "motivo_oculto": "Sin inmobiliaria identificada"
+   "motivo_oculto": "Sin inmobiliaria identificada",
+   "mapeado_desde": "2026-08-22"
   },
   {
    "id": "ten-apartments",
@@ -8817,7 +8844,6 @@ window.PORTAL_DATA = {
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: cerco negro rotulado con la marca, metrajes y WhatsApp.",
    "caseta_fecha": "2026-08-22",
-   "descubierto_campo": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
    "comentario": "Proyecto detectado en el recorrido del 22-ago-2026 y confirmado con fuente oficial: EE Inmobiliaria, Av. Reynaldo Vivanco 531 esq. Av. Monterrico Chico, 6 pisos, 1 y 2 dormitorios de 64.04 a 122.05 m², precios de lista S/ 501,000 a S/ 839,000, entrega 31-dic-2027. Está FUERA del cuadrante (Monterrico). Brochure de agosto-2026 con 21 láminas de tipologías descargado a la plataforma.",
    "fuentes": [
@@ -8885,7 +8911,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "mapeado_desde": "2026-08-22"
   },
   {
    "isGEU": false,
@@ -8925,7 +8952,7 @@ window.PORTAL_DATA = {
    "entrega": "Por confirmar",
    "lat": -12.11452,
    "lng": -76.987629,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "dorms": "1–2 (+ ambiente flex)",
    "m2": "64.01 – 104.98",
    "pisos": 8,
@@ -9003,7 +9030,7 @@ window.PORTAL_DATA = {
    "caseta_ventas": "nd",
    "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de la Floresta (entre el 130 y el 442, ambos verificados). Pendiente de confirmar con foto de campo.",
+   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de la Floresta (entre el 130 y el 442, ambos verificados). Pendiente de confirmar con foto de campo. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "descubierto_campo": null,
    "cuadrante_verificado": null,
    "fuentes": [
@@ -9058,7 +9085,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "isGEU": false,
@@ -9097,7 +9125,7 @@ window.PORTAL_DATA = {
    "entrega": "Por confirmar",
    "lat": -12.115046,
    "lng": -76.980044,
-   "en_cuadrante": true,
+   "en_cuadrante": false,
    "dorms": "3",
    "m2": "157 – 460",
    "unidades": 15,
@@ -9120,7 +9148,7 @@ window.PORTAL_DATA = {
    "caseta_ventas": "nd",
    "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
    "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de los Precursores (entre el 280 y el 525, ambos verificados). Pendiente de confirmar con foto de campo.",
+   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de los Precursores (entre el 280 y el 525, ambos verificados). Pendiente de confirmar con foto de campo. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
    "fuentes": [
     "Brochure oficial en archivo (le-parc-f1.pdf)",
     "https://vyv.pe/departamentos-en-surco/depas-de-lujo-en-surco/"
@@ -9151,7 +9179,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "borde_avenida": true
   },
   {
    "id": "conde-de-la-vega-128",
