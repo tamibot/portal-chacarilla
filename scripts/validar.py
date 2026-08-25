@@ -77,6 +77,9 @@ if poly:
     for p in projects:
         if p.get("mostrar") is False or p.get("lat") is None: continue
         real=_dentro(p["lat"],p["lng"],poly)
+        if p.get("fuera_area"):
+            # declarado fuera del area de estudio: su coordenada es aproximada, no se valida contra el poligono
+            continue
         if p.get("borde_avenida"):
             # excepcion declarada: da sobre una avenida-limite, se registra "en el borde"
             if p.get("en_cuadrante"):

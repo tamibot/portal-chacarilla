@@ -37,6 +37,22 @@ window.PORTAL_DATA = {
   "proximo_corte": "2026-09-24",
   "bitacora": [
    {
+    "fecha": "2026-08-25",
+    "proyecto": "Ave. del Sur 220",
+    "dev": "Grupo Espacio Urbano (GEU)",
+    "proyecto_id": "ave-del-sur-220",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Corrección del portal",
+    "autor": "Benchmark",
+    "texto": "Se restauró la vista completa: 40 competidores visibles en mapa y listado. Al marcar los proyectos de avenida-límite como «fuera del cuadrante», el filtro los estaba escondiendo — ese comportamiento se quitó. Ahora nada se oculta por defecto: se marca «en el borde» o «fuera del área de estudio» y se ve igual. También volvieron al mapa Monte Alegre 137, la obra frente al Parque La Floresta, Narciso, D'Mont, Monte Real, Monte Umbroso y Terraverde, y se recuperó la etiqueta NUEVO de los 9 sumados en el recorrido de agosto.",
+    "cita": "Regla del cuadrante en meta.regla_cuadrante: marcar, nunca esconder.",
+    "fuentes": [
+     "Revisión del portal, 25-ago-2026"
+    ]
+   },
+   {
     "fecha": "2026-08-24",
     "proyecto": "Ave. del Sur 220",
     "dev": "Grupo Espacio Urbano (GEU)",
@@ -1454,28 +1470,6 @@ window.PORTAL_DATA = {
     ],
     "brochure": "assets/brochures/LoBo-brochure.pdf",
     "fuente": "https://grupodicon.com.pe/proyecto/residencial-hermano-lobo-san-borja/"
-   },
-   {
-    "nombre": "Obra en Monte Alegre 137",
-    "dev": "Sin identificar",
-    "addr": "Calle Monte Alegre 137, Chacarilla del Estanque, Santiago de Surco",
-    "zona": "dentro del cuadrante",
-    "estado": "Pendiente de identificar",
-    "nota": "Obra vista en el recorrido del 22-ago-2026. Sin cartel, valla ni licencia que identifique a la inmobiliaria, y sin rastro en portales ni buscadores. Pendiente de identificar en el próximo recorrido.",
-    "planos": [],
-    "brochure": null,
-    "fuente": "Recorrido de campo 2026-08-22"
-   },
-   {
-    "nombre": "Obra frente al Parque La Floresta",
-    "dev": "Sin identificar",
-    "addr": "Frente al Parque La Floresta, Chacarilla del Estanque, Santiago de Surco",
-    "zona": "dentro del cuadrante",
-    "estado": "Pendiente de identificar",
-    "nota": "Obra anotada en el recorrido del 22-ago-2026, sin cartel legible. No confundir con La Floresta Boulevard (Montepío 120-130), que sí está identificado y sí compite. Pendiente de identificar en el próximo recorrido.",
-    "planos": [],
-    "brochure": null,
-    "fuente": "Recorrido de campo 2026-08-22"
    }
   ],
   "pedidos_ronda": {
@@ -1798,7 +1792,7 @@ window.PORTAL_DATA = {
    },
    "regla": "Toda comparación de precio sale de una de estas seis fuentes y cada proyecto declara la suya. Cuando hay lista de precios por unidad, esa manda; cuando el asesor cotizó por WhatsApp, esa cotización pisa a la web y al brochure porque es lo más fresco. El precio de un portal solo se usa si no hay nada mejor."
   },
-  "regla_cuadrante": "El cuadrante es el mismo desde el corte 1 y no se mueve. Los proyectos que dan sobre una de las tres avenidas-límite (Velasco Astete, de los Precursores y de la Floresta) se registran como «en el borde»: compiten y se comparan, pero no se cuentan como parte del cuadrante interior.",
+  "regla_cuadrante": "El cuadrante es el mismo desde el corte 1 y no se mueve. Nada se saca del portal por estar fuera: los proyectos que dan sobre una avenida-límite (Velasco Astete, de los Precursores, de la Floresta) se marcan «en el borde» y los de otra urbanización, «fuera del área de estudio». Todos siguen visibles en el mapa y en el listado; los filtros sirven para aislarlos, nunca para esconderlos.",
   "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados."
  },
  "quadrant": [
@@ -3340,7 +3334,7 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": false,
+   "mostrar": true,
    "gallery": [
     "assets/img-f1/dmont-dicon/img-01.jpg",
     "assets/img-f1/dmont-dicon/img-02.jpg",
@@ -3370,7 +3364,8 @@ window.PORTAL_DATA = {
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
     }
    ],
-   "wa_label": "Grupo Dicon"
+   "wa_label": "Grupo Dicon",
+   "coherencia_alerta": "Figura como entrega inmediata pero su entrega declarada es setiembre-2026: el edificio está terminado y la última unidad se entrega en esa fecha."
   },
   {
    "id": "dmont-2",
@@ -6173,7 +6168,7 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": false,
+   "mostrar": true,
    "gallery": [
     "assets/img-f1/monte-real-265/img-01.jpg",
     "assets/img-f1/monte-real-265/img-02.jpg",
@@ -6430,7 +6425,7 @@ window.PORTAL_DATA = {
    "lat": -12.114061640626225,
    "lng": -76.98035437139151,
    "isGEU": false,
-   "en_cuadrante": false,
+   "en_cuadrante": true,
    "precio_desde_usd": 193463,
    "precio_hasta_usd": 337517,
    "dorms": "1–3",
@@ -6525,13 +6520,14 @@ window.PORTAL_DATA = {
     "adondevivir": "https://www.adondevivir.com/departamentos-q-monte-umbroso-santiago-de-surco.html"
    },
    "anuncios": null,
-   "mostrar": false,
+   "mostrar": true,
    "gallery": [
     "assets/img-f1/monte-umbroso/img-01.jpg",
     "assets/img-f1/monte-umbroso/img-02.jpg"
    ],
    "cochera_status": "si",
-   "retirado": "Retirado 2026-07-02: agotado, sin unidades disponibles (confirmado cliente)."
+   "retirado": "Retirado 2026-07-02: agotado, sin unidades disponibles (confirmado cliente).",
+   "geo_nota": " La Alameda Monte Umbroso está dentro del cuadrante; la marca anterior de \"fuera\" era un error."
   },
   {
    "id": "monteflor",
@@ -7910,7 +7906,7 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": false,
+   "mostrar": true,
    "gallery": [
     "assets/img-f1/terraverde/img-01.jpg"
    ],
@@ -7923,6 +7919,11 @@ window.PORTAL_DATA = {
    "precio_fuente": {
     "tipo": "portal",
     "nota": "Aviso de InfoCasas del comercializador."
+   },
+   "estado_evidencia": {
+    "tipo": "portal",
+    "fecha": "2026-06-28",
+    "nota": "Aviso de InfoCasas del comercializador (ByB Bienes Raíces); sin confirmación posterior."
    }
   },
   {
@@ -8076,8 +8077,8 @@ window.PORTAL_DATA = {
    "estado_grupo": "En planos",
    "estado_raw": "En planos",
    "entrega": "Por confirmar (13 meses de ejecución según licencia)",
-   "lat": -12.112494,
-   "lng": -76.981103,
+   "lat": -12.1252,
+   "lng": -76.9875,
    "isGEU": false,
    "en_cuadrante": false,
    "precio_desde_usd": null,
@@ -8122,10 +8123,10 @@ window.PORTAL_DATA = {
     "n": 10,
     "label": "10 departamentos (según licencia de obra)"
    },
-   "mostrar": false,
+   "mostrar": true,
    "geo_aprox": true,
    "total_pisos": 5,
-   "comentario": "CORRECCIÓN (24-ago-2026): «Narciso» NO es la obra de Chacarilla. Es otro proyecto de AyD, en Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante. Está EN PLANOS: 5 pisos, 9 departamentos de 3 y 4 dormitorios, de 97 a 211 m². La confusión venía de la placa de obra de Chacarilla, que lleva el nombre de la SPV «AYD NARCISO S.A.C.»; esa obra es en realidad CONDE II (10 departamentos, coincide con la placa y con el cerco que anuncia 3 dorms desde 126 m², la tipología exacta de Conde II).",
+   "comentario": "Está en Las Gardenias, fuera del cuadrante de Chacarilla. Se muestra marcado como tal, junto a los otros dos proyectos de AyD. CORRECCIÓN (24-ago-2026): «Narciso» NO es la obra de Chacarilla. Es otro proyecto de AyD, en Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante. Está EN PLANOS: 5 pisos, 9 departamentos de 3 y 4 dormitorios, de 97 a 211 m². La confusión venía de la placa de obra de Chacarilla, que lleva el nombre de la SPV «AYD NARCISO S.A.C.»; esa obra es en realidad CONDE II (10 departamentos, coincide con la placa y con el cerco que anuncia 3 dorms desde 126 m², la tipología exacta de Conde II).",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/narciso/",
     "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
@@ -8133,7 +8134,7 @@ window.PORTAL_DATA = {
    ],
    "amenidades": [],
    "precio_hist": [],
-   "geo_nota": "Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante de Chacarilla. No se muestra en el mapa por estar fuera del área de estudio.",
+   "geo_nota": "Ubicación aproximada en Las Gardenias (Calle Narciso de la Colina 142) — fuera del cuadrante de Chacarilla. Se marca en el mapa para tener a la vista los tres proyectos de AyD, pero no entra al comparativo del cuadrante.",
    "caseta_ventas": "nd",
    "caseta_nota": null,
    "caseta_fecha": "2026-08-22",
@@ -8154,7 +8155,13 @@ window.PORTAL_DATA = {
      "tipo": "brochure"
     }
    ],
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "fuera_area": true,
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "Inmobiliaria AyD lo lista como «EN PLANOS» en su web: 5 pisos, 9 departamentos de 97 a 211 m²."
+   }
   },
   {
    "id": "precursores-verde",
@@ -8605,7 +8612,7 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": false,
+   "mostrar": true,
    "geo_aprox": true,
    "amenidades": [],
    "precio_hist": [
@@ -8621,7 +8628,7 @@ window.PORTAL_DATA = {
    ],
    "id": "monte-alegre-137",
    "name": "Monte Alegre 137",
-   "dev": "Por confirmar",
+   "dev": "Inmobiliaria sin identificar",
    "addr": "Calle Monte Alegre 137, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "Registrado en el recorrido; faltan datos comerciales",
@@ -8634,17 +8641,16 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Dirección anotada en el recorrido de campo (Calle Monte Alegre 137), pero no se identificó cartel, valla ni licencia con el nombre de la inmobiliaria, y no aparece en ningún portal ni buscador. Se retira del cuadro de competidores hasta poder identificarlo en campo.",
+   "comentario": "Obra vista en el recorrido del 22-ago-2026 en Calle Monte Alegre 137. Todavía sin cartel ni licencia que identifique a la inmobiliaria — pendiente de confirmar en el próximo recorrido. Dirección anotada en el recorrido de campo (Calle Monte Alegre 137), pero no se identificó cartel, valla ni licencia con el nombre de la inmobiliaria, y no aparece en ningún portal ni buscador.",
    "pedido": "Hola! Una consulta: tienen algún proyecto en Calle Monte Alegre 137, en Chacarilla? Me interesa la zona y quisiera información.",
    "pedido_que": "confirmar inmobiliaria y proyecto",
    "wa_label": null,
    "contactos": [],
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Obra vista en el recorrido; sin cartel que identifique al desarrollador."
    },
-   "motivo_oculto": "Sin inmobiliaria identificada",
    "mapeado_desde": "2026-08-22"
   },
   {
@@ -8662,7 +8668,7 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": false,
+   "mostrar": true,
    "geo_aprox": true,
    "amenidades": [],
    "precio_hist": [
@@ -8678,7 +8684,7 @@ window.PORTAL_DATA = {
    ],
    "id": "parque-la-floresta",
    "name": "Parque La Floresta",
-   "dev": "Por confirmar",
+   "dev": "Inmobiliaria sin identificar",
    "addr": "Frente al Parque La Floresta, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción · con caseta de ventas",
@@ -8691,17 +8697,16 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": true,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Anotado en el recorrido como obra frente al Parque La Floresta, sin cartel legible que identifique inmobiliaria ni nombre comercial. Ojo: no confundir con La Floresta Boulevard, que sí está identificado y sí compite. Se retira hasta poder identificarlo en campo.",
+   "comentario": "Obra anotada en el recorrido frente al Parque La Floresta, sin cartel legible que identifique inmobiliaria. No confundir con La Floresta Boulevard (Montepío 120-130), que sí está identificado. Anotado en el recorrido como obra frente al Parque La Floresta, sin cartel legible que identifique inmobiliaria ni nombre comercial. Ojo: no confundir con La Floresta Boulevard, que sí está identificado y sí compite.",
    "pedido": "Hola! Buenas. Me interesa el proyecto frente al Parque La Floresta. Me pasan los planos por tipología y la lista de precios? También quería saber si la cochera va incluida en el precio.",
    "pedido_que": "planos + tarifario + nombre del proyecto",
    "wa_label": null,
    "contactos": [],
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "campo",
+    "fecha": "2026-08-22",
+    "nota": "Obra vista en el recorrido; sin cartel que identifique al desarrollador."
    },
-   "motivo_oculto": "Sin inmobiliaria identificada",
    "mapeado_desde": "2026-08-22"
   },
   {
