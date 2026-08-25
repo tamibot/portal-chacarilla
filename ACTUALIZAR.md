@@ -187,3 +187,27 @@ Cuando la contradicción es real y todavía no se puede resolver, se declara en
 en rojo en **Cobertura de datos → Coherencia del estado**, y mete al proyecto en
 la ronda de pedidos con la pregunta de entrega. Lo que no se hace nunca es
 inventar la fecha para que cuadre.
+
+---
+
+## Paso 8 · El informe del mes
+
+Un comando, desde `proyecto-ave-del-sur-220/`:
+
+```bash
+./informe_mes.sh              # informe ejecutivo, 3 páginas — el que se comparte
+./informe_mes.sh --anexo      # además el anexo con todo el detalle
+```
+
+Valida la data antes de armar nada (si `validar.py` falla, no genera el PDF),
+lee del mismo `portal-data.json` que el portal y nombra el archivo por el corte
+vigente: `Informe-Bench-Chacarilla-Sep2026.pdf`.
+
+**Ejecutivo (3 págs)** — para el cliente y la reunión mensual:
+1. KPIs con **el puesto de GEU**, veredicto en cuatro frases y ranking de US$/m² numerado
+2. Ticket de entrada, estado de la oferta y qué cambió (precios, nuevos, ventas)
+3. Los proyectos del cuadrante en una tabla
+
+**Anexo (13 págs)** — para trabajar internamente: banda por tipología, cochera
+proyecto por proyecto, listado con direcciones, hallazgos del mes con su cita
+textual, de dónde sale cada precio y cobertura de información.
