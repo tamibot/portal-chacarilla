@@ -38,6 +38,25 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-25",
+    "proyecto": "Conde de la Vega 460",
+    "dev": "Azzurra Constructores",
+    "proyecto_id": "conde-de-la-vega-460",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Auditoría de imágenes",
+    "autor": "Benchmark",
+    "texto": "Había 155 imágenes en el disco que nadie veía porque nunca se enlazaron a su ficha. Conde de la Vega 460 tenía 5 renders levantados (fachada en dos versiones, sala-comedor y el lobby de piso ajedrezado) y solo uno estaba a la vista. Se enlazaron las 155: 123 a proyectos del mapa y 39 al archivo de la zona. Ahora el portal muestra 593 imágenes y la mediana por proyecto es de 12. También se identificó una carpeta mal nombrada: los 4 renders de «monte-carmelo-177» son de Monte Mayor 177 — su fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa».",
+    "cita": "Auditoría del 25-ago-2026: 197 imágenes en disco, 42 enlazadas.",
+    "imgs": [
+     "assets/img-f1/conde-de-la-vega-460/img-02.jpg"
+    ],
+    "fuentes": [
+     "Relevamiento visual de competencia (jun-2026)"
+    ]
+   },
+   {
+    "fecha": "2026-08-25",
     "proyecto": "Monte Umbroso 520",
     "dev": "Transforma Proyectos Inmobiliarios S.A.C.",
     "proyecto_id": "monte-umbroso",
@@ -1303,7 +1322,16 @@ window.PORTAL_DATA = {
      "assets/planos/conde-de-la-vega-159/plano-01.jpg",
      "assets/planos/conde-de-la-vega-159/plano-02.jpg",
      "assets/planos/conde-de-la-vega-159/plano-b01.jpg",
-     "assets/planos/conde-de-la-vega-159/plano-b02.jpg"
+     "assets/planos/conde-de-la-vega-159/plano-b02.jpg",
+     "assets/img-f1/conde-de-la-vega-159/img-01.jpg",
+     "assets/img-f1/conde-de-la-vega-159/img-02.jpg",
+     "assets/img-f1/conde-de-la-vega-159/img-03.jpg",
+     "assets/img-f1/conde-de-la-vega-159/img-04.jpg",
+     "assets/img-f1/conde-de-la-vega-159/img-05.jpg",
+     "assets/img-f1/conde-de-la-vega-159/imgb-01.jpg",
+     "assets/img-f1/conde-de-la-vega-159/imgb-02.jpg",
+     "assets/img-f1/conde-de-la-vega-159/imgb-03.jpg",
+     "assets/img-f1/conde-de-la-vega-159/imgb-04.jpg"
     ],
     "brochure": "assets/brochures/conde-de-la-vega-159-f1.pdf",
     "fuente": "https://inmobiliariaayd.com/proyecto/conde-de-la-vega-159/"
@@ -1320,7 +1348,8 @@ window.PORTAL_DATA = {
      "assets/planos/monte-mayor-153/plano-02.jpg",
      "assets/planos/monte-mayor-153/plano-03.jpg",
      "assets/planos/monte-mayor-153/plano-04.jpg",
-     "assets/planos/monte-mayor-153/plano-05.jpg"
+     "assets/planos/monte-mayor-153/plano-05.jpg",
+     "assets/img-f1/monte-mayor-153/img-01.jpg"
     ],
     "brochure": "assets/brochures/monte-mayor-153-f1.pdf",
     "fuente": "Brochure en archivo"
@@ -1334,7 +1363,12 @@ window.PORTAL_DATA = {
     "nota": "Solo 2 planos en archivo, sin brochure ni dirección.",
     "planos": [
      "assets/planos/monte-verde/plano-01.jpg",
-     "assets/planos/monte-verde/plano-02.jpg"
+     "assets/planos/monte-verde/plano-02.jpg",
+     "assets/img-f1/monte-verde/img-01.jpg",
+     "assets/img-f1/monte-verde/img-02.jpg",
+     "assets/img-f1/monte-verde/img-03.jpg",
+     "assets/img-f1/monte-verde/img-04.jpg",
+     "assets/img-f1/monte-verde/img-05.jpg"
     ],
     "brochure": null,
     "fuente": "Archivo interno"
@@ -1349,7 +1383,8 @@ window.PORTAL_DATA = {
     "planos": [
      "assets/planos/central-home/central-28.png",
      "assets/planos/central-home/central-31.png",
-     "assets/planos/central-home/central-36.png"
+     "assets/planos/central-home/central-36.png",
+     "assets/img/central-home.png"
     ],
     "brochure": "assets/brochures/CentralHome-EE-brochure.pdf",
     "fuente": "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/central-home-chacarilla-3358"
@@ -1365,7 +1400,12 @@ window.PORTAL_DATA = {
      "assets/planos/parque-la-coruna/plano-01.jpg",
      "assets/planos/parque-la-coruna/plano-02.jpg",
      "assets/planos/parque-la-coruna/plano-03.jpg",
-     "assets/planos/parque-la-coruna/plano-04.jpg"
+     "assets/planos/parque-la-coruna/plano-04.jpg",
+     "assets/img-f1/parque-la-coruna/img-01.jpg",
+     "assets/img-f1/parque-la-coruna/img-02.jpg",
+     "assets/img-f1/parque-la-coruna/img-03.jpg",
+     "assets/img-f1/parque-la-coruna/img-04.webp",
+     "assets/img-f1/parque-la-coruna/img-05.webp"
     ],
     "brochure": "assets/brochures/parque-la-coruna-f1.pdf",
     "fuente": "Brochure en archivo"
@@ -1383,7 +1423,16 @@ window.PORTAL_DATA = {
      "assets/planos/inspira-2/plano-03.jpg",
      "assets/planos/inspira-2/plano-04.jpg",
      "assets/planos/inspira-2/plano-05.jpg",
-     "assets/planos/inspira-2/plano-06.jpg"
+     "assets/planos/inspira-2/plano-06.jpg",
+     "assets/img-f1/inspira-2/img-01.jpg",
+     "assets/img-f1/inspira-2/img-02.jpg",
+     "assets/img-f1/inspira-2/img-03.jpg",
+     "assets/img-f1/inspira-2/img-04.jpg",
+     "assets/img-f1/inspira-2/img-05.jpg",
+     "assets/img-f1/inspira-chacarilla/img-01.jpg",
+     "assets/img-f1/inspira-chacarilla/img-02.jpg",
+     "assets/img-f1/inspira-chacarilla/img-03.jpg",
+     "assets/img-f1/inspira-chacarilla/img-04.jpg"
     ],
     "brochure": "assets/brochures/inspira-2-f1.pdf",
     "fuente": "Brochure en archivo"
@@ -1396,7 +1445,8 @@ window.PORTAL_DATA = {
     "estado": "Por confirmar",
     "nota": "Brochure 2026 con tipologías de 3 y 4 dormitorios.",
     "planos": [
-     "assets/planos/elite-14/elite-7.png"
+     "assets/planos/elite-14/elite-7.png",
+     "assets/img/elite-14.png"
     ],
     "brochure": "assets/brochures/ELITE_14_brochure_2026_Tipologias_3_y_4_final.pdf",
     "fuente": "Brochure en archivo"
@@ -1408,7 +1458,11 @@ window.PORTAL_DATA = {
     "zona": "fuera del cuadrante",
     "estado": "Por confirmar",
     "nota": "Brochure en archivo.",
-    "planos": [],
+    "planos": [
+     "assets/img-f1/la-joya-132/img-01.png",
+     "assets/img-f1/la-joya-132/img-02.png",
+     "assets/img-f1/la-joya-132/img-03.jpg"
+    ],
     "brochure": "assets/brochures/la-joya-132-f1.pdf",
     "fuente": "Brochure en archivo"
    },
@@ -1422,7 +1476,8 @@ window.PORTAL_DATA = {
     "planos": [
      "assets/planos/lobo-san-borja/lobo-flat102-plano.jpg",
      "assets/planos/lobo-san-borja/lobo-flat103-plano.jpg",
-     "assets/planos/lobo-san-borja/lobo-flat104-plano.jpg"
+     "assets/planos/lobo-san-borja/lobo-flat104-plano.jpg",
+     "assets/img/lobo-san-borja.jpg"
     ],
     "brochure": "assets/brochures/LoBo-brochure.pdf",
     "fuente": "Brochure en archivo"
@@ -1434,7 +1489,9 @@ window.PORTAL_DATA = {
     "zona": "fuera del cuadrante",
     "estado": "Por confirmar",
     "nota": "Departamentos de 3 y 4 dormitorios. Fuera del área de estudio.",
-    "planos": [],
+    "planos": [
+     "assets/img-f1/batallon-tarma-684/img-01.jpg"
+    ],
     "brochure": "assets/brochures/batallon-tarma-684-f1.pdf",
     "fuente": "Brochure en archivo"
    },
@@ -1489,7 +1546,10 @@ window.PORTAL_DATA = {
     "zona": "dentro del cuadrante",
     "estado": "Entregado (~2020)",
     "nota": "150–402 m². Galeón, Jr. La Niña 238, Chacarilla del Estanque. Entrega original ago-2020 (YA ENTREGADO, no aparece en cartera activa de Galeón). 3 dorms, 150-402m²",
-    "planos": [],
+    "planos": [
+     "assets/img-f1/la-nina-238/img-01.webp",
+     "assets/img-f1/la-nina-238/img-02.jpg"
+    ],
     "brochure": null,
     "fuente": "https://www.galeon.com.pe"
    },
@@ -1507,6 +1567,19 @@ window.PORTAL_DATA = {
     ],
     "brochure": "assets/brochures/LoBo-brochure.pdf",
     "fuente": "https://grupodicon.com.pe/proyecto/residencial-hermano-lobo-san-borja/"
+   },
+   {
+    "nombre": "Conde de la Vega 304",
+    "dev": "Por identificar",
+    "addr": "Chacarilla del Estanque, Santiago de Surco",
+    "zona": "por confirmar",
+    "estado": "Por confirmar",
+    "nota": "Renders en archivo, sin ficha comercial.",
+    "planos": [
+     "assets/img-f1/conde-de-la-vega-304/img-01.jpg"
+    ],
+    "brochure": null,
+    "fuente": "Archivo interno"
    }
   ],
   "pedidos_ronda": {
@@ -1912,6 +1985,7 @@ window.PORTAL_DATA = {
     "assets/planos/ave-del-sur-220/flat-patio-s03.jpg",
     "assets/planos/ave-del-sur-220/flat-patio-s04.jpg",
     "assets/planos/ave-del-sur-220/flat-patio-s05.jpg",
+    "assets/img/ave-del-sur-220.jpg",
     "assets/campo/avdelsur-208-obra.jpg"
    ],
    "brochure": null,
@@ -2085,7 +2159,12 @@ window.PORTAL_DATA = {
     "assets/planos/aura-sul/aurasul-flat203-303-403-503.png",
     "assets/planos/aura-sul/aurasul-flat204-304-404-504.png",
     "assets/planos/aura-sul/aurasul-flat302-502.png",
-    "assets/planos/aura-sul/aurasul-flat401.png"
+    "assets/planos/aura-sul/aurasul-flat401.png",
+    "assets/img-f1/aura-sul/img-01.webp",
+    "assets/img-f1/aura-sul/img-02.webp",
+    "assets/img-f1/aura-sul/img-03.webp",
+    "assets/img-f1/aura-sul/img-04.webp",
+    "assets/img/aura-sul.jpg"
    ],
    "brochure": "assets/brochures/aura-sul-f1.pdf",
    "typologies": [
@@ -2338,6 +2417,16 @@ window.PORTAL_DATA = {
     "assets/planos/conde-ii/plano-02.jpg",
     "assets/planos/conde-ii/plano-b01.jpg",
     "assets/planos/conde-ii/plano-b02.jpg",
+    "assets/img-f1/conde-ii/img-01.jpg",
+    "assets/img-f1/conde-ii/img-02.jpg",
+    "assets/img-f1/conde-ii/img-03.jpg",
+    "assets/img-f1/conde-ii/img-04.jpg",
+    "assets/img-f1/conde-ii/img-05.jpg",
+    "assets/img-f1/conde-ii/imgb-01.jpg",
+    "assets/img-f1/conde-ii/imgb-02.jpg",
+    "assets/img-f1/conde-ii/imgb-03.jpg",
+    "assets/img-f1/conde-ii/imgb-04.jpg",
+    "assets/img/conde-ii.jpg",
     "assets/campo/narciso-ayd.jpg",
     "assets/campo/narciso-ayd-2.jpg",
     "assets/campo/conde-ii-obra.jpg"
@@ -2563,6 +2652,12 @@ window.PORTAL_DATA = {
     "assets/planos/conde-de-la-vega-251/duplex-605.jpg",
     "assets/planos/conde-de-la-vega-251/flat-103.jpg",
     "assets/planos/conde-de-la-vega-251/flat-503.jpg",
+    "assets/img-f1/conde-vega-251/img-01.jpg",
+    "assets/img-f1/conde-vega-251/img-02.jpg",
+    "assets/img-f1/conde-vega-251/img-03.jpg",
+    "assets/img-f1/conde-vega-251/img-04.jpg",
+    "assets/img-f1/conde-vega-251/img-05.jpg",
+    "assets/img/conde-de-la-vega-251.jpg",
     "assets/campo/conde-de-la-vega-251.jpg"
    ],
    "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Conde-de-la-Vega-251.pdf",
@@ -2723,7 +2818,12 @@ window.PORTAL_DATA = {
     "assets/planos/conde-de-la-vega-460/plano-b05.jpg",
     "assets/planos/conde-de-la-vega-460/plano-b06.jpg",
     "assets/planos/conde-de-la-vega-460/plano-b07.jpg",
-    "assets/planos/conde-de-la-vega-460/plano-b08.jpg"
+    "assets/planos/conde-de-la-vega-460/plano-b08.jpg",
+    "assets/img-f1/conde-de-la-vega-460/img-01.jpg",
+    "assets/img-f1/conde-de-la-vega-460/img-02.jpg",
+    "assets/img-f1/conde-de-la-vega-460/img-03.jpg",
+    "assets/img-f1/conde-de-la-vega-460/imgb-01.avif",
+    "assets/img-f1/conde-de-la-vega-460/imgb-02.jpg"
    ],
    "brochure": "assets/brochures/conde-de-la-vega-460-f1.pdf",
    "typologies": [
@@ -3344,7 +3444,12 @@ window.PORTAL_DATA = {
    "web": "https://grupodicon.com.pe/proyecto/dmont-surco-chacarilla/",
    "img": "assets/img-f1/dmont-dicon/img-01.jpg",
    "planos": [
-    "assets/planos/dmont-dicon/plano-d101-1.jpg"
+    "assets/planos/dmont-dicon/plano-d101-1.jpg",
+    "assets/img-f1/dmont-dicon/img-01.jpg",
+    "assets/img-f1/dmont-dicon/img-02.jpg",
+    "assets/img-f1/dmont-dicon/img-03.jpg",
+    "assets/img-f1/dmont-dicon/img-04.jpg",
+    "assets/img-f1/dmont-dicon/img-05.jpg"
    ],
    "brochure": "assets/brochures/dmont-dicon-f1.pdf",
    "typologies": [
@@ -3446,7 +3551,12 @@ window.PORTAL_DATA = {
     "assets/planos/dmont-2/plano-02.jpg",
     "assets/planos/dmont-2/plano-03.jpg",
     "assets/planos/dmont-2/plano-04.jpg",
-    "assets/planos/dmont-2/plano-05.jpg"
+    "assets/planos/dmont-2/plano-05.jpg",
+    "assets/img-f1/dmont-2/img-01.jpg",
+    "assets/img-f1/dmont-2/img-02.jpg",
+    "assets/img-f1/dmont-2/img-03.jpg",
+    "assets/img-f1/dmont-2/img-04.jpg",
+    "assets/img-f1/dmont-2/img-05.jpg"
    ],
    "brochure": "assets/brochures/dmont-2-f1.pdf",
    "typologies": [
@@ -3681,6 +3791,7 @@ window.PORTAL_DATA = {
     "assets/planos/estelar-1080/estelar-17.png",
     "assets/planos/estelar-1080/estelar-brochure-p1.jpg",
     "assets/planos/estelar-1080/estelar-captura.png",
+    "assets/img/estelar-1080.png",
     "assets/campo/estelar-sala-ventas.jpg"
    ],
    "brochure": "assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf",
@@ -3840,6 +3951,11 @@ window.PORTAL_DATA = {
     "assets/planos/floresta-living-444/plano-02.jpg",
     "assets/planos/floresta-living-444/plano-03.jpg",
     "assets/planos/floresta-living-444/plano-04.jpg",
+    "assets/img-f1/floresta-living-444/img-01.jpg",
+    "assets/img-f1/floresta-living-444/img-02.jpg",
+    "assets/img-f1/floresta-living-444/img-03.jpg",
+    "assets/img-f1/floresta-living-444/img-04.jpg",
+    "assets/img-f1/floresta-living-444/img-05.jpg",
     "assets/campo/floresta-living-cartel.jpg"
    ],
    "brochure": "assets/brochures/floresta-living-444-f1.pdf",
@@ -4021,7 +4137,8 @@ window.PORTAL_DATA = {
     "assets/planos/hana-oficial/Planta 1er piso - Dptos 101 y 102.jpg",
     "assets/planos/hana-oficial/Sotano 01 - estacionamientos (estado de venta).jpg",
     "assets/planos/hana-oficial/Sotano 02 - estacionamientos (estado de venta).jpg",
-    "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg"
+    "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg",
+    "assets/img/hana.png"
    ],
    "brochure": "assets/brochures/hana-brochure.pdf",
    "typologies": [
@@ -4167,6 +4284,8 @@ window.PORTAL_DATA = {
     "assets/planos/jardines-monte-real-oficial/Lamina 27 - 211.57 m2.jpg",
     "assets/planos/jardines-monte-real-oficial/Lamina 28 - 209.55 m2.jpg",
     "assets/planos/jardines-monte-real-oficial/Lamina 29 - 216.52 m2.jpg",
+    "assets/img-f1/jardines-monte-real/img-01.jpg",
+    "assets/img-f1/jardines-monte-real/img-02.jpg",
     "assets/campo/jardines-monte-real-obra.jpg",
     "assets/campo/living-monte-real-obra.jpg"
    ],
@@ -4352,6 +4471,11 @@ window.PORTAL_DATA = {
     "assets/planos/la-floresta-boulevard/plano-18.jpg",
     "assets/planos/la-floresta-boulevard/plano-19.jpg",
     "assets/planos/la-floresta-boulevard/plano-20.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-01.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-02.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-03.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-04.jpg",
+    "assets/img-f1/la-floresta-boulevard/img-05.jpg",
     "assets/campo/la-floresta-boulevard-obra.jpg"
    ],
    "brochure": null,
@@ -4584,6 +4708,7 @@ window.PORTAL_DATA = {
     "assets/planos/monte-alegre-109-oficial/TIPO X03 - 3 dorm - 118.06 m2.jpg",
     "assets/planos/monte-alegre-109-oficial/TIPO X03A - 3 dorm - 118.06 m2.jpg",
     "assets/planos/monte-alegre-109-oficial/TIPO X03B - 3 dorm - 118.06 m2.jpg",
+    "assets/img/monte-alegre.jpg",
     "assets/campo/monte-alegre-valla.jpg"
    ],
    "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf",
@@ -4846,6 +4971,16 @@ window.PORTAL_DATA = {
     "assets/planos/monte-carmelo-250/flat-s01a.jpg",
     "assets/planos/monte-carmelo-250/flat-s02.jpg",
     "assets/planos/monte-carmelo-250/flat-s03.jpg",
+    "assets/img-f1/monte-carmelo-250/img-01.jpg",
+    "assets/img-f1/monte-carmelo-250/img-02.jpg",
+    "assets/img-f1/monte-carmelo-250/img-03.png",
+    "assets/img-f1/monte-carmelo-250/img-04.jpg",
+    "assets/img-f1/monte-carmelo-250/img-05.jpg",
+    "assets/img-f1/monte-carmelo-250/imgb-01.jpg",
+    "assets/img-f1/monte-carmelo-250/imgb-02.jpg",
+    "assets/img-f1/monte-carmelo-250/imgb-03.jpg",
+    "assets/img-f1/monte-carmelo-250/imgb-04.jpg",
+    "assets/img/monte-carmelo-250.jpg",
     "assets/campo/monte-carmelo-250.jpg"
    ],
    "brochure": null,
@@ -5004,7 +5139,13 @@ window.PORTAL_DATA = {
     "assets/planos/monte-carmelo-551/plano-15.jpg",
     "assets/planos/monte-carmelo-551/plano-16.jpg",
     "assets/planos/monte-carmelo-551/plano-17.jpg",
-    "assets/planos/monte-carmelo-551/plano-18.jpg"
+    "assets/planos/monte-carmelo-551/plano-18.jpg",
+    "assets/img-f1/monte-carmelo-551/img-01.jpg",
+    "assets/img-f1/monte-carmelo-551/img-02.jpg",
+    "assets/img-f1/monte-carmelo-551/img-03.png",
+    "assets/img-f1/monte-carmelo-551/img-04.jpg",
+    "assets/img-f1/monte-carmelo-551/img-05.png",
+    "assets/img/monte-carmelo-551.jpg"
    ],
    "brochure": "assets/brochures/monte-carmelo-551-f1.pdf",
    "typologies": [
@@ -5234,7 +5375,8 @@ window.PORTAL_DATA = {
     "assets/planos/montemar-269-oficial/TIPO 401 3 - 134.05 m2.jpg",
     "assets/planos/montemar-269-oficial/TIPO 402 2 - 81.37 m2.jpg",
     "assets/planos/montemar-269-oficial/TIPO 403 3 - 132.71 m2.jpg",
-    "assets/planos/montemar-269-oficial/TIPO 404 3 - 113.05 m2.jpg"
+    "assets/planos/montemar-269-oficial/TIPO 404 3 - 113.05 m2.jpg",
+    "assets/img/monte-mar-167.jpg"
    ],
    "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf",
    "typologies": [
@@ -5462,6 +5604,11 @@ window.PORTAL_DATA = {
     "assets/planos/monte-mayor-177/monte_mayor-20.png",
     "assets/planos/monte-mayor-177/monte_mayor-21.png",
     "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg",
+    "assets/img/monte-mayor-177.jpg",
+    "assets/img-f1/monte-mayor-177-renders/imgb-01.jpg",
+    "assets/img-f1/monte-mayor-177-renders/imgb-02.jpg",
+    "assets/img-f1/monte-mayor-177-renders/imgb-03.jpg",
+    "assets/img-f1/monte-mayor-177-renders/imgb-04.jpg",
     "assets/campo/monte-mayor-177-ultimo.jpg"
    ],
    "brochure": "assets/brochures/monte-mayor-177-brochure.pdf",
@@ -5489,7 +5636,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto.",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa».",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -5615,6 +5762,8 @@ window.PORTAL_DATA = {
     "assets/planos/monte-mayor-183-oficial/Flat 101 - 73.13 m2.jpg",
     "assets/planos/monte-mayor-183-oficial/Flat 102 - 132.98 m2 techada - 239.69 m2 total.jpg",
     "assets/planos/monte-mayor-183-oficial/Flat 202 - 115.56 m2.jpg",
+    "assets/img-f1/monte-mayor-183/img-01.jpg",
+    "assets/img-f1/monte-mayor-183/img-02.jpg",
     "assets/campo/monte-mayor-183-valla.jpg"
    ],
    "brochure": "assets/brochures/monte-mayor-183-brochure.pdf",
@@ -6157,7 +6306,17 @@ window.PORTAL_DATA = {
    "planos": [
     "assets/planos/monte-real-265/plano-01.jpg",
     "assets/planos/monte-real-265/Dpto 103 - 138.03 m2 techada - 167.82 m2 ocupada.jpg",
-    "assets/planos/monte-real-265/cotizacion-dpto-103.jpg"
+    "assets/planos/monte-real-265/cotizacion-dpto-103.jpg",
+    "assets/img-f1/monte-real-217/img-01.jpg",
+    "assets/img-f1/monte-real-217/img-02.jpg",
+    "assets/img-f1/monte-real-217/img-03.jpg",
+    "assets/img-f1/monte-real-217/img-04.jpg",
+    "assets/img-f1/monte-real-217/img-05.jpg",
+    "assets/img-f1/monte-real-265/img-01.jpg",
+    "assets/img-f1/monte-real-265/img-02.jpg",
+    "assets/img-f1/monte-real-265/img-03.jpg",
+    "assets/img-f1/monte-real-265/img-04.jpg",
+    "assets/img-f1/monte-real-265/img-05.jpg"
    ],
    "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
    "typologies": [
@@ -6292,6 +6451,11 @@ window.PORTAL_DATA = {
     "assets/planos/monte-sierpe/sierpe-X05-2d-105m2.png",
     "assets/planos/monte-sierpe/sierpe-x102-2d-103m2.png",
     "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png",
+    "assets/img-f1/monte-sierpe/img-01.jpg",
+    "assets/img-f1/monte-sierpe/img-02.jpg",
+    "assets/img-f1/monte-sierpe/img-03.jpg",
+    "assets/img-f1/monte-sierpe/img-04.jpg",
+    "assets/img-f1/monte-sierpe/img-05.jpg",
     "assets/campo/monte-sierpe-ultimos-depas.jpg"
    ],
    "brochure": "assets/brochures/monte-sierpe-brochure.pdf",
@@ -6481,7 +6645,10 @@ window.PORTAL_DATA = {
    "wa": "960481577",
    "web": "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
    "img": "assets/img-f1/monte-umbroso/img-01.jpg",
-   "planos": [],
+   "planos": [
+    "assets/img-f1/monte-umbroso/img-01.jpg",
+    "assets/img-f1/monte-umbroso/img-02.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -6625,6 +6792,7 @@ window.PORTAL_DATA = {
    "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
    "img": "assets/campo/monteflor-valla.jpg",
    "planos": [
+    "assets/img-f1/monteflor/img-01.jpg",
     "assets/campo/monteflor-valla.jpg"
    ],
    "brochure": null,
@@ -6782,7 +6950,8 @@ window.PORTAL_DATA = {
     "assets/planos/parque-monte-carmelo/duplex-702.jpg",
     "assets/planos/parque-monte-carmelo/duplex-703.png",
     "assets/planos/parque-monte-carmelo/duplex-704.jpg",
-    "assets/planos/parque-monte-carmelo/duplex-705.jpg"
+    "assets/planos/parque-monte-carmelo/duplex-705.jpg",
+    "assets/img/parque-monte-carmelo.jpg"
    ],
    "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf",
    "typologies": [
@@ -7094,6 +7263,7 @@ window.PORTAL_DATA = {
     "assets/planos/precursores-525/precu-flat-101.jpg",
     "assets/planos/precursores-525/precu-flat-102.jpg",
     "assets/planos/precursores-525/precu-flat-x04-304.jpg",
+    "assets/img/precursores-525.jpg",
     "assets/campo/chacarillasur-precursores.jpg"
    ],
    "brochure": "assets/brochures/Precu_Brochure_AC.pdf",
@@ -7263,7 +7433,11 @@ window.PORTAL_DATA = {
     "assets/planos/precursores-ii/plano-14.jpg",
     "assets/planos/precursores-ii/plano-15.jpg",
     "assets/planos/precursores-ii/plano-16.jpg",
-    "assets/planos/precursores-ii/lista-precios-1.jpg"
+    "assets/planos/precursores-ii/lista-precios-1.jpg",
+    "assets/img-f1/precursores-ii/img-01.jpg",
+    "assets/img-f1/precursores-ii/img-02.jpg",
+    "assets/img-f1/precursores-ii/img-03.jpg",
+    "assets/img-f1/precursores-ii/img-04.jpg"
    ],
    "brochure": "assets/brochures/precursores-ii-brochure.pdf",
    "typologies": [
@@ -7453,6 +7627,11 @@ window.PORTAL_DATA = {
     "assets/planos/santorini/plano-b-18.jpg",
     "assets/planos/santorini/plano-b-19.jpg",
     "assets/planos/santorini/plano-b-20.jpg",
+    "assets/img-f1/santorini/img-01.jpg",
+    "assets/img-f1/santorini/img-02.jpg",
+    "assets/img-f1/santorini/img-03.jpeg",
+    "assets/img-f1/santorini/img-04.jpg",
+    "assets/img-f1/santorini/img-05.jpg",
     "assets/campo/santorini-cartel-obra.jpg"
    ],
    "brochure": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
@@ -7735,8 +7914,10 @@ window.PORTAL_DATA = {
     "assets/planos/spazio/flat-601.jpg",
     "assets/planos/spazio/flat-603.jpg",
     "assets/planos/spazio/flat-604.jpg",
-    "assets/campo/spazio-panel-ventas.jpg",
     "assets/planos/spazio/spazio-panel-ventas.jpg",
+    "assets/img-f1/spazio/img-01.webp",
+    "assets/img-f1/spazio/img-02.webp",
+    "assets/campo/spazio-panel-ventas.jpg",
     "assets/campo/spazio-sala-ventas.jpg"
    ],
    "brochure": "assets/brochures/spazio-f1.pdf",
@@ -7953,7 +8134,9 @@ window.PORTAL_DATA = {
    "wa": null,
    "web": "https://www.infocasas.com.pe/venta-surco-preciosos-departamentos-en-proyecto-en-chacarilla-del-estanque/186999982",
    "img": "assets/img-f1/terraverde/img-01.jpg",
-   "planos": [],
+   "planos": [
+    "assets/img-f1/terraverde/img-01.jpg"
+   ],
    "brochure": null,
    "typologies": [
     {
@@ -8035,7 +8218,8 @@ window.PORTAL_DATA = {
     "assets/planos/monte-umbroso-247/plano-tipico-tipo1.jpg",
     "assets/planos/monte-umbroso-247/plano-flat101-2dorm.jpg",
     "assets/planos/monte-umbroso-247/precios-flat-301.jpg",
-    "assets/planos/monte-umbroso-247/precios-flat-102.jpg"
+    "assets/planos/monte-umbroso-247/precios-flat-102.jpg",
+    "assets/img/monte-umbroso-247.jpg"
    ],
    "typologies": [
     {
@@ -8278,6 +8462,12 @@ window.PORTAL_DATA = {
     "assets/planos/precursores-verde-oficial/FLAT 701 - 86.50 m2.jpg",
     "assets/planos/precursores-verde-oficial/FLAT 702 - 125.52 m2.jpg",
     "assets/planos/precursores-verde-oficial/Lamina 26 - 116.79 m2.jpg",
+    "assets/img-f1/precursores-verde/img-01.jpg",
+    "assets/img-f1/precursores-verde/img-02.jpg",
+    "assets/img-f1/precursores-verde/img-03.jpg",
+    "assets/img-f1/precursores-verde/img-04.jpg",
+    "assets/img-f1/precursores-verde/img-05.jpg",
+    "assets/img/precursores-verde.jpg",
     "assets/campo/precursores-verde.jpg",
     "assets/campo/precursores-verde-2.jpg"
    ],
@@ -8596,6 +8786,8 @@ window.PORTAL_DATA = {
    "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
    "planos": [
+    "assets/img-f1/the-eleven/img-01.jpg",
+    "assets/img-f1/the-eleven/img-02.webp",
     "assets/campo/the-eleven.jpg",
     "assets/campo/velasco-astete-sur.jpg"
    ],
@@ -8990,7 +9182,11 @@ window.PORTAL_DATA = {
     "assets/planos/floresta-343/floresta343-tipo03-04-planta.png",
     "assets/planos/floresta-343/plano-01.png",
     "assets/planos/floresta-343/plano-02.png",
-    "assets/planos/floresta-343/plano-03.png"
+    "assets/planos/floresta-343/plano-03.png",
+    "assets/img-f1/floresta-343/img-01.png",
+    "assets/img-f1/floresta-343/img-02.png",
+    "assets/img-f1/floresta-343/img-03.png",
+    "assets/img/floresta-343.png"
    ],
    "planos_fuente": "Brochure oficial Vibra Inmobiliaria (edición mayo) descargado de su web.",
    "typologies": [
@@ -9160,7 +9356,12 @@ window.PORTAL_DATA = {
     "assets/planos/le-parc/plano-b06.jpg",
     "assets/planos/le-parc/plano-b07.jpg",
     "assets/planos/le-parc/plano-b08.jpg",
-    "assets/planos/le-parc/plano-b09.jpg"
+    "assets/planos/le-parc/plano-b09.jpg",
+    "assets/img-f1/le-parc/imgb-01.jpg",
+    "assets/img-f1/le-parc/imgb-02.jpg",
+    "assets/img-f1/le-parc/imgb-03.jpg",
+    "assets/img-f1/le-parc/imgb-04.jpg",
+    "assets/img/le-parc.jpg"
    ],
    "planos_fuente": "Brochure oficial en archivo (9 láminas de tipología).",
    "typologies": [],
@@ -9253,7 +9454,8 @@ window.PORTAL_DATA = {
     "assets/planos/conde-vega-128/plano-11.jpg",
     "assets/planos/conde-vega-128/plano-12.jpg",
     "assets/planos/conde-vega-128/plano-13.jpg",
-    "assets/planos/conde-vega-128/plano-14.jpg"
+    "assets/planos/conde-vega-128/plano-14.jpg",
+    "assets/img-f1/conde-vega-128/img-01.jpg"
    ],
    "planos_fuente": "Brochure oficial en archivo (14 láminas).",
    "typologies": [],
