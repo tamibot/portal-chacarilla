@@ -7,7 +7,7 @@
   "con_precio": 100,
   "competidores_activos": 35,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 18,
+  "comparables_confirmados": 19,
   "en_ultimas_unidades": 11,
   "sin_precio_publico": 10,
   "cochera_incluida": 12,
@@ -36,6 +36,43 @@
   ],
   "proximo_corte": "2026-09-24",
   "bitacora": [
+   {
+    "fecha": "2026-08-25",
+    "proyecto": "Monte Umbroso 520",
+    "dev": "Transforma Proyectos Inmobiliarios S.A.C.",
+    "proyecto_id": "monte-umbroso",
+    "tags": [
+     "estado",
+     "venta",
+     "precio"
+    ],
+    "canal": "Búsqueda en internet",
+    "autor": "Benchmark",
+    "texto": "Lo teníamos como «en construcción» con datos de julio-2024. Verificado: el edificio YA ESTÁ TERMINADO (año de construcción 2024) y lo rematan corredores independientes, no la inmobiliaria. Son 26 departamentos en 7 pisos con rooftop y 3 sótanos. Quedan 2 publicados: el flat 503 de 1 dormitorio (67 m², US$170,850 CON 1 estacionamiento) y un penthouse dúplex de 186 m² con terraza de 63 m² (US$399,000 con 2 estacionamientos). Neto de cochera, el flat da US$2,326/m² — y es el único 1 dormitorio del cuadrante con precio confirmado además del nuestro, así que ahora esa banda tiene 3 unidades y no una.",
+    "cita": "«Fino Dúplex Penthouse, moderno, impecable… año de construcción 2024» y «último departamento disponible: Unidad 503 – Flat – 1 dormitorio – 64.50 m² construida / 67.00 m² total – US$170,850, incluye 1 estacionamiento»",
+    "imgs": [],
+    "fuentes": [
+     "https://www.judithriverainmobiliaria.com/propiedades/monte-umbroso-surco/",
+     "https://www.zenterrainmobiliaria.com/p/7134107-Departamento-en-Venta-en-CHACARILLA-Calle-Monteumbroso,-Chacarilla",
+     "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144372 (aviso de la inmobiliaria, 24-jul-2024, sin actualizar)"
+    ]
+   },
+   {
+    "fecha": "2026-08-25",
+    "proyecto": "Conde de la Vega 460",
+    "dev": "Azzurra Constructores",
+    "proyecto_id": "conde-de-la-vega-460",
+    "tags": [
+     "estado"
+    ],
+    "canal": "Revisión de las fotos",
+    "autor": "Benchmark",
+    "texto": "Revisadas las 29 fotos del recorrido del 22-ago: no hay ninguna de Conde de la Vega 460. La que estaba archivada con ese nombre resultó ser la sala de ventas de Spazio. De Azzurra solo tenemos la valla de Monte Mayor 183. Queda anotado como pendiente para el próximo recorrido, junto con su punto de venta.",
+    "cita": "Auditoría de las fotos de campo, 25-ago-2026.",
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
+   },
    {
     "fecha": "2026-08-25",
     "proyecto": "Ave. del Sur 220",
@@ -1874,7 +1911,8 @@
     "assets/planos/ave-del-sur-220/flat-patio-s02.jpg",
     "assets/planos/ave-del-sur-220/flat-patio-s03.jpg",
     "assets/planos/ave-del-sur-220/flat-patio-s04.jpg",
-    "assets/planos/ave-del-sur-220/flat-patio-s05.jpg"
+    "assets/planos/ave-del-sur-220/flat-patio-s05.jpg",
+    "assets/campo/avdelsur-208-obra.jpg"
    ],
    "brochure": null,
    "typologies": [
@@ -2285,7 +2323,7 @@
    "m2": "100 – 254",
    "wa": "994363232",
    "web": "https://inmobiliariaayd.com/proyecto/conde-ii/",
-   "img": "assets/img/conde-ii.jpg",
+   "img": "assets/campo/narciso-ayd.jpg",
    "planos": [
     "assets/planos/conde-ii-ayd-2026/Cuadro de tipologias y estado de venta (ago-2026).jpg",
     "assets/planos/conde-ii-ayd-2026/Flat tipico 201 y 401 - 3 dorm - 126 m2 ocupada.jpg",
@@ -3173,7 +3211,7 @@
     2,
     3
    ],
-   "comentario": "Lista oficial Azzurra CDLV 460 (18-may-2026) y brochure 01-jun-2026. Se cargan 26 unidades por tipología (flats, dúplex, penthouses y vendidos); la comparación usa solo 9 flats típicos disponibles de pisos 2-5, netos de estacionamiento incluido. Brochure oficial del 01-jun-2026: 26 unidades (19 flats + 7 dúplex), de 65 a 356 m², 1 a 3 dormitorios, 40 estacionamientos, parking de bicicletas y certificación EDGE.",
+   "comentario": "Lista oficial Azzurra CDLV 460 (18-may-2026) y brochure 01-jun-2026. Se cargan 26 unidades por tipología (flats, dúplex, penthouses y vendidos); la comparación usa solo 9 flats típicos disponibles de pisos 2-5, netos de estacionamiento incluido. Brochure oficial del 01-jun-2026: 26 unidades (19 flats + 7 dúplex), de 65 a 356 m², 1 a 3 dormitorios, 40 estacionamientos, parking de bicicletas y certificación EDGE. ⚠ Falta la foto de campo: en el recorrido del 22-ago no se registró su fachada ni su punto de venta. Entra a la ruta del próximo recorrido.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -3221,8 +3259,8 @@
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 27 m del marcador).",
    "estado_obra": "En construcción",
    "cuadrante_verificado": "2026-08-22",
-   "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta de ventas.",
+   "caseta_ventas": "nd",
+   "caseta_nota": "No se llegó a fotografiar en el recorrido del 22-ago-2026 — pendiente para el próximo.",
    "caseta_fecha": "2026-08-22",
    "politica_precio": "La lista de Azzurra incluye 1 o 2 estacionamientos según la unidad.",
    "como_presenta": "Azzurra lo presenta como preventa boutique de 26 departamentos, con lista de precios por unidad.",
@@ -3365,7 +3403,12 @@
     }
    ],
    "wa_label": "Grupo Dicon",
-   "coherencia_alerta": "Figura como entrega inmediata pero su entrega declarada es setiembre-2026: el edificio está terminado y la última unidad se entrega en esa fecha."
+   "coherencia_alerta": "Figura como entrega inmediata pero su entrega declarada es setiembre-2026: el edificio está terminado y la última unidad se entrega en esa fecha.",
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "Grupo Dicon lo lista entre sus proyectos entregados; queda la última unidad D-101 con entrega en setiembre-2026."
+   }
   },
   {
    "id": "dmont-2",
@@ -3631,7 +3674,7 @@
    "m2": "80–224",
    "wa": "966351473",
    "web": "https://www.galeon.com.pe/proyectos/velasco-astete-1080-chacarilla/",
-   "img": "assets/planos/estelar-1080/estelar-12.png",
+   "img": "assets/campo/estelar-sala-ventas.jpg",
    "planos": [
     "assets/planos/estelar-1080/estelar-12.png",
     "assets/planos/estelar-1080/estelar-14.png",
@@ -4106,7 +4149,7 @@
    "m2": "127 – 260",
    "wa": "920374177",
    "web": "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
-   "img": "assets/img-f1/jardines-monte-real/img-01.jpg",
+   "img": "assets/campo/living-monte-real-obra.jpg",
    "planos": [
     "assets/planos/jardines-de-monte-real/plano-107-precio.jpg",
     "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg",
@@ -4287,7 +4330,7 @@
    "m2": "51–147",
    "wa": "908800562",
    "web": "https://floresta.boulevard.com.pe/la-floresta/",
-   "img": "assets/img-f1/la-floresta-boulevard/img-01.jpg",
+   "img": "assets/campo/la-floresta-boulevard-obra.jpg",
    "planos": [
     "assets/planos/la-floresta-boulevard/plano-01.jpg",
     "assets/planos/la-floresta-boulevard/plano-02.jpg",
@@ -4518,7 +4561,7 @@
    "m2": "115 – 276",
    "wa": "924447479",
    "web": "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
-   "img": "assets/img/monte-alegre.jpg",
+   "img": "assets/campo/monte-alegre-valla.jpg",
    "planos": [
     "assets/planos/monte-alegre-109-oficial/DÚPLEX 002 - 3 dorm - 158.89 m2.jpg",
     "assets/planos/monte-alegre-109-oficial/DÚPLEX 003 - 3 dorm - 143.70 m2.jpg",
@@ -5410,7 +5453,7 @@
    "m2": "87–233",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/proyectos/monte-mayor-177/",
-   "img": "assets/img/monte-mayor-177.jpg",
+   "img": "assets/campo/monte-mayor-177-ultimo.jpg",
    "planos": [
     "assets/planos/monte-mayor-177-oficial/duplex-702.jpg",
     "assets/planos/monte-mayor-177-oficial/duplex-703.jpg",
@@ -5562,7 +5605,7 @@
    "m2": "64–240",
    "wa": "944216477",
    "web": "https://azzurra.com.pe/proyectos/monte-mayor-183/",
-   "img": "assets/img-f1/monte-mayor-183/img-01.jpg",
+   "img": "assets/campo/monte-mayor-183-valla.jpg",
    "planos": [
     "assets/planos/monte-mayor-183/plano-01.jpg",
     "assets/planos/monte-mayor-183/plano-02.jpg",
@@ -6217,6 +6260,11 @@
     "total": null,
     "fuente": "EE Inmobiliaria comunica el Dpto. 103 como última unidad.",
     "corte": "2026-08-24"
+   },
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-24",
+    "nota": "EE Inmobiliaria lo publica con entrega inmediata y una sola unidad disponible (Dpto. 103)."
    }
   },
   {
@@ -6237,7 +6285,7 @@
    "m2": "103–107",
    "wa": "943729552",
    "web": "https://makeinmobiliaria.pe/proyecto/monte-sierpe/",
-   "img": "assets/img-f1/monte-sierpe/img-01.jpg",
+   "img": "assets/campo/monte-sierpe-ultimos-depas.jpg",
    "planos": [
     "assets/planos/monte-sierpe/sierpe-X01-2d-107m2.png",
     "assets/planos/monte-sierpe/sierpe-X02-2d-107m2.png",
@@ -6416,81 +6464,66 @@
   },
   {
    "id": "monte-umbroso",
-   "name": "Monte Umbroso",
+   "name": "Monte Umbroso 520",
    "dev": "Transforma Proyectos Inmobiliarios S.A.C.",
    "addr": "Alameda Monte Umbroso 520, Urb. Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En venta / construcción",
-   "entrega": "Pendiente confirmar",
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Terminado y entregado · remate de últimas unidades vía corredores",
+   "entrega": "Entregado en 2024",
    "lat": -12.114061640626225,
    "lng": -76.98035437139151,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 193463,
-   "precio_hasta_usd": 337517,
+   "precio_desde_usd": 155850,
+   "precio_hasta_usd": 399000,
    "dorms": "1–3",
-   "m2": "67–158",
-   "wa": null,
+   "m2": "67 – 186",
+   "wa": "960481577",
    "web": "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
    "img": "assets/img-f1/monte-umbroso/img-01.jpg",
    "planos": [],
    "brochure": null,
    "typologies": [
     {
-     "unidad": "Flat",
+     "unidad": "Flat 503 · 1 dorm (última unidad)",
      "dorm": 1,
-     "m2": 67,
-     "precio_usd": 193463,
-     "precio_m2": 2888,
+     "m2": 67.0,
+     "precio_usd": 155850,
+     "precio_m2": 2326,
      "tipo": "flat",
-     "piso": "típico",
-     "flat": true
+     "piso": "5",
+     "flat": true,
+     "precio_usd_lista": 170850,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 15000
     },
     {
-     "unidad": "Flat",
+     "unidad": "Penthouse dúplex · 3 dorm, terraza de 63 m²",
      "dorm": 3,
-     "m2": 98,
-     "precio_usd": 271878,
-     "precio_m2": 2774,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Flat",
-     "dorm": 3,
-     "m2": 145,
-     "precio_usd": 372261,
-     "precio_m2": 2567,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Flat",
-     "dorm": 2,
-     "m2": 158,
-     "precio_usd": 350944,
-     "precio_m2": 2221,
-     "tipo": "flat",
-     "piso": "?",
-     "flat": true
+     "m2": 186.0,
+     "precio_usd": 369000,
+     "precio_m2": 1984,
+     "tipo": "pent",
+     "piso": "7",
+     "flat": false,
+     "precio_usd_lista": 399000,
+     "cochera_incluida": "2 estacionamientos",
+     "ajuste_cochera_usd": 30000
     }
    ],
    "flats_summary": [
     {
+     "unidad": "Flat 503 · 1 dorm (última unidad)",
      "dorm": 1,
-     "m2": 67,
-     "precio_usd": 193463,
-     "precio_m2": 2888,
-     "comparable_confirmado": false
-    },
-    {
-     "dorm": 3,
-     "m2": 145,
-     "precio_usd": 372261,
-     "precio_m2": 2567,
-     "comparable_confirmado": false
+     "m2": 67.0,
+     "precio_usd": 155850,
+     "precio_m2": 2326,
+     "precio_usd_lista": 170850,
+     "precio_m2_lista": 2550,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 15000,
+     "comparable_confirmado": true,
+     "nota": "Última unidad publicada: 64.50 m² techada / 67.00 m² total, US$170,850 con 1 estacionamiento incluido. Neto de cochera = US$155,850 → US$2,326/m²."
     }
    ],
    "dorms_disponibles": [
@@ -6498,22 +6531,24 @@
     2,
     3
    ],
-   "comentario": "Transforma Proyectos Inmobiliarios; proyecto en construcción en la Alameda Monte Umbroso, Chacarilla. Publica precios de unidades en portales, sin lista completa por tipología. La ficha indica cochera incluida en el precio (por confirmar con el asesor). Búsqueda en portales (24-ago-2026): el proyecto figura con 7 pisos y 28 departamentos. Las unidades publicadas en InfoCasas/Urbania (carga de jul-2024, precios NO vigentes) eran: 1 dorm 67 m² S/657,773 · 3 dorm 98 m² S/924,385 · 3 dorm 145 m² S/1,265,688 · 2 dorm 158 m² S/1,193,211. No se cargan al comparativo por antigüedad y por no saber si incluyen cochera.",
+   "comentario": "Estaba registrado como «en construcción» con datos de julio-2024. Verificado el 25-ago-2026: el edificio YA ESTÁ TERMINADO — año de construcción 2024 — y está en remate de últimas unidades a través de corredores independientes, no de la inmobiliaria. Son 26 departamentos en 7 pisos con rooftop y 3 sótanos, arquitectura de Atelier Reusche Reyna, financiado por BBVA. Quedan publicados el flat 503 de 1 dormitorio (67 m², US$170,850 con 1 estacionamiento) y un penthouse dúplex de 3 dorms con terraza de 63 m² (186 m², US$399,000 con 2 estacionamientos). Es el único 1 dormitorio con precio confirmado del cuadrante además del nuestro.",
    "amenidades": [
     "Rooftop",
-    "Cocinas equipadas",
-    "Estacionamiento por depto"
+    "3 sótanos de estacionamiento",
+    "Estacionamiento de bicicletas",
+    "Lobby y recepción",
+    "Gas natural",
+    "Medidor de luz y agua independiente",
+    "Seguridad 24 h",
+    "Pet friendly",
+    "Áreas verdes"
    ],
    "total_pisos": 7,
    "fuentes": [
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144372",
-    "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144367",
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144395",
-    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144400",
-    "https://limaspace.com/listing/proyecto-de-alameda-monte-umbroso-chacarilla-suj10/",
-    "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
-    "https://www.youtube.com/watch?v=ZS8n6zHxTB8"
+    "https://www.judithriverainmobiliaria.com/propiedades/monte-umbroso-surco/",
+    "https://www.zenterrainmobiliaria.com/p/7134107-Departamento-en-Venta-en-CHACARILLA-Calle-Monteumbroso,-Chacarilla",
+    "https://www.infocasas.com.pe/proyecto-monte-umbroso/191144372 (aviso de la inmobiliaria, 24-jul-2024)",
+    "https://www.youtube.com/watch?v=ZS8n6zHxTB8 (recorrido del flat 203)"
    ],
    "portales": {
     "urbania": "https://urbania.pe/buscar/venta-de-departamentos-en-chacarilla-monte-umbroso--santiago-de-surco--lima--lima",
@@ -6527,7 +6562,48 @@
    ],
    "cochera_status": "si",
    "retirado": "Retirado 2026-07-02: agotado, sin unidades disponibles (confirmado cliente).",
-   "geo_nota": " La Alameda Monte Umbroso está dentro del cuadrante; la marca anterior de \"fuera\" era un error."
+   "geo_nota": " La Alameda Monte Umbroso está dentro del cuadrante; la marca anterior de \"fuera\" era un error.",
+   "estado_obra": "Edificio terminado. Año de construcción 2024; se comercializa como «nuevo de estreno».",
+   "pisos": 7,
+   "unidades": 26,
+   "politica_precio": "El precio de lista incluye estacionamiento: 1 cochera en el flat de 1 dorm y 2 en el penthouse dúplex. Cochera adicional US$12,000. El US$/m² del portal descuenta US$15,000 por la cochera incluida.",
+   "stock": {
+    "n": 2,
+    "label": "Últimas unidades: flat 503 (1 dorm) y penthouse dúplex"
+   },
+   "ventas": {
+    "vendidas": 24,
+    "total": 26,
+    "fuente": "De 26 departamentos solo quedan 2 publicados por corredores (flat 503 y el penthouse dúplex).",
+    "corte": "2026-08-25"
+   },
+   "como_presenta": "Ya no lo vende la inmobiliaria: lo rematan corredores independientes (Judith Rivera, Zenterra, Dmayo) como «nuevo de estreno». Venden acabados contemporáneos y la firma del estudio de arquitectura Atelier Reusche Reyna.",
+   "financia": "BBVA",
+   "precio_fuente": {
+    "tipo": "portal",
+    "nota": "Avisos de los corredores que rematan las últimas unidades (Zenterra, Judith Rivera, Dmayo), consultados el 25-ago-2026. Los avisos originales de la inmobiliaria en InfoCasas son de julio-2024 y no se actualizaron."
+   },
+   "estado_evidencia": {
+    "tipo": "portal",
+    "fecha": "2026-08-25",
+    "nota": "Verificado el 25-ago-2026: el edificio figura terminado (año de construcción 2024) y se comercializa como «nuevo de estreno» por corredores. Los avisos de la inmobiliaria en InfoCasas siguen publicados pero datan del 24-jul-2024."
+   },
+   "contactos": [
+    {
+     "nombre": "Milagros López",
+     "numero": "960481577",
+     "fuente": "Aviso de Zenterra Inmobiliaria que remata las últimas unidades (consultado 25-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "958393493",
+     "fuente": "Segundo número del mismo aviso de Zenterra"
+    }
+   ],
+   "wa_label": "Milagros · corredora",
+   "asesora": "Milagros López",
+   "pedido": "Hola Milagros! Vi el aviso de Monte Umbroso 520 en Chacarilla. Sigue disponible el flat de 1 dormitorio? Me pasas el precio actual y qué incluye? Gracias!",
+   "pedido_que": "confirmar disponibilidad + precio vigente"
   },
   {
    "id": "monteflor",
@@ -6547,7 +6623,7 @@
    "m2": "64–240",
    "wa": "981349116",
    "web": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-2797-monteflor-santiago-de-surco-lima-lima-arch-inversiones-inmobiliarias",
-   "img": "assets/img-f1/monteflor/img-01.jpg",
+   "img": "assets/campo/monteflor-valla.jpg",
    "planos": [
     "assets/campo/monteflor-valla.jpg"
    ],
@@ -7009,7 +7085,7 @@
    "m2": "83–227",
    "wa": "949107186",
    "web": "https://precursoreschacarillasur.com.pe/",
-   "img": "assets/img/precursores-525.jpg",
+   "img": "assets/campo/chacarillasur-precursores.jpg",
    "planos": [
     "assets/planos/precursores-525/precu-15.png",
     "assets/planos/precursores-525/precu-17.png",
@@ -7355,7 +7431,7 @@
    "m2": "123–366",
    "wa": "999024346",
    "web": "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/",
-   "img": "assets/img-f1/santorini/img-01.jpg",
+   "img": "assets/campo/santorini-cartel-obra.jpg",
    "planos": [
     "assets/planos/santorini/plano-01.jpg",
     "assets/planos/santorini/plano-02.jpg",
@@ -8006,7 +8082,7 @@
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
-   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026). AyD lo mantiene «EN PLANOS» en su web (24-ago-2026) junto con Narciso y Conde II. En el brochure de Conde II edición 2026, la lámina «Proyectos EN VENTA» muestra un segundo proyecto en «Próximo lanzamiento · Chacarilla - Surco»: por descarte es este, ya que Narciso está en Las Gardenias.",
+   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026). AyD lo mantiene «EN PLANOS» en su web (24-ago-2026) junto con Narciso y Conde II. En el brochure de Conde II edición 2026, la lámina «Proyectos EN VENTA» muestra un segundo proyecto en «Próximo lanzamiento · Chacarilla - Surco»: por descarte es este, ya que Narciso está en Las Gardenias. Se sumó al benchmark en el recorrido del 22-ago-2026, junto con los otros proyectos de AyD.",
    "fuentes": [
     "https://inmobiliariaayd.com",
     "https://inmobiliariaayd.com/proyectos/"
@@ -8067,7 +8143,8 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "mapeado_desde": "2026-08-22"
   },
   {
    "id": "narciso-ayd",
@@ -8088,7 +8165,7 @@
    "wa": "980765183",
    "wa_label": "Washington B. · AyD",
    "web": "https://inmobiliariaayd.com/proyecto/narciso/",
-   "img": "assets/campo/narciso-ayd.jpg",
+   "img": "assets/planos/narciso-ayd-oficial/Render oficial fachada frontal (feb-2026).jpg",
    "brochure": "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
    "planos": [
     "assets/planos/narciso-ayd-oficial/Flat 201-401 - 3 dorm - 97 m2.jpg",
@@ -8519,7 +8596,8 @@
    "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
    "planos": [
-    "assets/campo/the-eleven.jpg"
+    "assets/campo/the-eleven.jpg",
+    "assets/campo/velasco-astete-sur.jpg"
    ],
    "typologies": [],
    "flats_summary": [],
