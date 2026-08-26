@@ -38,6 +38,28 @@
   "bitacora": [
    {
     "fecha": "2026-08-25",
+    "proyecto": "Ave. del Sur 220",
+    "dev": "Grupo Espacio Urbano (GEU)",
+    "proyecto_id": "ave-del-sur-220",
+    "tags": [
+     "precio",
+     "venta",
+     "estado"
+    ],
+    "canal": "Revisión de webs oficiales",
+    "autor": "Benchmark",
+    "texto": "Barrido de las 26 webs oficiales del cuadrante. Ocho proyectos tenían el dato desactualizado: Monte Carmelo 551 bajó su entrada a S/744,600 (teníamos US$264,147) y son 13 unidades, no las que suponíamos; Spazio bajó a US$174,468 y publica 25 departamentos; D'Mont 2 SUBIÓ a US$263,064 porque ya no publica nada bajo 121.62 m² — se le agotaron las unidades chicas; Monte Carmelo 250 resultó ser de 2 a 4 dormitorios, 80 a 274 m² y 7 pisos; Montemar 269 también llega a 4 dormitorios; Conde de la Vega 128 ahora arranca en 257 m²; HANA sigue vendiendo activamente pese a los sótanos vendidos del brochure; y Santorini publica el estado unidad por unidad: 13 vendidas de 23. Con esto, 31 de 40 proyectos tienen el dato verificado en los últimos 35 días.",
+    "cita": "«Desde $174,468» (Spazio) · «Desde $263,064 · Desde 121.62 m²» (D'Mont 2) · «desde S/744,600 · desde 102 m²» (Monte Carmelo 551) — webs oficiales al 25-ago-2026",
+    "fuentes": [
+     "https://grupodicon.com.pe/proyecto/dmont-2/",
+     "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
+     "https://balance.pe/proyecto/monte-carmelo-551/",
+     "https://odima.pe/proyecto/hana/",
+     "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/"
+    ]
+   },
+   {
+    "fecha": "2026-08-25",
     "proyecto": "Conde de la Vega 460",
     "dev": "Azzurra Constructores",
     "proyecto_id": "conde-de-la-vega-460",
@@ -2361,8 +2383,8 @@
    "como_presenta": "Concepto con el que se anuncian: «Departamentos boutique en Chacarilla».",
    "estado_evidencia": {
     "tipo": "web_oficial",
-    "fecha": "2026-08-24",
-    "nota": "Grupo Dicon lo lista hoy como «En Construcción»."
+    "fecha": "2026-08-25",
+    "nota": "Grupo Dicon lo mantiene «En Construcción» al 25-ago-2026, desde US$229,552 y metraje desde 100 m² — sin cambios."
    },
    "precio_fuente": {
     "tipo": "web_oficial",
@@ -2603,9 +2625,9 @@
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Conde II por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? Gracias!",
    "pedido_que": "cochera + tarifario por unidad",
    "estado_evidencia": {
-    "tipo": "whatsapp",
-    "fecha": "2026-08-21",
-    "nota": "Brochure 2026 enviado por AyD: construcción 2026, entrega 2027. Placa de obra: 13 meses de plazo."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "AyD lo mantiene «EN PLANOS» al 25-ago-2026 — sin cambios."
    },
    "precio_fuente": {
     "tipo": "brochure",
@@ -3529,12 +3551,12 @@
    "en_cuadrante": true,
    "stock": {
     "n": 8,
-    "label": "8 de 23 · quedan 8"
+    "label": "8 de 23 disponibles (flats 101, 201, 202, 302, 401, 402, 502 y dúplex 603)"
    },
-   "precio_desde_usd": 181190,
+   "precio_desde_usd": 263064,
    "precio_hasta_usd": 299558,
    "dorms": "2–3",
-   "m2": "82–157",
+   "m2": "121.62 – 157.31",
    "wa": "933209656",
    "web": "https://grupodicon.com.pe/proyecto/dmont-2/",
    "img": "assets/img-f1/dmont-2/img-01.jpg",
@@ -3683,7 +3705,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor.",
+   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -3743,8 +3765,8 @@
    "pedido_que": "promoción + tarifario por unidad",
    "estado_evidencia": {
     "tipo": "web_oficial",
-    "fecha": "2026-08-24",
-    "nota": "Grupo Dicon lo lista hoy como «En Construcción», desde US$263,064."
+    "fecha": "2026-08-25",
+    "nota": "Web de Grupo Dicon al 25-ago-2026: 8 unidades publicadas, desde US$263,064, de 121.62 a 157.31 m²."
    },
    "precio_fuente": {
     "tipo": "web_oficial",
@@ -4119,10 +4141,10 @@
    "lng": -76.983405589272,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 250588,
+   "precio_desde_usd": 246176,
    "precio_hasta_usd": 264706,
    "dorms": "2–4",
-   "m2": "108–209",
+   "m2": "85 – 208.57",
    "wa": "994448991",
    "web": "https://odima.pe/proyecto/hana/",
    "img": "assets/planos/hana/hana-17.png",
@@ -4156,7 +4178,7 @@
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Odima, Conde de la Vega del Ren 149, 17 dptos, financia BCP. Única unidad: DPTO 102 (3 dorm, 97 m², 1er piso elevado). PROMO ago-2026: bajó de S/900,000 a S/852,000 (depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de mejora). Entrega inmediata. Brochure oficial de feb-2026: 17 departamentos de 3 y 4 dormitorios, de 85 a 290 m². En las plantas de los tres sótanos TODOS los estacionamientos y depósitos aparecen rotulados «VENDIDO» — señal de que el proyecto está prácticamente colocado.",
+   "comentario": "Odima, Conde de la Vega del Ren 149, 17 dptos, financia BCP. Única unidad: DPTO 102 (3 dorm, 97 m², 1er piso elevado). PROMO ago-2026: bajó de S/900,000 a S/852,000 (depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de mejora). Entrega inmediata. Brochure oficial de feb-2026: 17 departamentos de 3 y 4 dormitorios, de 85 a 290 m². En las plantas de los tres sótanos TODOS los estacionamientos y depósitos aparecen rotulados «VENDIDO» — señal de que el proyecto está prácticamente colocado. Revisado el 25-ago-2026: Odima lo sigue vendiendo, con precio de entrada S/837,000 (US$246,176) y metrajes de 85 a 208.57 m². Los 17 departamentos son el total del proyecto, no las unidades disponibles.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -4172,8 +4194,8 @@
    "mostrar": true,
    "cochera_status": "si",
    "stock": {
-    "n": 1,
-    "label": "Última unidad"
+    "n": null,
+    "label": "Sótanos vendidos en el brochure de feb-2026; la web sigue comercializando"
    },
    "entrega_confirmada_campo": "Entrega inmediata",
    "campo_ago": "13-ago: bajó a S/852,000 con promo (antes S/900,000). Rebeca/Odima.",
@@ -4217,6 +4239,11 @@
      "nombre": null,
      "numero": "972920864",
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "981237607",
+     "fuente": "Línea general publicada en la web de Odima (25-ago-2026)"
     }
    ],
    "asesora": "Rebeca Ruiz",
@@ -4224,9 +4251,9 @@
    "pedido": "Hola Rebeca! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
    "estado_evidencia": {
-    "tipo": "brochure",
-    "fecha": "2026-02-01",
-    "nota": "Brochure oficial: los tres sótanos figuran íntegramente VENDIDOS."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Odima lo mantiene en venta al 25-ago-2026: 17 departamentos, desde S/837,000, de 85 a 208.57 m². No publica cuántas unidades quedan."
    },
    "precio_fuente": {
     "tipo": "brochure",
@@ -4246,7 +4273,8 @@
      "vendidas": null,
      "total": 17
     }
-   ]
+   ],
+   "coherencia_alerta": "El brochure de feb-2026 muestra los tres sótanos íntegramente VENDIDOS, pero su web sigue comercializando activamente. Falta que la asesora confirme cuántas unidades quedan."
   },
   {
    "id": "jardines-monte-real",
@@ -4922,9 +4950,9 @@
    ],
    "foto_campo": "2026-08-22",
    "estado_evidencia": {
-    "tipo": "brochure",
-    "fecha": "2026-07-01",
-    "nota": "Brochure de julio-2026 + valla con precios de entrada; obra aún no iniciada."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Edifikarte al 25-ago-2026: 115 a 276 m², 3 y 4 dorms, 7 pisos — sin cambios."
    },
    "precio_fuente": {
     "tipo": "brochure",
@@ -4954,8 +4982,8 @@
    "en_cuadrante": false,
    "precio_desde_usd": 288529,
    "precio_hasta_usd": null,
-   "dorms": "2–3",
-   "m2": "80–116",
+   "dorms": "2–4",
+   "m2": "80 – 274",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/proyectos/monte-carmelo-250/",
    "img": "assets/campo/monte-carmelo-250.jpg",
@@ -5022,7 +5050,7 @@
     3,
     4
    ],
-   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, de 109.01 a 242.99 m², precios de lista desde S/ 981,000. La valla de obra (22-ago-2026) dice «Tu depa en la mejor zona de Chacarilla · 2 | 3 dormitorios · FLATS Y DÚPLEX · Contáctanos 981 386 111» y suma el claim «Tu inversión segura en el mejor lugar».",
+   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, de 109.01 a 242.99 m², precios de lista desde S/ 981,000. La valla de obra (22-ago-2026) dice «Tu depa en la mejor zona de Chacarilla · 2 | 3 dormitorios · FLATS Y DÚPLEX · Contáctanos 981 386 111» y suma el claim «Tu inversión segura en el mejor lugar». Corregido el 25-ago-2026 con su ficha oficial: son flats y dúplex de 2, 3 y 4 dormitorios de 80 a 274 m² en 7 pisos — teníamos 2-3 dorms, 80-116 m² y 6 pisos.",
    "fuentes": [
     "https://www.edifikarte.com.pe",
     "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07",
@@ -5084,9 +5112,9 @@
    "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 250 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Ficha de Edifikarte al 25-ago-2026: flats y dúplex de 2, 3 y 4 dormitorios, de 80 a 274 m², 7 pisos."
    },
    "precio_fuente": {
     "tipo": "web_oficial",
@@ -5100,7 +5128,8 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "pisos": 7
   },
   {
    "id": "monte-carmelo-551",
@@ -5109,15 +5138,15 @@
    "addr": "Jr. Monte Carmelo 551, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
-   "entrega": "30 de noviembre de 2026",
+   "entrega": "Noviembre 2026",
    "lat": -12.11457421674685,
    "lng": -76.98530634199747,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 264147,
+   "precio_desde_usd": 219000,
    "precio_hasta_usd": 305118,
    "dorms": "2–3",
-   "m2": "108–142",
+   "m2": "102 – 181.1",
    "wa": "952496382",
    "web": "https://balance.pe/proyecto/monte-carmelo-551/",
    "img": "assets/img-f1/monte-carmelo-551/img-01.jpg",
@@ -5239,7 +5268,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Balance Grupo Inmobiliario en el cuadrante, en obra con entrega dic-2026. Información actualizada por asesor (WhatsApp 02-jul-2026): precios enviados para SS01, 202, 301 y 303 incluyen 1 cochera; no incluyen depósito. Para comparación contra GEU se netea la cochera referencial de S/55,000.",
+   "comentario": "Balance Grupo Inmobiliario en el cuadrante, en obra con entrega dic-2026. Información actualizada por asesor (WhatsApp 02-jul-2026): precios enviados para SS01, 202, 301 y 303 incluyen 1 cochera; no incluyen depósito. Para comparación contra GEU se netea la cochera referencial de S/55,000. Revisado el 25-ago-2026 en la web de Balance: el precio de entrada bajó a S/744,600 (US$219,000) — teníamos US$264,147 de una ficha de portal. El proyecto son 13 unidades: 8 flats, 3 dúplex y 1 tríplex, de 102 a 181.1 m².",
    "amenidades": [],
    "total_pisos": 5,
    "fuentes": [
@@ -5313,6 +5342,11 @@
      "nombre": null,
      "numero": "952496382",
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "4025092",
+     "fuente": "Teléfono fijo publicado en la web de Balance (25-ago-2026)"
     }
    ],
    "wa_label": "Balance Grupo Inmobiliario",
@@ -5320,9 +5354,9 @@
    "pedido_que": "promoción + tarifario por unidad",
    "como_presenta": "Concepto con el que se anuncian: «Frente al parque — dúplex y flats».",
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Web de Balance al 25-ago-2026: desde S/744,600, 13 unidades (8 flats, 3 dúplex y 1 tríplex), de 102 a 181.1 m², entrega noviembre 2026, en construcción."
    },
    "precio_fuente": {
     "tipo": "portal",
@@ -5336,7 +5370,8 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "unidades": 13
   },
   {
    "id": "monte-mar-167",
@@ -5352,8 +5387,8 @@
    "en_cuadrante": true,
    "precio_desde_usd": 288235,
    "precio_hasta_usd": null,
-   "dorms": "2–3",
-   "m2": "81.37 – 182.67",
+   "dorms": "2–4",
+   "m2": "80 – 182.67",
    "wa": "981386111",
    "web": "https://www.edifikarte.com.pe/proyectos/montemar-269/",
    "img": "assets/img/monte-mar-167.jpg",
@@ -5485,7 +5520,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp.",
+   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp. Su ficha oficial publica 2, 3 y 4 dormitorios (teníamos 2-3) y flats de 80 a 136 m²; con los dúplex del brochure de julio el rango llega a 182.67 m².",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/montemar-269/",
     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf"
@@ -5553,9 +5588,9 @@
    "wa_label": "Jenny",
    "financia": "Interbank",
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Ficha de Edifikarte al 25-ago-2026: 2, 3 y 4 dormitorios, de 80 a 136 m² en la web; el brochure de julio suma dúplex hasta 182.67 m²."
    },
    "precio_fuente": {
     "tipo": "portal",
@@ -5575,7 +5610,8 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "pisos": 6
   },
   {
    "id": "monte-mayor-177",
@@ -6422,8 +6458,8 @@
    },
    "estado_evidencia": {
     "tipo": "web_oficial",
-    "fecha": "2026-08-24",
-    "nota": "EE Inmobiliaria lo publica con entrega inmediata y una sola unidad disponible (Dpto. 103)."
+    "fecha": "2026-08-25",
+    "nota": "EE Inmobiliaria lo mantiene en entrega inmediata al 25-ago-2026: desde S/1'060,000, metraje desde 167 m² — sin cambios."
    }
   },
   {
@@ -6608,9 +6644,9 @@
    "pedido": "Hola Nadia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Sierpe por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
    "estado_evidencia": {
-    "tipo": "campo",
-    "fecha": "2026-08-22",
-    "nota": "Edificio terminado con carteles «ÚLTIMOS DEPAS» en fachada."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Make Inmobiliaria lo mantiene en entrega inmediata al 25-ago-2026 — sin cambios."
    },
    "precio_fuente": {
     "tipo": "whatsapp",
@@ -7218,9 +7254,9 @@
    "pedido_que": "promoción + tarifario por unidad",
    "como_presenta": "Concepto con el que se anuncian: «Frente al parque Monte Carmelo».",
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "EE Inmobiliaria al 25-ago-2026: de 86 a 205 m² — sin cambios."
    },
    "precio_fuente": {
     "tipo": "brochure",
@@ -7762,7 +7798,8 @@
      "cochera_incluida": "1 estacionamiento",
      "ajuste_cochera_usd": 18000,
      "comparable_confirmado": true,
-     "nota": "Tarifario del proyecto: US$286 450 con 1 estacionamiento. Neto de cochera (US$18 000) = US$268 450 → US$2 183/m²."
+     "nota": "Tarifario del proyecto: US$286 450 con 1 estacionamiento. Neto de cochera (US$18 000) = US$268 450 → US$2 183/m². ⚠ Al 25-ago-2026 esta unidad ya figura VENDIDA en su web: el precio queda como referencia de cierre.",
+     "vendida": true
     },
     {
      "unidad": "202B · flat Torre B",
@@ -7781,7 +7818,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal. Tarifario del proyecto: los precios incluyen 1 estacionamiento y la 2.ª cochera paralela suma US$18,000 en todas las tipologías (ej. 301A: US$387,000 con 1 vs US$405,000 con 2). Con ese ajuste sus flats entran al comparativo: de US$2,156 a US$2,316 por m² netos de cochera. Varias unidades ya figuran VENDIDAS en su web.",
+   "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal. Tarifario del proyecto: los precios incluyen 1 estacionamiento y la 2.ª cochera paralela suma US$18,000 en todas las tipologías (ej. 301A: US$387,000 con 1 vs US$405,000 con 2). Con ese ajuste sus flats entran al comparativo: de US$2,156 a US$2,316 por m² netos de cochera. Varias unidades ya figuran VENDIDAS en su web. Al 25-ago-2026 su web marca 13 unidades vendidas de 23 — quedan 10. El flat 501B, que usábamos como comparable, ya figura vendido: su precio se mantiene como referencia de cierre, no de oferta vigente.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -7802,8 +7839,8 @@
    ],
    "cochera_status": "si",
    "stock": {
-    "n": null,
-    "label": "Varias unidades vendidas (401A, 103A, 202A-502A, 601A, 401B)"
+    "n": 10,
+    "label": "10 de 23 disponibles (estado por unidad en su web, ago-2026)"
    },
    "verif_web": {
     "precio_portal": "desde US$274,550",
@@ -7859,19 +7896,19 @@
    "politica_precio": "El precio de lista de cada departamento YA incluye 1 estacionamiento. La 2.ª cochera paralela cuesta US$18,000 adicionales (delta constante en todas las tipologías del tarifario). El US$/m² del portal descuenta esos US$18,000.",
    "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos.",
    "estado_evidencia": {
-    "tipo": "campo",
-    "fecha": "2026-08-22",
-    "nota": "Cartel informativo de obra vigente: 14 meses de plazo, sin punto de venta en sitio."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Su web publica el estado unidad por unidad al 25-ago-2026: 13 vendidas de 23, quedan 10 (102A, 201A, 301A, 501A, 101B, 201B, 301B, 202B, 302B, 502B)."
    },
    "precio_fuente": {
     "tipo": "tarifario",
     "nota": "Tarifario del proyecto, unidad por unidad, cotizado con 1 y con 2 estacionamientos."
    },
    "ventas": {
-    "vendidas": 6,
-    "total": null,
-    "fuente": "Web del proyecto: 401A, 103A, 202A-502A, 601A y 401B figuran vendidas.",
-    "corte": "2026-08-24"
+    "vendidas": 13,
+    "total": 23,
+    "corte": "2026-08-25",
+    "fuente": "Su web marca el estado de cada unidad: 13 vendidas (103A, 401A, 202A, 302A, 402A, 502A, 601A, 602A, 401B, 501B, 402B, 601B, 602B) y 10 disponibles."
    },
    "stock_hist": [
     {
@@ -7895,10 +7932,10 @@
    "lng": -76.98248346969847,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": 192428,
+   "precio_desde_usd": 174468,
    "precio_hasta_usd": 387491,
    "dorms": "3–6",
-   "m2": "83–247",
+   "m2": "83 – 247.31",
    "wa": "957733272",
    "web": "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
    "img": "assets/campo/spazio-sala-ventas.jpg",
@@ -8027,7 +8064,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo.",
+   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -8091,8 +8128,8 @@
    "pedido_que": "cochera + promoción + tarifario por unidad",
    "estado_evidencia": {
     "tipo": "web_oficial",
-    "fecha": "2026-08-24",
-    "nota": "Grupo Dicon lo lista hoy como «En Construcción»; en campo (22-ago) tiene sala de ventas atendida."
+    "fecha": "2026-08-25",
+    "nota": "Web de Grupo Dicon al 25-ago-2026: 25 departamentos entre flats, dúplex y tríplex, de US$174,468 a US$387,491, de 83 a 247.31 m²."
    },
    "precio_fuente": {
     "tipo": "campo",
@@ -8113,7 +8150,9 @@
      "total": 27
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "unidades": 25,
+   "financia": "Scotiabank"
   },
   {
    "id": "terraverde",
@@ -8312,8 +8351,8 @@
    "pedido_que": "reconfirmar precios",
    "estado_evidencia": {
     "tipo": "web_oficial",
-    "fecha": "2026-08-24",
-    "nota": "AyD lo mantiene «EN PLANOS» en su web."
+    "fecha": "2026-08-25",
+    "nota": "AyD lo mantiene «EN PLANOS» al 25-ago-2026 — sin cambios."
    },
    "precio_fuente": {
     "tipo": "web_oficial",
@@ -9107,9 +9146,9 @@
    ],
    "foto_campo": "2026-08-22",
    "estado_evidencia": {
-    "tipo": "brochure",
-    "fecha": "2026-08-19",
-    "nota": "Brochure de agosto-2026: en construcción, entrega 31-dic-2027."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "EE Inmobiliaria al 25-ago-2026: en construcción, de 64 a 122 m², desde S/501,000 — sin cambios."
    },
    "precio_fuente": {
     "tipo": "brochure",
@@ -9417,7 +9456,7 @@
    "isGEU": false,
    "en_cuadrante": true,
    "dorms": "3",
-   "m2": "109.01 – 242.99",
+   "m2": "109.01 – 257",
    "pisos": 5,
    "unidades": 23,
    "precio_desde_usd": 261600,
@@ -9465,7 +9504,7 @@
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación interpolada sobre Jr. Conde de la Vega del Ren, entre el 119 (Conde II) y el 149 (HANA), ambos verificados en campo. Pendiente de foto.",
-   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera.",
+   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera. Revisado el 25-ago-2026: su ficha oficial dice «metraje desde 257 m²» y 5 pisos. Si el rango de entrada subió de 109 a 257 m², es señal de que las unidades chicas ya se colocaron.",
    "amenidades": [],
    "precio_hist": [
     {
@@ -9491,9 +9530,9 @@
    "pedido": "Hola Jenny! Consulta por Conde de la Vega 128: me pasas la lista de precios con lo que queda disponible? el precio incluye cochera? y para cuándo entregan?",
    "pedido_que": "lista de precios + cochera + entrega",
    "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
+    "tipo": "web_oficial",
+    "fecha": "2026-08-25",
+    "nota": "Ficha de Edifikarte al 25-ago-2026: 3 dormitorios, 5 pisos, «metraje desde 257 m²» — el rango de entrada subió respecto de los 109 m² que publicaba Nexo."
    },
    "precio_fuente": {
     "tipo": "portal",
@@ -9507,7 +9546,8 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "coherencia_alerta": "Su ficha oficial ahora arranca en 257 m² mientras Nexo publicaba desde 109 m²: probablemente ya solo quedan las unidades grandes. Confirmar con Jenny qué queda."
   }
  ]
 }
