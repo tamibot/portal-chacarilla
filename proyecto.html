@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260825e"></script>
+<script src="data/portal-data.js?v=20260828a"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -208,6 +208,9 @@ function render(){
    ${amenHtml?`<div class="sec">Amenidades</div>${amenHtml}`:''}
 
    ${p.politica_precio?`<div class="alert" style="background:#EAF3DE;border-color:#cfe0b8;color:#2a3a20">💲 <b>Qué incluye el precio:</b> ${p.politica_precio}</div>`:''}
+   ${(()=>{const m=(p.flats_summary||[]).map(f=>f.motivo_no_comparable).filter(Boolean)[0];
+     if(!m)return '';
+     return `<div class="alert" style="background:#FDECEA;border-color:#f0c2bc;color:#7a2318">⚖ <b>No entra al comparativo de US$/m²:</b> ${m}</div>`;})()}
    ${p.promocion?`<div class="alert" style="background:#FBECF2;border-color:#e6c0d2;color:#5a2038">🎁 <b>Promoción vigente:</b> ${p.promocion}</div>`:''}
    ${p.como_presenta?`<div class="alert" style="background:#EEF2F7;border-color:#c6d2e0;color:#22303f">🗣 <b>Cómo lo presentan:</b> ${p.como_presenta}</div>`:''}
    ${p.financia?`<div class="alert" style="background:#E7F0FA;border-color:#c3d8ee;color:#173f68">🏦 <b>Financia:</b> ${p.financia}</div>`:''}

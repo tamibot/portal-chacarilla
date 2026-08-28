@@ -7,7 +7,7 @@
   "con_precio": 100,
   "competidores_activos": 35,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 19,
+  "comparables_confirmados": 13,
   "en_ultimas_unidades": 11,
   "sin_precio_publico": 10,
   "cochera_incluida": 12,
@@ -1959,7 +1959,8 @@
    "regla": "Toda comparación de precio sale de una de estas seis fuentes y cada proyecto declara la suya. Cuando hay lista de precios por unidad, esa manda; cuando el asesor cotizó por WhatsApp, esa cotización pisa a la web y al brochure porque es lo más fresco. El precio de un portal solo se usa si no hay nada mejor."
   },
   "regla_cuadrante": "El cuadrante es el mismo desde el corte 1 y no se mueve. Nada se saca del portal por estar fuera: los proyectos que dan sobre una avenida-límite (Velasco Astete, de los Precursores, de la Floresta) se marcan «en el borde» y los de otra urbanización, «fuera del área de estudio». Todos siguen visibles en el mapa y en el listado; los filtros sirven para aislarlos, nunca para esconderlos.",
-  "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados."
+  "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados.",
+  "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md."
  },
  "quadrant": [
   [
@@ -2562,7 +2563,8 @@
      "m2": 126,
      "precio_usd": 308700,
      "precio_m2": 2450,
-     "comparable_confirmado": true
+     "comparable_confirmado": false,
+     "motivo_no_comparable": "El brochure de AyD no dice si el precio incluye estacionamiento."
     }
    ],
    "dorms_disponibles": [
@@ -2614,7 +2616,7 @@
    "caseta_nota": "Sin caseta: cerco de obra rotulado con la marca, metrajes y datos de contacto.",
    "caseta_fecha": "2026-08-22",
    "como_presenta": "«Un estilo de vida sofisticado, rodeado de áreas verdes» — venden cercanía a los parques Bella Luz, Miro Quesada y César Vallejo, y la posibilidad de personalizar acabados y distribución.",
-   "politica_precio": "Precio publicado sin detalle de cochera — pendiente de confirmar con el asesor si va incluida o aparte.",
+   "politica_precio": "No sabemos si el precio incluye estacionamiento. Su brochure trae el precio por tipología pero no dice si incluye estacionamiento, y no tenemos tarifario. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante.",
    "promocion": "Beneficio de personalización: «puedes adaptar ese tercer dormitorio a tus necesidades — oficina, sala de juegos, taller, gimnasio». Personalizan acabados y distribución con acompañamiento de sus arquitectos.",
    "planos_fuente": "Brochure oficial AyD edición 2026, recibido por WhatsApp (cuadro de tipologías con estado de venta + plantas de los flats típicos).",
    "documentos": [
@@ -2681,7 +2683,8 @@
      "vendidas": 3,
      "total": 6
     }
-   ]
+   ],
+   "cochera_nota": "Sin confirmar. Su brochure trae el precio por tipología pero no dice si incluye estacionamiento, y no tenemos tarifario."
   },
   {
    "id": "conde-de-la-vega-251",
@@ -3342,7 +3345,7 @@
    ],
    "flats_summary": [
     {
-     "unidad": "Flat típico promedio (9 flats disponibles)",
+     "unidad": "Promedio de los 9 flats disponibles",
      "dorm": "1-3",
      "m2": 117.67,
      "precio_usd": 302222,
@@ -3352,14 +3355,16 @@
      "cochera_incluida": "1-2 estacionamientos según unidad",
      "ajuste_cochera_usd": "15k simple / 28k lineal / 30k 2 simples",
      "comparable_confirmado": true,
-     "nota": "Promedio ponderado neto de 9 flats disponibles; excluye piso 1, dúplex, penthouse y vendidos."
+     "nota": "Promedio ponderado de los 9 flats disponibles del tarifario (201, 301, 302, 401, 403, 501, 502, 503 y 504), cada uno neto de cochera antes de promediar: US$2,954,000 de lista − US$234,000 de estacionamientos = US$2,720,000 → US$302,222 por unidad sobre 117.67 m² promedio. Excluye el piso 1, el dúplex 202 y los vendidos."
     },
     {
-     "dorm": 1,
+     "dorm": 2,
      "m2": 85.1,
      "precio_usd": 238000,
      "precio_m2": 2797,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "unidad": "503",
+     "nota": "Tarifario de Azzurra: US$253,000 con 1 estacionamiento simple. Neto de cochera (US$15,000) = US$238,000 → US$2,797/m²."
     }
    ],
    "dorms_disponibles": [
@@ -3418,7 +3423,7 @@
    "caseta_ventas": "nd",
    "caseta_nota": "No se llegó a fotografiar en el recorrido del 22-ago-2026 — pendiente para el próximo.",
    "caseta_fecha": "2026-08-22",
-   "politica_precio": "La lista de Azzurra incluye 1 o 2 estacionamientos según la unidad.",
+   "politica_precio": "El tarifario de Azzurra del 18-may-2026 publica el precio con estacionamiento incluido y dice cuántos trae cada unidad. El US$/m² del portal los descuenta. Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
    "como_presenta": "Azzurra lo presenta como preventa boutique de 26 departamentos, con lista de precios por unidad.",
    "documentos": [
     {
@@ -3478,7 +3483,8 @@
      "vendidas": 14,
      "total": 26
     }
-   ]
+   ],
+   "cochera_nota": "Confirmado en el tarifario de Azzurra del 18-may-2026: incluye 1 o 2 estacionamientos según la unidad."
   },
   {
    "id": "dmont-dicon",
@@ -3881,7 +3887,8 @@
      "precio_m2": 2280,
      "comparable_confirmado": true,
      "precio_lista_usd": 197407,
-     "ajuste_cochera_usd": 15000
+     "ajuste_cochera_usd": 15000,
+     "nota": "Brochure de Galeón: US$197 407 con cochera incluida. Neto de cochera (US$15 000) = US$182 407 → US$2 280/m²."
     },
     {
      "dorm": 3,
@@ -3890,7 +3897,8 @@
      "precio_m2": 2231,
      "comparable_confirmado": true,
      "precio_lista_usd": 266032,
-     "ajuste_cochera_usd": 15000
+     "ajuste_cochera_usd": 15000,
+     "nota": "Brochure de Galeón: US$266 032 con cochera incluida. Neto de cochera (US$15 000) = US$251 032 → US$2 231/m²."
     }
    ],
    "dorms_disponibles": [
@@ -3910,7 +3918,7 @@
    "anuncios": null,
    "mostrar": true,
    "cochera_status": "si",
-   "cochera_nota": "Cochera de regalo (Galeón) — promoción anunciada en Meta, jul-2026. Verificar vigencia.",
+   "cochera_nota": "Su brochure y la valla de obra publican el precio con cochera incluida; la promoción de Meta de jul-2026 la ofrece «de regalo». Valor usado para netear: US$15,000.",
    "entrega_confirmada_campo": "Julio 2027",
    "stock": {
     "n": null,
@@ -4063,7 +4071,8 @@
      "m2": 85,
      "precio_usd": 196471,
      "precio_m2": 2311,
-     "comparable_confirmado": true
+     "comparable_confirmado": false,
+     "motivo_no_comparable": "La ficha de Nexo no dice si el precio incluye estacionamiento."
     }
    ],
    "dorms_disponibles": [
@@ -4161,7 +4170,9 @@
      "total": 18
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "cochera_nota": "Sin confirmar. El precio viene de la ficha de Nexo y el metraje del cartel de obra; ninguno menciona estacionamiento.",
+   "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y el metraje del cartel de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante."
   },
   {
    "id": "hana",
@@ -4379,7 +4390,8 @@
      "m2": 94.2,
      "precio_usd": 246028,
      "precio_m2": 2612,
-     "comparable_confirmado": true
+     "comparable_confirmado": false,
+     "motivo_no_comparable": "Ni la valla de obra ni la ficha de Nexo dicen si el precio incluye estacionamiento."
     }
    ],
    "dorms_disponibles": [
@@ -4491,7 +4503,9 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "cochera_nota": "Sin confirmar. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento.",
+   "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante."
   },
   {
    "id": "la-floresta-boulevard",
@@ -4662,7 +4676,7 @@
     "n": null,
     "label": "78 deptos · 2 torres"
    },
-   "cochera_status": "incluida",
+   "cochera_status": "si",
    "verif_web": {
     "precio_portal": "no publica (validación BCP en curso)",
     "estado_portal": "etapa temprana/preventa",
@@ -5262,22 +5276,22 @@
      "precio_soles": 799000
     },
     {
-     "unidad": "404",
+     "unidad": "Tríplex 404",
      "dorm": 2,
      "m2": 120.04,
      "precio_usd": 232147,
      "precio_m2": 1934,
-     "tipo": "flat",
+     "tipo": "triplex",
      "piso": "4",
-     "flat": true,
+     "flat": false,
      "precio_soles": 789300
     },
     {
-     "unidad": "Tipo 1 (202/302/402)",
+     "unidad": "201 / 301 / 401",
      "dorm": 3,
-     "m2": 108.02,
+     "m2": 108.03,
      "precio_usd": 247971,
-     "precio_m2": 2296,
+     "precio_m2": 2295,
      "tipo": "flat",
      "piso": "2 al 4",
      "flat": true,
@@ -5295,9 +5309,9 @@
      "precio_soles": 843900
     },
     {
-     "unidad": "Tipo 3 (203/303/403)",
+     "unidad": "203 / 303 / 403",
      "dorm": 3,
-     "m2": 108.49,
+     "m2": 108.5,
      "precio_usd": 249029,
      "precio_m2": 2295,
      "tipo": "flat",
@@ -5306,7 +5320,7 @@
      "precio_soles": 846700
     },
     {
-     "unidad": "Tipo 2",
+     "unidad": "202 / 302 / 402",
      "dorm": 3,
      "m2": 108.0,
      "precio_usd": 254059,
@@ -5328,23 +5342,23 @@
      "precio_soles": 982400
     },
     {
-     "unidad": "Dúplex 501",
+     "unidad": "Dúplex 501 · penthouse",
      "dorm": 3,
      "m2": 174.04,
      "precio_usd": 352265,
      "precio_m2": 2024,
-     "tipo": "duplex",
+     "tipo": "pent",
      "piso": "5",
      "flat": false,
      "precio_soles": 1197700
     },
     {
-     "unidad": "Dúplex 503",
+     "unidad": "Dúplex 503 · penthouse",
      "dorm": 3,
      "m2": 174.29,
      "precio_usd": 352794,
      "precio_m2": 2024,
-     "tipo": "duplex",
+     "tipo": "pent",
      "piso": "5",
      "flat": false,
      "precio_soles": 1199500
@@ -5352,37 +5366,40 @@
    ],
    "flats_summary": [
     {
-     "unidad": "Tipo 1 (202/302/402)",
+     "unidad": "201 / 301 / 401",
      "dorm": 3,
      "m2": 108.02,
      "precio_usd": 247971,
      "precio_m2": 2296,
-     "comparable_confirmado": true,
-     "nota": "Ficha de Nexo al 25-ago-2026: S/843 100 por 108.02 m² en pisos 2 al 4."
+     "comparable_confirmado": false,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/843 100 por 108.02 m² en pisos 2 al 4.",
+     "motivo_no_comparable": "No sabemos si el precio incluye estacionamiento; sin eso no se puede comparar contra el resto."
     },
     {
-     "unidad": "Tipo 3 (203/303/403)",
+     "unidad": "203 / 303 / 403",
      "dorm": 3,
      "m2": 108.49,
      "precio_usd": 249029,
      "precio_m2": 2295,
-     "comparable_confirmado": true,
-     "nota": "Ficha de Nexo al 25-ago-2026: S/846 700 por 108.49 m² en pisos 2 al 4."
+     "comparable_confirmado": false,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/846 700 por 108.49 m² en pisos 2 al 4.",
+     "motivo_no_comparable": "No sabemos si el precio incluye estacionamiento; sin eso no se puede comparar contra el resto."
     },
     {
-     "unidad": "Tipo 2",
+     "unidad": "202 / 302 / 402",
      "dorm": 3,
      "m2": 108.0,
      "precio_usd": 254059,
      "precio_m2": 2352,
-     "comparable_confirmado": true,
-     "nota": "Ficha de Nexo al 25-ago-2026: S/863 800 por 108.0 m² en pisos 2 al 4."
+     "comparable_confirmado": false,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/863 800 por 108.0 m² en pisos 2 al 4.",
+     "motivo_no_comparable": "No sabemos si el precio incluye estacionamiento; sin eso no se puede comparar contra el resto."
     }
    ],
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Balance Inmobiliaria, Jr. Monte Carmelo 551: 20 departamentos en 5 pisos, flats y dúplex de 2 y 3 dormitorios, de 100.18 a 181.10 m², entrega diciembre-2026, financiado por BCP. El 25-ago-2026 lanzaron una campaña con HASTA S/25,000 DE DESCUENTO en unidades seleccionadas, difundida por el canal de WhatsApp de Nexo Inmobiliario. Su flat típico son 108 m² de 3 dormitorios en los pisos 2 al 4, entre S/843,100 y S/863,800. El brochure lo vende como «un espacio natural y exclusivo, ubicado estratégicamente entre los parques Monte Carmelo y Andrés Townsend», y anuncia el rango como «desde 80 m² hasta 181 m²» contando solo área techada — los 80 m² son el dúplex de semisótano, cuya área total con terraza es de 132.6 m².",
+   "comentario": "Balance Inmobiliaria, Jr. Monte Carmelo 551: 20 departamentos en 5 pisos, flats y dúplex de 2 y 3 dormitorios, de 100.18 a 181.10 m², entrega diciembre-2026, financiado por BCP. El 25-ago-2026 lanzaron una campaña con HASTA S/25,000 DE DESCUENTO en unidades seleccionadas, difundida por el canal de WhatsApp de Nexo Inmobiliario. Su flat típico son 108 m² de 3 dormitorios en los pisos 2 al 4, entre S/843,100 y S/863,800. El brochure lo vende como «un espacio natural y exclusivo, ubicado estratégicamente entre los parques Monte Carmelo y Andrés Townsend», y anuncia el rango como «desde 80 m² hasta 181 m²» contando solo área techada — los 80 m² son el dúplex de semisótano, cuya área total con terraza es de 132.6 m². La planera oficial aclara además que la 404 es un TRÍPLEX (2 dorm, 120.04 m²) y que las 501, 502 y 503 son los penthouses, así que ninguna entra al comparativo de flats típicos.",
    "amenidades": [
     "Estacionamiento de bicicletas (Bike Zone)",
     "Estacionamiento vehicular",
@@ -5406,8 +5423,8 @@
    },
    "anuncios": null,
    "mostrar": true,
-   "cochera_status": "si",
-   "cochera_nota": "Precios enviados incluyen 1 cochera; no incluyen depósito. Para comparación neta se descuenta S/55,000 por cochera.",
+   "cochera_status": "nd",
+   "cochera_nota": "Sin confirmar. Revisamos su web, la ficha de Nexo, el brochure de agosto y la planera de 42 páginas: ninguno dice si el precio incluye estacionamiento, ni publica el precio de la cochera. Lo que sí sabemos por sus planos es que tienen 34 estacionamientos en dos sótanos (21 en el Sótano 01 y 13 en el Sótano 02) para 20 departamentos — sobran 14, lo que hace pensar que se venden aparte, pero es una inferencia, no un dato confirmado.",
    "gallery": [
     "assets/img-f1/monte-carmelo-551/img-01.jpg",
     "assets/img-f1/monte-carmelo-551/img-02.jpg",
@@ -5513,7 +5530,7 @@
    "pisos": 5,
    "financia": "BCP — el proyecto tiene ficha propia en proyectosinmobiliariosbcp.com (slug 662, pero la ficha se titula Monte Carmelo 551).",
    "promocion": "Hasta S/25,000 de descuento (≈US$7,350) MÁS un regalo especial, en unidades seleccionadas. Nexo lo titula «¡Llévate hasta S/25,000 de dscto.!»; la campaña salió el 25-ago-2026 por el canal de WhatsApp de Nexo Inmobiliario con el claim «Tu depa en Chacarilla». Aplican términos y condiciones. Sobre el flat típico de 108 m² el descuento equivale a bajar de US$2,352 a US$2,284 por m² — un 3% menos.",
-   "politica_precio": "Ni su web ni la ficha de Nexo aclaran si el precio incluye estacionamiento. Pendiente de confirmar con la asesora.",
+   "politica_precio": "No sabemos si el precio incluye estacionamiento: ni su web, ni Nexo, ni el brochure, ni la planera lo dicen. Hasta que la asesora lo confirme, su US$/m² NO es comparable contra el resto del cuadrante — todos los demás están expresados netos de cochera.",
    "planos_fuente": "Planos de tipología y renders publicados por Balance Inmobiliaria en su web del proyecto (descargados el 25-ago-2026).",
    "asesora": "Nashla Zambrano",
    "oficina": "Av. Del Pinar 134, Of. 504, Chacarilla, Surco · contacto@balance.pe",
@@ -5814,7 +5831,8 @@
      "m2": 86.95,
      "precio_usd": 211176,
      "precio_m2": 2429,
-     "comparable_confirmado": true
+     "comparable_confirmado": false,
+     "motivo_no_comparable": "El precio viene de un cartel de obra; no dice nada sobre estacionamiento."
     }
    ],
    "dorms_disponibles": [
@@ -5834,7 +5852,7 @@
    },
    "anuncios": null,
    "mostrar": true,
-   "cochera_status": "si",
+   "cochera_status": "nd",
    "stock": {
     "n": 1,
     "label": "Último depa · 2 dorm 86 m²"
@@ -5916,7 +5934,9 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "cochera_nota": "Sin confirmar. El precio sale de un cartel en la reja («ÚLTIMO DEPA · 2 dorms 86 m²», foto del 22-ago-2026) y de la ficha de Edifikarte: ninguno menciona estacionamiento.",
+   "politica_precio": "No hay ningún dato sobre si el precio incluye estacionamiento. Su US$/m² queda marcado como no comparable."
   },
   {
    "id": "monte-mayor-183",
@@ -6023,7 +6043,7 @@
      "precio_m2_techada": 2501,
      "tipo": "flat",
      "piso": "2",
-     "flat": 319000,
+     "flat": true,
      "nota_precio": "Precio lista 319,000 incluye 2 simples; neto descuenta US$30,000.",
      "motivo_no_comparable": null,
      "comparable_confirmado": true
@@ -6080,7 +6100,7 @@
      "precio_m2_techada": 2510,
      "tipo": "flat",
      "piso": "3",
-     "flat": 320000,
+     "flat": true,
      "nota_precio": "Precio lista 320,000 incluye 2 simples; neto descuenta US$30,000.",
      "motivo_no_comparable": null,
      "comparable_confirmado": true
@@ -6335,19 +6355,22 @@
    ],
    "flats_summary": [
     {
-     "dorm": 1,
-     "m2": 73.13,
-     "precio_usd": 187000,
-     "precio_m2": 2557,
-     "comparable_confirmado": true,
-     "nota_piso": "1er piso"
-    },
-    {
+     "unidad": "202",
      "dorm": 3,
      "m2": 115.56,
      "precio_usd": 289000,
      "precio_m2": 2501,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "nota": "Tarifario de Azzurra: US$319,000 con 2 estacionamientos simples. Neto de cochera (2 × US$15,000) = US$289,000 → US$2,501/m²."
+    },
+    {
+     "unidad": "302",
+     "dorm": 3,
+     "m2": 115.56,
+     "precio_usd": 290000,
+     "precio_m2": 2510,
+     "comparable_confirmado": true,
+     "nota": "Tarifario de Azzurra: US$320,000 con 2 estacionamientos simples. Neto de cochera = US$290,000 → US$2,510/m²."
     }
    ],
    "dorms_disponibles": [
@@ -6412,7 +6435,7 @@
    "estado_obra": "En construcción · banner de Azzurra sobre el cerco",
    "cuadrante_verificado": "2026-08-22",
    "ref_urbana": "Al lado de un colegio nido y cerca del colegio Santa María Marianistas",
-   "politica_precio": "La lista de precios de Azzurra incluye cochera y depósito en el precio publicado.",
+   "politica_precio": "El tarifario de Azzurra publica el precio con estacionamiento incluido y dice cuántos trae cada unidad (1 o 2 simples). El US$/m² del portal los descuenta. Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
    "como_presenta": "Azzurra transmite urgencia por escasez: «Proyecto Monte Mayor voló, solo me quedan 3 depas».",
    "documentos": [
     {
@@ -6466,7 +6489,8 @@
      "vendidas": 16,
      "total": 20
     }
-   ]
+   ],
+   "cochera_nota": "Confirmado en su tarifario oficial: columna EST con 1 o 2 estacionamientos simples por departamento."
   },
   {
    "id": "monte-real-265",
@@ -6711,9 +6735,10 @@
      "m2": 105.3,
      "precio_usd": 243529,
      "precio_m2": 2313,
-     "comparable_confirmado": true,
+     "comparable_confirmado": false,
      "precio_lista_usd": 263529,
-     "ajuste_cochera_usd": 20000
+     "ajuste_cochera_usd": 20000,
+     "motivo_no_comparable": "La asesora dio el precio de la cochera (US$20,000) pero no si el precio de lista la incluye."
     }
    ],
    "dorms_disponibles": [
@@ -6747,8 +6772,8 @@
     "n": null,
     "label": "Últimos departamentos (anunciado en la fachada, ago-2026)"
    },
-   "cochera_status": "si",
-   "cochera_nota": "Cochera + depósito incluidos en el bundle (Make) — anunciado en Meta, jul-2026.",
+   "cochera_status": "nd",
+   "cochera_nota": "Sin confirmar. Lo único que dijo Nadia (Make) por WhatsApp el 14-ago-2026 fue «Cochera Make US$20k»: eso nos da el precio de la cochera, no si el departamento la trae incluida. Su brochure no tiene tabla de precios ni menciona estacionamiento.",
    "entrega_confirmada_campo": "Terminado / entrega inmediata",
    "campo_ago": "14-ago: vendieron el 408. Quedan disponibles (Tipo X10, 105.89 m², 3 dorm+estudio, 4 baños). Terminado, entrega inmediata, EDGE, BCP.",
    "precio_hist": [
@@ -6766,7 +6791,7 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 89 m.",
    "cuadrante_verificado": "2026-08-22",
-   "politica_precio": "El precio de lista incluye 1 cochera (US$20,000 de valor). El US$/m² del portal la descuenta.",
+   "politica_precio": "Sabemos que su cochera cuesta US$20,000, pero no si el precio de lista la incluye. Mientras no se confirme, su US$/m² queda marcado como no comparable.",
    "documentos": [
     {
      "titulo": "Brochure oficial Make Inmobiliaria · Monte Sierpe",
@@ -7661,7 +7686,9 @@
      "m2": 149.04,
      "precio_usd": 355000,
      "precio_m2": 2382,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "unidad": "201",
+     "nota": "Tarifario oficial: US$385,000 con 2 estacionamientos paralelos (29 y 30, sótano 2) y 2 depósitos. Neto de cochera (US$30,000) = US$355,000 → US$2,382/m²."
     }
    ],
    "dorms_disponibles": [
@@ -7769,7 +7796,9 @@
      "total": 20
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "cochera_nota": "Confirmado en su tarifario oficial: cada unidad trae 2 estacionamientos paralelos y depósito, con el número de cajón asignado (la 201 lleva los paralelos 29 y 30 del sótano 2).",
+   "politica_precio": "El tarifario publica el precio con 2 estacionamientos paralelos y depósito incluidos. El US$/m² del portal descuenta US$30,000 (2 × US$15,000) para poder comparar."
   },
   {
    "id": "santorini",

@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260825e"></script>
+<script src="data/portal-data.js?v=20260828a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -917,8 +917,14 @@ function buildCobertura(){
     ['Brochure', p=>(p.documentos||[]).some(d=>d.tipo==='brochure')?si:(p.brochure?'<span style="color:#b9863b;font-weight:700" title="Solo link, sin copia guardada">link</span>':no)],
     ['Tarifario', p=>p.tarifario?si:no],
     ['Precios', p=>p.precio_desde_usd?si:no],
-    ['$/m² comparable', p=>comparableRows(p).length?si:no],
-    ['Cochera', p=>{const k=parkingStatus(p);return k==='nd'?no:si;}],
+    ['$/m² comparable', p=>{if(comparableRows(p).length)return si;
+       // por qué no compara: casi siempre es que no se sabe si el precio trae cochera
+       const m=(p.flats_summary||[]).map(f=>f.motivo_no_comparable).filter(Boolean)[0];
+       return m?`<span style="color:#ce3c31;font-weight:800" title="${m.replace(/"/g,'')}">✕</span>`:no;}],
+    ['Cochera', p=>{const k=parkingStatus(p);
+       if(k==='si')return '<span style="color:#2F7D54;font-weight:700;font-size:10px" title="El precio de lista la incluye; el US$/m² la descuenta">incluida</span>';
+       if(k==='no')return '<span style="color:#2F7D54;font-weight:700;font-size:10px" title="Se vende aparte: el precio publicado ya es el del depa solo">aparte</span>';
+       return '<span style="color:#ce3c31;font-weight:800;font-size:10px" title="Sin este dato el US$/m² no compara">no se sabe</span>';}],
     ['Punto de venta', p=>p.caseta_ventas&&p.caseta_ventas!=='nd'?si:no],
     ['Ubicación exacta', p=>p.geo_aprox?no:si],
     ['Contacto verificado', p=>(p.contactos||[]).length?si:no],
