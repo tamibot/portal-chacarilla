@@ -242,7 +242,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260825g"></script>
+<script src="data/portal-data.js?v=20260825e"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -422,6 +422,8 @@ function showDetail(p){
   const geuB=p.isGEU?'<span class="badge b-geu">Nuestro proyecto</span>':'';
   const outB=p.isGEU?'':(p.borde_avenida?'<span class="badge b-out" style="background:#FBEAD2;color:#8a5a12" title="Da sobre una avenida-límite del cuadrante: compite y entra al comparativo">En el borde</span>':(!p.en_cuadrante?'<span class="badge b-out">Fuera del área de estudio</span>':''));
   const st=p.isGEU?'':`<span class="stbadge ${STCLASS[p.estado_grupo]}" style="font-size:9px;padding:2px 7px">${p.estado_grupo}</span>`;
+  // el banco que financia estaba cargado en 6 proyectos y no se veía en ninguna parte
+  const banB=p.financia?`<span class="badge" style="background:#E7F0FA;color:#185FA5" title="Banco con el que trabaja el proyecto">Financia ${String(p.financia).split("—")[0].trim()}</span>`:'';
   let tlist;
   if(comparableRows(p).length){
     tlist=`<div class="tlist"><div class="tlabel">PRECIO POR M² · FLATS TÍPICOS (no 1er piso / dúplex / PH)</div>`+
@@ -446,7 +448,7 @@ function showDetail(p){
     ${evs.slice(0,5).map(e=>`<div style="font-size:11.5px;color:#555;line-height:1.5;padding:4px 0;border-bottom:1px solid #f0ece0"><b style="color:#15402c">${fmtFechaCorta(e.fecha)}</b>${e.autor&&e.autor!=='—'?` · ${e.autor}`:''} — ${e.texto}</div>`).join('')}</div>`:'';
   const dtl=document.getElementById('dtl');
   dtl.innerHTML=`<div class="dhead">${img}<div style="flex:1">
-      <div class="dname"><span style="width:11px;height:11px;border-radius:50%;background:${colorOf(p)};display:inline-block"></span>${p.name} ${geuB}${outB}${st}</div>
+      <div class="dname"><span style="width:11px;height:11px;border-radius:50%;background:${colorOf(p)};display:inline-block"></span>${p.name} ${geuB}${outB}${banB}${st}</div>
       <div class="dsub">${p.dev} · 📍 ${p.addr}</div>
       <div class="dcomment">${p.comentario||''}</div>
       ${p.politica_precio?`<div style="font-size:11.5px;color:#2a3a20;background:#EAF3DE;border-radius:8px;padding:6px 11px;margin-top:7px">💲 <b>Precio:</b> ${p.politica_precio}</div>`:''}

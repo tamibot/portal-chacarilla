@@ -38,6 +38,20 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-25",
+    "proyecto": "Monte Carmelo 551",
+    "dev": "Balance Inmobiliaria",
+    "proyecto_id": "monte-carmelo-551",
+    "tags": [
+     "promocion",
+     "precio",
+     "financiamiento"
+    ],
+    "canal": "Canal de WhatsApp de Nexo Inmobiliario",
+    "autor": "Benchmark",
+    "texto": "Balance empezó a pautar Monte Carmelo 551 con el claim «Tu depa en Chacarilla» y una oferta de HASTA S/25,000 de descuento más un regalo, en unidades seleccionadas. El copy dice: «Tu próximo nivel de vida comienza aquí. Espacio, privacidad y una ubicación premium. Flats y Dúplex en Chacarilla». Es el tercer proyecto del cuadrante con descuento explícito y el más agresivo: sobre su flat típico de 108 m² son ~US$7,350, un 3% del precio, que lo mueve de US$2,352 a US$2,284 por m². Trabajan con BCP. Se cargaron su brochure de agosto, los 10 planos de tipología, 6 renders y el inventario unidad por unidad. Contacto: Nashla Zambrano, +51 950 028 563."
+   },
+   {
+    "fecha": "2026-08-25",
     "proyecto": "Ave. del Sur 220",
     "dev": "Grupo Espacio Urbano (GEU)",
     "proyecto_id": "ave-del-sur-220",
@@ -1860,7 +1874,7 @@ window.PORTAL_DATA = {
    ]
   },
   "fuentes_barridas": {
-   "fecha": "2026-08-24",
+   "fecha": "2026-08-25",
    "items": [
     {
      "fuente": "conversaciones del CRM Kommo (68 chats)",
@@ -1889,6 +1903,26 @@ window.PORTAL_DATA = {
     {
      "fuente": "conversaciones/whatsapp-geu-rochi-completo.txt",
      "resultado": "Sin datos de competencia — es coordinación interna del equipo"
+    },
+    {
+     "fuente": "balance.pe — web oficial de Balance Inmobiliaria",
+     "resultado": "Precio desde, entrega, financiamiento BCP, oficina y los 10 planos de tipología de Monte Carmelo 551, descargados"
+    },
+    {
+     "fuente": "Ficha de Balance Grupo Inmobiliario en Nexo Inmobiliario",
+     "resultado": "Sus 3 proyectos en venta son Monte Carmelo 551 (Surco), Hercelles (La Victoria) y Guisse 1060 (Jesús María): solo el primero cae en el cuadrante, no hay competidor nuevo por ese lado"
+    },
+    {
+     "fuente": "nexoinmobiliario.pe/…/monte-carmelo-551-3722",
+     "resultado": "Inventario unidad por unidad con precio en soles, 20 depas en 5 pisos, entrega 31-dic-2026 y la promoción de hasta S/25,000 más regalo"
+    },
+    {
+     "fuente": "proyectosinmobiliariosbcp.com",
+     "resultado": "La ficha existe y se titula «MONTE CARMELO 551» (el slug dice 662, pero es el mismo proyecto). No se pudo leer el detalle: el sitio exige resolver un captcha"
+    },
+    {
+     "fuente": "Brochure oficial de Balance, edición agosto-2026",
+     "resultado": "WhatsApp de ventas 965 973 836, amenidades (lobby, bike zone), acabados y la línea de tiempo de los 9 proyectos de la inmobiliaria"
     }
    ]
   },
@@ -5134,23 +5168,39 @@ window.PORTAL_DATA = {
   {
    "id": "monte-carmelo-551",
    "name": "Monte Carmelo 551",
-   "dev": "Balance Grupo Inmobiliario",
+   "dev": "Balance Inmobiliaria",
    "addr": "Jr. Monte Carmelo 551, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción",
-   "entrega": "Noviembre 2026",
+   "entrega": "Diciembre 2026 (Nexo) · la web de Balance dice noviembre 2026",
    "lat": -12.11457421674685,
    "lng": -76.98530634199747,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 219000,
-   "precio_hasta_usd": 305118,
+   "precio_desde_usd": 220676,
+   "precio_hasta_usd": 352794,
    "dorms": "2–3",
-   "m2": "102 – 181.1",
-   "wa": "952496382",
-   "web": "https://balance.pe/proyecto/monte-carmelo-551/",
+   "m2": "100.18 – 181.10",
+   "wa": "950028563",
+   "web": "https://balance.pe/proyecto/vive-en-chacarilla/",
    "img": "assets/img-f1/monte-carmelo-551/img-01.jpg",
    "planos": [
+    "assets/planos/monte-carmelo-551-balance/Duplex 501 - 3 dorm - 174.04 m2.png",
+    "assets/planos/monte-carmelo-551-balance/Duplex 502 - 3 dorm - 181.10 m2.png",
+    "assets/planos/monte-carmelo-551-balance/Duplex 503 - 3 dorm - 174.29 m2.png",
+    "assets/planos/monte-carmelo-551-balance/Duplex SS03 - 2 dorm - 132.60 m2.png",
+    "assets/planos/monte-carmelo-551-balance/Flat 101 - 3 dorm - 108.13 m2.jpg",
+    "assets/planos/monte-carmelo-551-balance/Flat 102 - 3 dorm - 100.18 m2.jpg",
+    "assets/planos/monte-carmelo-551-balance/Flat 303 - 3 dorm - 108.49 m2.jpg",
+    "assets/planos/monte-carmelo-551-balance/Flat SS01 - 3 dorm - 142.46 m2.jpg",
+    "assets/planos/monte-carmelo-551-balance/Flat tipico 202-302-402 - 3 dorm - 108.00 m2.png",
+    "assets/planos/monte-carmelo-551-balance/Flat tipico 203 - 3 dorm - 108.50 m2.png",
+    "assets/img-f1/monte-carmelo-551/bal-Fachada_01_REV_02.jpg",
+    "assets/img-f1/monte-carmelo-551/bal-Sin-titulo-1_Cocina.png",
+    "assets/img-f1/monte-carmelo-551/bal-Sin-titulo-1_Dorm-principal.png",
+    "assets/img-f1/monte-carmelo-551/bal-Sin-titulo-1_Fachada.png",
+    "assets/img-f1/monte-carmelo-551/bal-Sin-titulo-1_bano.png",
+    "assets/img-f1/monte-carmelo-551/bal-Sin-titulo-1_dorm-sec-2.png",
     "assets/planos/monte-carmelo-551/plano-01.jpg",
     "assets/planos/monte-carmelo-551/plano-02.jpg",
     "assets/planos/monte-carmelo-551/plano-03.jpg",
@@ -5179,104 +5229,175 @@ window.PORTAL_DATA = {
    "brochure": "assets/brochures/monte-carmelo-551-f1.pdf",
    "typologies": [
     {
-     "unidad": "Flat SS01 (semisótano)",
-     "dorm": 3,
-     "m2": 142.46,
-     "area_techada": 109.3,
-     "area_libre": 33.16,
-     "precio_soles": 1037400,
-     "precio_usd": 305118,
-     "precio_m2": 2142,
-     "precio_usd_neto": 288941,
-     "precio_m2_neto": 2028,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
+     "unidad": "SS02",
+     "dorm": 2,
+     "m2": 102.72,
+     "precio_usd": 220676,
+     "precio_m2": 2148,
      "tipo": "flat",
-     "piso": "SS",
+     "piso": "semisótano",
      "flat": false,
-     "motivo_no_comparable": "semisotano / area libre"
+     "precio_soles": 750300
     },
     {
-     "unidad": "Flat 301 (piso 3)",
+     "unidad": "102",
      "dorm": 3,
-     "m2": 108.03,
-     "area_techada": 108.03,
-     "area_libre": 0,
-     "precio_soles": 898100,
-     "precio_usd": 264147,
-     "precio_m2": 2445,
-     "precio_usd_neto": 247971,
-     "precio_m2_neto": 2295,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
+     "m2": 100.18,
+     "precio_usd": 235647,
+     "precio_m2": 2352,
      "tipo": "flat",
-     "piso": "3",
-     "flat": true
+     "piso": "1",
+     "flat": false,
+     "precio_soles": 801200
     },
     {
-     "unidad": "Flat 202 (piso 2)",
+     "unidad": "SS03",
+     "dorm": 2,
+     "m2": 132.6,
+     "precio_usd": 235000,
+     "precio_m2": 1772,
+     "tipo": "duplex",
+     "piso": "semisótano",
+     "flat": false,
+     "precio_soles": 799000
+    },
+    {
+     "unidad": "404",
+     "dorm": 2,
+     "m2": 120.04,
+     "precio_usd": 232147,
+     "precio_m2": 1934,
+     "tipo": "flat",
+     "piso": "4",
+     "flat": true,
+     "precio_soles": 789300
+    },
+    {
+     "unidad": "Tipo 1 (202/302/402)",
+     "dorm": 3,
+     "m2": 108.02,
+     "precio_usd": 247971,
+     "precio_m2": 2296,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true,
+     "precio_soles": 843100
+    },
+    {
+     "unidad": "101",
+     "dorm": 3,
+     "m2": 108.13,
+     "precio_usd": 248206,
+     "precio_m2": 2295,
+     "tipo": "flat",
+     "piso": "1",
+     "flat": false,
+     "precio_soles": 843900
+    },
+    {
+     "unidad": "Tipo 3 (203/303/403)",
+     "dorm": 3,
+     "m2": 108.49,
+     "precio_usd": 249029,
+     "precio_m2": 2295,
+     "tipo": "flat",
+     "piso": "2 al 4",
+     "flat": true,
+     "precio_soles": 846700
+    },
+    {
+     "unidad": "Tipo 2",
      "dorm": 3,
      "m2": 108.0,
-     "area_techada": 108.0,
-     "area_libre": 0,
-     "precio_soles": 912200,
-     "precio_usd": 268294,
-     "precio_m2": 2484,
-     "precio_usd_neto": 252118,
-     "precio_m2_neto": 2334,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
+     "precio_usd": 254059,
+     "precio_m2": 2352,
      "tipo": "flat",
-     "piso": "2",
-     "flat": true
+     "piso": "2 al 4",
+     "flat": true,
+     "precio_soles": 863800
     },
     {
-     "unidad": "Flat 303 (piso 3)",
+     "unidad": "SS01",
      "dorm": 3,
-     "m2": 108.5,
-     "area_techada": 108.5,
-     "area_libre": 0,
-     "precio_soles": 901800,
-     "precio_usd": 265235,
-     "precio_m2": 2445,
-     "precio_usd_neto": 249059,
-     "precio_m2_neto": 2295,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
+     "m2": 142.46,
+     "precio_usd": 288941,
+     "precio_m2": 2028,
      "tipo": "flat",
-     "piso": "3",
-     "flat": true
+     "piso": "semisótano",
+     "flat": false,
+     "precio_soles": 982400
+    },
+    {
+     "unidad": "Dúplex 501",
+     "dorm": 3,
+     "m2": 174.04,
+     "precio_usd": 352265,
+     "precio_m2": 2024,
+     "tipo": "duplex",
+     "piso": "5",
+     "flat": false,
+     "precio_soles": 1197700
+    },
+    {
+     "unidad": "Dúplex 503",
+     "dorm": 3,
+     "m2": 174.29,
+     "precio_usd": 352794,
+     "precio_m2": 2024,
+     "tipo": "duplex",
+     "piso": "5",
+     "flat": false,
+     "precio_soles": 1199500
     }
    ],
    "flats_summary": [
     {
-     "unidad": "Flat típico promedio (202, 301 y 303)",
+     "unidad": "Tipo 1 (202/302/402)",
      "dorm": 3,
-     "m2": 108.18,
-     "precio_usd": 249716,
-     "precio_m2": 2308,
-     "precio_usd_lista_promedio": 265892,
-     "precio_m2_lista": 2458,
-     "precio_soles_lista_promedio": 904033,
-     "precio_soles_neto_promedio": 849033,
-     "cochera_incluida": "1 cochera",
-     "ajuste_cochera_soles": 55000,
+     "m2": 108.02,
+     "precio_usd": 247971,
+     "precio_m2": 2296,
      "comparable_confirmado": true,
-     "nota": "Promedio ponderado de flats típicos 202, 301 y 303. Precio neto descuenta 1 cochera de S/55,000; no incluye depósito."
+     "nota": "Ficha de Nexo al 25-ago-2026: S/843 100 por 108.02 m² en pisos 2 al 4."
+    },
+    {
+     "unidad": "Tipo 3 (203/303/403)",
+     "dorm": 3,
+     "m2": 108.49,
+     "precio_usd": 249029,
+     "precio_m2": 2295,
+     "comparable_confirmado": true,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/846 700 por 108.49 m² en pisos 2 al 4."
+    },
+    {
+     "unidad": "Tipo 2",
+     "dorm": 3,
+     "m2": 108.0,
+     "precio_usd": 254059,
+     "precio_m2": 2352,
+     "comparable_confirmado": true,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/863 800 por 108.0 m² en pisos 2 al 4."
     }
    ],
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Balance Grupo Inmobiliario en el cuadrante, en obra con entrega dic-2026. Información actualizada por asesor (WhatsApp 02-jul-2026): precios enviados para SS01, 202, 301 y 303 incluyen 1 cochera; no incluyen depósito. Para comparación contra GEU se netea la cochera referencial de S/55,000. Revisado el 25-ago-2026 en la web de Balance: el precio de entrada bajó a S/744,600 (US$219,000) — teníamos US$264,147 de una ficha de portal. El proyecto son 13 unidades: 8 flats, 3 dúplex y 1 tríplex, de 102 a 181.1 m².",
-   "amenidades": [],
+   "comentario": "Balance Inmobiliaria, Jr. Monte Carmelo 551: 20 departamentos en 5 pisos, flats y dúplex de 2 y 3 dormitorios, de 100.18 a 181.10 m², entrega diciembre-2026, financiado por BCP. El 25-ago-2026 lanzaron una campaña con HASTA S/25,000 DE DESCUENTO en unidades seleccionadas, difundida por el canal de WhatsApp de Nexo Inmobiliario. Su flat típico son 108 m² de 3 dormitorios en los pisos 2 al 4, entre S/843,100 y S/863,800. El brochure lo vende como «un espacio natural y exclusivo, ubicado estratégicamente entre los parques Monte Carmelo y Andrés Townsend», y anuncia el rango como «desde 80 m² hasta 181 m²» contando solo área techada — los 80 m² son el dúplex de semisótano, cuya área total con terraza es de 132.6 m².",
+   "amenidades": [
+    "Estacionamiento de bicicletas (Bike Zone)",
+    "Estacionamiento vehicular",
+    "Lobby"
+   ],
    "total_pisos": 5,
    "fuentes": [
     "https://balance.pe/proyecto/monte-carmelo-551/",
     "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3722-monte-carmelo-551-santiago-de-surco-lima-lima-balance-grupo-inmobiliario",
     "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-monte-carmelo-662",
     "https://balance.pe/site/media/Brochure-Monte-carmelo-551-web.pdf",
-    "https://www.facebook.com/balance.inmobiliaria/posts/1191382622999771/"
+    "https://www.facebook.com/balance.inmobiliaria/posts/1191382622999771/",
+    "https://balance.pe/proyecto/vive-en-chacarilla/",
+    "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/monte-carmelo-551-3722",
+    "Campaña por el canal de WhatsApp de Nexo Inmobiliario, 25-ago-2026"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3722-monte-carmelo-551-santiago-de-surco-lima-lima-balance-grupo-inmobiliario",
@@ -5295,8 +5416,8 @@ window.PORTAL_DATA = {
     "assets/img-f1/monte-carmelo-551/img-05.png"
    ],
    "stock": {
-    "n": 6,
-    "label": "6 disponibles"
+    "n": 13,
+    "label": "13 unidades publicadas de 20 (ficha de Nexo, ago-2026)"
    },
    "lista_precios": "assets/brochures/monte-carmelo-551-planera.pdf",
    "verif_web": {
@@ -5335,32 +5456,49 @@ window.PORTAL_DATA = {
      "url": null,
      "fecha": "2026",
      "tipo": "plano"
+    },
+    {
+     "titulo": "Brochure oficial Balance · edición agosto-2026",
+     "archivo": "assets/brochures/monte-carmelo-551-brochure-ago2026.pdf",
+     "url": "https://balance.pe/site/media/Brochure-Monte-carmelo-551-web.pdf",
+     "fecha": "2026-08",
+     "tipo": "brochure"
     }
    ],
    "contactos": [
     {
+     "nombre": "Nashla Zambrano",
+     "numero": "950028563",
+     "fuente": "WhatsApp de Balance Inmobiliaria, contacto directo del anuncio difundido por Nexo (25-ago-2026)"
+    },
+    {
      "nombre": null,
      "numero": "952496382",
-     "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+     "fuente": "WhatsApp publicado en la web de Balance"
     },
     {
      "nombre": null,
      "numero": "4025092",
-     "fuente": "Teléfono fijo publicado en la web de Balance (25-ago-2026)"
+     "fuente": "Teléfono fijo de Balance Inmobiliaria"
+    },
+    {
+     "nombre": null,
+     "numero": "965973836",
+     "fuente": "WhatsApp impreso en la contraportada del brochure oficial de agosto-2026, junto a ventas@balance.pe"
     }
    ],
-   "wa_label": "Balance Grupo Inmobiliario",
+   "wa_label": "Nashla Zambrano",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
-   "como_presenta": "Concepto con el que se anuncian: «Frente al parque — dúplex y flats».",
+   "como_presenta": "«Tu próximo nivel de vida comienza aquí. Espacio, privacidad y una ubicación premium.» Venden flats y dúplex en Chacarilla como «oportunidad exclusiva para vivir con el equilibrio entre diseño, confort y una excelente inversión». Pautan en el canal de WhatsApp de Nexo Inmobiliario con botón «Hablar con un Asesor», y su landing se llama literalmente «vive-en-chacarilla» — compiten por la misma bandera de zona que nosotros.",
    "estado_evidencia": {
-    "tipo": "web_oficial",
+    "tipo": "whatsapp",
     "fecha": "2026-08-25",
-    "nota": "Web de Balance al 25-ago-2026: desde S/744,600, 13 unidades (8 flats, 3 dúplex y 1 tríplex), de 102 a 181.1 m², entrega noviembre 2026, en construcción."
+    "nota": "Campaña recibida hoy por el canal de Nexo Inmobiliario con descuentos de hasta S/25,000, más su ficha de Nexo con el inventario unidad por unidad y su web con los planos."
    },
    "precio_fuente": {
     "tipo": "portal",
-    "nota": "Ficha de Nexo Inmobiliario y web de Balance Grupo Inmobiliario."
+    "nota": "Ficha de Nexo Inmobiliario al 25-ago-2026 con el precio de cada unidad en soles; contrastada con la web de Balance y con los planos oficiales que declaran las áreas."
    },
    "stock_hist": [
     {
@@ -5371,7 +5509,17 @@ window.PORTAL_DATA = {
      "total": null
     }
    ],
-   "unidades": 13
+   "unidades": 20,
+   "pisos": 5,
+   "financia": "BCP — el proyecto tiene ficha propia en proyectosinmobiliariosbcp.com (slug 662, pero la ficha se titula Monte Carmelo 551).",
+   "promocion": "Hasta S/25,000 de descuento (≈US$7,350) MÁS un regalo especial, en unidades seleccionadas. Nexo lo titula «¡Llévate hasta S/25,000 de dscto.!»; la campaña salió el 25-ago-2026 por el canal de WhatsApp de Nexo Inmobiliario con el claim «Tu depa en Chacarilla». Aplican términos y condiciones. Sobre el flat típico de 108 m² el descuento equivale a bajar de US$2,352 a US$2,284 por m² — un 3% menos.",
+   "politica_precio": "Ni su web ni la ficha de Nexo aclaran si el precio incluye estacionamiento. Pendiente de confirmar con la asesora.",
+   "planos_fuente": "Planos de tipología y renders publicados por Balance Inmobiliaria en su web del proyecto (descargados el 25-ago-2026).",
+   "asesora": "Nashla Zambrano",
+   "oficina": "Av. Del Pinar 134, Of. 504, Chacarilla, Surco · contacto@balance.pe",
+   "acabados": "Pisos de madera, cocina con isla y barra en los flats tipo, closets empotrados, duchas con mampara.",
+   "trayectoria_dev": "Balance declara más de 10 años y «más de 500 hogares». Entregados: Toulouse, Adela, Calle 9, Los Cisnes, Ordóñez y Euler (2016–2023). En venta hoy: Hercelles, Guisse y Monte Carmelo 551 (2025–2026). Fuente: línea de tiempo «Nuestra Historia» del brochure de agosto-2026.",
+   "nota_areas": "Ojo al comparar: el brochure dice «desde 80 m²» (área techada del dúplex de semisótano) mientras Nexo publica el mismo depa como 132.60 m² totales. Nuestro $/m² usa el área total, igual que con el resto del cuadrante."
   },
   {
    "id": "monte-mar-167",
@@ -9073,7 +9221,7 @@ window.PORTAL_DATA = {
      "precio_m2": null,
      "tipo": "flat",
      "piso": "1",
-     "flat": true
+     "flat": false
     },
     {
      "unidad": "DPTO. 606 · tope de lista (precio de lista, sin confirmar si incluye estacionamiento)",
