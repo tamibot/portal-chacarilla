@@ -5488,7 +5488,7 @@ window.PORTAL_DATA = {
     }
    ],
    "wa_label": "Nashla Zambrano",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 551 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
+   "pedido": "Hola Nashla! Vi la promo de Monte Carmelo 551, los hasta S/25,000 de descuento. Tres consultas para cerrar números: 1) el precio publicado incluye estacionamiento o va aparte, y cuánto cuesta? 2) el descuento sobre qué unidades aplica y hasta cuándo? 3) de los 20 departamentos, cuántos quedan disponibles hoy? Gracias!",
    "pedido_que": "promoción + tarifario por unidad",
    "como_presenta": "«Tu próximo nivel de vida comienza aquí. Espacio, privacidad y una ubicación premium.» Venden flats y dúplex en Chacarilla como «oportunidad exclusiva para vivir con el equilibrio entre diseño, confort y una excelente inversión». Pautan en el canal de WhatsApp de Nexo Inmobiliario con botón «Hablar con un Asesor», y su landing se llama literalmente «vive-en-chacarilla» — compiten por la misma bandera de zona que nosotros.",
    "estado_evidencia": {
