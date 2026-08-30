@@ -1,7 +1,7 @@
 {
  "meta": {
   "tc": 3.4,
-  "fecha": "2026-08-24",
+  "fecha": "2026-08-31",
   "total": 41,
   "en_cuadrante": 23,
   "con_precio": 100,
@@ -12,7 +12,7 @@
   "sin_precio_publico": 10,
   "cochera_incluida": 12,
   "cochera_aparte": 5,
-  "verif_web_fecha": "2026-08-24",
+  "verif_web_fecha": "2026-08-30",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
   "cortes": [
    {
@@ -28,14 +28,32 @@
     "resumen": "D'Mont vendido → D'Mont 2 en preventa (8/23). Monte Mayor 183 3/20, Conde de la Vega 460 12/26, Precursores II 3/19, Monte Sierpe vendió el 408, Aura Sul vendió el 203. Monte Alegre 109 nuevo en planos. Todos los competidores con precio quedaron comparables. GEU pasó a precios de preventa ($2,562/m² típico)."
    },
    {
-    "fecha": "2026-08-24",
-    "titulo": "Corte 3 · Agosto (cierre de mes)",
+    "fecha": "2026-08-31",
+    "titulo": "Corte 3 · Agosto 2026 (cierre de mes)",
     "estado": "actual",
-    "resumen": "Recorrido de campo del 22-ago: 27 carteles de obra leídos, dos proyectos reasignados y contactos verificados con fuente. Se sumaron Floresta 343, Le Parc y Conde de la Vega 128 al mapa. Santorini y La Floresta Boulevard entraron al comparativo tras confirmar su política de cochera. Conde II movió su entrega de 2026 a 2027. Jardines de Monte Real, Monte Sierpe, Conde de la Vega 251 y Precursores Verde anuncian últimas unidades."
+    "resumen": "Recorrido de campo del 22-ago: 27 carteles de obra leídos, dos proyectos reasignados y contactos verificados con fuente. Se sumaron Floresta 343, Le Parc y Conde de la Vega 128 al mapa. Conde II movió su entrega de 2026 a 2027. Jardines de Monte Real, Monte Sierpe, Conde de la Vega 251 y Precursores Verde anuncian últimas unidades. Monte Carmelo 551 (Balance, financia BCP) salió el 25-ago con hasta S/25,000 de descuento más un regalo, el tercer proyecto del cuadrante con descuento explícito y el más agresivo. La Floresta Boulevard cotizó por fin su 1 dormitorio (US$164,000 por 54.37 m² en primer piso) y repitió la misma frase de «últimos días de preventa» que ya había usado en julio. Se auditó la comparabilidad por cochera de los 41 proyectos: seis salieron del comparativo de US$/m² por no tener confirmado si su precio incluye estacionamiento, y quedaron 13 comparables firmes."
    }
   ],
-  "proximo_corte": "2026-09-24",
+  "proximo_corte": "2026-09-30",
   "bitacora": [
+   {
+    "fecha": "2026-08-27",
+    "proyecto": "La Floresta Boulevard",
+    "dev": "Boulevard",
+    "proyecto_id": "la-floresta-boulevard",
+    "tags": [
+     "precio",
+     "promocion",
+     "financiamiento"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Mónica",
+    "texto": "Mónica cotizó por fin el 1 dormitorio, que era el dato que nos faltaba: US$164,000 por 54.37 m² en PRIMER PISO, con terraza sobre el parque La Floresta en sala-comedor y dormitorio, walking closet, cocina kitchenette y punto de gas natural. Confirmó además que el proyecto lo financia el BCP y que sugieren tomar el crédito con el mismo banco. Entrega abril 2027 aprox. Lo más útil del intercambio no es el precio: repitió palabra por palabra la misma frase de urgencia que usó en julio («nos encontramos en los últimos días de precios de pre-venta»). Van más de dos meses de «últimos días» — es un recurso permanente, no una fecha. Invita a su sala de ventas en la obra, Montepío 120, de 11 a 6 pm todos los días, manda fotos del avance y hace seguimiento a los 3 días.",
+    "cita": "«Nos encontramos en los últimos días de precios de pre-venta en construcción, terminamos en abril 2027 aprox» — Mónica, Boulevard, 27-ago-2026",
+    "fuentes": [
+     "Chat de WhatsApp con la asesora, exportado el 30-ago-2026"
+    ]
+   },
    {
     "fecha": "2026-08-25",
     "proyecto": "Monte Carmelo 551",
@@ -1960,7 +1978,8 @@
   },
   "regla_cuadrante": "El cuadrante es el mismo desde el corte 1 y no se mueve. Nada se saca del portal por estar fuera: los proyectos que dan sobre una avenida-límite (Velasco Astete, de los Precursores, de la Floresta) se marcan «en el borde» y los de otra urbanización, «fuera del área de estudio». Todos siguen visibles en el mapa y en el listado; los filtros sirven para aislarlos, nunca para esconderlos.",
   "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados.",
-  "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md."
+  "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
+  "nota_corte": "Corte de agosto cerrado al 31-ago-2026. El barrido de webs oficiales se hizo el 24-ago y las últimas confirmaciones por WhatsApp llegaron el 27 y 30 de agosto."
  },
  "quadrant": [
   [
@@ -2174,7 +2193,7 @@
      "pm2": 2548
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 173235,
      "pm2": 2548
     }
@@ -2378,7 +2397,7 @@
      "pm2": 2286
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 229552,
      "pm2": 2286
     }
@@ -2429,11 +2448,11 @@
     "vendidas": 1,
     "total": null,
     "fuente": "El 203 figura vendido en su web; quedan los pisos 4 y 5 del flat típico.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "Flat típico 100 m²: quedan pisos 4 y 5 (203 vendido)",
      "vendidas": 1,
@@ -2604,7 +2623,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 308700,
      "pm2": 2450
     }
@@ -2673,11 +2692,11 @@
     "vendidas": 3,
     "total": 6,
     "fuente": "Brochure de AyD edición 2026: VENDIDO en Flat 101, Flat 102 y Dúplex 502, de 6 tipologías.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 3,
      "label": "3 de 6 tipologías disponibles (3 ya vendidas)",
      "vendidas": 3,
@@ -2784,7 +2803,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 194706,
      "pm2": null
     }
@@ -2830,11 +2849,11 @@
     "vendidas": null,
     "total": 25,
     "fuente": "Cartel en fachada: de 25 departamentos ya solo comunican «últimos dúplex».",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "Últimos dúplex (cartel en fachada, ago-2026)",
      "vendidas": null,
@@ -3411,7 +3430,7 @@
      "pm2": 2568
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 253000,
      "pm2": 2568
     }
@@ -3473,11 +3492,11 @@
     "vendidas": 14,
     "total": 26,
     "fuente": "Lista de precios oficial de Azzurra del 18-may-2026: 14 filas marcadas VENDIDO de 26 unidades.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 12,
      "label": "12 de 26 disponibles (lista 18-may-2026)",
      "vendidas": 14,
@@ -3773,7 +3792,7 @@
      "pm2": 2144
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 181190,
      "pm2": 2144
     }
@@ -3816,11 +3835,11 @@
     "vendidas": 15,
     "total": 23,
     "fuente": "Web de Grupo Dicon: 8 disponibles de 23.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 8,
      "label": "8 de 23 · quedan 8",
      "vendidas": 15,
@@ -3931,7 +3950,7 @@
      "pm2": 2231
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 202941,
      "pm2": 2231
     }
@@ -3982,7 +4001,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "2 dorm agotados · queda 3 dorm",
      "vendidas": null,
@@ -4107,7 +4126,7 @@
      "pm2": 2311
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 196471,
      "pm2": 2311
     }
@@ -4159,11 +4178,11 @@
     "vendidas": 13,
     "total": 18,
     "fuente": "Ficha de Nexo Inmobiliario (relevamiento jun-2026): 5 disponibles de 18.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 5,
      "label": "5 disponibles de 18 (relevamiento jun-2026)",
      "vendidas": 13,
@@ -4252,7 +4271,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 250588,
      "pm2": null
     }
@@ -4308,11 +4327,11 @@
     "vendidas": null,
     "total": 17,
     "fuente": "Brochure de Odima: los tres sótanos figuran íntegramente VENDIDOS sobre 17 departamentos.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 1,
      "label": "Última unidad",
      "vendidas": null,
@@ -4440,7 +4459,7 @@
      "pm2": 2612
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 246028,
      "pm2": 2612
     }
@@ -4497,7 +4516,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "Últimas unidades (anunciado en la valla de obra, ago-2026)",
      "vendidas": null,
@@ -4522,7 +4541,7 @@
    "precio_desde_usd": 154000,
    "precio_hasta_usd": 330000,
    "dorms": "1–3",
-   "m2": "51–147",
+   "m2": "54.37–147",
    "wa": "908800562",
    "web": "https://floresta.boulevard.com.pe/la-floresta/",
    "img": "assets/campo/la-floresta-boulevard-obra.jpg",
@@ -4557,28 +4576,29 @@
    "brochure": null,
    "typologies": [
     {
-     "unidad": "Flat típico ~123 m² (confirmado asesor)",
+     "unidad": "Flat típico ~123 m² (3 dorm)",
      "dorm": 3,
      "m2": 123,
-     "precio_usd": 325000,
-     "precio_usd_neto": 308000,
      "precio_m2": 2504,
      "cochera_incluida": "1 cochera",
      "ajuste_cochera_usd": 17000,
      "tipo": "flat",
      "piso": "intermedio",
      "flat": true,
-     "nota": "US$325,000 incluye 1 cochera; cochera simple se vende en US$17,000 → neto US$308,000 (2,504/m²). Dorm por confirmar."
+     "nota": "Confirmado por la asesora (WhatsApp, jul-2026): US$325,000 con 1 estacionamiento incluido. Neto de cochera (US$17,000) = US$308,000 → US$2,504/m². En la tabla mostramos el neto, igual que en todo el cuadrante.",
+     "precio_lista_usd": 325000,
+     "precio_usd": 308000
     },
     {
-     "unidad": "Flat 1 dormitorio",
+     "unidad": "Flat 1 dormitorio · 1er piso",
      "dorm": 1,
-     "m2": 51,
-     "precio_usd": null,
-     "precio_m2": null,
+     "m2": 54.37,
+     "precio_usd": 164000,
+     "precio_m2": 3016,
      "tipo": "flat",
-     "piso": "intermedio",
-     "nota": "Precio por confirmar — el asesor aún no lo envió (2026-07)."
+     "piso": "1",
+     "nota": "Cotizado por Mónica por WhatsApp el 27-ago-2026: US$164,000 por 54.37 m² en primer piso, con terraza sobre el parque La Floresta en sala-comedor y dormitorio, walking closet, cocina kitchenette y punto de gas natural. No dijo si incluye estacionamiento. Es primer piso, así que no entra al comparativo de flats típicos.",
+     "flat": false
     },
     {
      "unidad": "Flat vista interior · 2 dorm + estudio, cocina cerrada (pisos 2 al 6)",
@@ -4651,7 +4671,7 @@
    "dorms_disponibles": [
     1
    ],
-   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). Falta que envíen el precio del 1 dormitorio. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas. Cotización real de la asesora Mónica (WhatsApp, jul-2026): flats de 2 dorm + estudio de 79.06 m² a US$202,000 y de 81.46 m² a US$207,900, ambos CON 1 estacionamiento incluido. Financia BCP. Sala de ventas en la obra, todos los días de 11 a 18 h.",
+   "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). El 27-ago-2026 Mónica cotizó por fin el 1 dormitorio: US$164,000 por 54.37 m² en primer piso, con terraza al parque. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas. Cotización real de la asesora Mónica (WhatsApp, jul-2026): flats de 2 dorm + estudio de 79.06 m² a US$202,000 y de 81.46 m² a US$207,900, ambos CON 1 estacionamiento incluido. Financia BCP. Sala de ventas en la obra, todos los días de 11 a 18 h. El proyecto lo financia el BCP y la propia asesora sugiere tomar el crédito con el mismo banco.",
    "amenidades": [],
    "total_pisos": null,
    "fuentes": [
@@ -4660,7 +4680,8 @@
     "https://floresta.boulevard.com.pe/2-dormitorios/",
     "https://floresta.boulevard.com.pe/2-dormitorios-estudio/",
     "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-la-floresta-boulevard-670",
-    "Conversación real por WhatsApp con la asesora (CRM, jul-2026)"
+    "Conversación real por WhatsApp con la asesora (CRM, jul-2026)",
+    "Conversación real por WhatsApp con la asesora Mónica (27 y 30-ago-2026), guardada en referencias/whatsapp-chats/"
    ],
    "portales": {},
    "anuncios": null,
@@ -4691,7 +4712,7 @@
      "pm2": 2504
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 154000,
      "pm2": 2340
     }
@@ -4699,7 +4720,7 @@
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador).",
    "caseta_ventas": "si",
-   "caseta_nota": "Sala de ventas en la propia obra, Calle Montepío 120. Atienden de 11:00 a 18:00, de lunes a domingo.",
+   "caseta_nota": "Sala de ventas en la propia obra, calle Montepío 120. Atienden de 11:00 a 18:00, de lunes a domingo (confirmado por Mónica, 27-ago-2026).",
    "caseta_fecha": "2026-08-22",
    "estado_obra": "Obra iniciada hacia noviembre de 2025 («la obra se inició hace 8 meses» dicho en julio-2026); entrega prevista abril 2027.",
    "cuadrante_verificado": "2026-08-22",
@@ -4721,27 +4742,28 @@
    "pedido_que": "promoción + tarifario por unidad",
    "asesora": "Mónica",
    "horario_ventas": "Lunes a domingo, 11:00–18:00, en la obra (Montepío 120)",
-   "promocion": "«Estamos en los últimos días de precios de preventa» (jul-2026). Además, por la compra del departamento regalan 1 estacionamiento.",
-   "politica_precio": "El precio de lista INCLUYE 1 estacionamiento («por la compra de su Dpto le brindamos 1 Estacionamiento»). El US$/m² del portal lo descuenta a US$17,000, valor que la propia asesora confirmó.",
-   "como_presenta": "Mónica abre presentando ubicación y parque («frente al parque La Floresta»), luego el financiamiento BCP, después mete urgencia («últimos días de precios de preventa») y recién ahí manda unidades concretas con m², precio y el estacionamiento de regalo. Cierra invitando a la sala de ventas de la obra y hace seguimiento a los pocos días.",
+   "promocion": "«Estamos en los últimos días de precios de pre-venta» + 1 estacionamiento de regalo por la compra del departamento. OJO: la asesora dice exactamente la misma frase desde julio-2026 y la repitió el 27-ago-2026 — van más de dos meses de «últimos días», así que es un recurso de urgencia permanente, no una fecha real.",
+   "politica_precio": "El precio de lista INCLUYE 1 estacionamiento («por la compra de su Dpto le brindamos 1 Estacionamiento»). El US$/m² del portal lo descuenta a US$17,000, valor que la propia asesora confirmó. El 1 dormitorio de 54.37 m² cotizado el 27-ago-2026 (US$164,000) es el único donde la asesora NO aclaró si el estacionamiento va incluido.",
+   "como_presenta": "Mónica abre con ubicación y parque («frente al parque La Floresta»), sigue con el financiamiento BCP («le podríamos sugerir financiar con el mismo banco»), mete urgencia («nos encontramos en los últimos días de precios de pre-venta en construcción, terminamos en abril 2027 aprox») y recién ahí manda la unidad concreta con m², precio y atributos. Cierra invitando a la sala de ventas de la propia obra (Montepío 120, de 11 a 6 pm, lunes a domingo) y manda fotos del avance de obra. Hace seguimiento a los 3 días preguntando qué le pareció.",
    "estado_evidencia": {
     "tipo": "whatsapp",
-    "fecha": "2026-07-21",
-    "nota": "Mónica: obra iniciada ~nov-2025, entrega abril 2027, en «últimos días de precios de preventa»."
+    "fecha": "2026-08-27",
+    "nota": "Mónica confirmó por WhatsApp: en construcción, entrega abril 2027 aprox., financia BCP, y sigue en «últimos días de precios de pre-venta»."
    },
    "precio_fuente": {
     "tipo": "whatsapp",
-    "nota": "Cotización que mandó Mónica, su asesora, por WhatsApp (jul-2026): precio por unidad con el estacionamiento incluido."
+    "nota": "Cotizaciones de Mónica, su asesora, por WhatsApp: los flats de 2 dorm en jul-2026 y el 1 dormitorio el 27-ago-2026."
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "78 deptos · 2 torres",
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "financia": "BCP"
   },
   {
    "id": "monte-alegre",
@@ -4955,7 +4977,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -5008,7 +5030,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -5121,7 +5143,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 288529,
      "pm2": null
     }
@@ -5170,7 +5192,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -5451,7 +5473,7 @@
      "pm2": 2308
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 264147,
      "pm2": 2308
     }
@@ -5519,7 +5541,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 6,
      "label": "6 disponibles",
      "vendidas": null,
@@ -5718,7 +5740,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 288235,
      "pm2": null
     }
@@ -5765,11 +5787,11 @@
     "vendidas": null,
     "total": null,
     "fuente": "Últimas 3 unidades, según relevamiento.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 3,
      "label": "Últimas 3 unidades",
      "vendidas": null,
@@ -5877,7 +5899,7 @@
      "pm2": 2429
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 241176,
      "pm2": 2429
     }
@@ -5924,11 +5946,11 @@
     "vendidas": null,
     "total": null,
     "fuente": "Cartel «ÚLTIMO DEPA» en la reja: queda una sola unidad.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 1,
      "label": "Último depa · 2 dorm 86 m²",
      "vendidas": null,
@@ -6422,7 +6444,7 @@
      "pm2": 2501
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 202000,
      "pm2": 2501
     }
@@ -6479,11 +6501,11 @@
     "vendidas": 16,
     "total": 20,
     "fuente": "Lista de precios oficial de Azzurra: 16 filas VENDIDO de 20, incluidos los 3 penthouses.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 4,
      "label": "4 de 20 disponibles — últimas unidades",
      "vendidas": 16,
@@ -6626,7 +6648,7 @@
     "vendidas": null,
     "total": null,
     "fuente": "EE Inmobiliaria comunica el Dpto. 103 como última unidad.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "estado_evidencia": {
     "tipo": "web_oficial",
@@ -6783,7 +6805,7 @@
      "pm2": 2313
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 228824,
      "pm2": 2313
     }
@@ -6827,7 +6849,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "Últimos departamentos (anunciado en la fachada, ago-2026)",
      "vendidas": null,
@@ -7079,7 +7101,7 @@
      "pm2": 2484
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 188000,
      "pm2": 2484
     }
@@ -7119,7 +7141,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -7385,7 +7407,7 @@
      "pm2": 2396
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 189412,
      "pm2": 2404
     }
@@ -7437,7 +7459,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 24,
      "label": "24 disponibles",
      "vendidas": null,
@@ -7557,7 +7579,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 203700,
      "pm2": null
     }
@@ -7604,11 +7626,11 @@
     "vendidas": null,
     "total": 20,
     "fuente": "Solo queda un dúplex penthouse de 20 unidades.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 1,
      "label": "Solo queda un dúplex penthouse",
      "vendidas": null,
@@ -7736,7 +7758,7 @@
      "pm2": 2382
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 385000,
      "pm2": 2382
     }
@@ -7785,11 +7807,11 @@
     "vendidas": 16,
     "total": 20,
     "fuente": "Lista de precios oficial: 16 unidades VENDIDO; quedan el 201 y el 503.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 4,
      "label": "4 disponibles de 20 — últimas unidades",
      "vendidas": 16,
@@ -8034,7 +8056,7 @@
      "pm2": 2180
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 268450,
      "pm2": 2156
     }
@@ -8089,7 +8111,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "Varias unidades vendidas (401A, 103A, 202A-502A, 601A, 401B)",
      "vendidas": 6,
@@ -8264,7 +8286,7 @@
      "pm2": null
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 192428,
      "pm2": null
     }
@@ -8316,11 +8338,11 @@
     "vendidas": 7,
     "total": 27,
     "fuente": "Panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026: 20 de 27 disponibles.",
-    "corte": "2026-08-24"
+    "corte": "2026-08-31"
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 20,
      "label": "20 de 27 disponibles (panel de la sala de ventas)",
      "vendidas": 7,
@@ -8503,7 +8525,7 @@
      "pm2": 2557
     },
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 259426,
      "pm2": 2557
     }
@@ -8537,7 +8559,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": 12,
      "label": "Pre-lanzamiento · 12 deptos (6 pisos)",
      "vendidas": null,
@@ -8710,7 +8732,7 @@
    ],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -8754,7 +8776,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": "Últimos departamentos (anunciado en el cartel de obra)",
      "vendidas": null,
@@ -8801,7 +8823,7 @@
    "amenidades": [],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -8824,7 +8846,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -8878,7 +8900,7 @@
    "amenidades": [],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -8902,7 +8924,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -8955,7 +8977,7 @@
    "amenidades": [],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -8982,7 +9004,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -9023,7 +9045,7 @@
    ],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -9068,7 +9090,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -9103,7 +9125,7 @@
    "amenidades": [],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -9159,7 +9181,7 @@
    "amenidades": [],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -9294,7 +9316,7 @@
    ],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 147353,
      "pm2": null
     }
@@ -9333,7 +9355,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -9364,7 +9386,7 @@
    ],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -9511,7 +9533,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -9541,7 +9563,7 @@
    ],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": null,
      "pm2": null
     }
@@ -9610,7 +9632,7 @@
    "coherencia_alerta": "Estado sin respaldo: el brochure no dice fecha de entrega y no tenemos contacto. Verificar en el próximo recorrido.",
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
@@ -9685,7 +9707,7 @@
    "amenidades": [],
    "precio_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "desde": 261600,
      "pm2": null
     }
@@ -9717,7 +9739,7 @@
    },
    "stock_hist": [
     {
-     "corte": "2026-08-24",
+     "corte": "2026-08-31",
      "disponibles": null,
      "label": null,
      "vendidas": null,
