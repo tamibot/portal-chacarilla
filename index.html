@@ -235,6 +235,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="analysisview"></div>
     <div id="priceview"></div>
     <div id="argview"></div>
+    <div id="dormview"></div>
     <div id="covview"></div>
   </div>
   <div id="updatesview"></div>
@@ -242,7 +243,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260830a"></script>
+<script src="data/portal-data.js?v=20260830c"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -473,7 +474,7 @@ function showDetail(p){
 
 /* SIDEBAR + FILTROS */
 const ESTADOS=[['todos','Todos'],['En planos','En planos'],['En construcción','En construcción'],['Entrega inmediata','Entrega inmediata'],['sinprecio','Sin precio']];
-const DORMS=[[0,'Todas'],[1,'1 dorm'],[2,'2 dorm'],[3,'3 dorm']];
+const DORMS=[[0,'Todas'],[1,'1 dorm'],[2,'2 dorm'],[3,'3 dorm'],[4,'4 dorm']];
 const COCHERA=[['todos','Cochera: todos'],['si','Incluye'],['no','No incluye'],['nd','Sin dato']];
 const DATAF=[['todos','Info: todos'],['completa','Completa'],['tipologias','Precio por tipología'],['general','Solo general'],['stock','Stock conocido'],['incompleta','Incompleta']];
 const FRESHF=[['todos','Todas'],['fresh','● Frescas ≤35d'],['stale','● Por reconfirmar']];
@@ -892,19 +893,72 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],arg:['argview'],cov:['covview']};
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],arg:['argview'],cov:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['arg','Argumentario'],['cov','Cobertura de datos']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['arg','Argumentario'],['cov','Cobertura de datos']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
+  buildBandas();
   buildCobertura();
   showAnaSub('pos');
 }
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
-  ['statview','analysisview','priceview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  ['statview','analysisview','priceview','dormview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
+}
+
+
+/* POR DORMITORIOS · una tabla por banda, porque 1 y 4 dorm se comparan contra
+   muy pocos y el promedio del cuadrante (que es casi todo 3 dorm) no los representa */
+function bandaPisoAlto(t){const ps=String(t.piso||'').toLowerCase();
+  return t.tipo==='flat'&&!/semis|s[oó]tano|^1$|1er|primer|azotea/.test(ps);}
+function buildBandas(){
+  const COCH={si:['neteada','#2F7D54','El precio de lista incluye cochera y acá ya está descontada'],
+              no:['aparte','#2F7D54','La cochera se vende aparte: el precio ya es el del depa solo'],
+              nd:['sin confirmar','#ce3c31','No sabemos si el precio incluye estacionamiento']};
+  const bandas=[1,4,2,3].map(D=>{
+    const of=P.filter(p=>p.mostrar&&(p.dorms_disponibles||[]).includes(D));
+    const filas=[],sin=[];
+    of.forEach(p=>{const ts=(p.typologies||[]).filter(t=>t.dorm===D&&t.precio_usd&&t.precio_m2);
+      ts.length?ts.forEach(t=>filas.push({p,t})):sin.push(p.name);});
+    filas.sort((a,b)=>a.t.precio_m2-b.t.precio_m2||a.p.name.localeCompare(b.p.name));
+    return {D,of,filas,sin};
+  });
+  document.getElementById('dormview').innerHTML=`
+   <h2 style="margin-bottom:2px">Comparativo por dormitorios</h2>
+   <div class="muted" style="margin-bottom:14px">Cada banda se compara sola. El US$/m² del cuadrante lo domina el 3 dorm,
+   así que para 1 y 4 dormitorios ese promedio no dice nada — ahí lo que manda es contra quién compite realmente cada unidad.
+   Todos los precios están expresados igual: departamento solo, sin cochera.</div>`
+   + bandas.map(({D,of,filas,sin})=>{
+    const v=filas.map(f=>f.t.precio_m2).sort((a,b)=>a-b);
+    const med=v.length?median(v):null;                       // median() ya promedia los dos centrales
+    const alto=filas.filter(f=>bandaPisoAlto(f.t)).map(f=>f.t.precio_m2).sort((a,b)=>a-b);
+    const medAlto=alto.length?median(alto):null;
+    const rows=filas.map(({p,t})=>{
+      const [lab,col,tit]=COCH[p.cochera_status]||['—','#9a958c',''];
+      const g=p.isGEU;
+      return `<tr style="${g?'background:#EAF2FB':''}">
+        <td style="font-weight:800;color:${g?'#185FA5':'#15402c'};white-space:nowrap">$${t.precio_m2.toLocaleString()}/m²</td>
+        <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:${g?800:700};color:${g?'#185FA5':'#15402c'}">${p.name}</a>
+            ${g?'<span class="badge b-geu" style="margin-left:4px">nuestro</span>':''}
+            <div class="muted" style="font-size:10px">${t.unidad||''}</div></td>
+        <td style="white-space:nowrap">${t.m2} m²</td>
+        <td style="white-space:nowrap">${fmtUsd(t.precio_usd)}</td>
+        <td style="font-size:10px;color:#6d776e">${t.tipo||''}${t.piso?' · piso '+t.piso:''}</td>
+        <td><span style="font-size:10px;font-weight:700;color:${col}" title="${tit}">${lab}</span></td></tr>`;}).join('');
+    const geu=filas.filter(f=>f.p.isGEU);
+    const pos=geu.map(f=>{const i=v.indexOf(f.t.precio_m2)+1;
+      return `<b>${f.t.unidad}</b> a $${f.t.precio_m2.toLocaleString()}/m² es el puesto ${i} de ${v.length}, del más barato al más caro`;}).join(' · ');
+    return `<div style="margin:22px 0 8px"><h3 style="margin:0 0 2px">${D} dormitorio${D>1?'s':''}</h3>
+      <div class="muted" style="font-size:11px">${of.length} proyectos lo ofrecen · ${of.length-sin.length} publican precio · ${sin.length} todavía no
+      ${med?` — mediana de la banda <b>$${med.toLocaleString()}/m²</b>`:''}${medAlto&&alto.length>1?`, y <b>$${medAlto.toLocaleString()}/m²</b> mirando solo flats de piso alto`:''}</div></div>
+      ${filas.length?`<table class="t"><thead><tr><th>US$/m²</th><th>Proyecto · unidad</th><th>Área</th><th>Precio</th><th>Tipo</th><th>Cochera</th></tr></thead><tbody>${rows}</tbody></table>`
+        :'<div class="empty">Todavía no tenemos ningún precio publicado para esta banda.</div>'}
+      ${pos?`<div class="alert" style="background:#EAF2FB;border-color:#c3d8ee;color:#173f68;margin-top:8px">📍 ${pos}.</div>`:''}
+      ${sin.length?`<div class="muted" style="font-size:10.5px;margin-top:6px"><b>Ofrecen ${D} dorm pero no publican precio:</b> ${sin.join(' · ')}</div>`:''}`;
+  }).join('');
 }
 
 /* COBERTURA DE DATOS · qué tenemos y qué falta de cada proyecto */

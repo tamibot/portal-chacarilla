@@ -2163,8 +2163,10 @@
     }
    ],
    "dorms_disponibles": [
+    1,
     2,
-    3
+    3,
+    4
    ],
    "comentario": "Preventa vigente (lista ago-2026). El precio publicado incluye 1 cochera simple; el US$/m² del portal descuenta la cochera (US$15,000) para comparar en la misma base que la competencia. Flats 1–3 dorm, dúplex 2 y 4 dorm. Entrega noviembre 2027.",
    "fuentes": [],
@@ -2587,8 +2589,7 @@
     }
    ],
    "dorms_disponibles": [
-    3,
-    4
+    3
    ],
    "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución.",
    "fuentes": [
@@ -3012,7 +3013,7 @@
     },
     {
      "unidad": "Flat 204",
-     "dorm": 1,
+     "dorm": 2,
      "m2": 85.1,
      "m2_techada": 82.47,
      "area_libre": 2.63,
@@ -3082,7 +3083,7 @@
     },
     {
      "unidad": "Flat 303",
-     "dorm": 1,
+     "dorm": 2,
      "m2": 85.1,
      "m2_techada": 82.47,
      "area_libre": 2.63,
@@ -3170,7 +3171,7 @@
     },
     {
      "unidad": "Flat 404",
-     "dorm": 1,
+     "dorm": 2,
      "m2": 85.1,
      "m2_techada": 82.47,
      "area_libre": 2.63,
@@ -3240,7 +3241,7 @@
     },
     {
      "unidad": "Flat 503",
-     "dorm": 1,
+     "dorm": 2,
      "m2": 85.1,
      "m2_techada": 82.47,
      "area_libre": 2.63,
@@ -3762,6 +3763,7 @@
     }
    ],
    "dorms_disponibles": [
+    2,
     3
    ],
    "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603.",
@@ -3881,21 +3883,29 @@
      "unidad": "Flat 2 dorm (típico)",
      "dorm": 2,
      "m2": 80,
-     "precio_usd": 197407,
-     "precio_m2": 2467,
+     "precio_usd": 182407,
+     "precio_m2": 2280,
      "tipo": "flat",
      "piso": "intermedio",
-     "flat": true
+     "flat": true,
+     "precio_lista_usd": 197407,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 15000,
+     "nota": "Brochure de Galeón: US$197 407 con cochera incluida. Neto de cochera (US$15 000) = US$182 407 → US$2 280/m²."
     },
     {
      "unidad": "Flat 3 dorm + 1 estac.",
      "dorm": 3,
      "m2": 112.5,
-     "precio_usd": 266032,
-     "precio_m2": 2364,
+     "precio_usd": 251032,
+     "precio_m2": 2231,
      "tipo": "flat",
      "piso": "intermedio",
-     "flat": true
+     "flat": true,
+     "precio_lista_usd": 266032,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 15000,
+     "nota": "Brochure de Galeón: US$266 032 con cochera incluida. Neto de cochera (US$15 000) = US$251 032 → US$2 231/m²."
     }
    ],
    "flats_summary": [
@@ -4095,6 +4105,7 @@
     }
    ],
    "dorms_disponibles": [
+    2,
     3
    ],
    "comentario": "Edificio de EE Inmobiliaria, entrega dic-2026; flats 2-3 dorm (85-198 m²) desde US$178,133. Precio por unidad del portal (Nexo). Cochera NO confirmada (ni Nexo ni brochure la mencionan): el US$/m² ($2,311) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor.",
@@ -4240,7 +4251,9 @@
    ],
    "flats_summary": [],
    "dorms_disponibles": [
-    2
+    2,
+    3,
+    4
    ],
    "comentario": "Odima, Conde de la Vega del Ren 149, 17 dptos, financia BCP. Única unidad: DPTO 102 (3 dorm, 97 m², 1er piso elevado). PROMO ago-2026: bajó de S/900,000 a S/852,000 (depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de mejora). Entrega inmediata. Brochure oficial de feb-2026: 17 departamentos de 3 y 4 dormitorios, de 85 a 290 m². En las plantas de los tres sótanos TODOS los estacionamientos y depósitos aparecen rotulados «VENDIDO» — señal de que el proyecto está prácticamente colocado. Revisado el 25-ago-2026: Odima lo sigue vendiendo, con precio de entrada S/837,000 (US$246,176) y metrajes de 85 a 208.57 m². Los 17 departamentos son el total del proyecto, no las unidades disponibles.",
    "amenidades": [],
@@ -4256,7 +4269,7 @@
    },
    "anuncios": null,
    "mostrar": true,
-   "cochera_status": "si",
+   "cochera_status": "nd",
    "stock": {
     "n": null,
     "label": "Sótanos vendidos en el brochure de feb-2026; la web sigue comercializando"
@@ -4338,7 +4351,9 @@
      "total": 17
     }
    ],
-   "coherencia_alerta": "El brochure de feb-2026 muestra los tres sótanos íntegramente VENDIDOS, pero su web sigue comercializando activamente. Falta que la asesora confirme cuántas unidades quedan."
+   "coherencia_alerta": "El brochure de feb-2026 muestra los tres sótanos íntegramente VENDIDOS, pero su web sigue comercializando activamente. Falta que la asesora confirme cuántas unidades quedan.",
+   "cochera_nota": "Sin confirmar. Su brochure de Odima (feb-2026) muestra las plantas de sótano con el estado de venta de los estacionamientos, pero no dice si el precio del departamento incluye uno.",
+   "politica_precio": "No sabemos si el precio incluye estacionamiento; el brochure no lo aclara. Su US$/m² se muestra tal como lo publican, sin descontar cochera."
   },
   {
    "id": "jardines-monte-real",
@@ -4669,7 +4684,9 @@
     }
    ],
    "dorms_disponibles": [
-    1
+    1,
+    2,
+    3
    ],
    "comentario": "Boulevard — La Floresta. 78 departamentos en 2 torres, en construcción. Confirmado por el asesor (2026-07): unidad de 123 m² en US$325,000 que INCLUYE 1 cochera; las cocheras simples se venden aparte a US$17,000 (precio neto sin cochera ≈ US$2,504/m²). El 27-ago-2026 Mónica cotizó por fin el 1 dormitorio: US$164,000 por 54.37 m² en primer piso, con terraza al parque. Acabados: pisos de bambú, gloss en cocina y closets, ventanas con sistema anti-ruido, sala-comedor-cocina integradas. Cotización real de la asesora Mónica (WhatsApp, jul-2026): flats de 2 dorm + estudio de 79.06 m² a US$202,000 y de 81.46 m² a US$207,900, ambos CON 1 estacionamiento incluido. Financia BCP. Sala de ventas en la obra, todos los días de 11 a 18 h. El proyecto lo financia el BCP y la propia asesora sugiere tomar el crédito con el mismo banco.",
    "amenidades": [],
@@ -5419,6 +5436,7 @@
     }
    ],
    "dorms_disponibles": [
+    2,
     3
    ],
    "comentario": "Balance Inmobiliaria, Jr. Monte Carmelo 551: 20 departamentos en 5 pisos, flats y dúplex de 2 y 3 dormitorios, de 100.18 a 181.10 m², entrega diciembre-2026, financiado por BCP. El 25-ago-2026 lanzaron una campaña con HASTA S/25,000 DE DESCUENTO en unidades seleccionadas, difundida por el canal de WhatsApp de Nexo Inmobiliario. Su flat típico son 108 m² de 3 dormitorios en los pisos 2 al 4, entre S/843,100 y S/863,800. El brochure lo vende como «un espacio natural y exclusivo, ubicado estratégicamente entre los parques Monte Carmelo y Andrés Townsend», y anuncia el rango como «desde 80 m² hasta 181 m²» contando solo área techada — los 80 m² son el dúplex de semisótano, cuya área total con terraza es de 132.6 m². La planera oficial aclara además que la 404 es un TRÍPLEX (2 dorm, 120.04 m²) y que las 501, 502 y 503 son los penthouses, así que ninguna entra al comparativo de flats típicos.",
@@ -5705,7 +5723,9 @@
    ],
    "flats_summary": [],
    "dorms_disponibles": [
-    3
+    2,
+    3,
+    4
    ],
    "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp. Su ficha oficial publica 2, 3 y 4 dormitorios (teníamos 2-3) y flats de 80 a 136 m²; con los dúplex del brochure de julio el rango llega a 182.67 m².",
    "fuentes": [
@@ -5858,6 +5878,7 @@
     }
    ],
    "dorms_disponibles": [
+    2,
     3
    ],
    "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa».",
@@ -6396,6 +6417,8 @@
     }
    ],
    "dorms_disponibles": [
+    1,
+    2,
     3
    ],
    "comentario": "Lista de precios por unidad con cochera y depósito incluidos (Azzurra). «Voló»: quedan solo 3 de 20 unidades — 101, 102 y 202 (el 302 se vendió entre jun y jul). Lista 21-jul-2026.",
@@ -6572,7 +6595,9 @@
     }
    ],
    "flats_summary": [],
-   "dorms_disponibles": [],
+   "dorms_disponibles": [
+    3
+   ],
    "comentario": "Jr. Monte Real 265 (antes publicitado como N° 217). Proyecto entregado con última unidad disponible (Dpto 103, 167.82 m²).",
    "amenidades": [
     "Lobby + ascensores",
@@ -6764,7 +6789,8 @@
     }
    ],
    "dorms_disponibles": [
-    2
+    2,
+    3
    ],
    "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta.",
    "amenidades": [],
@@ -7073,7 +7099,8 @@
    ],
    "dorms_disponibles": [
     2,
-    3
+    3,
+    4
    ],
    "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad. La valla confirma: «Monte Flor · CHACARILLA - SURCO · 2 y 3 dormitorios · +51 975 244 600 · Constructora Magnífica».",
    "amenidades": [],
@@ -7355,7 +7382,10 @@
     }
    ],
    "dorms_disponibles": [
-    3
+    1,
+    2,
+    3,
+    4
    ],
    "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m².",
    "amenidades": [],
@@ -7552,7 +7582,8 @@
    ],
    "flats_summary": [],
    "dorms_disponibles": [
-    2
+    2,
+    3
    ],
    "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m².",
    "amenidades": [],
@@ -7714,7 +7745,6 @@
     }
    ],
    "dorms_disponibles": [
-    2,
     3
    ],
    "comentario": "Sobre Av. de los Precursores (borde). 19 deptos de 3 dorm; quedan 3 unidades (2 flats + dúplex con terraza y piscina). Precio incluye 2 cocheras paralelas y depósito; valores por m² netos de cochera. Entrega julio 2026.",
@@ -7943,7 +7973,9 @@
      "precio_usd": 578000,
      "precio_m2": 1908,
      "tipo": "duplex",
-     "piso": "6"
+     "piso": "6",
+     "nota": "Precio tal como lo publica el tarifario. A diferencia del resto de sus unidades no pudimos separarle el estacionamiento, así que este US$/m² no es comparable con los demás. Es penthouse, igual queda fuera del comparativo.",
+     "motivo_no_comparable": "Penthouse y precio sin separar el estacionamiento."
     }
    ],
    "flats_summary": [
@@ -8015,7 +8047,10 @@
     }
    ],
    "dorms_disponibles": [
-    3
+    1,
+    2,
+    3,
+    4
    ],
    "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal. Tarifario del proyecto: los precios incluyen 1 estacionamiento y la 2.ª cochera paralela suma US$18,000 en todas las tipologías (ej. 301A: US$387,000 con 1 vs US$405,000 con 2). Con ese ajuste sus flats entran al comparativo: de US$2,156 a US$2,316 por m² netos de cochera. Varias unidades ya figuran VENDIDAS en su web. Al 25-ago-2026 su web marca 13 unidades vendidas de 23 — quedan 10. El flat 501B, que usábamos como comparable, ya figura vendido: su precio se mantiene como referencia de cierre, no de oferta vigente.",
    "amenidades": [],
@@ -8261,7 +8296,10 @@
    ],
    "flats_summary": [],
    "dorms_disponibles": [
-    3
+    3,
+    4,
+    5,
+    6
    ],
    "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank.",
    "amenidades": [],
@@ -8566,7 +8604,11 @@
      "total": null
     }
    ],
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": [
+    3,
+    4
+   ]
   },
   {
    "id": "narciso-ayd",
@@ -8660,7 +8702,11 @@
     "tipo": "web_oficial",
     "fecha": "2026-08-24",
     "nota": "Inmobiliaria AyD lo lista como «EN PLANOS» en su web: 5 pisos, 9 departamentos de 97 a 211 m²."
-   }
+   },
+   "dorms_disponibles": [
+    3,
+    4
+   ]
   },
   {
    "id": "precursores-verde",
@@ -8784,7 +8830,12 @@
     }
    ],
    "borde_avenida": true,
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "astete-living",
@@ -8854,7 +8905,8 @@
     }
    ],
    "borde_avenida": true,
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": []
   },
   {
    "id": "flexi-iii",
@@ -8932,7 +8984,8 @@
     }
    ],
    "borde_avenida": true,
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": []
   },
   {
    "id": "living-monte-real",
@@ -9011,7 +9064,12 @@
      "total": null
     }
    ],
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "isGEU": false,
@@ -9103,7 +9161,10 @@
     "nota": "Web de PYR Edificaciones y ficha del proyecto: 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500."
    },
    "borde_avenida": true,
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": [
+    3
+   ]
   },
   {
    "isGEU": false,
@@ -9159,7 +9220,8 @@
     "fecha": "2026-08-22",
     "nota": "Obra vista en el recorrido; sin cartel que identifique al desarrollador."
    },
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": []
   },
   {
    "isGEU": false,
@@ -9215,7 +9277,8 @@
     "fecha": "2026-08-22",
     "nota": "Obra vista en el recorrido; sin cartel que identifique al desarrollador."
    },
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": []
   },
   {
    "id": "ten-apartments",
@@ -9269,7 +9332,7 @@
      "dorm": 1,
      "m2": 64.04,
      "precio_usd": 147353,
-     "precio_m2": null,
+     "precio_m2": 2301,
      "tipo": "flat",
      "piso": "1",
      "flat": false
@@ -9362,7 +9425,11 @@
      "total": null
     }
    ],
-   "mapeado_desde": "2026-08-22"
+   "mapeado_desde": "2026-08-22",
+   "dorms_disponibles": [
+    1,
+    2
+   ]
   },
   {
    "isGEU": false,
@@ -9540,7 +9607,11 @@
      "total": null
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "dorms_disponibles": [
+    1,
+    2
+   ]
   },
   {
    "isGEU": false,
@@ -9639,7 +9710,10 @@
      "total": null
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "dorms_disponibles": [
+    3
+   ]
   },
   {
    "id": "conde-de-la-vega-128",
@@ -9746,7 +9820,10 @@
      "total": null
     }
    ],
-   "coherencia_alerta": "Su ficha oficial ahora arranca en 257 m² mientras Nexo publicaba desde 109 m²: probablemente ya solo quedan las unidades grandes. Confirmar con Jenny qué queda."
+   "coherencia_alerta": "Su ficha oficial ahora arranca en 257 m² mientras Nexo publicaba desde 109 m²: probablemente ya solo quedan las unidades grandes. Confirmar con Jenny qué queda.",
+   "dorms_disponibles": [
+    3
+   ]
   }
  ]
 }
