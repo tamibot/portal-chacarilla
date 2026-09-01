@@ -1991,7 +1991,8 @@
   "regla_cuadrante": "El cuadrante es el mismo desde el corte 1 y no se mueve. Nada se saca del portal por estar fuera: los proyectos que dan sobre una avenida-límite (Velasco Astete, de los Precursores, de la Floresta) se marcan «en el borde» y los de otra urbanización, «fuera del área de estudio». Todos siguen visibles en el mapa y en el listado; los filtros sirven para aislarlos, nunca para esconderlos.",
   "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados.",
   "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
-  "nota_corte": "Corte de agosto cerrado al 31-ago-2026. El barrido de webs oficiales se hizo el 24-ago y las últimas confirmaciones por WhatsApp llegaron el 27 y 30 de agosto."
+  "nota_corte": "Corte de agosto cerrado al 31-ago-2026. El barrido de webs oficiales se hizo el 24-ago y las últimas confirmaciones por WhatsApp llegaron el 27 y 30 de agosto.",
+  "promos_nota": "Se comparan solo promociones con fuente: campaña recibida, hoja de cotización o pieza de Meta guardada. El valor en US$ es el beneficio declarado; el porcentaje se calcula sobre el flat típico de cada proyecto para poder compararlos."
  },
  "quadrant": [
   [
@@ -2716,7 +2717,18 @@
      "total": 6
     }
    ],
-   "cochera_nota": "Sin confirmar. Su brochure trae el precio por tipología pero no dice si incluye estacionamiento, y no tenemos tarifario."
+   "cochera_nota": "Sin confirmar. Su brochure trae el precio por tipología pero no dice si incluye estacionamiento, y no tenemos tarifario.",
+   "promo": {
+    "tipo": "Beneficio no monetario",
+    "que": "Personalización de acabados y distribución con sus arquitectos",
+    "valor_usd": null,
+    "valor_txt": "sin valor monetario declarado",
+    "pct_txt": null,
+    "desde": "2026-08",
+    "cond": "«Puedes adaptar ese tercer dormitorio: oficina, sala de juegos, taller o gimnasio»",
+    "canal": "WhatsApp del asesor",
+    "fuente": "Brochure de AyD 2026 + chat del asesor"
+   }
   },
   {
    "id": "conde-de-la-vega-251",
@@ -4030,7 +4042,18 @@
      "total": null
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "promo": {
+    "tipo": "Regalo",
+    "que": "Cochera de regalo",
+    "valor_usd": 15000,
+    "valor_txt": "US$15,000",
+    "pct_txt": "7.6% sobre su flat típico de 80 m²",
+    "desde": "2026-07",
+    "cond": "Anunciada en Meta en julio-2026 · falta reconfirmar vigencia",
+    "canal": "Meta Ads",
+    "fuente": "Pieza de la Biblioteca de Anuncios (jul-2026)"
+   }
   },
   {
    "id": "floresta-living-444",
@@ -4792,7 +4815,18 @@
      "total": null
     }
    ],
-   "financia": "BCP"
+   "financia": "BCP",
+   "promo": {
+    "tipo": "Regalo + urgencia",
+    "que": "1 estacionamiento de regalo por la compra del departamento",
+    "valor_usd": 17000,
+    "valor_txt": "US$17,000 (valor confirmado por la asesora)",
+    "pct_txt": "5.5% sobre su flat de 123 m²",
+    "desde": "2026-07",
+    "cond": "«Últimos días de precios de pre-venta» — la misma frase se repite desde julio: van más de dos meses",
+    "canal": "WhatsApp de la asesora Mónica",
+    "fuente": "Chats del 21-jul y 27-ago-2026"
+   }
   },
   {
    "id": "monte-alegre",
@@ -5588,7 +5622,18 @@
    "oficina": "Av. Del Pinar 134, Of. 504, Chacarilla, Surco · contacto@balance.pe",
    "acabados": "Pisos de madera, cocina con isla y barra en los flats tipo, closets empotrados, duchas con mampara.",
    "trayectoria_dev": "Balance declara más de 10 años y «más de 500 hogares». Entregados: Toulouse, Adela, Calle 9, Los Cisnes, Ordóñez y Euler (2016–2023). En venta hoy: Hercelles, Guisse y Monte Carmelo 551 (2025–2026). Fuente: línea de tiempo «Nuestra Historia» del brochure de agosto-2026.",
-   "nota_areas": "Ojo al comparar: el brochure dice «desde 80 m²» (área techada del dúplex de semisótano) mientras Nexo publica el mismo depa como 132.60 m² totales. Nuestro $/m² usa el área total, igual que con el resto del cuadrante."
+   "nota_areas": "Ojo al comparar: el brochure dice «desde 80 m²» (área techada del dúplex de semisótano) mientras Nexo publica el mismo depa como 132.60 m² totales. Nuestro $/m² usa el área total, igual que con el resto del cuadrante.",
+   "promo": {
+    "tipo": "Descuento en precio",
+    "que": "Hasta S/25,000 de descuento + un regalo especial",
+    "valor_usd": 7353,
+    "valor_txt": "S/25,000 ≈ US$7,353",
+    "pct_txt": "3% sobre su flat típico de 108 m²",
+    "desde": "2026-08-25",
+    "cond": "Unidades seleccionadas · aplican términos y condiciones",
+    "canal": "Canal de WhatsApp de Nexo Inmobiliario",
+    "fuente": "Campaña recibida el 25-ago-2026 + ficha de Nexo"
+   }
   },
   {
    "id": "monte-mar-167",
@@ -8623,7 +8668,18 @@
    "dorms_disponibles": [
     3,
     4
-   ]
+   ],
+   "promo": {
+    "tipo": "Descuento en precio",
+    "que": "Descuento de preventa aplicado en la hoja de cotización",
+    "valor_usd": 33853,
+    "valor_txt": "S/115,100 ≈ US$33,853",
+    "pct_txt": "7.5% sobre el paquete del flat 301",
+    "desde": "2026-08",
+    "cond": "Prioridad en el pre-lanzamiento para quienes separan antes del lanzamiento comercial",
+    "canal": "Hoja de cotización del asesor",
+    "fuente": "Cotización oficial del proyecto"
+   }
   },
   {
    "id": "narciso-ayd",

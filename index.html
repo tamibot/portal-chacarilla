@@ -80,6 +80,7 @@ a{color:inherit;text-decoration:none}
 .dchip{text-align:center}
 .dchip b{font-size:13px;font-weight:800;display:block}
 .dchip span{font-size:9.5px;color:#aaa}
+.tag-promo{font-size:10px;font-weight:800;padding:2px 7px;border-radius:3px;background:#FBECF2;color:#5a2038;white-space:nowrap}
 .badge{font-size:9px;padding:1.5px 7px;border-radius:999px;font-weight:700;display:inline-block;vertical-align:middle}
 .b-geu{background:#E4EFF9;color:var(--azul)}
 .b-out{background:#FBEAD2;color:#9a6a00}
@@ -236,6 +237,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="priceview"></div>
     <div id="argview"></div>
     <div id="dormview"></div>
+    <div id="ofertaview"></div>
     <div id="covview"></div>
   </div>
   <div id="updatesview"></div>
@@ -243,7 +245,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260831a"></script>
+<script src="data/portal-data.js?v=20260831b"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -376,7 +378,9 @@ quadLayer.bindTooltip('Mi cuadrante · Chacarilla del Estanque',{sticky:true});
 map.fitBounds(quadLayer.getBounds(),{padding:[35,35]});
 function toggleQuad(){const b=document.getElementById('btnQuad');if(map.hasLayer(quadLayer)){map.removeLayer(quadLayer);b.classList.remove('on');}else{quadLayer.addTo(map);b.classList.add('on');}}
 
-const ES_NUEVO=p=>!!(p.mapeado_desde);
+// «Nuevo» tiene que hablar del proyecto, no de cuándo lo mapeamos nosotros:
+// un edificio en obra o entregado no es nuevo aunque lo hayamos sumado en agosto.
+const ES_NUEVO=p=>!!(p.mapeado_desde)&&p.estado_grupo==='En planos';
 function icon(p){
   const c=colorOf(p),s=p.isGEU?27:(p.destacado?20:15),b=p.isGEU?3:(p.destacado?3:2);
   let ring=p.isGEU?`box-shadow:0 0 0 2.5px #fff,0 0 0 5px ${c},0 2px 6px rgba(0,0,0,.4);`:'box-shadow:0 1px 4px rgba(0,0,0,.35);';
@@ -388,7 +392,7 @@ function icon(p){
   const fueraArea=!!p.fuera_area;
   const borde=!!p.borde_avenida&&!p.isGEU;
   const tips=[];
-  if(ES_NUEVO(p))tips.push('NUEVO en el benchmark · sumado en el recorrido del 22-ago-2026');
+  if(ES_NUEVO(p))tips.push('Proyecto nuevo · en planos, sumado en el recorrido del 22-ago-2026');
   if(noPrice)tips.push('Precio a consultar');
   if(fuera)tips.push('Fuera del cuadrante');
   if(p.caseta_ventas==='si')tips.push('Sala de ventas');
@@ -478,7 +482,7 @@ const DORMS=[[0,'Todas'],[1,'1 dorm'],[2,'2 dorm'],[3,'3 dorm'],[4,'4 dorm']];
 const COCHERA=[['todos','Cochera: todos'],['si','Incluye'],['no','No incluye'],['nd','Sin dato']];
 const DATAF=[['todos','Info: todos'],['completa','Completa'],['tipologias','Precio por tipología'],['general','Solo general'],['stock','Stock conocido'],['incompleta','Incompleta']];
 const FRESHF=[['todos','Todas'],['fresh','● Frescas ≤35d'],['stale','● Por reconfirmar']];
-const NOVF=[['todos','Todos'],['nuevo','🆕 Nuevos del recorrido'],['caseta','🏠 Con sala de ventas'],['borde','En el borde del cuadrante'],['fuera','Fuera del área de estudio']];
+const NOVF=[['todos','Todos'],['nuevo','🆕 Proyectos nuevos (en planos)'],['caseta','🏠 Con sala de ventas'],['borde','En el borde del cuadrante'],['fuera','Fuera del área de estudio']];
 let curNov='todos';
 function setNov(v,btn){curNov=v;btn.parentNode.querySelectorAll('button[onclick^="setNov"]').forEach(c=>c.classList.remove('on'));btn.classList.add('on');refresh();}
 let curEstado='todos', curDorm=0, curCochera='todos', curData='todos', curFresh='todos', mainView='map';
@@ -496,7 +500,7 @@ function fmatch(p){
   if(curData!=='todos'&&curData!=='stock'&&dataLevel(p)!==curData)return false;
   if(curFresh==='fresh'&&!p.isGEU&&!verifInfo(p).fresh)return false;
   if(curFresh==='stale'&&(p.isGEU||verifInfo(p).fresh))return false;
-  if(curNov==='nuevo'&&!p.mapeado_desde)return false;
+  if(curNov==='nuevo'&&!ES_NUEVO(p))return false;
   if(curNov==='caseta'&&p.caseta_ventas!=='si')return false;
   if(curNov==='borde'&&!p.borde_avenida)return false;
   if(curNov==='fuera'&&(p.en_cuadrante||p.isGEU||p.borde_avenida))return false;
@@ -560,7 +564,7 @@ function buildList(){
       : `${fmtUsd(p.precio_desde_usd)||'<span style=color:#b8860b>Precio a consultar</span>'}${pr.pm2?` · $${pr.pm2.toLocaleString()}/m²`:''}${!pr.pm2&&p.flats_summary.length?` · <span style=color:#b8860b>$m² no comparable</span>`:''}`;
     return `<div class="pi${p.isGEU?' geuitem':''}" onclick="clickItem('${p.id}')">
       ${thumbHtml(p,'pthumb')}
-      <div class="pbody"><div class="pname">${p.name}${p.isGEU?' <span style="color:var(--azul)">★</span>':''}${p.isGEU?'':(p.borde_avenida?' <span style="font-size:8px;font-weight:700;color:#8a5a12;background:#FBEAD2;padding:1px 5px;border-radius:4px" title="Sobre una avenida-límite: compite y entra al comparativo">BORDE</span>':(!p.en_cuadrante?' <span style="font-size:8px;font-weight:700;color:#9a6a00;background:#f0ece0;padding:1px 5px;border-radius:4px">FUERA DEL ÁREA</span>':''))}${p.mapeado_desde?' <span style="font-size:8.5px;font-weight:800;color:#fff;background:#c2185b;padding:1px 5px;border-radius:4px" title="Se sumó al benchmark en el recorrido del 22-ago-2026">NUEVO</span>':''}</div>
+      <div class="pbody"><div class="pname">${p.name}${p.isGEU?' <span style="color:var(--azul)">★</span>':''}${p.isGEU?'':(p.borde_avenida?' <span style="font-size:8px;font-weight:700;color:#8a5a12;background:#FBEAD2;padding:1px 5px;border-radius:4px" title="Sobre una avenida-límite: compite y entra al comparativo">BORDE</span>':(!p.en_cuadrante?' <span style="font-size:8px;font-weight:700;color:#9a6a00;background:#f0ece0;padding:1px 5px;border-radius:4px">FUERA DEL ÁREA</span>':''))}${ES_NUEVO(p)?' <span style="font-size:8.5px;font-weight:800;color:#fff;background:#c2185b;padding:1px 5px;border-radius:4px" title="Proyecto nuevo: todavía en planos">NUEVO</span>':''}</div>
         <div class="pdev">${p.dev}</div>
         <div class="pprice">${priceline} ${priceDelta(p)}</div>
         <div class="pmeta">${p.dorms||'—'} dorm · ${p.m2} m²</div>
@@ -893,18 +897,19 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],arg:['argview'],cov:['covview']};
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],oferta:['ofertaview'],arg:['argview'],cov:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['arg','Argumentario'],['cov','Cobertura de datos']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['oferta','Comunicación y oferta'],['arg','Argumentario'],['cov','Cobertura de datos']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
   buildBandas();
+  buildOferta();
   buildCobertura();
   showAnaSub('pos');
 }
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
-  ['statview','analysisview','priceview','dormview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  ['statview','analysisview','priceview','dormview','ofertaview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
@@ -959,6 +964,49 @@ function buildBandas(){
       ${pos?`<div class="alert" style="background:#EAF2FB;border-color:#c3d8ee;color:#173f68;margin-top:8px">📍 ${pos}.</div>`:''}
       ${sin.length?`<div class="muted" style="font-size:10.5px;margin-top:6px"><b>Ofrecen ${D} dorm pero no publican precio:</b> ${sin.join(' · ')}</div>`:''}`;
   }).join('');
+}
+
+
+/* COMUNICACIÓN Y OFERTA · qué promete cada uno y cuánto vale — para poder compararlo */
+function buildOferta(){
+  const conPromo=P.filter(p=>p.mostrar&&p.promo).sort((a,b)=>(b.promo.valor_usd||0)-(a.promo.valor_usd||0));
+  const filas=conPromo.map(p=>{const q=p.promo;
+    return `<tr><td class="nm"><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#15402c">${p.name}</a>
+        <div class="muted" style="font-size:10px">${p.dev||''}</div></td>
+      <td style="font-size:11px;white-space:nowrap"><span class="tag-promo">${q.tipo}</span></td>
+      <td style="font-size:12px;white-space:normal;min-width:180px">${q.que}</td>
+      <td style="white-space:nowrap;font-weight:800;color:${q.valor_usd?'#15402c':'#9a958c'}">${q.valor_txt}</td>
+      <td style="font-size:11px;color:#6d776e;white-space:nowrap">${q.pct_txt||'—'}</td>
+      <td style="font-size:11px;color:#6d776e;white-space:normal;min-width:170px">${q.cond}</td>
+      <td style="font-size:10.5px;color:#8a8577;white-space:normal;min-width:120px">${q.canal}<div>${q.fuente}</div></td></tr>`;}).join('');
+  const banco={};P.filter(p=>p.mostrar&&p.financia).forEach(p=>{const b=String(p.financia).split('—')[0].trim();(banco[b]=banco[b]||[]).push(p.name);});
+  const caseta=P.filter(p=>p.mostrar&&!p.isGEU&&p.caseta_ventas==='si');
+  const claims=P.filter(p=>p.mostrar&&p.como_presenta&&!p.isGEU);
+  document.getElementById('ofertaview').innerHTML=`
+   <h2 style="margin-bottom:2px">Comunicación y oferta</h2>
+   <div class="muted" style="margin-bottom:16px">Qué está regalando o descontando cada competidor, cuánto vale ese beneficio y
+   sobre qué unidad. El porcentaje se calcula sobre el flat típico de cada proyecto, que es la única forma de comparar un
+   descuento en soles contra una cochera de regalo.</div>
+
+   <div class="sec">Promociones vigentes con fuente <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">${conPromo.length} de ${P.filter(p=>p.mostrar&&!p.isGEU).length} competidores</span></div>
+   <div style="overflow-x:auto"><table class="t">
+     <thead><tr><th>Proyecto</th><th>Tipo</th><th>Qué dan</th><th>Cuánto vale</th><th>Peso</th><th>Condiciones</th><th>De dónde sale</th></tr></thead>
+     <tbody>${filas}</tbody></table></div>
+   <div class="foot" style="margin-top:8px">${D.meta.promos_nota||''}</div>
+
+   <div class="sec" style="margin-top:26px">Con qué banco trabaja cada uno</div>
+   <div class="amen">${Object.entries(banco).sort((a,b)=>b[1].length-a[1].length)
+      .map(([b,ps])=>`<span title="${ps.join(', ')}"><b>${b}</b> · ${ps.length}: ${ps.join(', ')}</span>`).join('')}</div>
+   <div class="foot">Solo los ${P.filter(p=>p.mostrar&&p.financia).length} proyectos donde el banco está confirmado por su web, su valla o el asesor.</div>
+
+   <div class="sec" style="margin-top:26px">Quién atiende con sala de ventas <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">${caseta.length} proyectos</span></div>
+   <div class="amen">${caseta.map(p=>`<span>${p.name}</span>`).join('')}</div>
+
+   <div class="sec" style="margin-top:26px">Cómo se presenta cada uno</div>
+   ${claims.map(p=>`<div style="padding:11px 0;border-bottom:1px solid #ece7d9">
+      <a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#15402c;font-size:13px">${p.name}</a>
+      <span class="muted" style="font-size:10.5px"> · ${p.dev||''}</span>
+      <div style="font-size:12.5px;color:#3c3a33;margin-top:3px;line-height:1.5">${p.como_presenta}</div></div>`).join('')}`;
 }
 
 /* COBERTURA DE DATOS · qué tenemos y qué falta de cada proyecto */
