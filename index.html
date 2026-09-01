@@ -238,6 +238,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="argview"></div>
     <div id="dormview"></div>
     <div id="ofertaview"></div>
+    <div id="planosview"></div>
     <div id="covview"></div>
   </div>
   <div id="updatesview"></div>
@@ -245,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260831d"></script>
+<script src="data/portal-data.js?v=20260831e"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -897,19 +898,20 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],oferta:['ofertaview'],arg:['argview'],cov:['covview']};
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],oferta:['ofertaview'],planos:['planosview'],arg:['argview'],cov:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['oferta','Comunicación y oferta'],['arg','Argumentario'],['cov','Cobertura de datos']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['oferta','Comunicación y oferta'],['planos','Lo que dicen los planos'],['arg','Argumentario'],['cov','Cobertura de datos']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
   buildBandas();
   buildOferta();
+  buildPlanos();
   buildCobertura();
   showAnaSub('pos');
 }
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
-  ['statview','analysisview','priceview','dormview','ofertaview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  ['statview','analysisview','priceview','dormview','ofertaview','planosview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
@@ -1007,6 +1009,58 @@ function buildOferta(){
       <a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#15402c;font-size:13px">${p.name}</a>
       <span class="muted" style="font-size:10.5px"> · ${p.dev||''}</span>
       <div style="font-size:12.5px;color:#3c3a33;margin-top:3px;line-height:1.5">${p.como_presenta}</div></div>`).join('')}`;
+}
+
+
+/* LO QUE DICEN LOS PLANOS · el «estudio» que en realidad es un cuarto, y qué trae cada unidad */
+function buildPlanos(){
+  const con=P.filter(p=>p.mostrar&&p.planos_analisis);
+  const todas=[]; con.forEach(p=>(p.planos_analisis.unidades||[]).forEach(u=>todas.push({p,u})));
+  const dis=todas.filter(x=>(x.u.estudio||{}).veredicto==='dormitorio disfrazado');
+  const est=todas.filter(x=>(x.u.estudio||{}).hay);
+  const porProy={}; dis.forEach(x=>{(porProy[x.p.name]=porProy[x.p.name]||[]).push(x);});
+  const conPlanos=P.filter(p=>p.mostrar&&(p.planos||[]).some(y=>y.includes('/planos/')));
+
+  const tarjeta=([nom,arr])=>{const p=arr[0].p;
+    return `<div style="background:var(--card,#fff);border:1px solid #ece7d9;border-left:3px solid #A6342A;border-radius:3px;padding:14px 16px;margin-bottom:10px">
+      <a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:800;color:#15402c;font-size:15px">${nom}</a>
+      <span class="muted" style="font-size:11px"> · ${p.dev||''}</span>
+      <div style="font-size:12.5px;color:#A6342A;font-weight:700;margin-top:3px">${arr.length} unidad${arr.length>1?'es':''} que vende${arr.length>1?'n':''} un dormitorio como estudio</div>
+      ${arr.map(x=>`<div style="font-size:12.5px;color:#3c3a33;margin-top:7px;line-height:1.5">
+         <b>${x.u.unidad}</b> — declara ${x.u.dorm_declarados??'—'} dorm, son ${x.u.dorm_reales??'—'}
+         <div class="muted" style="font-size:11.5px;margin-top:1px">${(x.u.estudio||{}).por_que||''}</div></div>`).join('')}
+    </div>`;};
+
+  document.getElementById('planosview').innerHTML=`
+   <h2 style="margin-bottom:2px">Lo que dicen los planos</h2>
+   <div class="muted" style="margin-bottom:14px">${D.meta.regla_planos||''}</div>
+
+   <div class="amen" style="margin-bottom:20px">
+     <span><b>${con.length}</b> de ${conPlanos.length} proyectos con planos revisados</span>
+     <span><b>${todas.length}</b> unidades leídas</span>
+     <span><b>${est.length}</b> con un ambiente vendido como estudio</span>
+     <span style="background:#FBEAE6;color:#A6342A"><b>${dis.length}</b> son en realidad un dormitorio</span>
+   </div>
+
+   <div class="sec">Quiénes venden un dormitorio como estudio</div>
+   <div class="foot" style="margin-bottom:10px">${D.meta.regla_estudio||''}</div>
+   ${Object.entries(porProy).sort((a,b)=>b[1].length-a[1].length).map(tarjeta).join('')
+     || '<div class="empty">Ninguno en lo revisado hasta ahora.</div>'}
+
+   <div class="sec" style="margin-top:26px">Cobertura del análisis</div>
+   <div style="overflow-x:auto"><table class="t">
+     <thead><tr><th>Proyecto</th><th>Unidades leídas</th><th>Con estudio</th><th>Dormitorio disfrazado</th></tr></thead>
+     <tbody>${con.sort((a,b)=>b.planos_analisis.unidades.length-a.planos_analisis.unidades.length).map(p=>{
+       const U=p.planos_analisis.unidades;
+       const e=U.filter(u=>(u.estudio||{}).hay).length;
+       const dd=U.filter(u=>(u.estudio||{}).veredicto==='dormitorio disfrazado').length;
+       return `<tr${p.isGEU?' style="background:#EAF2FB"':''}>
+         <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:${p.isGEU?'#185FA5':'#15402c'}">${p.name}</a>
+             ${p.isGEU?' <span class="badge b-geu">nuestro</span>':''}</td>
+         <td class="num">${U.length}</td><td class="num">${e||'—'}</td>
+         <td class="num" style="font-weight:${dd?800:400};color:${dd?'#A6342A':'#b8b3a6'}">${dd||'—'}</td></tr>`;}).join('')}
+     </tbody></table></div>
+   <div class="foot">Faltan ${conPlanos.length-con.length} proyectos con planos por revisar. El detalle de las 25 casillas de cada unidad está en su ficha.</div>`;
 }
 
 /* COBERTURA DE DATOS · qué tenemos y qué falta de cada proyecto */

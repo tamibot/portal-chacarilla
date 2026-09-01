@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260831d"></script>
+<script src="data/portal-data.js?v=20260831e"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -252,6 +252,36 @@ function render(){
       <span style="font-size:11px;color:#8a8577;flex:1;min-width:200px">Fuente: ${c.fuente}</span></div>`).join('')}
    </div>`:'<div class="sec">Contactos verificados</div><div class="empty">Todavía no tenemos un WhatsApp con fuente comprobada para este proyecto.</div>'}
 
+
+   ${(()=>{const A=p.planos_analisis; if(!A)return '';
+     const ET={sala_comedor:'Sala-comedor',sala_estar_extra:'Sala de estar aparte',estudio:'Estudio',
+      balcon:'Balcón',balcon_techado:'Balcón techado',terraza:'Terraza',patio_jardin:'Patio o jardín',
+      cocina_tipo:'Cocina',cocina_isla:'Isla',cocina_barra:'Barra o península',despensa:'Despensa',
+      lavanderia:'Lavandería',lavanderia_techada:'Lavandería bajo techo',lavanderia_recinto_propio:'Lavandería en cuarto propio',
+      cuarto_servicio:'Cuarto de servicio',bano_servicio:'Baño de servicio',bano_servicio_ducha:'Ese baño con ducha',
+      dorm_principal_suite:'Principal con baño propio',walk_in_closet:'Vestidor',bano_visita:'Baño de visita',
+      banos_completos:'Baños completos',medios_banos:'Medios baños',
+      ascensor_directo:'Ascensor entra al depa',doble_altura:'Doble altura',azotea_propia:'Azotea propia'};
+     const cel=v=>v===true?'<span style="color:#2F7D54;font-weight:800">SÍ</span>'
+       :v===false?'<span style="color:#b8b3a6">no</span>'
+       :v===null||v===undefined?'<span style="color:#b9863b;font-weight:700;font-size:10px" title="El plano no alcanza a mostrarlo">no se ve</span>'
+       :`<span style="color:#3c3a33">${v}</span>`;
+     const VER={'dormitorio disfrazado':['#A6342A','#FBEAE6','dormitorio disfrazado'],
+                'estudio real':['#2F7D54','#EAF3DE','estudio real'],
+                'ilegible':['#8A6318','#FBF1DC','no se puede definir'],
+                'sin estudio':['#8a8577','#f3f1ea','sin estudio']};
+     const filas=A.unidades.map(u=>{
+       const e=u.estudio||{}; const [c,bg,lab]=VER[e.veredicto]||VER['sin estudio'];
+       const cs=Object.keys(ET).map(k=>`<td style="text-align:center;font-size:11px">${cel(u.checklist[k])}</td>`).join('');
+       return `<tr><td style="white-space:nowrap"><b>${u.unidad}</b>
+           ${e.hay?`<div><span style="font-size:9.5px;font-weight:800;color:${c};background:${bg};padding:1px 6px;border-radius:3px">${lab}</span></div>`:''}
+           ${u.observacion?`<div class="muted" style="font-size:10px;white-space:normal;max-width:230px;margin-top:2px">${u.observacion}</div>`:''}</td>${cs}</tr>`;}).join('');
+     const th=Object.values(ET).map(v=>`<th style="font-size:9.5px;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;padding:6px 2px">${v}</th>`).join('');
+     const dis=A.unidades.filter(u=>(u.estudio||{}).veredicto==='dormitorio disfrazado').length;
+     return `<div class="sec">Qué dicen sus planos
+        <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">${A.unidades.length} unidades leídas de ${A.planos_leidos||'—'} láminas${dis?` · ${dis} dormitorio${dis>1?'s':''} vendido${dis>1?'s':''} como estudio`:''}</span></div>
+       <div class="alert" style="background:#EEF2F7;border-color:#c6d2e0;color:#22303f">📐 ${D.meta.regla_planos}</div>
+       <div style="overflow-x:auto"><table class="t"><thead><tr><th>Unidad</th>${th}</tr></thead><tbody>${filas}</tbody></table></div>`;})()}
    ${docsHtml?`<div class="sec">Respaldos guardados <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">copia propia — no depende de que la web del competidor siga arriba</span></div>${docsHtml}`:''}
 
    <div class="sec">Fuentes</div>
