@@ -5,7 +5,7 @@ window.PORTAL_DATA = {
   "total": 41,
   "en_cuadrante": 23,
   "con_precio": 100,
-  "competidores_activos": 38,
+  "competidores_activos": 36,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 13,
   "en_ultimas_unidades": 11,
@@ -36,6 +36,18 @@ window.PORTAL_DATA = {
   ],
   "proximo_corte": "2026-09-30",
   "bitacora": [
+   {
+    "fecha": "2026-08-31",
+    "proyecto": "Cuadrante",
+    "dev": "—",
+    "proyecto_id": null,
+    "tags": [
+     "limpieza"
+    ],
+    "canal": "Revisión interna",
+    "autor": "Benchmark",
+    "texto": "Se retiran Astete Living y Terraverde: son los dos únicos competidores sin ningún teléfono y sin forma de conseguirlo. Astete Living está en planos, no publica nada y su desarrolladora no tiene presencia web; Terraverde es una reventa de broker de un edificio entregado en 2021, no un proyecto en venta. El cuadrante queda en 36 competidores."
+   },
    {
     "fecha": "2026-08-31",
     "proyecto": "Cuadrante",
@@ -2853,7 +2865,9 @@ window.PORTAL_DATA = {
      "precio_m2": null,
      "tipo": "duplex",
      "piso": 6,
-     "flat": false
+     "flat": false,
+     "cochera_incluida": "2 PARALELOS",
+     "deposito_incluido": 1
     },
     {
      "unidad": "Dúplex 2-3d",
@@ -3763,7 +3777,9 @@ window.PORTAL_DATA = {
     "tipo": "web_oficial",
     "fecha": "2026-08-24",
     "nota": "Grupo Dicon lo lista entre sus proyectos entregados; queda la última unidad D-101 con entrega en setiembre-2026."
-   }
+   },
+   "cochera_nota": "La cochera simple se vende aparte a US$14,000; el precio publicado es el del departamento solo.",
+   "politica_precio": "El precio no incluye estacionamiento: la cochera simple cuesta US$14,000 aparte."
   },
   {
    "id": "dmont-2",
@@ -8001,7 +8017,9 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "cochera_nota": "Confirmado con el asesor el 02-jul-2026: el precio NO incluye estacionamiento. Se vende aparte entre S/48,000 y S/99,000 según el cajón, y algunos vienen con depósito.",
+   "politica_precio": "El precio de lista es el del departamento solo: el estacionamiento va aparte (S/48,000–99,000). Por eso su US$/m² es directamente comparable, sin ajuste."
   },
   {
    "id": "precursores-525",
@@ -8174,7 +8192,9 @@ window.PORTAL_DATA = {
      "total": 20
     }
    ],
-   "borde_avenida": true
+   "borde_avenida": true,
+   "cochera_status": "nd",
+   "cochera_nota": "Sin confirmar: no tenemos ningún dato sobre si el precio incluye estacionamiento."
   },
   {
    "id": "precursores-ii",
@@ -8996,7 +9016,9 @@ window.PORTAL_DATA = {
    ],
    "borde_avenida": true,
    "unidades": 25,
-   "financia": "Scotiabank"
+   "financia": "Scotiabank",
+   "cochera_status": "nd",
+   "cochera_nota": "Sin confirmar: no tenemos ningún dato sobre si el precio incluye estacionamiento."
   },
   {
    "id": "terraverde",
@@ -9053,7 +9075,7 @@ window.PORTAL_DATA = {
    ],
    "portales": {},
    "anuncios": null,
-   "mostrar": true,
+   "mostrar": false,
    "gallery": [
     "assets/img-f1/terraverde/img-01.jpg"
    ],
@@ -9062,7 +9084,7 @@ window.PORTAL_DATA = {
     "n": 1,
     "label": "A estrenar (broker)"
    },
-   "motivo_retiro": "Reventa vía broker (ByB Bienes Raíces), no es un proyecto en venta: una unidad a estrenar, sin desarrolladora ni sala de ventas.",
+   "motivo_retiro": "Se retira del benchmark: no es un proyecto en venta sino una reventa de unidades a estrenar a través del broker ByB Bienes Raíces (agente Carlos Fernández M.). No tiene desarrolladora activa, ni sala de ventas, ni contacto público — el aviso de InfoCasas esconde el teléfono detrás de un formulario. El edificio se entregó en marzo de 2021.",
    "precio_fuente": {
     "tipo": "portal",
     "nota": "Aviso de InfoCasas del comercializador."
@@ -9520,7 +9542,7 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": true,
+   "mostrar": false,
    "geo_aprox": false,
    "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías. Búsqueda en internet 24-ago-2026: EDSA Inmobiliaria no publica ficha de este proyecto y no aparece en Nexo, Urbania ni Adondevivir. Ojo: el proyecto «Velasco Astete» que sí figura en Nexo es OTRO (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2–3 dorms, 63–149 m², desde S/ 470,000) y está fuera del cuadrante. ⚠ Sin WhatsApp verificado. El 945 678 879 que figuraba correspondía en realidad a La Floresta Boulevard — se retiró. Búsqueda del 31-ago-2026: EDSA Inmobiliaria no tiene web ni ficha en portales. El cerco muestra un QR, pero en nuestra foto está tapado por una camioneta y no se puede leer. Para conseguir contacto hay que volver a fotografiar ese QR.",
    "fuentes": [
@@ -9562,7 +9584,8 @@ window.PORTAL_DATA = {
    ],
    "borde_avenida": true,
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": []
+   "dorms_disponibles": [],
+   "motivo_retiro": "Se retira del benchmark: no tiene contacto y no hay forma de conseguirlo. EDSA Inmobiliaria no publica web ni ficha en portales (búsqueda del 31-ago-2026), y el QR de su cerco está tapado por una camioneta en nuestra única foto. Además el proyecto sigue en planos y no publica precios, metrajes ni tipologías: no aporta nada comparable. Se puede reincorporar cuando lancen o cuando se consiga leer ese QR en un próximo recorrido."
   },
   {
    "id": "flexi-iii",
