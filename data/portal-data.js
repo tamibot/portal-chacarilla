@@ -1992,7 +1992,10 @@ window.PORTAL_DATA = {
   "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados.",
   "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
   "nota_corte": "Corte de agosto cerrado al 31-ago-2026. El barrido de webs oficiales se hizo el 24-ago y las últimas confirmaciones por WhatsApp llegaron el 27 y 30 de agosto.",
-  "promos_nota": "Se comparan solo promociones con fuente: campaña recibida, hoja de cotización o pieza de Meta guardada. El valor en US$ es el beneficio declarado; el porcentaje se calcula sobre el flat típico de cada proyecto para poder compararlos."
+  "promos_nota": "Se comparan solo promociones con fuente: campaña recibida, hoja de cotización o pieza de Meta guardada. El valor en US$ es el beneficio declarado; el porcentaje se calcula sobre el flat típico de cada proyecto para poder compararlos.",
+  "regla_equivalente": "US$/m² equivalente = precio de lista ÷ (m² del departamento + 16 m² por cada estacionamiento incluido + 6 m² por cada depósito incluido). Sirve para comparar sin tener que ponerle precio a la cochera: en vez de restarle plata al precio, se le suman los metros que el comprador realmente recibe. Donde la cochera va aparte, el precio de lista ya es el del departamento solo y el equivalente coincide con el US$/m² normal.",
+  "m2_estacionamiento": 16,
+  "m2_deposito": 6
  },
  "quadrant": [
   [
@@ -2088,7 +2091,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2776,
      "tipo": "flat",
      "piso": null,
-     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante.",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 188235,
+     "m2_equivalente": 67.8,
+     "precio_m2_equiv": 2776
     },
     {
      "unidad": "Dpto 302",
@@ -2099,7 +2107,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2779,
      "tipo": "flat",
      "piso": null,
-     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante.",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 197059,
+     "m2_equivalente": 70.9,
+     "precio_m2_equiv": 2779
     },
     {
      "unidad": "Dpto 201",
@@ -2110,7 +2123,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2656,
      "tipo": "flat",
      "piso": null,
-     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante.",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 367647,
+     "m2_equivalente": 138.4,
+     "precio_m2_equiv": 2656
     },
     {
      "unidad": "Dpto 203",
@@ -2121,7 +2139,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2638,
      "tipo": "flat",
      "piso": null,
-     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante.",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 435294,
+     "m2_equivalente": 165,
+     "precio_m2_equiv": 2638
     },
     {
      "unidad": "Dúplex 705",
@@ -2132,7 +2155,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2305,
      "tipo": "duplex",
      "piso": null,
-     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante.",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 305882,
+     "m2_equivalente": 132.7,
+     "precio_m2_equiv": 2305
     },
     {
      "unidad": "Dúplex 701",
@@ -2143,7 +2171,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2269,
      "tipo": "duplex",
      "piso": null,
-     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante.",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 619118,
+     "m2_equivalente": 272.9,
+     "precio_m2_equiv": 2269
     }
    ],
    "flats_summary": [
@@ -2268,7 +2301,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2287,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 315071,
+     "m2_equivalente": 137.8,
+     "precio_m2_equiv": 2286
     },
     {
      "unidad": "Flat 202",
@@ -2278,7 +2316,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2287,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 326709,
+     "m2_equivalente": 142.9,
+     "precio_m2_equiv": 2286
     },
     {
      "unidad": "Flat 203/303/403/503 (típico)",
@@ -2288,7 +2331,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2287,
      "tipo": "flat",
      "piso": "2-5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 229552,
+     "m2_equivalente": 100.4,
+     "precio_m2_equiv": 2286
     },
     {
      "unidad": "Flat 204/304/404/504 (típico)",
@@ -2298,7 +2346,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2287,
      "tipo": "flat",
      "piso": "2-5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 257585,
+     "m2_equivalente": 112.7,
+     "precio_m2_equiv": 2286
     },
     {
      "unidad": "Flat 302/502",
@@ -2308,7 +2361,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2287,
      "tipo": "flat",
      "piso": "3-5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 326709,
+     "m2_equivalente": 142.9,
+     "precio_m2_equiv": 2286
     },
     {
      "unidad": "Flat 401",
@@ -2318,7 +2376,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2287,
      "tipo": "flat",
      "piso": "4",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 315071,
+     "m2_equivalente": 137.8,
+     "precio_m2_equiv": 2286
     },
     {
      "unidad": "Dúplex 601",
@@ -2328,7 +2391,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1792,
      "tipo": "duplex",
      "piso": "6 (dúplex)",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 493921,
+     "m2_equivalente": 275.6,
+     "precio_m2_equiv": 1792
     },
     {
      "unidad": "Dúplex 602",
@@ -2338,7 +2406,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1789,
      "tipo": "duplex",
      "piso": "6 (dúplex)",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 511192,
+     "m2_equivalente": 285.8,
+     "precio_m2_equiv": 1789
     },
     {
      "unidad": "Dúplex 603",
@@ -2348,7 +2421,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1790,
      "tipo": "duplex",
      "piso": "6 (dúplex)",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 368848,
+     "m2_equivalente": 206.1,
+     "precio_m2_equiv": 1790
     }
    ],
    "flats_summary": [
@@ -2946,7 +3024,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "1",
      "flat": false,
-     "motivo_no_comparable": "piso 1"
+     "motivo_no_comparable": "piso 1",
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 380000,
+     "m2_equivalente": 173.91,
+     "precio_m2_equiv": 2185
     },
     {
      "unidad": "Flat 102",
@@ -2999,7 +3082,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "2",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 348000,
+     "m2_equivalente": 157.65,
+     "precio_m2_equiv": 2207
     },
     {
      "unidad": "Dúplex 202",
@@ -3016,7 +3104,12 @@ window.PORTAL_DATA = {
      "tipo": "duplex",
      "piso": "2",
      "flat": false,
-     "motivo_no_comparable": "duplex"
+     "motivo_no_comparable": "duplex",
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 347000,
+     "m2_equivalente": 140.57,
+     "precio_m2_equiv": 2469
     },
     {
      "unidad": "Flat 203",
@@ -3087,7 +3180,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "3",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 350000,
+     "m2_equivalente": 142.14,
+     "precio_m2_equiv": 2462
     },
     {
      "unidad": "Flat 302",
@@ -3104,7 +3202,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "3",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 320000,
+     "m2_equivalente": 137.06,
+     "precio_m2_equiv": 2335
     },
     {
      "unidad": "Flat 303",
@@ -3157,7 +3260,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "4",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 351000,
+     "m2_equivalente": 157.65,
+     "precio_m2_equiv": 2226
     },
     {
      "unidad": "Dúplex 402",
@@ -3192,7 +3300,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "4",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 352000,
+     "m2_equivalente": 152.6,
+     "precio_m2_equiv": 2307
     },
     {
      "unidad": "Flat 404",
@@ -3245,7 +3358,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "5",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 352000,
+     "m2_equivalente": 158.14,
+     "precio_m2_equiv": 2226
     },
     {
      "unidad": "Flat 502",
@@ -3262,7 +3380,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "5",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 338000,
+     "m2_equivalente": 137.06,
+     "precio_m2_equiv": 2466
     },
     {
      "unidad": "Flat 503",
@@ -3279,7 +3402,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "5",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 253000,
+     "m2_equivalente": 101.1,
+     "precio_m2_equiv": 2502
     },
     {
      "unidad": "Flat 504",
@@ -3296,7 +3424,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "5",
      "flat": true,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 290000,
+     "m2_equivalente": 123.62,
+     "precio_m2_equiv": 2346
     },
     {
      "unidad": "Penthouse 601",
@@ -3349,7 +3482,12 @@ window.PORTAL_DATA = {
      "tipo": "pent",
      "piso": "6",
      "flat": false,
-     "motivo_no_comparable": "penthouse"
+     "motivo_no_comparable": "penthouse",
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 393000,
+     "m2_equivalente": 179.69,
+     "precio_m2_equiv": 2187
     },
     {
      "unidad": "Penthouse 604",
@@ -3567,7 +3705,12 @@ window.PORTAL_DATA = {
      "precio_usd": 237206,
      "precio_m2": 2050,
      "tipo": "flat",
-     "piso": "1"
+     "piso": "1",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 237206,
+     "m2_equivalente": 115.71,
+     "precio_m2_equiv": 2050
     }
    ],
    "flats_summary": [],
@@ -3675,7 +3818,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2162,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 264210,
+     "m2_equivalente": 122.2,
+     "precio_m2_equiv": 2162
     },
     {
      "unidad": "Flat 201",
@@ -3685,7 +3833,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2163,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 263064,
+     "m2_equivalente": 121.6,
+     "precio_m2_equiv": 2163
     },
     {
      "unidad": "Flat 202",
@@ -3695,7 +3848,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2163,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 263453,
+     "m2_equivalente": 121.8,
+     "precio_m2_equiv": 2163
     },
     {
      "unidad": "Flat 302",
@@ -3705,7 +3863,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2147,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 265184,
+     "m2_equivalente": 123.5,
+     "precio_m2_equiv": 2147
     },
     {
      "unidad": "Flat 304",
@@ -3715,7 +3878,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2170,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 183328,
+     "m2_equivalente": 84.5,
+     "precio_m2_equiv": 2170
     },
     {
      "unidad": "Flat 401",
@@ -3725,7 +3893,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2163,
      "tipo": "flat",
      "piso": "4",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 263064,
+     "m2_equivalente": 121.6,
+     "precio_m2_equiv": 2163
     },
     {
      "unidad": "Flat 402",
@@ -3735,7 +3908,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2163,
      "tipo": "flat",
      "piso": "4",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 263453,
+     "m2_equivalente": 121.8,
+     "precio_m2_equiv": 2163
     },
     {
      "unidad": "Flat 501",
@@ -3745,7 +3923,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2148,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 264794,
+     "m2_equivalente": 123.3,
+     "precio_m2_equiv": 2148
     },
     {
      "unidad": "Flat 502",
@@ -3755,7 +3938,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2147,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 265184,
+     "m2_equivalente": 123.5,
+     "precio_m2_equiv": 2147
     },
     {
      "unidad": "Flat 504",
@@ -3765,7 +3953,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2144,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 181190,
+     "m2_equivalente": 84.5,
+     "precio_m2_equiv": 2144
     },
     {
      "unidad": "Dúplex 603",
@@ -3775,7 +3968,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1904,
      "tipo": "duplex",
      "piso": "6",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 299558,
+     "m2_equivalente": 157.3,
+     "precio_m2_equiv": 1904
     }
    ],
    "flats_summary": [
@@ -3916,7 +4114,12 @@ window.PORTAL_DATA = {
      "precio_lista_usd": 197407,
      "cochera_incluida": "1 estacionamiento",
      "ajuste_cochera_usd": 15000,
-     "nota": "Brochure de Galeón: US$197 407 con cochera incluida. Neto de cochera (US$15 000) = US$182 407 → US$2 280/m²."
+     "nota": "Brochure de Galeón: US$197 407 con cochera incluida. Neto de cochera (US$15 000) = US$182 407 → US$2 280/m².",
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 197407,
+     "m2_equivalente": 96,
+     "precio_m2_equiv": 2056
     },
     {
      "unidad": "Flat 3 dorm + 1 estac.",
@@ -3930,7 +4133,12 @@ window.PORTAL_DATA = {
      "precio_lista_usd": 266032,
      "cochera_incluida": "1 estacionamiento",
      "ajuste_cochera_usd": 15000,
-     "nota": "Brochure de Galeón: US$266 032 con cochera incluida. Neto de cochera (US$15 000) = US$251 032 → US$2 231/m²."
+     "nota": "Brochure de Galeón: US$266 032 con cochera incluida. Neto de cochera (US$15 000) = US$251 032 → US$2 231/m².",
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 266032,
+     "m2_equivalente": 128.5,
+     "precio_m2_equiv": 2070
     }
    ],
    "flats_summary": [
@@ -4097,7 +4305,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2311,
      "tipo": "flat",
      "piso": "3-4",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 196471,
+     "m2_equivalente": 85,
+     "precio_m2_equiv": 2311
     },
     {
      "unidad": "Dpto. 101",
@@ -4107,7 +4320,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2149,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 257647,
+     "m2_equivalente": 119.9,
+     "precio_m2_equiv": 2149
     },
     {
      "unidad": "Dpto. 102",
@@ -4117,7 +4335,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1784,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 352647,
+     "m2_equivalente": 197.7,
+     "precio_m2_equiv": 1784
     },
     {
      "unidad": "Duplex 603",
@@ -4127,7 +4350,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2022,
      "tipo": "duplex",
      "piso": "6",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 222941,
+     "m2_equivalente": 110.3,
+     "precio_m2_equiv": 2021
     }
    ],
    "flats_summary": [
@@ -4282,7 +4510,12 @@ window.PORTAL_DATA = {
      "precio_usd": 249706,
      "precio_m2": 2593,
      "tipo": "flat",
-     "piso": "1"
+     "piso": "1",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 249706,
+     "m2_equivalente": 96.31,
+     "precio_m2_equiv": 2593
     }
    ],
    "flats_summary": [],
@@ -4442,7 +4675,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2612,
      "tipo": "flat",
      "piso": "4",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 246028,
+     "m2_equivalente": 94.2,
+     "precio_m2_equiv": 2612
     },
     {
      "unidad": "107",
@@ -4451,7 +4689,12 @@ window.PORTAL_DATA = {
      "precio_usd": 329187,
      "precio_m2": 2543,
      "tipo": "flat",
-     "piso": "1"
+     "piso": "1",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 329187,
+     "m2_equivalente": 129.42,
+     "precio_m2_equiv": 2544
     }
    ],
    "flats_summary": [
@@ -4638,7 +4881,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "nota": "Confirmado por la asesora (WhatsApp, jul-2026): US$325,000 con 1 estacionamiento incluido. Neto de cochera (US$17,000) = US$308,000 → US$2,504/m². En la tabla mostramos el neto, igual que en todo el cuadrante.",
      "precio_lista_usd": 325000,
-     "precio_usd": 308000
+     "precio_usd": 308000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 325000,
+     "m2_equivalente": 139,
+     "precio_m2_equiv": 2338
     },
     {
      "unidad": "Flat 1 dormitorio · 1er piso",
@@ -4649,7 +4897,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "1",
      "nota": "Cotizado por Mónica por WhatsApp el 27-ago-2026: US$164,000 por 54.37 m² en primer piso, con terraza sobre el parque La Floresta en sala-comedor y dormitorio, walking closet, cocina kitchenette y punto de gas natural. No dijo si incluye estacionamiento. Es primer piso, así que no entra al comparativo de flats típicos.",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 164000,
+     "m2_equivalente": 70.37,
+     "precio_m2_equiv": 2331
     },
     {
      "unidad": "Flat vista interior · 2 dorm + estudio, cocina cerrada (pisos 2 al 6)",
@@ -4662,7 +4915,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 202000,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 17000
+     "ajuste_cochera_usd": 17000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 202000,
+     "m2_equivalente": 95.06,
+     "precio_m2_equiv": 2125
     },
     {
      "unidad": "Flat vista interior · 2 dorm + estudio, con puntos de gas (pisos 2 al 6)",
@@ -4675,7 +4933,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 207900,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 17000
+     "ajuste_cochera_usd": 17000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 207900,
+     "m2_equivalente": 97.46,
+     "precio_m2_equiv": 2133
     }
    ],
    "flats_summary": [
@@ -5337,7 +5600,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "semisótano",
      "flat": false,
-     "precio_soles": 750300
+     "precio_soles": 750300,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 220676,
+     "m2_equivalente": 102.72,
+     "precio_m2_equiv": 2148
     },
     {
      "unidad": "102",
@@ -5348,7 +5616,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "1",
      "flat": false,
-     "precio_soles": 801200
+     "precio_soles": 801200,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 235647,
+     "m2_equivalente": 100.18,
+     "precio_m2_equiv": 2352
     },
     {
      "unidad": "SS03",
@@ -5359,7 +5632,12 @@ window.PORTAL_DATA = {
      "tipo": "duplex",
      "piso": "semisótano",
      "flat": false,
-     "precio_soles": 799000
+     "precio_soles": 799000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 235000,
+     "m2_equivalente": 132.6,
+     "precio_m2_equiv": 1772
     },
     {
      "unidad": "Tríplex 404",
@@ -5370,7 +5648,12 @@ window.PORTAL_DATA = {
      "tipo": "triplex",
      "piso": "4",
      "flat": false,
-     "precio_soles": 789300
+     "precio_soles": 789300,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 232147,
+     "m2_equivalente": 120.04,
+     "precio_m2_equiv": 1934
     },
     {
      "unidad": "201 / 301 / 401",
@@ -5381,7 +5664,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "2 al 4",
      "flat": true,
-     "precio_soles": 843100
+     "precio_soles": 843100,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 247971,
+     "m2_equivalente": 108.03,
+     "precio_m2_equiv": 2295
     },
     {
      "unidad": "101",
@@ -5392,7 +5680,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "1",
      "flat": false,
-     "precio_soles": 843900
+     "precio_soles": 843900,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 248206,
+     "m2_equivalente": 108.13,
+     "precio_m2_equiv": 2295
     },
     {
      "unidad": "203 / 303 / 403",
@@ -5403,7 +5696,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "2 al 4",
      "flat": true,
-     "precio_soles": 846700
+     "precio_soles": 846700,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 249029,
+     "m2_equivalente": 108.5,
+     "precio_m2_equiv": 2295
     },
     {
      "unidad": "202 / 302 / 402",
@@ -5414,7 +5712,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "2 al 4",
      "flat": true,
-     "precio_soles": 863800
+     "precio_soles": 863800,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 254059,
+     "m2_equivalente": 108.0,
+     "precio_m2_equiv": 2352
     },
     {
      "unidad": "SS01",
@@ -5425,7 +5728,12 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "semisótano",
      "flat": false,
-     "precio_soles": 982400
+     "precio_soles": 982400,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 288941,
+     "m2_equivalente": 142.46,
+     "precio_m2_equiv": 2028
     },
     {
      "unidad": "Dúplex 501 · penthouse",
@@ -5436,7 +5744,12 @@ window.PORTAL_DATA = {
      "tipo": "pent",
      "piso": "5",
      "flat": false,
-     "precio_soles": 1197700
+     "precio_soles": 1197700,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 352265,
+     "m2_equivalente": 174.04,
+     "precio_m2_equiv": 2024
     },
     {
      "unidad": "Dúplex 503 · penthouse",
@@ -5447,7 +5760,12 @@ window.PORTAL_DATA = {
      "tipo": "pent",
      "piso": "5",
      "flat": false,
-     "precio_soles": 1199500
+     "precio_soles": 1199500,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 352794,
+     "m2_equivalente": 174.29,
+     "precio_m2_equiv": 2024
     }
    ],
    "flats_summary": [
@@ -5922,7 +6240,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2429,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 211176,
+     "m2_equivalente": 86.95,
+     "precio_m2_equiv": 2429
     }
    ],
    "flats_summary": [
@@ -6090,7 +6413,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "nota_precio": "Precio lista 202,000 incluye 1 simple; neto descuenta US$15,000.",
      "motivo_no_comparable": "piso 1",
-     "comparable_confirmado": false
+     "comparable_confirmado": false,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 202000,
+     "m2_equivalente": 89.13,
+     "precio_m2_equiv": 2266
     },
     {
      "unidad": "Flat 102",
@@ -6109,7 +6437,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "nota_precio": "Precio lista 477,000 incluye 2 simples; neto descuenta US$30,000.",
      "motivo_no_comparable": "piso 1, area libre 45%",
-     "comparable_confirmado": false
+     "comparable_confirmado": false,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 477000,
+     "m2_equivalente": 271.69,
+     "precio_m2_equiv": 1756
     },
     {
      "unidad": "Flat 201",
@@ -6147,7 +6480,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "nota_precio": "Precio lista 319,000 incluye 2 simples; neto descuenta US$30,000.",
      "motivo_no_comparable": null,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 319000,
+     "m2_equivalente": 147.56,
+     "precio_m2_equiv": 2162
     },
     {
      "unidad": "Flat 203",
@@ -6204,7 +6542,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "nota_precio": "Precio lista 320,000 incluye 2 simples; neto descuenta US$30,000.",
      "motivo_no_comparable": null,
-     "comparable_confirmado": true
+     "comparable_confirmado": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 320000,
+     "m2_equivalente": 147.56,
+     "precio_m2_equiv": 2169
     },
     {
      "unidad": "Flat 303",
@@ -6639,7 +6982,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1858,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 311765,
+     "m2_equivalente": 167.82,
+     "precio_m2_equiv": 1858
     },
     {
      "unidad": "Flat tipico 2 al 6 (referencial agotado / sin precio vigente)",
@@ -6783,7 +7131,12 @@ window.PORTAL_DATA = {
      "piso": "1",
      "flat": false,
      "precio_lista_usd": 274118,
-     "ajuste_cochera_usd": 20000
+     "ajuste_cochera_usd": 20000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 274118,
+     "m2_equivalente": 103.9,
+     "precio_m2_equiv": 2638
     },
     {
      "unidad": "x107 (Piso 1)",
@@ -6795,7 +7148,12 @@ window.PORTAL_DATA = {
      "piso": "1",
      "flat": false,
      "precio_lista_usd": 248824,
-     "ajuste_cochera_usd": 20000
+     "ajuste_cochera_usd": 20000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 248824,
+     "m2_equivalente": 103.4,
+     "precio_m2_equiv": 2406
     },
     {
      "unidad": "X01 (Pisos 2-3, típico)",
@@ -6807,7 +7165,12 @@ window.PORTAL_DATA = {
      "piso": "2-3",
      "flat": true,
      "precio_lista_usd": 274118,
-     "ajuste_cochera_usd": 20000
+     "ajuste_cochera_usd": 20000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 274118,
+     "m2_equivalente": 107.4,
+     "precio_m2_equiv": 2552
     },
     {
      "unidad": "X02 (Pisos 2-3, típico)",
@@ -6819,7 +7182,12 @@ window.PORTAL_DATA = {
      "piso": "2-3",
      "flat": true,
      "precio_lista_usd": 274118,
-     "ajuste_cochera_usd": 20000
+     "ajuste_cochera_usd": 20000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 274118,
+     "m2_equivalente": 107.4,
+     "precio_m2_equiv": 2552
     },
     {
      "unidad": "X05 (Piso 6)",
@@ -6831,7 +7199,12 @@ window.PORTAL_DATA = {
      "piso": "6",
      "flat": true,
      "precio_lista_usd": 263529,
-     "ajuste_cochera_usd": 20000
+     "ajuste_cochera_usd": 20000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 263529,
+     "m2_equivalente": 105.3,
+     "precio_m2_equiv": 2503
     }
    ],
    "flats_summary": [
@@ -6977,7 +7350,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 170850,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 15000
+     "ajuste_cochera_usd": 15000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 170850,
+     "m2_equivalente": 83.0,
+     "precio_m2_equiv": 2058
     },
     {
      "unidad": "Penthouse dúplex · 3 dorm, terraza de 63 m²",
@@ -6990,7 +7368,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "precio_usd_lista": 399000,
      "cochera_incluida": "2 estacionamientos",
-     "ajuste_cochera_usd": 30000
+     "ajuste_cochera_usd": 30000,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 399000,
+     "m2_equivalente": 218.0,
+     "precio_m2_equiv": 1830
     }
    ],
    "flats_summary": [
@@ -7121,7 +7504,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2528,
      "tipo": "flat",
      "piso": "intermedio",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 389303,
+     "m2_equivalente": 154,
+     "precio_m2_equiv": 2528
     },
     {
      "unidad": "Depto 135 m² (InfoCasas Y7B5FF)",
@@ -7132,7 +7520,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2484,
      "tipo": "flat",
      "piso": "intermedio",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 335374,
+     "m2_equivalente": 135,
+     "precio_m2_equiv": 2484
     }
    ],
    "flats_summary": [
@@ -7284,7 +7677,12 @@ window.PORTAL_DATA = {
      "area_total_m2": 85.16,
      "unidades_count": 5,
      "comparable_confirmado": true,
-     "precio_soles": 673000
+     "precio_soles": 673000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 197941,
+     "m2_equivalente": 85.16,
+     "precio_m2_equiv": 2324
     },
     {
      "unidad": "Típico 05 (205-605)",
@@ -7299,7 +7697,12 @@ window.PORTAL_DATA = {
      "area_total_m2": 86.24,
      "unidades_count": 5,
      "comparable_confirmado": true,
-     "precio_soles": 682000
+     "precio_soles": 682000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 200588,
+     "m2_equivalente": 86.24,
+     "precio_m2_equiv": 2326
     },
     {
      "unidad": "Típico 03 (203-603)",
@@ -7314,7 +7717,12 @@ window.PORTAL_DATA = {
      "area_total_m2": 103.91,
      "unidades_count": 5,
      "comparable_confirmado": true,
-     "precio_soles": 878000
+     "precio_soles": 878000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 258235,
+     "m2_equivalente": 103.91,
+     "precio_m2_equiv": 2485
     },
     {
      "unidad": "Típico 01-A (201)/01-B (301,501)",
@@ -7328,7 +7736,12 @@ window.PORTAL_DATA = {
      "area_total_m2": 103.46,
      "unidades_count": 3,
      "comparable_confirmado": true,
-     "precio_soles": 874000
+     "precio_soles": 874000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 257059,
+     "m2_equivalente": 103.46,
+     "precio_m2_equiv": 2485
     },
     {
      "unidad": "101",
@@ -7342,7 +7755,12 @@ window.PORTAL_DATA = {
      "area_techada_m2": 99.97,
      "area_total_m2": 127.87,
      "motivo_no_comparable": "piso 1",
-     "precio_soles": 962000
+     "precio_soles": 962000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 282941,
+     "m2_equivalente": 127.87,
+     "precio_m2_equiv": 2213
     },
     {
      "unidad": "102",
@@ -7356,7 +7774,12 @@ window.PORTAL_DATA = {
      "area_techada_m2": 117.47,
      "area_total_m2": 140.86,
      "motivo_no_comparable": "piso 1",
-     "precio_soles": 1091000
+     "precio_soles": 1091000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 320882,
+     "m2_equivalente": 140.86,
+     "precio_m2_equiv": 2278
     },
     {
      "unidad": "Dúplex 702 (DUO/flex)",
@@ -7369,7 +7792,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "area_techada_m2": 84.25,
      "area_total_m2": 128.46,
-     "motivo_no_comparable": "duplex"
+     "motivo_no_comparable": "duplex",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 244706,
+     "m2_equivalente": 128.46,
+     "precio_m2_equiv": 1905
     },
     {
      "unidad": "Dúplex 704",
@@ -7383,7 +7811,12 @@ window.PORTAL_DATA = {
      "area_techada_m2": 109.19,
      "area_total_m2": 168.7,
      "motivo_no_comparable": "duplex",
-     "precio_soles": 1087000
+     "precio_soles": 1087000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 319706,
+     "m2_equivalente": 168.7,
+     "precio_m2_equiv": 1895
     },
     {
      "unidad": "Dúplex 705",
@@ -7396,7 +7829,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "area_techada_m2": 110.28,
      "area_total_m2": 169.79,
-     "motivo_no_comparable": "duplex"
+     "motivo_no_comparable": "duplex",
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 311471,
+     "m2_equivalente": 169.79,
+     "precio_m2_equiv": 1834
     },
     {
      "unidad": "Dúplex 701",
@@ -7410,7 +7848,12 @@ window.PORTAL_DATA = {
      "area_techada_m2": 133.15,
      "area_total_m2": 207.35,
      "motivo_no_comparable": "duplex",
-     "precio_soles": 1377000
+     "precio_soles": 1377000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 405000,
+     "m2_equivalente": 207.35,
+     "precio_m2_equiv": 1953
     },
     {
      "unidad": "Dúplex 703",
@@ -7424,7 +7867,12 @@ window.PORTAL_DATA = {
      "area_techada_m2": 133.78,
      "area_total_m2": 208.31,
      "motivo_no_comparable": "duplex",
-     "precio_soles": 1384000
+     "precio_soles": 1384000,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 407059,
+     "m2_equivalente": 208.31,
+     "precio_m2_equiv": 1954
     }
    ],
    "flats_summary": [
@@ -7769,7 +8217,13 @@ window.PORTAL_DATA = {
      "precio_m2": 2382,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 2,
+     "precio_lista_todo": 355000,
+     "m2_equivalente": 193.04,
+     "precio_m2_equiv": 1839,
+     "cochera_incluida": "2 PARALELOS"
     },
     {
      "unidad": "503",
@@ -7779,7 +8233,13 @@ window.PORTAL_DATA = {
      "precio_m2": 2410,
      "tipo": "flat",
      "piso": "5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 1,
+     "precio_lista_todo": 360000,
+     "m2_equivalente": 187.35,
+     "precio_m2_equiv": 1922,
+     "cochera_incluida": "2 PARALELOS"
     },
     {
      "unidad": "601 dúplex",
@@ -7788,7 +8248,13 @@ window.PORTAL_DATA = {
      "precio_usd": 380000,
      "precio_m2": 2010,
      "tipo": "duplex",
-     "piso": "6"
+     "piso": "6",
+     "estac_incluidos": 2,
+     "depositos_incluidos": 1,
+     "precio_lista_todo": 380000,
+     "m2_equivalente": 227.02,
+     "precio_m2_equiv": 1674,
+     "cochera_incluida": "2 PARALELOS"
     }
    ],
    "flats_summary": [
@@ -7970,7 +8436,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 387000,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 18000
+     "ajuste_cochera_usd": 18000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 387000,
+     "m2_equivalente": 175.8,
+     "precio_m2_equiv": 2201
     },
     {
      "unidad": "501A · flat Torre A",
@@ -7983,7 +8454,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 377000,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 18000
+     "ajuste_cochera_usd": 18000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 377000,
+     "m2_equivalente": 171.0,
+     "precio_m2_equiv": 2205
     },
     {
      "unidad": "201B / 301B · flat Torre B",
@@ -7996,7 +8472,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 287500,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 18000
+     "ajuste_cochera_usd": 18000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 287500,
+     "m2_equivalente": 141.0,
+     "precio_m2_equiv": 2039
     },
     {
      "unidad": "501B · flat Torre B",
@@ -8009,7 +8490,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 286450,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 18000
+     "ajuste_cochera_usd": 18000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 286450,
+     "m2_equivalente": 139.0,
+     "precio_m2_equiv": 2061
     },
     {
      "unidad": "202B · flat Torre B",
@@ -8022,7 +8508,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_usd_lista": 302000,
      "cochera_incluida": "1 estacionamiento",
-     "ajuste_cochera_usd": 18000
+     "ajuste_cochera_usd": 18000,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 302000,
+     "m2_equivalente": 146.5,
+     "precio_m2_equiv": 2061
     },
     {
      "unidad": "602A PH",
@@ -8036,7 +8527,12 @@ window.PORTAL_DATA = {
      "precio_lista_usd": 593000,
      "cochera_incluida": "1 estacionamiento",
      "ajuste_cochera_usd": 18000,
-     "motivo_no_comparable": "Penthouse"
+     "motivo_no_comparable": "Penthouse",
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 593000,
+     "m2_equivalente": 319,
+     "precio_m2_equiv": 1859
     }
    ],
    "flats_summary": [
@@ -8262,7 +8758,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2080,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 209914,
+     "m2_equivalente": 100.9,
+     "precio_m2_equiv": 2080
     },
     {
      "unidad": "Flat 102",
@@ -8272,7 +8773,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1952,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 189819,
+     "m2_equivalente": 97.2,
+     "precio_m2_equiv": 1953
     },
     {
      "unidad": "Flat 201",
@@ -8282,7 +8788,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2080,
      "tipo": "flat",
      "piso": "2",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 217838,
+     "m2_equivalente": 104.7,
+     "precio_m2_equiv": 2081
     },
     {
      "unidad": "Flat 203/303/403/503",
@@ -8292,7 +8803,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2100,
      "tipo": "flat",
      "piso": "2-5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 174468,
+     "m2_equivalente": 83.1,
+     "precio_m2_equiv": 2099
     },
     {
      "unidad": "Flat 204/304/404/504",
@@ -8302,7 +8818,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2100,
      "tipo": "flat",
      "piso": "2-5",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 177219,
+     "m2_equivalente": 84.4,
+     "precio_m2_equiv": 2100
     },
     {
      "unidad": "Flat 301",
@@ -8312,7 +8833,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2080,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 217838,
+     "m2_equivalente": 104.7,
+     "precio_m2_equiv": 2081
     },
     {
      "unidad": "Duplex 701",
@@ -8322,7 +8848,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1779,
      "tipo": "duplex",
      "piso": "7",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 372316,
+     "m2_equivalente": 209.2,
+     "precio_m2_equiv": 1780
     },
     {
      "unidad": "Duplex 702",
@@ -8332,7 +8863,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1782,
      "tipo": "duplex",
      "piso": "7",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 371148,
+     "m2_equivalente": 208.2,
+     "precio_m2_equiv": 1783
     },
     {
      "unidad": "Triplex 603",
@@ -8342,7 +8878,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1567,
      "tipo": "duplex",
      "piso": "6-7",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 387491,
+     "m2_equivalente": 247.3,
+     "precio_m2_equiv": 1567
     },
     {
      "unidad": "Triplex 604",
@@ -8352,7 +8893,12 @@ window.PORTAL_DATA = {
      "precio_m2": 1577,
      "tipo": "duplex",
      "piso": "6-7",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 362284,
+     "m2_equivalente": 229.7,
+     "precio_m2_equiv": 1577
     }
    ],
    "flats_summary": [],
@@ -8484,7 +9030,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2064,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 322000,
+     "m2_equivalente": 156,
+     "precio_m2_equiv": 2064
     }
    ],
    "flats_summary": [],
@@ -8571,7 +9122,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2557,
      "tipo": "flat",
      "piso": "3",
-     "flat": true
+     "flat": true,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 417353,
+     "m2_equivalente": 150,
+     "precio_m2_equiv": 2782
     },
     {
      "unidad": "Flat 102 (1er piso)",
@@ -8584,7 +9140,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2760,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 282456,
+     "m2_equivalente": 94,
+     "precio_m2_equiv": 3005
     }
    ],
    "flats_summary": [
@@ -9432,7 +9993,12 @@ window.PORTAL_DATA = {
      "precio_m2": 2301,
      "tipo": "flat",
      "piso": "1",
-     "flat": false
+     "flat": false,
+     "estac_incluidos": 0,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 147353,
+     "m2_equivalente": 64.04,
+     "precio_m2_equiv": 2301
     },
     {
      "unidad": "DPTO. 606 · tope de lista (precio de lista, sin confirmar si incluye estacionamiento)",
