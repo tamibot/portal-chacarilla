@@ -2044,7 +2044,7 @@ window.PORTAL_DATA = {
    "lng": -76.98308499330894,
    "isGEU": true,
    "en_cuadrante": true,
-   "precio_desde_usd": 173235,
+   "precio_desde_usd": 188235,
    "dorms": "1–4",
    "m2": "68–329",
    "wa": "924691568",
@@ -2084,95 +2084,95 @@ window.PORTAL_DATA = {
      "dorm": 2,
      "m2": 67.8,
      "m2_techada": 67.8,
-     "precio_lista_usd": 188235,
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 173235,
-     "precio_m2": 2555,
+     "precio_usd": 188235,
+     "precio_m2": 2776,
      "tipo": "flat",
-     "piso": null
+     "piso": null,
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
     },
     {
      "unidad": "Dpto 302",
      "dorm": 1,
      "m2": 70.9,
      "m2_techada": 70.9,
-     "precio_lista_usd": 197059,
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 182059,
-     "precio_m2": 2568,
+     "precio_usd": 197059,
+     "precio_m2": 2779,
      "tipo": "flat",
-     "piso": null
+     "piso": null,
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
     },
     {
      "unidad": "Dpto 201",
      "dorm": 3,
      "m2": 138.4,
      "m2_techada": 138.4,
-     "precio_lista_usd": 367647,
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 352647,
-     "precio_m2": 2548,
+     "precio_usd": 367647,
+     "precio_m2": 2656,
      "tipo": "flat",
-     "piso": null
+     "piso": null,
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
     },
     {
      "unidad": "Dpto 203",
      "dorm": 3,
      "m2": 165,
      "m2_techada": 165,
-     "precio_lista_usd": 435294,
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 420294,
-     "precio_m2": 2547,
+     "precio_usd": 435294,
+     "precio_m2": 2638,
      "tipo": "flat",
-     "piso": null
+     "piso": null,
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
     },
     {
      "unidad": "Dúplex 705",
      "dorm": 2,
      "m2": 132.7,
      "m2_techada": 104.2,
-     "precio_lista_usd": 305882,
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 290882,
-     "precio_m2": 2192,
+     "precio_usd": 305882,
+     "precio_m2": 2305,
      "tipo": "duplex",
-     "piso": null
+     "piso": null,
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
     },
     {
      "unidad": "Dúplex 701",
      "dorm": 4,
      "m2": 272.9,
      "m2_techada": 219.6,
-     "precio_lista_usd": 619118,
-     "ajuste_cochera_usd": 15000,
-     "precio_usd": 604118,
-     "precio_m2": 2214,
+     "precio_usd": 619118,
+     "precio_m2": 2269,
      "tipo": "duplex",
-     "piso": null
+     "piso": null,
+     "nota": "Precio de lista de la preventa de agosto-2026. La cochera NO va incluida: se vende aparte (simple US$15,000–16,000, doble US$27,000; depósito US$1,100 el m²), así que este precio ya es el del departamento solo y se compara directo contra los netos del cuadrante."
     }
    ],
    "flats_summary": [
     {
      "dorm": 2,
      "m2": 67.8,
-     "precio_usd": 173235,
-     "precio_m2": 2555,
-     "comparable_confirmado": true
+     "precio_usd": 188235,
+     "precio_m2": 2776,
+     "comparable_confirmado": true,
+     "unidad": "Dpto 204",
+     "nota": "Lista de preventa ago-2026. Precio del departamento solo: la cochera se vende aparte."
     },
     {
      "dorm": 3,
      "m2": 138.4,
-     "precio_usd": 352647,
-     "precio_m2": 2548,
-     "comparable_confirmado": true
+     "precio_usd": 367647,
+     "precio_m2": 2656,
+     "comparable_confirmado": true,
+     "unidad": "Dpto 201",
+     "nota": "Lista de preventa ago-2026. Precio del departamento solo: la cochera se vende aparte."
     },
     {
      "dorm": 1,
      "m2": 70.9,
-     "precio_usd": 182059,
-     "precio_m2": 2568,
-     "comparable_confirmado": true
+     "precio_usd": 197059,
+     "precio_m2": 2779,
+     "comparable_confirmado": true,
+     "unidad": "Dpto 302",
+     "nota": "Lista de preventa ago-2026. Precio del departamento solo: la cochera se vende aparte."
     }
    ],
    "dorms_disponibles": [
@@ -2193,8 +2193,8 @@ window.PORTAL_DATA = {
    "wa_label": "Central del proyecto",
    "wa_asesora": "902312242",
    "asesora": "Camu Planas",
-   "cochera_nota": "Cochera y depósito se venden aparte: US$15–16k la simple, US$27k la doble.",
-   "precio_hasta_usd": 721765,
+   "cochera_nota": "Confirmado por el cliente (31-ago-2026): la cochera y el depósito se venden aparte del departamento. Simple US$15,000–16,000 según sótano, doble US$27,000, depósito US$1,100 el m². La lista de precios del proyecto los cotiza en una tabla separada.",
+   "precio_hasta_usd": 619118,
    "estado_raw": "En preventa · lanzamiento agosto 2026",
    "precio_hist": [
     {
@@ -2221,7 +2221,8 @@ window.PORTAL_DATA = {
    "precio_fuente": {
     "tipo": "lista_interna",
     "nota": "Lista de precios de preventa del propio proyecto (material del cliente, ago-2026)."
-   }
+   },
+   "politica_precio": "El precio publicado es el del departamento solo — la cochera va aparte. Por eso nuestro US$/m² se compara directo contra los competidores que también la venden aparte, y contra los que la incluyen se compara después de descontársela a ellos."
   },
   {
    "id": "aura-sul",
@@ -8490,7 +8491,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Unidades a estrenar en venta vía broker (ByB Bienes Raíces).",
+   "comentario": "Unidades a estrenar en venta vía broker (ByB Bienes Raíces). El aviso de InfoCasas oculta el teléfono detrás de un formulario; el anunciante es el broker ByB Bienes Raíces (agente Carlos Fernández M.). Sin número público.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -8519,7 +8520,8 @@ window.PORTAL_DATA = {
     "tipo": "portal",
     "fecha": "2026-06-28",
     "nota": "Aviso de InfoCasas del comercializador (ByB Bienes Raíces); sin confirmación posterior."
-   }
+   },
+   "contactos": []
   },
   {
    "id": "monte-umbroso-247",
@@ -8697,7 +8699,7 @@ window.PORTAL_DATA = {
    "precio_hasta_usd": null,
    "dorms": "3–4",
    "m2": "97 – 211",
-   "wa": "980765183",
+   "wa": "957307920",
    "wa_label": "Washington B. · AyD",
    "web": "https://inmobiliariaayd.com/proyecto/narciso/",
    "img": "assets/planos/narciso-ayd-oficial/Render oficial fachada frontal (feb-2026).jpg",
@@ -8777,6 +8779,28 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3,
     4
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "957307920",
+     "fuente": "Ficha oficial del proyecto Narciso en inmobiliariaayd.com, consultada el 31-ago-2026"
+    },
+    {
+     "nombre": null,
+     "numero": "980765183",
+     "fuente": "Ficha oficial del proyecto Narciso en inmobiliariaayd.com, consultada el 31-ago-2026"
+    },
+    {
+     "nombre": null,
+     "numero": "994363232",
+     "fuente": "Ficha oficial del proyecto Narciso en inmobiliariaayd.com, consultada el 31-ago-2026"
+    },
+    {
+     "nombre": null,
+     "numero": "013079721",
+     "fuente": "Teléfono fijo de AyD publicado en la ficha de Narciso (01 307 9721)"
+    }
    ]
   },
   {
@@ -8937,7 +8961,7 @@ window.PORTAL_DATA = {
    "stock": null,
    "mostrar": true,
    "geo_aprox": false,
-   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías. Búsqueda en internet 24-ago-2026: EDSA Inmobiliaria no publica ficha de este proyecto y no aparece en Nexo, Urbania ni Adondevivir. Ojo: el proyecto «Velasco Astete» que sí figura en Nexo es OTRO (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2–3 dorms, 63–149 m², desde S/ 470,000) y está fuera del cuadrante. ⚠ Sin WhatsApp verificado. El 945 678 879 que figuraba correspondía en realidad a La Floresta Boulevard — se retiró.",
+   "comentario": "Proyecto NUEVO de EDSA Inmobiliaria en Av. Velasco Astete 1419. Anunciado como «próximo lanzamiento»: la casa del terreno sigue en pie, pintada con la marca «ASTETE Living». Aún sin precios ni tipologías. Búsqueda en internet 24-ago-2026: EDSA Inmobiliaria no publica ficha de este proyecto y no aparece en Nexo, Urbania ni Adondevivir. Ojo: el proyecto «Velasco Astete» que sí figura en Nexo es OTRO (EE Inmobiliaria, Av. Velasco Astete 1981, 9 pisos, 2–3 dorms, 63–149 m², desde S/ 470,000) y está fuera del cuadrante. ⚠ Sin WhatsApp verificado. El 945 678 879 que figuraba correspondía en realidad a La Floresta Boulevard — se retiró. Búsqueda del 31-ago-2026: EDSA Inmobiliaria no tiene web ni ficha en portales. El cerco muestra un QR, pero en nuestra foto está tapado por una camioneta y no se puede leer. Para conseguir contacto hay que volver a fotografiar ese QR.",
    "fuentes": [
     "Cerco de obra fotografiado en campo 22-ago-2026",
     "Búsqueda web 24-ago-2026 (Nexo, Urbania, Adondevivir): sin ficha publicada de Astete Living"
@@ -9727,7 +9751,7 @@ window.PORTAL_DATA = {
    "dorms": "3",
    "m2": "157 – 460",
    "unidades": 15,
-   "wa": null,
+   "wa": "987561619",
    "web": "https://vyv.pe/",
    "planos": [
     "assets/planos/le-parc/plano-b01.jpg",
@@ -9747,7 +9771,7 @@ window.PORTAL_DATA = {
    ],
    "planos_fuente": "Brochure oficial en archivo (9 láminas de tipología).",
    "typologies": [],
-   "comentario": "Proyecto que NO teníamos registrado y cae dentro del cuadrante: V&V Grupo Inmobiliario, Av. de los Precursores 421. Solo 15 departamentos, de 157 a 460 m², 3 dormitorios. Es la oferta de mayor metraje del cuadrante. Tenemos su brochure y 9 planos en archivo, pero falta confirmar si sigue en venta o ya fue entregado, y su lista de precios.",
+   "comentario": "Proyecto que NO teníamos registrado y cae dentro del cuadrante: V&V Grupo Inmobiliario, Av. de los Precursores 421. Solo 15 departamentos, de 157 a 460 m², 3 dormitorios. Es la oferta de mayor metraje del cuadrante. Tenemos su brochure y 9 planos en archivo, pero falta confirmar si sigue en venta o ya fue entregado, y su lista de precios. OJO: al 31-ago-2026 V&V no lista Le Parc entre sus 17 proyectos activos en vyv.pe. Nuestro registro sale de su brochure archivado. Al llamar, primero confirmar que el proyecto siga vigente.",
    "caseta_ventas": "nd",
    "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
    "geo_aprox": true,
@@ -9786,6 +9810,13 @@ window.PORTAL_DATA = {
    "borde_avenida": true,
    "dorms_disponibles": [
     3
+   ],
+   "contactos": [
+    {
+     "nombre": null,
+     "numero": "987561619",
+     "fuente": "Línea de ventas de V&V Grupo Inmobiliario publicada en vyv.pe (31-ago-2026)"
+    }
    ]
   },
   {
