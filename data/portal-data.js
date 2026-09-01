@@ -38,6 +38,18 @@ window.PORTAL_DATA = {
   "bitacora": [
    {
     "fecha": "2026-08-31",
+    "proyecto": "Conde de la Vega 460",
+    "dev": "Azzurra Constructores",
+    "proyecto_id": "conde-de-la-vega-460",
+    "tags": [
+     "correccion"
+    ],
+    "canal": "Revisión de planos",
+    "autor": "Benchmark",
+    "texto": "El archivo que publicábamos como brochure de Conde de la Vega 460 era en realidad el brochure de MONTE MAYOR 183, el otro proyecto de Azzurra: portada con el logo de Monte Mayor y su Flat 101 de 73.13 m². Estuvo colgado en la ficha equivocada desde junio. Se renombró y se movió a Monte Mayor 183."
+   },
+   {
+    "fecha": "2026-08-31",
     "proyecto": "Cuadrante",
     "dev": "—",
     "proyecto_id": null,
@@ -3021,7 +3033,7 @@ window.PORTAL_DATA = {
     "assets/img-f1/conde-de-la-vega-460/imgb-01.avif",
     "assets/img-f1/conde-de-la-vega-460/imgb-02.jpg"
    ],
-   "brochure": "assets/brochures/conde-de-la-vega-460-f1.pdf",
+   "brochure": null,
    "typologies": [
     {
      "unidad": "Flat 101",
@@ -3628,13 +3640,6 @@ window.PORTAL_DATA = {
      "archivo": "assets/brochures/conde-de-la-vega-460-brochure.pdf",
      "url": "https://azzurra.com.pe/wp-content/uploads/2026/01/BROCHURE-CDLV-010626-2.pdf",
      "fecha": "2026-06-01",
-     "tipo": "brochure"
-    },
-    {
-     "titulo": "Brochure oficial Azzurra · copia recibida",
-     "archivo": "assets/brochures/conde-de-la-vega-460-f1.pdf",
-     "url": null,
-     "fecha": null,
      "tipo": "brochure"
     },
     {
@@ -6913,6 +6918,13 @@ window.PORTAL_DATA = {
      "url": null,
      "fecha": "2026",
      "tipo": "tarifario"
+    },
+    {
+     "titulo": "Brochure de Azzurra · edición junio-2026",
+     "archivo": "assets/brochures/monte-mayor-183-brochure-jun2026.pdf",
+     "url": null,
+     "fecha": "2026-06",
+     "tipo": "brochure"
     }
    ],
    "tarifario": "assets/brochures/monte-mayor-183-lista-precios.pdf",
