@@ -5,7 +5,7 @@ window.PORTAL_DATA = {
   "total": 41,
   "en_cuadrante": 23,
   "con_precio": 100,
-  "competidores_activos": 35,
+  "competidores_activos": 38,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
   "comparables_confirmados": 13,
   "en_ultimas_unidades": 11,
@@ -36,6 +36,18 @@ window.PORTAL_DATA = {
   ],
   "proximo_corte": "2026-09-30",
   "bitacora": [
+   {
+    "fecha": "2026-08-31",
+    "proyecto": "Cuadrante",
+    "dev": "—",
+    "proyecto_id": null,
+    "tags": [
+     "limpieza"
+    ],
+    "canal": "Revisión interna",
+    "autor": "Benchmark",
+    "texto": "Se retiran del mapa «Monte Alegre 137» y «Parque La Floresta». Los dos venían de anotaciones a mano del recorrido del 22-ago: obra vista, sin cartel legible, sin foto y con la ubicación puesta por geocodificador. No aportaban ningún dato comercial y muy probablemente duplican a Monte Alegre 109 y a Floresta 343 respectivamente. El cuadrante queda en 38 competidores."
+   },
    {
     "fecha": "2026-08-27",
     "proyecto": "La Floresta Boulevard",
@@ -7970,12 +7982,15 @@ window.PORTAL_DATA = {
      "unidad": "602A PH",
      "dorm": 3,
      "m2": 303,
-     "precio_usd": 578000,
-     "precio_m2": 1908,
+     "precio_usd": 575000,
+     "precio_m2": 1898,
      "tipo": "duplex",
      "piso": "6",
-     "nota": "Precio tal como lo publica el tarifario. A diferencia del resto de sus unidades no pudimos separarle el estacionamiento, así que este US$/m² no es comparable con los demás. Es penthouse, igual queda fuera del comparativo.",
-     "motivo_no_comparable": "Penthouse y precio sin separar el estacionamiento."
+     "nota": "Ficha de plano del proyecto: US$593,000 con un estacionamiento (US$611,000 con dos paralelos). Neto de cochera (US$18,000) = US$575,000 → US$1,898/m². Es penthouse: no entra al comparativo de flats típicos.",
+     "precio_lista_usd": 593000,
+     "cochera_incluida": "1 estacionamiento",
+     "ajuste_cochera_usd": 18000,
+     "motivo_no_comparable": "Penthouse"
     }
    ],
    "flats_summary": [
@@ -9181,7 +9196,7 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": true,
+   "mostrar": false,
    "geo_aprox": true,
    "amenidades": [],
    "precio_hist": [
@@ -9221,7 +9236,8 @@ window.PORTAL_DATA = {
     "nota": "Obra vista en el recorrido; sin cartel que identifique al desarrollador."
    },
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": []
+   "dorms_disponibles": [],
+   "motivo_retiro": "Anotación suelta del recorrido del 22-ago-2026: se apuntó «obra en Calle Monte Alegre 137» sin cartel, sin licencia visible, sin foto y con el punto puesto por geocodificador. El catálogo de Edifikarte solo lista «Monte Alegre 109» — no existe un 137 entre sus proyectos — y la valla que fotografiamos dice «MONTE ALEGRE» sin número. Se retira por falta de información: es muy probable que sea el mismo Monte Alegre 109 anotado con otra numeración."
   },
   {
    "isGEU": false,
@@ -9238,7 +9254,7 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": null,
-   "mostrar": true,
+   "mostrar": false,
    "geo_aprox": true,
    "amenidades": [],
    "precio_hist": [
@@ -9278,7 +9294,8 @@ window.PORTAL_DATA = {
     "nota": "Obra vista en el recorrido; sin cartel que identifique al desarrollador."
    },
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": []
+   "dorms_disponibles": [],
+   "motivo_retiro": "Anotación suelta del recorrido del 22-ago-2026: «obra frente al Parque La Floresta con caseta de ventas, sin cartel legible». Sin foto, sin dirección exacta y con el punto aproximado sobre el eje de la avenida. En esa misma avenida ya tenemos identificados Floresta Living 444 y Floresta 343; este último nunca se fotografió, así que lo más probable es que sea el mismo. Se retira por falta de información."
   },
   {
    "id": "ten-apartments",
