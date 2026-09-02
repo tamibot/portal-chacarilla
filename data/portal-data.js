@@ -7076,17 +7076,22 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión.",
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora.",
    "amenidades": [
+    "Coworking",
     "Lobby",
-    "SUM",
-    "Zona de bicicletas",
+    "Lobby de ingreso",
     "Parque interior",
+    "Parque privado",
+    "Pet shower",
     "Pet spa",
+    "Rooftop",
+    "SUM",
     "Sala de reuniones",
+    "Zona de bicicletas",
     "Zona de parrillas"
    ],
-   "total_pisos": "6 + rooftop",
+   "total_pisos": 6,
    "fuentes": [
     "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
     "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/jardines-de-monte-real-3770",
@@ -7191,7 +7196,8 @@ window.PORTAL_DATA = {
     }
    ],
    "cochera_nota": "Sin confirmar. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento.",
-   "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante."
+   "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante.",
+   "unidades": 52
   },
   {
    "id": "la-floresta-boulevard",
@@ -11795,7 +11801,7 @@ window.PORTAL_DATA = {
     3,
     4
    ],
-   "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad. La valla confirma: «Monte Flor · CHACARILLA - SURCO · 2 y 3 dormitorios · +51 975 244 600 · Constructora Magnífica».",
+   "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad. La valla confirma: «Monte Flor · CHACARILLA - SURCO · 2 y 3 dormitorios · +51 975 244 600 · Constructora Magnífica». Búsqueda del 02-sep-2026: Constructora Magnífica (RUC 20610489142, operando desde ene-2023) tiene su web magnifica.pe en modo placeholder, sin contenido. No publica ficha, brochure ni planos de Monte Flor. Todo lo que tenemos sale de avisos de corredores en InfoCasas. Para analizar sus plantas hay que conseguirlas por el corredor.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -11805,7 +11811,8 @@ window.PORTAL_DATA = {
     "https://www.archinversiones.com/proyectos/ (sitio del desarrollador)",
     "https://www.youtube.com/watch?v=CDdcrkr19pM (video Monteflor | Arch Inversiones)",
     "https://www.youtube.com/watch?v=IHo6Mza5oak (Monteflor - Como llegar)",
-    "https://www.facebook.com/ArchInversionesInmobiliarias/videos/inicio-de-obra-proyecto-monteflor/237308579097608/ (inicio de obra)"
+    "https://www.facebook.com/ArchInversionesInmobiliarias/videos/inicio-de-obra-proyecto-monteflor/237308579097608/ (inicio de obra)",
+    "https://www.magnifica.pe/ (sitio en construcción, sin contenido — verificado 02-sep-2026)"
    ],
    "portales": {},
    "anuncios": null,
@@ -14504,7 +14511,7 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin punto de venta en sitio: portón rotulado con la marca y un QR («Descubre FLEXI III»).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados. Confirmado en la web de Central Inmobiliaria (ago-2026): aparece el banner «PRÓXIMO LANZAMIENTO SURCO FLEXI III», sin ficha de proyecto ni precios todavía. Sus antecesores FLEXI I (Chacarilla) y FLEXI II son edificios de 31 departamentos, flats y dúplex de 73 a 214 m², 2 a 4 dorms, con certificación EDGE.",
+   "comentario": "Central Inmobiliaria, Av. de los Precursores 152. El portón está rotulado «FLEXI III — Elige cómo quieres vivir» Próximo lanzamiento: la casa del terreno sigue en pie, pintada con la marca. Sin precios publicados. Confirmado en la web de Central Inmobiliaria (ago-2026): aparece el banner «PRÓXIMO LANZAMIENTO SURCO FLEXI III», sin ficha de proyecto ni precios todavía. Sus antecesores FLEXI I (Chacarilla) y FLEXI II son edificios de 31 departamentos, flats y dúplex de 73 a 214 m², 2 a 4 dorms, con certificación EDGE. Verificado el 02-sep-2026: Central Inmobiliaria lista FLEXI II (Ca. Guadalajara 233, límite Surco-Miraflores, entregado) pero todavía no publica ficha de FLEXI III. Nuestro registro se sostiene en la foto del portón rotulado «FLEXI III — Elige cómo quieres vivir» en Precursores 152 y en el banner de próximo lanzamiento de su web. No tiene planos porque el proyecto aún no lanzó: no hay nada que pedir todavía.",
    "fuentes": [
     "Recorrido de campo 2026-08-22 · foto IMG_7918",
     "https://www.centralinmobiliaria.pe/ (banner «Próximo lanzamiento Surco FLEXI III», consultado 24-ago-2026)",
@@ -14564,13 +14571,25 @@ window.PORTAL_DATA = {
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "1–3",
-   "m2": "85 – 193",
+   "m2": "82.7 – 193.3",
    "wa": "949107186",
    "wa_label": "Living Monte Real",
-   "web": null,
+   "web": "https://reallivingchacarilla.com.pe/",
    "img": "assets/campo/living-monte-real.jpg",
    "brochure": null,
    "planos": [
+    "assets/planos/real-living-oficial/Depa 101 - 121.6 techada - 171.2 ocupada.jpg",
+    "assets/planos/real-living-oficial/Depa 102 - 108 techada - 170.6 ocupada.jpg",
+    "assets/planos/real-living-oficial/Depa 103 - 108.4 techada - 173.8 ocupada.jpg",
+    "assets/planos/real-living-oficial/Duplex 501 - 145.6 techada - 176.2 ocupada.jpg",
+    "assets/planos/real-living-oficial/Duplex 502 - 135.1 techada - 193.3 ocupada.jpg",
+    "assets/planos/real-living-oficial/Duplex 503 - 109.8 techada - 120.4 ocupada.jpg",
+    "assets/planos/real-living-oficial/Duplex 504 - 111.1 techada - 183.5 ocupada.jpg",
+    "assets/planos/real-living-oficial/Duplex 505 - 110.1 techada - 185.3 ocupada.jpg",
+    "assets/planos/real-living-oficial/Tipo X01 - 119.9 techada - 123.9 ocupada.jpg",
+    "assets/planos/real-living-oficial/Tipo X02 - 120.5 techada - 124.6 ocupada.jpg",
+    "assets/planos/real-living-oficial/Tipo X03 - 82.7 techada - 85.3 ocupada.jpg",
+    "assets/planos/real-living-oficial/Tipo X04 - 101 techada - 103.7 ocupada.jpg",
     "assets/campo/living-monte-real.jpg"
    ],
    "typologies": [],
@@ -14583,10 +14602,11 @@ window.PORTAL_DATA = {
    "caseta_ventas": "si",
    "caseta_nota": "Caseta de ventas en el terreno (anotación de campo).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada.",
+   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada. Tiene web propia (reallivingchacarilla.com.pe) con brochure de 35 páginas y las 12 plantas rotuladas con área techada y ocupada: siete flats de 82.7 a 121.6 m² techados y cinco dúplex de 109.8 a 145.6 m² techados. Comunican «depas flats desde 85 hasta 176 m²» y «depas dúplex de 120 a 193 m²». El brochure NO menciona si el precio incluye estacionamiento ni depósito.",
    "fuentes": [
     "Cartel/valla fotografiada en el recorrido del 22-ago-2026",
-    "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
+    "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030",
+    "Brochure oficial descargado de reallivingchacarilla.com.pe el 02-sep-2026"
    ],
    "amenidades": [],
    "precio_hist": [
@@ -14630,6 +14650,15 @@ window.PORTAL_DATA = {
     1,
     2,
     3
+   ],
+   "documentos": [
+    {
+     "titulo": "Brochure oficial de Real Living",
+     "archivo": "assets/brochures/real-living-brochure.pdf",
+     "url": "https://reallivingchacarilla.com.pe/wp-content/uploads/2026/08/BROCHURE-REAL-LIVING-FINAL.pdf",
+     "fecha": "2026-08",
+     "tipo": "brochure"
+    }
    ]
   },
   {
