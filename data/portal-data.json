@@ -3917,7 +3917,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución.",
+   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución. Análisis de sus plantas (02-sep-2026): el «tercer dormitorio» que el asesor ofrece convertir en oficina, taller o gimnasio está dibujado como dormitorio COMPLETO — cama, velador, dos closets, puerta con barrido, ventana exterior y baño propio con ducha. La personalización es promesa de obra, no un ambiente a medias. Sus dos tipologías traen los tres dormitorios con baño propio, cuarto de servicio con cama, baño de servicio con ducha, cuarto de lavado bajo techo y ascensor que abre dentro del departamento. OJO: de sus 6 tipologías solo hay plano de 2. Falta la del Dúplex 501 de 254 m², que sigue EN VENTA y del que solo hay renders.",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/conde-ii/",
     "https://inmobiliariaayd.com",
@@ -4041,7 +4041,8 @@
     "cond": "«Puedes adaptar ese tercer dormitorio: oficina, sala de juegos, taller o gimnasio»",
     "canal": "WhatsApp del asesor",
     "fuente": "Brochure de AyD 2026 + chat del asesor"
-   }
+   },
+   "coherencia_alerta": "Falta el plano del Dúplex 501 de 254 m², que está en venta. Pedirlo al asesor. Además la lámina 2026 se titula «Flat típico 201 y 401» mientras la de 2025 dice «201 301 401»: con 10 depas en 5 pisos la cuenta solo cierra incluyendo el 301."
   },
   {
    "id": "conde-de-la-vega-251",
@@ -7076,7 +7077,7 @@
     2,
     3
    ],
-   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora.",
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora. Análisis de sus 14 plantas oficiales (02-sep-2026): el sello AIS de accesibilidad, que es su bandera comercial, NO se ve en ninguna lámina — sin barras de apoyo, sin círculos de giro, sin duchas a nivel y con todos los barridos de puerta del mismo ancho. Lo único con lectura de accesibilidad es el sello «ascensor directo a los 2 niveles» de sus dos dúplex grandes; los otros cuatro dúplex dependen de escalera interna. Ningún estudio ni dormitorio disfrazado en las 14. OJO con el Flat 107 de 129.42 m²: se vende como flat grande pero solo tiene 2 dormitorios de familia — la tercera cama es un catre individual dentro del bloque de servicio, pegado a la lavadora. A cambio sus dos dormitorios son suite completa con vestidor. Solo dos plantas tienen cocina cerrada (205 y X04); el resto abierta.",
    "amenidades": [
     "Coworking",
     "Lobby",
@@ -7197,7 +7198,8 @@
    ],
    "cochera_nota": "Sin confirmar. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento.",
    "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante.",
-   "unidades": 52
+   "unidades": 52,
+   "coherencia_alerta": "Su comunicación se apoya en el sello AIS de accesibilidad pero ninguna de sus 14 láminas muestra un rasgo accesible. Antes de compararlo de frente conviene preguntarle a la asesora en qué se materializa el sello."
   },
   {
    "id": "la-floresta-boulevard",
@@ -9906,7 +9908,7 @@
     3,
     4
    ],
-   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp. Su ficha oficial publica 2, 3 y 4 dormitorios (teníamos 2-3) y flats de 80 a 136 m²; con los dúplex del brochure de julio el rango llega a 182.67 m².",
+   "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp. Su ficha oficial publica 2, 3 y 4 dormitorios (teníamos 2-3) y flats de 80 a 136 m²; con los dúplex del brochure de julio el rango llega a 182.67 m². Análisis de sus 18 láminas (02-sep-2026): 10 tipologías, cero estudios y cero dormitorios disfrazados. Rotula usos alternativos entre paréntesis —DORMITORIO 03 (ESTAR), DORMITORIO 02 (WCL)— pero los amuebla con cama, así que son dormitorios. CONTRADICE SU PROPIA FICHA: le atribuíamos «2 ascensores directos por departamento», pero ninguna de las 18 láminas dibuja el ascensor abriendo adentro — todas entran por puerta abatible a un recibo. Servicio flojo: solo el dúplex 004 tiene dormitorio de servicio; siete tipologías tienen baño de servicio con ducha pero sin cuarto, y tres (001, 102, 202) no tienen nada y resuelven el lavado con un closet de 1.3 a 1.6 m. Sus tres dúplex tienen la lavandería a la intemperie. El TIPO 204/304/404 es la única tipología sin walk-in closet en el principal.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/montemar-269/",
     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-MAR-BROCHURE-DIGITAL-1.pdf"
@@ -9997,7 +9999,8 @@
      "total": null
     }
    ],
-   "pisos": 6
+   "pisos": 6,
+   "coherencia_alerta": "Le atribuíamos 2 ascensores directos por departamento y ninguna de sus 18 láminas lo muestra: todas entran por puerta abatible a un recibo. Verificar con el asesor de dónde salió ese dato."
   },
   {
    "id": "monte-mayor-177",
@@ -13564,7 +13567,7 @@
    "typologies": [
     {
      "unidad": "Flat 101",
-     "dorm": null,
+     "dorm": 3,
      "m2": 100.9,
      "precio_usd": 209914,
      "precio_m2": 2080,
@@ -13575,11 +13578,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 209914,
      "m2_equivalente": 100.9,
-     "precio_m2_equiv": 2080
+     "precio_m2_equiv": 2080,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Flat 102",
-     "dorm": null,
+     "dorm": 3,
      "m2": 97.2,
      "precio_usd": 189819,
      "precio_m2": 1952,
@@ -13590,11 +13594,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 189819,
      "m2_equivalente": 97.2,
-     "precio_m2_equiv": 1953
+     "precio_m2_equiv": 1953,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Flat 201",
-     "dorm": null,
+     "dorm": 3,
      "m2": 104.7,
      "precio_usd": 217838,
      "precio_m2": 2080,
@@ -13605,11 +13610,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 217838,
      "m2_equivalente": 104.7,
-     "precio_m2_equiv": 2081
+     "precio_m2_equiv": 2081,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Flat 203/303/403/503",
-     "dorm": null,
+     "dorm": 3,
      "m2": 83.1,
      "precio_usd": 174468,
      "precio_m2": 2100,
@@ -13620,11 +13626,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 174468,
      "m2_equivalente": 83.1,
-     "precio_m2_equiv": 2099
+     "precio_m2_equiv": 2099,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Flat 204/304/404/504",
-     "dorm": null,
+     "dorm": 3,
      "m2": 84.4,
      "precio_usd": 177219,
      "precio_m2": 2100,
@@ -13635,11 +13642,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 177219,
      "m2_equivalente": 84.4,
-     "precio_m2_equiv": 2100
+     "precio_m2_equiv": 2100,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Flat 301",
-     "dorm": null,
+     "dorm": 3,
      "m2": 104.7,
      "precio_usd": 217838,
      "precio_m2": 2080,
@@ -13650,11 +13658,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 217838,
      "m2_equivalente": 104.7,
-     "precio_m2_equiv": 2081
+     "precio_m2_equiv": 2081,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Duplex 701",
-     "dorm": null,
+     "dorm": 3,
      "m2": 209.2,
      "precio_usd": 372316,
      "precio_m2": 1779,
@@ -13665,11 +13674,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 372316,
      "m2_equivalente": 209.2,
-     "precio_m2_equiv": 1780
+     "precio_m2_equiv": 1780,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Duplex 702",
-     "dorm": null,
+     "dorm": 3,
      "m2": 208.2,
      "precio_usd": 371148,
      "precio_m2": 1782,
@@ -13680,11 +13690,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 371148,
      "m2_equivalente": 208.2,
-     "precio_m2_equiv": 1783
+     "precio_m2_equiv": 1783,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Triplex 603",
-     "dorm": null,
+     "dorm": 6,
      "m2": 247.3,
      "precio_usd": 387491,
      "precio_m2": 1567,
@@ -13695,11 +13706,12 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 387491,
      "m2_equivalente": 247.3,
-     "precio_m2_equiv": 1567
+     "precio_m2_equiv": 1567,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     },
     {
      "unidad": "Triplex 604",
-     "dorm": null,
+     "dorm": 6,
      "m2": 229.7,
      "precio_usd": 362284,
      "precio_m2": 1577,
@@ -13710,7 +13722,8 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 362284,
      "m2_equivalente": 229.7,
-     "precio_m2_equiv": 1577
+     "precio_m2_equiv": 1577,
+     "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     }
    ],
    "flats_summary": [],
@@ -13720,13 +13733,14 @@
     5,
     6
    ],
-   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank.",
+   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank. Análisis de sus 11 plantas (02-sep-2026): se venden como «FLEX APARTMENTS» pero el ambiente flexible NO existe en ningún plano — todo cuarto que no es sala, comedor, cocina, baño o lavandería lleva cama, closet y puerta. La flexibilidad es solo verbal. Ningún dormitorio principal tiene baño en suite en ninguna de las 11 unidades, y ninguna tiene cuarto de servicio con cama. Su mejor carta son las azoteas propias con césped, mesas y parrilla en los dos tríplex (603, 604) y los dos dúplex (701, 702). El flat 102 es el único con la lavandería a la intemperie, y el 101 el único sin ningún exterior pese a ser primer piso.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
     "https://grupodicon.com.pe/proyecto/spazio-departamentos-en-chacarilla-ideal-para-la-vida-familiar/",
     "https://grupodicon.com.pe/site/media/Book-Spazio-Comercial-Web_compressed-1.pdf",
-    "https://grupodicon.com.pe/departamentos-boutique/"
+    "https://grupodicon.com.pe/departamentos-boutique/",
+    "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
    ],
    "portales": {},
    "anuncios": null,
@@ -14602,7 +14616,7 @@
    "caseta_ventas": "si",
    "caseta_nota": "Caseta de ventas en el terreno (anotación de campo).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada. Tiene web propia (reallivingchacarilla.com.pe) con brochure de 35 páginas y las 12 plantas rotuladas con área techada y ocupada: siete flats de 82.7 a 121.6 m² techados y cinco dúplex de 109.8 a 145.6 m² techados. Comunican «depas flats desde 85 hasta 176 m²» y «depas dúplex de 120 a 193 m²». El brochure NO menciona si el precio incluye estacionamiento ni depósito.",
+   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada. Tiene web propia (reallivingchacarilla.com.pe) con brochure de 35 páginas y las 12 plantas rotuladas con área techada y ocupada: siete flats de 82.7 a 121.6 m² techados y cinco dúplex de 109.8 a 145.6 m² techados. Comunican «depas flats desde 85 hasta 176 m²» y «depas dúplex de 120 a 193 m²». El brochure NO menciona si el precio incluye estacionamiento ni depósito. Análisis de sus 12 plantas (02-sep-2026): ningún estudio ni dormitorio disfrazado. Dos hallazgos de venta. Primero: los DÚPLEX 504 y 505 no tienen segundo piso de vivienda — su nivel 2 es una azotea de uso exclusivo amoblada como terraza de sol, con un bloque chico de servicio. Por eso la brecha entre 111 m² techados y 183-185 ocupados. Segundo: sus láminas de los tipos X llevan impresa la advertencia «el balcón corresponde al dpto 201 y 401» (X01), «al 302» (X02), «al 203 y 403» (X03) y «al 204 y 404» (X04) — o sea que el balcón dibujado NO lo tienen todas las unidades del tipo. Los tres flats de primer piso (Depa 101, 102 y 103) sí tienen terraza a nivel con césped y arbustos plantados, no jardinera; el 103 parte la vivienda con un patio central.",
    "fuentes": [
     "Cartel/valla fotografiada en el recorrido del 22-ago-2026",
     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030",
@@ -15368,7 +15382,7 @@
    "lng": -76.983017,
    "isGEU": false,
    "en_cuadrante": true,
-   "dorms": "3",
+   "dorms": "2–3",
    "m2": "109.01 – 257",
    "pisos": 5,
    "unidades": 23,
@@ -15422,7 +15436,7 @@
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación interpolada sobre Jr. Conde de la Vega del Ren, entre el 119 (Conde II) y el 149 (HANA), ambos verificados en campo. Pendiente de foto.",
-   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera. Revisado el 25-ago-2026: su ficha oficial dice «metraje desde 257 m²» y 5 pisos. Si el rango de entrada subió de 109 a 257 m², es señal de que las unidades chicas ya se colocaron.",
+   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera. Revisado el 25-ago-2026: su ficha oficial dice «metraje desde 257 m²» y 5 pisos. Si el rango de entrada subió de 109 a 257 m², es señal de que las unidades chicas ya se colocaron. Análisis de sus 14 láminas (02-sep-2026): 10 unidades, cero estudios y cero dormitorios disfrazados. Tres cosas que no cuadran con lo que publican: (1) venden «23 departamentos de 3 dormitorios» pero el FLAT 103 y el FLAT 204 son de DOS dormitorios; (2) dicen 5 pisos, pero sus dúplex arrancan en NPT +13.75 y el segundo nivel en +16.50, o sea más de 5 niveles habitables; (3) el rango publicado llega a 242.99 m² y el máximo impreso en las láminas es 243.36 m² (dúplex 602) — el 242.99 no aparece en ninguna. Bien equipado: dormitorio de servicio en 7 de 10 unidades y el baño de servicio siempre con ducha. Los cuatro dúplex tienen la lavandería a la intemperie, en patio computado como área libre. El FLAT 203 es el único con cocina abierta y barra con taburetes de todo el juego.",
    "amenidades": [],
    "precio_hist": [
     {
@@ -15465,7 +15479,7 @@
      "total": null
     }
    ],
-   "coherencia_alerta": "Su ficha oficial ahora arranca en 257 m² mientras Nexo publicaba desde 109 m²: probablemente ya solo quedan las unidades grandes. Confirmar con Jenny qué queda.",
+   "coherencia_alerta": "Publica «23 departamentos de 3 dormitorios» pero dos de sus tipologías son de 2 dormitorios, y su rango de áreas no cierra con lo que imprimen sus propias láminas.",
    "dorms_disponibles": [
     3
    ]
