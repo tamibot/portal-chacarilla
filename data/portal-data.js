@@ -2,12 +2,12 @@ window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
   "fecha": "2026-08-31",
-  "total": 41,
+  "total": 42,
   "en_cuadrante": 23,
   "con_precio": 100,
-  "competidores_activos": 36,
+  "competidores_activos": 37,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 13,
+  "comparables_confirmados": 12,
   "en_ultimas_unidades": 13,
   "sin_precio_publico": 7,
   "cochera_incluida": 10,
@@ -36,6 +36,19 @@ window.PORTAL_DATA = {
   ],
   "proximo_corte": "2026-09-30",
   "bitacora": [
+   {
+    "fecha": "2026-08-31",
+    "proyecto": "Monte Umbroso 585",
+    "dev": "Galeon",
+    "proyecto_id": "monte-umbroso-585",
+    "tags": [
+     "nuevo",
+     "precio"
+    ],
+    "canal": "Web oficial",
+    "autor": "Benchmark",
+    "texto": "Se suma Monte Umbroso 585, de Galeon —la misma desarrolladora de Estelar 1080—: 8 pisos, 26 departamentos, EDGE, ya entregado, con el último dúplex desde US$399,000 y 186 m². Y con él aparece un problema: los dos precios que el benchmark tenía bajo «Monte Umbroso 520» coinciden exactamente con este edificio, incluido ese mismo dúplex de 186 m² a US$399,000. Los avisos de corredores que usamos como fuente probablemente eran de acá. Los precios del 520 quedan fuera del comparativo hasta verificarlo en campo."
+   },
    {
     "fecha": "2026-08-31",
     "proyecto": "Conde de la Vega 460",
@@ -3274,13 +3287,19 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "comentario": "23 deptos de 3 dorm en Av. del Sur 330. Estacionamientos se venden aparte (US$15,000 individual / US$25,000 doble lineal); precios de lista sin cochera.",
-   "amenidades": [],
+   "comentario": "23 deptos de 3 dorm en Av. del Sur 330. Estacionamientos se venden aparte (US$15,000 individual / US$25,000 doble lineal); precios de lista sin cochera. Su book oficial (14 páginas) confirma 23 departamentos en 6 pisos, de 100 a 285 m², flats y dúplex. OJO para el análisis de planos: el book NO trae ninguna planta de tipología — es enteramente renders y estilo de vida. Los planos que tenemos de este proyecto son renders de baja resolución sin rótulo, y no hay mejor fuente pública. Para analizarlo hay que pedirle la ficha técnica al asesor.",
+   "amenidades": [
+    "Hall de ingreso",
+    "Patio interior",
+    "SUM",
+    "Terraza con parrillas y grass natural"
+   ],
    "total_pisos": 6,
    "fuentes": [
     "https://grupodicon.com.pe/proyecto/aura-sul-departamentos-en-venta-en-chacarilla/",
     "https://grupodicon.com.pe/departamentos-boutique/",
-    "https://grupodicon.com.pe/site/media/Book-Aura-Sul-Web_compressed-1.pdf"
+    "https://grupodicon.com.pe/site/media/Book-Aura-Sul-Web_compressed-1.pdf",
+    "Book oficial de Aura Sul descargado de grupodicon.com.pe el 31-ago-2026"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/inmobiliarias/grupo-chacarilla-sur"
@@ -3344,6 +3363,13 @@ window.PORTAL_DATA = {
      "url": null,
      "fecha": null,
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Book oficial de Grupo Dicon",
+     "archivo": "assets/brochures/aura-sul-book-oficial.pdf",
+     "url": "https://grupodicon.com.pe/site/media/Book-Aura-Sul-Web_compressed-1.pdf",
+     "fecha": "2026",
+     "tipo": "brochure"
     }
    ],
    "contactos": [
@@ -3356,6 +3382,11 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "933209656",
      "fuente": "Menú de contacto de la web de Grupo Dicon"
+    },
+    {
+     "nombre": null,
+     "numero": "947726626",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "wa_label": "Grupo Dicon",
@@ -3752,7 +3783,10 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "unidades": 23,
+   "pisos": 6,
+   "acabados": "Pisos de bambú machihembrado en sala, comedor y dormitorios; tablero de cuarzo en cocina; muebles altos y bajos; departamento smart con cerradura digital; porcelanato y enchape de piso a techo en baños; ventanas con vidrio templado incoloro; closet y baño incorporado en el dormitorio principal."
   },
   {
    "id": "conde-ii",
@@ -6902,6 +6936,11 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "981237607",
      "fuente": "Línea general publicada en la web de Odima (25-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "981405044",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "asesora": "Rebeca Ruiz",
@@ -8674,6 +8713,11 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "934411415",
      "fuente": "Web oficial de Edifikarte (24-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "933263662",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "asesora": "Jenny",
@@ -9081,6 +9125,16 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "965973836",
      "fuente": "WhatsApp impreso en la contraportada del brochure oficial de agosto-2026, junto a ventas@balance.pe"
+    },
+    {
+     "nombre": null,
+     "numero": "937355774",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "981095859",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "wa_label": "Nashla Zambrano",
@@ -11207,6 +11261,16 @@ window.PORTAL_DATA = {
      "nombre": "Nadia",
      "numero": "943729552",
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "943138017",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "986466305",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "asesora": "Nadia",
@@ -11541,8 +11605,9 @@ window.PORTAL_DATA = {
      "precio_m2_lista": 2550,
      "cochera_incluida": "1 estacionamiento",
      "ajuste_cochera_usd": 15000,
-     "comparable_confirmado": true,
-     "nota": "Última unidad publicada: 64.50 m² techada / 67.00 m² total, US$170,850 con 1 estacionamiento incluido. Neto de cochera = US$155,850 → US$2,326/m²."
+     "comparable_confirmado": false,
+     "nota": "Última unidad publicada: 64.50 m² techada / 67.00 m² total, US$170,850 con 1 estacionamiento incluido. Neto de cochera = US$155,850 → US$2,326/m².",
+     "motivo_no_comparable": "Precio posiblemente de Monte Umbroso 585 (Galeon), no de este proyecto. A verificar en campo."
     }
    ],
    "dorms_disponibles": [
@@ -11550,7 +11615,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Estaba registrado como «en construcción» con datos de julio-2024. Verificado el 25-ago-2026: el edificio YA ESTÁ TERMINADO — año de construcción 2024 — y está en remate de últimas unidades a través de corredores independientes, no de la inmobiliaria. Son 26 departamentos en 7 pisos con rooftop y 3 sótanos, arquitectura de Atelier Reusche Reyna, financiado por BBVA. Quedan publicados el flat 503 de 1 dormitorio (67 m², US$170,850 con 1 estacionamiento) y un penthouse dúplex de 3 dorms con terraza de 63 m² (186 m², US$399,000 con 2 estacionamientos). Es el único 1 dormitorio con precio confirmado del cuadrante además del nuestro.",
+   "comentario": "Estaba registrado como «en construcción» con datos de julio-2024. Verificado el 25-ago-2026: el edificio YA ESTÁ TERMINADO — año de construcción 2024 — y está en remate de últimas unidades a través de corredores independientes, no de la inmobiliaria. Son 26 departamentos en 7 pisos con rooftop y 3 sótanos, arquitectura de Atelier Reusche Reyna, financiado por BBVA. Quedan publicados el flat 503 de 1 dormitorio (67 m², US$170,850 con 1 estacionamiento) y un penthouse dúplex de 3 dorms con terraza de 63 m² (186 m², US$399,000 con 2 estacionamientos). Es el único 1 dormitorio con precio confirmado del cuadrante además del nuestro. ⚠ Al 31-ago-2026 se detectó que sus dos precios coinciden con los de Monte Umbroso 585 (Galeon). Quedan marcados como no comparables hasta confirmar de cuál edificio son.",
    "amenidades": [
     "Rooftop",
     "3 sótanos de estacionamiento",
@@ -11622,7 +11687,8 @@ window.PORTAL_DATA = {
    "wa_label": "Milagros · corredora",
    "asesora": "Milagros López",
    "pedido": "Hola Milagros! Vi el aviso de Monte Umbroso 520 en Chacarilla. Sigue disponible el flat de 1 dormitorio? Me pasas el precio actual y qué incluye? Gracias!",
-   "pedido_que": "confirmar disponibilidad + precio vigente"
+   "pedido_que": "confirmar disponibilidad + precio vigente",
+   "coherencia_alerta": "Sus dos tipologías con precio (flat 503 de 67 m² a US$170,850 y penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con Monte Umbroso 585, de Galeon: mismo número de unidades, mismo estado entregado y el mismo dúplex de 186 m². Los avisos de corredores que usamos como fuente pueden ser de ese edificio y no de éste. Hasta verificarlo en campo, su US$/m² sale del comparativo."
   },
   {
    "id": "monteflor",
@@ -12299,6 +12365,11 @@ window.PORTAL_DATA = {
      "nombre": "Joyce",
      "numero": "949107186",
      "fuente": "Chat real de WhatsApp con el asesor (retomado 13-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "962196635",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "asesora": "Joyce",
@@ -14605,6 +14676,11 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "916123888",
      "fuente": "Tótem del proyecto fotografiado el 22-ago-2026, junto a ventas@proyectospyr.com"
+    },
+    {
+     "nombre": null,
+     "numero": "999988287",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "wa_label": "PYR Edificaciones",
@@ -15062,6 +15138,11 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "908892190",
      "fuente": "Web oficial de Vibra Inmobiliaria (24-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "908982190",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "estado_evidencia": {
@@ -15194,6 +15275,21 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "987561619",
      "fuente": "Línea de ventas de V&V Grupo Inmobiliario publicada en vyv.pe (31-ago-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "940397702",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "965290665",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "987561799",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ]
   },
@@ -15229,6 +15325,11 @@ window.PORTAL_DATA = {
      "nombre": null,
      "numero": "923054353",
      "fuente": "Auditoría de fuentes de competencia (jun-2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "933263662",
+     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
     }
    ],
    "web": "https://www.edifikarte.com.pe/proyectos/conde-de-la-vega-128/",
@@ -15304,6 +15405,76 @@ window.PORTAL_DATA = {
    ],
    "coherencia_alerta": "Su ficha oficial ahora arranca en 257 m² mientras Nexo publicaba desde 109 m²: probablemente ya solo quedan las unidades grandes. Confirmar con Jenny qué queda.",
    "dorms_disponibles": [
+    3
+   ]
+  },
+  {
+   "id": "monte-umbroso-585",
+   "name": "Monte Umbroso 585",
+   "dev": "Galeon",
+   "addr": "Alameda Monte Umbroso 585, Chacarilla del Estanque, Santiago de Surco",
+   "web": "https://www.galeon.com.pe/proyectos/monte-umbroso-585/",
+   "lat": -12.113461640626225,
+   "lng": -76.97995437139151,
+   "geo_aprox": true,
+   "geo_nota": "Ubicación aproximada sobre la Alameda Monte Umbroso, interpolada por la numeración. Falta fotografiarlo.",
+   "en_cuadrante": true,
+   "mostrar": true,
+   "isGEU": false,
+   "estado_grupo": "Entrega inmediata",
+   "estado_raw": "Entregado · queda el último dúplex",
+   "entrega": "Entregado",
+   "total_pisos": 8,
+   "unidades": 26,
+   "pisos": 8,
+   "dorms": "1–3",
+   "m2": "67 – 186",
+   "precio_desde_usd": 399000,
+   "precio_hasta_usd": 399000,
+   "cochera_status": "nd",
+   "cochera_nota": "Sin confirmar: su ficha no dice si el precio incluye estacionamiento.",
+   "politica_precio": "No sabemos si el precio incluye estacionamiento; su ficha no lo aclara.",
+   "estado_evidencia": {
+    "tipo": "web_oficial",
+    "fecha": "2026-08-31",
+    "nota": "Ficha de Galeon: figura entre sus proyectos ENTREGADOS y comunica «último dúplex disponible»."
+   },
+   "precio_fuente": {
+    "tipo": "web_oficial",
+    "nota": "Ficha oficial de Galeon: desde US$399,000 por el último dúplex de 186 m²."
+   },
+   "contactos": [
+    {
+     "nombre": "Isabel Ruiz",
+     "numero": "976367206",
+     "fuente": "Ficha oficial de Galeon (galeon.com.pe/proyectos/monte-umbroso-585), consultada el 31-ago-2026"
+    },
+    {
+     "nombre": null,
+     "numero": "966351473",
+     "fuente": "Ficha oficial de Galeon (galeon.com.pe/proyectos/monte-umbroso-585), consultada el 31-ago-2026 (WhatsApp)"
+    }
+   ],
+   "wa": "966351473",
+   "asesora": "Isabel Ruiz",
+   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520. Pendiente de verificar en campo cuál es cuál.",
+   "fuentes": [
+    "https://www.galeon.com.pe/proyectos/monte-umbroso-585/",
+    "Pieza de Meta con el claim «Vive en Chacarilla · desde $170,850», certificación EDGE, 1-2-3 dorm",
+    "referencias/meta-ads-competencia/biblioteca-anuncios-landscape.md"
+   ],
+   "coherencia_alerta": "Sus precios podrían estar duplicados con los de Monte Umbroso 520: verificar en campo.",
+   "mapeado_desde": null,
+   "caseta_ventas": "nd",
+   "financia": null,
+   "typologies": [],
+   "flats_summary": [],
+   "planos": [],
+   "documentos": [],
+   "promocion": null,
+   "dorms_disponibles": [
+    1,
+    2,
     3
    ]
   }
