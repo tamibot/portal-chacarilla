@@ -6979,7 +6979,7 @@
    "id": "jardines-monte-real",
    "name": "Jardines de Monte Real",
    "dev": "Central Inmobiliaria (Central Proyectos Inmobiliarios S.A.C.)",
-   "addr": "Jr. Monte Real 496, Chacarilla del Estanque, Santiago de Surco, Lima",
+   "addr": "Jr. Monte Real 496, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En obra · ÚLTIMOS departamentos",
    "entrega": "Marzo 2027",
@@ -6989,12 +6989,26 @@
    "en_cuadrante": true,
    "precio_desde_usd": 246028,
    "precio_hasta_usd": 329187,
-   "dorms": "3",
-   "m2": "127 – 260",
+   "dorms": "3–5",
+   "m2": "94 – 278",
    "wa": "920374177",
    "web": "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
    "img": "assets/campo/living-monte-real-obra.jpg",
    "planos": [
+    "assets/planos/jardines-monte-real-brochure2026/Duplex 209.55 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Duplex 211.57 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Duplex 216.52 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Duplex 232.05 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Duplex 259.88 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Duplex 278.44 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat 107 - 129.42 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat 201 - 135.13 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat 205 - 106.64 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat 209 - 124 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat X01 - 131.43 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat X04 - 107.62 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat X08 - 94.20 m2.jpg",
+    "assets/planos/jardines-monte-real-brochure2026/Flat X09 - 127.77 m2.jpg",
     "assets/planos/jardines-de-monte-real/plano-107-precio.jpg",
     "assets/planos/jardines-de-monte-real/plano-x08-precio.jpg",
     "assets/planos/jardines-monte-real-oficial/DÚPLEX 602 - 232.05 m2.jpg",
@@ -7062,7 +7076,7 @@
     2,
     3
    ],
-   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.)",
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión.",
    "amenidades": [
     "Lobby",
     "SUM",
@@ -7078,7 +7092,8 @@
     "https://nexoinmobiliario.pe/departamentos/santiago-de-surco/jardines-de-monte-real-3770",
     "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP.pdf",
     "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
-    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria"
+    "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria",
+    "Brochure oficial de Central Inmobiliaria (jun-2026) descargado de centralinmobiliaria.pe el 31-ago-2026"
    ],
    "portales": {
     "nexo": "https://nexoinmobiliario.pe/proyecto/venta-de-departamento-3770-jardines-de-monte-real-santiago-de-surco-lima-lima-central-inmobiliaria"
@@ -7122,6 +7137,13 @@
      "archivo": "assets/brochures/jardines-monte-real-brochure.pdf",
      "url": "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
      "fecha": "2026-06-22",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial · edición junio-2026",
+     "archivo": "assets/brochures/jardines-monte-real-brochure-jun2026.pdf",
+     "url": "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
+     "fecha": "2026-06",
      "tipo": "brochure"
     }
    ],
@@ -11688,7 +11710,7 @@
    "asesora": "Milagros López",
    "pedido": "Hola Milagros! Vi el aviso de Monte Umbroso 520 en Chacarilla. Sigue disponible el flat de 1 dormitorio? Me pasas el precio actual y qué incluye? Gracias!",
    "pedido_que": "confirmar disponibilidad + precio vigente",
-   "coherencia_alerta": "Sus dos tipologías con precio (flat 503 de 67 m² a US$170,850 y penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con Monte Umbroso 585, de Galeon: mismo número de unidades, mismo estado entregado y el mismo dúplex de 186 m². Los avisos de corredores que usamos como fuente pueden ser de ese edificio y no de éste. Hasta verificarlo en campo, su US$/m² sale del comparativo."
+   "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520."
   },
   {
    "id": "monteflor",
@@ -14621,6 +14643,13 @@
    "img": "assets/campo/the-eleven.jpg",
    "brochure": null,
    "planos": [
+    "assets/img-f1/the-eleven/oficial-cocina-isla.jpg",
+    "assets/img-f1/the-eleven/oficial-coworking.jpg",
+    "assets/img-f1/the-eleven/oficial-dormitorio-principal.jpg",
+    "assets/img-f1/the-eleven/oficial-dormitorio-secundario.jpg",
+    "assets/img-f1/the-eleven/oficial-rooftop-parrillas.jpg",
+    "assets/img-f1/the-eleven/oficial-sala-cocina.jpg",
+    "assets/img-f1/the-eleven/oficial-sala-comedor.jpg",
     "assets/img-f1/the-eleven/img-01.jpg",
     "assets/img-f1/the-eleven/img-02.webp",
     "assets/campo/the-eleven.jpg",
@@ -14636,8 +14665,10 @@
    "mostrar": true,
    "geo_aprox": true,
    "amenidades": [
+    "Coworking",
     "Coworking / home office",
     "Rooftop con parrilla",
+    "Rooftop con parrillas",
     "Zona de juegos para niños"
    ],
    "precio_hist": [
@@ -14651,7 +14682,8 @@
    "fuentes": [
     "Recorrido de campo 22-ago-2026 · fotos IMG_7958–7959",
     "https://www.proyectospyr.com",
-    "https://www.pyredificaciones.com/proyectos"
+    "https://www.pyredificaciones.com/proyectos",
+    "Web oficial de PYR Edificaciones (pyredificaciones.com/the-eleven-surco), imágenes descargadas a resolución original el 31-ago-2026"
    ],
    "id": "the-leven",
    "name": "The Eleven",
@@ -14668,7 +14700,7 @@
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": false,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Inmobiliaria confirmada: PYR Edificaciones. 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500. Entrega inmediata con pocas unidades disponibles. PYR lo ubica sobre Av. Velasco Astete; nuestro tótem fotografiado está en el cruce con Av. de los Precursores. Ojo: el 999 988 287 que circulaba como «Brea Balta» pertenece a Grupo Zlatsu y no corresponde a este proyecto — el contacto bueno es el del tótem, 916 123 888.",
+   "comentario": "Inmobiliaria confirmada: PYR Edificaciones. 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500. Entrega inmediata con pocas unidades disponibles. PYR lo ubica sobre Av. Velasco Astete; nuestro tótem fotografiado está en el cruce con Av. de los Precursores. Ojo: el 999 988 287 que circulaba como «Brea Balta» pertenece a Grupo Zlatsu y no corresponde a este proyecto — el contacto bueno es el del tótem, 916 123 888. Su web publica 7 renders en alta resolución (8000 px) que confirman rooftop con parrillas y sombrillas, coworking con muro verde, cocina con isla y sala-comedor. NO publica ningún plano de tipología: para analizar sus plantas hay que pedirle la ficha al asesor.",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
@@ -14708,7 +14740,8 @@
    "mapeado_desde": "2026-08-22",
    "dorms_disponibles": [
     3
-   ]
+   ],
+   "acabados": "Cocina con isla y barra de taburetes, piso de madera, listones de madera en cabeceras y muros de sala."
   },
   {
    "isGEU": false,
@@ -15431,9 +15464,9 @@
    "m2": "67 – 186",
    "precio_desde_usd": 399000,
    "precio_hasta_usd": 399000,
-   "cochera_status": "nd",
-   "cochera_nota": "Sin confirmar: su ficha no dice si el precio incluye estacionamiento.",
-   "politica_precio": "No sabemos si el precio incluye estacionamiento; su ficha no lo aclara.",
+   "cochera_status": "si",
+   "cochera_nota": "Confirmado en su brochure oficial: entre los atributos del proyecto figura «INCLUYE ESTACIONAMIENTO».",
+   "politica_precio": "Su brochure declara que el precio INCLUYE estacionamiento. Para comparar contra el resto del cuadrante habría que descontarlo, pero no publica cuánto vale: pendiente de preguntárselo al asesor.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-31",
@@ -15457,26 +15490,59 @@
    ],
    "wa": "966351473",
    "asesora": "Isabel Ruiz",
-   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520. Pendiente de verificar en campo cuál es cuál.",
+   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520.  Su brochure oficial cierra la duda: dice «Flats y Dúplex DESDE 67 m²» y «departamentos de 1, 2 y 3 dorms», que son exactamente los dos metrajes que teníamos cargados bajo Monte Umbroso 520 — el flat de 67 m² y el dúplex de 186 m². También declara que INCLUYE ESTACIONAMIENTO.",
    "fuentes": [
     "https://www.galeon.com.pe/proyectos/monte-umbroso-585/",
     "Pieza de Meta con el claim «Vive en Chacarilla · desde $170,850», certificación EDGE, 1-2-3 dorm",
-    "referencias/meta-ads-competencia/biblioteca-anuncios-landscape.md"
+    "referencias/meta-ads-competencia/biblioteca-anuncios-landscape.md",
+    "Brochure oficial de Galeon descargado de galeon.com.pe el 31-ago-2026",
+    "https://www.galeon.com.pe/wp-content/uploads/2023/05/BROCHURE-MONTE-UMBROSO-585-SURCO-704-1.pdf"
    ],
    "coherencia_alerta": "Sus precios podrían estar duplicados con los de Monte Umbroso 520: verificar en campo.",
    "mapeado_desde": null,
    "caseta_ventas": "nd",
    "financia": null,
-   "typologies": [],
+   "typologies": [
+    {
+     "unidad": "Dúplex 704",
+     "dorm": 3,
+     "m2": 186.0,
+     "precio_usd": 399000,
+     "precio_m2": 2145,
+     "tipo": "duplex",
+     "piso": "7-8",
+     "flat": false,
+     "cochera_incluida": "1 estacionamiento",
+     "estac_incluidos": 1,
+     "depositos_incluidos": 0,
+     "precio_lista_todo": 399000,
+     "m2_equivalente": 202.0,
+     "precio_m2_equiv": 1975,
+     "motivo_no_comparable": "Dúplex",
+     "nota": "Brochure oficial: área total 186 m², 3 dormitorios, 3.5 baños. Precio desde US$399,000 con estacionamiento incluido."
+    }
+   ],
    "flats_summary": [],
-   "planos": [],
-   "documentos": [],
+   "planos": [
+    "assets/planos/monte-umbroso-585/Duplex 704 - 3 dorm - 186 m2.png",
+    "assets/img-f1/monte-umbroso-585/interiores.jpg"
+   ],
+   "documentos": [
+    {
+     "titulo": "Brochure oficial de Galeon",
+     "archivo": "assets/brochures/monte-umbroso-585-brochure.pdf",
+     "url": "https://www.galeon.com.pe/wp-content/uploads/2023/05/BROCHURE-MONTE-UMBROSO-585-SURCO-704-1.pdf",
+     "fecha": "2026",
+     "tipo": "brochure"
+    }
+   ],
    "promocion": null,
    "dorms_disponibles": [
     1,
     2,
     3
-   ]
+   ],
+   "img": "assets/img-f1/monte-umbroso-585/interiores.jpg"
   }
  ]
 }
