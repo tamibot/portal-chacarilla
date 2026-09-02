@@ -2358,7 +2358,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Depa familiar completo: los tres pilares (lavandería propia, cuarto de servicio con baño, estar aparte de la sala-comedor) están los tres. El exterior es una franja angosta con jardín vertical y sin mobiliario — más balcón que terraza, y es lo que lo diferencia de los flats 201 y 301/601, que son la misma planta pero con el exterior amoblado como terraza · SEGUNDA PASADA: es el único flat del set con balcón dibujado; el render es una axonométrica sin techos y el borde exterior se dibuja igual en balcones y en terrazas descubiertas, así que balcon_techado queda en null (la ficha del proyecto declara área libre 0,00 en los flats, pero eso sale de la lista, no del plano). El baño de servicio sí lleva ducha. El principal va con walk-in y baño propio. El ascensor se dibuja fuera del muro del depa, junto a la puerta: no abre adentro."
+      "observacion": "Depa familiar completo: los tres pilares (lavandería propia, cuarto de servicio con baño, estar aparte de la sala-comedor) están los tres. El exterior es una franja angosta con jardín vertical y sin mobiliario — más balcón que terraza, y es lo que lo diferencia de los flats 201 y 301/601, que son la misma planta pero con el exterior amoblado como terraza · SEGUNDA PASADA: es el único flat del set con balcón dibujado; el render es una axonométrica sin techos y el borde exterior se dibuja igual en balcones y en terrazas descubiertas, así que balcon_techado queda en null (la ficha del proyecto declara área libre 0,00 en los flats, pero eso sale de la lista, no del plano). El baño de servicio sí lleva ducha. El principal va con walk-in y baño propio. El ascensor se dibuja fuera del muro del depa, junto a la puerta: no abre adentro.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-101.jpg"
+      ]
      },
      {
       "unidad": "Flat 102",
@@ -2400,7 +2403,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Este es el flat de 1 dormitorio y es el dato duro contra la competencia: NO tiene estudio ni nada que se le parezca. Donde otros meten un 'estudio' de 6-7 m² sin ventana, acá el metraje se fue al walk-in closet, al medio baño de visitas y a la terraza. La cocina es abierta en L, sin isla · SEGUNDA PASADA: sin balcón, sin cuarto ni baño de servicio (el medio baño del ingreso es de visitas). El baño completo cuelga del vestidor del principal, cerrado con puerta respecto de la sala: cuenta como suite. El clóset grande del hall de ingreso no es despensa: no hay alacena dibujada en la cocina."
+      "observacion": "Este es el flat de 1 dormitorio y es el dato duro contra la competencia: NO tiene estudio ni nada que se le parezca. Donde otros meten un 'estudio' de 6-7 m² sin ventana, acá el metraje se fue al walk-in closet, al medio baño de visitas y a la terraza. La cocina es abierta en L, sin isla · SEGUNDA PASADA: sin balcón, sin cuarto ni baño de servicio (el medio baño del ingreso es de visitas). El baño completo cuelga del vestidor del principal, cerrado con puerta respecto de la sala: cuenta como suite. El clóset grande del hall de ingreso no es despensa: no hay alacena dibujada en la cocina.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-102.jpg"
+      ]
      },
      {
       "unidad": "Flat 103",
@@ -2442,7 +2448,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La tipología grande. Zona de servicio completa y separada (lavandería como cuarto propio + dormitorio de servicio + baño de servicio), estar aparte de la sala-comedor y medio baño de visitas junto al ingreso: es un depa familiar de verdad, no metros sueltos. El archivo flat-303-603.jpg es este mismo render · SEGUNDA PASADA: el baño de servicio lleva ducha (rejilla y grifería dibujadas). Principal en suite: dormitorio → walk-in en U → baño con doble lavatorio. Sin despensa en la cocina; el mueble de madera que se ve es la ropería del baño principal."
+      "observacion": "La tipología grande. Zona de servicio completa y separada (lavandería como cuarto propio + dormitorio de servicio + baño de servicio), estar aparte de la sala-comedor y medio baño de visitas junto al ingreso: es un depa familiar de verdad, no metros sueltos. El archivo flat-303-603.jpg es este mismo render · SEGUNDA PASADA: el baño de servicio lleva ducha (rejilla y grifería dibujadas). Principal en suite: dormitorio → walk-in en U → baño con doble lavatorio. Sin despensa en la cocina; el mueble de madera que se ve es la ropería del baño principal.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-103.jpg"
+      ]
      },
      {
       "unidad": "Flat 104 / 604",
@@ -2484,7 +2493,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es de las pocas plantas del set SIN ningún espacio exterior: el render no muestra balcón, terraza ni jardinera. A cambio tiene isla de cocina con barra y walk-in en el principal. Sin cuarto de servicio (lógico para 2 dorm) · SEGUNDA PASADA: los dos dormitorios tienen baño propio con puerta sobre el muro del dormitorio; el principal además suma el walk-in. Sin servicio, sin exterior, sin despensa."
+      "observacion": "Es de las pocas plantas del set SIN ningún espacio exterior: el render no muestra balcón, terraza ni jardinera. A cambio tiene isla de cocina con barra y walk-in en el principal. Sin cuarto de servicio (lógico para 2 dorm) · SEGUNDA PASADA: los dos dormitorios tienen baño propio con puerta sobre el muro del dormitorio; el principal además suma el walk-in. Sin servicio, sin exterior, sin despensa.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-104-604.jpg"
+      ]
      },
      {
       "unidad": "Flat 105 / 605",
@@ -2526,7 +2538,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma familia que el 104/604: 2 dorm, isla, walk-in, sin cuarto de servicio y sin exterior visible en el render. Los dos dormitorios dan a fachada · SEGUNDA PASADA: principal en suite (puerta del baño sobre el muro del dormitorio) más walk-in en U. Sin servicio, sin exterior, sin despensa."
+      "observacion": "Misma familia que el 104/604: 2 dorm, isla, walk-in, sin cuarto de servicio y sin exterior visible en el render. Los dos dormitorios dan a fachada · SEGUNDA PASADA: principal en suite (puerta del baño sobre el muro del dormitorio) más walk-in en U. Sin servicio, sin exterior, sin despensa.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-105-605.jpg"
+      ]
      },
      {
       "unidad": "Flat 201",
@@ -2568,7 +2583,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma planta que el 101 pero con el exterior resuelto como terraza amoblada (dos sillones y mesa) y franja de grass, no como balcón-jardinera. La lista de precios de la preventa declara 3 dorm y 138,4 m² para el Dpto 201 — dato de la lista, no del plano · SEGUNDA PASADA: baño de servicio con ducha y principal en suite, igual que el 101. Su exterior es terraza de piso alto (losetas + franja de grass decorativa), no patio a nivel de suelo. Ascensor dibujado fuera del muro."
+      "observacion": "Misma planta que el 101 pero con el exterior resuelto como terraza amoblada (dos sillones y mesa) y franja de grass, no como balcón-jardinera. La lista de precios de la preventa declara 3 dorm y 138,4 m² para el Dpto 201 — dato de la lista, no del plano · SEGUNDA PASADA: baño de servicio con ducha y principal en suite, igual que el 101. Su exterior es terraza de piso alto (losetas + franja de grass decorativa), no patio a nivel de suelo. Ascensor dibujado fuera del muro.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-201.jpg"
+      ]
      },
      {
       "unidad": "Flat 202",
@@ -2610,7 +2628,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Repite el 1 dormitorio del 102. Confirma que la jugada del 'estudio' no está en este proyecto: el 1 dorm de Ave. del Sur 220 es 1 dorm y se vende como tal · SEGUNDA PASADA: mismas casillas que el 102 — sin servicio, sin balcón, principal con vestidor y baño propio cerrados con puerta, sin despensa."
+      "observacion": "Repite el 1 dormitorio del 102. Confirma que la jugada del 'estudio' no está en este proyecto: el 1 dorm de Ave. del Sur 220 es 1 dorm y se vende como tal · SEGUNDA PASADA: mismas casillas que el 102 — sin servicio, sin balcón, principal con vestidor y baño propio cerrados con puerta, sin despensa.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-202.jpg"
+      ]
      },
      {
       "unidad": "Flat 203",
@@ -2652,7 +2673,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma familia que el 103. La lista de precios de la preventa declara 3 dorm y 165 m² para el Dpto 203 — dato de la lista, no del plano. Es el flat más grande del edificio y llega con la zona de servicio completa · SEGUNDA PASADA: baño de servicio con ducha, principal en suite. La terraza es de piso alto, con franja de grass decorativa: no cuenta como patio-jardín."
+      "observacion": "Misma familia que el 103. La lista de precios de la preventa declara 3 dorm y 165 m² para el Dpto 203 — dato de la lista, no del plano. Es el flat más grande del edificio y llega con la zona de servicio completa · SEGUNDA PASADA: baño de servicio con ducha, principal en suite. La terraza es de piso alto, con franja de grass decorativa: no cuenta como patio-jardín.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-203.jpg"
+      ]
      },
      {
       "unidad": "Flat 301 / 601",
@@ -2694,7 +2718,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Idéntica en distribución al 201; el render solo cambia la vegetación de la terraza. Un mismo plano se vende en dos pisos (3 y 6) · SEGUNDA PASADA: idéntico al 201 en las casillas nuevas; acá el render ni siquiera dibuja la franja de grass, solo losetas y maceteros."
+      "observacion": "Idéntica en distribución al 201; el render solo cambia la vegetación de la terraza. Un mismo plano se vende en dos pisos (3 y 6) · SEGUNDA PASADA: idéntico al 201 en las casillas nuevas; acá el render ni siquiera dibuja la franja de grass, solo losetas y maceteros.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-301-601.jpg"
+      ]
      },
      {
       "unidad": "Flat con patio S02",
@@ -2736,7 +2763,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el 1 dormitorio de los pisos con patio: mismo interior que el 102, con el exterior más generoso (pavimentado, amoblado con dos sillones y mesa, y franja de grass). Sigue sin estudio · SEGUNDA PASADA: el patio sí es jardín — losetas más una franja de grass real contra el lindero. Sin servicio ni baño de servicio. Principal con vestidor y baño propio."
+      "observacion": "Es el 1 dormitorio de los pisos con patio: mismo interior que el 102, con el exterior más generoso (pavimentado, amoblado con dos sillones y mesa, y franja de grass). Sigue sin estudio · SEGUNDA PASADA: el patio sí es jardín — losetas más una franja de grass real contra el lindero. Sin servicio ni baño de servicio. Principal con vestidor y baño propio.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-patio-s02.jpg"
+      ]
      },
      {
       "unidad": "Flat con patio S03",
@@ -2778,7 +2808,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Versión con patio de la tipología 103/203, y la que más exterior tiene de los flats: dos terrazas del lado de los dormitorios más la terraza de la sala. La lavandería sale al patio, con dos lavadoras — buen argumento frente a competidores que resuelven la lavandería con un nicho detrás de una puerta corrediza · SEGUNDA PASADA: patio-jardín en los dos frentes (grass a izquierda y derecha), baño de servicio con ducha y principal en suite. Las dos lavadoras están al aire libre, en el patio de servicio."
+      "observacion": "Versión con patio de la tipología 103/203, y la que más exterior tiene de los flats: dos terrazas del lado de los dormitorios más la terraza de la sala. La lavandería sale al patio, con dos lavadoras — buen argumento frente a competidores que resuelven la lavandería con un nicho detrás de una puerta corrediza · SEGUNDA PASADA: patio-jardín en los dos frentes (grass a izquierda y derecha), baño de servicio con ducha y principal en suite. Las dos lavadoras están al aire libre, en el patio de servicio.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-patio-s03.jpg"
+      ]
      },
      {
       "unidad": "Flat con patio S04",
@@ -2820,7 +2853,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El área libre pesa tanto como la techada: la terraza tiene fogata, comedor exterior y zona de estar, y ocupa cerca de la mitad de la lámina. El estar 'adicional' está afuera, no adentro. Sin cuarto de servicio, y la lavandería queda expuesta en la terraza — el punto flojo de esta planta · SEGUNDA PASADA: ojo — el patio de esta planta está 100% pavimentado (fogata, comedor exterior, un macetero suelto) y NO dibuja área verde, así que patio_jardin va en false aunque la unidad se venda como 'flat con patio'. Los dos dormitorios tienen baño propio."
+      "observacion": "El área libre pesa tanto como la techada: la terraza tiene fogata, comedor exterior y zona de estar, y ocupa cerca de la mitad de la lámina. El estar 'adicional' está afuera, no adentro. Sin cuarto de servicio, y la lavandería queda expuesta en la terraza — el punto flojo de esta planta · SEGUNDA PASADA: ojo — el patio de esta planta está 100% pavimentado (fogata, comedor exterior, un macetero suelto) y NO dibuja área verde, así que patio_jardin va en false aunque la unidad se venda como 'flat con patio'. Los dos dormitorios tienen baño propio.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-patio-s04.jpg"
+      ]
      },
      {
       "unidad": "Flat con patio S05",
@@ -2862,11 +2898,14 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma lógica que el S04: 2 dormitorios y una terraza enorme con fogata y comedor exterior. La cocina abre a la sala con isla-barra de cuatro puestos. Sin cuarto de servicio; lavandería a la intemperie · SEGUNDA PASADA: patio-jardín con franja ancha de grass contra el lindero. Sin cuarto ni baño de servicio: la lavandería es una lavadora y un lavadero al aire libre en el patio."
+      "observacion": "Misma lógica que el S04: 2 dormitorios y una terraza enorme con fogata y comedor exterior. La cocina abre a la sala con isla-barra de cuatro puestos. Sin cuarto de servicio; lavandería a la intemperie · SEGUNDA PASADA: patio-jardín con franja ancha de grass contra el lindero. Sin cuarto ni baño de servicio: la lavandería es una lavadora y un lavadero al aire libre en el patio.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/flat-patio-s05.jpg"
+      ]
      },
      {
       "unidad": "Dúplex 701 (dos niveles)",
-      "archivo": "assets/planos/ave-del-sur-220/duplex-701-01.jpg + assets/planos/ave-del-sur-220/duplex-701-02.jpg",
+      "archivo": "assets/planos/ave-del-sur-220/duplex-701-01.jpg",
       "dorm_declarados": null,
       "dorm_reales": 4,
       "estudio": {
@@ -2904,11 +2943,15 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El producto tope del proyecto y el más completo del set: 4 dormitorios reales arriba, estar propio en el piso de dormitorios, terraza en los dos niveles, servicio con baño y lavandería aparte. La lista de precios de la preventa declara 4 dorm y 272,9 m² para el Dúplex 701 — dato de la lista, no del plano. Los cuatro baños completos se cuentan como 3 arriba + 1 de servicio abajo · SEGUNDA PASADA: el baño de servicio del nivel inferior lleva ducha. Arriba el principal va con walk-in y baño propio con doble lavatorio. Ninguna de las dos láminas dibuja vacío de doble altura ni azotea, y el ascensor aparece en los dos niveles pero siempre fuera del muro del departamento."
+      "observacion": "El producto tope del proyecto y el más completo del set: 4 dormitorios reales arriba, estar propio en el piso de dormitorios, terraza en los dos niveles, servicio con baño y lavandería aparte. La lista de precios de la preventa declara 4 dorm y 272,9 m² para el Dúplex 701 — dato de la lista, no del plano. Los cuatro baños completos se cuentan como 3 arriba + 1 de servicio abajo · SEGUNDA PASADA: el baño de servicio del nivel inferior lleva ducha. Arriba el principal va con walk-in y baño propio con doble lavatorio. Ninguna de las dos láminas dibuja vacío de doble altura ni azotea, y el ascensor aparece en los dos niveles pero siempre fuera del muro del departamento.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/duplex-701-01.jpg",
+       "assets/planos/ave-del-sur-220/duplex-701-02.jpg"
+      ]
      },
      {
       "unidad": "Dúplex 702 (dos niveles)",
-      "archivo": "assets/planos/ave-del-sur-220/duplex-702-01.jpg + assets/planos/ave-del-sur-220/duplex-702-02.jpg",
+      "archivo": "assets/planos/ave-del-sur-220/duplex-702-01.jpg",
       "dorm_declarados": null,
       "dorm_reales": 2,
       "estudio": {
@@ -2946,11 +2989,15 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Dúplex de 2 dormitorios, los dos en suite y los dos con salida a la terraza superior. Es el dúplex sin servicio: no hay cuarto de servicio y la lavandería se resuelve con una lavadora en el pasillo del segundo nivel. El plano no muestra estar adicional · SEGUNDA PASADA: los dos dormitorios de arriba tienen la puerta del baño sobre su propio muro (suite). Sin cuarto ni baño de servicio. Ninguna lámina dibuja vacío de doble altura ni azotea."
+      "observacion": "Dúplex de 2 dormitorios, los dos en suite y los dos con salida a la terraza superior. Es el dúplex sin servicio: no hay cuarto de servicio y la lavandería se resuelve con una lavadora en el pasillo del segundo nivel. El plano no muestra estar adicional · SEGUNDA PASADA: los dos dormitorios de arriba tienen la puerta del baño sobre su propio muro (suite). Sin cuarto ni baño de servicio. Ninguna lámina dibuja vacío de doble altura ni azotea.",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/duplex-702-01.jpg",
+       "assets/planos/ave-del-sur-220/duplex-702-02.jpg"
+      ]
      },
      {
       "unidad": "Dúplex 703 (dos niveles)",
-      "archivo": "assets/planos/ave-del-sur-220/duplex-703-02.jpg (nivel inferior) + assets/planos/ave-del-sur-220/duplex-703-01.jpg (nivel superior)",
+      "archivo": "assets/planos/ave-del-sur-220/duplex-703-02.jpg",
       "dorm_declarados": null,
       "dorm_reales": 4,
       "estudio": {
@@ -2988,11 +3035,15 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El otro dúplex de 4 dormitorios. Cada dormitorio del nivel superior tiene su propio baño (4 arriba) y abajo suma el baño de servicio: 5 completos más el medio baño de visitas. Los archivos vienen invertidos: el -01 es el nivel de dormitorios y el -02 el nivel social · SEGUNDA PASADA: baño de servicio con ducha abajo; arriba cada dormitorio con su baño, el principal incluido. Sin doble altura ni azotea dibujadas."
+      "observacion": "El otro dúplex de 4 dormitorios. Cada dormitorio del nivel superior tiene su propio baño (4 arriba) y abajo suma el baño de servicio: 5 completos más el medio baño de visitas. Los archivos vienen invertidos: el -01 es el nivel de dormitorios y el -02 el nivel social · SEGUNDA PASADA: baño de servicio con ducha abajo; arriba cada dormitorio con su baño, el principal incluido. Sin doble altura ni azotea dibujadas. · Fuente: nivel inferior) (nivel superior",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/duplex-703-02.jpg",
+       "assets/planos/ave-del-sur-220/duplex-703-01.jpg"
+      ]
      },
      {
       "unidad": "Dúplex 705 (dos niveles)",
-      "archivo": "assets/planos/ave-del-sur-220/duplex-705-02.jpg (nivel inferior) + assets/planos/ave-del-sur-220/duplex-705-01.jpg (nivel superior)",
+      "archivo": "assets/planos/ave-del-sur-220/duplex-705-02.jpg",
       "dorm_declarados": null,
       "dorm_reales": 2,
       "estudio": {
@@ -3030,7 +3081,11 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Dúplex de 2 dormitorios con estar propio en el piso de arriba y terraza grande abajo. La lista de precios de la preventa declara 2 dorm y 132,7 m² para el Dúplex 705 — dato de la lista, no del plano. Sin cuarto de servicio y con la lavandería en la terraza · SEGUNDA PASADA: acá el principal NO queda en suite — los dos baños del nivel superior abren al hall central (uno detrás de la ropería, otro detrás de los clósets), ninguno tiene puerta sobre el muro de un dormitorio. Sin cuarto ni baño de servicio. La franja de grass está en la terraza del piso 7, no es patio a nivel de suelo."
+      "observacion": "Dúplex de 2 dormitorios con estar propio en el piso de arriba y terraza grande abajo. La lista de precios de la preventa declara 2 dorm y 132,7 m² para el Dúplex 705 — dato de la lista, no del plano. Sin cuarto de servicio y con la lavandería en la terraza · SEGUNDA PASADA: acá el principal NO queda en suite — los dos baños del nivel superior abren al hall central (uno detrás de la ropería, otro detrás de los clósets), ninguno tiene puerta sobre el muro de un dormitorio. Sin cuarto ni baño de servicio. La franja de grass está en la terraza del piso 7, no es patio a nivel de suelo. · Fuente: nivel inferior) (nivel superior",
+      "archivos": [
+       "assets/planos/ave-del-sur-220/duplex-705-02.jpg",
+       "assets/planos/ave-del-sur-220/duplex-705-01.jpg"
+      ]
      }
     ]
    }
@@ -3376,7 +3431,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Planta social en L: cocina abierta con península de tres taburetes que da al comedor, y comedor + sala en un solo ambiente corrido. La lavandería no es cuarto: es el tramo final del mesón de cocina, con lavadero y lavadora a la vista. Cuenta 3 baños completos (ducha dibujada con mampara y sumidero) más un medio baño junto al ingreso. Sin cuarto de servicio y sin baño de servicio: para 137,8 m² declarados en la lista de precios (dato de la lista, no del plano) es la ausencia que más pesa frente a Ave. del Sur 220, donde la misma escala trae servicio completo. La terraza es la franja de porcelanato junto al comedor; las tiras verdes de los extremos son jardineras de fachada, no piso pisable"
+      "observacion": "Planta social en L: cocina abierta con península de tres taburetes que da al comedor, y comedor + sala en un solo ambiente corrido. La lavandería no es cuarto: es el tramo final del mesón de cocina, con lavadero y lavadora a la vista. Cuenta 3 baños completos (ducha dibujada con mampara y sumidero) más un medio baño junto al ingreso. Sin cuarto de servicio y sin baño de servicio: para 137,8 m² declarados en la lista de precios (dato de la lista, no del plano) es la ausencia que más pesa frente a Ave. del Sur 220, donde la misma escala trae servicio completo. La terraza es la franja de porcelanato junto al comedor; las tiras verdes de los extremos son jardineras de fachada, no piso pisable",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-flat201.png"
+      ]
      },
      {
       "unidad": "Flat 202",
@@ -3418,7 +3476,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La planta más completa del proyecto junto con la 302/502 — es el mismo plano repetido en otro piso. Acá sí aparece zona de servicio propia: un pasillo de servicio con lavadora, lavadero y, al fondo, un baño de servicio con ducha. La cocina es abierta con isla exenta de tres taburetes. El dormitorio principal va en suite: baño con doble lavatorio y ducha, con la puerta sobre el muro del propio dormitorio. 3 baños completos + 1 medio baño. La franja de grass junto a la sala es jardinera de fachada, no patio"
+      "observacion": "La planta más completa del proyecto junto con la 302/502 — es el mismo plano repetido en otro piso. Acá sí aparece zona de servicio propia: un pasillo de servicio con lavadora, lavadero y, al fondo, un baño de servicio con ducha. La cocina es abierta con isla exenta de tres taburetes. El dormitorio principal va en suite: baño con doble lavatorio y ducha, con la puerta sobre el muro del propio dormitorio. 3 baños completos + 1 medio baño. La franja de grass junto a la sala es jardinera de fachada, no patio",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-flat202.png"
+      ]
      },
      {
       "unidad": "Flat 203/303/403/503 (típico)",
@@ -3460,7 +3521,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El típico de 100,4 m² (dato de la lista de precios, no del plano) y el que más se repite en el edificio: pisos 2 a 5. Cocina CERRADA en L, con refrigeradora, lavadero y lavandería adentro — es el único punto donde esta tipología se aleja del resto del proyecto, que resuelve la cocina abierta con isla. Sin cuarto ni baño de servicio. El conteo de baños no se puede cerrar: el render tiene 660 px de ancho y en las celdas chicas no se distingue si hay ducha o solo inodoro y lavatorio"
+      "observacion": "El típico de 100,4 m² (dato de la lista de precios, no del plano) y el que más se repite en el edificio: pisos 2 a 5. Cocina CERRADA en L, con refrigeradora, lavadero y lavandería adentro — es el único punto donde esta tipología se aleja del resto del proyecto, que resuelve la cocina abierta con isla. Sin cuarto ni baño de servicio. El conteo de baños no se puede cerrar: el render tiene 660 px de ancho y en las celdas chicas no se distingue si hay ducha o solo inodoro y lavatorio",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-flat203-303-403-503.png"
+      ]
      },
      {
       "unidad": "Flat 204/304/404/504 (típico)",
@@ -3502,7 +3566,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El otro típico de pisos 2 a 5 (112,7 m² según la lista). Cocina cerrada con la lavandería adentro: lavadero y lavadora dibujados sobre el mesón. Dos terrazas de porcelanato, una frente al dormitorio principal y otra frente a la sala. Sin cuarto ni baño de servicio. Igual que en el 203, el conteo exacto de baños no se puede cerrar con la resolución del render"
+      "observacion": "El otro típico de pisos 2 a 5 (112,7 m² según la lista). Cocina cerrada con la lavandería adentro: lavadero y lavadora dibujados sobre el mesón. Dos terrazas de porcelanato, una frente al dormitorio principal y otra frente a la sala. Sin cuarto ni baño de servicio. Igual que en el 203, el conteo exacto de baños no se puede cerrar con la resolución del render",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-flat204-304-404-504.png"
+      ]
      },
      {
       "unidad": "Flat 302/502",
@@ -3544,7 +3611,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el mismo plano del Flat 202 vendido en los pisos 3 y 5 (los dos declaran 142,9 m² en la lista de precios). Repite todo: cocina abierta con isla de tres taburetes, pasillo de servicio con lavadora y baño de servicio con ducha, principal en suite con baño de doble lavatorio, 3 baños completos + 1 medio baño. Jardineras de fachada a los dos lados y terraza de porcelanato junto a la cocina"
+      "observacion": "Es el mismo plano del Flat 202 vendido en los pisos 3 y 5 (los dos declaran 142,9 m² en la lista de precios). Repite todo: cocina abierta con isla de tres taburetes, pasillo de servicio con lavadora y baño de servicio con ducha, principal en suite con baño de doble lavatorio, 3 baños completos + 1 medio baño. Jardineras de fachada a los dos lados y terraza de porcelanato junto a la cocina",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-flat302-502.png"
+      ]
      },
      {
       "unidad": "Flat 401",
@@ -3586,7 +3656,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma familia que el Flat 201 (los dos declaran 137,8 m²), pero acá la cocina se resuelve con isla exenta de tres taburetes en vez de península. Lavandería dentro de la cocina — lavadero y lavadora al pie del mesón. Terraza de porcelanato corrida frente al comedor. Sin cuarto ni baño de servicio. La columna de baños tiene cuatro celdas pero el render no permite separar cuáles llevan ducha"
+      "observacion": "Misma familia que el Flat 201 (los dos declaran 137,8 m²), pero acá la cocina se resuelve con isla exenta de tres taburetes en vez de península. Lavandería dentro de la cocina — lavadero y lavadora al pie del mesón. Terraza de porcelanato corrida frente al comedor. Sin cuarto ni baño de servicio. La columna de baños tiene cuatro celdas pero el render no permite separar cuáles llevan ducha",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-flat401.png"
+      ]
      },
      {
       "unidad": "Dúplex 601 (una sola lámina)",
@@ -3628,7 +3701,10 @@
        "doble_altura": null,
        "azotea_propia": null
       },
-      "observacion": "OJO: la lista de precios declara 275,6 m² para el Dúplex 601, pero el archivo trae UNA sola planta — sala-comedor, cocina en U, tres dormitorios y la columna de baños. No se dibujan escalera ni segundo nivel, así que la unidad está incompleta en el plano: por eso dorm_reales, azotea_propia y doble_altura quedan en null. Lo que sí se lee: terraza de porcelanato junto a la sala y jardineras de grass en los dos extremos"
+      "observacion": "OJO: la lista de precios declara 275,6 m² para el Dúplex 601, pero el archivo trae UNA sola planta — sala-comedor, cocina en U, tres dormitorios y la columna de baños. No se dibujan escalera ni segundo nivel, así que la unidad está incompleta en el plano: por eso dorm_reales, azotea_propia y doble_altura quedan en null. Lo que sí se lee: terraza de porcelanato junto a la sala y jardineras de grass en los dos extremos",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-duplex601.png"
+      ]
      },
      {
       "unidad": "Dúplex 603 (dos niveles + azotea)",
@@ -3670,7 +3746,10 @@
        "doble_altura": false,
        "azotea_propia": true
       },
-      "observacion": "La lámina trae las TRES plantas de la misma unidad en un solo archivo: nivel social (cocina, sala-comedor, escalera y dos dormitorios con sus baños), nivel superior (cuatro dormitorios más baños) y AZOTEA de uso exclusivo — grass natural en toda la superficie, dos juegos de mesa con sillas, tumbonas y bancas, con la escalera y el ducto de ascensor llegando arriba. Es la única unidad de todo el benchmark de Chacarilla con azotea propia amoblada dibujada en el plano, y el argumento fuerte del producto: 206,1 m² según la lista de precios (dato de la lista, no del plano) que se leen como casa, no como departamento"
+      "observacion": "La lámina trae las TRES plantas de la misma unidad en un solo archivo: nivel social (cocina, sala-comedor, escalera y dos dormitorios con sus baños), nivel superior (cuatro dormitorios más baños) y AZOTEA de uso exclusivo — grass natural en toda la superficie, dos juegos de mesa con sillas, tumbonas y bancas, con la escalera y el ducto de ascensor llegando arriba. Es la única unidad de todo el benchmark de Chacarilla con azotea propia amoblada dibujada en el plano, y el argumento fuerte del producto: 206,1 m² según la lista de precios (dato de la lista, no del plano) que se leen como casa, no como departamento",
+      "archivos": [
+       "assets/planos/aura-sul/aurasul-duplex603.png"
+      ]
      }
     ]
    }
@@ -4132,7 +4211,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Las láminas TIPO 103 y TIPO 503 son el MISMO dibujo: cambia solo el rótulo y el punto marcado en el esquema de ubicación (piso 1 vs piso 5). Se analiza como una sola tipología. Son láminas de render amoblado sin cotas ni rótulos de ambiente; la lista impresa dice «Kitchenette · Sala Comedor · Lavandería · Hall · Baños» y coincide con el dibujo. La cocina es literalmente una kitchenette: mesón en L pegado al muro del fondo de la sala-comedor, con encimera, poza y refrigeradora, sin tabique, sin isla y sin taburetes — la mesa redonda de 4 sillas es el comedor, no una barra. La lavandería sí es un cuarto propio cerrado con puerta, con lavadero profundo y lavadora, más un clóset al lado. Los dos baños son completos (ambos con mampara de vidrio y ducha) y los DOS abren al pasadizo: el principal NO tiene baño con puerta desde el dormitorio. Ningún medio baño de visita. Los clósets del principal son dos frentes lineales, no vestidor. La terracita gris con dos maceteros y baranda de vidrio sale de la fachada interior entre la sala y el dormitorio secundario; el render no muestra techo encima, así que no se puede afirmar si es techada. Metraje impreso en la lámina: «Área total 70 m²»; el área oficial sale de la lista de precios. La lámina advierte que áreas y diseño son aproximados y pueden cambiar."
+      "observacion": "Las láminas TIPO 103 y TIPO 503 son el MISMO dibujo: cambia solo el rótulo y el punto marcado en el esquema de ubicación (piso 1 vs piso 5). Se analiza como una sola tipología. Son láminas de render amoblado sin cotas ni rótulos de ambiente; la lista impresa dice «Kitchenette · Sala Comedor · Lavandería · Hall · Baños» y coincide con el dibujo. La cocina es literalmente una kitchenette: mesón en L pegado al muro del fondo de la sala-comedor, con encimera, poza y refrigeradora, sin tabique, sin isla y sin taburetes — la mesa redonda de 4 sillas es el comedor, no una barra. La lavandería sí es un cuarto propio cerrado con puerta, con lavadero profundo y lavadora, más un clóset al lado. Los dos baños son completos (ambos con mampara de vidrio y ducha) y los DOS abren al pasadizo: el principal NO tiene baño con puerta desde el dormitorio. Ningún medio baño de visita. Los clósets del principal son dos frentes lineales, no vestidor. La terracita gris con dos maceteros y baranda de vidrio sale de la fachada interior entre la sala y el dormitorio secundario; el render no muestra techo encima, así que no se puede afirmar si es techada. Metraje impreso en la lámina: «Área total 70 m²»; el área oficial sale de la lista de precios. La lámina advierte que áreas y diseño son aproximados y pueden cambiar.",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-251/flat-103.jpg"
+      ]
      },
      {
       "unidad": "DÚPLEX 104",
@@ -4174,7 +4256,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Dúplex de dos niveles en una sola lámina (izquierda = nivel de ingreso, derecha = nivel de dormitorios): es UNA unidad. La kitchenette es la más resuelta del proyecto: mesón en U con encimera, poza, refrigeradora y una península con DOS taburetes dibujados hacia la sala-comedor. La lavandería es un cuarto cerrado con lavadero y lavadora, pegado al medio baño de visita del nivel 1 (ese baño solo tiene inodoro y lavatorio redondo, sin ducha). En el nivel 2 hay dos baños completos con ducha: el del principal abre con puerta desde el propio dormitorio, entre los dos frentes de clóset — es suite; el segundo sirve al dormitorio 2. Los clósets son frentes lineales, no vestidor. Los DOS niveles dibujan su propia terracita gris con maceteros y baranda de vidrio, una encima de la otra: son dos balcones, y el render no deja ver si tienen techo. Metraje impreso en la lámina: «Área total 95 m²»; el área oficial sale de la lista de precios. Coincide con el cartel de fachada que anuncia «últimos dúplex» de 2 dormitorios desde 95 m²."
+      "observacion": "Dúplex de dos niveles en una sola lámina (izquierda = nivel de ingreso, derecha = nivel de dormitorios): es UNA unidad. La kitchenette es la más resuelta del proyecto: mesón en U con encimera, poza, refrigeradora y una península con DOS taburetes dibujados hacia la sala-comedor. La lavandería es un cuarto cerrado con lavadero y lavadora, pegado al medio baño de visita del nivel 1 (ese baño solo tiene inodoro y lavatorio redondo, sin ducha). En el nivel 2 hay dos baños completos con ducha: el del principal abre con puerta desde el propio dormitorio, entre los dos frentes de clóset — es suite; el segundo sirve al dormitorio 2. Los clósets son frentes lineales, no vestidor. Los DOS niveles dibujan su propia terracita gris con maceteros y baranda de vidrio, una encima de la otra: son dos balcones, y el render no deja ver si tienen techo. Metraje impreso en la lámina: «Área total 95 m²»; el área oficial sale de la lista de precios. Coincide con el cartel de fachada que anuncia «últimos dúplex» de 2 dormitorios desde 95 m².",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-251/duplex-104.jpg"
+      ]
      },
      {
       "unidad": "DÚPLEX 603",
@@ -4216,7 +4301,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Dúplex de dos niveles en una sola lámina = UNA unidad. Es el dúplex que la nota del proyecto vende con 2 estacionamientos y 1 depósito (dato del vendedor, no del plano). Lo que más lo distingue: una terraza con CÉSPED de verdad y árboles, del ancho del departamento, en el nivel de ingreso — el piso 6, no la calle. La lavandería es un cuarto cerrado con lavadero y lavadora que abre con mampara hacia esa terraza, no hacia el interior. La kitchenette es un mesón en L sobre el muro izquierdo de la sala-comedor, abierta, sin isla y sin taburetes; la mesa de comedor es de 6-8 puestos. El baño del nivel social es COMPLETO (lavatorio redondo, inodoro y ducha con barral), no es un medio baño de cortesía: por eso `bano_visita` queda en false aunque haya baño en la zona social. En el nivel 2 hay tres dormitorios (dos secundarios con clóset lineal y el principal), un baño completo compartido y un baño completo pegado al principal, al que se entra por un vestíbulo propio del principal — se lee como suite. Los clósets son frentes lineales, no vestidor. Contradicción a revisar: la lista de «Áreas» impresa en la lámina incluye «Cuarto de Servicio», pero en el dibujo NO hay ningún cuarto con cama de servicio en ninguno de los dos niveles — lo más parecido es el cuarto de lavandería. También: el cartel de fachada anuncia dúplex de 2 dormitorios de 95 y 122 m², y esta lámina de 121 m² es de 3 dormitorios. Metraje impreso en la lámina: «Área total 121 m²»; el área oficial sale de la lista de precios."
+      "observacion": "Dúplex de dos niveles en una sola lámina = UNA unidad. Es el dúplex que la nota del proyecto vende con 2 estacionamientos y 1 depósito (dato del vendedor, no del plano). Lo que más lo distingue: una terraza con CÉSPED de verdad y árboles, del ancho del departamento, en el nivel de ingreso — el piso 6, no la calle. La lavandería es un cuarto cerrado con lavadero y lavadora que abre con mampara hacia esa terraza, no hacia el interior. La kitchenette es un mesón en L sobre el muro izquierdo de la sala-comedor, abierta, sin isla y sin taburetes; la mesa de comedor es de 6-8 puestos. El baño del nivel social es COMPLETO (lavatorio redondo, inodoro y ducha con barral), no es un medio baño de cortesía: por eso `bano_visita` queda en false aunque haya baño en la zona social. En el nivel 2 hay tres dormitorios (dos secundarios con clóset lineal y el principal), un baño completo compartido y un baño completo pegado al principal, al que se entra por un vestíbulo propio del principal — se lee como suite. Los clósets son frentes lineales, no vestidor. Contradicción a revisar: la lista de «Áreas» impresa en la lámina incluye «Cuarto de Servicio», pero en el dibujo NO hay ningún cuarto con cama de servicio en ninguno de los dos niveles — lo más parecido es el cuarto de lavandería. También: el cartel de fachada anuncia dúplex de 2 dormitorios de 95 y 122 m², y esta lámina de 121 m² es de 3 dormitorios. Metraje impreso en la lámina: «Área total 121 m²»; el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-251/duplex-603.jpg"
+      ]
      },
      {
       "unidad": "DÚPLEX 605",
@@ -4258,7 +4346,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El dúplex grande del proyecto y el único con cuarto de servicio DIBUJADO: en el nivel superior, al final de un pasillo de piso enchapado, hay un cuarto con cama simple y, subiendo por ese mismo pasillo, un baño completo con ducha — zona de servicio con acceso independiente por el borde de la terraza. Dos niveles en una sola lámina = UNA unidad. Aquí la cocina NO es una kitchenette abierta pese a lo que dice la lista impresa: es un cuarto cerrado en U con puerta batiente, encimera, poza y refrigeradora, y dentro de su mismo bloque de muros va el medio baño de visita (inodoro y lavatorio, sin ducha). Suma además una Sala de Estar aparte de la sala-comedor, en el nivel superior. La terraza con césped es la más grande de las tres: lleva parrilla, tumbonas, mesa baja y sofá exterior, y limita con el cuarto de servicio. Tres dormitorios: uno en el nivel de ingreso (con clósets y baño completo al lado), y en el superior el principal y otro con escritorio. El baño del principal abre al descanso de la escalera, no con puerta desde dentro del dormitorio: por el dibujo no llega a leerse como suite. Los clósets son frentes lineales, no vestidor. El balcón chico embaldosado con dos maceteros está en el nivel de ingreso, junto a la sala; el render no deja ver si es techado. Metraje impreso en la lámina: «Área total 161 m²»; el área oficial sale de la lista de precios. Coincide con el cartel de fachada que anuncia un dúplex de 3 dormitorios de 161 m²."
+      "observacion": "El dúplex grande del proyecto y el único con cuarto de servicio DIBUJADO: en el nivel superior, al final de un pasillo de piso enchapado, hay un cuarto con cama simple y, subiendo por ese mismo pasillo, un baño completo con ducha — zona de servicio con acceso independiente por el borde de la terraza. Dos niveles en una sola lámina = UNA unidad. Aquí la cocina NO es una kitchenette abierta pese a lo que dice la lista impresa: es un cuarto cerrado en U con puerta batiente, encimera, poza y refrigeradora, y dentro de su mismo bloque de muros va el medio baño de visita (inodoro y lavatorio, sin ducha). Suma además una Sala de Estar aparte de la sala-comedor, en el nivel superior. La terraza con césped es la más grande de las tres: lleva parrilla, tumbonas, mesa baja y sofá exterior, y limita con el cuarto de servicio. Tres dormitorios: uno en el nivel de ingreso (con clósets y baño completo al lado), y en el superior el principal y otro con escritorio. El baño del principal abre al descanso de la escalera, no con puerta desde dentro del dormitorio: por el dibujo no llega a leerse como suite. Los clósets son frentes lineales, no vestidor. El balcón chico embaldosado con dos maceteros está en el nivel de ingreso, junto a la sala; el render no deja ver si es techado. Metraje impreso en la lámina: «Área total 161 m²»; el área oficial sale de la lista de precios. Coincide con el cartel de fachada que anuncia un dúplex de 3 dormitorios de 161 m².",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-251/duplex-605.jpg"
+      ]
      }
     ]
    }
@@ -4966,7 +5057,7 @@
     "unidades": [
      {
       "unidad": "101",
-      "archivo": "assets/brochures/conde-de-la-vega-460-brochure.pdf (pág. 8) — esta lámina NO está en assets/planos/conde-de-la-vega-460/",
+      "archivo": "assets/brochures/conde-de-la-vega-460-brochure.pdf",
       "dorm_declarados": 3,
       "dorm_reales": 3,
       "estudio": {
@@ -5004,7 +5095,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Único flat del edificio a nivel de suelo con verde propio: la lámina dibuja dos franjas rotuladas JARDÍN con textura de césped y arbolitos, más una TERRAZA embaldosada al frente y otra TERRAZA grande al fondo, todas a nivel de piso (no hay voladizo con baranda, por eso balcón va en false). La cocina va rotulada KITCHENETTE pero se dibuja como galería abierta al comedor, sin puerta: se clasifica por el dibujo. La franja de lavado (lavadero + máquina + TH) está entre el baño de servicio y la kitchenette, separada por muro propio y bajo techo, pero en esta lámina NO lleva rótulo (en los demás flats el mismo recinto va rotulado CTO. DE LAVADO). El dormitorio principal lleva tira de closet «CL.», no vestidor: Azzurra rotula W. CL. cuando sí lo hay (202, 503, 504, 603). Metraje impreso en la lámina de brochure y lista de precios coinciden (ocupada 141.91, techada 121.96, libre 19.95): referencia, el área oficial sale de la lista de precios. La lámina declara «3 Dormitorios · 2.5 Baños · Estar · Terraza · Área de servicio»."
+      "observacion": "Único flat del edificio a nivel de suelo con verde propio: la lámina dibuja dos franjas rotuladas JARDÍN con textura de césped y arbolitos, más una TERRAZA embaldosada al frente y otra TERRAZA grande al fondo, todas a nivel de piso (no hay voladizo con baranda, por eso balcón va en false). La cocina va rotulada KITCHENETTE pero se dibuja como galería abierta al comedor, sin puerta: se clasifica por el dibujo. La franja de lavado (lavadero + máquina + TH) está entre el baño de servicio y la kitchenette, separada por muro propio y bajo techo, pero en esta lámina NO lleva rótulo (en los demás flats el mismo recinto va rotulado CTO. DE LAVADO). El dormitorio principal lleva tira de closet «CL.», no vestidor: Azzurra rotula W. CL. cuando sí lo hay (202, 503, 504, 603). Metraje impreso en la lámina de brochure y lista de precios coinciden (ocupada 141.91, techada 121.96, libre 19.95): referencia, el área oficial sale de la lista de precios. La lámina declara «3 Dormitorios · 2.5 Baños · Estar · Terraza · Área de servicio». · Fuente: pág. 8) — esta lámina NO está en assets/planos/conde-de-la-vega-460/",
+      "archivos": [
+       "assets/brochures/conde-de-la-vega-460-brochure.pdf"
+      ]
      },
      {
       "unidad": "201 - 401",
@@ -5046,7 +5140,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Una sola lámina para dos unidades (201 y 401), y sus metrajes impresos (ocupada 125.65, techada 120.47, libre 5.18) calzan exactamente con Flat 201 y Flat 401 de la lista de precios. Es uno de los dos tipos que sí dibuja despensa: lleva un mueble rotulado ALAC. entre el baño de visita y la kitchenette. El baño de servicio es el chico del edificio: cuarto cerrado que solo da para inodoro y lavatorio, sin recuadro de ducha — por eso cuenta como medio baño y no como completo (a diferencia de 302-502 y 403, que son unidades MÁS chicas pero con baño de servicio con ducha). El balcón es voladizo con baranda al frente de la sala; el área libre declarada es 5.18 m² (no 0.00), así que no se lee como techado. La cocina va rotulada KITCHENETTE pero se dibuja abierta al comedor sobre un mesón largo, sin puerta y sin taburetes dibujados: por eso cocina_barra va en false pese al mesón. Resolución: la lámina del portal está a 621×877; se leyó la misma lámina del brochure a 910×1287. La lámina declara «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio»."
+      "observacion": "Una sola lámina para dos unidades (201 y 401), y sus metrajes impresos (ocupada 125.65, techada 120.47, libre 5.18) calzan exactamente con Flat 201 y Flat 401 de la lista de precios. Es uno de los dos tipos que sí dibuja despensa: lleva un mueble rotulado ALAC. entre el baño de visita y la kitchenette. El baño de servicio es el chico del edificio: cuarto cerrado que solo da para inodoro y lavatorio, sin recuadro de ducha — por eso cuenta como medio baño y no como completo (a diferencia de 302-502 y 403, que son unidades MÁS chicas pero con baño de servicio con ducha). El balcón es voladizo con baranda al frente de la sala; el área libre declarada es 5.18 m² (no 0.00), así que no se lee como techado. La cocina va rotulada KITCHENETTE pero se dibuja abierta al comedor sobre un mesón largo, sin puerta y sin taburetes dibujados: por eso cocina_barra va en false pese al mesón. Resolución: la lámina del portal está a 621×877; se leyó la misma lámina del brochure a 910×1287. La lámina declara «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-03.jpg"
+      ]
      },
      {
       "unidad": "202",
@@ -5088,7 +5185,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Dúplex de dos láminas en una sola hoja (1er y 2do nivel) = UNA unidad. Sus metrajes impresos (ocupada 124.57, techada 118.34, libre 6.23) calzan con Dúplex 202 y también con Dúplex 402 de la lista de precios, así que esta misma lámina sirve para las dos. La lámina declara «2 Balcones» pero el dibujo solo trae UN balcón, en el 1er nivel frente a la sala: el 2do nivel no dibuja ninguno — discrepancia a revisar con el asesor. Es la única unidad con un ambiente rotulado BAR (nicho junto al recibo, con TH). La cocina no lleva rótulo: se dibuja como mesón corrido contra el muro izquierdo (refrigeradora, encimera y cocina de 4 hornillas) más una península con poza frente a la sala; abierta al comedor y sin taburetes dibujados, por eso barra e isla van en false. El walk in closet del 2do nivel va rotulado W. CL. Resolución: lámina del portal a 621×877; se leyó la misma del brochure a 910×1287. Lámina: «Sala – Comedor – Cocina · 2 Dormitorios · 2.5 Baños · Estar · 2 Balcones · Área de servicio»."
+      "observacion": "Dúplex de dos láminas en una sola hoja (1er y 2do nivel) = UNA unidad. Sus metrajes impresos (ocupada 124.57, techada 118.34, libre 6.23) calzan con Dúplex 202 y también con Dúplex 402 de la lista de precios, así que esta misma lámina sirve para las dos. La lámina declara «2 Balcones» pero el dibujo solo trae UN balcón, en el 1er nivel frente a la sala: el 2do nivel no dibuja ninguno — discrepancia a revisar con el asesor. Es la única unidad con un ambiente rotulado BAR (nicho junto al recibo, con TH). La cocina no lleva rótulo: se dibuja como mesón corrido contra el muro izquierdo (refrigeradora, encimera y cocina de 4 hornillas) más una península con poza frente a la sala; abierta al comedor y sin taburetes dibujados, por eso barra e isla van en false. El walk in closet del 2do nivel va rotulado W. CL. Resolución: lámina del portal a 621×877; se leyó la misma del brochure a 910×1287. Lámina: «Sala – Comedor – Cocina · 2 Dormitorios · 2.5 Baños · Estar · 2 Balcones · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-01.jpg"
+      ]
      },
      {
       "unidad": "301 - 501",
@@ -5130,7 +5230,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Una lámina para dos unidades (301 y 501); metrajes impresos (ocupada 126.14, techada 120.47, libre 5.67) calzan con Flat 301 y Flat 501. Es prácticamente la misma planta que 201-401, con el balcón corrido un poco más largo: la única diferencia de área es el área libre (5.67 vs 5.18). También trae la alacena rotulada ALAC. y el mismo baño de servicio chico SIN ducha, por eso cuenta 2 completos + 2 medios. Cocina rotulada KITCHENETTE pero dibujada abierta al comedor sobre mesón, sin taburetes. Dormitorio principal con dos tiras de closet «CL.», sin vestidor. Resolución: portal a 621×877, se leyó la misma lámina del brochure a 910×1287. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio»."
+      "observacion": "Una lámina para dos unidades (301 y 501); metrajes impresos (ocupada 126.14, techada 120.47, libre 5.67) calzan con Flat 301 y Flat 501. Es prácticamente la misma planta que 201-401, con el balcón corrido un poco más largo: la única diferencia de área es el área libre (5.67 vs 5.18). También trae la alacena rotulada ALAC. y el mismo baño de servicio chico SIN ducha, por eso cuenta 2 completos + 2 medios. Cocina rotulada KITCHENETTE pero dibujada abierta al comedor sobre mesón, sin taburetes. Dormitorio principal con dos tiras de closet «CL.», sin vestidor. Resolución: portal a 621×877, se leyó la misma lámina del brochure a 910×1287. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-04.jpg"
+      ]
      },
      {
       "unidad": "302 - 502",
@@ -5172,7 +5275,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina de mejor resolución del proyecto (1700×2404) y por eso la de referencia para leer el bloque de servicio: aquí SÍ se ve dibujada la regadera con sus dos llaves dentro del baño de servicio, en un compartimento enlosetado aparte del inodoro y el lavatorio. Una lámina para dos unidades (302 y 502); metrajes impresos (ocupada 121.06, techada 116.90, libre 4.16) calzan con Flat 302 y Flat 502. NO trae alacena (a diferencia de 201-401 y 301-501). La cocina va rotulada KITCHENETTE (con la errata «KTICHENETTE» impresa en la lámina) y se dibuja como galería abierta al comedor, sin puerta; frente a ella hay un mesón/barra largo dibujado en capa de mobiliario pero sin taburetes, por eso cocina_barra va en false. El dormitorio principal lleva tira de closet «CL.» a lo largo del muro, no vestidor. Balcón voladizo con baranda al final de la sala. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio»."
+      "observacion": "La lámina de mejor resolución del proyecto (1700×2404) y por eso la de referencia para leer el bloque de servicio: aquí SÍ se ve dibujada la regadera con sus dos llaves dentro del baño de servicio, en un compartimento enlosetado aparte del inodoro y el lavatorio. Una lámina para dos unidades (302 y 502); metrajes impresos (ocupada 121.06, techada 116.90, libre 4.16) calzan con Flat 302 y Flat 502. NO trae alacena (a diferencia de 201-401 y 301-501). La cocina va rotulada KITCHENETTE (con la errata «KTICHENETTE» impresa en la lámina) y se dibuja como galería abierta al comedor, sin puerta; frente a ella hay un mesón/barra largo dibujado en capa de mobiliario pero sin taburetes, por eso cocina_barra va en false. El dormitorio principal lleva tira de closet «CL.» a lo largo del muro, no vestidor. Balcón voladizo con baranda al final de la sala. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-06.jpg"
+      ]
      },
      {
       "unidad": "403",
@@ -5214,7 +5320,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma tipología que 302-502 (116.90 m² techados) pero en planta espejada, con lámina propia: metrajes impresos (ocupada 120.60, techada 116.90, libre 3.70) calzan con Flat 403 y también con Flat 203 de la lista de precios, así que esta lámina cubre las dos. Bloque de servicio idéntico al de 302-502: el baño de servicio es un recinto en L con inodoro, lavatorio y un compartimento enlosetado extra que en la lámina de alta resolución de 302-502 se ve como ducha. Sin alacena. Cocina rotulada KITCHENETTE, abierta al comedor sobre mesón sin taburetes. Balcón voladizo con baranda al final de la sala. Resolución: portal a 621×877, se leyó la misma lámina del brochure a 910×1287. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio»."
+      "observacion": "Misma tipología que 302-502 (116.90 m² techados) pero en planta espejada, con lámina propia: metrajes impresos (ocupada 120.60, techada 116.90, libre 3.70) calzan con Flat 403 y también con Flat 203 de la lista de precios, así que esta lámina cubre las dos. Bloque de servicio idéntico al de 302-502: el baño de servicio es un recinto en L con inodoro, lavatorio y un compartimento enlosetado extra que en la lámina de alta resolución de 302-502 se ve como ducha. Sin alacena. Cocina rotulada KITCHENETTE, abierta al comedor sobre mesón sin taburetes. Balcón voladizo con baranda al final de la sala. Resolución: portal a 621×877, se leyó la misma lámina del brochure a 910×1287. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-05.jpg"
+      ]
      },
      {
       "unidad": "503",
@@ -5256,7 +5365,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el departamento más chico con plano publicado y el único que se vende como «1 Dormitorio + 1 Estudio»: en los hechos el estudio es un segundo dormitorio (closet, ventana y puerta). La zona de lavado es un CL. DE LAVADO —un closet cerrado con lavadora arriba y lavadero abajo, separado de la kitchenette por muro propio— no un cuarto de lavado como en los flats grandes. No hay baño de servicio ni cuarto de servicio: los baños son principal (con ducha), baño 01 (con ducha) y medio baño de visita. El área exterior está rotulada TERRAZA en el dibujo pero el listado de la misma lámina la llama «Balcón»: se anota como terraza porque es lo que dice el dibujo. La cocina va rotulada KITCHENETTE y se dibuja abierta al comedor, en L, con H/M. El vestidor del principal sí es walk in (rotulado W. CL.). Metraje impreso (ocupada 85.10, techada 82.47, libre 2.63) calza con Flat 503 y con Flats 204, 303, 404 de la lista de precios. Lámina: «1 Dormitorio · 1 Estudio · 2.5 Baños · Balcón · Área de servicio»."
+      "observacion": "Es el departamento más chico con plano publicado y el único que se vende como «1 Dormitorio + 1 Estudio»: en los hechos el estudio es un segundo dormitorio (closet, ventana y puerta). La zona de lavado es un CL. DE LAVADO —un closet cerrado con lavadora arriba y lavadero abajo, separado de la kitchenette por muro propio— no un cuarto de lavado como en los flats grandes. No hay baño de servicio ni cuarto de servicio: los baños son principal (con ducha), baño 01 (con ducha) y medio baño de visita. El área exterior está rotulada TERRAZA en el dibujo pero el listado de la misma lámina la llama «Balcón»: se anota como terraza porque es lo que dice el dibujo. La cocina va rotulada KITCHENETTE y se dibuja abierta al comedor, en L, con H/M. El vestidor del principal sí es walk in (rotulado W. CL.). Metraje impreso (ocupada 85.10, techada 82.47, libre 2.63) calza con Flat 503 y con Flats 204, 303, 404 de la lista de precios. Lámina: «1 Dormitorio · 1 Estudio · 2.5 Baños · Balcón · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-02.png"
+      ]
      },
      {
       "unidad": "504",
@@ -5298,7 +5410,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Caso al revés que el 503: acá la lámina ya vende el cuarto de estudio como dormitorio («3 Dormitorios») aunque dibuje solo dos cuartos con cama más el CUARTO DE ESTUDIO amoblado con escritorio. El cuarto de estudio tiene el mismo closet y la misma puerta que el dormitorio 01 contiguo. Sin baño de servicio ni cuarto de servicio: la zona de lavado es un CL. DE LAVADO rotulado L/S (lavadora/secadora) con TH. El área exterior va rotulada TERRAZA en el dibujo (adosada a la sala, con proyección punteada), mientras el listado de la misma lámina dice «Balcón». Hall amoblado como estar. Vestidor del principal rotulado W. CL. Metraje impreso (ocupada 107.62, techada 104.99, libre 2.63) calza con Flat 504 y con Flats 205, 304, 405 de la lista de precios. Resolución: portal a 621×877, se leyó la misma lámina del brochure a 910×1287. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio»."
+      "observacion": "Caso al revés que el 503: acá la lámina ya vende el cuarto de estudio como dormitorio («3 Dormitorios») aunque dibuje solo dos cuartos con cama más el CUARTO DE ESTUDIO amoblado con escritorio. El cuarto de estudio tiene el mismo closet y la misma puerta que el dormitorio 01 contiguo. Sin baño de servicio ni cuarto de servicio: la zona de lavado es un CL. DE LAVADO rotulado L/S (lavadora/secadora) con TH. El área exterior va rotulada TERRAZA en el dibujo (adosada a la sala, con proyección punteada), mientras el listado de la misma lámina dice «Balcón». Hall amoblado como estar. Vestidor del principal rotulado W. CL. Metraje impreso (ocupada 107.62, techada 104.99, libre 2.63) calza con Flat 504 y con Flats 205, 304, 405 de la lista de precios. Resolución: portal a 621×877, se leyó la misma lámina del brochure a 910×1287. Lámina: «3 Dormitorios · 2.5 Baños · Estar · Balcón · Área de servicio».",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-07.jpg"
+      ]
      },
      {
       "unidad": "603",
@@ -5340,7 +5455,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Penthouse dúplex de dos láminas en una hoja = UNA unidad. Hallazgo fuerte: la lámina lo vende como «3 dormitorios» pero el dibujo trae solo DOS cuartos con cama (DORMITORIO 01 y DORMITORIO PRINCIPAL) más el HALL / ESCRITORIO abierto — la lista de precios del portal ya lo tiene bien, como 2 dormitorios. Es la única unidad con la lavandería rotulada LAVANDERÍA (recinto propio con lavadero, máquinas y TH, bajo techo) en vez de CTO. DE LAVADO. El baño de servicio sí lleva regadera dibujada. La TERRAZA del nivel social es la grande del proyecto: embaldosada, con mesa de comedor de 8, cerrada por carpintería vidriada. La kitchenette es abierta en L con península de poza hacia la terraza y el comedor, sin taburetes dibujados. Walk in closet rotulado en letras completas. Metraje impreso (ocupada 147.69, techada 128.59, libre 19.10) calza exactamente con Penthouse 603. Lámina: «3 dormitorios · 2.5 Baños · Estar · Terraza · Área de servicio» — el «Estar» del listado es ese hall/escritorio, no hay una segunda sala."
+      "observacion": "Penthouse dúplex de dos láminas en una hoja = UNA unidad. Hallazgo fuerte: la lámina lo vende como «3 dormitorios» pero el dibujo trae solo DOS cuartos con cama (DORMITORIO 01 y DORMITORIO PRINCIPAL) más el HALL / ESCRITORIO abierto — la lista de precios del portal ya lo tiene bien, como 2 dormitorios. Es la única unidad con la lavandería rotulada LAVANDERÍA (recinto propio con lavadero, máquinas y TH, bajo techo) en vez de CTO. DE LAVADO. El baño de servicio sí lleva regadera dibujada. La TERRAZA del nivel social es la grande del proyecto: embaldosada, con mesa de comedor de 8, cerrada por carpintería vidriada. La kitchenette es abierta en L con península de poza hacia la terraza y el comedor, sin taburetes dibujados. Walk in closet rotulado en letras completas. Metraje impreso (ocupada 147.69, techada 128.59, libre 19.10) calza exactamente con Penthouse 603. Lámina: «3 dormitorios · 2.5 Baños · Estar · Terraza · Área de servicio» — el «Estar» del listado es ese hall/escritorio, no hay una segunda sala.",
+      "archivos": [
+       "assets/planos/conde-de-la-vega-460/plano-08.jpg"
+      ]
      }
     ]
    }
@@ -5487,7 +5605,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Único plano publicado del proyecto y única unidad que queda en venta según la información del proyecto (D'Mont ya está entregado y el D-101 es de primer piso). Es un plano de línea acotado, sin renders: rotula ambiente por ambiente, lo que lo hace el más fácil de leer de los cuatro proyectos. El hallazgo grande es el HOME OFFICE: es un dormitorio disfrazado de tres sobre tres (clóset «CL», ventana a exterior y puerta), con cama punteada dibujada — el departamento se vende como de 2 dormitorios pero tiene 3 cuartos dormibles. Sala y comedor van en un solo ambiente corrido de 8.45 de largo (sala 6.00 x 4.45) y la cocina, rotulada KITCHENETTE (3.70 de frente), es un mesón en U abierto al pasadizo y al comedor, con la encimera de 4 hornillas volcada al pasadizo y la poza en la península que mira al comedor; no hay isla exenta ni taburetes dibujados. La lavandería es un cuarto propio rotulado CTO.LAV. (1.80 x 2.65) con lavadora y lavadero, con puerta al pasadizo. Tres servicios higiénicos: S.H.V (1.45 x 1.45, solo inodoro y lavatorio, es el medio baño de visita del pasadizo), S.H.2 (2.15 x 2.65, para el dormitorio secundario y el home office) y S.H.1 (1.80 x 2.15), que abre desde el pasillo de clósets del dormitorio principal — o sea el principal sí es suite. Advertencia de lectura: este plano de línea NO dibuja duchas ni cabinas en ningún baño; el S.H.2 y el S.H.1 se cuentan como completos por tamaño y por el paño de piso libre enchapado que les queda además del inodoro y el lavatorio, y el S.H.V como medio baño porque en 1.45 x 1.45 solo entran inodoro y lavatorio. El principal tiene dos frentes de clóset enfrentados a lo largo de un pasillo de 1.60 x 1.05, pero están dibujados como clósets de puertas, no como vestidor. No hay dormitorio ni baño de servicio, ni balcón: la lámina imprime ÁREA TECHADA = 115.71 m² y ÁREA OCUPADA TOTAL = 115.71 m², es decir área libre 0.00 — todo el departamento es techado y no hay ningún exterior propio. Metraje impreso en la lámina (115.71 / 115.71): se deja como referencia, el área oficial sale de la lista de precios. La lámina advierte que «las dimensiones internas de los ambientes están sujetas a ajustes que puedan surgir durante el proceso de acabados en obra»."
+      "observacion": "Único plano publicado del proyecto y única unidad que queda en venta según la información del proyecto (D'Mont ya está entregado y el D-101 es de primer piso). Es un plano de línea acotado, sin renders: rotula ambiente por ambiente, lo que lo hace el más fácil de leer de los cuatro proyectos. El hallazgo grande es el HOME OFFICE: es un dormitorio disfrazado de tres sobre tres (clóset «CL», ventana a exterior y puerta), con cama punteada dibujada — el departamento se vende como de 2 dormitorios pero tiene 3 cuartos dormibles. Sala y comedor van en un solo ambiente corrido de 8.45 de largo (sala 6.00 x 4.45) y la cocina, rotulada KITCHENETTE (3.70 de frente), es un mesón en U abierto al pasadizo y al comedor, con la encimera de 4 hornillas volcada al pasadizo y la poza en la península que mira al comedor; no hay isla exenta ni taburetes dibujados. La lavandería es un cuarto propio rotulado CTO.LAV. (1.80 x 2.65) con lavadora y lavadero, con puerta al pasadizo. Tres servicios higiénicos: S.H.V (1.45 x 1.45, solo inodoro y lavatorio, es el medio baño de visita del pasadizo), S.H.2 (2.15 x 2.65, para el dormitorio secundario y el home office) y S.H.1 (1.80 x 2.15), que abre desde el pasillo de clósets del dormitorio principal — o sea el principal sí es suite. Advertencia de lectura: este plano de línea NO dibuja duchas ni cabinas en ningún baño; el S.H.2 y el S.H.1 se cuentan como completos por tamaño y por el paño de piso libre enchapado que les queda además del inodoro y el lavatorio, y el S.H.V como medio baño porque en 1.45 x 1.45 solo entran inodoro y lavatorio. El principal tiene dos frentes de clóset enfrentados a lo largo de un pasillo de 1.60 x 1.05, pero están dibujados como clósets de puertas, no como vestidor. No hay dormitorio ni baño de servicio, ni balcón: la lámina imprime ÁREA TECHADA = 115.71 m² y ÁREA OCUPADA TOTAL = 115.71 m², es decir área libre 0.00 — todo el departamento es techado y no hay ningún exterior propio. Metraje impreso en la lámina (115.71 / 115.71): se deja como referencia, el área oficial sale de la lista de precios. La lámina advierte que «las dimensiones internas de los ambientes están sujetas a ajustes que puedan surgir durante el proceso de acabados en obra».",
+      "archivos": [
+       "assets/planos/dmont-dicon/plano-d101-1.jpg"
+      ]
      }
     ]
    }
@@ -6035,7 +6156,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Lámina «FLAT 103 · DPT. 103 · 3 DORMITORIOS». Metraje impreso en la lámina (ÁREA TOTAL 111.69 m2): se deja como referencia, el área oficial sale de la lista de precios. OJO: el dpto. 103 aparece dos veces en el brochure — como FLAT 103 con 111.69 m2 (lámina 12) y dentro de TIPO X03 con 110.40 m2 (lámina 14), con la misma planta dibujada. Dato a revisar contra la lista de precios. El principal tiene clóset lineal de pared, no vestidor. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados."
+      "observacion": "Lámina «FLAT 103 · DPT. 103 · 3 DORMITORIOS». Metraje impreso en la lámina (ÁREA TOTAL 111.69 m2): se deja como referencia, el área oficial sale de la lista de precios. OJO: el dpto. 103 aparece dos veces en el brochure — como FLAT 103 con 111.69 m2 (lámina 12) y dentro de TIPO X03 con 110.40 m2 (lámina 14), con la misma planta dibujada. Dato a revisar contra la lista de precios. El principal tiene clóset lineal de pared, no vestidor. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados.",
+      "archivos": [
+       "assets/planos/estelar-1080/estelar-12.png"
+      ]
      },
      {
       "unidad": "FLAT 104 · dpto. 104",
@@ -6077,7 +6201,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Lámina «FLAT 104 · DPT. 104 · 3 DORMITORIOS». Metraje impreso en la lámina (ÁREA TOTAL 108.03 m2): referencia, el área oficial sale de la lista de precios. Es el único de las tres láminas del portal sin medio baño de visita: los tres baños que se dibujan son completos (dos apilados en la columna izquierda, uno junto al tercer dormitorio). El principal abre directo al baño de arriba por un vano en el muro. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados."
+      "observacion": "Lámina «FLAT 104 · DPT. 104 · 3 DORMITORIOS». Metraje impreso en la lámina (ÁREA TOTAL 108.03 m2): referencia, el área oficial sale de la lista de precios. Es el único de las tres láminas del portal sin medio baño de visita: los tres baños que se dibujan son completos (dos apilados en la columna izquierda, uno junto al tercer dormitorio). El principal abre directo al baño de arriba por un vano en el muro. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados.",
+      "archivos": [
+       "assets/planos/estelar-1080/estelar-12.png"
+      ]
      },
      {
       "unidad": "TIPO X02 · dptos. 202 / 302 / 402 / 502",
@@ -6119,7 +6246,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Lámina «TIPO X02 · DPT 202 / DPTO 302 / DPTO 402 / DPTO 502 · 2 DORMITORIOS», marcada SOLD OUT. Metraje impreso (ÁREA TOTAL 80.03 m2): referencia. La banda diagonal de SOLD OUT tapa parte de la cocina, pero la cocina, la lavandería y los tres baños se leen igual. El principal accede al baño por un pasillo entre dos clósets enfrentados, o sea vestidor. El exterior es una franja enlosetada corrida sobre toda la fachada derecha, con jardineras y taburetes. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados."
+      "observacion": "Lámina «TIPO X02 · DPT 202 / DPTO 302 / DPTO 402 / DPTO 502 · 2 DORMITORIOS», marcada SOLD OUT. Metraje impreso (ÁREA TOTAL 80.03 m2): referencia. La banda diagonal de SOLD OUT tapa parte de la cocina, pero la cocina, la lavandería y los tres baños se leen igual. El principal accede al baño por un pasillo entre dos clósets enfrentados, o sea vestidor. El exterior es una franja enlosetada corrida sobre toda la fachada derecha, con jardineras y taburetes. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados.",
+      "archivos": [
+       "assets/planos/estelar-1080/estelar-14.png"
+      ]
      },
      {
       "unidad": "TIPO X03 · dptos. 103 / 203 / 303 / 403 / 503",
@@ -6161,7 +6291,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Lámina «TIPO X03 · DPTO. 103 / DPTO. 203 / DPTO. 303 / DPTO. 403 / DPTO 503 · 3 DORMITORIOS». Metraje impreso (ÁREA TOTAL 110.40 m2): referencia. Es EXACTAMENTE la misma planta que la lámina FLAT 103 (mismos muros y mismo mobiliario) pero con 110.40 en vez de 111.69 m2 y con el dpto. 103 listado en las dos láminas: contradicción del brochure a revisar contra la lista de precios. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados."
+      "observacion": "Lámina «TIPO X03 · DPTO. 103 / DPTO. 203 / DPTO. 303 / DPTO. 403 / DPTO 503 · 3 DORMITORIOS». Metraje impreso (ÁREA TOTAL 110.40 m2): referencia. Es EXACTAMENTE la misma planta que la lámina FLAT 103 (mismos muros y mismo mobiliario) pero con 110.40 en vez de 111.69 m2 y con el dpto. 103 listado en las dos láminas: contradicción del brochure a revisar contra la lista de precios. La lámina no desglosa área techada / área libre, por eso balcon_techado queda en null. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados.",
+      "archivos": [
+       "assets/planos/estelar-1080/estelar-14.png"
+      ]
      },
      {
       "unidad": "DÚPLEX dpto. 602",
@@ -6203,7 +6336,10 @@
        "doble_altura": null,
        "azotea_propia": false
       },
-      "observacion": "Lámina «DUPLEX · DPTO. 602 · 3 DORMITORIOS», marcada SOLD OUT. Metraje impreso (ÁREA TOTAL 159.11 m2): referencia. Dúplex de dos láminas de planta que se cuentan como UNA unidad. Primera planta: sala-comedor y cocina en U con barra de 3 taburetes; el fondo es una superficie enlosetada de piso propio con comedor exterior (terraza) y, en su extremo, la lavandería en recinto propio. Segunda planta: 3 dormitorios con 3 baños completos y un rincón de estar. La banda diagonal de SOLD OUT tapa la sala y la zona de ingreso de la primera planta: por eso bano_visita y medios_banos quedan en null (no se puede ver si hay medio baño junto al ingreso). doble_altura queda en null: la planta alta dibuja un vacío junto a la escalera pero no se puede saber a qué ambiente pertenece. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados."
+      "observacion": "Lámina «DUPLEX · DPTO. 602 · 3 DORMITORIOS», marcada SOLD OUT. Metraje impreso (ÁREA TOTAL 159.11 m2): referencia. Dúplex de dos láminas de planta que se cuentan como UNA unidad. Primera planta: sala-comedor y cocina en U con barra de 3 taburetes; el fondo es una superficie enlosetada de piso propio con comedor exterior (terraza) y, en su extremo, la lavandería en recinto propio. Segunda planta: 3 dormitorios con 3 baños completos y un rincón de estar. La banda diagonal de SOLD OUT tapa la sala y la zona de ingreso de la primera planta: por eso bano_visita y medios_banos quedan en null (no se puede ver si hay medio baño junto al ingreso). doble_altura queda en null: la planta alta dibuja un vacío junto a la escalera pero no se puede saber a qué ambiente pertenece. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados.",
+      "archivos": [
+       "assets/planos/estelar-1080/estelar-17.png"
+      ]
      },
      {
       "unidad": "DÚPLEX dpto. 603",
@@ -6245,7 +6381,10 @@
        "doble_altura": null,
        "azotea_propia": false
       },
-      "observacion": "Lámina «DUPLEX · DPTO. 603 · 3 DORMITORIOS». Metraje impreso (ÁREA TOTAL 223.60 m2): referencia. Es la unidad más grande de las tres láminas del portal. Dúplex de dos plantas contado como UNA unidad. Primera planta: sala-comedor sobre madera, medio baño de visita, y —tras un muro— una cocina enlosetada cerrada con comedor de diario y lavandería en recinto propio; al fondo, terraza con mesa redonda y parrilla. Segunda planta: 3 dormitorios, 3 baños completos, estar con sofá y una terraza al extremo izquierdo. doble_altura queda en null por la misma razón que el 602: hay un vacío junto a la escalera que no se puede atribuir a un ambiente. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados."
+      "observacion": "Lámina «DUPLEX · DPTO. 603 · 3 DORMITORIOS». Metraje impreso (ÁREA TOTAL 223.60 m2): referencia. Es la unidad más grande de las tres láminas del portal. Dúplex de dos plantas contado como UNA unidad. Primera planta: sala-comedor sobre madera, medio baño de visita, y —tras un muro— una cocina enlosetada cerrada con comedor de diario y lavandería en recinto propio; al fondo, terraza con mesa redonda y parrilla. Segunda planta: 3 dormitorios, 3 baños completos, estar con sofá y una terraza al extremo izquierdo. doble_altura queda en null por la misma razón que el 602: hay un vacío junto a la escalera que no se puede atribuir a un ambiente. La lámina del portal es una captura de baja resolución (660x233 px); la lectura se hizo sobre la MISMA lámina del brochure oficial assets/brochures/BROCHURE_ESTELAR_1080_13.04.26.pdf renderizada a 300 dpi. El brochure no rotula ambientes: todo sale del mobiliario y de los muros dibujados.",
+      "archivos": [
+       "assets/planos/estelar-1080/estelar-17.png"
+      ]
      }
     ]
    }
@@ -6498,7 +6637,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Unidad de planta baja en L. La COCINA es un recinto con muros propios pero se abre al COMEDOR por una barra con 3 taburetes, no por una puerta: por eso se clasifica como abierta con barra y sin isla exenta. La LAV. es un cuarto rotulado aparte (lavadora + secadora) pero lleva el aspa de área sin techo, igual que el PATIO contiguo: se lava a la intemperie aunque el recinto sea propio. El PATIO es superficie de piso a nivel con maceteros, sin franja de césped dibujada (a diferencia del DPTO 102), por eso patio_jardin va en false. El cuarto baño, el que da a la zona social, se lee con solo dos aparatos y sin recuadro de ducha: se cuenta como medio baño de visita, pero a 730 px es el dato menos firme de la ficha. · Metraje impreso en la lámina (techada 93.84 m², total 119.90 m²): referencia, el área oficial sale de la lista de precios."
+      "observacion": "Unidad de planta baja en L. La COCINA es un recinto con muros propios pero se abre al COMEDOR por una barra con 3 taburetes, no por una puerta: por eso se clasifica como abierta con barra y sin isla exenta. La LAV. es un cuarto rotulado aparte (lavadora + secadora) pero lleva el aspa de área sin techo, igual que el PATIO contiguo: se lava a la intemperie aunque el recinto sea propio. El PATIO es superficie de piso a nivel con maceteros, sin franja de césped dibujada (a diferencia del DPTO 102), por eso patio_jardin va en false. El cuarto baño, el que da a la zona social, se lee con solo dos aparatos y sin recuadro de ducha: se cuenta como medio baño de visita, pero a 730 px es el dato menos firme de la ficha. · Metraje impreso en la lámina (techada 93.84 m², total 119.90 m²): referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/floresta-living-444/plano-01.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 102",
@@ -6540,7 +6682,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La unidad más grande del proyecto y la única con jardín de verdad: los dos PATIO rotulados (uno al norte y otro al sur, ambos con el aspa de sin techo y con BBQ) llevan una franja verde continua de césped contra el lindero, no solo maceteros. La COCINA es un recinto cerrado con muros y puerta, sin barra ni isla. En la zona de servicio, pegada a la cocina, hay un cuarto con un rótulo vertical de dos líneas que a 730 px no se puede leer (podría decir 'dormitorio de servicio' o 'dormitorio secundario') y un cuarto baño chico: por eso cuarto_servicio, bano_servicio, bano_servicio_ducha y medios_banos quedan en null — el plano no deja resolverlo, y null no es false. Los 3 baños que sí se leen sirven a los 3 dormitorios rotulados. · Metraje impreso en la lámina (techada 133.05 m², total 197.66 m²): referencia."
+      "observacion": "La unidad más grande del proyecto y la única con jardín de verdad: los dos PATIO rotulados (uno al norte y otro al sur, ambos con el aspa de sin techo y con BBQ) llevan una franja verde continua de césped contra el lindero, no solo maceteros. La COCINA es un recinto cerrado con muros y puerta, sin barra ni isla. En la zona de servicio, pegada a la cocina, hay un cuarto con un rótulo vertical de dos líneas que a 730 px no se puede leer (podría decir 'dormitorio de servicio' o 'dormitorio secundario') y un cuarto baño chico: por eso cuarto_servicio, bano_servicio, bano_servicio_ducha y medios_banos quedan en null — el plano no deja resolverlo, y null no es false. Los 3 baños que sí se leen sirven a los 3 dormitorios rotulados. · Metraje impreso en la lámina (techada 133.05 m², total 197.66 m²): referencia.",
+      "archivos": [
+       "assets/planos/floresta-living-444/plano-02.jpg"
+      ]
      },
      {
       "unidad": "TÍPICO 03 — DPTOS. 303, 403",
@@ -6582,7 +6727,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Tipología repetida de pisos altos (303 y 403), sin área libre propia: no hay balcón, terraza ni patio en la lámina. Es la única del proyecto con la LAVANDERÍA rotulada como recinto interior techado (lavadora + lavadero), con un ducto de ventilación con aspa pegado a ella. Cocina cerrada con puerta, sin barra ni isla. Se leen 3 baños, cada uno con su llave de ducha en pared, uno por dormitorio: no hay medio baño de visita. · Metraje impreso en la lámina (área total 85.00 m²): referencia, el área oficial sale de la lista de precios."
+      "observacion": "Tipología repetida de pisos altos (303 y 403), sin área libre propia: no hay balcón, terraza ni patio en la lámina. Es la única del proyecto con la LAVANDERÍA rotulada como recinto interior techado (lavadora + lavadero), con un ducto de ventilación con aspa pegado a ella. Cocina cerrada con puerta, sin barra ni isla. Se leen 3 baños, cada uno con su llave de ducha en pared, uno por dormitorio: no hay medio baño de visita. · Metraje impreso en la lámina (área total 85.00 m²): referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/floresta-living-444/plano-03.jpg"
+      ]
      },
      {
       "unidad": "DÚPLEX 603 (primer y segundo nivel — una sola unidad)",
@@ -6624,7 +6772,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Los dos niveles están en la misma lámina y se cuentan como UNA unidad. Primer nivel: 2 dormitorios (principal + 1), 2 baños con ducha, sala-comedor y cocina con isla de 2 taburetes abierta al comedor, más la escalera. Segundo nivel: SALA DE ESTAR rotulada (por eso sala_estar_extra en true), un tercer baño y la TERRAZA rotulada con el aspa de sin techo, con BBQ y la lavadora al aire libre: lavar queda a la intemperie y sin recinto propio. La lámina no rotula ningún vacío ni azotea, y la escalera sube al estar techado, no a un techo de uso exclusivo. · Metraje impreso en la lámina (techada 85.93 m², total 110.26 m²): referencia."
+      "observacion": "Los dos niveles están en la misma lámina y se cuentan como UNA unidad. Primer nivel: 2 dormitorios (principal + 1), 2 baños con ducha, sala-comedor y cocina con isla de 2 taburetes abierta al comedor, más la escalera. Segundo nivel: SALA DE ESTAR rotulada (por eso sala_estar_extra en true), un tercer baño y la TERRAZA rotulada con el aspa de sin techo, con BBQ y la lavadora al aire libre: lavar queda a la intemperie y sin recinto propio. La lámina no rotula ningún vacío ni azotea, y la escalera sube al estar techado, no a un techo de uso exclusivo. · Metraje impreso en la lámina (techada 85.93 m², total 110.26 m²): referencia.",
+      "archivos": [
+       "assets/planos/floresta-living-444/plano-04.jpg"
+      ]
      }
     ]
    }
@@ -7297,7 +7448,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es la unidad de 54.37 m² que la asesora describe como '1 dorm con walking closet y cocina kitchenette': el plano confirma los tres datos (walk-in de dos bancos, cocina abierta compacta sin barra ni isla, 54.37 m²). Sobre la 'terraza al parque': fuera del muro de la sala y del dormitorio se dibuja una franja pavimentada corrida con jardinera, pero la lámina declara ÁREA LIBRE 0.00 m², así que no se puede saber desde el plano si esa franja pertenece a la unidad o es vereda/jardín del edificio. El baño tiene dos puertas (tipo jack-and-jill) y es el único de la unidad. · Metraje impreso en la lámina (m2_techada=54.37, m2_libre=0.0, m2_total=54.37): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Es la unidad de 54.37 m² que la asesora describe como '1 dorm con walking closet y cocina kitchenette': el plano confirma los tres datos (walk-in de dos bancos, cocina abierta compacta sin barra ni isla, 54.37 m²). Sobre la 'terraza al parque': fuera del muro de la sala y del dormitorio se dibuja una franja pavimentada corrida con jardinera, pero la lámina declara ÁREA LIBRE 0.00 m², así que no se puede saber desde el plano si esa franja pertenece a la unidad o es vereda/jardín del edificio. El baño tiene dos puertas (tipo jack-and-jill) y es el único de la unidad. · Metraje impreso en la lámina (m2_techada=54.37, m2_libre=0.0, m2_total=54.37): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-01.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 104 — 01 DORMITORIO",
@@ -7339,7 +7493,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Única tipología del proyecto con isla/barra de cocina de 4 taburetes. La terraza de 25.03 m² es casi la mitad del área techada y absorbe la lavandería: lavar queda a la intemperie, dentro del mismo espacio de estar exterior. · Metraje impreso en la lámina (m2_techada=54.82, m2_libre=25.03, m2_total=79.85): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Única tipología del proyecto con isla/barra de cocina de 4 taburetes. La terraza de 25.03 m² es casi la mitad del área techada y absorbe la lavandería: lavar queda a la intemperie, dentro del mismo espacio de estar exterior. · Metraje impreso en la lámina (m2_techada=54.82, m2_libre=25.03, m2_total=79.85): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-02.jpg"
+      ]
      },
      {
       "unidad": "TIPO 4 — 01 DORMITORIO (DPTOS. 204, 304, 404, 504, 604, 704, 804)",
@@ -7381,7 +7538,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El balcón está dibujado con piso de porcelanato, antepechos y dos jardineras, pero la lámina declara ÁREA LIBRE 0.00 m²: es decir, está computado dentro del área techada. La tipología más repetida del edificio en 1 dormitorio (7 unidades). · Metraje impreso en la lámina (m2_techada=51.08, m2_libre=0.0, m2_total=51.08): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "El balcón está dibujado con piso de porcelanato, antepechos y dos jardineras, pero la lámina declara ÁREA LIBRE 0.00 m²: es decir, está computado dentro del área techada. La tipología más repetida del edificio en 1 dormitorio (7 unidades). · Metraje impreso en la lámina (m2_techada=51.08, m2_libre=0.0, m2_total=51.08): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-03.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 905 — 02 DORMITORIOS",
@@ -7423,7 +7583,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Piso 9 (último). La terraza de 11.88 m² hace también de tendal: lavadora y secadora están a la intemperie. Sin estudio ni sala de estar adicional. · Metraje impreso en la lámina (m2_techada=69.56, m2_libre=11.88, m2_total=81.44): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Piso 9 (último). La terraza de 11.88 m² hace también de tendal: lavadora y secadora están a la intemperie. Sin estudio ni sala de estar adicional. · Metraje impreso en la lámina (m2_techada=69.56, m2_libre=11.88, m2_total=81.44): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-04.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 906 — 02 DORMITORIOS",
@@ -7465,7 +7628,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Espejo del 905 en el mismo piso 9, con la terraza más chica del grupo (9.00 m²). · Metraje impreso en la lámina (m2_techada=70.04, m2_libre=9.0, m2_total=79.04): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Espejo del 905 en el mismo piso 9, con la terraza más chica del grupo (9.00 m²). · Metraje impreso en la lámina (m2_techada=70.04, m2_libre=9.0, m2_total=79.04): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-05.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 907 — 02 DORMITORIOS",
@@ -7507,7 +7673,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Distribución prácticamente idéntica al 905. · Metraje impreso en la lámina (m2_techada=68.89, m2_libre=10.15, m2_total=79.04): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Distribución prácticamente idéntica al 905. · Metraje impreso en la lámina (m2_techada=68.89, m2_libre=10.15, m2_total=79.04): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-06.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 908 — 02 DORMITORIOS",
@@ -7549,11 +7718,14 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Espejo del 906/907 en el piso 9. · Metraje impreso en la lámina (m2_techada=70.4, m2_libre=11.05, m2_total=81.45): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Espejo del 906/907 en el piso 9. · Metraje impreso en la lámina (m2_techada=70.4, m2_libre=11.05, m2_total=81.45): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-07.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 103 — 02 DORMITORIOS + 01 ESTUDIO",
-      "archivo": "assets/planos/la-floresta-boulevard/plano-08.jpg (versión alta resolución: plano-20.jpg)",
+      "archivo": "assets/planos/la-floresta-boulevard/plano-08.jpg",
       "dorm_declarados": 2,
       "dorm_reales": 2,
       "estudio": {
@@ -7591,7 +7763,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "CASO TESTIGO. Es el depa más grande del proyecto y el único con sala de estar además de la sala-comedor. El 'estudio' está encerrado por muros en tres lados y sería trivialmente convertible en dormitorio (le falta solo poner puerta y clóset), pero tal como está dibujado no califica: sin closet y sin puerta. La cocina cerrada con barra de 2 taburetes y encimera a gas es exactamente lo que la asesora vende como 'cocina cerrada' y 'con puntos de gas'. · Metraje impreso en la lámina (m2_techada=115.0, m2_libre=25.71, m2_total=140.71): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "CASO TESTIGO. Es el depa más grande del proyecto y el único con sala de estar además de la sala-comedor. El 'estudio' está encerrado por muros en tres lados y sería trivialmente convertible en dormitorio (le falta solo poner puerta y clóset), pero tal como está dibujado no califica: sin closet y sin puerta. La cocina cerrada con barra de 2 taburetes y encimera a gas es exactamente lo que la asesora vende como 'cocina cerrada' y 'con puntos de gas'. · Metraje impreso en la lámina (m2_techada=115.0, m2_libre=25.71, m2_total=140.71): se deja como referencia, el área oficial sale de la lista de precios. · Fuente: versión alta resolución: plano-20.jpg",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-08.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 105 — 02 DORMITORIOS + 01 ESTUDIO",
@@ -7633,7 +7808,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Área libre (65.95 m²) casi tan grande como el área techada (81.38 m²): terraza pavimentada más franja de jardín con vegetación. Es la unidad con más área libre del proyecto. · Metraje impreso en la lámina (m2_techada=81.38, m2_libre=65.95, m2_total=147.33): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Área libre (65.95 m²) casi tan grande como el área techada (81.38 m²): terraza pavimentada más franja de jardín con vegetación. Es la unidad con más área libre del proyecto. · Metraje impreso en la lámina (m2_techada=81.38, m2_libre=65.95, m2_total=147.33): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-09.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 106 — 02 DORMITORIOS + 01 ESTUDIO",
@@ -7675,7 +7853,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El estudio es el único ambiente de la unidad con salida propia a la terraza además de la sala; eso lo hace más 'ambiente de paso' que dormitorio. · Metraje impreso en la lámina (m2_techada=78.33, m2_libre=53.13, m2_total=131.46): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "El estudio es el único ambiente de la unidad con salida propia a la terraza además de la sala; eso lo hace más 'ambiente de paso' que dormitorio. · Metraje impreso en la lámina (m2_techada=78.33, m2_libre=53.13, m2_total=131.46): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-10.jpg"
+      ]
      },
      {
       "unidad": "DPTO. 108 — 02 DORMITORIOS + 01 ESTUDIO",
@@ -7717,7 +7898,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "A diferencia del 105 y el 106, acá la lavandería está DENTRO de la cocina cerrada, no en la terraza. Ese es el patrón que se repite en las tipologías chicas (TIPO 6 a 9). · Metraje impreso en la lámina (m2_techada=81.38, m2_libre=40.24, m2_total=121.62): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "A diferencia del 105 y el 106, acá la lavandería está DENTRO de la cocina cerrada, no en la terraza. Ese es el patrón que se repite en las tipologías chicas (TIPO 6 a 9). · Metraje impreso en la lámina (m2_techada=81.38, m2_libre=40.24, m2_total=121.62): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-11.jpg"
+      ]
      },
      {
       "unidad": "TIPO 1 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 201, 301, 401, 501, 601, 701, 801)",
@@ -7759,7 +7943,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El depa más grande de la torre por área techada (126.54 m²) y el que mejor resuelve el servicio: lavandería como recinto propio, no dentro de la cocina ni en la terraza, y con su propio WC. No hay cuarto de servicio (dormitorio de servicio): en la zona de lavandería no se dibuja ninguna cama. ÁREA LIBRE 0.00 m² pese al balcón, o sea que el balcón está computado como área techada. · Metraje impreso en la lámina (m2_techada=126.54, m2_libre=0.0, m2_total=126.54): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "El depa más grande de la torre por área techada (126.54 m²) y el que mejor resuelve el servicio: lavandería como recinto propio, no dentro de la cocina ni en la terraza, y con su propio WC. No hay cuarto de servicio (dormitorio de servicio): en la zona de lavandería no se dibuja ninguna cama. ÁREA LIBRE 0.00 m² pese al balcón, o sea que el balcón está computado como área techada. · Metraje impreso en la lámina (m2_techada=126.54, m2_libre=0.0, m2_total=126.54): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-12.jpg"
+      ]
      },
      {
       "unidad": "TIPO 2 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 202, 302, 402, 502, 602, 702, 802)",
@@ -7801,7 +7988,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma lógica que el TIPO 1 con la planta girada: el estudio queda en el extremo opuesto a la sala. Sin cuarto de servicio. · Metraje impreso en la lámina (m2_techada=122.84, m2_libre=0.0, m2_total=122.84): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Misma lógica que el TIPO 1 con la planta girada: el estudio queda en el extremo opuesto a la sala. Sin cuarto de servicio. · Metraje impreso en la lámina (m2_techada=122.84, m2_libre=0.0, m2_total=122.84): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-13.jpg"
+      ]
      },
      {
       "unidad": "TIPO 3 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 203, 303, 403, 503, 603, 703, 803)",
@@ -7843,7 +8033,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El WC de servicio abre directamente hacia el patio de lavandería y solo tiene inodoro (sin ducha), por eso se cuenta como medio baño. No hay cuarto de servicio. · Metraje impreso en la lámina (m2_techada=113.76, m2_libre=0.0, m2_total=113.76): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "El WC de servicio abre directamente hacia el patio de lavandería y solo tiene inodoro (sin ducha), por eso se cuenta como medio baño. No hay cuarto de servicio. · Metraje impreso en la lámina (m2_techada=113.76, m2_libre=0.0, m2_total=113.76): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-14.jpg"
+      ]
      },
      {
       "unidad": "TIPO 5 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 205, 305, 405, 505, 605, 705, 805)",
@@ -7885,7 +8078,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Dos WC pequeños consecutivos junto al ingreso: uno de visitas (inodoro + lavatorio) y otro que abre al patio de lavandería. Sin cuarto de servicio. · Metraje impreso en la lámina (m2_techada=117.34, m2_libre=0.0, m2_total=117.34): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Dos WC pequeños consecutivos junto al ingreso: uno de visitas (inodoro + lavatorio) y otro que abre al patio de lavandería. Sin cuarto de servicio. · Metraje impreso en la lámina (m2_techada=117.34, m2_libre=0.0, m2_total=117.34): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-15.jpg"
+      ]
      },
      {
       "unidad": "TIPO 6 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 206, 306, 406, 506, 606, 706, 806)",
@@ -7927,7 +8123,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Acá se ve nítido el barrido de puerta de la cocina: es cocina cerrada de verdad, con lavandería adentro y encimera a gas. El escritorio no está dentro del estudio sino en el pasillo, contra el muro de cocina. Los clósets de los dormitorios son de banco de colgadores dentro de la habitación, no walk-in independientes. · Metraje impreso en la lámina (m2_techada=81.46, m2_libre=0.0, m2_total=81.46): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Acá se ve nítido el barrido de puerta de la cocina: es cocina cerrada de verdad, con lavandería adentro y encimera a gas. El escritorio no está dentro del estudio sino en el pasillo, contra el muro de cocina. Los clósets de los dormitorios son de banco de colgadores dentro de la habitación, no walk-in independientes. · Metraje impreso en la lámina (m2_techada=81.46, m2_libre=0.0, m2_total=81.46): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-16.jpg"
+      ]
      },
      {
       "unidad": "TIPO 7 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 207, 307, 407, 507, 607, 707, 807)",
@@ -7969,7 +8168,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Tipología más chica del grupo 2 dorm + estudio (79.06 m²). Junto con el TIPO 8 son las únicas dos con esa área exacta. · Metraje impreso en la lámina (m2_techada=79.06, m2_libre=0.0, m2_total=79.06): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Tipología más chica del grupo 2 dorm + estudio (79.06 m²). Junto con el TIPO 8 son las únicas dos con esa área exacta. · Metraje impreso en la lámina (m2_techada=79.06, m2_libre=0.0, m2_total=79.06): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-17.jpg"
+      ]
      },
      {
       "unidad": "TIPO 8 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 208, 308, 408, 508, 608, 708, 808)",
@@ -8011,7 +8213,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Espejo del TIPO 7. · Metraje impreso en la lámina (m2_techada=79.06, m2_libre=0.0, m2_total=79.06): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Espejo del TIPO 7. · Metraje impreso en la lámina (m2_techada=79.06, m2_libre=0.0, m2_total=79.06): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-18.jpg"
+      ]
      },
      {
       "unidad": "TIPO 9 — 02 DORMITORIOS + 01 ESTUDIO (DPTOS. 209, 309, 409, 509, 609, 709, 809)",
@@ -8053,7 +8258,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Espejo del TIPO 6. · Metraje impreso en la lámina (m2_techada=81.46, m2_libre=0.0, m2_total=81.46): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Espejo del TIPO 6. · Metraje impreso en la lámina (m2_techada=81.46, m2_libre=0.0, m2_total=81.46): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/la-floresta-boulevard/plano-19.jpg"
+      ]
      }
     ]
    }
@@ -8964,7 +9172,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El nombre del archivo del set 'balance' dice 142.46 m² pero la ficha de la lámina dice 108.96 + 33.25 = 142.21 m². Los 33.25 m² no techados se reparten en dos espacios exteriores (patio oeste con estar y terraza junto a la sala) más el patio de servicio; la lámina no da el metraje de cada uno. · Metraje impreso en la lámina (m2_techada=108.96, m2_libre=33.25, m2_total=142.21): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-08.jpg (lámina Nexo con ficha): los dos baños completos están pareados y ambos abren con su puerta al pasillo, no desde el dormitorio principal — no es suite. Los exteriores del semi-sótano (patio oeste y terraza junto a la sala) están dibujados enlosetados, con maceteros pero sin área verde de suelo: no cuenta como patio-jardín. La cocina no dibuja despensa y no hay ascensor dentro del departamento. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita."
+      "observacion": "El nombre del archivo del set 'balance' dice 142.46 m² pero la ficha de la lámina dice 108.96 + 33.25 = 142.21 m². Los 33.25 m² no techados se reparten en dos espacios exteriores (patio oeste con estar y terraza junto a la sala) más el patio de servicio; la lámina no da el metraje de cada uno. · Metraje impreso en la lámina (m2_techada=108.96, m2_libre=33.25, m2_total=142.21): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-08.jpg (lámina Nexo con ficha): los dos baños completos están pareados y ambos abren con su puerta al pasillo, no desde el dormitorio principal — no es suite. Los exteriores del semi-sótano (patio oeste y terraza junto a la sala) están dibujados enlosetados, con maceteros pero sin área verde de suelo: no cuenta como patio-jardín. La cocina no dibuja despensa y no hay ascensor dentro del departamento. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita.",
+      "archivos": [
+       "assets/planos/monte-carmelo-551/plano-08.jpg"
+      ]
      },
      {
       "unidad": "Flat SS02",
@@ -9006,7 +9217,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Único flat de 2 dormitorios del edificio. Es el más chico (103 m²) y aun así declara 2.5 baños. No se pudo identificar con certeza el lavadero en la lámina. · Metraje impreso en la lámina (m2_techada=89.8, m2_libre=13.2, m2_total=103.0): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-09.jpg: el dormitorio principal tiene su propio baño en el ala oeste (ducha, inodoro y lavatorio), con la puerta desde el dormitorio — es suite. Los dos exteriores están enlosetados con maceteros y parrilla, sin área verde de suelo. La cocina no dibuja despensa. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. En plano-09.jpg (730×516) se distinguen dos pozas en la cocina y un posible lavadero junto a la refrigeradora, pero a esa resolución no se puede separar la poza de cocina de un lavadero y no hay lavadora dibujada. No existe lámina de mayor resolución de esta unidad."
+      "observacion": "Único flat de 2 dormitorios del edificio. Es el más chico (103 m²) y aun así declara 2.5 baños. No se pudo identificar con certeza el lavadero en la lámina. · Metraje impreso en la lámina (m2_techada=89.8, m2_libre=13.2, m2_total=103.0): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-09.jpg: el dormitorio principal tiene su propio baño en el ala oeste (ducha, inodoro y lavatorio), con la puerta desde el dormitorio — es suite. Los dos exteriores están enlosetados con maceteros y parrilla, sin área verde de suelo. La cocina no dibuja despensa. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. En plano-09.jpg (730×516) se distinguen dos pozas en la cocina y un posible lavadero junto a la refrigeradora, pero a esa resolución no se puede separar la poza de cocina de un lavadero y no hay lavadora dibujada. No existe lámina de mayor resolución de esta unidad.",
+      "archivos": [
+       "assets/planos/monte-carmelo-551/plano-09.jpg"
+      ]
      },
      {
       "unidad": "Dúplex SS03",
@@ -9048,7 +9262,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es la unidad con más área libre en proporción: 52.58 m² de terraza sobre 80.02 m² techados (39% del total es aire libre). La lámina Nexo equivalente (plano-10.jpg) declara 80.00 + 52.95 = 132.95 m², un poco distinto. La lavandería está a la intemperie, en la terraza. · Metraje impreso en la lámina (m2_techada=80.02, m2_libre=52.58, m2_total=132.6): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance' (mayor resolución que plano-10.jpg): en el segundo nivel los dos dormitorios tienen baño propio con ducha; el principal entra por su doble clóset. La terraza del primer nivel es piso enlosetado con maceteros, sin área verde de suelo. No hay vacío de doble altura dibujado ni azotea sobre el segundo nivel. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita."
+      "observacion": "Es la unidad con más área libre en proporción: 52.58 m² de terraza sobre 80.02 m² techados (39% del total es aire libre). La lámina Nexo equivalente (plano-10.jpg) declara 80.00 + 52.95 = 132.95 m², un poco distinto. La lavandería está a la intemperie, en la terraza. · Metraje impreso en la lámina (m2_techada=80.02, m2_libre=52.58, m2_total=132.6): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance' (mayor resolución que plano-10.jpg): en el segundo nivel los dos dormitorios tienen baño propio con ducha; el principal entra por su doble clóset. La terraza del primer nivel es piso enlosetado con maceteros, sin área verde de suelo. No hay vacío de doble altura dibujado ni azotea sobre el segundo nivel. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. · Fuente: assets/planos/monte-carmelo-551-balance/Duplex SS03 - 2 dorm - 132.60 m2.png",
+      "archivos": [
+       "assets/planos/monte-carmelo-551-balance/Duplex SS03 - 2 dorm - 132.60 m2.png"
+      ]
      },
      {
       "unidad": "Flat 101",
@@ -9090,7 +9307,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "El nombre del archivo del set 'balance' dice 108.13 m² pero la ficha de la lámina dice 108.00 m². El área no techada figura en 0.00 m² aunque el plano dibuja un balcón junto a la sala: es un balcón techado. La resolución de la lámina no permite confirmar el lavadero. · Metraje impreso en la lámina (m2_techada=108.0, m2_libre=0.0, m2_total=108.0): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-11.jpg: los dos baños completos están pareados en el centro y ambos abren al pasillo — el dormitorio principal no tiene baño propio. Balcón techado confirmado por la ficha (área no techada 0.00 con balcón dibujado). La cocina no dibuja despensa. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. En plano-11.jpg se ve la encimera con cocina, una poza y un segundo recipiente blanco junto a la refrigeradora, pero a 730×516 no se puede afirmar que ese segundo recipiente sea un lavadero; no hay lavadora dibujada. La versión 'balance' de esta unidad es el mismo archivo de 760×428, no aporta resolución."
+      "observacion": "El nombre del archivo del set 'balance' dice 108.13 m² pero la ficha de la lámina dice 108.00 m². El área no techada figura en 0.00 m² aunque el plano dibuja un balcón junto a la sala: es un balcón techado. La resolución de la lámina no permite confirmar el lavadero. · Metraje impreso en la lámina (m2_techada=108.0, m2_libre=0.0, m2_total=108.0): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-11.jpg: los dos baños completos están pareados en el centro y ambos abren al pasillo — el dormitorio principal no tiene baño propio. Balcón techado confirmado por la ficha (área no techada 0.00 con balcón dibujado). La cocina no dibuja despensa. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. En plano-11.jpg se ve la encimera con cocina, una poza y un segundo recipiente blanco junto a la refrigeradora, pero a 730×516 no se puede afirmar que ese segundo recipiente sea un lavadero; no hay lavadora dibujada. La versión 'balance' de esta unidad es el mismo archivo de 760×428, no aporta resolución.",
+      "archivos": [
+       "assets/planos/monte-carmelo-551/plano-11.jpg"
+      ]
      },
      {
       "unidad": "Flat 102",
@@ -9132,7 +9352,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el flat más chico de 3 dormitorios (100.82 m²) y el único de la torre sin ningún exterior: 0.00 m² no techados y sin balcón dibujado. El nombre del archivo del set 'balance' dice 100.18 m² frente a los 100.82 m² de la ficha. · Metraje impreso en la lámina (m2_techada=100.82, m2_libre=0.0, m2_total=100.82): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-12.jpg: el dormitorio principal abre a un ala propia con baño (ducha, inodoro y lavatorio) — es suite, igual que en el 202. Confirmado que no hay ningún exterior: la sala-comedor termina en muro ciego, así que no hay balcón que pueda ser techado. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. La cocina de plano-12.jpg se lee como una franja de muebles con cocina y refrigeradora; no se alcanza a distinguir lavadero ni lavadora. No hay lámina de mayor resolución de esta unidad."
+      "observacion": "Es el flat más chico de 3 dormitorios (100.82 m²) y el único de la torre sin ningún exterior: 0.00 m² no techados y sin balcón dibujado. El nombre del archivo del set 'balance' dice 100.18 m² frente a los 100.82 m² de la ficha. · Metraje impreso en la lámina (m2_techada=100.82, m2_libre=0.0, m2_total=100.82): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-12.jpg: el dormitorio principal abre a un ala propia con baño (ducha, inodoro y lavatorio) — es suite, igual que en el 202. Confirmado que no hay ningún exterior: la sala-comedor termina en muro ciego, así que no hay balcón que pueda ser techado. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. La cocina de plano-12.jpg se lee como una franja de muebles con cocina y refrigeradora; no se alcanza a distinguir lavadero ni lavadora. No hay lámina de mayor resolución de esta unidad.",
+      "archivos": [
+       "assets/planos/monte-carmelo-551/plano-12.jpg"
+      ]
      },
      {
       "unidad": "Flat 201, 301, 401",
@@ -9174,7 +9397,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Planta muy alargada tipo 'tira': todo el departamento se recorre por un pasillo continuo de extremo a extremo, con la zona de dormitorios en un extremo y la social en el otro. El balcón figura con 0.00 m² no techados, o sea es techado. · Metraje impreso en la lámina (m2_techada=108.03, m2_libre=0.0, m2_total=108.03): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-13.jpg: misma planta 'tira' que el 101, con los dos baños pareados abriendo al pasillo — el principal no es suite. Balcón techado confirmado por la ficha (área no techada 0.00). Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. En plano-13.jpg la cocina termina en un recinto separado por un tabique bajo, con un recipiente blanco y un bloque oscuro que podrían ser lavadero y lavadora —o simplemente más mueble y la refrigeradora—. A 730×516 no se puede decidir y no hay lámina mejor."
+      "observacion": "Planta muy alargada tipo 'tira': todo el departamento se recorre por un pasillo continuo de extremo a extremo, con la zona de dormitorios en un extremo y la social en el otro. El balcón figura con 0.00 m² no techados, o sea es techado. · Metraje impreso en la lámina (m2_techada=108.03, m2_libre=0.0, m2_total=108.03): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-13.jpg: misma planta 'tira' que el 101, con los dos baños pareados abriendo al pasillo — el principal no es suite. Balcón techado confirmado por la ficha (área no techada 0.00). Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. Tercera pasada · lavandería: sigue en null a propósito. En plano-13.jpg la cocina termina en un recinto separado por un tabique bajo, con un recipiente blanco y un bloque oscuro que podrían ser lavadero y lavadora —o simplemente más mueble y la refrigeradora—. A 730×516 no se puede decidir y no hay lámina mejor.",
+      "archivos": [
+       "assets/planos/monte-carmelo-551/plano-13.jpg"
+      ]
      },
      {
       "unidad": "Flat 202, 302, 402",
@@ -9216,7 +9442,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina Nexo equivalente (plano-14.jpg) declara 108.07 m² en vez de 108.00 m². El área no techada figura en 0.00 m² pero el plano dibuja un balcón corrido tras un muro vidriado: es balcón techado. Los tres dormitorios dan a la misma fachada (poza/ducto no visible). · Metraje impreso en la lámina (m2_techada=108.0, m2_libre=0.0, m2_total=108.0): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': el dormitorio principal abre a un ala propia con baño de ducha, inodoro y lavatorio — es suite. Balcón techado confirmado (área no techada 0.00 con balcón corrido dibujado tras el muro vidriado). En la cocina se ven encimera, refrigeradora y, en el brazo derecho, el patio de servicio con lavadero, pero ningún clóset de despensa. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita."
+      "observacion": "La lámina Nexo equivalente (plano-14.jpg) declara 108.07 m² en vez de 108.00 m². El área no techada figura en 0.00 m² pero el plano dibuja un balcón corrido tras un muro vidriado: es balcón techado. Los tres dormitorios dan a la misma fachada (poza/ducto no visible). · Metraje impreso en la lámina (m2_techada=108.0, m2_libre=0.0, m2_total=108.0): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': el dormitorio principal abre a un ala propia con baño de ducha, inodoro y lavatorio — es suite. Balcón techado confirmado (área no techada 0.00 con balcón corrido dibujado tras el muro vidriado). En la cocina se ven encimera, refrigeradora y, en el brazo derecho, el patio de servicio con lavadero, pero ningún clóset de despensa. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. · Fuente: assets/planos/monte-carmelo-551-balance/Flat tipico 202-302-402 - 3 dorm - 108.00 m2.png",
+      "archivos": [
+       "assets/planos/monte-carmelo-551-balance/Flat tipico 202-302-402 - 3 dorm - 108.00 m2.png"
+      ]
      },
      {
       "unidad": "Flat 203, 303, 403",
@@ -9258,7 +9487,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Planta 'tira' larguísima: el pasillo mide más de medio departamento. La versión antigua de esta unidad (plano-15.jpg, 'Flat 203, 303, 403') declara los mismos 108.50 m²; el archivo 'balance' llamado Flat 303 (108.49 m²) es la misma tipología, titulada 'Tipo 3' en la lámina. · Metraje impreso en la lámina (m2_techada=108.5, m2_libre=0.0, m2_total=108.5): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': el dormitorio principal pasa por sus dos clósets al baño propio con ducha — es suite. Balcón techado confirmado (área no techada 0.00). La cocina es una franja con barra hacia el comedor, sin despensa dibujada. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita."
+      "observacion": "Planta 'tira' larguísima: el pasillo mide más de medio departamento. La versión antigua de esta unidad (plano-15.jpg, 'Flat 203, 303, 403') declara los mismos 108.50 m²; el archivo 'balance' llamado Flat 303 (108.49 m²) es la misma tipología, titulada 'Tipo 3' en la lámina. · Metraje impreso en la lámina (m2_techada=108.5, m2_libre=0.0, m2_total=108.5): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': el dormitorio principal pasa por sus dos clósets al baño propio con ducha — es suite. Balcón techado confirmado (área no techada 0.00). La cocina es una franja con barra hacia el comedor, sin despensa dibujada. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita. · Fuente: assets/planos/monte-carmelo-551-balance/Flat tipico 203 - 3 dorm - 108.50 m2.png",
+      "archivos": [
+       "assets/planos/monte-carmelo-551-balance/Flat tipico 203 - 3 dorm - 108.50 m2.png"
+      ]
      },
      {
       "unidad": "Tríplex 404",
@@ -9300,7 +9532,10 @@
        "doble_altura": false,
        "azotea_propia": true
       },
-      "observacion": "Es TRÍPLEX (tres niveles), no un flat: la 404 es la unidad rara del 4to piso. Solo 2 dormitorios en 119.99 m². La ficha declara 2.5 baños pero en la lámina se cuentan 2 completos (2do nivel) más dos medios baños (1er nivel y azotea): la ficha y el dibujo no cuadran. · Metraje impreso en la lámina (m2_techada=89.75, m2_libre=30.24, m2_total=119.99): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-16.jpg: el tercer nivel es azotea de uso exclusivo (terraza enlosetada con parrilla, comedor exterior y medio baño) — azotea propia confirmada. En el segundo nivel los dos baños completos abren desde el pasillo, no desde los dormitorios: el principal no es suite. No hay vacío de doble altura dibujado en ningún nivel. La cocina del primer nivel es una franja lineal sin despensa; el cuarto de lavado sí es recinto propio. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita."
+      "observacion": "Es TRÍPLEX (tres niveles), no un flat: la 404 es la unidad rara del 4to piso. Solo 2 dormitorios en 119.99 m². La ficha declara 2.5 baños pero en la lámina se cuentan 2 completos (2do nivel) más dos medios baños (1er nivel y azotea): la ficha y el dibujo no cuadran. · Metraje impreso en la lámina (m2_techada=89.75, m2_libre=30.24, m2_total=119.99): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre plano-16.jpg: el tercer nivel es azotea de uso exclusivo (terraza enlosetada con parrilla, comedor exterior y medio baño) — azotea propia confirmada. En el segundo nivel los dos baños completos abren desde el pasillo, no desde los dormitorios: el principal no es suite. No hay vacío de doble altura dibujado en ningún nivel. La cocina del primer nivel es una franja lineal sin despensa; el cuarto de lavado sí es recinto propio. Tercera pasada · bano_servicio=false: en esta unidad la lámina dibuja el departamento completo y no hay dormitorio de servicio ni un segundo baño en la zona de cocina; el único aparato sanitario de esa zona es el medio baño, que ya está contado como baño de visita.",
+      "archivos": [
+       "assets/planos/monte-carmelo-551/plano-16.jpg"
+      ]
      },
      {
       "unidad": "Dúplex 501",
@@ -9342,7 +9577,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Penthouse dúplex. El segundo nivel es todo zona social + servicio: no sube ningún dormitorio principal. La lámina Nexo equivalente (plano-17.jpg) declara 146.65 + 27.35 = 174.00 m², distinto del 144.67 + 29.37 = 174.04 de la lámina 'balance'. El baño del cuarto de servicio se accede desde la zona de lavado, no desde el pasillo social. · Metraje impreso en la lámina (m2_techada=144.67, m2_libre=29.37, m2_total=174.04): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': los dos baños del segundo nivel (los del cuarto de servicio y la lavandería) tienen ducha dibujada, no solo inodoro y lavatorio. El dormitorio principal del primer nivel entra por su clóset corrido al baño con doble lavatorio — es suite. La cocina cerrada no dibuja despensa. **balcon_techado queda en null**: el área no techada es 29.37 m² (no 0.00), y las dos plantas están dibujadas en posiciones distintas de la lámina, así que no se puede saber desde el plano si la terraza del segundo nivel cubre o no el balcón lateral del primero."
+      "observacion": "Penthouse dúplex. El segundo nivel es todo zona social + servicio: no sube ningún dormitorio principal. La lámina Nexo equivalente (plano-17.jpg) declara 146.65 + 27.35 = 174.00 m², distinto del 144.67 + 29.37 = 174.04 de la lámina 'balance'. El baño del cuarto de servicio se accede desde la zona de lavado, no desde el pasillo social. · Metraje impreso en la lámina (m2_techada=144.67, m2_libre=29.37, m2_total=174.04): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': los dos baños del segundo nivel (los del cuarto de servicio y la lavandería) tienen ducha dibujada, no solo inodoro y lavatorio. El dormitorio principal del primer nivel entra por su clóset corrido al baño con doble lavatorio — es suite. La cocina cerrada no dibuja despensa. **balcon_techado queda en null**: el área no techada es 29.37 m² (no 0.00), y las dos plantas están dibujadas en posiciones distintas de la lámina, así que no se puede saber desde el plano si la terraza del segundo nivel cubre o no el balcón lateral del primero. · Fuente: assets/planos/monte-carmelo-551-balance/Duplex 501 - 3 dorm - 174.04 m2.png",
+      "archivos": [
+       "assets/planos/monte-carmelo-551-balance/Duplex 501 - 3 dorm - 174.04 m2.png"
+      ]
      },
      {
       "unidad": "Dúplex 502",
@@ -9384,7 +9622,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es la unidad más grande del edificio (181.10 m²) y la de mayor área libre techada+azotea (37.97 m²). Es el único de los tres penthouses que no aparece en el set antiguo de láminas Nexo. · Metraje impreso en la lámina (m2_techada=143.13, m2_libre=37.97, m2_total=181.1): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': los dos baños del segundo nivel tienen ducha dibujada. El dormitorio principal es suite. La cocina cerrada no dibuja despensa. **balcon_techado queda en null** por la misma razón que en el 501: área no techada 37.97 m² y las dos plantas dibujadas por separado, sin manera de leer qué queda bajo techo."
+      "observacion": "Es la unidad más grande del edificio (181.10 m²) y la de mayor área libre techada+azotea (37.97 m²). Es el único de los tres penthouses que no aparece en el set antiguo de láminas Nexo. · Metraje impreso en la lámina (m2_techada=143.13, m2_libre=37.97, m2_total=181.1): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': los dos baños del segundo nivel tienen ducha dibujada. El dormitorio principal es suite. La cocina cerrada no dibuja despensa. **balcon_techado queda en null** por la misma razón que en el 501: área no techada 37.97 m² y las dos plantas dibujadas por separado, sin manera de leer qué queda bajo techo. · Fuente: assets/planos/monte-carmelo-551-balance/Duplex 502 - 3 dorm - 181.10 m2.png",
+      "archivos": [
+       "assets/planos/monte-carmelo-551-balance/Duplex 502 - 3 dorm - 181.10 m2.png"
+      ]
      },
      {
       "unidad": "Dúplex 503",
@@ -9426,7 +9667,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La ficha declara 5 baños (el conteo más alto del edificio) pero en la lámina solo se distinguen con claridad 4 completos + 1 medio baño. El total de la ficha (174.26 m²) no coincide con el nombre del archivo (174.29 m²) ni con la lámina Nexo antigua (147.06 + 27.23 = 174.29). · Metraje impreso en la lámina (m2_techada=144.93, m2_libre=29.33, m2_total=174.26): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': los dos baños del segundo nivel tienen ducha dibujada (rejilla de ducha en el piso de cada uno). El dormitorio principal entra por sus dos clósets al baño con tina — es suite. La cocina cerrada no dibuja despensa. **balcon_techado queda en null**: área no techada 29.33 m² y las dos plantas están dibujadas por separado en la lámina."
+      "observacion": "La ficha declara 5 baños (el conteo más alto del edificio) pero en la lámina solo se distinguen con claridad 4 completos + 1 medio baño. El total de la ficha (174.26 m²) no coincide con el nombre del archivo (174.29 m²) ni con la lámina Nexo antigua (147.06 + 27.23 = 174.29). · Metraje impreso en la lámina (m2_techada=144.93, m2_libre=29.33, m2_total=174.26): se deja como referencia, el área oficial sale de la lista de precios. · Segunda pasada sobre la lámina 'balance': los dos baños del segundo nivel tienen ducha dibujada (rejilla de ducha en el piso de cada uno). El dormitorio principal entra por sus dos clósets al baño con tina — es suite. La cocina cerrada no dibuja despensa. **balcon_techado queda en null**: área no techada 29.33 m² y las dos plantas están dibujadas por separado en la lámina. · Fuente: assets/planos/monte-carmelo-551-balance/Duplex 503 - 3 dorm - 174.29 m2.png",
+      "archivos": [
+       "assets/planos/monte-carmelo-551-balance/Duplex 503 - 3 dorm - 174.29 m2.png"
+      ]
      }
     ]
    }
@@ -10466,7 +10710,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el flat más chico con plano publicado. La cocina va abierta a la sala-comedor sobre un mesón en L, sin puerta; la lámina antigua de Azzurra (plano-01.jpg) la rotula «KITCHENETTE» y la lámina oficial nueva la rotula «Cocina» — se clasifica por el dibujo, que es cocina abierta sin taburetes dibujados. La lavandería es un cuarto propio con lavadero y lavadora, colgado en la esquina y dentro del área techada. Los dos baños son completos (ambos con ducha dibujada): no hay medio baño de visita. Metraje impreso en la lámina (techada 73.13, total 73.13, área libre 0.00 según la lista de precios): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Es el flat más chico con plano publicado. La cocina va abierta a la sala-comedor sobre un mesón en L, sin puerta; la lámina antigua de Azzurra (plano-01.jpg) la rotula «KITCHENETTE» y la lámina oficial nueva la rotula «Cocina» — se clasifica por el dibujo, que es cocina abierta sin taburetes dibujados. La lavandería es un cuarto propio con lavadero y lavadora, colgado en la esquina y dentro del área techada. Los dos baños son completos (ambos con ducha dibujada): no hay medio baño de visita. Metraje impreso en la lámina (techada 73.13, total 73.13, área libre 0.00 según la lista de precios): se deja como referencia, el área oficial sale de la lista de precios. · Fuente: assets/planos/monte-mayor-183-oficial/Flat 101 - 73.13 m2.jpg",
+      "archivos": [
+       "assets/planos/monte-mayor-183-oficial/Flat 101 - 73.13 m2.jpg"
+      ]
      },
      {
       "unidad": "Flat 102",
@@ -10508,7 +10755,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el único departamento del edificio con jardín a nivel de suelo: la lámina dibuja la terraza embaldosada más franjas de área verde con árboles hacia el frente. La lámina rotula «DESP» (despensa) en el mueble alto de la cocina, junto al «TH». La barra de la cocina lleva dos taburetes dibujados. El baño de visita solo tiene inodoro y lavatorio: es medio baño. Metraje impreso en la lámina (techada 132.98, libre 106.71, total 239.69): se deja como referencia, el área oficial sale de la lista de precios. La lámina antigua de Azzurra (plano-02.jpg) rotula la cocina «KITCHENETTE» y la oficial la rotula «Cocina»."
+      "observacion": "Es el único departamento del edificio con jardín a nivel de suelo: la lámina dibuja la terraza embaldosada más franjas de área verde con árboles hacia el frente. La lámina rotula «DESP» (despensa) en el mueble alto de la cocina, junto al «TH». La barra de la cocina lleva dos taburetes dibujados. El baño de visita solo tiene inodoro y lavatorio: es medio baño. Metraje impreso en la lámina (techada 132.98, libre 106.71, total 239.69): se deja como referencia, el área oficial sale de la lista de precios. La lámina antigua de Azzurra (plano-02.jpg) rotula la cocina «KITCHENETTE» y la oficial la rotula «Cocina». · Fuente: assets/planos/monte-mayor-183-oficial/Flat 102 - 132.98 m2 techada - 239.69 m2 total.jpg",
+      "archivos": [
+       "assets/planos/monte-mayor-183-oficial/Flat 102 - 132.98 m2 techada - 239.69 m2 total.jpg"
+      ]
      },
      {
       "unidad": "Flat 202, 302, 402, 502, 602",
@@ -10550,7 +10800,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es la tipología repetida del edificio: la lámina acotada (plano-x02-1.jpg) la titula «202 - 302 - 402 - 502 - 602» y la lámina oficial nueva solo «FLAT 202». El balcón (03) está retranqueado entre dos ductos dentro del volumen y el área ocupada es igual al área techada (115.56 = 115.56): es balcón techado. La cocina tiene una isla exenta con tres taburetes dibujados. El baño de visita (04) solo tiene inodoro y lavatorio. La lámina antigua rotula la cocina «KITCHENETTE» y el cuarto de lavado «Cto lavado». Metraje impreso en la lámina (ocupada 115.56, techada 115.56): se deja como referencia, el área oficial sale de la lista de precios."
+      "observacion": "Es la tipología repetida del edificio: la lámina acotada (plano-x02-1.jpg) la titula «202 - 302 - 402 - 502 - 602» y la lámina oficial nueva solo «FLAT 202». El balcón (03) está retranqueado entre dos ductos dentro del volumen y el área ocupada es igual al área techada (115.56 = 115.56): es balcón techado. La cocina tiene una isla exenta con tres taburetes dibujados. El baño de visita (04) solo tiene inodoro y lavatorio. La lámina antigua rotula la cocina «KITCHENETTE» y el cuarto de lavado «Cto lavado». Metraje impreso en la lámina (ocupada 115.56, techada 115.56): se deja como referencia, el área oficial sale de la lista de precios.",
+      "archivos": [
+       "assets/planos/monte-mayor-183/plano-x02-1.jpg"
+      ]
      }
     ]
    }
@@ -10710,7 +10963,7 @@
     "unidades": [
      {
       "unidad": "DPTO. 103",
-      "archivo": "assets/planos/monte-real-265/Dpto 103 - 138.03 m2 techada - 167.82 m2 ocupada.jpg",
+      "archivo": "assets/planos/monte-real-265/plano-01.jpg",
       "dorm_declarados": 3,
       "dorm_reales": 3,
       "estudio": {
@@ -10748,7 +11001,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Planta en L quebrada, de esquina. Ala principal: dormitorio principal, dos bancos de colgadores enfrentados (vestidor pasante) y dos baños seguidos, ambos con mampara de ducha; sala-comedor corrido y cocina con isla central y barra de 3 taburetes hacia el comedor. Ala secundaria: una tira de piso enchapado corrida que la lámina rotula TERRAZA arriba y LAVANDERIA en el tramo del medio — la lavandería (2 lavadoras + lavadero) no tiene recinto propio ni muro que la separe de la terraza; luego el ESTAR, un baño con ducha y los dos dormitorios secundarios, que dan a una segunda TERRAZA. Cerca del ingreso hay un baño chico en diagonal, con solo inodoro y lavatorio: es el medio baño de visita. Las dos terrazas son enchapadas con maceteros en las esquinas, sin área verde a nivel de suelo. · Metrajes impresos en la lámina (techada 138.03 m², ocupada 167.82 m²): referencia — los ~29.8 m² de diferencia son las dos terrazas y la franja de lavandería; el área oficial sale de la lista de precios."
+      "observacion": "Planta en L quebrada, de esquina. Ala principal: dormitorio principal, dos bancos de colgadores enfrentados (vestidor pasante) y dos baños seguidos, ambos con mampara de ducha; sala-comedor corrido y cocina con isla central y barra de 3 taburetes hacia el comedor. Ala secundaria: una tira de piso enchapado corrida que la lámina rotula TERRAZA arriba y LAVANDERIA en el tramo del medio — la lavandería (2 lavadoras + lavadero) no tiene recinto propio ni muro que la separe de la terraza; luego el ESTAR, un baño con ducha y los dos dormitorios secundarios, que dan a una segunda TERRAZA. Cerca del ingreso hay un baño chico en diagonal, con solo inodoro y lavatorio: es el medio baño de visita. Las dos terrazas son enchapadas con maceteros en las esquinas, sin área verde a nivel de suelo. · Metrajes impresos en la lámina (techada 138.03 m², ocupada 167.82 m²): referencia — los ~29.8 m² de diferencia son las dos terrazas y la franja de lavandería; el área oficial sale de la lista de precios. · Fuente: assets/planos/monte-real-265/Dpto 103 - 138.03 m2 techada - 167.82 m2 ocupada.jpg",
+      "archivos": [
+       "assets/planos/monte-real-265/plano-01.jpg"
+      ]
      }
     ]
    }
@@ -11024,7 +11280,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Leyenda de la lámina: «TIPO X1 · 107.37 m2 · 3 Ambientes · Pisos (2 y 3) · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (107.37 m2): referencia, el área oficial sale de la lista de precios. La leyenda declara 4 baños para 2 dormitorios + estudio: es el proyecto con más baños por dormitorio del benchmark. Además del estudio hay un cuarto interior amoblado con sillón y alfombra que no figura en los 3 Ambientes (va como sala de estar adicional). No se dibuja cama de servicio en ningún recinto. La terraza es una cuña enlosetada grande sobre todo el flanco derecho, con sillones y jardineras. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha."
+      "observacion": "Leyenda de la lámina: «TIPO X1 · 107.37 m2 · 3 Ambientes · Pisos (2 y 3) · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (107.37 m2): referencia, el área oficial sale de la lista de precios. La leyenda declara 4 baños para 2 dormitorios + estudio: es el proyecto con más baños por dormitorio del benchmark. Además del estudio hay un cuarto interior amoblado con sillón y alfombra que no figura en los 3 Ambientes (va como sala de estar adicional). No se dibuja cama de servicio en ningún recinto. La terraza es una cuña enlosetada grande sobre todo el flanco derecho, con sillones y jardineras. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "archivos": [
+       "assets/planos/monte-sierpe/sierpe-X01-2d-107m2.png"
+      ]
      },
      {
       "unidad": "TIPO X2",
@@ -11066,7 +11325,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Leyenda: «TIPO X2 · 107.44 m2 · 3 Ambientes · Pisos (2 y 3) · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (107.44 m2): referencia. Es la planta espejada del X1, con la zona social arriba y los dormitorios abajo. También trae el cuarto interior con sillón que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha."
+      "observacion": "Leyenda: «TIPO X2 · 107.44 m2 · 3 Ambientes · Pisos (2 y 3) · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (107.44 m2): referencia. Es la planta espejada del X1, con la zona social arriba y los dormitorios abajo. También trae el cuarto interior con sillón que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "archivos": [
+       "assets/planos/monte-sierpe/sierpe-X02-2d-107m2.png"
+      ]
      },
      {
       "unidad": "TIPO X5",
@@ -11108,7 +11370,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Leyenda: «TIPO X5 · 105.35 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (105.35 m2): referencia. A diferencia del X1 y el X2, esta lámina no dice a qué pisos corresponde. El principal tiene al lado un rectángulo punteado sin mobiliario, que es como se dibuja el vestidor, y desde ahí se pasa al baño. El exterior se reduce a un pequeño recinto enlosetado con plantas sobre el flanco izquierdo de la sala: se registra como balcón, y si es techado no se puede saber porque la lámina no desglosa área techada / área libre. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha."
+      "observacion": "Leyenda: «TIPO X5 · 105.35 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (105.35 m2): referencia. A diferencia del X1 y el X2, esta lámina no dice a qué pisos corresponde. El principal tiene al lado un rectángulo punteado sin mobiliario, que es como se dibuja el vestidor, y desde ahí se pasa al baño. El exterior se reduce a un pequeño recinto enlosetado con plantas sobre el flanco izquierdo de la sala: se registra como balcón, y si es techado no se puede saber porque la lámina no desglosa área techada / área libre. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "archivos": [
+       "assets/planos/monte-sierpe/sierpe-X05-2d-105m2.png"
+      ]
      },
      {
       "unidad": "TIPO 102",
@@ -11150,7 +11415,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Leyenda: «TIPO 102 · 103.92 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (103.92 m2): referencia. Es la única tipología de las cinco donde no se ve NINGUNA superficie exterior enlosetada: la fachada se resuelve con líneas de vidrio, sin balcón ni terraza dibujados. Además del estudio hay un cuarto interior amoblado con sillón, pegado a un baño enlosetado grande, que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha."
+      "observacion": "Leyenda: «TIPO 102 · 103.92 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (103.92 m2): referencia. Es la única tipología de las cinco donde no se ve NINGUNA superficie exterior enlosetada: la fachada se resuelve con líneas de vidrio, sin balcón ni terraza dibujados. Además del estudio hay un cuarto interior amoblado con sillón, pegado a un baño enlosetado grande, que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "archivos": [
+       "assets/planos/monte-sierpe/sierpe-x102-2d-103m2.png"
+      ]
      },
      {
       "unidad": "TIPO 107",
@@ -11192,7 +11460,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Leyenda: «TIPO 107 · 103.43 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 3 Baños · Cocina · Sala - Comedor». Metraje impreso (103.43 m2): referencia. Es la única de las cinco tipologías cuya leyenda declara 3 baños en vez de 4 y la única que NO lista Lavandería: en la planta sí se ve un recinto enlosetado con lavadero al fondo de la cocina, pero no se puede confirmar que sea lavandería, por eso la casilla queda en null. Al lado del principal hay un rectángulo punteado sin mobiliario, o sea vestidor. No se ve superficie exterior enlosetada. dorm_reales queda en null porque el veredicto del estudio es ilegible. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha."
+      "observacion": "Leyenda: «TIPO 107 · 103.43 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 3 Baños · Cocina · Sala - Comedor». Metraje impreso (103.43 m2): referencia. Es la única de las cinco tipologías cuya leyenda declara 3 baños en vez de 4 y la única que NO lista Lavandería: en la planta sí se ve un recinto enlosetado con lavadero al fondo de la cocina, pero no se puede confirmar que sea lavandería, por eso la casilla queda en null. Al lado del principal hay un rectángulo punteado sin mobiliario, o sea vestidor. No se ve superficie exterior enlosetada. dorm_reales queda en null porque el veredicto del estudio es ilegible. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "archivos": [
+       "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png"
+      ]
      }
     ]
    }
@@ -12307,7 +12578,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es el flat grande de planta baja del edificio (planta en L larguísima). Sala + comedor + cocina van en un solo ambiente corrido de 10.85 x 4.45 sin ninguna puerta: la cocina es totalmente abierta y remata en una isla exenta con tres taburetes dibujados. La zona de servicio es un bloque completo detrás de la cocina: Lavandería en cuarto propio (1.60x1.98) con lavadero (L/S) y lavadora, S.H.S. (1.60x0.90) con su propia ducha, y un Depósito interior de 1.50x1.90 — no hay dormitorio de servicio con cama. El hall de ingreso lleva tres hornacinas con banco dibujadas. El principal tiene W.C.P. (walk in closet) y desde ahí se pasa al S.H.P. con tina. Baños con ducha: S.H.P., S.H.2, S.H.3 y el S.H.S. de servicio = 4; el S.H.V. (1.90x0.93, solo inodoro y lavatorio) es el medio baño de visita. El balcón NO es techado: la lámina imprime área ocupada 149.05 y techada 145.82 y la lista de precios da área libre 3.23 m², prácticamente el balcón de 1.35x2.00. Metraje impreso en la lámina (ocupada 149.05 / techada 145.82) contra la lista de precios (149.04 / 145.81 / libre 3.23): diferencia de centésimas, el área oficial sale de la lista de precios. Dato de la lista, no del plano: la 201 va con dos estacionamientos paralelos (Nº 29 y 30, sótano 2) y dos depósitos (Nº 11 y 15)."
+      "observacion": "Es el flat grande de planta baja del edificio (planta en L larguísima). Sala + comedor + cocina van en un solo ambiente corrido de 10.85 x 4.45 sin ninguna puerta: la cocina es totalmente abierta y remata en una isla exenta con tres taburetes dibujados. La zona de servicio es un bloque completo detrás de la cocina: Lavandería en cuarto propio (1.60x1.98) con lavadero (L/S) y lavadora, S.H.S. (1.60x0.90) con su propia ducha, y un Depósito interior de 1.50x1.90 — no hay dormitorio de servicio con cama. El hall de ingreso lleva tres hornacinas con banco dibujadas. El principal tiene W.C.P. (walk in closet) y desde ahí se pasa al S.H.P. con tina. Baños con ducha: S.H.P., S.H.2, S.H.3 y el S.H.S. de servicio = 4; el S.H.V. (1.90x0.93, solo inodoro y lavatorio) es el medio baño de visita. El balcón NO es techado: la lámina imprime área ocupada 149.05 y techada 145.82 y la lista de precios da área libre 3.23 m², prácticamente el balcón de 1.35x2.00. Metraje impreso en la lámina (ocupada 149.05 / techada 145.82) contra la lista de precios (149.04 / 145.81 / libre 3.23): diferencia de centésimas, el área oficial sale de la lista de precios. Dato de la lista, no del plano: la 201 va con dos estacionamientos paralelos (Nº 29 y 30, sótano 2) y dos depósitos (Nº 11 y 15).",
+      "archivos": [
+       "assets/planos/precursores-ii/plano-14.jpg"
+      ]
      },
      {
       "unidad": "DEP 502 — Flat quinto piso",
@@ -12349,7 +12623,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es la tipología chica del edificio (el ala «x02»: 202, 302, 402, 502) y la única de 2 dormitorios con plano publicado. A diferencia de la 201 y la 503, acá la cocina SÍ es cerrada: cuarto propio de 4.75 x 2.17 con puerta batiente dibujada desde el comedor, horno (H) y refrigeradora (R) empotrados. Detrás de la cocina, un recinto de servicio de piso gris con la lavandería (2.25x0.70) con lavadero (L/S) y lavadora. No hay dormitorio ni baño de servicio: el único baño extra es el S.H.V. (1.70x0.95, inodoro y lavatorio) junto al ingreso, o sea medio baño. El principal tiene clóset lineal de puertas corredizas, NO walk in closet, y su propio S.H.P. con ducha; el S.H.2 también con ducha. El balcón de 1.00 x 2.60 es techado: la lámina imprime área ocupada 89.02 = área techada 89.02 y la lista de precios da área libre 0.00. Metraje impreso en la lámina (89.02 / 89.02): se deja como referencia, el área oficial sale de la lista de precios. La lista de precios marca la 502 como VENDIDA — se analiza igual porque el plano describe la tipología repetida del edificio."
+      "observacion": "Es la tipología chica del edificio (el ala «x02»: 202, 302, 402, 502) y la única de 2 dormitorios con plano publicado. A diferencia de la 201 y la 503, acá la cocina SÍ es cerrada: cuarto propio de 4.75 x 2.17 con puerta batiente dibujada desde el comedor, horno (H) y refrigeradora (R) empotrados. Detrás de la cocina, un recinto de servicio de piso gris con la lavandería (2.25x0.70) con lavadero (L/S) y lavadora. No hay dormitorio ni baño de servicio: el único baño extra es el S.H.V. (1.70x0.95, inodoro y lavatorio) junto al ingreso, o sea medio baño. El principal tiene clóset lineal de puertas corredizas, NO walk in closet, y su propio S.H.P. con ducha; el S.H.2 también con ducha. El balcón de 1.00 x 2.60 es techado: la lámina imprime área ocupada 89.02 = área techada 89.02 y la lista de precios da área libre 0.00. Metraje impreso en la lámina (89.02 / 89.02): se deja como referencia, el área oficial sale de la lista de precios. La lista de precios marca la 502 como VENDIDA — se analiza igual porque el plano describe la tipología repetida del edificio.",
+      "archivos": [
+       "assets/planos/precursores-ii/plano-01.jpg"
+      ]
      },
      {
       "unidad": "DEP 503 — Flat quinto piso",
@@ -12391,7 +12668,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Misma planta larga en L que la 201 pero en el quinto piso, con una diferencia grande de partido: acá la cocina es CERRADA — cuarto de 3.70 x 3.39 con muro diagonal y puerta batiente de dos hojas hacia el comedor, más un mostrador diagonal que hace de barra pero SIN taburetes dibujados. Suma un ESTAR interior de 2.95 x 3.15 separado de la sala-comedor. Zona de servicio idéntica a la 201: lavandería en cuarto propio (1.60x1.85) con lavadero (L/S), S.H.S. (1.50x0.90) con ducha propia, y Depósito interior de 1.50x1.90; no hay dormitorio de servicio con cama. El S.H.V. (1.90x0.82) es medio baño de visita. Baños con ducha: S.H.P., S.H.2 (1.50x2.00), S.H.3 (1.40x2.92) y el S.H.S. de servicio = 4. El principal tiene W.C.P. y S.H.P. El balcón de 1.35 x 1.95 NO es techado: la lista de precios da área libre 3.17 m². Metraje impreso en la lámina (ocupada 149.35 / techada 146.18), idéntico a la lista de precios; el área oficial igual sale de la lista. Dato de la lista, no del plano: la 503 va con dos estacionamientos paralelos (Nº 21 y 22) y depósito Nº 17 en sótano 2, y está disponible."
+      "observacion": "Misma planta larga en L que la 201 pero en el quinto piso, con una diferencia grande de partido: acá la cocina es CERRADA — cuarto de 3.70 x 3.39 con muro diagonal y puerta batiente de dos hojas hacia el comedor, más un mostrador diagonal que hace de barra pero SIN taburetes dibujados. Suma un ESTAR interior de 2.95 x 3.15 separado de la sala-comedor. Zona de servicio idéntica a la 201: lavandería en cuarto propio (1.60x1.85) con lavadero (L/S), S.H.S. (1.50x0.90) con ducha propia, y Depósito interior de 1.50x1.90; no hay dormitorio de servicio con cama. El S.H.V. (1.90x0.82) es medio baño de visita. Baños con ducha: S.H.P., S.H.2 (1.50x2.00), S.H.3 (1.40x2.92) y el S.H.S. de servicio = 4. El principal tiene W.C.P. y S.H.P. El balcón de 1.35 x 1.95 NO es techado: la lista de precios da área libre 3.17 m². Metraje impreso en la lámina (ocupada 149.35 / techada 146.18), idéntico a la lista de precios; el área oficial igual sale de la lista. Dato de la lista, no del plano: la 503 va con dos estacionamientos paralelos (Nº 21 y 22) y depósito Nº 17 en sótano 2, y está disponible.",
+      "archivos": [
+       "assets/planos/precursores-ii/plano-15.jpg"
+      ]
      },
      {
       "unidad": "DEP 601 — Dúplex sexto piso",
@@ -12433,7 +12713,10 @@
        "doble_altura": false,
        "azotea_propia": true
       },
-      "observacion": "Es el dúplex de azotea y la unidad más cara de la lista. Dos láminas en la misma hoja (PRIMER NIVEL y SEGUNDO NIVEL) = una sola unidad. Rareza frente al resto del edificio: la sala y el comedor NO comparten ambiente — el comedor está dentro del cuarto rotulado «COCINA COMEDOR» (2.60 x 3.45, abierto al hall sin puerta, con estación de café y jardinera verde al costado de la ventana) y la SALA (3.80 x 3.20) es un ambiente aparte al otro lado del pasadizo. Solo 2 dormitorios pese a que la lista de precios lo vende como «3 DORM» — el tercero no aparece dibujado en ninguno de los dos niveles, y el segundo nivel es todo social: ESTAR, PISCINA, TERRAZA BBQ de 4.95 x 5.00, PATIO de 4.30 x 2.67, HUERTO de 1.25 x 2.80 con franja plantada y el cuarto de LAV. (1.30 x 2.77) con lavadero (L/S) y termo. La lavandería es un recinto propio con puerta plegable y sí está techada: el segundo nivel declara 82.82 ocupada / 37.09 techada, y los 37 m² techados solo alcanzan si son estar + huerto + lavandería, quedando piscina, terraza BBQ y patio como área libre (45.73). El principal (6.15 x 3.10) tiene W.C.P. y S.H.P. con tina y doble lavatorio; el dormitorio 2 usa el S.H.3 (1.55x2.73) también con tina; el S.H.V. (1.95x1.82) es medio baño. No hay dormitorio ni baño de servicio. Contradicción de metrajes a revisar: la lámina imprime AREA TECHADA 159.57 m² y la lista de precios da 143.29 m² para la misma unidad (ocupada 189.02 en ambas); el área oficial sale de la lista de precios. Dato de la lista, no del plano: estacionamientos paralelos Nº 07 y 08 y depósito Nº 06 en sótano 1."
+      "observacion": "Es el dúplex de azotea y la unidad más cara de la lista. Dos láminas en la misma hoja (PRIMER NIVEL y SEGUNDO NIVEL) = una sola unidad. Rareza frente al resto del edificio: la sala y el comedor NO comparten ambiente — el comedor está dentro del cuarto rotulado «COCINA COMEDOR» (2.60 x 3.45, abierto al hall sin puerta, con estación de café y jardinera verde al costado de la ventana) y la SALA (3.80 x 3.20) es un ambiente aparte al otro lado del pasadizo. Solo 2 dormitorios pese a que la lista de precios lo vende como «3 DORM» — el tercero no aparece dibujado en ninguno de los dos niveles, y el segundo nivel es todo social: ESTAR, PISCINA, TERRAZA BBQ de 4.95 x 5.00, PATIO de 4.30 x 2.67, HUERTO de 1.25 x 2.80 con franja plantada y el cuarto de LAV. (1.30 x 2.77) con lavadero (L/S) y termo. La lavandería es un recinto propio con puerta plegable y sí está techada: el segundo nivel declara 82.82 ocupada / 37.09 techada, y los 37 m² techados solo alcanzan si son estar + huerto + lavandería, quedando piscina, terraza BBQ y patio como área libre (45.73). El principal (6.15 x 3.10) tiene W.C.P. y S.H.P. con tina y doble lavatorio; el dormitorio 2 usa el S.H.3 (1.55x2.73) también con tina; el S.H.V. (1.95x1.82) es medio baño. No hay dormitorio ni baño de servicio. Contradicción de metrajes a revisar: la lámina imprime AREA TECHADA 159.57 m² y la lista de precios da 143.29 m² para la misma unidad (ocupada 189.02 en ambas); el área oficial sale de la lista de precios. Dato de la lista, no del plano: estacionamientos paralelos Nº 07 y 08 y depósito Nº 06 en sótano 1.",
+      "archivos": [
+       "assets/planos/precursores-ii/plano-16.jpg"
+      ]
      }
     ]
    }
@@ -12817,7 +13100,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$317,000.00 (con un estacionamiento) y US$335,000.00 (con dos estacionamientos paralelos). Declara 199 m2 A.O. y 118 m2 A.T. — la diferencia (81 m2) es todo área no techada: es el departamento con más terraza del proyecto. Planta en L. La lámina agrega «Nota: recorrido 360 en la pagina web». Versión sin rótulo y en mayor resolución del mismo plano: assets/planos/santorini/plano-08.jpg · Metraje impreso en la lámina (m2_techada=118.0, m2_total=199.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): el baño de la zona de servicio tiene ducha (recinto de piso gris con sumidero y mampara de vidrio separada del inodoro y el lavatorio). El principal es suite: se entra al baño desde el dormitorio pasando por el walk in closet. La cocina en corredor no dibuja despensa. No hay ascensor dentro del departamento. La terraza del frente lleva jardineras corridas con plantas, no jardín a nivel de suelo. Como el balcón está en false, balcon_techado va en false por coherencia."
+      "observacion": "La lámina publica US$317,000.00 (con un estacionamiento) y US$335,000.00 (con dos estacionamientos paralelos). Declara 199 m2 A.O. y 118 m2 A.T. — la diferencia (81 m2) es todo área no techada: es el departamento con más terraza del proyecto. Planta en L. La lámina agrega «Nota: recorrido 360 en la pagina web». Versión sin rótulo y en mayor resolución del mismo plano: assets/planos/santorini/plano-08.jpg · Metraje impreso en la lámina (m2_techada=118.0, m2_total=199.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): el baño de la zona de servicio tiene ducha (recinto de piso gris con sumidero y mampara de vidrio separada del inodoro y el lavatorio). El principal es suite: se entra al baño desde el dormitorio pasando por el walk in closet. La cocina en corredor no dibuja despensa. No hay ascensor dentro del departamento. La terraza del frente lleva jardineras corridas con plantas, no jardín a nivel de suelo. Como el balcón está en false, balcon_techado va en false por coherencia.",
+      "archivos": [
+       "assets/planos/santorini/plano-b-16.jpg"
+      ]
      },
      {
       "unidad": "departamento 201B y 301B",
@@ -12859,7 +13145,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$287,500.00 (con un estacionamiento) y US$305,500.00 (con dos estacionamientos paralelos); es la ficha que dice literalmente «Dos dormitorios (proyectado a tres)». 125.00 m2 A.O. = 125.00 m2 A.T. (sin área libre). La lámina declara «Balcón» en singular, pero en la planta se ve más de una franja exterior enlosetada sobre la fachada de la sala-comedor: no se puede saber cuántos balcones cuentan como tales. Versión sin rótulo y en mayor resolución de la misma tipología: assets/planos/santorini/plano-09.jpg · Metraje impreso en la lámina (m2_techada=125.0, m2_total=125.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 125.00 A.O = 125.00 A.T ⇒ área libre 0.00, así que el balcón que dibuja la planta es techado. La cocina cerrada (mesada de granito en U con cocina, lavadero y refrigeradora) no dibuja despensa. En la zona de servicio sólo hay un medio baño (inodoro + lavatorio de granito, sin ducha). El cuadrado de ascensor aparece fuera del perímetro del departamento, a diferencia del 301A/501A."
+      "observacion": "La lámina publica US$287,500.00 (con un estacionamiento) y US$305,500.00 (con dos estacionamientos paralelos); es la ficha que dice literalmente «Dos dormitorios (proyectado a tres)». 125.00 m2 A.O. = 125.00 m2 A.T. (sin área libre). La lámina declara «Balcón» en singular, pero en la planta se ve más de una franja exterior enlosetada sobre la fachada de la sala-comedor: no se puede saber cuántos balcones cuentan como tales. Versión sin rótulo y en mayor resolución de la misma tipología: assets/planos/santorini/plano-09.jpg · Metraje impreso en la lámina (m2_techada=125.0, m2_total=125.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 125.00 A.O = 125.00 A.T ⇒ área libre 0.00, así que el balcón que dibuja la planta es techado. La cocina cerrada (mesada de granito en U con cocina, lavadero y refrigeradora) no dibuja despensa. En la zona de servicio sólo hay un medio baño (inodoro + lavatorio de granito, sin ducha). El cuadrado de ascensor aparece fuera del perímetro del departamento, a diferencia del 301A/501A.",
+      "archivos": [
+       "assets/planos/santorini/plano-b-17.jpg"
+      ]
      },
      {
       "unidad": "departamento 501B",
@@ -12901,7 +13190,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$286,450.00 (con un estacionamiento) y US$304,450.00 (con dos estacionamientos paralelos). 123.00 m2 A.O. = 123.00 m2 A.T. Es el precio de lista más bajo de todas las fichas de Santorini. Versión sin rótulo y en mayor resolución de la misma tipología: assets/planos/santorini/plano-11.jpg · Metraje impreso en la lámina (m2_techada=123.0, m2_total=123.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 123.00 A.O = 123.00 A.T ⇒ área libre 0.00, balcón techado. Misma planta que el 201B/301B: cocina cerrada sin despensa, medio baño sin ducha en la zona de servicio, ascensor fuera del perímetro."
+      "observacion": "La lámina publica US$286,450.00 (con un estacionamiento) y US$304,450.00 (con dos estacionamientos paralelos). 123.00 m2 A.O. = 123.00 m2 A.T. Es el precio de lista más bajo de todas las fichas de Santorini. Versión sin rótulo y en mayor resolución de la misma tipología: assets/planos/santorini/plano-11.jpg · Metraje impreso en la lámina (m2_techada=123.0, m2_total=123.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 123.00 A.O = 123.00 A.T ⇒ área libre 0.00, balcón techado. Misma planta que el 201B/301B: cocina cerrada sin despensa, medio baño sin ducha en la zona de servicio, ascensor fuera del perímetro.",
+      "archivos": [
+       "assets/planos/santorini/plano-b-18.jpg"
+      ]
      },
      {
       "unidad": "departamento 202B",
@@ -12943,7 +13235,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$302,000.00 (con un estacionamiento) y US$320,000.00 (con dos estacionamientos paralelos). 130.50 m2 A.O. = 130.50 m2 A.T.: es la planta B más grande. A diferencia del 201B/301B/501B, la zona de servicio suma un medio baño con lavatorio de granito y un baño con ducha, pero NO se dibuja dormitorio de servicio. Versión sin rótulo y en mayor resolución de esta tipología (130.50/129.00 m2): assets/planos/santorini/plano-12.jpg (el par plano-10/plano-12 corresponde a 202B y 502B, pero no se puede saber cuál es cuál) · Metraje impreso en la lámina (m2_techada=130.5, m2_total=130.5): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 130.50 A.O = 130.50 A.T ⇒ área libre 0.00, balcón techado. En la zona de servicio sí se dibuja un baño con ducha (recinto gris con sumidero y mampara azul) además del medio baño. Cocina cerrada sin despensa. Ascensor fuera del perímetro."
+      "observacion": "La lámina publica US$302,000.00 (con un estacionamiento) y US$320,000.00 (con dos estacionamientos paralelos). 130.50 m2 A.O. = 130.50 m2 A.T.: es la planta B más grande. A diferencia del 201B/301B/501B, la zona de servicio suma un medio baño con lavatorio de granito y un baño con ducha, pero NO se dibuja dormitorio de servicio. Versión sin rótulo y en mayor resolución de esta tipología (130.50/129.00 m2): assets/planos/santorini/plano-12.jpg (el par plano-10/plano-12 corresponde a 202B y 502B, pero no se puede saber cuál es cuál) · Metraje impreso en la lámina (m2_techada=130.5, m2_total=130.5): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 130.50 A.O = 130.50 A.T ⇒ área libre 0.00, balcón techado. En la zona de servicio sí se dibuja un baño con ducha (recinto gris con sumidero y mampara azul) además del medio baño. Cocina cerrada sin despensa. Ascensor fuera del perímetro.",
+      "archivos": [
+       "assets/planos/santorini/plano-b-19.jpg"
+      ]
      },
      {
       "unidad": "departamento 502B",
@@ -12985,7 +13280,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$298,000.00 (con un estacionamiento) y US$316,000.00 (con dos estacionamientos paralelos). 129.00 m2 A.O. = 129.00 m2 A.T. Versión sin rótulo y en mayor resolución de esta tipología: assets/planos/santorini/plano-10.jpg (par plano-10/plano-12 = 202B y 502B; no se puede saber cuál es cuál) · Metraje impreso en la lámina (m2_techada=129.0, m2_total=129.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 129.00 A.O = 129.00 A.T ⇒ área libre 0.00, balcón techado. Igual que el 202B: baño con ducha en la zona de servicio, cocina cerrada sin despensa, ascensor fuera del perímetro."
+      "observacion": "La lámina publica US$298,000.00 (con un estacionamiento) y US$316,000.00 (con dos estacionamientos paralelos). 129.00 m2 A.O. = 129.00 m2 A.T. Versión sin rótulo y en mayor resolución de esta tipología: assets/planos/santorini/plano-10.jpg (par plano-10/plano-12 = 202B y 502B; no se puede saber cuál es cuál) · Metraje impreso en la lámina (m2_techada=129.0, m2_total=129.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): 129.00 A.O = 129.00 A.T ⇒ área libre 0.00, balcón techado. Igual que el 202B: baño con ducha en la zona de servicio, cocina cerrada sin despensa, ascensor fuera del perímetro.",
+      "archivos": [
+       "assets/planos/santorini/plano-b-20.jpg"
+      ]
      },
      {
       "unidad": "departamento 301A",
@@ -13027,7 +13325,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$387,000.00 (con un estacionamiento) y US$405,000.00 (con dos estacionamientos paralelos); es la única tipología (junto al 501A) con «Ascensor directo» y «Cocina abierta». 159.80 m2 A.O = 159.80 m2 A.T. El principal NO tiene walk in closet cerrado: es un clóset lineal de pared que hace de tabique entre el dormitorio y la sala. Versión sin rótulo y en mayor resolución del mismo plano: assets/planos/santorini/plano-04.jpg · Metraje impreso en la lámina (m2_techada=159.8, m2_total=159.8): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): CONFIRMADO el ascensor directo — el cajón de ascensor se dibuja abriendo sobre el piso de madera del hall del propio departamento, sin puerta intermedia, y la lámina lo rotula «Ascensor directo». 159.80 A.O = 159.80 A.T ⇒ área libre 0.00, balcón techado. El baño de servicio tiene ducha (piso gris con sumidero y mampara). Cocina abierta con isla de granito, sin despensa dibujada."
+      "observacion": "La lámina publica US$387,000.00 (con un estacionamiento) y US$405,000.00 (con dos estacionamientos paralelos); es la única tipología (junto al 501A) con «Ascensor directo» y «Cocina abierta». 159.80 m2 A.O = 159.80 m2 A.T. El principal NO tiene walk in closet cerrado: es un clóset lineal de pared que hace de tabique entre el dormitorio y la sala. Versión sin rótulo y en mayor resolución del mismo plano: assets/planos/santorini/plano-04.jpg · Metraje impreso en la lámina (m2_techada=159.8, m2_total=159.8): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): CONFIRMADO el ascensor directo — el cajón de ascensor se dibuja abriendo sobre el piso de madera del hall del propio departamento, sin puerta intermedia, y la lámina lo rotula «Ascensor directo». 159.80 A.O = 159.80 A.T ⇒ área libre 0.00, balcón techado. El baño de servicio tiene ducha (piso gris con sumidero y mampara). Cocina abierta con isla de granito, sin despensa dibujada.",
+      "archivos": [
+       "assets/planos/santorini/plano-a-12.jpg"
+      ]
      },
      {
       "unidad": "departamento 501A",
@@ -13069,7 +13370,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica $377,000.00 (con un estacionamiento) y $395,000.00 (con dos estacionamientos paralelos). 155.00 m2 A.O = 155.00 m2 A.T. Es la misma tipología que el 301A con 4.80 m2 menos. Hay una versión sin rótulo y en mayor resolución de esta tipología A en assets/planos/santorini/plano-05.jpg, pero no se puede saber con certeza si corresponde al 501A o al 301A · Metraje impreso en la lámina (m2_techada=155.0, m2_total=155.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): CONFIRMADO el ascensor directo — mismo cajón abriendo dentro del departamento que el 301A, y la lámina lo rotula. 155.00 A.O = 155.00 A.T ⇒ área libre 0.00, balcón techado. Baño de servicio con ducha. Cocina abierta sin despensa."
+      "observacion": "La lámina publica $377,000.00 (con un estacionamiento) y $395,000.00 (con dos estacionamientos paralelos). 155.00 m2 A.O = 155.00 m2 A.T. Es la misma tipología que el 301A con 4.80 m2 menos. Hay una versión sin rótulo y en mayor resolución de esta tipología A en assets/planos/santorini/plano-05.jpg, pero no se puede saber con certeza si corresponde al 501A o al 301A · Metraje impreso en la lámina (m2_techada=155.0, m2_total=155.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): CONFIRMADO el ascensor directo — mismo cajón abriendo dentro del departamento que el 301A, y la lámina lo rotula. 155.00 A.O = 155.00 A.T ⇒ área libre 0.00, balcón techado. Baño de servicio con ducha. Cocina abierta sin despensa.",
+      "archivos": [
+       "assets/planos/santorini/plano-a-13.jpg"
+      ]
      },
      {
       "unidad": "dúplex 602A",
@@ -13111,7 +13415,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "La lámina publica US$593,000.00 (con un estacionamiento) y US$611,000.00 (con dos estacionamientos paralelos) — es la unidad más cara de las fichas. Declara A.O 303 m2 y A.T. 219 m2 (84 m2 sin techar: la terraza con piscina de la segunda planta). Textos de la lámina: «Tres dormitorios con baños incorporados», «Principal con Walk in closet y baño», «Terraza de buen tamaño», «Cocina cerrada», «Gran sala de estar en la segunda planta», «Piscina de buen tamaño», «Con frente a la calle Monteflor y vista al parque». No se cuentan los baños con seguridad a la resolución de la lámina (se ven al menos dos baños y un medio baño en la primera planta y dos baños en la segunda), por eso van en null · Metraje impreso en la lámina (m2_techada=219.0, m2_total=303.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): el baño de servicio de la segunda planta tiene ducha (recinto con sumidero y mampara, junto al cuarto de servicio con cama). Principal con baño incorporado. balcon_techado queda en null: la lámina declara 84 m2 sin techar y esos 84 m2 se explican por la terraza con piscina de la segunda planta, así que del dibujo no se puede saber si el exterior de la primera planta está techado. La terraza de la piscina lleva una franja de grass, pero es terraza de la unidad, no patio a nivel de suelo. Cocina cerrada sin despensa; el cajón de ascensor queda fuera del perímetro."
+      "observacion": "La lámina publica US$593,000.00 (con un estacionamiento) y US$611,000.00 (con dos estacionamientos paralelos) — es la unidad más cara de las fichas. Declara A.O 303 m2 y A.T. 219 m2 (84 m2 sin techar: la terraza con piscina de la segunda planta). Textos de la lámina: «Tres dormitorios con baños incorporados», «Principal con Walk in closet y baño», «Terraza de buen tamaño», «Cocina cerrada», «Gran sala de estar en la segunda planta», «Piscina de buen tamaño», «Con frente a la calle Monteflor y vista al parque». No se cuentan los baños con seguridad a la resolución de la lámina (se ven al menos dos baños y un medio baño en la primera planta y dos baños en la segunda), por eso van en null · Metraje impreso en la lámina (m2_techada=219.0, m2_total=303.0): se deja como referencia, el área oficial sale de la lista de precios. · 2da pasada (8 casillas): el baño de servicio de la segunda planta tiene ducha (recinto con sumidero y mampara, junto al cuarto de servicio con cama). Principal con baño incorporado. balcon_techado queda en null: la lámina declara 84 m2 sin techar y esos 84 m2 se explican por la terraza con piscina de la segunda planta, así que del dibujo no se puede saber si el exterior de la primera planta está techado. La terraza de la piscina lleva una franja de grass, pero es terraza de la unidad, no patio a nivel de suelo. Cocina cerrada sin despensa; el cajón de ascensor queda fuera del perímetro.",
+      "archivos": [
+       "assets/planos/santorini/plano-a-14.jpg"
+      ]
      }
     ]
    }
@@ -13815,7 +14122,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Proyecto de AyD Inmobiliaria en Jr. Narciso de la Colina 142, Las Gardenias (no confundir con Conde II, el otro proyecto de AyD). Planta larga y angosta: la lámina dibuja el ascensor y la escalera de emergencia comunes dentro del mismo cuadro, con DOS flechas de ingreso — el ascensor NO abre dentro del departamento. Sala y comedor van en un solo ambiente y la cocina se abre a ellos por el costado del mesón, sin tabique ni puerta: es cocina abierta en U (encimera, poza y refrigeradora) pero SIN isla exenta y SIN taburetes dibujados; el mueble bajo que la separa de la sala es una consola de adorno. La lavandería es un recinto propio de piso enchapado detrás de la cocina, con lavadora y lavadero, y da a un ducto de luz con mampara. Zona íntima: dormitorio secundario y dormitorio 3, ambos con clóset; el dormitorio principal remata en un pasillo-vestidor con DOS frentes de colgadores enfrentados que lleva a su baño con tina — se lee como walk in closet y como suite. Baños: 2 completos (el compartido con ducha y el principal con tina) más el medio baño de visita junto al ingreso (inodoro y lavatorio). No hay dormitorio ni baño de servicio. El balcón, una franja embaldosada con macetero al frente de la sala, NO es techado: la propia lámina imprime Área ocupada 97 m² / Área techada 95 m² / Área libre 2 m², y esos 2 m² son el balcón. Metraje impreso en la lámina (97 / 95 / 2): se deja como referencia, el área oficial sale de la lista de precios. La lámina advierte que «los planos son referenciales, pueden tener pequeñas variaciones en obra»."
+      "observacion": "Proyecto de AyD Inmobiliaria en Jr. Narciso de la Colina 142, Las Gardenias (no confundir con Conde II, el otro proyecto de AyD). Planta larga y angosta: la lámina dibuja el ascensor y la escalera de emergencia comunes dentro del mismo cuadro, con DOS flechas de ingreso — el ascensor NO abre dentro del departamento. Sala y comedor van en un solo ambiente y la cocina se abre a ellos por el costado del mesón, sin tabique ni puerta: es cocina abierta en U (encimera, poza y refrigeradora) pero SIN isla exenta y SIN taburetes dibujados; el mueble bajo que la separa de la sala es una consola de adorno. La lavandería es un recinto propio de piso enchapado detrás de la cocina, con lavadora y lavadero, y da a un ducto de luz con mampara. Zona íntima: dormitorio secundario y dormitorio 3, ambos con clóset; el dormitorio principal remata en un pasillo-vestidor con DOS frentes de colgadores enfrentados que lleva a su baño con tina — se lee como walk in closet y como suite. Baños: 2 completos (el compartido con ducha y el principal con tina) más el medio baño de visita junto al ingreso (inodoro y lavatorio). No hay dormitorio ni baño de servicio. El balcón, una franja embaldosada con macetero al frente de la sala, NO es techado: la propia lámina imprime Área ocupada 97 m² / Área techada 95 m² / Área libre 2 m², y esos 2 m² son el balcón. Metraje impreso en la lámina (97 / 95 / 2): se deja como referencia, el área oficial sale de la lista de precios. La lámina advierte que «los planos son referenciales, pueden tener pequeñas variaciones en obra». · Fuente: assets/planos/narciso-ayd-oficial/Flat 201-401 - 3 dorm - 97 m2.jpg",
+      "archivos": [
+       "assets/planos/narciso-ayd-oficial/Flat 201-401 - 3 dorm - 97 m2.jpg"
+      ]
      },
      {
       "unidad": "DPTO 202, 402 — planta 2° y 4° nivel",
@@ -13857,7 +14167,10 @@
        "doble_altura": false,
        "azotea_propia": false
       },
-      "observacion": "Es la contraparte de la 201/401 en el mismo piso, con la planta espejada y algo más grande. OJO con el nombre del archivo: dice «97 m2» pero la lámina imprime Área ocupada 103 m², Área techada 100 m² y Área libre 3 m² — el archivo está mal rotulado y el área oficial sale de la lista de precios. Mismo partido: sala y comedor en un solo ambiente con el balcón embaldosado y macetero al frente; cocina abierta en U (encimera, poza, refrigeradora) sin isla y sin taburetes; lavandería en recinto propio con lavadora y lavadero dando a un ducto de luz; medio baño de visita junto al ingreso; ascensor y escalera de emergencia comunes dibujados en la misma lámina, con dos flechas de ingreso — el ascensor no abre dentro del departamento. Tres dormitorios con clóset, un baño completo con ducha compartido y el principal con pasillo-vestidor de dos frentes de colgadores que lleva a su baño con tina. No hay dormitorio ni baño de servicio, ni estar aparte. El balcón NO es techado: los 3 m² de área libre impresos son exactamente esa franja."
+      "observacion": "Es la contraparte de la 201/401 en el mismo piso, con la planta espejada y algo más grande. OJO con el nombre del archivo: dice «97 m2» pero la lámina imprime Área ocupada 103 m², Área techada 100 m² y Área libre 3 m² — el archivo está mal rotulado y el área oficial sale de la lista de precios. Mismo partido: sala y comedor en un solo ambiente con el balcón embaldosado y macetero al frente; cocina abierta en U (encimera, poza, refrigeradora) sin isla y sin taburetes; lavandería en recinto propio con lavadora y lavadero dando a un ducto de luz; medio baño de visita junto al ingreso; ascensor y escalera de emergencia comunes dibujados en la misma lámina, con dos flechas de ingreso — el ascensor no abre dentro del departamento. Tres dormitorios con clóset, un baño completo con ducha compartido y el principal con pasillo-vestidor de dos frentes de colgadores que lleva a su baño con tina. No hay dormitorio ni baño de servicio, ni estar aparte. El balcón NO es techado: los 3 m² de área libre impresos son exactamente esa franja. · Fuente: assets/planos/narciso-ayd-oficial/Flat 202-402 - 3 dorm - 97 m2.jpg",
+      "archivos": [
+       "assets/planos/narciso-ayd-oficial/Flat 202-402 - 3 dorm - 97 m2.jpg"
+      ]
      }
     ]
    }

@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260831e"></script>
+<script src="data/portal-data.js?v=20260831f"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -273,7 +273,8 @@ function render(){
      const filas=A.unidades.map(u=>{
        const e=u.estudio||{}; const [c,bg,lab]=VER[e.veredicto]||VER['sin estudio'];
        const cs=Object.keys(ET).map(k=>`<td style="text-align:center;font-size:11px">${cel(u.checklist[k])}</td>`).join('');
-       return `<tr><td style="white-space:nowrap"><b>${u.unidad}</b>
+       const lams=(u.archivos||[]).map((a,i)=>`<a href="#" onclick="lb('${a.replace(/'/g,"\\'")}');return false" style="font-size:10px;color:#185FA5;margin-right:6px">ver plano${(u.archivos||[]).length>1?' '+(i+1):''}</a>`).join('');
+       return `<tr><td style="white-space:nowrap"><b>${u.unidad}</b>${lams?`<div style="margin-top:2px">${lams}</div>`:''}
            ${e.hay?`<div><span style="font-size:9.5px;font-weight:800;color:${c};background:${bg};padding:1px 6px;border-radius:3px">${lab}</span></div>`:''}
            ${u.observacion?`<div class="muted" style="font-size:10px;white-space:normal;max-width:230px;margin-top:2px">${u.observacion}</div>`:''}</td>${cs}</tr>`;}).join('');
      const th=Object.values(ET).map(v=>`<th style="font-size:9.5px;writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;padding:6px 2px">${v}</th>`).join('');
