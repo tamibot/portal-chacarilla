@@ -7,10 +7,10 @@
   "con_precio": 100,
   "competidores_activos": 32,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 21,
+  "comparables_confirmados": 22,
   "en_ultimas_unidades": 16,
   "sin_precio_publico": 0,
-  "cochera_incluida": 20,
+  "cochera_incluida": 21,
   "cochera_aparte": 11,
   "verif_web_fecha": "2026-09-03",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
@@ -4398,13 +4398,13 @@
    "addr": "Calle Conde de la Vega del Ren 119, Chacarilla del Estanque, Santiago de Surco",
    "estado_grupo": "En construcción",
    "estado_raw": "En construcción (obra 2026, entrega 2027)",
-   "entrega": "2027",
+   "entrega": "2027-04",
    "lat": -12.1187009,
    "lng": -76.982851,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 308700,
-   "precio_hasta_usd": null,
+   "precio_desde_usd": 301620,
+   "precio_hasta_usd": 301620,
    "dorms": "3",
    "m2": "100 – 254",
    "wa": "994363232",
@@ -4437,92 +4437,41 @@
    "brochure": "assets/brochures/conde-ii-brochure-2026.pdf",
    "typologies": [
     {
-     "unidad": "Flat 101 — VENDIDO",
+     "unidad": "Flat 201 / 202 · piso 2",
      "dorm": 3,
-     "m2": 182,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "primer_piso",
-     "piso": "1",
-     "flat": false,
-     "vendido": true,
-     "certeza_cochera": "politica_desarrolladora"
-    },
-    {
-     "unidad": "Flat 102 — VENDIDO",
-     "dorm": 3,
-     "m2": 100,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "primer_piso",
-     "piso": "1",
-     "flat": false,
-     "vendido": true,
-     "certeza_cochera": "politica_desarrolladora"
-    },
-    {
-     "unidad": "Flat típico 01 (201/301/401)",
-     "dorm": 3,
-     "m2": 126,
-     "precio_usd": null,
-     "precio_m2": null,
+     "m2": 126.0,
+     "precio_lista_usd": 331620,
+     "precio_lista_todo": 331620,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": 301620,
+     "precio_m2": 2394,
      "tipo": "flat",
-     "piso": "2 al 4",
+     "piso": "2",
      "flat": true,
-     "vendido": false,
-     "certeza_cochera": "politica_desarrolladora"
-    },
-    {
-     "unidad": "Flat típico 02 (202/302/402)",
-     "dorm": 3,
-     "m2": 126,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "2 al 4",
-     "flat": true,
-     "vendido": false,
-     "certeza_cochera": "politica_desarrolladora"
-    },
-    {
-     "unidad": "Dúplex 501",
-     "dorm": 3,
-     "m2": 254,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "5",
-     "flat": false,
-     "vendido": false,
-     "certeza_cochera": "politica_desarrolladora"
-    },
-    {
-     "unidad": "Dúplex 502 — VENDIDO",
-     "dorm": 3,
-     "m2": 252,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "5",
-     "flat": false,
-     "vendido": true,
-     "certeza_cochera": "politica_desarrolladora"
+     "m2_equivalente": 158.0,
+     "precio_m2_equiv": 2099,
+     "nota": "Washington Benavides el 3-sep-2026: «están disponibles los dos departamentos del segundo piso, el flat 201 y 202. Ambos son de 126m2, y tienen 03 dormitorios con baño incorporado cada uno. El precio vigente de los dptos. incluyendo el DCTO PREVENTA es de US $331,620.00 y viene con 2 estacionamientos paralelos». El US$/m² descuenta US$30,000 por los dos según la convención del benchmark."
     }
    ],
    "flats_summary": [
     {
+     "unidad": "Flat 201 / 202",
      "dorm": 3,
-     "m2": 126,
-     "precio_usd": 308700,
-     "precio_m2": 2450,
-     "comparable_confirmado": false,
-     "motivo_no_comparable": "No se sabe si el precio incluye estacionamiento: AyD lo vende de las dos formas."
+     "m2": 126.0,
+     "precio_usd": 301620,
+     "precio_m2": 2394,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 331620,
+     "ajuste_cochera_usd": 30000,
+     "nota": "El precio incluye 2 estacionamientos paralelos. Se descuentan US$30,000 y queda neto de cochera."
     }
    ],
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución. Análisis de sus plantas (02-sep-2026): el «tercer dormitorio» que el asesor ofrece convertir en oficina, taller o gimnasio está dibujado como dormitorio COMPLETO — cama, velador, dos closets, puerta con barrido, ventana exterior y baño propio con ducha. La personalización es promesa de obra, no un ambiente a medias. Sus dos tipologías traen los tres dormitorios con baño propio, cuarto de servicio con cama, baño de servicio con ducha, cuarto de lavado bajo techo y ascensor que abre dentro del departamento. OJO: de sus 6 tipologías solo hay plano de 2. Falta la del Dúplex 501 de 254 m², que sigue EN VENTA y del que solo hay renders. · Brochure oficial de AyD: los flats típicos 201, 401 y 202 son de 126 m² de área ocupada (124 techada + 2 libre), 3 dormitorios, 3.5 baños, área de servicio completa con cuarto y baño de servicio, y balcón con vista exterior. Washington Benavides el 30-jun-2026: «desde los $308,700» y «nosotros tenemos dptos. únicamente de 3 dormitorios». · Su cartel de obra, fotografiado en el recorrido: 5 pisos + azotea, 2 sótanos, 10 departamentos y 19 ESTACIONAMIENTOS, licencia 0231-2026-SGLH-GDU-MSS, 13 meses de ejecución. El cerco dice «Tu nueva historia comienza aquí · Dormitorios 3 · Desde 126 m²», que calza con su ficha. Casi 2 estacionamientos por departamento — es una señal fuerte de que van incluidos, pero sigue siendo señal, no confirmación. Ojo con el cartel: el propietario figura como «AYD NARCISO S.A.C.», que es la sociedad de AyD, no el proyecto Narciso: las dos fotos de esta obra estaban archivadas con el nombre de Narciso por eso.",
+   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución. Análisis de sus plantas (02-sep-2026): el «tercer dormitorio» que el asesor ofrece convertir en oficina, taller o gimnasio está dibujado como dormitorio COMPLETO — cama, velador, dos closets, puerta con barrido, ventana exterior y baño propio con ducha. La personalización es promesa de obra, no un ambiente a medias. Sus dos tipologías traen los tres dormitorios con baño propio, cuarto de servicio con cama, baño de servicio con ducha, cuarto de lavado bajo techo y ascensor que abre dentro del departamento. OJO: de sus 6 tipologías solo hay plano de 2. Falta la del Dúplex 501 de 254 m², que sigue EN VENTA y del que solo hay renders. · Brochure oficial de AyD: los flats típicos 201, 401 y 202 son de 126 m² de área ocupada (124 techada + 2 libre), 3 dormitorios, 3.5 baños, área de servicio completa con cuarto y baño de servicio, y balcón con vista exterior. Washington Benavides el 30-jun-2026: «desde los $308,700» y «nosotros tenemos dptos. únicamente de 3 dormitorios». · Su cartel de obra, fotografiado en el recorrido: 5 pisos + azotea, 2 sótanos, 10 departamentos y 19 ESTACIONAMIENTOS, licencia 0231-2026-SGLH-GDU-MSS, 13 meses de ejecución. El cerco dice «Tu nueva historia comienza aquí · Dormitorios 3 · Desde 126 m²», que calza con su ficha. Casi 2 estacionamientos por departamento — es una señal fuerte de que van incluidos, pero sigue siendo señal, no confirmación. Ojo con el cartel: el propietario figura como «AYD NARCISO S.A.C.», que es la sociedad de AyD, no el proyecto Narciso: las dos fotos de esta obra estaban archivadas con el nombre de Narciso por eso. · Al 3-sep-2026 quedan los dos flats del segundo piso, 201 y 202, de 126 m² y 3 dormitorios cada uno con baño incorporado, en US$331,620 con descuento de preventa aplicado y 2 estacionamientos paralelos incluidos. Entrega abril 2027, financia Scotiabank — es el único del cuadrante que no trabaja con BCP ni Interbank.",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/conde-ii/",
     "https://inmobiliariaayd.com",
@@ -4541,10 +4490,10 @@
    ],
    "total_pisos": 5,
    "portales": {},
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": {
-    "n": 3,
-    "label": "3 de 6 tipologías disponibles (3 ya vendidas)"
+    "n": 2,
+    "label": "Quedan los dos del segundo piso (201 y 202)"
    },
    "geo_aprox": false,
    "geo_nota": "Ubicación verificada en el recorrido del 22-ago-2026: se fotografió el edificio desde la vereda de enfrente, a 62 m.",
@@ -4572,7 +4521,7 @@
    "caseta_nota": "Sin caseta: cerco de obra rotulado con la marca, metrajes y datos de contacto.",
    "caseta_fecha": "2026-08-22",
    "como_presenta": "«Un estilo de vida sofisticado, rodeado de áreas verdes» — venden cercanía a los parques Bella Luz, Miro Quesada y César Vallejo, y la posibilidad de personalizar acabados y distribución.",
-   "politica_precio": "No sabemos si el precio incluye estacionamiento. Su brochure trae el precio por tipología pero no dice si incluye estacionamiento, y no tenemos tarifario. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante.",
+   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos paralelos y ya trae aplicado el descuento de preventa. El US$/m² descuenta US$30,000 por los dos, según la convención del benchmark.",
    "promocion": "Beneficio de personalización: «puedes adaptar ese tercer dormitorio a tus necesidades — oficina, sala de juegos, taller, gimnasio». Personalizan acabados y distribución con acompañamiento de sus arquitectos.",
    "planos_fuente": "Brochure oficial AyD edición 2026, recibido por WhatsApp (cuadro de tipologías con estado de venta + plantas de los flats típicos).",
    "documentos": [
@@ -4649,17 +4598,14 @@
     }
    ],
    "foto_campo": "2026-08-22",
-   "pedido": "si el precio incluye estacionamiento",
-   "pedido_que": "Hola! Sobre Conde II: si el precio incluye estacionamiento; precio de su flat tipico.",
+   "pedido": null,
+   "pedido_que": null,
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
     "nota": "AyD lo mantiene «EN PLANOS» al 25-ago-2026 — sin cambios."
    },
-   "precio_fuente": {
-    "tipo": "brochure",
-    "nota": "Brochure oficial de AyD edición 2026, recibido por WhatsApp, con el estado de venta por tipología."
-   },
+   "precio_fuente": "Chat real de WhatsApp con Washington Benavides (Inmobiliaria AyD), 3-sep-2026",
    "ventas": {
     "vendidas": 3,
     "total": 6,
@@ -4682,17 +4628,17 @@
      "total": 6
     }
    ],
-   "cochera_nota": "Sin confirmar. Habíamos inferido que iba aparte por el formato de cotización de Monte Umbroso 247, pero el 3-sep-2026 la misma inmobiliaria confirmó que Narciso SÍ incluye estacionamiento doble lineal: AyD no aplica una política única, así que la inferencia se cae y vuelve a quedar sin dato.",
+   "cochera_nota": "Confirmado por Washington Benavides el 3-sep-2026: el precio «viene con 2 estacionamientos paralelos». Son DOS. Ojo con AyD: no tiene una política única — Monte Umbroso 247 lo cotiza aparte a S/54,000 y Narciso lo incluye como doble lineal.",
    "promo": {
-    "tipo": "Beneficio no monetario",
-    "que": "Personalización de acabados y distribución con sus arquitectos",
-    "valor_usd": null,
-    "valor_txt": "sin valor monetario declarado",
+    "tipo": "Estacionamientos incluidos",
+    "que": "2 estacionamientos paralelos incluidos en el precio",
+    "valor_usd": 30000,
+    "valor_txt": "US$30,000 según la convención del benchmark",
     "pct_txt": null,
-    "desde": "2026-08",
-    "cond": "«Puedes adaptar ese tercer dormitorio: oficina, sala de juegos, taller o gimnasio»",
+    "desde": "2026-09-03",
+    "cond": "El precio que cotizan ya trae además el descuento de preventa.",
     "canal": "WhatsApp del asesor",
-    "fuente": "Brochure de AyD 2026 + chat del asesor"
+    "fuente": "Chat real de WhatsApp con Washington Benavides (Inmobiliaria AyD), 3-sep-2026: «viene con 2 estacionamientos paralelos»"
    },
    "coherencia_alerta": "Falta el plano del Dúplex 501 de 254 m², que está en venta. Pedirlo al asesor. Además la lámina 2026 se titula «Flat típico 201 y 401» mientras la de 2025 dice «201 301 401»: con 10 depas en 5 pisos la cuenta solo cierra incluyendo el 301.",
    "planos_analisis": {
@@ -4825,8 +4771,8 @@
      }
     ]
    },
-   "cochera_certeza": null,
-   "cochera_fuente": null,
+   "cochera_certeza": "confirmado",
+   "cochera_fuente": "Chat real de WhatsApp con Washington Benavides (Inmobiliaria AyD), 3-sep-2026",
    "cartel_obra": {
     "fecha": "2026-08-22",
     "foto": "assets/campo/conde-ii-cerco-licencia.jpg",
@@ -4844,25 +4790,25 @@
    "dorms_declarados": [
     3
    ],
-   "dorms_con_precio": [],
+   "dorms_con_precio": [
+    3
+   ],
    "tipico": {
-    "unidad": "Flat típico 02 (202/302/402)",
-    "m2": 126,
+    "unidad": "Flat 201 / 202 · piso 2",
+    "m2": 126.0,
     "dorm": 3,
-    "piso": "2 al 4",
-    "precio_m2": null,
-    "precio_usd": null,
-    "estac_incluidos": null,
+    "piso": "2",
+    "precio_m2": 2394,
+    "precio_usd": 301620,
+    "estac_incluidos": 2,
     "banos": {
      "completos": 4,
      "medios": 1
     },
-    "de_n_tipicos": 2
+    "de_n_tipicos": 1
    },
-   "pedido_lista": [
-    "si el precio incluye estacionamiento",
-    "precio de su flat tipico"
-   ]
+   "pedido_lista": [],
+   "desde_publicado": 331620
   },
   {
    "id": "conde-de-la-vega-251",
@@ -14030,8 +13976,8 @@
    "lng": -76.98753819552181,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 213176,
-   "precio_hasta_usd": 213176,
+   "precio_desde_usd": 211176,
+   "precio_hasta_usd": 211176,
    "dorms": "3",
    "m2": "87–233",
    "wa": "981386111",
@@ -14054,8 +14000,8 @@
      "unidad": "203",
      "dorm": 2,
      "m2": 86.95,
-     "precio_usd": 213176,
-     "precio_m2": 2452,
+     "precio_usd": 211176,
+     "precio_m2": 2429,
      "tipo": "flat",
      "piso": "2",
      "flat": true,
@@ -14066,8 +14012,8 @@
      "precio_m2_equiv": 1930,
      "precio_soles": 820000,
      "precio_lista_usd": 241176,
-     "ajuste_cochera_usd": 28000,
-     "nota": "Jenny Miranda (Edifikarte) el 17-jun y el 1-jul-2026: «S/820,000 incluye 2 estacionamientos lineales y deposito». Son DOS, no uno. El US$/m² descuenta US$28,000 por el par lineal según la convención del benchmark; el depósito no se descuenta. Es el último de 2 dorm y está separado con la minuta en stand by."
+     "ajuste_cochera_usd": 30000,
+     "nota": "Jenny Miranda (Edifikarte) el 17-jun y el 1-jul-2026: «S/820,000 incluye 2 estacionamientos lineales y deposito». Son DOS, no uno. El US$/m² descuenta US$30,000 por los dos según la convención del benchmark; el depósito no se descuenta. Es el último de 2 dorm y está separado con la minuta en stand by."
     }
    ],
    "flats_summary": [
@@ -14075,12 +14021,12 @@
      "unidad": "203",
      "dorm": 2,
      "m2": 86.95,
-     "precio_usd": 213176,
-     "precio_m2": 2452,
+     "precio_usd": 211176,
+     "precio_m2": 2429,
      "comparable_confirmado": true,
      "precio_lista_usd": 241176,
-     "ajuste_cochera_usd": 28000,
-     "nota": "El precio incluye DOS estacionamientos lineales y un depósito, confirmado por Jenny Miranda. Se descuenta US$28,000 por el par lineal: US$241,176 − US$28,000 = US$213,176 neto de cochera sobre 86.95 m². El depósito no se descuenta, por eso el equivalente le suma sus 6 m²."
+     "ajuste_cochera_usd": 30000,
+     "nota": "El precio incluye DOS estacionamientos lineales y un depósito, confirmado por Jenny Miranda. Se descuenta US$30,000 por los dos: US$241,176 − US$28,000 = US$213,176 neto de cochera sobre 86.95 m². El depósito no se descuenta, por eso el equivalente le suma sus 6 m²."
     }
    ],
    "dorms_disponibles": [
@@ -14462,8 +14408,8 @@
     "m2": 86.95,
     "dorm": 2,
     "piso": "2",
-    "precio_m2": 2452,
-    "precio_usd": 213176,
+    "precio_m2": 2429,
+    "precio_usd": 211176,
     "estac_incluidos": 2,
     "banos": {
      "completos": 2,
