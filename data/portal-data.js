@@ -7,7 +7,7 @@ window.PORTAL_DATA = {
   "con_precio": 100,
   "competidores_activos": 32,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 22,
+  "comparables_confirmados": 21,
   "en_ultimas_unidades": 16,
   "sin_precio_publico": 0,
   "cochera_incluida": 20,
@@ -16413,7 +16413,7 @@ window.PORTAL_DATA = {
      "m2": 154,
      "precio_soles": 1323630,
      "precio_usd": 389303,
-     "precio_m2": 2528,
+     "precio_m2": null,
      "tipo": "flat",
      "piso": "intermedio",
      "flat": true,
@@ -16421,7 +16421,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 389303,
      "m2_equivalente": 154,
-     "precio_m2_equiv": 2528
+     "precio_m2_equiv": 2528,
+     "motivo_no_comparable": "El precio sale de una ficha de InfoCasas, no de una lista del proyecto, y el metraje contradice a su propia valla, que declara «2 y 3 dormitorios desde 193 m²». No tiene ningún plano publicado con el que verificarlo."
     },
     {
      "unidad": "Depto 135 m² (InfoCasas Y7B5FF)",
@@ -16429,7 +16430,7 @@ window.PORTAL_DATA = {
      "m2": 135,
      "precio_soles": 1140270,
      "precio_usd": 335374,
-     "precio_m2": 2484,
+     "precio_m2": null,
      "tipo": "flat",
      "piso": "intermedio",
      "flat": true,
@@ -16437,29 +16438,11 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 335374,
      "m2_equivalente": 135,
-     "precio_m2_equiv": 2484
+     "precio_m2_equiv": 2484,
+     "motivo_no_comparable": "El precio sale de una ficha de InfoCasas, no de una lista del proyecto, y el metraje contradice a su propia valla, que declara «2 y 3 dormitorios desde 193 m²». No tiene ningún plano publicado con el que verificarlo."
     }
    ],
-   "flats_summary": [
-    {
-     "unidad": "InfoCasas ref L3DCAC",
-     "dorm": 3,
-     "m2": 154,
-     "precio_usd": 389303,
-     "precio_m2": 2528,
-     "comparable_confirmado": true,
-     "nota": "Anuncio InfoCasas (broker Exklusiv). S/1,323,630 · 154 m² · 3 dorm. Referencial, sin confirmar con desarrollador."
-    },
-    {
-     "unidad": "InfoCasas ref Y7B5FF",
-     "dorm": 3,
-     "m2": 135,
-     "precio_usd": 335374,
-     "precio_m2": 2484,
-     "comparable_confirmado": true,
-     "nota": "Anuncio InfoCasas (broker). S/1,140,270 · 135 m² · 3 dorm. Referencial."
-    }
-   ],
+   "flats_summary": [],
    "dorms_disponibles": [
     3
    ],
@@ -16507,8 +16490,8 @@ window.PORTAL_DATA = {
    "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
    "caseta_fecha": "2026-08-22",
    "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola.",
-   "pedido": "laminas de tipologia",
-   "pedido_que": "Hola! Sobre Monte Flor: laminas de tipologia; si tienen alguna promocion vigente.",
+   "pedido": "precio de su flat tipico",
+   "pedido_que": "Hola! Sobre Monte Flor: precio de su flat tipico; laminas de tipologia; si tienen alguna promocion vigente.",
    "contactos": [
     {
      "nombre": null,
@@ -16565,16 +16548,18 @@ window.PORTAL_DATA = {
     "m2": 154,
     "dorm": 3,
     "piso": "intermedio",
-    "precio_m2": 2528,
+    "precio_m2": null,
     "precio_usd": 389303,
     "estac_incluidos": 0,
     "banos": null,
     "de_n_tipicos": 2
    },
    "pedido_lista": [
+    "precio de su flat tipico",
     "laminas de tipologia",
     "si tienen alguna promocion vigente"
-   ]
+   ],
+   "motivo_no_comparable": "Fuera del ranking de US$/m²: su único precio viene de fichas de portal cuyo metraje (135 y 154 m²) queda por debajo del piso de 193 m² que declara su propia valla de obra. Sin lista de precios propia y sin planos, no hay con qué sostener su posición."
   },
   {
    "id": "parque-monte-carmelo",
@@ -20735,8 +20720,8 @@ window.PORTAL_DATA = {
     "nota": "AyD lo mantiene «EN PLANOS» al 25-ago-2026 — sin cambios."
    },
    "precio_fuente": {
-    "tipo": "web_oficial",
-    "nota": "Ficha oficial de Inmobiliaria AyD, con su política de estacionamiento declarada."
+    "tipo": "cotizacion",
+    "nota": "Dos hojas de cotización oficiales de Inmobiliaria AyD que Washington Benavides envió el 19-ago-2026, con el departamento y los estacionamientos en líneas separadas."
    },
    "stock_hist": [
     {
