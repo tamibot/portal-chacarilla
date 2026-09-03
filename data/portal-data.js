@@ -2284,7 +2284,7 @@ window.PORTAL_DATA = {
     3,
     4
    ],
-   "comentario": "Preventa vigente (lista ago-2026). El precio publicado incluye 1 cochera simple; el US$/m² del portal descuenta la cochera (US$15,000) para comparar en la misma base que la competencia. Flats 1–3 dorm, dúplex 2 y 4 dorm. Entrega noviembre 2027.",
+   "comentario": "Preventa vigente (lista ago-2026). El precio publicado es el del departamento solo: la cochera y el depósito se venden aparte, así que el US$/m² del portal no descuenta nada. Flats 1–3 dorm, dúplex 2 y 4 dorm. Entrega noviembre 2027.",
    "fuentes": [],
    "anuncios": null,
    "mostrar": true,
