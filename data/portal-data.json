@@ -4366,7 +4366,9 @@
     "desde": "2026-07-15",
     "cond": "Dos ganchos distintos en la misma tanda: «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja». VIGENCIA POR CONFIRMAR: piezas de julio.",
     "canal": "Meta Ads (Grupo Dicon / LoBo)",
-    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · ganchos «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja»"
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · ganchos «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja»",
+    "contraste": "No tenemos chat de Dicon que cubra Aura Sul: solo esta en las piezas de Meta.",
+    "corroborada_por_asesor": false
    },
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
@@ -4638,7 +4640,8 @@
     "desde": "2026-09-03",
     "cond": "El precio que cotizan ya trae además el descuento de preventa.",
     "canal": "WhatsApp del asesor",
-    "fuente": "Chat real de WhatsApp con Washington Benavides (Inmobiliaria AyD), 3-sep-2026: «viene con 2 estacionamientos paralelos»"
+    "fuente": "Chat real de WhatsApp con Washington Benavides (Inmobiliaria AyD), 3-sep-2026: «viene con 2 estacionamientos paralelos»",
+    "corroborada_por_asesor": true
    },
    "coherencia_alerta": "Falta el plano del Dúplex 501 de 254 m², que está en venta. Pedirlo al asesor. Además la lámina 2026 se titula «Flat típico 201 y 401» mientras la de 2025 dice «201 301 401»: con 10 depas en 5 pisos la cuenta solo cierra incluyendo el 301.",
    "planos_analisis": {
@@ -5904,8 +5907,8 @@
    ],
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Jenniffer! Sobre Conde de la Vega 460: precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido": "lista de precios vigente",
+   "pedido_que": "La que tenemos es del 18-may-2026. Jenniffer atiende por el 944 216 477.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-05-18",
@@ -5913,7 +5916,7 @@
    },
    "precio_fuente": {
     "tipo": "tarifario",
-    "nota": "Lista de precios oficial de Azzurra del 18-may-2026, unidad por unidad y con estado de venta. Guardada en la plataforma."
+    "nota": "Lista de precios oficial de Azzurra del 18-may-2026, unidad por unidad y con estado de venta. Guardada en la plataforma. ATENCION: la lista es del 18-may-2026, casi cuatro meses atras. Hay que pedirle a Azzurra la vigente."
    },
    "ventas": {
     "vendidas": 14,
@@ -6684,12 +6687,16 @@
      "pm2": null
     }
    ],
-   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido": "lista de precios por unidad",
    "pedido_lista": [
     "precio y metraje de un flat de piso intermedio",
     "si tienen alguna promocion vigente"
    ],
-   "pedido_que": "Hola! Sobre D'Mont: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente."
+   "pedido_que": "Sus precios no tienen fuente registrada. Grupo Dicon atiende por el 998 113 990.",
+   "precio_fuente": {
+    "tipo": "sin_confirmar",
+    "nota": "No hay fuente registrada para sus precios por unidad. Solo tenemos su brochure, que no los trae. Hay que pedirle la lista a Grupo Dicon antes de sostener su posicion en el ranking."
+   }
   },
   {
    "id": "dmont-2",
@@ -7584,7 +7591,9 @@
     "desde": "2026-07",
     "cond": "Anunciada en Meta en julio-2026 · falta reconfirmar vigencia",
     "canal": "Meta Ads",
-    "fuente": "Pieza de la Biblioteca de Anuncios (jul-2026)"
+    "fuente": "Pieza de la Biblioteca de Anuncios (jul-2026)",
+    "contraste": "No tenemos chat con su asesora que cubra el tema: solo esta en la pieza de Meta.",
+    "corroborada_por_asesor": false
    },
    "planos_analisis": {
     "fecha": null,
@@ -8687,7 +8696,8 @@
     "desde": "2026-08-13",
     "cond": "Sobre el DPTO 102, el único que queda. Pasó de S/900,000 con cochera a S/852,000 con cochera y amoblado.",
     "canal": "WhatsApp de la asesora",
-    "fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz, 13-ago-2026, reconfirmado el 3-sep: «Tiene 48 mil de mejora»"
+    "fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz, 13-ago-2026, reconfirmado el 3-sep: «Tiene 48 mil de mejora»",
+    "corroborada_por_asesor": true
    },
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
@@ -10056,7 +10066,8 @@
     "desde": "2026-07",
     "cond": "«Últimos días de precios de pre-venta» — la misma frase se repite desde julio: van más de dos meses",
     "canal": "WhatsApp de la asesora Mónica",
-    "fuente": "Chats del 21-jul y 27-ago-2026"
+    "fuente": "Chats del 21-jul y 27-ago-2026",
+    "corroborada_por_asesor": true
    },
    "planos_analisis": {
     "fecha": null,
@@ -11908,7 +11919,9 @@
     "desde": "2026-06-02",
     "cond": "Campaña «Grati Days» del 15 al 19-jul-2026 según su propia nota de cochera. VIGENCIA POR CONFIRMAR: la pieza es de junio-julio y el corte es de agosto.",
     "canal": "Meta Ads (Edifikarte)",
-    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · anuncio «¡Vive el mundial en tu nuevo depa en Chacarilla! Depas de 3 dorms desde 116m² y ¡cochera de regalo!»"
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · anuncio «¡Vive el mundial en tu nuevo depa en Chacarilla! Depas de 3 dorms desde 116m² y ¡cochera de regalo!»",
+    "contraste": "Nunca hablamos de este proyecto con Jenny: solo esta en el anuncio de Edifikarte.",
+    "corroborada_por_asesor": false
    },
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
@@ -12408,15 +12421,16 @@
    "trayectoria_dev": "Balance declara más de 10 años y «más de 500 hogares». Entregados: Toulouse, Adela, Calle 9, Los Cisnes, Ordóñez y Euler (2016–2023). En venta hoy: Hercelles, Guisse y Monte Carmelo 551 (2025–2026). Fuente: línea de tiempo «Nuestra Historia» del brochure de agosto-2026.",
    "nota_areas": "Ojo al comparar: el brochure dice «desde 80 m²» (área techada del dúplex de semisótano) mientras Nexo publica el mismo depa como 132.60 m² totales. Nuestro $/m² usa el área total, igual que con el resto del cuadrante.",
    "promo": {
-    "tipo": "Descuento negociable",
-    "que": "Ajuste de precio según aprobación bancaria o forma de pago",
-    "valor_usd": null,
-    "valor_txt": "sin monto declarado",
+    "tipo": "Descuento en precio",
+    "que": "Hasta S/25,000 de descuento en unidades seleccionadas",
+    "valor_usd": 7353,
+    "valor_txt": "S/25,000 ≈ US$7,353",
     "pct_txt": null,
-    "desde": "2026-09-03",
-    "cond": "El asesor lo ofrece de entrada, sin que se lo pidan.",
-    "canal": "WhatsApp del proyecto",
-    "fuente": "Chat real de WhatsApp con el asesor Isaac Villar (Balance), 3-sep-2026: «Dependiendo si ya cuentas con aprobación ó tu tipo de compra podemos hacer ajustes en los precios de los dptos»"
+    "desde": "2026-08-25",
+    "cond": "Campana del 25-ago-2026 en unidades seleccionadas, mas un regalo. El asesor ademas ofrece ajustar el precio segun la aprobacion bancaria o la forma de pago.",
+    "canal": "Canal de WhatsApp de Nexo Inmobiliario",
+    "fuente": "Campana difundida por el canal de WhatsApp de Nexo Inmobiliario el 25-ago-2026 + ficha de Nexo. El 3-sep Isaac Villar (Balance) agrego por WhatsApp: «Dependiendo si ya cuentas con aprobacion o tu tipo de compra podemos hacer ajustes en los precios de los dptos».",
+    "corroborada_por_asesor": true
    },
    "planos_analisis": {
     "fecha": null,
@@ -14393,7 +14407,9 @@
     "desde": "2026-07-15",
     "cond": "Siete variantes del mismo anuncio el 15-jul-2026. Misma jugada que Dicon con la parrilla. VIGENCIA POR CONFIRMAR.",
     "canal": "Meta Ads (Edifikarte)",
-    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «¡Kamado de regalo!», 7 variantes el 15-jul"
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «¡Kamado de regalo!», 7 variantes el 15-jul",
+    "contraste": "Jenny Miranda hablo tres veces —17-jun, 1-jul y 3-sep— y nunca menciono el Kamado. Solo esta en la pieza de Meta del 15-jul.",
+    "corroborada_por_asesor": false
    },
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
@@ -14982,8 +14998,8 @@
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
    "foto_campo": "2026-08-22",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Jenniffer! Sobre Monte Mayor 183: precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido": "lista de precios vigente",
+   "pedido_que": "La que tenemos es del 18-may-2026. Jenniffer atiende por el 944 216 477.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-06-24",
@@ -14991,7 +15007,7 @@
    },
    "precio_fuente": {
     "tipo": "tarifario",
-    "nota": "Lista de precios oficial de Azzurra, unidad por unidad y con estado de venta. Guardada en la plataforma."
+    "nota": "Lista de precios oficial de Azzurra, unidad por unidad y con estado de venta. Guardada en la plataforma. ATENCION: la lista es del 18-may-2026, casi cuatro meses atras. Hay que pedirle a Azzurra la vigente."
    },
    "ventas": {
     "vendidas": 16,
@@ -17640,7 +17656,9 @@
     "desde": "2026-07-01",
     "cond": "La pieza no explica en qué consiste el bono. VIGENCIA Y CONTENIDO POR CONFIRMAR.",
     "canal": "Meta Ads (EE Inmobiliaria)",
-    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «Tu depa con Bono Verde 🌿»"
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «Tu depa con Bono Verde 🌿»",
+    "contraste": "Cecilia Estrada explico su politica de estacionamiento el 2-jul-2026 y NO menciono el «Bono Verde». Solo esta en la pieza de Meta.",
+    "corroborada_por_asesor": false
    },
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
@@ -19781,8 +19799,8 @@
    ],
    "wa_label": "Grupo Dicon",
    "foto_campo": "2026-08-22",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola! Sobre Spazio: si tienen alguna promocion vigente.",
+   "pedido": "lista de precios por unidad",
+   "pedido_que": "El panel de su sala de ventas muestra disponibilidad, no precios. Falta la lista.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -19790,7 +19808,7 @@
    },
    "precio_fuente": {
     "tipo": "campo",
-    "nota": "Panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026."
+    "nota": "Panel de disponibilidad de su sala de ventas fotografiado el 22-ago-2026. Ese panel muestra que unidades quedan, no sus precios: los precios por unidad no tienen fuente propia y hay que pedir la lista."
    },
    "ventas": {
     "vendidas": 7,
@@ -20532,7 +20550,7 @@
    "lng": -76.979907,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 259426,
+   "precio_desde_usd": 282456,
    "precio_hasta_usd": 383500,
    "dorms": "3–4",
    "m2": "153–321",
@@ -20564,8 +20582,8 @@
      "m2_techada": 150,
      "precio_lista_usd": 417353,
      "ajuste_cochera_usd": 0,
-     "precio_usd": 383500,
-     "precio_m2": 2557,
+     "precio_usd": 417353,
+     "precio_m2": 2782,
      "tipo": "flat",
      "piso": "3",
      "flat": true,
@@ -20573,7 +20591,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 417353,
      "m2_equivalente": 150,
-     "precio_m2_equiv": 2782
+     "precio_m2_equiv": 2782,
+     "precio_con_dcto_usd": 383500,
+     "nota": "Precio de lista del departamento solo, de la cotización oficial de AyD del 19-ago-2026. Los estacionamientos van en línea aparte a S/54,000 cada uno. La hoja además aplica un DCTO PREVENTA sobre el total; con ese descuento el departamento quedaría en US$383,500, pero acá va el de lista porque el resto del cuadrante también publica sin descuento."
     },
     {
      "unidad": "Flat 102 (1er piso)",
@@ -20582,8 +20602,8 @@
      "m2_techada": 94,
      "precio_lista_usd": 282456,
      "ajuste_cochera_usd": 0,
-     "precio_usd": 259426,
-     "precio_m2": 2760,
+     "precio_usd": 282456,
+     "precio_m2": 3005,
      "tipo": "flat",
      "piso": "1",
      "flat": false,
@@ -20591,7 +20611,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 282456,
      "m2_equivalente": 94,
-     "precio_m2_equiv": 3005
+     "precio_m2_equiv": 3005,
+     "precio_con_dcto_usd": 259426,
+     "nota": "Precio de lista del departamento solo, de la cotización oficial de AyD del 19-ago-2026. Los estacionamientos van en línea aparte a S/54,000 cada uno. La hoja además aplica un DCTO PREVENTA sobre el total; con ese descuento el departamento quedaría en US$259,426, pero acá va el de lista porque el resto del cuadrante también publica sin descuento."
     }
    ],
    "flats_summary": [
