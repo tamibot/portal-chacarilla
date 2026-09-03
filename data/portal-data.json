@@ -1601,6 +1601,22 @@
     "fuentes": [
      "Recorrido de campo 2026-08-22"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Precursores 525",
+    "dev": "Grupo Chacarilla Sur",
+    "proyecto_id": "precursores-525",
+    "tags": [
+     "registro"
+    ],
+    "canal": "Auditoría de assets",
+    "autor": "Benchmark",
+    "texto": "Su foto de portada muestra un banner «ÚLTIMOS DEPARTAMENTOS · 922 323 923» con el logotipo de Chacarilla Sur, pero sin nombrar el proyecto — y Chacarilla Sur tiene dos en la zona. Queda marcada como por confirmar. El número es uno que no teníamos.",
+    "cita": "«ÚLTIMOS DEPARTAMENTOS · 922 323 923» — banner en fachada, 22-ago-2026",
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2110,6 +2126,17 @@
      "pide": "de cuál de sus dos proyectos era la cochera de regalo y si sigue vigente",
      "mensaje": "Hola Isabel! Vi hace un tiempo un anuncio de ustedes con cochera de regalo pero no decía de qué proyecto era. Era de Estelar 1080 o de Monte Umbroso 585? Y sigue vigente?",
      "wa_link": "https://wa.me/51976367206?text=Hola%20Isabel%21%20Vi%20hace%20un%20tiempo%20un%20anuncio%20de%20ustedes%20con%20cochera%20de%20regalo%20pero%20no%20dec%C3%ADa%20de%20qu%C3%A9%20proyecto%20era.%20Era%20de%20Estelar%201080%20o%20de%20Monte%20Umbroso%20585%3F%20Y%20sigue%20vigente%3F"
+    },
+    {
+     "numero": "922323923",
+     "nombre": null,
+     "dev": "Grupo Chacarilla Sur",
+     "proyectos": [
+      "Precursores 525",
+      "Real Living · Monte Real"
+     ],
+     "pide": "confirmar de cuál de sus dos proyectos es este número y esta fachada",
+     "mensaje": "Hola! Vi un banner de ustedes que decía «últimos departamentos» con este número. De qué proyecto es, Precursores 525 o Real Living?"
     }
    ]
   },
@@ -16983,6 +17010,11 @@
      "nombre": null,
      "numero": "962196635",
      "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
+    },
+    {
+     "nombre": null,
+     "numero": "922323923",
+     "fuente": "Banner «ÚLTIMOS DEPARTAMENTOS» en la fachada, fotografiado en el recorrido del 22-ago-2026 — número de Chacarilla Sur que no teníamos"
     }
    ],
    "asesora": "Joyce",
@@ -17304,7 +17336,8 @@
    "dorms_declarados": [
     2,
     3
-   ]
+   ],
+   "coherencia_alerta": "La foto de portada (chacarillasur-precursores.jpg) muestra un edificio de ladrillo terminado con un banner «ÚLTIMOS DEPARTAMENTOS · 922 323 923» y el logotipo de Chacarilla Sur, pero el banner no nombra el proyecto y Chacarilla Sur tiene DOS en la zona: este y Real Living · Monte Real. Hay que confirmar de cuál es antes de darla por buena. El número 922 323 923 tampoco lo teníamos."
   },
   {
    "id": "precursores-ii",
@@ -21330,6 +21363,11 @@
      "nombre": null,
      "numero": "949107186",
      "fuente": "Cartel/valla fotografiada en el recorrido del 22-ago-2026 — el número está impreso en el cartel del proyecto"
+    },
+    {
+     "nombre": null,
+     "numero": "922323923",
+     "fuente": "Banner «ÚLTIMOS DEPARTAMENTOS» en la fachada, fotografiado en el recorrido del 22-ago-2026 — número de Chacarilla Sur que no teníamos"
     }
    ],
    "foto_campo": "2026-08-22",
