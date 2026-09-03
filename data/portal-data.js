@@ -7,7 +7,7 @@ window.PORTAL_DATA = {
   "con_precio": 100,
   "competidores_activos": 33,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 19,
+  "comparables_confirmados": 20,
   "en_ultimas_unidades": 16,
   "sin_precio_publico": 3,
   "cochera_incluida": 21,
@@ -1651,6 +1651,23 @@ window.PORTAL_DATA = {
     "fuentes": [
      "Auditoría de planos, 3-sep-2026"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Spazio",
+    "dev": "Grupo Dicon",
+    "proyecto_id": "spazio",
+    "tags": [
+     "precio",
+     "metodo"
+    ],
+    "canal": "Revisión interna",
+    "autor": "Benchmark",
+    "texto": "Entra al comparativo sin pedirle nada a nadie: tenía cochera confirmada, diez precios por unidad del panel de su sala de ventas y cuatro flats de piso intermedio, pero nunca se le armó la fila. Sus típicos quedan entre US$2,080 y US$2,100/m², abajo de la mediana del cuadrante.",
+    "cita": "Panel de disponibilidad de la sala de ventas, fotografiado el 22-ago-2026",
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2302,7 +2319,7 @@ window.PORTAL_DATA = {
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1303",
+  "sello": "20260903-1308",
   "regla_desde": "El ticket de entrada («desde») sale de la tipología más barata disponible, tomando su precio NETO de cochera — la misma base que el US$/m², para que los dos comparen. Lo que el proyecto publica se guarda aparte en desde_publicado: al 3-sep-2026 catorce proyectos publicaban un número que ninguna de sus unidades sostenía, uno por debajo de su unidad más barata y otro 147 mil por encima."
  },
  "quadrant": [
@@ -19031,7 +19048,41 @@ window.PORTAL_DATA = {
      "dorm_fuente": "Conteo leído de sus propios planos en el análisis del 02-sep-2026"
     }
    ],
-   "flats_summary": [],
+   "flats_summary": [
+    {
+     "unidad": "Flat 201",
+     "dorm": 3,
+     "m2": 104.7,
+     "precio_usd": 217838,
+     "precio_m2": 2080,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 217838,
+     "ajuste_cochera_usd": 0,
+     "nota": "Grupo Dicon vende el estacionamiento aparte, así que el precio del panel ya es el del departamento solo: no hay nada que descontar y compara directo. Precio del panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026."
+    },
+    {
+     "unidad": "Flat 203/303/403/503",
+     "dorm": 3,
+     "m2": 83.1,
+     "precio_usd": 174468,
+     "precio_m2": 2100,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 174468,
+     "ajuste_cochera_usd": 0,
+     "nota": "Grupo Dicon vende el estacionamiento aparte, así que el precio del panel ya es el del departamento solo: no hay nada que descontar y compara directo. Precio del panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026."
+    },
+    {
+     "unidad": "Flat 204/304/404/504",
+     "dorm": 3,
+     "m2": 84.4,
+     "precio_usd": 177219,
+     "precio_m2": 2100,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 177219,
+     "ajuste_cochera_usd": 0,
+     "nota": "Grupo Dicon vende el estacionamiento aparte, así que el precio del panel ya es el del departamento solo: no hay nada que descontar y compara directo. Precio del panel de disponibilidad de su sala de ventas, fotografiado el 22-ago-2026."
+    }
+   ],
    "dorms_disponibles": [
     3,
     6
@@ -19732,7 +19783,8 @@ window.PORTAL_DATA = {
    "dorms_con_precio": [
     3,
     6
-   ]
+   ],
+   "politica_precio": "El precio del panel de ventas es el del departamento solo: Grupo Dicon cotiza el estacionamiento aparte, confirmado por el cliente el 3-sep-2026 y visible en la cotización que Ventas Dicon envió por otro de sus proyectos («198.000 USD + 16.000 USD cochera simple»). Por eso su US$/m² no lleva ningún descuento: ya es neto de cochera."
   },
   {
    "id": "terraverde",
