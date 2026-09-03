@@ -246,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260902b"></script>
+<script src="data/portal-data.js?v=20260902c"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -1025,6 +1025,7 @@ function buildPlanos(){
     return `<div style="background:var(--card,#fff);border:1px solid #ece7d9;border-left:3px solid #A6342A;border-radius:3px;padding:14px 16px;margin-bottom:10px">
       <a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:800;color:#15402c;font-size:15px">${nom}</a>
       <span class="muted" style="font-size:11px"> · ${p.dev||''}</span>
+      ${p.en_cuadrante?'':'<span class="badge" style="background:#f3efe3;color:#8a8271;font-size:10px;margin-left:6px">fuera del cuadrante</span>'}
       <div style="font-size:12.5px;color:#A6342A;font-weight:700;margin-top:3px">${arr.length} unidad${arr.length>1?'es':''} que vende${arr.length>1?'n':''} un dormitorio como estudio</div>
       ${arr.map(x=>`<div style="font-size:12.5px;color:#3c3a33;margin-top:7px;line-height:1.5">
          <b>${x.u.unidad}</b> — ${(x.u.estudio||{}).ya_contado
@@ -1043,10 +1044,14 @@ function buildPlanos(){
      <span><b>${est.length}</b> con un ambiente vendido como estudio</span>
      <span style="background:#FBEAE6;color:#A6342A"><b>${dis.filter(x=>!(x.u.estudio||{}).ya_contado).length}</b> esconden un dormitorio que no cuentan</span>
      <span><b>${dis.filter(x=>(x.u.estudio||{}).ya_contado).length}</b> lo cuentan, pero lo amueblan como escritorio</span>
+     <span style="background:#EAF2FB;color:#185FA5"><b>${dis.filter(x=>x.p.en_cuadrante).length}</b> dentro del cuadrante</span>
    </div>
 
    <div class="sec">Quiénes venden un dormitorio como estudio</div>
    <div class="foot" style="margin-bottom:10px">${D.meta.regla_estudio||''}</div>
+   <div class="foot" style="margin-bottom:10px"><b>Para el argumentario cuentan los ${dis.filter(x=>x.p.en_cuadrante).length} de adentro del cuadrante.</b>
+     Los otros ${dis.filter(x=>!x.p.en_cuadrante).length} están fuera y ${(()=>{const m={};dis.filter(x=>!x.p.en_cuadrante).forEach(x=>m[x.p.name]=(m[x.p.name]||0)+1);
+     const t=Object.entries(m).sort((a,b)=>b[1]-a[1])[0];return t?`${t[1]} salen de uno solo (${t[0]})`:'';})()} — sirven para decir que la jugada es de zona, no para comparar bandas.</div>
    ${Object.entries(porProy).sort((a,b)=>b[1].length-a[1].length).map(tarjeta).join('')
      || '<div class="empty">Ninguno en lo revisado hasta ahora.</div>'}
 
