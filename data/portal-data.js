@@ -1467,6 +1467,38 @@ window.PORTAL_DATA = {
      "precio"
     ],
     "cita": "Relevamiento inicial del cuadrante: 23 competidores mapeados y precios verificados uno a uno (jun–jul 2026)."
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "The Eleven",
+    "dev": "PYR Edificaciones",
+    "proyecto_id": "the-leven",
+    "tags": [
+     "stock"
+    ],
+    "canal": "Informado por el cliente",
+    "autor": "Martin",
+    "texto": "The Eleven se vendió en su totalidad. Sale del comparativo de oferta vigente y su precio pasa a referencia histórica: era el más barato de los de entrega inmediata fuera del cuadrante.",
+    "cita": "Informado por el cliente el 3-sep-2026.",
+    "fuentes": [
+     "Cliente GEU, 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Cuadrante",
+    "dev": null,
+    "proyecto_id": null,
+    "tags": [
+     "promo"
+    ],
+    "canal": "Biblioteca de Anuncios de Meta",
+    "autor": "Benchmark",
+    "texto": "Cuatro promos que ya estaban en las piezas de julio y nunca se habían cargado: cochera de regalo en Monte Carmelo 250, cochera gratis más parrilla en Aura Sul, un Kamado en Monte Mayor 177 y el «Bono Verde» en Parque Monte Carmelo. Con esas, la mitad del cuadrante con promo regala el estacionamiento.",
+    "cita": "Piezas de la Biblioteca de Anuncios bajadas el 17-jul-2026.",
+    "fuentes": [
+     "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2066,7 +2098,7 @@ window.PORTAL_DATA = {
   "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados.",
   "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
   "nota_corte": "Corte de agosto cerrado al 31-ago-2026. El barrido de webs oficiales se hizo el 24-ago y las últimas confirmaciones por WhatsApp llegaron el 27 y 30 de agosto.",
-  "promos_nota": "Se comparan solo promociones con fuente: campaña recibida, hoja de cotización o pieza de Meta guardada. El valor en US$ es el beneficio declarado; el porcentaje se calcula sobre el flat típico de cada proyecto para poder compararlos.",
+  "promos_nota": "Se comparan solo promociones con fuente: campaña recibida, hoja de cotización, chat del asesor o pieza de Meta guardada. El valor en US$ es el beneficio declarado; el porcentaje se calcula sobre el flat típico de cada proyecto. Las que salen de piezas de julio llevan la fecha de la pieza y quedan marcadas «vigencia por confirmar»: un regalo anunciado en julio puede no estar vivo en el corte de agosto. La jugada dominante de la zona es la cochera de regalo, no el descuento en precio.",
   "regla_equivalente": "US$/m² equivalente = precio de lista ÷ (m² del departamento + 16 m² por cada estacionamiento incluido + 6 m² por cada depósito incluido). Sirve para comparar sin tener que ponerle precio a la cochera: en vez de restarle plata al precio, se le suman los metros que el comprador realmente recibe. Donde la cochera va aparte, el precio de lista ya es el del departamento solo y el equivalente coincide con el US$/m² normal.",
   "m2_estacionamiento": 16,
   "m2_deposito": 6,
@@ -4041,7 +4073,18 @@ window.PORTAL_DATA = {
    "unidades": 23,
    "pisos": 6,
    "acabados": "Pisos de bambú machihembrado en sala, comedor y dormitorios; tablero de cuarzo en cocina; muebles altos y bajos; departamento smart con cerradura digital; porcelanato y enchape de piso a techo en baños; ventanas con vidrio templado incoloro; closet y baño incorporado en el dormitorio principal.",
-   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte"
+   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte",
+   "promo": {
+    "tipo": "Regalo",
+    "que": "Cochera gratis y una parrilla Ninja de regalo",
+    "valor_usd": null,
+    "valor_txt": "sin valor declarado en la pieza",
+    "pct_txt": null,
+    "desde": "2026-07-15",
+    "cond": "Dos ganchos distintos en la misma tanda: «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja». VIGENCIA POR CONFIRMAR: piezas de julio.",
+    "canal": "Meta Ads (Grupo Dicon / LoBo)",
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · ganchos «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja»"
+   }
   },
   {
    "id": "conde-ii",
@@ -11162,6 +11205,17 @@ window.PORTAL_DATA = {
       ]
      }
     ]
+   },
+   "promo": {
+    "tipo": "Regalo",
+    "que": "Cochera de regalo",
+    "valor_usd": null,
+    "valor_txt": "sin valor declarado en la pieza",
+    "pct_txt": null,
+    "desde": "2026-06-02",
+    "cond": "Campaña «Grati Days» del 15 al 19-jul-2026 según su propia nota de cochera. VIGENCIA POR CONFIRMAR: la pieza es de junio-julio y el corte es de agosto.",
+    "canal": "Meta Ads (Edifikarte)",
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · anuncio «¡Vive el mundial en tu nuevo depa en Chacarilla! Depas de 3 dorms desde 116m² y ¡cochera de regalo!»"
    }
   },
   {
@@ -13522,7 +13576,18 @@ window.PORTAL_DATA = {
    "cochera_fuente": "Chat real de WhatsApp con el asesor +51 981 386 111, 17-jun y 1-jul-2026",
    "gallery": [
     "assets/chats/monte-mayor-177-fachada.jpg"
-   ]
+   ],
+   "promo": {
+    "tipo": "Regalo",
+    "que": "Un Kamado de regalo",
+    "valor_usd": null,
+    "valor_txt": "sin valor declarado en la pieza",
+    "pct_txt": null,
+    "desde": "2026-07-15",
+    "cond": "Siete variantes del mismo anuncio el 15-jul-2026. Misma jugada que Dicon con la parrilla. VIGENCIA POR CONFIRMAR.",
+    "canal": "Meta Ads (Edifikarte)",
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «¡Kamado de regalo!», 7 variantes el 15-jul"
+   }
   },
   {
    "id": "monte-mayor-183",
@@ -16455,7 +16520,18 @@ window.PORTAL_DATA = {
     ]
    },
    "coherencia_alerta": "Sus cinco dúplex declaran un dormitorio menos del que tienen. El 702 se vende como «1 dorm + flex» y son 2.",
-   "cochera_fuente": "Chat real de WhatsApp con el asesor Cecilia Estrada +51 988 609 572, 2-jul-2026"
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Cecilia Estrada +51 988 609 572, 2-jul-2026",
+   "promo": {
+    "tipo": "Beneficio con nombre propio",
+    "que": "El «Bono Verde»",
+    "valor_usd": null,
+    "valor_txt": "sin valor declarado en la pieza",
+    "pct_txt": null,
+    "desde": "2026-07-01",
+    "cond": "La pieza no explica en qué consiste el bono. VIGENCIA Y CONTENIDO POR CONFIRMAR.",
+    "canal": "Meta Ads (EE Inmobiliaria)",
+    "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «Tu depa con Bono Verde 🌿»"
+   }
   },
   {
    "id": "precursores-525",
@@ -21584,8 +21660,8 @@ window.PORTAL_DATA = {
    "flats_summary": [],
    "cochera_status": "nd",
    "stock": {
-    "n": null,
-    "label": "Pocas unidades disponibles (declarado por PYR)"
+    "n": 0,
+    "label": "Vendido en su totalidad"
    },
    "mostrar": true,
    "geo_aprox": true,
@@ -21614,7 +21690,7 @@ window.PORTAL_DATA = {
    "name": "The Eleven",
    "dev": "PYR Edificaciones",
    "addr": "Av. de los Precursores 1443, Santiago de Surco",
-   "estado_grupo": "Entrega inmediata",
+   "estado_grupo": "Sin precio",
    "estado_raw": "Entrega inmediata · pocas unidades disponibles",
    "estado_obra": "Terminado · entrega inmediata",
    "entrega": "Entrega inmediata",
@@ -21625,7 +21701,7 @@ window.PORTAL_DATA = {
    "caseta_fecha": "2026-08-22",
    "en_cuadrante": false,
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Inmobiliaria confirmada: PYR Edificaciones. 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500. Entrega inmediata con pocas unidades disponibles. PYR lo ubica sobre Av. Velasco Astete; nuestro tótem fotografiado está en el cruce con Av. de los Precursores. Ojo: el 999 988 287 que circulaba como «Brea Balta» pertenece a Grupo Zlatsu y no corresponde a este proyecto — el contacto bueno es el del tótem, 916 123 888. Su web publica 7 renders en alta resolución (8000 px) que confirman rooftop con parrillas y sombrillas, coworking con muro verde, cocina con isla y sala-comedor. NO publica ningún plano de tipología: para analizar sus plantas hay que pedirle la ficha al asesor.",
+   "comentario": "Inmobiliaria confirmada: PYR Edificaciones. 8 pisos, 3 dormitorios de 85 a 136 m², desde S/ 721,500. Entrega inmediata con pocas unidades disponibles. PYR lo ubica sobre Av. Velasco Astete; nuestro tótem fotografiado está en el cruce con Av. de los Precursores. Ojo: el 999 988 287 que circulaba como «Brea Balta» pertenece a Grupo Zlatsu y no corresponde a este proyecto — el contacto bueno es el del tótem, 916 123 888. Su web publica 7 renders en alta resolución (8000 px) que confirman rooftop con parrillas y sombrillas, coworking con muro verde, cocina con isla y sala-comedor. NO publica ningún plano de tipología: para analizar sus plantas hay que pedirle la ficha al asesor. · AGOTADO: el 3-sep-2026 el cliente informó que el proyecto se vendió en su totalidad. Sale del comparativo de oferta vigente; su rango de S/721,500 desde 85 m² pasa a ser evidencia de precio absorbido por la zona.",
    "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de The Eleven con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
    "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
    "contactos": [
@@ -21666,7 +21742,9 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "acabados": "Cocina con isla y barra de taburetes, piso de madera, listones de madera en cabeceras y muros de sala."
+   "acabados": "Cocina con isla y barra de taburetes, piso de madera, listones de madera en cabeceras y muros de sala.",
+   "motivo_no_comparable": "Vendido en su totalidad (informado por el cliente el 3-sep-2026). Su precio queda como referencia histórica de lo que se colocó en la zona, no como oferta vigente.",
+   "cochera_nota": "No se llegó a confirmar si el precio incluía estacionamiento y ya no tiene sentido preguntarlo: el proyecto está vendido."
   },
   {
    "isGEU": false,
@@ -24905,7 +24983,7 @@ window.PORTAL_DATA = {
    ],
    "wa": "966351473",
    "asesora": "Isabel Ruiz",
-   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520.  Su brochure oficial cierra la duda: dice «Flats y Dúplex DESDE 67 m²» y «departamentos de 1, 2 y 3 dorms», que son exactamente los dos metrajes que teníamos cargados bajo Monte Umbroso 520 — el flat de 67 m² y el dúplex de 186 m². También declara que INCLUYE ESTACIONAMIENTO. Análisis de su lámina (02-sep-2026): el Dúplex 704 tiene 3 dormitorios y 3.5 baños que cuadran exactos con el dibujo, y su segundo nivel es casi todo JARDINERA — césped de verdad con comedor exterior de 6 encima. Es el área verde privada más grande de todas las unidades analizadas del cuadrante. Su lavandería está rotulada «PATIO»: va a la intemperie, con tendal.",
+   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520.  Su brochure oficial cierra la duda: dice «Flats y Dúplex DESDE 67 m²» y «departamentos de 1, 2 y 3 dorms», que son exactamente los dos metrajes que teníamos cargados bajo Monte Umbroso 520 — el flat de 67 m² y el dúplex de 186 m². También declara que INCLUYE ESTACIONAMIENTO. Análisis de su lámina (02-sep-2026): el Dúplex 704 tiene 3 dormitorios y 3.5 baños que cuadran exactos con el dibujo, y su segundo nivel es casi todo JARDINERA — césped de verdad con comedor exterior de 6 encima. Es el área verde privada más grande de todas las unidades analizadas del cuadrante. Su lavandería está rotulada «PATIO»: va a la intemperie, con tendal. · Galeon corrió dos anuncios el 16-jul-2026 ofreciendo «cochera de regalo» («Departamentos modernos de 3 dormitorios · Cochera de regalo incluida» y «2 dormitorios desde S/690,000* con cochera de regalo»), pero ninguno nombra el proyecto. Galeon tiene dos en la zona —este y Estelar 1080—, así que no se le carga la promo a ninguno de los dos hasta preguntar de cuál es.",
    "fuentes": [
     "https://www.galeon.com.pe/proyectos/monte-umbroso-585/",
     "Pieza de Meta con el claim «Vive en Chacarilla · desde $170,850», certificación EDGE, 1-2-3 dorm",
