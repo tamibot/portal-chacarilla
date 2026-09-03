@@ -7,11 +7,11 @@ window.PORTAL_DATA = {
   "con_precio": 100,
   "competidores_activos": 34,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 18,
-  "en_ultimas_unidades": 15,
-  "sin_precio_publico": 4,
-  "cochera_incluida": 20,
-  "cochera_aparte": 13,
+  "comparables_confirmados": 19,
+  "en_ultimas_unidades": 16,
+  "sin_precio_publico": 3,
+  "cochera_incluida": 21,
+  "cochera_aparte": 11,
   "verif_web_fecha": "2026-08-30",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
   "cortes": [
@@ -1574,6 +1574,58 @@ window.PORTAL_DATA = {
     "fuentes": [
      "Cruce de los 13 chats exportados"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Narciso",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "narciso-ayd",
+    "tags": [
+     "cochera",
+     "precio",
+     "stock",
+     "promo"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Precios por unidad y cochera confirmados: quedan 3 de 9 departamentos, los flats 201 y 301 de 97 m² en US$244,928 y el 202 de 103 m² en US$257,440, con descuento de preventa aplicado y estacionamiento doble lineal incluido. Neteados entran al comparativo cerca de US$2,230/m², por debajo de la mediana del cuadrante.",
+    "cita": "«En ambos casos incluye estacionamiento doble lineal» — WhatsApp, 3-sep-2026",
+    "fuentes": [
+     "Chats exportados el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Conde II",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "conde-ii",
+    "tags": [
+     "cochera",
+     "metodo"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Vuelve a «no se sabe». Le habíamos inferido la cochera aparte por el formato de cotización de Monte Umbroso 247, pero Narciso —de la misma inmobiliaria— la incluye. AyD no tiene una política única y la inferencia se cae. Es la prueba de por qué los inferidos nunca entraron al ranking.",
+    "cita": "«En ambos casos incluye estacionamiento doble lineal» (Narciso) contra «Estacionamiento simple · S/54,000» (Monte Umbroso 247), ambos de AyD",
+    "fuentes": [
+     "Chats exportados el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Monte Carmelo 551",
+    "dev": "Balance Inmobiliaria",
+    "proyecto_id": "monte-carmelo-551",
+    "tags": [
+     "cochera"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Segunda confirmación por un número distinto: la línea de Balance repitió los mismos montos que había dado Isaac Villar. Cochera simple S/55,000, doble lineal S/82,000, y los precios publicados sin estacionamiento.",
+    "cita": "«En la pagina de Urbania los precios no incluyen estacionamientos» — WhatsApp, 3-sep-2026",
+    "fuentes": [
+     "Chats exportados el 3-sep-2026"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2081,6 +2133,18 @@ window.PORTAL_DATA = {
      ],
      "pide": "confirmar el ligero cambio de precio del 202 y el 502",
      "mensaje": "Hola Jenny! Sobre Monte Alegre 109: me dijiste que hay un ligero cambio de precio. Me pasas los actualizados del 202 y el 502?"
+    },
+    {
+     "numero": "976367206",
+     "nombre": "Isabel Ruiz",
+     "dev": "Galeon",
+     "proyectos": [
+      "Estelar 1080",
+      "Monte Umbroso 585"
+     ],
+     "pide": "de cuál de sus dos proyectos era la cochera de regalo y si sigue vigente",
+     "mensaje": "Hola Isabel! Vi hace un tiempo un anuncio de ustedes con cochera de regalo pero no decía de qué proyecto era. Era de Estelar 1080 o de Monte Umbroso 585? Y sigue vigente?",
+     "wa_link": "https://wa.me/51976367206?text=Hola%20Isabel%21%20Vi%20hace%20un%20tiempo%20un%20anuncio%20de%20ustedes%20con%20cochera%20de%20regalo%20pero%20no%20dec%C3%ADa%20de%20qu%C3%A9%20proyecto%20era.%20Era%20de%20Estelar%201080%20o%20de%20Monte%20Umbroso%20585%3F%20Y%20sigue%20vigente%3F"
     }
    ]
   },
@@ -2210,7 +2274,7 @@ window.PORTAL_DATA = {
    "proyectos": 32,
    "unidades": 278
   },
-  "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe»."
+  "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking."
  },
  "quadrant": [
   [
@@ -4293,7 +4357,7 @@ window.PORTAL_DATA = {
      "precio_usd": 308700,
      "precio_m2": 2450,
      "comparable_confirmado": false,
-     "motivo_no_comparable": "La política de estacionamiento se infiere de lo que la desarrolladora dijo en otro de sus proyectos, no de este. Queda fuera del ranking de US$/m² hasta que el asesor lo confirme."
+     "motivo_no_comparable": "No se sabe si el precio incluye estacionamiento: AyD lo vende de las dos formas."
     }
    ],
    "dorms_disponibles": [
@@ -4318,7 +4382,7 @@ window.PORTAL_DATA = {
    ],
    "total_pisos": 5,
    "portales": {},
-   "cochera_status": "no",
+   "cochera_status": "nd",
    "stock": {
     "n": 3,
     "label": "3 de 6 tipologías disponibles (3 ya vendidas)"
@@ -4419,7 +4483,7 @@ window.PORTAL_DATA = {
      "total": 6
     }
    ],
-   "cochera_nota": "El formato de cotización oficial de AyD pone el estacionamiento en línea aparte, con su propio precio, y el descuento de preventa se aplica al total: así están las dos hojas de Monte Umbroso 247 que envió Washington Benavides el 19-ago-2026. INFERIDO de ese formato comercial, no confirmado para este proyecto.",
+   "cochera_nota": "Sin confirmar. Habíamos inferido que iba aparte por el formato de cotización de Monte Umbroso 247, pero el 3-sep-2026 la misma inmobiliaria confirmó que Narciso SÍ incluye estacionamiento doble lineal: AyD no aplica una política única, así que la inferencia se cae y vuelve a quedar sin dato.",
    "promo": {
     "tipo": "Beneficio no monetario",
     "que": "Personalización de acabados y distribución con sus arquitectos",
@@ -4562,8 +4626,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_certeza": "politica_desarrolladora",
-   "cochera_fuente": "Política de Inmobiliaria AyD confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
+   "cochera_certeza": null,
+   "cochera_fuente": null
   },
   {
    "id": "conde-de-la-vega-251",
@@ -11650,7 +11714,7 @@ window.PORTAL_DATA = {
    "anuncios": null,
    "mostrar": true,
    "cochera_status": "no",
-   "cochera_nota": "Confirmado por Isaac Villar (Balance) el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 y doble lineal S/82,000. El precio publicado es del departamento solo, así que compara directo contra el nuestro.",
+   "cochera_nota": "Confirmado por Isaac Villar (Balance) el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 y doble lineal S/82,000. El precio publicado es del departamento solo, así que compara directo contra el nuestro. Confirmado por segunda vez y por otro número el 3-sep-2026, ahora desde la línea de Balance Inmobiliaria: «En la pagina de Urbania los precios no incluyen estacionamientos · Estacionamiento simple: S/55,000.00 · Estacionamiento doble lineal: S/ 82,000.00». Dos asesores distintos, mismos números.",
    "gallery": [
     "assets/img-f1/monte-carmelo-551/img-01.jpg",
     "assets/img-f1/monte-carmelo-551/img-02.jpg",
@@ -14917,8 +14981,8 @@ window.PORTAL_DATA = {
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: carteles «ÚLTIMOS DEPAS» colgados en la propia fachada del edificio terminado.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "lista de precios por unidad",
-   "pedido_que": "Los precios por unidad que tenemos son anteriores al rango S/881,000–970,000 que dio el 14-ago-2026 y uno queda por debajo de ese piso. Falta la lista unidad por unidad, y el precio del X10.",
+   "pedido": "confirmar a qué unidades corresponden los extremos del rango",
+   "pedido_que": "No hace falta la lista completa: alcanza con saber a qué unidades corresponden los S/881,000 y los S/970,000 que dio el 14-ago, y el precio del X10. Los precios por unidad que tenemos son anteriores a ese rango y uno queda por debajo del piso.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -19461,13 +19525,13 @@ window.PORTAL_DATA = {
    ],
    "cochera_status": "no",
    "stock": {
-    "n": 12,
-    "label": "Pre-lanzamiento · 12 deptos (6 pisos)"
+    "n": null,
+    "label": "Dpto 102 aún libre (3-sep-2026)"
    },
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación aproximada: no hay foto de campo que la confirme y la numeración de esta calle no está en OSM. Pendiente de fotografiar.",
-   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026). AyD lo mantiene «EN PLANOS» en su web (24-ago-2026) junto con Narciso y Conde II. En el brochure de Conde II edición 2026, la lámina «Proyectos EN VENTA» muestra un segundo proyecto en «Próximo lanzamiento · Chacarilla - Surco»: por descarte es este, ya que Narciso está en Las Gardenias. Se sumó al benchmark en el recorrido del 22-ago-2026, junto con los otros proyectos de AyD. Análisis de sus láminas (02-sep-2026): son 6 tipologías reales, no 12 — las series 201/401 y 301/501 son el mismo dibujo, igual que 202/402 y 302/502. Cero estudios y cero dormitorios disfrazados. HALLAZGO: tiene ascensor directo de verdad en 10 de sus 12 unidades — en los pisos 2 al 6 el ascensor abre sobre el piso de madera de la sala, sin hall ni puerta; solo el 101 y el 102 entran por lobby. Y su cocina es CERRADA en las seis tipologías, aunque por foto parezca abierta: tiene isla y taburetes pero dentro de un recinto. Dos contradicciones: la hoja de cotización del 102 declara 3 dormitorios y su lámina dibuja solo 2 camas; y el rango publicado «153 a 321 m²» no cierra — la lámina del 602 imprime 322 m² y la del 102 imprime 130 m², muy por debajo del piso de 153.",
+   "comentario": "Proyecto boutique de Inmobiliaria AyD frente al Parque Bella Luz: 12 departamentos en 6 pisos. Flats típicos de 150–157 m² (3 dorm), 2 flats en 1er piso (94–215 m²) y 2 dúplex de lujo de 315–322 m² (4 dorm). El US$/m² del portal ($2,557, flat típico 150 m²) usa el PRECIO DE PREVENTA con descuento, SIN cochera (S/1,303,900 = lista S/1,419,000 − S/115,100 dcto; la cochera va aparte, S/54,000 c/u). El precio de lista sería ~$2,782/m². Ascensor directo, gas Cálidda, 2 sótanos, respaldo BCP. Entrega dic-2027. Pre-lanzamiento (lista oficial ago-2026). AyD lo mantiene «EN PLANOS» en su web (24-ago-2026) junto con Narciso y Conde II. En el brochure de Conde II edición 2026, la lámina «Proyectos EN VENTA» muestra un segundo proyecto en «Próximo lanzamiento · Chacarilla - Surco»: por descarte es este, ya que Narciso está en Las Gardenias. Se sumó al benchmark en el recorrido del 22-ago-2026, junto con los otros proyectos de AyD. Análisis de sus láminas (02-sep-2026): son 6 tipologías reales, no 12 — las series 201/401 y 301/501 son el mismo dibujo, igual que 202/402 y 302/502. Cero estudios y cero dormitorios disfrazados. HALLAZGO: tiene ascensor directo de verdad en 10 de sus 12 unidades — en los pisos 2 al 6 el ascensor abre sobre el piso de madera de la sala, sin hall ni puerta; solo el 101 y el 102 entran por lobby. Y su cocina es CERRADA en las seis tipologías, aunque por foto parezca abierta: tiene isla y taburetes pero dentro de un recinto. Dos contradicciones: la hoja de cotización del 102 declara 3 dormitorios y su lámina dibuja solo 2 camas; y el rango publicado «153 a 321 m²» no cierra — la lámina del 602 imprime 322 m² y la del 102 imprime 130 m², muy por debajo del piso de 153. · El 3-sep-2026 Washington Benavides confirmó que financia el BCP y que «El dpto. 102 esta aun libre».",
    "fuentes": [
     "https://inmobiliariaayd.com",
     "https://inmobiliariaayd.com/proyectos/"
@@ -19913,13 +19977,13 @@ window.PORTAL_DATA = {
    "addr": "Calle Narciso de la Colina 142, Urb. Las Gardenias, Santiago de Surco",
    "estado_grupo": "En planos",
    "estado_raw": "En planos",
-   "entrega": "Por confirmar (13 meses de ejecución según licencia)",
+   "entrega": "2027-09",
    "lat": -12.1252,
    "lng": -76.9875,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": null,
-   "precio_hasta_usd": null,
+   "precio_desde_usd": 244928,
+   "precio_hasta_usd": 257440,
    "dorms": "3–4",
    "m2": "97 – 211",
    "wa": "957307920",
@@ -19930,42 +19994,80 @@ window.PORTAL_DATA = {
    "planos": [
     "assets/planos/narciso-ayd-oficial/Flat 201-401 - 3 dorm - 97 m2.jpg",
     "assets/planos/narciso-ayd-oficial/Flat 202-402 - 3 dorm - 97 m2.jpg",
-    "assets/planos/narciso-ayd-oficial/Render oficial fachada frontal (feb-2026).jpg"
+    "assets/planos/narciso-ayd-oficial/Render oficial fachada frontal (feb-2026).jpg",
+    "assets/chats/narciso-dpto201-plano-asesor.jpg"
    ],
    "typologies": [
     {
-     "unidad": "Flat 201 / 401",
+     "unidad": "Flat 201 / 301",
      "dorm": 3,
-     "m2": 97,
-     "precio_usd": null,
-     "precio_m2": null,
+     "m2": 97.0,
+     "precio_lista_usd": 244928,
+     "precio_lista_todo": 244928,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "ajuste_cochera_usd": 28000,
+     "precio_usd": 216928,
+     "precio_m2": 2236,
      "tipo": "flat",
-     "piso": "2 y 4",
+     "piso": "2-3",
      "flat": true,
-     "certeza_cochera": "politica_desarrolladora"
+     "m2_equivalente": 129.0,
+     "precio_m2_equiv": 1899,
+     "nota": "Precio vigente CON el descuento de preventa ya aplicado, dado por el asesor el 3-sep-2026. Incluye estacionamiento doble lineal, así que el US$/m² descuenta US$28,000 y queda neto de cochera en US$216,928 sobre 97.0 m²."
     },
     {
-     "unidad": "Flat 202 / 402",
+     "unidad": "Flat 202",
      "dorm": 3,
-     "m2": 97,
-     "precio_usd": null,
-     "precio_m2": null,
+     "m2": 103.0,
+     "precio_lista_usd": 257440,
+     "precio_lista_todo": 257440,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 0,
+     "ajuste_cochera_usd": 28000,
+     "precio_usd": 229440,
+     "precio_m2": 2228,
      "tipo": "flat",
-     "piso": "2 y 4",
+     "piso": "3",
      "flat": true,
-     "certeza_cochera": "politica_desarrolladora"
+     "m2_equivalente": 135.0,
+     "precio_m2_equiv": 1907,
+     "nota": "Precio vigente CON el descuento de preventa ya aplicado, dado por el asesor el 3-sep-2026. Incluye estacionamiento doble lineal, así que el US$/m² descuenta US$28,000 y queda neto de cochera en US$229,440 sobre 103.0 m²."
     }
    ],
-   "flats_summary": [],
-   "cochera_status": "no",
+   "flats_summary": [
+    {
+     "unidad": "Flat 201 / 301",
+     "dorm": 3,
+     "m2": 97.0,
+     "precio_usd": 216928,
+     "precio_m2": 2236,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 244928,
+     "ajuste_cochera_usd": 28000,
+     "nota": "El precio incluye estacionamiento doble lineal, confirmado por el asesor el 3-sep-2026. Se descuentan US$28,000 por el doble lineal, dejándolo neto de cochera. El precio ya trae el descuento de preventa."
+    },
+    {
+     "unidad": "Flat 202",
+     "dorm": 3,
+     "m2": 103.0,
+     "precio_usd": 229440,
+     "precio_m2": 2228,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 257440,
+     "ajuste_cochera_usd": 28000,
+     "nota": "El precio incluye estacionamiento doble lineal, confirmado por el asesor el 3-sep-2026. Se descuentan US$28,000 por el doble lineal, dejándolo neto de cochera. El precio ya trae el descuento de preventa."
+    }
+   ],
+   "cochera_status": "si",
    "stock": {
-    "n": 10,
-    "label": "10 departamentos (según licencia de obra)"
+    "n": 3,
+    "label": "Quedan 3 de 9 departamentos"
    },
    "mostrar": true,
    "geo_aprox": true,
    "total_pisos": 5,
-   "comentario": "Está en Las Gardenias, fuera del cuadrante de Chacarilla. Se muestra marcado como tal, junto a los otros dos proyectos de AyD. CORRECCIÓN (24-ago-2026): «Narciso» NO es la obra de Chacarilla. Es otro proyecto de AyD, en Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante. Está EN PLANOS: 5 pisos, 9 departamentos de 3 y 4 dormitorios, de 97 a 211 m². La confusión venía de la placa de obra de Chacarilla, que lleva el nombre de la SPV «AYD NARCISO S.A.C.»; esa obra es en realidad CONDE II (10 departamentos, coincide con la placa y con el cerco que anuncia 3 dorms desde 126 m², la tipología exacta de Conde II).",
+   "comentario": "Está en Las Gardenias, fuera del cuadrante de Chacarilla. Se muestra marcado como tal, junto a los otros dos proyectos de AyD. CORRECCIÓN (24-ago-2026): «Narciso» NO es la obra de Chacarilla. Es otro proyecto de AyD, en Calle Narciso de la Colina 142, Urb. Las Gardenias — fuera del cuadrante. Está EN PLANOS: 5 pisos, 9 departamentos de 3 y 4 dormitorios, de 97 a 211 m². La confusión venía de la placa de obra de Chacarilla, que lleva el nombre de la SPV «AYD NARCISO S.A.C.»; esa obra es en realidad CONDE II (10 departamentos, coincide con la placa y con el cerco que anuncia 3 dorms desde 126 m², la tipología exacta de Conde II). · Al 3-sep-2026 quedan 3 de los 9 departamentos: los flats 201 y 301 de 97 m² en US$244,928 y el 202 de 103 m² en US$257,440, los dos con descuento de preventa aplicado y estacionamiento doble lineal incluido. Entrega septiembre 2027, financia BCP. Ojo: el asesor habla del 201 y el 301, y la lámina que envió está rotulada «DPTO 201, 401 · PLANTA 2° Y 4° NIVEL» e imprime 97 m² ocupada (95 techada + 2 libre); su ficha del 202 dice 103 m² mientras nuestra lámina del 202/402 dice 97. Hay que pedirle la lista escrita.",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/narciso/",
     "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
@@ -19992,6 +20094,13 @@ window.PORTAL_DATA = {
      "url": "https://inmobiliariaayd.com/wp-content/uploads/2026/02/Brochure-Narciso-1_compressed.pdf",
      "fecha": "2026-02",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Lámina del DPTO 201/401 enviada por el asesor (97 m² ocupada)",
+     "archivo": "assets/chats/narciso-dpto201-plano-asesor.jpg",
+     "url": null,
+     "fecha": "2026-09-03",
+     "tipo": "plano"
     }
    ],
    "mapeado_desde": "2026-08-22",
@@ -20148,9 +20257,22 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_certeza": "politica_desarrolladora",
-   "cochera_nota": "Mismo formato de cotización de AyD, con el estacionamiento en línea aparte. INFERIDO, no confirmado.",
-   "cochera_fuente": "Política de Inmobiliaria AyD confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
+   "cochera_certeza": "confirmado",
+   "cochera_nota": "Confirmado por el asesor de AyD el 3-sep-2026, textual: «En ambos casos incluye estacionamiento doble lineal». Ojo con el contraste: la misma inmobiliaria vende Monte Umbroso 247 con el estacionamiento en línea aparte a S/54,000 y Narciso con un doble lineal adentro del precio. AyD no tiene una política única.",
+   "cochera_fuente": "Chat real de WhatsApp con el asesor de Inmobiliaria AyD, +51 957 307 920, 3-sep-2026",
+   "politica_precio": "El precio de lista INCLUYE un estacionamiento doble lineal y ya trae aplicado el descuento de preventa. El US$/m² del portal descuenta US$28,000 por el doble lineal según la convención del benchmark, para compararlo contra los que venden la cochera aparte.",
+   "precio_fuente": "Chat real de WhatsApp con el asesor de Inmobiliaria AyD, +51 957 307 920, 3-sep-2026 · precios por unidad con descuento de preventa aplicado",
+   "promo": {
+    "tipo": "Descuento en precio",
+    "que": "Descuento de preventa, ya aplicado en el precio que cotizan",
+    "valor_usd": null,
+    "valor_txt": "sin monto declarado — viene incluido en el precio",
+    "pct_txt": null,
+    "desde": "2026-09-03",
+    "cond": "El asesor lo aclaró dos veces: «El precio que te comente incluye el DSCTO. por pre-venta».",
+    "canal": "WhatsApp del asesor",
+    "fuente": "Chat real de WhatsApp con el asesor de Inmobiliaria AyD, +51 957 307 920, 3-sep-2026"
+   }
   },
   {
    "id": "precursores-verde",
