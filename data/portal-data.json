@@ -2296,14 +2296,14 @@
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1328",
+  "sello": "20260903-1332",
   "regla_desde": "El ticket de entrada («desde») sale de la tipología más barata disponible, tomando su precio NETO de cochera — la misma base que el US$/m², para que los dos comparen. Lo que el proyecto publica se guarda aparte en desde_publicado: al 3-sep-2026 catorce proyectos publicaban un número que ninguna de sus unidades sostenía, uno por debajo de su unidad más barata y otro 147 mil por encima.",
   "tipicos": {
    "con_tipico": 25,
    "con_precio": 18,
    "total": 34
   },
-  "regla_tipico": "El típico de cada proyecto es su flat de piso intermedio de metraje mediano: ni el chico del ticket de entrada ni el grande de portada. Se identifica exista o no su precio, porque saber que el típico de un competidor es un 3 dormitorios de 132 m² con dos estacionamientos incluidos ya compara producto aunque nunca nos pasen el tarifario. Hay típico en 25 proyectos contra 20 con US$/m² confirmado."
+  "regla_tipico": "El típico de cada proyecto es su flat de piso intermedio de metraje mediano: ni el chico del ticket de entrada ni el grande de portada. Se identifica exista o no su precio, porque saber que el típico de un competidor es un 3 dormitorios de 132 m² con dos estacionamientos incluidos ya compara producto aunque nunca nos pasen el tarifario."
  },
  "quadrant": [
   [
