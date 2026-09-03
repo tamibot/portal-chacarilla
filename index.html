@@ -246,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260903a"></script>
+<script src="data/portal-data.js?v=20260903b"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -333,9 +333,16 @@ function daysSince(iso){const a=iso.split('-').map(Number);const t=new Date(a[0]
 function verifInfo(p){const fecha=projLastVerif(p);const dias=daysSince(fecha);return {fecha,dias,color:dias<=35?'#2F7D54':dias<=70?'#b9863b':'#ce3c31',fresh:dias<=35};}
 function verifBadge(p){const v=verifInfo(p);const t=v.dias===0?'hoy':`hace ${v.dias}d`;return `<span title="Última verificación con asesor/lista: ${v.fecha}" style="font-size:10px;font-weight:700;color:${v.color};white-space:nowrap">● verif. ${t}</span>`;}
 // Mediana de la zona y gap de GEU — una sola fuente para todas las vistas
-const GEU_PM2=2562;
+/* GEU sale de su propia data con la misma regla que zoneTypicos, para que la comparación
+   sea simétrica. Estuvo quemado en 2562 y quedó viejo cuando se corrigió el doble descuento
+   de la cochera: el número del encabezado no coincidía con el de la ficha. */
+function geuFlats(){const g=P.find(p=>p.isGEU);if(!g)return[];
+  return (g.typologies||[]).filter(t=>t.precio_m2&&t.tipo==='flat'&&[1,2,3].includes(t.dorm)
+    &&pisoOk(t.piso)&&!exclUnit(g.name,t)).map(t=>t.precio_m2);}
+function geuDupx(){const g=P.find(p=>p.isGEU);if(!g)return[];
+  return (g.typologies||[]).filter(t=>t.precio_m2&&t.tipo!=='flat').map(t=>t.precio_m2);}
 function zoneTypicos(){const comps=P.filter(p=>!p.isGEU&&p.mostrar);const all=[];comps.forEach(p=>(p.typologies||[]).forEach(t=>{if(t.precio_m2&&t.tipo==='flat'&&[1,2,3].includes(t.dorm)&&pisoOk(t.piso)&&!exclUnit(p.name,t))all.push(t.precio_m2);}));return all;}
-function geuGap(){const a=zoneTypicos();const m=median(a);return Math.round((GEU_PM2-m)/m*1000)/10;}
+function geuGap(){const a=zoneTypicos();const m=median(a);const g=median(geuFlats());return Math.round((g-m)/m*1000)/10;}
 const MES3=['','ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 function fmtFechaCorta(iso){const a=String(iso||'').split('-');return a.length===3?`${+a[2]} ${MES3[+a[1]]} ${a[0]}`:iso;}
 // ▲▼ de precio vs el corte anterior (usa precio_hist)
@@ -746,7 +753,7 @@ function buildAnalysis(){
     else if(t.tipo==='duplex'||t.tipo==='triplex')dupx.push(t.precio_m2);
   });});
   const all=[...flats[1],...flats[2],...flats[3]];
-  const GEU_F=2562,GEU_D=2206;
+  const GEU_F=median(geuFlats()),GEU_D=median(geuDupx());
   const gapAll=+(((GEU_F-median(all))/median(all)*100).toFixed(1));
   const nComparable=comp.filter(p=>dataLevel(p)==='completa').length+1;
   const trow=(lbl,v,geu)=>{if(!v.length)return'';const md=median(v),gap=+(((geu-md)/md*100).toFixed(1));
@@ -777,7 +784,7 @@ function buildAnalysis(){
      ${trow('Flat 1 dormitorio',flats[1],GEU_F)}${trow('Flat 2 dormitorios',flats[2],GEU_F)}${trow('Flat 3 dormitorios',flats[3],GEU_F)}
      ${trow('GENERAL FLATS (m² comparable)',all,GEU_F)}${trow('Dúplex / PH (m² área total)',dupx,GEU_D)}
    </tbody></table>
-   <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). En preventa GEU subió a <b>$${GEU_F.toLocaleString()}/m²</b>, que queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — mitad superior del rango, con cochera incluida en el precio de lista. La tabla de abajo muestra el precio neto descontando cochera donde cada asesor lo confirmó. Dato clave: el cuadrante se está quedando sin stock — ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
+   <div class="alert" style="max-width:980px">📌 <b>Cómo leerlo:</b> comparación basada en ${all.length} departamentos típicos con precio, de ${nComparable} proyectos del cuadrante (cada proyecto aporta varios departamentos). En preventa GEU subió a <b>$${GEU_F.toLocaleString()}/m²</b>, que queda <b>${gapAll>0?'+':''}${gapAll}% sobre la mediana de la zona</b> ($${median(all).toLocaleString()}/m²) — mitad superior del rango. Nuestro precio es del departamento solo, porque la cochera se vende aparte; en los competidores que la incluyen, la tabla ya la descuenta donde el asesor confirmó su valor. Dato clave: el cuadrante se está quedando sin stock — ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
    ${ticketSection()}
    <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
    ${barRows}
