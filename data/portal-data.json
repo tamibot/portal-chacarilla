@@ -2063,8 +2063,8 @@
   "regla_planos": "Del plano se leen ambientes, nunca metros: las áreas salen de las listas de precios. Cada unidad se revisa contra las mismas 25 casillas, con tres estados: SÍ (se ve dibujado), NO (el plano se lee bien y no está) y NO SE VE (el plano no alcanza a mostrarlo). El tercero es el que evita afirmar de más.",
   "regla_estudio": "Un ambiente vendido como «estudio» cuenta como dormitorio disfrazado si cumple dos de tres: tiene clóset, tiene ventana a exterior y tiene puerta que lo cierra. Si en la misma lámina los dormitorios llevan barrido de puerta dibujado y el estudio no, la ausencia es intencional.",
   "planos_analizados": {
-   "proyectos": 29,
-   "unidades": 232
+   "proyectos": 33,
+   "unidades": 287
   }
  },
  "quadrant": [
@@ -4053,7 +4053,6 @@
       "archivo": "assets/planos/conde-ii-ayd-2026/Flat tipico 201 y 401 - 3 dorm - 126 m2 ocupada.jpg",
       "archivos": [
        "assets/planos/conde-ii-ayd-2026/Flat tipico 201 y 401 - 3 dorm - 126 m2 ocupada.jpg",
-       "assets/brochures/conde-ii-brochure-2026.pdf",
        "assets/planos/conde-ii/plano-01.jpg",
        "assets/planos/conde-ii-oficial/tipo-1-pisos-2-4.jpg"
       ],
@@ -4101,7 +4100,6 @@
       "archivo": "assets/planos/conde-ii-ayd-2026/Flat tipico 202 - 3 dorm - 126 m2 ocupada.jpg",
       "archivos": [
        "assets/planos/conde-ii-ayd-2026/Flat tipico 202 - 3 dorm - 126 m2 ocupada.jpg",
-       "assets/brochures/conde-ii-brochure-2026.pdf",
        "assets/planos/conde-ii/plano-02.jpg",
        "assets/planos/conde-ii-oficial/tipo-2-pisos-2-4.jpg"
       ],
@@ -5974,7 +5972,7 @@
     2,
     3
    ],
-   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603.",
+   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603. Análisis de sus 13 láminas (02-sep-2026): 6 tipologías, cero estudios y cero dormitorios disfrazados. NO repite el «home office» de su hermano D'Mont: acá ningún ambiente tiene escritorio, cada cuarto que no es baño, cocina ni lavandería lleva su cama. Seis tipologías de 3 dormitorios limpios. Es además el único de su grupo con cocina CERRADA en U con puerta en las seis. Cuatro de los 13 archivos son duplicados exactos y su brochure de 15 páginas no trae ningún plano.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -6055,7 +6053,291 @@
      "vendidas": 15,
      "total": 23
     }
-   ]
+   ],
+   "planos_analisis": {
+    "fecha": "2026-09-02",
+    "version": "1.0",
+    "planos_leidos": 13,
+    "unidades": [
+     {
+      "unidad": "FLAT 101",
+      "archivo": "assets/planos/dmont-2/flat-101.jpg",
+      "archivos": [
+       "assets/planos/dmont-2/flat-101.jpg",
+       "assets/planos/dmont-2/plano-01.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente amoblado con escritorio: en toda la planta, cada cuarto que no es baño, cocina ni lavandería lleva su CAMA dibujada. A diferencia del hermano D'Mont, acá no aparece ningún «home office»"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": null,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": null,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Lámina sin ningún rótulo ni cotas: es un render cenital amoblado, así que los tres dormitorios se contaron por sus camas y el nombre de la unidad sale del nombre del archivo. Es la misma planta que el FLAT 201/401 pero SIN la franja embaldosada ni las jardineras verdes en los extremos: donde el 201/401 dibuja terraza, el 101 dibuja muro con ventana. Cocina CERRADA en U, con tablero de granito gris, empotrada entre muros y con puerta propia — es el único de los tres proyectos comparados donde la cocina no es integrada. Al dormitorio principal se entra por un pasillo entre dos tiras de clóset. Tres recintos sanitarios: dos baños completos (cada uno con su cubículo de ducha embaldosado aparte, con la regadera dibujada en el muro) y un medio baño de inodoro y lavatorio sin ducha, más la lavandería en cuarto propio con lavadero profundo y lavadora."
+     },
+     {
+      "unidad": "FLAT 201 / 401",
+      "archivo": "assets/planos/dmont-2/flat-201.jpg",
+      "archivos": [
+       "assets/planos/dmont-2/flat-201.jpg",
+       "assets/planos/dmont-2/flat-401.jpg",
+       "assets/planos/dmont-2/plano-02.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente amoblado con escritorio: en toda la planta, cada cuarto que no es baño, cocina ni lavandería lleva su CAMA dibujada. A diferencia del hermano D'Mont, acá no aparece ningún «home office»"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": null,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": null,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Dos láminas (flat-201.jpg y flat-401.jpg) del MISMO plano: superpuestas no se diferencian en nada más que el encuadre, así que son UNA tipología repetida en dos pisos. Igual que el 101 pero con franja embaldosada y jardineras verdes en los dos extremos: eso es lo que se marcó como terraza. Sin rótulos. Cocina cerrada en U de granito. Dos baños completos (cada uno con cubículo de ducha aparte) y un medio baño; lavandería en cuarto propio."
+     },
+     {
+      "unidad": "FLAT 202 / 302 / 502",
+      "archivo": "assets/planos/dmont-2/flat-202.jpg",
+      "archivos": [
+       "assets/planos/dmont-2/flat-202.jpg",
+       "assets/planos/dmont-2/flat-302.jpg",
+       "assets/planos/dmont-2/flat-502.jpg",
+       "assets/planos/dmont-2/plano-03.jpg",
+       "assets/planos/dmont-2/plano-04.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente amoblado con escritorio: en toda la planta, cada cuarto que no es baño, cocina ni lavandería lleva su CAMA dibujada. A diferencia del hermano D'Mont, acá no aparece ningún «home office»"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": null,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": null,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Tres láminas (flat-202.jpg, flat-302.jpg y flat-502.jpg) del MISMO plano, superpuestas no difieren en nada estructural: UNA tipología repetida en tres pisos. Sin rótulos. Terraza embaldosada al frente de la sala, con jardineras verdes. Cocina cerrada en U de granito, con refrigeradora dibujada. Dos baños completos (cada uno con su cubículo de ducha embaldosado y la regadera al muro) y un medio baño de inodoro y lavatorio; lavandería en cuarto propio con lavadero y lavadora."
+     },
+     {
+      "unidad": "FLAT 402",
+      "archivo": "assets/planos/dmont-2/flat-402.jpg",
+      "archivos": [
+       "assets/planos/dmont-2/flat-402.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente amoblado con escritorio: en toda la planta, cada cuarto que no es baño, cocina ni lavandería lleva su CAMA dibujada. A diferencia del hermano D'Mont, acá no aparece ningún «home office»"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": null,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": null,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "ES LA LÁMINA MÁS FLOJA DEL JUEGO: viene a 742×527 px, la mitad que las demás (1500×1060), y además está renderizada con otro estilo (madera más cálida, otro mobiliario), o sea que es de otra tanda. No hay una versión mejor: el brochure assets/brochures/dmont-2-f1.pdf no trae planos de unidad, solo fotos referenciales. Aun así se lee: 3 dormitorios con cama, cocina cerrada en U, dos baños completos con su cubículo de ducha, un medio baño y lavandería en cuarto propio. La distribución es la del 202/302/502 pero espejada."
+     },
+     {
+      "unidad": "DÚPLEX 603",
+      "archivo": "assets/planos/dmont-2/duplex-603.jpg",
+      "archivos": [
+       "assets/planos/dmont-2/duplex-603.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente amoblado con escritorio: en toda la planta, cada cuarto que no es baño, cocina ni lavandería lleva su CAMA dibujada. A diferencia del hermano D'Mont, acá no aparece ningún «home office»"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": null,
+       "walk_in_closet": null,
+       "bano_visita": true,
+       "banos_completos": 3,
+       "medios_banos": 1,
+       "ascensor_directo": true,
+       "doble_altura": false,
+       "azotea_propia": true
+      },
+      "observacion": "Una lámina con los DOS niveles = UNA unidad. Sin rótulos. Nivel 1: cocina cerrada en U, sala-comedor, escalera interior de madera y dos dormitorios con cama; nivel 2: un tercer dormitorio con cama, un baño completo, la lavandería en cuarto propio y, sobre todo, DOS paños grandes de césped de verdad más una terraza embaldosada con manguera enrollada y parrilla — es la unidad con azotea propia del edificio. Ojo con el cuadrado embaldosado que aparece pegado a la escalera en los dos niveles: está encerrado entre muros gruesos y tiene DOS pares de hojas corredizas, una arriba y otra abajo, y la de abajo da directo al piso de madera del departamento — es el ASCENSOR abriendo dentro de la unidad, no un ducto. Del nivel 1 se leen tres recintos con inodoro: dos con su cubículo de ducha contiguo y uno sin ducha a la vista."
+     },
+     {
+      "unidad": "FLAT sin rótulo (plano-05)",
+      "archivo": "assets/planos/dmont-2/plano-05.jpg",
+      "archivos": [
+       "assets/planos/dmont-2/plano-05.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente amoblado con escritorio: en toda la planta, cada cuarto que no es baño, cocina ni lavandería lleva su CAMA dibujada. A diferencia del hermano D'Mont, acá no aparece ningún «home office»"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": null,
+       "walk_in_closet": true,
+       "bano_visita": false,
+       "banos_completos": 2,
+       "medios_banos": 0,
+       "ascensor_directo": true,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Es la única lámina del juego que no tiene número de departamento ni en el archivo ni en el dibujo: conviene pedirle a Dicon el rótulo. No es duplicado de ninguna otra (se comparó pixel a pixel contra las doce restantes). Planta en L con 3 dormitorios con cama, cocina cerrada en U de granito, sala-comedor, terracita embaldosada con un paño chico de césped junto al dormitorio principal, y el mismo cuadrado del ASCENSOR abriendo directo al piso de madera del departamento que se ve en el dúplex 603. Solo DOS baños, los dos completos con su cubículo de ducha, sin medio baño — es la única del proyecto sin baño de visita. Lavandería en cuarto propio con lavadora y lavadero."
+     }
+    ]
+   }
   },
   {
    "id": "estelar-1080",
@@ -9141,7 +9423,7 @@
    "precio_desde_usd": null,
    "precio_hasta_usd": null,
    "dorms": "3–4",
-   "m2": "115 – 276",
+   "m2": "118.06 – 306.77",
    "wa": "924447479",
    "web": "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
    "img": "assets/campo/monte-alegre-valla.jpg",
@@ -9308,7 +9590,7 @@
     3,
     4
    ],
-   "comentario": "Ficha oficial de Edifikarte (consultada 24-ago-2026): 7 pisos, departamentos de 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas: flats de 118 a 152 m², primeros pisos de 129 a 197 m² y dúplex de 143 a 307 m². Todavía sin lista de precios pública — pedido abierto por WhatsApp. La valla fotografiada el 22-ago-2026 precisa los tramos de entrada: 3 dorms desde 115 m², 133 m² y 150 m²; 4 dorms desde 190 m². Contactos en la valla: 924 447 479 y 981 386 111.",
+   "comentario": "Ficha oficial de Edifikarte (consultada 24-ago-2026): 7 pisos, departamentos de 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas: flats de 118 a 152 m², primeros pisos de 129 a 197 m² y dúplex de 143 a 307 m². Todavía sin lista de precios pública — pedido abierto por WhatsApp. La valla fotografiada el 22-ago-2026 precisa los tramos de entrada: 3 dorms desde 115 m², 133 m² y 150 m²; 4 dorms desde 190 m². Contactos en la valla: 924 447 479 y 981 386 111. Análisis de sus 21 láminas (02-sep-2026): son 17 unidades, cero estudios y cero dormitorios disfrazados — pero Edifikarte repite el truco del rótulo: su tercer dormitorio va casi siempre como «ESTAR (DORMITORIO 03)» y en los dúplex 002/003 y los TIPO 101/102 hay dormitorios rotulados «WCL (DORMITORIO 02)», o sea walking closet. Todos con cama, closet y puerta dibujados, así que son dormitorios de verdad. HALLAZGO: ascensor directo en 15 de sus 17 unidades — abre dentro del departamento, con un segundo ingreso de servicio por el recibo. Solo los dúplex 002 y 003 de planta baja no lo tienen. Es justo lo contrario de Montemar 269, donde le atribuíamos ascensor directo y ninguna lámina lo dibuja. CONTRADICCIÓN DE METRAJE: publican «115 a 276 m²» pero sus láminas van de 118.06 (X03) a 306.77 m² (dúplex 602) — el tope real es 30 m² más alto, y ni el 115 ni el 276 aparecen impresos en ninguna lámina.",
    "fuentes": [
     "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf"
@@ -10173,7 +10455,8 @@
       "observacion": "Variante B de la planta de 118.06 m². Acá la esquina de servicio se simplifica del todo: NO HAY BAÑO DE SERVICIO — la lámina no lo dibuja y el listado impreso tampoco lo menciona —, en su lugar hay un DEPÓSITO de 1.88×2.48 sin cama y una LAVANDERÍA más grande (1.80×2.37) en recinto propio techado, con L/S y tendal. La KITCHENETTE (2.65×1.37) sigue siendo un nicho abierto a la sala-comedor, con península de dos taburetes, 4 hornillas, lavadero, R y H/M. Es la única tipología de todo el proyecto sin baño de servicio: quedan dos baños completos (el del principal y el baño 02) más el medio baño de visita. La zona de dormitorios es idéntica a la del X03."
      }
     ]
-   }
+   },
+   "coherencia_alerta": "Publica un rango de 115 a 276 m² y sus propias láminas imprimen de 118.06 a 306.77. Ni el mínimo ni el máximo publicados aparecen en ningún plano."
   },
   {
    "id": "monte-carmelo-250",
@@ -12709,7 +12992,196 @@
     }
    ],
    "cochera_nota": "Sin confirmar. El precio sale de un cartel en la reja («ÚLTIMO DEPA · 2 dorms 86 m²», foto del 22-ago-2026) y de la ficha de Edifikarte: ninguno menciona estacionamiento.",
-   "politica_precio": "No hay ningún dato sobre si el precio incluye estacionamiento. Su US$/m² queda marcado como no comparable."
+   "politica_precio": "No hay ningún dato sobre si el precio incluye estacionamiento. Su US$/m² queda marcado como no comparable.",
+   "planos_analisis": {
+    "fecha": "2026-09-02",
+    "version": "1.0",
+    "planos_leidos": 6,
+    "unidades": [
+     {
+      "unidad": "DÚPLEX 702 (dos niveles)",
+      "archivo": "assets/planos/monte-mayor-177-oficial/duplex-702.jpg",
+      "archivos": [
+       "assets/planos/monte-mayor-177-oficial/duplex-702.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "los tres cuartos de familia llevan cama y el cuarto extra con cama es el de servicio (cama azul, pegado a la lavandería y con su baño). El cuadro de Áreas de la lámina tampoco menciona escritorio — a diferencia del 703, que sí lo lista. No hay ningún ambiente candidato"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": true,
+       "estudio": false,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": true,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": true,
+       "bano_servicio": true,
+       "bano_servicio_ducha": null,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 3,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": true
+      },
+      "observacion": "La unidad más grande del edificio: 235 m² y 3 dormitorios (dato de lámina). Los dos niveles van en la misma lámina = UNA unidad. Es el único de los cuatro con COCINA CERRADA de verdad —cuarto propio con puerta, piso de porcelanato y mesones de terrazo en U con encimera de 4 hornillas y lavadero doble— y aun así el cuadro de Áreas la llama «Kitchenette». El segundo nivel es lo que lo separa del resto del cuadrante: además de la sala de estar con barra de mármol negro y dos taburetes, tiene una terraza de deck de madera con parrilla, tumbonas y un JARDÍN DE CÉSPED dibujado, todo sobre la azotea — y el cuadro de Áreas ni siquiera lo menciona (lista Kitchenette, Sala Comedor, Lavandería, Baños, Sala de Estar y Cuarto de Servicio, sin Terraza). Zona de servicio completa: dormitorio de servicio con cama, su baño y la lavandería con lavadora, secadora y lavadero en recinto propio. En el centro de las dos plantas hay un DUCTO enorme marcado con la X cruzada. ADVERTENCIA de conteo: la lámina no rotula ambientes, así que los 3 baños completos y el medio baño salen de contar aparatos."
+     },
+     {
+      "unidad": "DÚPLEX 703 (dos niveles)",
+      "archivo": "assets/planos/monte-mayor-177-oficial/duplex-703.jpg",
+      "archivos": [
+       "assets/planos/monte-mayor-177-oficial/duplex-703.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": false,
+       "ventana": true,
+       "puerta": false,
+       "veredicto": "estudio real",
+       "por_que": "el cuadro de Áreas lista «Escritorio» y el dibujo lo respalda: en el primer nivel, en el rincón del hall que da a la esquina achaflanada, hay un escritorio en L con silla de oficina y un velador de escritorio. No tiene muros propios —el piso de madera del hall entra sin corte—, no tiene hoja de puerta ni barrido (los dormitorios de la misma lámina sí los llevan) y no tiene closet adentro; lo que sí tiene es ventana, porque el chaflán de fachada está vidriado justo al lado. Una sola de las tres: es un escritorio de verdad, un rincón de trabajo, no un dormitorio encubierto"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": true,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": true,
+       "bano_servicio": true,
+       "bano_servicio_ducha": true,
+       "dorm_principal_suite": true,
+       "walk_in_closet": null,
+       "bano_visita": true,
+       "banos_completos": 4,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "El caso más limpio de «estudio» de los cinco proyectos: Edifikarte lo rotula Escritorio, lo dibuja como rincón abierto y no intenta pasarlo por dormitorio. Los dos niveles van en la misma lámina = UNA unidad; 176 m² y 3 dormitorios (dato de lámina). La cocina es ABIERTA de verdad —encimera de 4 hornillas, lavadero doble y barra de cuatro taburetes que da a la sala-comedor— y el cuadro de Áreas igual la llama «Kitchenette». Nivel 1: cocina, sala-comedor con mesa de 6, escalera, medio baño de visita, el escritorio y un dormitorio con su baño. Nivel 2: dormitorio de servicio, su baño, lavandería con dos máquinas y lavadero, sala de estar, un dormitorio con baño y el principal con su baño y la terraza. ADVERTENCIA de conteo: sin rótulos, los 4 baños completos y el medio salen de contar aparatos."
+     },
+     {
+      "unidad": "TIPO 203 · departamento típico de vista interior",
+      "archivo": "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg",
+      "archivos": [
+       "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg",
+       "assets/planos/monte-mayor-177/monte_mayor-20.png",
+       "assets/planos/monte-mayor-177-oficial/flat-203.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "el plano técnico rotula uno por uno TODOS los ambientes —LAVANDERÍA, COCINA, SALA-COMEDOR, HALL, BAÑO 01, BAÑO 02, DORMITORIO 01, DORMITORIO 02— y no queda ni un cuarto sin nombre. No hay ambiente candidato"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": false,
+       "walk_in_closet": false,
+       "bano_visita": false,
+       "banos_completos": 2,
+       "medios_banos": 0,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Es el departamento que Monte Mayor tiene todavía en venta (2 dorm, 86 m²) y el único de los cuatro que se pudo leer con rótulos, porque plano-203-vigente-1.jpg es el plano técnico de obra: trae cotas (COCINA 3.35, LAVANDERÍA 1.80×1.48, BAÑO 02 2.60×1.28, DORMITORIO 02 2.80×2.70) y el cajetín con ÁREA TECHADA 86.95 m², ÁREA LIBRE 0.00 m², ÁREA OCUPADA 86.95 m² (datos de lámina). ÁREA LIBRE 0.00 confirma que este depa NO tiene balcón ni terraza: todo lo que hay está bajo techo, lavandería incluida. La cocina es ABIERTA con barra de 3 taburetes hacia la sala-comedor —el plano técnico la llama COCINA, la lámina comercial la llama «Kitchenette»— con encimera de 4 hornillas, lavadero y refrigeradora. Lavandería en recinto propio con puerta y lavadero de servicio (L/S). DATO FUERTE para comparar: NINGUNO de los dos dormitorios es suite. Los dos baños abren al HALL, no a los dormitorios, y sus barridos de puerta lo muestran claramente. Tampoco hay medio baño de visita, ni cuarto ni baño de servicio, ni closet de colgadores (los closets van rayados como armarios de repisas y puertas). Las tres láminas de esta unidad dan tres metrajes distintos —86, 86.72 y 86.95 m²— que conviene aclarar con el asesor."
+     },
+     {
+      "unidad": "DEPARTAMENTO TÍPICO VISTA CALLE (118.66 m²)",
+      "archivo": "assets/planos/monte-mayor-177/monte_mayor-18.png",
+      "archivos": [
+       "assets/planos/monte-mayor-177/monte_mayor-18.png"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "el plano rotula todo: COCINA, LAV., DEP. SERV., B. SERV., SALA-COMEDOR, RECIBO, HALL, BALCÓN, BAÑO DE VISITA, BAÑO 01, BAÑO 02, DORMITORIO 01, DORMITORIO 02 y DORMITORIO 03. Ningún cuarto queda sin nombre ni amoblado como escritorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": true,
+       "estudio": false,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": true,
+       "bano_servicio": true,
+       "bano_servicio_ducha": null,
+       "dorm_principal_suite": null,
+       "walk_in_closet": false,
+       "bano_visita": true,
+       "banos_completos": 3,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Es el otro típico del edificio, el que da a la calle: 118.66 m², 3 dormitorios y 3 baños, con la lista de ambientes impresa (Sala-comedor, Cocina, Lavandería, Sala de estar, Balcón). Es la tipología más completa de Monte Mayor después de los dúplex y la única con DOBLE INGRESO: el plano rotula INGRESO e INGRESO DE SERVICIO por separado, los dos desde el hall del ascensor. Zona de servicio de verdad: DEP. SERV. de 1.77×1.90 con cama dibujada, B. SERV. propio y LAV. de 1.82×1.66 con lavadero de servicio, todo en su propio bloque. Cocina CERRADA rotulada COCINA (3.28 de ancho), con mesón, lavadero y refrigeradora. Balcón corrido sobre la fachada de calle. Sala de estar aparte, con sofá, en el hall de dormitorios. Baño de visita rotulado, más BAÑO 01 y BAÑO 02. El ascensor está dibujado en el hall común, fuera del departamento: no hay ascensor directo. LÍMITE DE LECTURA: esta unidad solo existe en una lámina de 660×456 px del portal y en la página 19 del brochure a 1300×898 px; a esa resolución no se puede afirmar si el baño de servicio tiene ducha, si el balcón está techado ni si el dormitorio principal abre a su baño desde adentro — por eso van en `null`."
+     }
+    ]
+   }
   },
   {
    "id": "monte-mayor-183",
@@ -14688,7 +15160,7 @@
     3,
     4
    ],
-   "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m².",
+   "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m². RESUELTO EL DÚPLEX 702 (02-sep-2026): su brochure lo titula «DÚO — 1 dormitorio + flex» y Nexo lo cuenta como 2. Gana Nexo. Ese «flex» está rotulado SALA DE ESTAR pero tiene ropero empotrado —el mismo panel de listones con que se dibujan los closets de los dormitorios en toda la planera— y ventana al ducto. No tiene puerta, y en esa misma lámina el dormitorio principal y los dos baños sí llevan su barrido dibujado: la ausencia es deliberada, es la pieza que permite venderlo como ambiente social. Dos de tres: son 2 dormitorios reales. Y no es el único: sus CINCO dúplex esconden un dormitorio. En el 701 y el 703 el ambiente ya se llama ESTUDIO y cumple las TRES (ropero, ventana y puerta); en el 704 y 705, dos de tres. Ningún plano del proyecto tiene un estudio real.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -15390,7 +15862,8 @@
       "observacion": "Dos niveles en una lámina = UNA unidad. Imprime Área techada 110.28 m² y Área total 169.79 m². Es prácticamente el espejo del 704. Tres baños completos, sin medio baño. Segundo nivel con dos jardines de césped, dos terrazas (una con parrilla y comedor de seis), sala de estar y lavandería en cuarto propio."
      }
     ]
-   }
+   },
+   "coherencia_alerta": "Sus cinco dúplex declaran un dormitorio menos del que tienen. El 702 se vende como «1 dorm + flex» y son 2."
   },
   {
    "id": "precursores-525",
@@ -15570,7 +16043,241 @@
    ],
    "borde_avenida": true,
    "cochera_status": "nd",
-   "cochera_nota": "Sin confirmar: no tenemos ningún dato sobre si el precio incluye estacionamiento."
+   "cochera_nota": "Sin confirmar: no tenemos ningún dato sobre si el precio incluye estacionamiento.",
+   "planos_analisis": {
+    "fecha": "2026-09-02",
+    "version": "1.0",
+    "planos_leidos": 7,
+    "unidades": [
+     {
+      "unidad": "Dpto. 101 (flat de primer piso)",
+      "archivo": "assets/planos/precursores-525/precu-flat-101.jpg",
+      "archivos": [
+       "assets/planos/precursores-525/precu-flat-101.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "los tres cuartos llevan cama. El único ambiente extra es un cuarto interior chico amoblado con un sofá y una alfombra ovalada, sin escritorio: es una sala de estar, no un estudio, y por eso se cargó en sala_estar_extra y no acá"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": true,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": false,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": null,
+       "bano_visita": true,
+       "banos_completos": 3,
+       "medios_banos": 2,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "El flat del primer piso y el más caro por metraje del brochure después del dúplex 603: la lámina imprime ÁREA OCUPADA 199 m² y ÁREA TECHADA 144 m² (datos de lámina), o sea 55 m² sin techar. Esos 55 m² son una TERRAZA de piso propio a nivel de vereda, con seto perimetral, tumbonas, sofá exterior y mesa con sombrilla, mirando al parque — es la mejor área libre de todo el cuadrante en un flat. Cocina cerrada de cuarto propio con piso de porcelanato gris, mesón perimetral con encimera de hornillas y lavadero, refrigeradora, e ISLA exenta con dos taburetes; la lavadora y la secadora van dentro de esa misma cocina, en un rincón, no en recinto aparte. Sin dormitorio de servicio (ningún cuarto lleva cama de servicio) y sin baño rotulado como de servicio. Los dos dormitorios secundarios dan a terrazas propias con seto. ADVERTENCIA de conteo: la lámina no rotula nada, así que los 3 baños completos y los 2 medios baños salen de contar aparatos (inodoro + lavatorio + ducha = completo; inodoro + lavatorio = medio). Los dos medios baños están pegados uno al otro en el centro de la planta, que es raro y conviene confirmarlo con el asesor."
+     },
+     {
+      "unidad": "Dpto. 102 (townhouse, dos niveles)",
+      "archivo": "assets/planos/precursores-525/precu-flat-102.jpg",
+      "archivos": [
+       "assets/planos/precursores-525/precu-flat-102.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "los dos cuartos del nivel 2 llevan cama y en el nivel 1 no hay ningún ambiente extra amoblado como escritorio; solo sala, cocina-comedor, medio baño, lavandería y la terraza"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": null,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": null,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": null,
+       "azotea_propia": false
+      },
+      "observacion": "Es la única unidad del proyecto que el propio brochure marca como TOWNHOUSE (la marca de agua de la lámina lo dice) y la única de las cinco que NO está en el brochure oficial: solo existe en una lámina de 660×410 px, así que acá hay bastante `null` por falta de resolución. Rótulos: ÁREA OCUPADA 129 m², ÁREA TECHADA 85 m² (datos de lámina) — 44 m² sin techar, que son el patio-terraza de piso propio del nivel 1, con seto, mesa redonda de 4, dos tumbonas y sofá exterior. Nivel 1: cocina abierta con encimera de hornillas y península, mesa de mármol con 6 taburetes, sala con sofá, medio baño, zona de lavandería con lavadora y secadora al fondo y la escalera. Nivel 2: dos dormitorios, cada uno con su baño. Sin cuarto ni baño de servicio."
+     },
+     {
+      "unidad": "Tipo X04 (304) · flat",
+      "archivo": "assets/planos/precursores-525/precu-15.png",
+      "archivos": [
+       "assets/planos/precursores-525/precu-15.png",
+       "assets/planos/precursores-525/precu-flat-x04-304.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "los dos cuartos llevan cama y no hay ningún ambiente extra: la planta es cocina-lavandería, sala-comedor y los dos dormitorios con sus baños, nada más"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": null,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La tipología chica y la que se repite piso a piso (por eso el rótulo «Tipo X04» con el 304 entre paréntesis). Rótulos: ÁREA OCUPADA 84 m², ÁREA TECHADA 83 m² y «VISTA INTERNA» (datos de lámina): solo 1 m² sin techar, o sea que acá NO hay terraza ni balcón de verdad y además no mira al parque — es el producto de entrada del edificio. Cocina abierta a la sala-comedor por una península en L, con encimera de hornillas negra, horno, lavadero y refrigeradora; detrás, en la franja más oscura del dibujo, la lavandería con lavadora y secadora en su propio recinto. Comedor de mesa de mármol con 6 taburetes pegado a la península. Dos dormitorios con cama, cada uno con su baño, más un tercer aparato sanitario chico (inodoro y lavatorio) al centro-abajo que se contó como medio baño."
+     },
+     {
+      "unidad": "Dúplex X02 (202) · dos niveles",
+      "archivo": "assets/planos/precursores-525/precu-17.png",
+      "archivos": [
+       "assets/planos/precursores-525/precu-17.png"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "los dos cuartos del nivel 2 llevan cama; el nivel 1 es todo social (cocina, sala-comedor, medio baño, terraza) y no dibuja ningún ambiente extra amoblado como escritorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": true,
+       "balcon_techado": true,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": false,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": null,
+       "bano_visita": true,
+       "banos_completos": 2,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "Los dos niveles van en la misma lámina = UNA unidad. Rótulos: ÁREA OCUPADA 96 m², ÁREA TECHADA 94 m² y «VISTA A PARQUE» (datos de lámina). El dato interesante es ese: 96 menos 94 son SOLO 2 m² sin techar, y sin embargo la lámina dibuja terrazas de buen tamaño en los dos niveles — o sea que esas terrazas están TECHADAS y entran dentro del área techada. Es el mismo truco que ya vimos en Conde de la Vega 128. Nivel 1: cocina con refrigeradora, horno, encimera y lavadero más lavadora y secadora al costado, medio baño, sala-comedor con mesa de mármol de 6 y sala de sofá, escalera, y la terraza techada con mesa redonda de 2 y jardineras hacia el parque. Nivel 2: dos dormitorios con cama, cada uno con su baño completo, tiras de closet en el pasillo y otra terraza abajo. Sin cuarto ni baño de servicio."
+     },
+     {
+      "unidad": "Dúplex 603 · dos niveles",
+      "archivo": "assets/planos/precursores-525/precu-18.png",
+      "archivos": [
+       "assets/planos/precursores-525/precu-18.png",
+       "assets/planos/precursores-525/precu-duplex-603.jpg"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 4,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": null,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "en el nivel 2, entre el baño del principal y el pasillo, hay un cuarto que está dibujado VACÍO pero con la cama, los dos veladores y el armario trazados en LÍNEA PUNTEADA — mobiliario «referencial» sobre un cuarto que de arquitectura tiene todo: muros propios, hoja de puerta con barrido dibujado hacia el pasillo y una tira de closet rayada en su pared izquierda. Cumple closet y puerta; la ventana no se puede verificar porque su muro exterior va dibujado macizo. Dos de tres, y encima le dibujan una cama aunque sea punteada: es un dormitorio que la lámina prefiere no contar"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": true,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": null,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 3,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La unidad más grande de Precursores 525 y la más cara: ÁREA OCUPADA 227 m², ÁREA TECHADA 173 m², «VISTA A PARQUE» (datos de lámina). 54 m² sin techar = la terraza del nivel social, con comedor exterior de 6, tumbona y seto perimetral, mirando al parque. Los dos niveles van en la misma lámina = UNA unidad. Nivel social: sala con sofá y dos butacas, comedor de mármol de 6, escalera de madera, y una cocina grande y cerrada con mesones en U, ISLA con tres taburetes, encimera, lavadero y refrigeradora; al fondo de la cocina, en recinto propio, la lavandería con tres aparatos blancos (lavadora, secadora y lavadero), y un medio baño al ingreso de la zona de cocina. Nivel de dormitorios: principal con terraza chica, su baño con tina y closet; dos dormitorios más, cada uno con su baño; una sala de estar con sofá y alfombra; y el cuarto de la cama punteada. O sea: la lámina vende 3 dormitorios y en realidad hay 4 cuartos con puerta y closet. Sin cuarto ni baño de servicio, igual que todo el edificio — dato fuerte para comparar contra Le Parc y contra los flats grandes de Conde de la Vega."
+     }
+    ]
+   }
   },
   {
    "id": "precursores-ii",
@@ -18226,11 +18933,6 @@
    "img": "assets/campo/precursores-verde.jpg",
    "brochure": "https://www.guerin.pe/wp-content/uploads/2026/04/Brochure-Precursores-verde_Guerin.pdf",
    "planos": [
-    "assets/planos/precursores-verde/plano-01.jpg",
-    "assets/planos/precursores-verde/plano-02.jpg",
-    "assets/planos/precursores-verde/plano-03.jpg",
-    "assets/planos/precursores-verde/plano-04.jpg",
-    "assets/planos/precursores-verde/plano-tipologia.jpg",
     "assets/planos/precursores-verde-oficial/DÚPLEX 801 - 90.80 m2.jpg",
     "assets/planos/precursores-verde-oficial/FLAT 101 - 88.73 m2.jpg",
     "assets/planos/precursores-verde-oficial/FLAT 102 - 66.40 m2.jpg",
@@ -18261,7 +18963,7 @@
    "mostrar": true,
    "geo_aprox": false,
    "total_pisos": 8,
-   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: Guerin Proyectos S.A.C., constructora Alcamo S.A.C., licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025–17/03/2028. Vivienda multifamiliar sostenible: 8 pisos + azotea, 3 sótanos. Certificación EDGE, financiado por BCP. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600. El cartel de obra fotografiado el 22-ago-2026 confirma: Guerin, «PRECURSORES VERDE», desde 64 m² hasta 174 m², 1|2|3 dormitorios, financiado por BCP, «ÚLTIMOS DEPTOS», depa piloto visitable y WhatsApp 908 875 600. Áreas comunes: coworking, zona de parrilla y jardín lounge.",
+   "comentario": "Proyecto NUEVO descubierto en recorrido de campo (22-ago-2026). Cartel de obra: Guerin Proyectos S.A.C., constructora Alcamo S.A.C., licencia 0249-2025-SGLH-GDU-MSS, obra 17/03/2025–17/03/2028. Vivienda multifamiliar sostenible: 8 pisos + azotea, 3 sótanos. Certificación EDGE, financiado por BCP. Áreas comunes: coworking, zona de parrilla y jardín lounge. WhatsApp 908 875 600. El cartel de obra fotografiado el 22-ago-2026 confirma: Guerin, «PRECURSORES VERDE», desde 64 m² hasta 174 m², 1|2|3 dormitorios, financiado por BCP, «ÚLTIMOS DEPTOS», depa piloto visitable y WhatsApp 908 875 600. Áreas comunes: coworking, zona de parrilla y jardín lounge. CORRECCIÓN 02-sep-2026: cuatro láminas archivadas en su carpeta eran en realidad de Precursores 525 (Grupo Chacarilla Sur) — mismo logo, mismas unidades: Dpto 101 de 199/144 m², Dúplex 603 de 227/173 y Tipo X04 de 84/83. Se retiraron. Análisis de sus 11 tipologías propias: Guerin juega a dos puntas con el mismo escritorio. En el FLAT 102 y en el 203/303/403/503/603 (su tipología de entrada de 64 m², repetida en cinco pisos) el escritorio va entre dos hojas corredizas y con ventana, así que es un dormitorio disfrazado; en el 202/402/602, 302/502, 702, 801 y 802 el mismo escritorio no tiene ninguna hoja y sí es estudio real. Las dos unidades que vende como «1 dormitorio + estudio» son, en la práctica, de dos dormitorios.",
    "fuentes": [
     "Cartel de obra fotografiado en campo 22-ago-2026",
     "https://www.guerin.pe",
@@ -18311,7 +19013,7 @@
     "fecha": "2026-08-22",
     "nota": "Cartel de obra: «ÚLTIMOS DEPTOS» y depa piloto visitable."
    },
-   "coherencia_alerta": "La entrega de sep-2026 viene del relevamiento de junio y está por vencer: confirmar con Guerin si se mantiene.",
+   "coherencia_alerta": "Sus dos unidades de entrada se venden como «1 dormitorio + estudio» pero el escritorio va entre hojas corredizas y con ventana: en la práctica son de dos dormitorios.",
    "precio_fuente": {
     "tipo": "campo",
     "nota": "Cartel de obra de Guerin fotografiado el 22-ago-2026 (metrajes y dormitorios). Sin lista de precios todavía."
@@ -19188,10 +19890,8 @@
      },
      {
       "unidad": "DEPA 103 · Piso 1",
-      "archivo": "assets/planos/real-living-oficial/Depa 103 - 108.4 techada - 173.8 ocupada.jpg",
-      "archivos": [
-       "assets/planos/real-living-oficial/Depa 103 - 108.4 techada - 173.8 ocupada.jpg"
-      ],
+      "archivo": "assets/planos/real-living-oficial/Depa 103 - 108.4 techada - 175.8 ocupada.jpg",
+      "archivos": [],
       "dorm_declarados": 3,
       "dorm_reales": 3,
       "estudio": {
@@ -19949,7 +20649,7 @@
    "caseta_nota": "Sin caseta: cerco negro rotulado con la marca, metrajes y WhatsApp.",
    "caseta_fecha": "2026-08-22",
    "cuadrante_verificado": "2026-08-22",
-   "comentario": "Proyecto detectado en el recorrido del 22-ago-2026 y confirmado con fuente oficial: EE Inmobiliaria, Av. Reynaldo Vivanco 531 esq. Av. Monterrico Chico, 6 pisos, 1 y 2 dormitorios de 64.04 a 122.05 m², precios de lista S/ 501,000 a S/ 839,000, entrega 31-dic-2027. Está FUERA del cuadrante (Monterrico). Brochure de agosto-2026 con 21 láminas de tipologías descargado a la plataforma.",
+   "comentario": "Proyecto detectado en el recorrido del 22-ago-2026 y confirmado con fuente oficial: EE Inmobiliaria, Av. Reynaldo Vivanco 531 esq. Av. Monterrico Chico, 6 pisos, 1 y 2 dormitorios de 64.04 a 122.05 m², precios de lista S/ 501,000 a S/ 839,000, entrega 31-dic-2027. Está FUERA del cuadrante (Monterrico). Brochure de agosto-2026 con 21 láminas de tipologías descargado a la plataforma. ANÁLISIS DE SUS 21 LÁMINAS (02-sep-2026) — el hallazgo más fuerte del benchmark: de sus 40 tipologías, 35 se venden como «X DORM + ESTUDIO» y en 32 de ellas ese estudio tiene closet corrido, ventana a fachada y puerta. Cumple las tres. El proyecto que se publica como «1 y 2 dormitorios» es en realidad de 2 y 3 dormitorios en casi todas sus plantas. Solo el TIPO 12, el 18 y el 19 tienen estudio de verdad (ventana y puerta pero sin closet). Es el proyecto que más infla su conteo de todo el cuadrante, y encima es uno de los tickets de entrada más bajos. A cambio no tiene nada de servicio: ninguna de las 40 tiene dormitorio de servicio, baño de servicio, despensa, segundo estar, doble altura, azotea propia ni ascensor directo. Cocina abierta en las 40, volcada a la sala, 34 con barra de taburetes y 8 con isla exenta.",
    "fuentes": [
     "Recorrido de campo 2026-08-22 · fotos IMG_7975–7978",
     "https://eeinmobiliaria.com/proyectos/ten-apartments/",
@@ -20020,7 +20720,1815 @@
    "dorms_disponibles": [
     1,
     2
-   ]
+   ],
+   "coherencia_alerta": "Se publica como «1 y 2 dormitorios» pero 32 de sus 40 tipologías tienen un estudio con closet, ventana y puerta: en la práctica son de 2 y 3 dormitorios. Al comparar por banda de dormitorios hay que tenerlo en cuenta.",
+   "planos_analisis": {
+    "fecha": "2026-09-02",
+    "version": "1.0",
+    "planos_leidos": 21,
+    "unidades": [
+     {
+      "unidad": "DPTO 102",
+      "archivo": "assets/planos/ten-apartments/Dpto 102 - 86.40 m2 - 2 dorm + estudio.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dpto 102 - 86.40 m2 - 2 dorm + estudio.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.40 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso. El «estudio» está entre el dormitorio 02 y la sala, con escritorio y laptop dibujados, pero también con closet de colgadores, ventana a fachada y puerta corrediza: es el tercer dormitorio. El dormitorio principal tiene vestidor de paso (dos tiras de colgadores enfrentadas) y baño propio. Cocina abierta en U con península de tres taburetes, encimera de 4 hornillas, lavadero y refrigeradora. Sin exterior propio: no dibuja balcón ni terraza. Sin dormitorio ni baño de servicio."
+     },
+     {
+      "unidad": "DPTO 103",
+      "archivo": "assets/planos/ten-apartments/Dptos 103 y 104 - 64.91 y 87.36 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 103 y 104 - 64.91 y 87.36 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «64.91 m²  ·  1 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso y una de las más chicas del proyecto. Aunque se vende como 1 dormitorio, el «estudio» tiene closet corrido, ventana a fachada y puerta corrediza: son dos dormitorios reales. Cocina abierta en U con península de dos taburetes. Lavandería en cuarto propio con lavadero y lavadora. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 104",
+      "archivo": "assets/planos/ten-apartments/Dptos 103 y 104 - 64.91 y 87.36 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 103 y 104 - 64.91 y 87.36 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.36 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso. Los tres baños van alineados en la crujía posterior, junto a la lavandería. El «estudio» está entre el dormitorio 02 y el principal, con closet corrido y ventana. La cocina es abierta, en L con península, pero es de las pocas del juego SIN taburetes dibujados. Sin balcón ni terraza."
+     },
+     {
+      "unidad": "DPTO 105",
+      "archivo": "assets/planos/ten-apartments/Dptos 105 y 106 - 95.25 y 64.04 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 105 y 106 - 95.25 y 64.04 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «95.25 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso, de las más grandes de la planta baja. Dormitorio principal con vestidor de paso (dos tiras de colgadores enfrentadas) y baño propio. El «estudio» va con escritorio, closet, ventana y puertas corredizas a ambos lados. Cocina abierta con península de dos taburetes. El tercer recinto de baño está junto al ingreso y solo se le ven inodoro y lavatorio. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 106",
+      "archivo": "assets/planos/ten-apartments/Dptos 105 y 106 - 95.25 y 64.04 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 105 y 106 - 95.25 y 64.04 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 1,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente extra: la lámina solo dibuja el dormitorio, la sala-comedor, la cocina abierta, la lavandería y dos baños; ningún escritorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «64.04 m²  ·  1 DORM · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso y el ticket de entrada del proyecto (es la unidad que el portal usa como precio desde). Es la única tipología de planta baja que NO se vende con estudio. Dormitorio único con vestidor de paso y baño propio. Cocina abierta a lo largo con península sin taburetes. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 107",
+      "archivo": "assets/planos/ten-apartments/Dptos 107 y 108 - 86.78 y 100.40 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 107 y 108 - 86.78 y 100.40 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.78 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso. Dos baños completos alineados al fondo y un tercer recinto junto al ingreso con solo inodoro y lavatorio. El «estudio» va entre el principal y el dormitorio 02, con escritorio, closet corrido y ventana a fachada. Cocina abierta con península de tres taburetes. Sin balcón ni terraza."
+     },
+     {
+      "unidad": "DPTO 108",
+      "archivo": "assets/planos/ten-apartments/Dptos 107 y 108 - 86.78 y 100.40 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 107 y 108 - 86.78 y 100.40 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «100.40 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso con TERRAZA GRANDE: un patio pavimentado con seto verde dibujado en dos de sus lados, al que se abre el estudio. Dormitorio principal con vestidor de paso y baño propio. Cocina abierta con península de dos taburetes. El seto es una jardinera perimetral, no un jardín rotulado, por eso patio_jardin va en false. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 109",
+      "archivo": "assets/planos/ten-apartments/Dptos 109 y 110 - 122.05 y 101.69 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 109 y 110 - 122.05 y 101.69 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "la lámina no dibuja ningún ambiente extra amoblado como escritorio: los dos cuartos van con cama y closet, y el resto es sala-comedor, cocina, lavandería y baños"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «122.05 m²  ·  2 DORM · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. ES LA UNIDAD MÁS GRANDE DEL PROYECTO (122.05 m² impresos) y, sin embargo, una de las cinco que NO se venden con estudio. Planta larga y angosta con DOS TERRAZAS pavimentadas —una al frente de la sala y otra al fondo de los dormitorios—, las dos con seto verde en el borde. Dormitorio principal con vestidor de paso. Cocina abierta con península. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 110",
+      "archivo": "assets/planos/ten-apartments/Dptos 109 y 110 - 122.05 y 101.69 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 109 y 110 - 122.05 y 101.69 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «101.69 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso con TERRAZA GRANDE pavimentada y seto verde en dos lados. Es de las pocas del juego con ISLA EXENTA de verdad (mesón suelto con dos taburetes al costado, separado del mesón de pared). El «estudio» va con escritorio, closet corrido, ventana y puerta corrediza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 111",
+      "archivo": "assets/planos/ten-apartments/Dptos 111 y 112 - 85.95 y 78.31 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 111 y 112 - 85.95 y 78.31 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «85.95 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso. Dormitorio principal con vestidor de paso (dos tiras de colgadores enfrentadas) y baño propio. El «estudio» va con escritorio, closet y ventana. Cocina abierta con península de dos taburetes. Tiene un balcón chico al costado de la sala, con una jardinera dibujada. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 112",
+      "archivo": "assets/planos/ten-apartments/Dptos 111 y 112 - 85.95 y 78.31 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 111 y 112 - 85.95 y 78.31 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 1,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "la cabecera de esta lámina NO dice «+ ESTUDIO» sino «1 DORM + 1 D.», y el ambiente extra está dibujado vacío —un sillón redondo y una alfombra—, sin escritorio, sin cama y sin closet: no hay estudio que juzgar"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «78.31 m²  ·  1 DORM + 1 D. · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. ES LA ÚNICA TIPOLOGÍA DEL PROYECTO ROTULADA «1 DORM + 1 D.» en vez de «+ ESTUDIO»: el segundo ambiente se dibuja completamente vacío (sillón y alfombra), sin closet ni cama, así que ni siquiera llega a estudio. Tiene TERRAZA pavimentada grande al frente de la sala. Dormitorio principal con vestidor de paso y baño propio. Cocina abierta con península de dos taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 114",
+      "archivo": "assets/planos/ten-apartments/Dptos 114 y 115 - 82.63 y 84.35 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 114 y 115 - 82.63 y 84.35 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «82.63 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso. Los tres recintos de baño y la lavandería van apilados en la crujía ciega, del lado opuesto a los dormitorios. El «estudio» va con escritorio, closet corrido y ventana a fachada. Cocina abierta con península de dos taburetes. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 115",
+      "archivo": "assets/planos/ten-apartments/Dptos 114 y 115 - 82.63 y 84.35 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 114 y 115 - 82.63 y 84.35 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «84.35 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso, espejo del 114. Dormitorio principal con vestidor de paso y baño propio. El «estudio» va con escritorio, closet corrido y ventana. Cocina abierta con península de tres taburetes. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 116",
+      "archivo": "assets/planos/ten-apartments/Dptos 116 y 118 - 92.77 y 86.49 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 116 y 118 - 92.77 y 86.49 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la lámina vende como ESTUDIO no lleva escritorio dibujado sino una mesa redonda con silla, pero sí closet corrido, ventana a fachada y puerta: dos de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «92.77 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso, en planta alargada. El ambiente que la ficha llama estudio está amoblado con mesa redonda y sillón, no con escritorio, pero conserva closet, ventana y puerta. Cocina abierta con península de dos taburetes al lado del comedor. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 118",
+      "archivo": "assets/planos/ten-apartments/Dptos 116 y 118 - 92.77 y 86.49 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 116 y 118 - 92.77 y 86.49 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.49 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso con DOS EXTERIORES: una terraza pavimentada detrás de la cocina y un balcón achaflanado junto a la sala. Cocina abierta con isla de mesón y encimera. El «estudio» va con escritorio, closet corrido y ventana. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 119",
+      "archivo": "assets/planos/ten-apartments/Dptos 119 y 206 - 89.20 y 69.04 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 119 y 206 - 89.20 y 69.04 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «89.20 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de primer piso. Dormitorio principal con vestidor de paso de dos tiras de colgadores y baño propio. El «estudio» va con escritorio, closet corrido y ventana a fachada. Cocina abierta en U con península de tres taburetes. Sin balcón ni terraza. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 206",
+      "archivo": "assets/planos/ten-apartments/Dptos 119 y 206 - 89.20 y 69.04 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 119 y 206 - 89.20 y 69.04 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 1,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "no hay ningún ambiente extra: la lámina dibuja un solo dormitorio, sala-comedor, cocina abierta, lavandería y dos baños, sin escritorio en ningún lado"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «69.04 m²  ·  1 DORM · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de segundo piso. Es una de las cinco tipologías del proyecto que NO se venden con estudio. Dormitorio único con vestidor de paso (dos tiras de colgadores enfrentadas) y baño propio. Cocina abierta a lo largo con península sin taburetes. Balcón corrido al frente de la sala. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 207",
+      "archivo": "assets/planos/ten-apartments/Dptos 207 y 208 - 87.27 y 99.07 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 207 y 208 - 87.27 y 99.07 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.27 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de segundo piso. El «estudio» está en el centro de la planta, entre los dos dormitorios, con escritorio, closet corrido, ventana a fachada y puerta. Cocina abierta con península de dos taburetes. Balcón corrido con jardinera al frente de la sala. Sin zona de servicio."
+     },
+     {
+      "unidad": "DPTO 208",
+      "archivo": "assets/planos/ten-apartments/Dptos 207 y 208 - 87.27 y 99.07 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Dptos 207 y 208 - 87.27 y 99.07 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «99.07 m²  ·  2 DORM + ESTUDIO · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Unidad de segundo piso. OJO CON EL CONTEO DE BAÑOS: la cabecera de la lámina declara «2 BAÑOS», pero en el dibujo se distinguen TRES recintos separados con inodoro y lavatorio (uno junto al ingreso, uno al centro y uno en el dormitorio principal) — la lámina se contradice con su propia ficha. El «estudio» va con escritorio, closet y ventana. Dos franjas exteriores pavimentadas con jardineras, una junto a la sala y otra junto al dormitorio principal. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 1 · DPTO. 201-301-401-501-601",
+      "archivo": "assets/planos/ten-apartments/Tipos 1 y 2 - 86.56 y 99.19 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 1 y 2 - 86.56 y 99.19 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «99.19 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos (201, 301, 401, 501 y 601): una sola planta, no cinco. Es la más grande de las tipologías repetidas. Dormitorio principal con vestidor de paso de dos tiras de colgadores y baño propio. El «estudio» va con escritorio, closet corrido, ventana y puerta corrediza. Cocina abierta en U con península de tres taburetes. Dos balcones con jardinera del lado de la sala. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 2 · DPTO. 202-302-402-502-602",
+      "archivo": "assets/planos/ten-apartments/Tipos 1 y 2 - 86.56 y 99.19 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 1 y 2 - 86.56 y 99.19 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.56 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos. Misma receta que el TIPO 1 pero 13 m² más chica: dormitorio principal con vestidor de paso y baño propio, «estudio» con escritorio, closet, ventana y puerta, cocina abierta con península de tres taburetes y dos balcones con jardinera. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 3 · DPTO. 203-303",
+      "archivo": "assets/planos/ten-apartments/Tipos 3 y 4 - 86.55 y 87.62 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 3 y 4 - 86.55 y 87.62 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente que la lámina vende como ESTUDIO va con mesa redonda y un escritorio corrido contra el muro, más closet, ventana a fachada y puerta: es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.55 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en dos pisos (203 y 303). Sala-comedor y balcón con jardinera arriba, dormitorios abajo. El «estudio» va en medio, con closet corrido, ventana y puerta. Cocina abierta con península de dos taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 4 · DPTO. 204-404-504-604",
+      "archivo": "assets/planos/ten-apartments/Tipos 3 y 4 - 86.55 y 87.62 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 3 y 4 - 86.55 y 87.62 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.62 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cuatro pisos. Tiene TERRAZA pavimentada corrida al frente de toda la sala-comedor, con jardineras en las esquinas. El «estudio» va con escritorio, closet, ventana y puerta. Cocina abierta en U con península de dos taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 5 · DPTO. 305-505-605",
+      "archivo": "assets/planos/ten-apartments/Tipos 5 y 6 - 95.09 y 105.03 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 5 y 6 - 95.09 y 105.03 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «95.09 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en tres pisos. Dormitorio principal con vestidor de paso de dos tiras de colgadores y baño propio. Cocina abierta con ISLA EXENTA de dos taburetes. El «estudio» va con escritorio, closet, ventana y puerta. Tres balcones con jardinera a lo largo de la fachada. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 6 · DPTO. 306-406-506-606",
+      "archivo": "assets/planos/ten-apartments/Tipos 5 y 6 - 95.09 y 105.03 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 5 y 6 - 95.09 y 105.03 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «105.03 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. ES LA TIPOLOGÍA REPETIDA MÁS GRANDE (105.03 m² impresos). Dormitorio principal con vestidor de paso y baño propio, y hasta un sillón dibujado dentro del vestidor. Cocina abierta con ISLA EXENTA de tres taburetes. El «estudio» va con escritorio, closet, ventana y puerta. Tres balcones con jardinera. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 7 · DPTO. 307-407-607",
+      "archivo": "assets/planos/ten-apartments/Tipos 7 y 8 - 96.59 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 7 y 8 - 96.59 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «96.59 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en tres pisos. Dormitorio principal con vestidor de paso y baño propio. Cocina abierta con ISLA EXENTA de tres taburetes. El «estudio» va con escritorio, closet, ventana y puerta. Dos balcones con jardinera. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 8 · DPTO. 308-408-508-608",
+      "archivo": "assets/planos/ten-apartments/Tipos 7 y 8 - 96.59 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 7 y 8 - 96.59 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «102.61 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cuatro pisos. OJO: el nombre del archivo del portal («Tipos 7 y 8 - 96.59 m2») solo recoge el metraje del TIPO 7; el TIPO 8 imprime 102.61 m² en su propia lámina. Dormitorio principal con vestidor de paso y baño propio. Cocina abierta con península de dos taburetes. Dos balcones con jardinera. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 9 · DPTO. 209-309-409-509-609",
+      "archivo": "assets/planos/ten-apartments/Tipos 9 y 10 - 86.45 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 9 y 10 - 86.45 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "es una de las cinco tipologías que no se venden con estudio: la lámina solo dibuja dos cuartos, los dos con cama y closet, y ningún ambiente con escritorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.82 m²  ·  2 DORM · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos. Es la única de las tipologías repetidas de 2 dormitorios SIN estudio. Planta larga y angosta con balcón corrido y jardineras al frente de la sala. Dormitorio principal con vestidor de paso y baño propio. Cocina abierta con península de dos taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 10 · DPTO. 210-310-510-610",
+      "archivo": "assets/planos/ten-apartments/Tipos 9 y 10 - 86.45 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 9 y 10 - 86.45 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.45 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cuatro pisos. Dormitorio principal con vestidor de paso y baño propio. El «estudio» va con escritorio, closet corrido y ventana. Cocina abierta con península de dos taburetes. Balcón con jardinera junto a la sala. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 11 · DPTO. 211-311-411-511-611",
+      "archivo": "assets/planos/ten-apartments/Tipos 11 y 12 - 86.42 y 64.28 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 11 y 12 - 86.42 y 64.28 m2.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.42 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos. Es la versión en altura del DPTO 111: dormitorio principal con vestidor de paso de dos tiras de colgadores, «estudio» con escritorio, closet, ventana y puerta, cocina abierta con península de dos taburetes y un balcón chico con jardinera junto a la sala. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 12 · DPTO. 212-312-412-512-612",
+      "archivo": "assets/planos/ten-apartments/Tipos 11 y 12 - 86.42 y 64.28 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 11 y 12 - 86.42 y 64.28 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 1,
+      "estudio": {
+       "hay": true,
+       "closet": false,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "estudio real",
+       "por_que": "el ambiente extra que la lámina vende como ESTUDIO tiene ventana a fachada y puerta, pero NO lleva closet dibujado — solo un sillón y una alfombra —, así que se queda en uno de tres"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «64.28 m²  ·  1 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos y una de las más chicas del proyecto. ACÁ EL ESTUDIO SÍ ES ESTUDIO: el ambiente extra está dibujado con un sillón redondo y una alfombra, tiene ventana a fachada y puerta, pero NO lleva closet — a diferencia de casi todas las demás tipologías del juego. Dormitorio único con vestidor de paso y baño propio. Cocina abierta con península de dos taburetes. Sin exterior propio. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 13 · DPTO. 213-313",
+      "archivo": "assets/planos/ten-apartments/Tipos 13 y 14 - 64.04 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 13 y 14 - 64.04 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra tiene closet corrido de colgadores, ventana a fachada y puerta corrediza; está amoblado con sillón y alfombra en vez de escritorio, pero cumple tres de tres: es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «67.83 m²  ·  1 DORM + ESTUDIO · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en dos pisos (213 y 313). Se vende como 1 dormitorio + estudio, pero el estudio tiene closet, ventana y puerta: son dos dormitorios reales en 67.83 m². Cocina abierta con península de tres taburetes. Sin exterior propio. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 14 · DPTO. 214-314-414-514-614",
+      "archivo": "assets/planos/ten-apartments/Tipos 13 y 14 - 64.04 m2.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 13 y 14 - 64.04 m2.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 2,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «64.04 m²  ·  1 DORM + ESTUDIO · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos; comparte el metraje impreso (64.04 m²) con el DPTO 106 de primer piso, pero acá sí se vende con estudio. El ambiente extra lleva escritorio con laptop, closet corrido y ventana: es un segundo dormitorio. Cocina abierta con península de dos taburetes. Balcón pavimentado con jardinera. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 15 · DPTO. 215-315-515-615",
+      "archivo": "assets/planos/ten-apartments/Tipos 15 y 16.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 15 y 16.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.22 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cuatro pisos. Terraza pavimentada con jardinera al costado de la sala. El «estudio» va con escritorio, closet corrido y ventana. Cocina abierta con península de dos taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 16 · DPTO. 216-316-416-516",
+      "archivo": "assets/planos/ten-apartments/Tipos 15 y 16.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 15 y 16.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.70 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cuatro pisos. Dos balcones con jardinera, uno junto al dormitorio principal y otro junto a la sala. El «estudio» va con escritorio, closet corrido, ventana y puerta. Cocina abierta con península de tres taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 17 · DPTO. 217-317-417-517-617",
+      "archivo": "assets/planos/ten-apartments/Tipos 17 y 18.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 17 y 18.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra va amoblado con sillón y alfombra, pero lleva closet corrido, ventana a fachada y puerta: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «87.49 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos. Balcón con dos jardineras al frente de la sala. El ambiente vendido como estudio va con closet, ventana y puerta. Cocina abierta con península de dos taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 18 · DPTO. 218",
+      "archivo": "assets/planos/ten-apartments/Tipos 17 y 18.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 17 y 18.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 1,
+      "estudio": {
+       "hay": true,
+       "closet": false,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "estudio real",
+       "por_que": "el ambiente extra que la lámina vende como ESTUDIO tiene ventana a fachada y puerta, pero NO lleva closet dibujado — solo un sillón y una alfombra —, así que se queda en uno de tres"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «68.55 m²  ·  1 DORM + ESTUDIO · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología única (solo el 218). ACÁ EL ESTUDIO SÍ ES ESTUDIO: el ambiente extra tiene ventana y puerta pero NO closet, y además la lámina dibuja un escritorio con laptop en un nicho aparte, junto al dormitorio. Dormitorio único con vestidor de paso de dos tiras de colgadores y baño propio. Cocina abierta con ISLA EXENTA de dos taburetes. Sin exterior propio. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 19 · DPTO. 219-319-419-519-619",
+      "archivo": "assets/planos/ten-apartments/Tipos 19 y 20.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 19 y 20.jpg"
+      ],
+      "dorm_declarados": 1,
+      "dorm_reales": 1,
+      "estudio": {
+       "hay": true,
+       "closet": false,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "estudio real",
+       "por_que": "el ambiente extra que la lámina vende como ESTUDIO tiene ventana a fachada y puerta, pero NO lleva closet dibujado — solo un sillón y una alfombra —, así que se queda en uno de tres"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «73.63 m²  ·  1 DORM + ESTUDIO · 2 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos. ACÁ EL ESTUDIO SÍ ES ESTUDIO: el ambiente extra lleva escritorio con laptop y un sillón, ventana a fachada y puerta, pero NO tiene closet dibujado. Dormitorio único con vestidor de paso de dos tiras de colgadores y baño propio. Cocina abierta con isla de mesón y tres taburetes. Sin exterior propio. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 20 · DPTO. 220-320-420-520-620",
+      "archivo": "assets/planos/ten-apartments/Tipos 19 y 20.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipos 19 y 20.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra que la propia lámina rotula ESTUDIO en la cabecera está dibujado con closet corrido de colgadores, ventana a fachada y puerta corrediza: tres de tres, es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": null,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «86.32 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos. Terraza pavimentada al costado de la cocina. El «estudio» va con escritorio, closet corrido, ventana y puerta. Cocina abierta con isla de mesón y taburetes. Sin zona de servicio."
+     },
+     {
+      "unidad": "TIPO 21 · DPTO. 221-321-421-521-621",
+      "archivo": "assets/planos/ten-apartments/Tipo 21 y sotano.jpg",
+      "archivos": [
+       "assets/planos/ten-apartments/Tipo 21 y sotano.jpg"
+      ],
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": true,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "el ambiente extra lleva closet corrido, ventana a fachada y puerta, y el escritorio está dibujado contra el muro de fachada: es un dormitorio"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": true,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": false,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "observacion": "La lámina imprime «92.3 m²  ·  2 DORM + ESTUDIO · 3 BAÑOS» — dato de la lámina, el área oficial sale de la lista de precios. Tipología repetida en cinco pisos, la última del juego. Dormitorio principal con vestidor de paso de dos tiras de colgadores y baño propio. Cocina abierta en U con península de tres taburetes. Dos balcones con jardinera del lado de los dormitorios y de la sala. Sin zona de servicio. OJO CON EL ARCHIVO: la lámina «Tipo 21 y sotano.jpg» del portal viene a 1700×601 —menos de la mitad de la resolución del resto del juego, que va a 4300×1521— y su mitad derecha es la planta del SÓTANO 1, que no es una unidad."
+     }
+    ]
+   }
   },
   {
    "isGEU": false,
@@ -20359,8 +22867,7 @@
       "archivo": "assets/planos/floresta-343/floresta-19.png",
       "archivos": [
        "assets/planos/floresta-343/floresta-19.png",
-       "assets/planos/floresta-343/floresta343-tipo03-04-planta.png",
-       "assets/brochures/Floresta_343-brochure.pdf"
+       "assets/planos/floresta-343/floresta343-tipo03-04-planta.png"
       ],
       "dorm_declarados": 2,
       "dorm_reales": 3,
@@ -20406,8 +22913,7 @@
       "archivo": "assets/planos/floresta-343/floresta-22.png",
       "archivos": [
        "assets/planos/floresta-343/floresta-22.png",
-       "assets/planos/floresta-343/floresta343-duplex803-planta.png",
-       "assets/brochures/Floresta_343-brochure.pdf"
+       "assets/planos/floresta-343/floresta343-duplex803-planta.png"
       ],
       "dorm_declarados": 2,
       "dorm_reales": 2,
@@ -20583,8 +23089,7 @@
       "unidad": "FLAT UNO",
       "archivo": "assets/planos/le-parc/plano-b01.jpg",
       "archivos": [
-       "assets/planos/le-parc/plano-b01.jpg",
-       "assets/brochures/le-parc-f1.pdf"
+       "assets/planos/le-parc/plano-b01.jpg"
       ],
       "dorm_declarados": 3,
       "dorm_reales": 3,
@@ -20629,8 +23134,7 @@
       "unidad": "FLAT DOS",
       "archivo": "assets/planos/le-parc/plano-b02.jpg",
       "archivos": [
-       "assets/planos/le-parc/plano-b02.jpg",
-       "assets/brochures/le-parc-f1.pdf"
+       "assets/planos/le-parc/plano-b02.jpg"
       ],
       "dorm_declarados": 3,
       "dorm_reales": 3,
@@ -20675,8 +23179,7 @@
       "unidad": "FLAT TRES",
       "archivo": "assets/planos/le-parc/plano-b03.jpg",
       "archivos": [
-       "assets/planos/le-parc/plano-b03.jpg",
-       "assets/brochures/le-parc-f1.pdf"
+       "assets/planos/le-parc/plano-b03.jpg"
       ],
       "dorm_declarados": 3,
       "dorm_reales": 3,
@@ -20722,9 +23225,7 @@
       "archivo": "assets/planos/le-parc/plano-b04.jpg",
       "archivos": [
        "assets/planos/le-parc/plano-b04.jpg",
-       "assets/planos/le-parc/plano-b05.jpg",
-       "assets/brochures/le-parc-f1.pdf",
-       "assets/brochures/le-parc-f1.pdf"
+       "assets/planos/le-parc/plano-b05.jpg"
       ],
       "dorm_declarados": 3,
       "dorm_reales": 3,
