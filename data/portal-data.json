@@ -2296,7 +2296,7 @@
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1332",
+  "sello": "20260903-1411",
   "regla_desde": "El ticket de entrada («desde») sale de la tipología más barata disponible, tomando su precio NETO de cochera — la misma base que el US$/m², para que los dos comparen. Lo que el proyecto publica se guarda aparte en desde_publicado: al 3-sep-2026 catorce proyectos publicaban un número que ninguna de sus unidades sostenía, uno por debajo de su unidad más barata y otro 147 mil por encima.",
   "tipicos": {
    "con_tipico": 25,
@@ -3889,8 +3889,8 @@
     }
    ],
    "wa_label": "Grupo Dicon",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Aura Sul por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": null,
+   "pedido_que": null,
    "como_presenta": "Concepto con el que se anuncian: «Departamentos boutique en Chacarilla».",
    "estado_evidencia": {
     "tipo": "web_oficial",
@@ -4388,7 +4388,8 @@
      "medios": null
     },
     "de_n_tipicos": 6
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "conde-ii",
@@ -4648,8 +4649,8 @@
     }
    ],
    "foto_campo": "2026-08-22",
-   "pedido": "confirmar si el precio incluye estacionamiento",
-   "pedido_que": "Su cartel declara 19 estacionamientos para 10 departamentos —casi dos por unidad— pero el asesor nunca lo dijo. Y no sirve inferirlo de AyD: la misma inmobiliaria vende Monte Umbroso 247 con la cochera aparte y Narciso con doble lineal incluido.",
+   "pedido": "si el precio incluye estacionamiento",
+   "pedido_que": "Hola! Sobre Conde II: si el precio incluye estacionamiento; precio de su flat tipico.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -4857,7 +4858,11 @@
      "medios": 1
     },
     "de_n_tipicos": 2
-   }
+   },
+   "pedido_lista": [
+    "si el precio incluye estacionamiento",
+    "precio de su flat tipico"
+   ]
   },
   {
    "id": "conde-de-la-vega-251",
@@ -4994,8 +4999,8 @@
    "wa_label": "Jenny",
    "foto_campo": "2026-08-22",
    "como_presenta": "En obra sólo comunican el remate: «ÚLTIMOS DÚPLEX», con los metrajes y el WhatsApp de Edifikarte.",
-   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Conde de la Vega 251 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido_que": "Hola Jenny! Sobre Conde de la Vega 251: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
@@ -5269,7 +5274,11 @@
    ],
    "dorms_con_precio": [],
    "politica_precio": "El precio de lista incluye 2 estacionamientos y 1 depósito, confirmado por Jenny Miranda el 1-jul-2026. Es el patrón de Edifikarte en toda la zona.",
-   "tipico": null
+   "tipico": null,
+   "pedido_lista": [
+    "precio y metraje de un flat de piso intermedio",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "conde-de-la-vega-460",
@@ -5949,8 +5958,8 @@
    ],
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
-   "pedido": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción",
+   "pedido": "precio de su flat tipico",
+   "pedido_que": "Hola Jenniffer! Sobre Conde de la Vega 460: precio de su flat tipico; si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-05-18",
@@ -6534,7 +6543,11 @@
     "estac_incluidos": null,
     "banos": null,
     "de_n_tipicos": 16
-   }
+   },
+   "pedido_lista": [
+    "precio de su flat tipico",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "dmont-dicon",
@@ -6724,7 +6737,13 @@
      "desde": 237206,
      "pm2": null
     }
-   ]
+   ],
+   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido_lista": [
+    "precio y metraje de un flat de piso intermedio",
+    "si tienen alguna promocion vigente"
+   ],
+   "pedido_que": "Hola! Sobre D'Mont: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente."
   },
   {
    "id": "dmont-2",
@@ -7014,8 +7033,8 @@
     }
    ],
    "wa_label": "Grupo Dicon",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de D'Mont 2 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola! Sobre D'Mont 2: si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -7413,7 +7432,10 @@
      "medios": 1
     },
     "de_n_tipicos": 9
-   }
+   },
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "estelar-1080",
@@ -7579,8 +7601,8 @@
    "wa_label": "Galeon · Estelar 1080",
    "foto_campo": "2026-08-22",
    "como_presenta": "Venden el piso alto como argumento: «Tu nuevo 5° piso en Chacarilla», de 80 a 108 m², con financiamiento BBVA.",
-   "pedido": "Hola Isabel! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Estelar 1080 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": null,
+   "pedido_que": null,
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
@@ -7965,7 +7987,8 @@
     "estac_incluidos": 1,
     "banos": null,
     "de_n_tipicos": 2
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "floresta-living-444",
@@ -8144,8 +8167,8 @@
    "asesora": "Cecilia",
    "wa_label": "Cecilia",
    "foto_campo": "2026-08-22",
-   "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Floresta Living 444 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "pedido": "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+   "pedido_que": "Hola Cecilia! Sobre Floresta Living 444: confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo); si tienen alguna promocion vigente.",
    "financia": "Interbank",
    "stock": {
     "n": 5,
@@ -8430,7 +8453,11 @@
      "medios": 0
     },
     "de_n_tipicos": 1
-   }
+   },
+   "pedido_lista": [
+    "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "hana",
@@ -8610,8 +8637,8 @@
    ],
    "asesora": "Rebeca Ruiz",
    "wa_label": "Rebeca Ruiz",
-   "pedido": "lámina del DPTO 101",
-   "pedido_que": "Su planta del 1er piso muestra DOS departamentos —el 101 y el 102, los dos de 3 dormitorios— pero solo tenemos la lámina detallada del 102. Del 101 no hay más que la silueta en la planta de piso, a 660×466: no alcanza para leer sus ambientes.",
+   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido_que": "Hola Rebeca! Sobre HANA: precio y metraje de un flat de piso intermedio.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -8727,7 +8754,10 @@
    ],
    "nota_planos": "Analizado: DPTO 102. El DPTO 101 aparece en la planta del 1er piso como el segundo departamento del nivel, también de 3 dormitorios, pero no tenemos su lámina.",
    "desde_publicado": 246176,
-   "tipico": null
+   "tipico": null,
+   "pedido_lista": [
+    "precio y metraje de un flat de piso intermedio"
+   ]
   },
   {
    "id": "jardines-monte-real",
@@ -8951,8 +8981,8 @@
    "foto_campo": "2026-08-22",
    "pisos": 6,
    "como_presenta": "La valla vende «ÚLTIMAS UNIDADES» con entrega marzo 2027, flats desde 127 m² y dúplex desde 209 m², y 7 áreas sociales. Financia BCP y exhibe certificación AIS.",
-   "pedido": "Hola Diana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Jardines de Monte Real por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola Diana! Sobre Jardines de Monte Real: si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
@@ -9794,7 +9824,10 @@
      "medios": 1
     },
     "de_n_tipicos": 1
-   }
+   },
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "la-floresta-boulevard",
@@ -10035,8 +10068,8 @@
    ],
    "wa_label": "Mónica · La Floresta Boulevard",
    "foto_campo": "2026-08-22",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de La Floresta Boulevard por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": null,
+   "pedido_que": null,
    "asesora": "Mónica",
    "horario_ventas": "Lunes a domingo, 11:00–18:00, en la obra (Montepío 120)",
    "promocion": "«Estamos en los últimos días de precios de pre-venta» + 1 estacionamiento de regalo por la compra del departamento. OJO: la asesora dice exactamente la misma frase desde julio-2026 y la repitió el 27-ago-2026 — van más de dos meses de «últimos días», así que es un recurso de urgencia permanente, no una fecha real.",
@@ -11142,7 +11175,8 @@
     "estac_incluidos": 1,
     "banos": null,
     "de_n_tipicos": 3
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "monte-carmelo-250",
@@ -11304,8 +11338,8 @@
    "wa_label": "Jenny",
    "foto_campo": "2026-08-22",
    "como_presenta": "Venden zona e inversión: «Tu depa en la mejor zona de Chacarilla» y «Tu inversión segura en el mejor lugar».",
-   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Carmelo 250 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "precio de su flat tipico",
+   "pedido_que": "Hola Jenny! Sobre Monte Carmelo 250: precio de su flat tipico.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -11948,7 +11982,10 @@
     "estac_incluidos": null,
     "banos": null,
     "de_n_tipicos": 1
-   }
+   },
+   "pedido_lista": [
+    "precio de su flat tipico"
+   ]
   },
   {
    "id": "monte-carmelo-551",
@@ -12388,8 +12425,8 @@
     }
    ],
    "wa_label": "Nashla Zambrano",
-   "pedido": "Hola Nashla! Vi la promo de Monte Carmelo 551, los hasta S/25,000 de descuento. Tres consultas para cerrar números: 1) el precio publicado incluye estacionamiento o va aparte, y cuánto cuesta? 2) el descuento sobre qué unidades aplica y hasta cuándo? 3) de los 20 departamentos, cuántos quedan disponibles hoy? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": null,
+   "pedido_que": null,
    "como_presenta": "«Tu próximo nivel de vida comienza aquí. Espacio, privacidad y una ubicación premium.» Venden flats y dúplex en Chacarilla como «oportunidad exclusiva para vivir con el equilibrio entre diseño, confort y una excelente inversión». Pautan en el canal de WhatsApp de Nexo Inmobiliario con botón «Hablar con un Asesor», y su landing se llama literalmente «vive-en-chacarilla» — compiten por la misma bandera de zona que nosotros.",
    "estado_evidencia": {
     "tipo": "whatsapp",
@@ -13096,7 +13133,8 @@
      "medios": 1
     },
     "de_n_tipicos": 3
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "monte-mar-167",
@@ -13291,8 +13329,8 @@
    ],
    "cuadrante_verificado": "2026-08-22",
    "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad».",
-   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Montemar 269 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "precio de su flat tipico",
+   "pedido_que": "Hola Jenny! Sobre Montemar 269: precio de su flat tipico; si tienen alguna promocion vigente.",
    "documentos": [
     {
      "titulo": "Brochure oficial Edifikarte · Montemar 269 (jul-2026)",
@@ -13974,7 +14012,11 @@
      "medios": 1
     },
     "de_n_tipicos": 4
-   }
+   },
+   "pedido_lista": [
+    "precio de su flat tipico",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "monte-mayor-177",
@@ -14128,8 +14170,8 @@
    "asesora": "Jenny",
    "wa_label": "Jenny",
    "foto_campo": "2026-08-22",
-   "pedido": "Hola Jenny! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Mayor 177 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": null,
+   "pedido_que": null,
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
@@ -14428,7 +14470,8 @@
      "medios": 0
     },
     "de_n_tipicos": 1
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "monte-mayor-183",
@@ -14993,8 +15036,8 @@
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
    "foto_campo": "2026-08-22",
-   "pedido": "Hola Jenniffer! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción",
+   "pedido": "precio de su flat tipico",
+   "pedido_que": "Hola Jenniffer! Sobre Monte Mayor 183: precio de su flat tipico; si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-06-24",
@@ -15225,7 +15268,11 @@
     "estac_incluidos": null,
     "banos": null,
     "de_n_tipicos": 15
-   }
+   },
+   "pedido_lista": [
+    "precio de su flat tipico",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "monte-real-265",
@@ -15477,7 +15524,14 @@
      "desde": 311765,
      "pm2": null
     }
-   ]
+   ],
+   "pedido": "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+   "pedido_lista": [
+    "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+    "precio de su flat tipico",
+    "si tienen alguna promocion vigente"
+   ],
+   "pedido_que": "Hola Cecilia! Sobre Monte Real: confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo); precio de su flat tipico; si tienen alguna promocion vigente."
   },
   {
    "id": "monte-sierpe",
@@ -15730,8 +15784,8 @@
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: carteles «ÚLTIMOS DEPAS» colgados en la propia fachada del edificio terminado.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "confirmar a qué unidades corresponden los extremos del rango",
-   "pedido_que": "No hace falta la lista completa: alcanza con saber a qué unidades corresponden los S/881,000 y los S/970,000 que dio el 14-ago, y el precio del X10. Los precios por unidad que tenemos son anteriores a ese rango y uno queda por debajo del piso.",
+   "pedido": "precio de su flat tipico",
+   "pedido_que": "Hola Nadia! Sobre Monte Sierpe: precio de su flat tipico; si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -16124,7 +16178,11 @@
      "medios": null
     },
     "de_n_tipicos": 4
-   }
+   },
+   "pedido_lista": [
+    "precio de su flat tipico",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "monte-umbroso",
@@ -16278,8 +16336,8 @@
    ],
    "wa_label": "Milagros · corredora",
    "asesora": "Milagros López",
-   "pedido": "láminas de tipología",
-   "pedido_que": "No tiene ninguna lámina de tipología publicada: los dos archivos que teníamos bajo «planos» son renders de fachada. Sin planos no se puede analizar qué trae cada unidad.",
+   "pedido": "laminas de tipologia",
+   "pedido_que": "Hola Milagros! Sobre Monte Umbroso 520: laminas de tipologia; si tienen alguna promocion vigente.",
    "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520.",
    "cochera_certeza": "confirmado",
    "nota_planos": "Sin planos publicados. Lo único que teníamos eran dos archivos idénticos byte a byte: un solo render de fachada duplicado.",
@@ -16318,6 +16376,10 @@
      "desde": 155850,
      "pm2": null
     }
+   ],
+   "pedido_lista": [
+    "laminas de tipologia",
+    "si tienen alguna promocion vigente"
    ]
   },
   {
@@ -16445,8 +16507,8 @@
    "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
    "caseta_fecha": "2026-08-22",
    "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola.",
-   "pedido": "láminas de tipología",
-   "pedido_que": "Sin ninguna lámina de tipología: solo hay un render y la foto de su valla. Tampoco publica precios.",
+   "pedido": "laminas de tipologia",
+   "pedido_que": "Hola! Sobre Monte Flor: laminas de tipologia; si tienen alguna promocion vigente.",
    "contactos": [
     {
      "nombre": null,
@@ -16508,7 +16570,11 @@
     "estac_incluidos": 0,
     "banos": null,
     "de_n_tipicos": 2
-   }
+   },
+   "pedido_lista": [
+    "laminas de tipologia",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "parque-monte-carmelo",
@@ -16874,8 +16940,8 @@
    ],
    "asesora": "Cecilia",
    "wa_label": "Cecilia",
-   "pedido": "Hola Cecilia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Parque Monte Carmelo por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": null,
+   "pedido_que": null,
    "como_presenta": "Concepto con el que se anuncian: «Frente al parque Monte Carmelo».",
    "estado_evidencia": {
     "tipo": "web_oficial",
@@ -17670,7 +17736,8 @@
      "medios": 0
     },
     "de_n_tipicos": 4
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "precursores-525",
@@ -17816,8 +17883,8 @@
    "asesora": "Joyce",
    "wa_label": "Joyce",
    "foto_campo": "2026-08-22",
-   "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Precursores 525 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido_que": "Hola Joyce! Sobre Precursores 525: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "base_interna",
     "fecha": "2026-06-28",
@@ -18143,7 +18210,11 @@
    "coherencia_alerta": "La foto de portada (chacarillasur-precursores.jpg) muestra un edificio de ladrillo terminado con un banner «ÚLTIMOS DEPARTAMENTOS · 922 323 923» y el logotipo de Chacarilla Sur, pero el banner no nombra el proyecto y Chacarilla Sur tiene DOS en la zona: este y Real Living · Monte Real. Hay que confirmar de cuál es antes de darla por buena. El número 922 323 923 tampoco lo teníamos.",
    "dorms_con_precio": [],
    "desde_publicado": 544425,
-   "tipico": null
+   "tipico": null,
+   "pedido_lista": [
+    "precio y metraje de un flat de piso intermedio",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "precursores-ii",
@@ -18323,8 +18394,8 @@
    ],
    "asesora": "Indira Ramos",
    "wa_label": "Indira Ramos",
-   "pedido": "Hola Indira! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola Indira! Sobre Precursores II: si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-06-01",
@@ -18621,7 +18692,10 @@
      "medios": 1
     },
     "de_n_tipicos": 2
-   }
+   },
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "santorini",
@@ -18946,8 +19020,8 @@
    "licencia": "0401-2025-SGLM-GDU-MSS (modalidad C) · Grupo Moryasoc Proyecto 31 S.A.C. · plazo 14 meses",
    "pisos": 6,
    "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30",
-   "pedido": "precio del departamento 101 (1 dormitorio)",
-   "pedido_que": "Su lámina del 101 está leída y es de 1 dormitorio, pero no tenemos su precio: es el único 1 dorm de Santorini y sin él la banda de 1 dormitorio se queda sin uno de sus competidores con producto real.",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola Rossana! Sobre Santorini: si tienen alguna promocion vigente.",
    "politica_precio": "El precio de lista de cada departamento YA incluye 1 estacionamiento. La 2.ª cochera paralela cuesta US$18,000 adicionales (delta constante en todas las tipologías del tarifario). El US$/m² del portal descuenta esos US$18,000.",
    "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos.",
    "estado_evidencia": {
@@ -19466,7 +19540,10 @@
      "medios": 1
     },
     "de_n_tipicos": 5
-   }
+   },
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "spazio",
@@ -19773,8 +19850,8 @@
    ],
    "wa_label": "Grupo Dicon",
    "foto_campo": "2026-08-22",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Spazio por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola! Sobre Spazio: si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -20431,7 +20508,10 @@
     },
     "de_n_tipicos": 4
    },
-   "nota_tipologias": "El rango 3–6 dorm mezcla su flat típico de 3 dormitorios con dos tríplex de 6. Para comparar, la banda que corresponde es la de 3 dormitorios."
+   "nota_tipologias": "El rango 3–6 dorm mezcla su flat típico de 3 dormitorios con dos tríplex de 6. Para comparar, la banda que corresponde es la de 3 dormitorios.",
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "terraverde",
@@ -20647,8 +20727,8 @@
      "fuente": "Web oficial de Inmobiliaria AyD"
     }
    ],
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) sigue vigente la lista de precios que me pasaste de Monte Umbroso 247? cambió algo? Gracias!",
-   "pedido_que": "reconfirmar precios",
+   "pedido": null,
+   "pedido_que": null,
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -21070,7 +21150,8 @@
      "medios": 1
     },
     "de_n_tipicos": 1
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "narciso-ayd",
@@ -21412,7 +21493,8 @@
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "pedido_lista": []
   },
   {
    "id": "precursores-verde",
@@ -21531,8 +21613,8 @@
    "estado_obra": "En obra · se anuncian los últimos departamentos",
    "cuadrante_verificado": "2026-08-22",
    "planos_fuente": "Plano de tipología de la web oficial de Guerin",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Precursores Verde con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
+   "pedido": null,
+   "pedido_que": null,
    "documentos": [
     {
      "titulo": "Brochure oficial Guerin · Precursores Verde",
@@ -22230,7 +22312,8 @@
     "cond": "La asesora lo ofreció de entrada y no llegó a decir cuánto.",
     "canal": "WhatsApp de la asesora",
     "fuente": "Chat real de WhatsApp con el asesor Guerin-Precursores, 3-sep-2026: «tenemos un ajuste final»"
-   }
+   },
+   "pedido_lista": []
   },
   {
    "id": "astete-living",
@@ -22405,8 +22488,8 @@
     }
    ],
    "cuadrante_verificado": "2026-08-22",
-   "pedido": "Hola Joyce! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Living Monte Real con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola! Sobre Real Living · Monte Real: si tienen alguna promocion vigente.",
    "contactos": [
     {
      "nombre": null,
@@ -23143,7 +23226,10 @@
     },
     "de_n_tipicos": 1
    },
-   "desde_publicado": 210882
+   "desde_publicado": 210882,
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "isGEU": false,
@@ -23358,8 +23444,8 @@
      "tipo": "brochure"
     }
    ],
-   "pedido": "Hola Jenny! Consulta por Conde de la Vega 128: me pasas la lista de precios con lo que queda disponible? el precio incluye cochera? y para cuándo entregan?",
-   "pedido_que": "lista de precios + cochera + entrega",
+   "pedido": "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+   "pedido_que": "Hola Jenny! Sobre Conde de la Vega 128: confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo); precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -23992,7 +24078,12 @@
    ],
    "dorms_con_precio": [],
    "politica_precio": "INFERIDO del patrón de Edifikarte, que mete 2 estacionamientos y depósito en sus cinco proyectos confirmados. No confirmado para este, que además está agotado.",
-   "tipico": null
+   "tipico": null,
+   "pedido_lista": [
+    "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+    "precio y metraje de un flat de piso intermedio",
+    "si tienen alguna promocion vigente"
+   ]
   },
   {
    "id": "monte-umbroso-585",
@@ -24186,7 +24277,13 @@
      "desde": 399000,
      "pm2": null
     }
-   ]
+   ],
+   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido_lista": [
+    "precio y metraje de un flat de piso intermedio",
+    "si tienen alguna promocion vigente"
+   ],
+   "pedido_que": "Hola Isabel! Sobre Monte Umbroso 585: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente."
   },
   {
    "id": "monte-alegre",
@@ -24393,8 +24490,8 @@
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Alegre 109 con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
+   "pedido": "si tienen alguna promocion vigente",
+   "pedido_que": "Hola! Sobre Monte Alegre 109: si tienen alguna promocion vigente.",
    "pisos": 7,
    "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (21 láminas de tipología).",
    "wa_label": "Edifikarte · Monte Alegre",
@@ -25484,7 +25581,10 @@
      "medios": 1
     },
     "de_n_tipicos": 4
-   }
+   },
+   "pedido_lista": [
+    "si tienen alguna promocion vigente"
+   ]
   }
  ]
 }
