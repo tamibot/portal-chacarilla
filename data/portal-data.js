@@ -10,8 +10,8 @@ window.PORTAL_DATA = {
   "comparables_confirmados": 18,
   "en_ultimas_unidades": 15,
   "sin_precio_publico": 4,
-  "cochera_incluida": 16,
-  "cochera_aparte": 8,
+  "cochera_incluida": 20,
+  "cochera_aparte": 13,
   "verif_web_fecha": "2026-08-30",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
   "cortes": [
@@ -1540,6 +1540,40 @@ window.PORTAL_DATA = {
     "fuentes": [
      "Recorrido de campo 2026-08-22 · foto IMG_8003"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Precursores 525",
+    "dev": "Grupo Chacarilla Sur",
+    "proyecto_id": "precursores-525",
+    "tags": [
+     "cochera",
+     "precio"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Joyce Aguilar puso precio al último departamento: el Dúplex 603 en US$544,425 con 2 estacionamientos y depósito incluidos, entrega noviembre 2026. La lámina imprime 227 m² ocupada y 173 techada. Con esto, Grupo Chacarilla Sur queda con la misma política que Edifikarte: dos estacionamientos adentro del precio.",
+    "cita": "«el precio es de US$ 544,425 dólares y le incluye 2 estacionamientos + deposito» — 3-sep-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con Joyce Aguilar, exportado el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Cuadrante",
+    "dev": null,
+    "proyecto_id": null,
+    "tags": [
+     "cochera",
+     "metodo"
+    ],
+    "canal": "Cruce de fuentes",
+    "autor": "Benchmark",
+    "texto": "Los sin-cochera bajaron de 10 a 1 cruzando cada pendiente contra la política que su propia desarrolladora ya nos había dicho en un proyecto hermano: EE Inmobiliaria la vende aparte, AyD la pone en línea separada en su cotización, Edifikarte mete dos adentro, Central Inmobiliaria una, y Grupo Chacarilla Sur dos. Esos ocho quedan marcados «política de la desarrolladora» y NO entran al ranking de US$/m²: el validador lo impide. Solo Precursores Verde sigue sin ninguna pista.",
+    "cita": "«El estacionamiento no está incluído en el precio del departamento» — Cecilia Estrada, EE Inmobiliaria, 2-jul-2026",
+    "fuentes": [
+     "Cruce de los 13 chats exportados"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2174,8 +2208,9 @@ window.PORTAL_DATA = {
   "regla_estudio": "Un ambiente vendido como «estudio» cuenta como dormitorio disfrazado si cumple dos de tres: tiene clóset, tiene ventana a exterior y tiene puerta que lo cierra. Si en la misma lámina los dormitorios llevan barrido de puerta dibujado y el estudio no, la ausencia es intencional.",
   "planos_analizados": {
    "proyectos": 32,
-   "unidades": 277
-  }
+   "unidades": 278
+  },
+  "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe»."
  },
  "quadrant": [
   [
@@ -3365,7 +3400,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "aura-sul",
@@ -4125,7 +4161,8 @@ window.PORTAL_DATA = {
     "cond": "Dos ganchos distintos en la misma tanda: «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja». VIGENCIA POR CONFIRMAR: piezas de julio.",
     "canal": "Meta Ads (Grupo Dicon / LoBo)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · ganchos «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja»"
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "conde-ii",
@@ -4185,7 +4222,8 @@ window.PORTAL_DATA = {
      "tipo": "primer_piso",
      "piso": "1",
      "flat": false,
-     "vendido": true
+     "vendido": true,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Flat 102 — VENDIDO",
@@ -4196,7 +4234,8 @@ window.PORTAL_DATA = {
      "tipo": "primer_piso",
      "piso": "1",
      "flat": false,
-     "vendido": true
+     "vendido": true,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Flat típico 01 (201/301/401)",
@@ -4207,7 +4246,8 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "2 al 4",
      "flat": true,
-     "vendido": false
+     "vendido": false,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Flat típico 02 (202/302/402)",
@@ -4218,7 +4258,8 @@ window.PORTAL_DATA = {
      "tipo": "flat",
      "piso": "2 al 4",
      "flat": true,
-     "vendido": false
+     "vendido": false,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Dúplex 501",
@@ -4229,7 +4270,8 @@ window.PORTAL_DATA = {
      "tipo": "duplex",
      "piso": "5",
      "flat": false,
-     "vendido": false
+     "vendido": false,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Dúplex 502 — VENDIDO",
@@ -4240,7 +4282,8 @@ window.PORTAL_DATA = {
      "tipo": "duplex",
      "piso": "5",
      "flat": false,
-     "vendido": true
+     "vendido": true,
+     "certeza_cochera": "politica_desarrolladora"
     }
    ],
    "flats_summary": [
@@ -4250,7 +4293,7 @@ window.PORTAL_DATA = {
      "precio_usd": 308700,
      "precio_m2": 2450,
      "comparable_confirmado": false,
-     "motivo_no_comparable": "El brochure de AyD no dice si el precio incluye estacionamiento."
+     "motivo_no_comparable": "La política de estacionamiento se infiere de lo que la desarrolladora dijo en otro de sus proyectos, no de este. Queda fuera del ranking de US$/m² hasta que el asesor lo confirme."
     }
    ],
    "dorms_disponibles": [
@@ -4275,7 +4318,7 @@ window.PORTAL_DATA = {
    ],
    "total_pisos": 5,
    "portales": {},
-   "cochera_status": "nd",
+   "cochera_status": "no",
    "stock": {
     "n": 3,
     "label": "3 de 6 tipologías disponibles (3 ya vendidas)"
@@ -4376,7 +4419,7 @@ window.PORTAL_DATA = {
      "total": 6
     }
    ],
-   "cochera_nota": "Sin confirmar. Su brochure trae el precio por tipología pero no dice si incluye estacionamiento, y no tenemos tarifario.",
+   "cochera_nota": "El formato de cotización oficial de AyD pone el estacionamiento en línea aparte, con su propio precio, y el descuento de preventa se aplica al total: así están las dos hojas de Monte Umbroso 247 que envió Washington Benavides el 19-ago-2026. INFERIDO de ese formato comercial, no confirmado para este proyecto.",
    "promo": {
     "tipo": "Beneficio no monetario",
     "que": "Personalización de acabados y distribución con sus arquitectos",
@@ -4518,7 +4561,9 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_fuente": "Política de Inmobiliaria AyD confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "conde-de-la-vega-251",
@@ -4910,7 +4955,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 981 386 111, 1-jul-2026"
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 981 386 111, 1-jul-2026",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -6136,7 +6182,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "dmont-dicon",
@@ -6300,7 +6347,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte"
+   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "dmont-2",
@@ -6951,7 +6999,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte"
+   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "estelar-1080",
@@ -7470,7 +7519,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "floresta-living-444",
@@ -7518,7 +7568,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 196471,
      "m2_equivalente": 85,
-     "precio_m2_equiv": 2311
+     "precio_m2_equiv": 2311,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Dpto. 101",
@@ -7533,7 +7584,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 257647,
      "m2_equivalente": 119.9,
-     "precio_m2_equiv": 2149
+     "precio_m2_equiv": 2149,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Dpto. 102",
@@ -7548,7 +7600,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 352647,
      "m2_equivalente": 197.7,
-     "precio_m2_equiv": 1784
+     "precio_m2_equiv": 1784,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Duplex 603",
@@ -7563,7 +7616,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 222941,
      "m2_equivalente": 110.3,
-     "precio_m2_equiv": 2021
+     "precio_m2_equiv": 2021,
+     "certeza_cochera": "politica_desarrolladora"
     }
    ],
    "flats_summary": [
@@ -7573,7 +7627,7 @@ window.PORTAL_DATA = {
      "precio_usd": 196471,
      "precio_m2": 2311,
      "comparable_confirmado": false,
-     "motivo_no_comparable": "La ficha de Nexo no dice si el precio incluye estacionamiento."
+     "motivo_no_comparable": "La política de estacionamiento se infiere de lo que la desarrolladora dijo en otro de sus proyectos, no de este. Queda fuera del ranking de US$/m² hasta que el asesor lo confirme."
     }
    ],
    "dorms_disponibles": [
@@ -7601,7 +7655,7 @@ window.PORTAL_DATA = {
     "assets/img-f1/floresta-living-444/img-04.jpg",
     "assets/img-f1/floresta-living-444/img-05.jpg"
    ],
-   "cochera_status": "nd",
+   "cochera_status": "no",
    "precio_hist": [
     {
      "corte": "2026-08-16",
@@ -7673,7 +7727,7 @@ window.PORTAL_DATA = {
     }
    ],
    "borde_avenida": true,
-   "cochera_nota": "Sin confirmar. El precio viene de la ficha de Nexo y el metraje del cartel de obra; ninguno menciona estacionamiento.",
+   "cochera_nota": "Cecilia Estrada (EE Inmobiliaria) lo dijo como política de la empresa el 2-jul-2026: «El estacionamiento no está incluído en el precio del departamento». Su brochure además solo declara «Estacionamiento de visitas» entre las amenidades, no uno privado. INFERIDO de esa frase general, no confirmado para este proyecto.",
    "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y el metraje del cartel de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante.",
    "planos_analisis": {
     "fecha": null,
@@ -7895,7 +7949,9 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "hana",
@@ -8152,7 +8208,8 @@ window.PORTAL_DATA = {
     "cond": "Sobre el DPTO 102, el único que queda. Pasó de S/900,000 con cochera a S/852,000 con cochera y amoblado.",
     "canal": "WhatsApp de la asesora",
     "fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz, 13-ago-2026, reconfirmado el 3-sep: «Tiene 48 mil de mejora»"
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "jardines-monte-real",
@@ -9180,7 +9237,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 920 374 177 (Central Inmobiliaria), 13-ago-2026 · lámina FLAT X08 con precio impreso"
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 920 374 177 (Central Inmobiliaria), 13-ago-2026 · lámina FLAT X08 con precio impreso",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "la-floresta-boulevard",
@@ -10493,7 +10551,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-carmelo-250",
@@ -11257,7 +11316,8 @@ window.PORTAL_DATA = {
     "cond": "Campaña «Grati Days» del 15 al 19-jul-2026 según su propia nota de cochera. VIGENCIA POR CONFIRMAR: la pieza es de junio-julio y el corte es de agosto.",
     "canal": "Meta Ads (Edifikarte)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · anuncio «¡Vive el mundial en tu nuevo depa en Chacarilla! Depas de 3 dorms desde 116m² y ¡cochera de regalo!»"
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-carmelo-551",
@@ -12359,7 +12419,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 993 510 957 (Monte Carmelo 551), 3-sep-2026"
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 993 510 957 (Monte Carmelo 551), 3-sep-2026",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-mar-167",
@@ -13204,7 +13265,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-mayor-177",
@@ -13628,7 +13690,8 @@ window.PORTAL_DATA = {
     "cond": "Siete variantes del mismo anuncio el 15-jul-2026. Misma jugada que Dicon con la parrilla. VIGENCIA POR CONFIRMAR.",
     "canal": "Meta Ads (Edifikarte)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «¡Kamado de regalo!», 7 variantes el 15-jul"
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-mayor-183",
@@ -14388,7 +14451,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-real-265",
@@ -14439,7 +14503,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 311765,
      "m2_equivalente": 167.82,
-     "precio_m2_equiv": 1858
+     "precio_m2_equiv": 1858,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Flat tipico 2 al 6 (referencial agotado / sin precio vigente)",
@@ -14449,7 +14514,8 @@ window.PORTAL_DATA = {
      "precio_m2": null,
      "tipo": "flat",
      "piso": "2 al 6",
-     "flat": true
+     "flat": true,
+     "certeza_cochera": "politica_desarrolladora"
     }
    ],
    "flats_summary": [],
@@ -14491,7 +14557,7 @@ window.PORTAL_DATA = {
     "assets/img-f1/monte-real-265/img-04.jpg",
     "assets/img-f1/monte-real-265/img-05.jpg"
    ],
-   "cochera_status": "nd",
+   "cochera_status": "no",
    "stock": {
     "n": 1,
     "label": "Última unidad"
@@ -14600,7 +14666,10 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_nota": "Misma política de EE Inmobiliaria dicha por Cecilia Estrada el 2-jul-2026: «El estacionamiento no está incluído en el precio del departamento». INFERIDO, no confirmado para este proyecto.",
+   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "monte-sierpe",
@@ -14643,9 +14712,9 @@ window.PORTAL_DATA = {
     {
      "unidad": "x102 (Piso 1)",
      "dorm": 2,
-     "m2": 103.9,
+     "m2": 103.37,
      "precio_usd": 254118,
-     "precio_m2": 2446,
+     "precio_m2": 2458,
      "tipo": "flat",
      "piso": "1",
      "flat": false,
@@ -14654,9 +14723,9 @@ window.PORTAL_DATA = {
      "estac_incluidos": 1,
      "depositos_incluidos": 1,
      "precio_lista_todo": 274118,
-     "m2_equivalente": 125.9,
-     "precio_m2_equiv": 2177,
-     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
+     "m2_equivalente": 125.37,
+     "precio_m2_equiv": 2186,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m². · Metraje corregido el 3-sep-2026: la lámina que envió la asesora imprime 103.37 m², no los 103.9 que teníamos."
     },
     {
      "unidad": "x107 (Piso 1)",
@@ -14697,9 +14766,9 @@ window.PORTAL_DATA = {
     {
      "unidad": "X02 (Pisos 2-3, típico)",
      "dorm": 2,
-     "m2": 107.4,
+     "m2": 104.12,
      "precio_usd": 254118,
-     "precio_m2": 2366,
+     "precio_m2": 2441,
      "tipo": "flat",
      "piso": "2-3",
      "flat": true,
@@ -14708,9 +14777,9 @@ window.PORTAL_DATA = {
      "estac_incluidos": 1,
      "depositos_incluidos": 1,
      "precio_lista_todo": 274118,
-     "m2_equivalente": 129.4,
-     "precio_m2_equiv": 2118,
-     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
+     "m2_equivalente": 126.12,
+     "precio_m2_equiv": 2173,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m². · Metraje corregido el 3-sep-2026: la lámina que envió la asesora imprime 104.12 m², no los 107.4 que teníamos."
     },
     {
      "unidad": "X05 (Piso 6)",
@@ -14729,6 +14798,19 @@ window.PORTAL_DATA = {
      "m2_equivalente": 127.3,
      "precio_m2_equiv": 2070,
      "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
+    },
+    {
+     "unidad": "X10",
+     "dorm": 2,
+     "m2": 105.89,
+     "precio_usd": null,
+     "precio_m2": null,
+     "tipo": "flat",
+     "piso": null,
+     "flat": true,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 1,
+     "nota": "Tipología que no teníamos: apareció en las láminas que la asesora envió el 14-ago-2026. 105.89 m², 3 Ambientes (2 dorm + estudio), 4 Baños. Sin precio asignado: la asesora dio el rango del proyecto (S/881,000–970,000) pero no dijo cuál corresponde a esta unidad."
     }
    ],
    "flats_summary": [
@@ -14748,7 +14830,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta. · Su brochure digital declara 6 pisos, 57 unidades y 75 estacionamientos (1.3 por departamento), lo que calza con que el precio incluya cochera. El 3-sep-2026 la asesora avisó que estarán en la feria inmobiliaria.",
+   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta. · Su brochure digital declara 6 pisos, 57 unidades y 75 estacionamientos (1.3 por departamento), lo que calza con que el precio incluya cochera. El 3-sep-2026 la asesora avisó que estarán en la feria inmobiliaria. · Las cuatro láminas que la asesora envió el 14-ago-2026 (848×564, mejores que las 660×371 de la web) corrigieron tres metrajes, sumaron la tipología X10 y subieron la cobertura del análisis de planos del 71% al 81%. Ojo: los precios por unidad que tenemos cargados son anteriores al rango S/881,000–970,000 que dio el 14-ago, y el x107 queda por debajo de ese piso — hay que pedirle la lista por unidad.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -14835,8 +14917,8 @@ window.PORTAL_DATA = {
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: carteles «ÚLTIMOS DEPAS» colgados en la propia fachada del edificio terminado.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "Hola Nadia! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Monte Sierpe por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "lista de precios por unidad",
+   "pedido_que": "Los precios por unidad que tenemos son anteriores al rango S/881,000–970,000 que dio el 14-ago-2026 y uno queda por debajo de ese piso. Falta la lista unidad por unidad, y el precio del X10.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -14853,9 +14935,9 @@ window.PORTAL_DATA = {
     }
    ],
    "planos_analisis": {
-    "fecha": null,
+    "fecha": "2026-09-03",
     "version": null,
-    "planos_leidos": 5,
+    "planos_leidos": 6,
     "unidades": [
      {
       "unidad": "TIPO X1",
@@ -14928,7 +15010,7 @@ window.PORTAL_DATA = {
        "por_que": "mismo esquema que el X1: escritorio corrido con dos sillas, clóset con colgadores contra el muro izquierdo y mampara de vidrio a la terraza. 2 de 3",
        "ya_contado": false
       },
-      "observacion": "Leyenda: «TIPO X2 · 107.44 m2 · 3 Ambientes · Pisos (2 y 3) · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (107.44 m2): referencia. Es la planta espejada del X1, con la zona social arriba y los dormitorios abajo. También trae el cuarto interior con sillón que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "observacion": "Leyenda: «TIPO X2 · 107.44 m2 · 3 Ambientes · Pisos (2 y 3) · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (107.44 m2): referencia. Es la planta espejada del X1, con la zona social arriba y los dormitorios abajo. También trae el cuarto interior con sillón que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha. · Segunda pasada el 3-sep-2026 sobre la lámina que envió la asesora (848×564 contra los 660×371 de la web): se confirman lavandería en recinto propio, y que no hay despensa ni cuarto ni baño de servicio. La lámina declara «4 Baños» en total pero no separa completos de medios, así que esas dos casillas siguen en «no se ve».",
       "checklist": {
        "sala_comedor": true,
        "sala_estar_extra": true,
@@ -14940,13 +15022,13 @@ window.PORTAL_DATA = {
        "cocina_tipo": "abierta",
        "cocina_isla": true,
        "cocina_barra": true,
-       "despensa": null,
+       "despensa": false,
        "lavanderia": true,
        "lavanderia_techada": true,
        "lavanderia_recinto_propio": true,
        "cuarto_servicio": false,
-       "bano_servicio": null,
-       "bano_servicio_ducha": null,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
        "dorm_principal_suite": true,
        "walk_in_closet": false,
        "bano_visita": null,
@@ -14968,6 +15050,7 @@ window.PORTAL_DATA = {
        "terraza enlosetada con jardineras"
       ],
       "archivos": [
+       "assets/planos/monte-sierpe-asesora/lamina-00000010.jpg",
        "assets/planos/monte-sierpe/sierpe-X02-2d-107m2.png"
       ]
      },
@@ -15035,12 +15118,12 @@ window.PORTAL_DATA = {
        "hay": true,
        "closet": true,
        "ventana": true,
-       "puerta": null,
+       "puerta": true,
        "veredicto": "dormitorio disfrazado",
-       "por_que": "el ambiente rotulado «Estudio» en la leyenda se amuebla con un escritorio corrido y dos sillas, tiene un clóset con colgadores en el muro derecho y da a la fachada izquierda por una línea de vidrio. 2 de 3 sin necesidad de ver la puerta",
+       "por_que": "el ambiente rotulado «Estudio» en la leyenda se amuebla con un escritorio corrido y dos sillas, tiene un clóset con colgadores en el muro derecho y da a la fachada izquierda por una línea de vidrio. 2 de 3 sin necesidad de ver la puerta. A esta resolución además se ve la hoja de puerta con su barrido en el muro inferior del estudio: cumple las tres, no dos. Y el clóset es el MISMO gráfico de colgadores que lleva el dormitorio secundario de al lado, en el mismo dibujo",
        "ya_contado": false
       },
-      "observacion": "Leyenda: «TIPO 102 · 103.92 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (103.92 m2): referencia. Es la única tipología de las cinco donde no se ve NINGUNA superficie exterior enlosetada: la fachada se resuelve con líneas de vidrio, sin balcón ni terraza dibujados. Además del estudio hay un cuarto interior amoblado con sillón, pegado a un baño enlosetado grande, que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "observacion": "Leyenda: «TIPO 102 · 103.92 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 4 Baños · Cocina · Sala - Comedor · Lavandería». Metraje impreso (103.92 m2): referencia. Es la única tipología de las cinco donde no se ve NINGUNA superficie exterior enlosetada: la fachada se resuelve con líneas de vidrio, sin balcón ni terraza dibujados. Además del estudio hay un cuarto interior amoblado con sillón, pegado a un baño enlosetado grande, que no figura en los 3 Ambientes. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha. · Segunda pasada el 3-sep-2026 sobre la lámina que envió la asesora (848×564 contra los 660×371 de la web): se ve la hoja de puerta del estudio y se confirma que su clóset es el mismo gráfico de colgadores del dormitorio contiguo. La lámina declara «4 Baños» en total pero no separa completos de medios, así que esas dos casillas siguen en «no se ve».",
       "checklist": {
        "sala_comedor": true,
        "sala_estar_extra": true,
@@ -15052,13 +15135,13 @@ window.PORTAL_DATA = {
        "cocina_tipo": "abierta",
        "cocina_isla": true,
        "cocina_barra": true,
-       "despensa": null,
+       "despensa": false,
        "lavanderia": true,
        "lavanderia_techada": true,
        "lavanderia_recinto_propio": null,
        "cuarto_servicio": false,
-       "bano_servicio": null,
-       "bano_servicio_ducha": null,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
        "dorm_principal_suite": true,
        "walk_in_closet": false,
        "bano_visita": null,
@@ -15079,6 +15162,7 @@ window.PORTAL_DATA = {
        "4 baños (según leyenda)"
       ],
       "archivos": [
+       "assets/planos/monte-sierpe-asesora/lamina-00000013.jpg",
        "assets/planos/monte-sierpe/sierpe-x102-2d-103m2.png"
       ]
      },
@@ -15095,7 +15179,7 @@ window.PORTAL_DATA = {
        "veredicto": "ilegible",
        "por_que": "el único ambiente extra —el que la leyenda cuenta como «Estudio»— está amoblado con sillón, alfombra y mesita, y no se le dibuja clóset. Pero da a una zona blanca en la esquina superior que puede ser un pozo de luz o el borde de la lámina: a esta resolución no se puede saber si tiene ventana ni si lleva puerta, así que tampoco se puede descartar que llegue a 2 de 3"
       },
-      "observacion": "Leyenda: «TIPO 107 · 103.43 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 3 Baños · Cocina · Sala - Comedor». Metraje impreso (103.43 m2): referencia. Es la única de las cinco tipologías cuya leyenda declara 3 baños en vez de 4 y la única que NO lista Lavandería: en la planta sí se ve un recinto enlosetado con lavadero al fondo de la cocina, pero no se puede confirmar que sea lavandería, por eso la casilla queda en null. Al lado del principal hay un rectángulo punteado sin mobiliario, o sea vestidor. No se ve superficie exterior enlosetada. dorm_reales queda en null porque el veredicto del estudio es ilegible. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha.",
+      "observacion": "Leyenda: «TIPO 107 · 103.43 m2 · 3 Ambientes · Dorm Principal · Dorm Secundario · Estudio · 3 Baños · Cocina · Sala - Comedor». Metraje impreso (103.43 m2): referencia. Es la única de las cinco tipologías cuya leyenda declara 3 baños en vez de 4 y la única que NO lista Lavandería: en la planta sí se ve un recinto enlosetado con lavadero al fondo de la cocina, pero no se puede confirmar que sea lavandería, por eso la casilla queda en null. Al lado del principal hay un rectángulo punteado sin mobiliario, o sea vestidor. No se ve superficie exterior enlosetada. dorm_reales queda en null porque el veredicto del estudio es ilegible. Límite de lectura: la lámina del portal mide 660x370 px y el dibujo de la planta ocupa apenas unos 360x330 px; no hay versión de mayor resolución en el repo (los dos PDF de brochure de Monte Sierpe no traen páginas de planta). Por eso el reparto de baños completos / medios baños, la despensa y el baño de servicio quedan en null: se ven los recintos pero no se puede distinguir con seguridad si cada uno lleva ducha. · Segunda pasada el 3-sep-2026 sobre la lámina que envió la asesora (848×564 contra los 660×371 de la web): se confirman lavandería en recinto propio, y que no hay despensa ni cuarto ni baño de servicio. La lámina declara «3 Baños» en total pero no separa completos de medios, así que esas dos casillas siguen en «no se ve».",
       "checklist": {
        "sala_comedor": true,
        "sala_estar_extra": false,
@@ -15107,13 +15191,13 @@ window.PORTAL_DATA = {
        "cocina_tipo": "abierta",
        "cocina_isla": true,
        "cocina_barra": true,
-       "despensa": null,
-       "lavanderia": null,
+       "despensa": false,
+       "lavanderia": true,
        "lavanderia_techada": null,
        "lavanderia_recinto_propio": null,
        "cuarto_servicio": false,
-       "bano_servicio": null,
-       "bano_servicio_ducha": null,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
        "dorm_principal_suite": true,
        "walk_in_closet": true,
        "bano_visita": null,
@@ -15132,12 +15216,71 @@ window.PORTAL_DATA = {
        "3 baños (según leyenda)"
       ],
       "archivos": [
+       "assets/planos/monte-sierpe-asesora/lamina-00000012.jpg",
        "assets/planos/monte-sierpe/sierpe-x107-2d-103m2.png"
+      ]
+     },
+     {
+      "unidad": "TIPO X10",
+      "archivo": "assets/planos/monte-sierpe-asesora/lamina-00000011.jpg",
+      "dorm_declarados": 2,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": true,
+       "closet": true,
+       "ventana": true,
+       "puerta": null,
+       "veredicto": "dormitorio disfrazado",
+       "por_que": "mismo esquema que el X1 y el X2: escritorio corrido con dos sillas, clóset con colgadores y ventana al exterior. 2 de 3. Leído de la lámina de la asesora del 14-ago-2026",
+       "ya_contado": false
+      },
+      "observacion": "Tipología que no teníamos: apareció en las láminas que la asesora envió el 14-ago-2026. La lámina imprime 105.89 m² y declara 3 Ambientes (Dorm Principal, Dorm Secundario, Estudio), 4 Baños, Cocina, Sala-Comedor y Lavandería. Mismo esquema que el X2: el ambiente que la leyenda llama «Estudio» lleva clóset con colgadores y ventana, así que es un dormitorio disfrazado. Los baños no se separan entre completos y medios en la leyenda.",
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": true,
+       "estudio": true,
+       "balcon": false,
+       "balcon_techado": false,
+       "terraza": true,
+       "patio_jardin": false,
+       "cocina_tipo": "abierta",
+       "cocina_isla": true,
+       "cocina_barra": true,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": true,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": false,
+       "bano_visita": null,
+       "banos_completos": null,
+       "medios_banos": null,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": false
+      },
+      "ambientes_texto": [
+       "sala-comedor",
+       "cocina abierta con isla larga y barra de taburetes",
+       "dormitorio principal con baño incorporado",
+       "dormitorio secundario con clóset",
+       "estudio con escritorio, clóset y mampara a la terraza",
+       "cuarto interior extra amoblado con sillón",
+       "lavandería en recinto propio",
+       "4 baños (según leyenda)",
+       "terraza enlosetada con jardineras"
+      ],
+      "archivos": [
+       "assets/planos/monte-sierpe-asesora/lamina-00000011.jpg"
       ]
      }
     ]
    },
-   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 943 729 552, 3-sep-2026 · brochure digital de 21 páginas"
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 943 729 552, 3-sep-2026 · brochure digital de 21 páginas",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-umbroso",
@@ -15295,7 +15438,8 @@ window.PORTAL_DATA = {
    "asesora": "Milagros López",
    "pedido": "Hola Milagros! Vi el aviso de Monte Umbroso 520 en Chacarilla. Sigue disponible el flat de 1 dormitorio? Me pasas el precio actual y qué incluye? Gracias!",
    "pedido_que": "confirmar disponibilidad + precio vigente",
-   "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520."
+   "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520.",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monteflor",
@@ -15453,7 +15597,8 @@ window.PORTAL_DATA = {
      "vendidas": null,
      "total": null
     }
-   ]
+   ],
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "parque-monte-carmelo",
@@ -16572,7 +16717,8 @@ window.PORTAL_DATA = {
     "cond": "La pieza no explica en qué consiste el bono. VIGENCIA Y CONTENIDO POR CONFIRMAR.",
     "canal": "Meta Ads (EE Inmobiliaria)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «Tu depa con Bono Verde 🌿»"
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "precursores-525",
@@ -16586,7 +16732,7 @@ window.PORTAL_DATA = {
    "lng": -76.98061927217682,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": 203700,
+   "precio_desde_usd": 544425,
    "precio_hasta_usd": 544425,
    "dorms": "2–3",
    "m2": "83–227",
@@ -16602,59 +16748,29 @@ window.PORTAL_DATA = {
     "assets/planos/precursores-525/precu-flat-102.jpg",
     "assets/planos/precursores-525/precu-flat-x04-304.jpg",
     "assets/img/precursores-525.jpg",
-    "assets/campo/chacarillasur-precursores.jpg"
+    "assets/campo/chacarillasur-precursores.jpg",
+    "assets/chats/precursores-525-duplex603-precio.jpg"
    ],
    "brochure": "assets/brochures/Precu_Brochure_AC.pdf",
    "typologies": [
     {
-     "unidad": "101 (vista parque)",
-     "dorm": 3,
-     "m2": 199,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "X04/304",
-     "dorm": 2,
-     "m2": 84,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "3",
-     "flat": true
-    },
-    {
-     "unidad": "Flat mínimo brochure",
-     "dorm": 2,
-     "m2": 83,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "varios",
-     "flat": true
-    },
-    {
-     "unidad": "Dúplex X02/202",
-     "dorm": 2,
-     "m2": 96,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "2",
-     "flat": false
-    },
-    {
-     "unidad": "Dúplex 603 (vista parque)",
-     "dorm": 3,
-     "m2": 227,
-     "precio_usd": null,
-     "precio_m2": null,
+     "unidad": "Dúplex 603",
+     "dorm": null,
+     "m2": 227.0,
+     "m2_techada": 173.0,
+     "precio_lista_usd": 544425,
+     "precio_lista_todo": 544425,
+     "estac_incluidos": 2,
+     "depositos_incluidos": 1,
+     "ajuste_cochera_usd": 30000,
+     "precio_usd": 514425,
+     "precio_m2": 2266,
      "tipo": "duplex",
      "piso": "6",
-     "flat": false
+     "flat": false,
+     "m2_equivalente": 265.0,
+     "precio_m2_equiv": 2054,
+     "nota": "Precio y contenido dados por la asesora el 3-sep-2026: US$544,425 con 2 estacionamientos y depósito. La lámina imprime área ocupada 227 m² y techada 173 m². El US$/m² descuenta US$30,000 por los dos estacionamientos, neto de cochera, sobre el área ocupada. Es el último departamento del proyecto."
     }
    ],
    "flats_summary": [],
@@ -16662,7 +16778,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio. · Joyce Aguilar (Grupo Chacarilla Sur) el 14-ago-2026: «nos está quedando un duplex penthouse». Su brochure declara flats y dúplex de 84 a 227 m², 20 departamentos en 6 pisos, BCP, entrega nov-2026, desde $203,700.",
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio. · Joyce Aguilar (Grupo Chacarilla Sur) el 14-ago-2026: «nos está quedando un duplex penthouse». Su brochure declara flats y dúplex de 84 a 227 m², 20 departamentos en 6 pisos, BCP, entrega nov-2026, desde $203,700. · El 3-sep-2026 Joyce confirmó que el último departamento —el Dúplex 603— sigue disponible en US$544,425 incluyendo 2 estacionamientos y depósito, con entrega en noviembre de 2026.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -16714,6 +16830,13 @@ window.PORTAL_DATA = {
      "url": null,
      "fecha": "2026-06-17",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Lámina del Dúplex 603 con precio impreso US$544,425 · enviada por la asesora",
+     "archivo": "assets/chats/precursores-525-duplex603-precio.jpg",
+     "url": null,
+     "fecha": "2026-08-14",
+     "tipo": "tarifario"
     }
    ],
    "contactos": [
@@ -16738,10 +16861,7 @@ window.PORTAL_DATA = {
     "fecha": "2026-06-28",
     "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
    },
-   "precio_fuente": {
-    "tipo": "portal",
-    "nota": "Ficha de Nexo Inmobiliario más su brochure oficial de Grupo Chacarilla Sur."
-   },
+   "precio_fuente": "Chat real de WhatsApp con el asesor Joyce Aguilar, 3-sep-2026 · lámina del Dúplex 603 con precio impreso",
    "ventas": {
     "vendidas": null,
     "total": 20,
@@ -16758,8 +16878,8 @@ window.PORTAL_DATA = {
     }
    ],
    "borde_avenida": true,
-   "cochera_status": "nd",
-   "cochera_nota": "Sin confirmar: no tenemos ningún dato sobre si el precio incluye estacionamiento.",
+   "cochera_status": "si",
+   "cochera_nota": "Confirmado por Joyce Aguilar (Grupo Chacarilla Sur) el 3-sep-2026 ante la pregunta directa: el Dúplex 603 está en «US$ 544,425 dólares y le incluye 2 estacionamientos + deposito». Dos estacionamientos, igual que Edifikarte.",
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -17043,7 +17163,10 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado",
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Joyce Aguilar +51 949 107 186, 3-sep-2026",
+   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos y depósito, confirmado por Joyce Aguilar el 3-sep-2026. El US$/m² descuenta US$30,000 por los dos según la convención del benchmark. Es un dúplex penthouse, así que va en la banda de dúplex y no en el ranking de flats típicos."
   },
   {
    "id": "precursores-ii",
@@ -17483,7 +17606,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "santorini",
@@ -18278,7 +18402,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "spazio",
@@ -19172,7 +19297,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "cochera_fuente": "Chat real de WhatsApp con el asesor Ventas Dicon +51 957 733 272, 22-ago-2026 · política confirmada por el cliente"
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Ventas Dicon +51 957 733 272, 22-ago-2026 · política confirmada por el cliente",
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "terraverde",
@@ -19777,7 +19903,8 @@ window.PORTAL_DATA = {
      "fecha": "2026-08-19",
      "tipo": "cotizacion"
     }
-   ]
+   ],
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "narciso-ayd",
@@ -19814,7 +19941,8 @@ window.PORTAL_DATA = {
      "precio_m2": null,
      "tipo": "flat",
      "piso": "2 y 4",
-     "flat": true
+     "flat": true,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "Flat 202 / 402",
@@ -19824,11 +19952,12 @@ window.PORTAL_DATA = {
      "precio_m2": null,
      "tipo": "flat",
      "piso": "2 y 4",
-     "flat": true
+     "flat": true,
+     "certeza_cochera": "politica_desarrolladora"
     }
    ],
    "flats_summary": [],
-   "cochera_status": "nd",
+   "cochera_status": "no",
    "stock": {
     "n": 10,
     "label": "10 departamentos (según licencia de obra)"
@@ -20018,7 +20147,10 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_nota": "Mismo formato de cotización de AyD, con el estacionamiento en línea aparte. INFERIDO, no confirmado.",
+   "cochera_fuente": "Política de Inmobiliaria AyD confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "precursores-verde",
@@ -20857,7 +20989,7 @@ window.PORTAL_DATA = {
    ],
    "typologies": [],
    "flats_summary": [],
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": null,
    "mostrar": true,
    "geo_aprox": true,
@@ -20907,7 +21039,10 @@ window.PORTAL_DATA = {
    ],
    "borde_avenida": true,
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": []
+   "dorms_disponibles": [],
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_nota": "Central Inmobiliaria incluye 1 estacionamiento simple en el precio: Diana Rodríguez —la misma asesora y el mismo número— lo confirmó para Jardines de Monte Real el 13-ago-2026. INFERIDO de la política de la desarrolladora, no confirmado para este proyecto.",
+   "cochera_fuente": "Política de Central Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "living-monte-real",
@@ -20948,7 +21083,7 @@ window.PORTAL_DATA = {
    ],
    "typologies": [],
    "flats_summary": [],
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": null,
    "mostrar": true,
    "geo_aprox": true,
@@ -21672,7 +21807,10 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_nota": "Grupo Chacarilla Sur incluye 2 estacionamientos y depósito en el precio: lo confirmó Joyce Aguilar —la misma asesora y el mismo número que atiende este proyecto— para Precursores 525 el 3-sep-2026. INFERIDO de la política de la desarrolladora, no confirmado para este proyecto: no entra al ranking hasta preguntarlo.",
+   "cochera_fuente": "Política de Grupo Chacarilla Sur confirmada por su asesora en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "isGEU": false,
@@ -21850,7 +21988,8 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 147353,
      "m2_equivalente": 64.04,
-     "precio_m2_equiv": 2301
+     "precio_m2_equiv": 2301,
+     "certeza_cochera": "politica_desarrolladora"
     },
     {
      "unidad": "DPTO. 606 · tope de lista (precio de lista, sin confirmar si incluye estacionamiento)",
@@ -21860,11 +21999,12 @@ window.PORTAL_DATA = {
      "precio_m2": null,
      "tipo": "flat",
      "piso": "6",
-     "flat": true
+     "flat": true,
+     "certeza_cochera": "politica_desarrolladora"
     }
    ],
    "flats_summary": [],
-   "cochera_status": "nd",
+   "cochera_status": "no",
    "stock": null,
    "mostrar": true,
    "geo_aprox": false,
@@ -24149,7 +24289,10 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_nota": "Misma política de EE Inmobiliaria dicha por Cecilia Estrada el 2-jul-2026 —ella misma anunció TEN Apartments en ese chat—: «El estacionamiento no está incluído en el precio del departamento». INFERIDO, no confirmado.",
+   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "conde-de-la-vega-128",
@@ -24212,7 +24355,7 @@ window.PORTAL_DATA = {
    "planos_fuente": "Brochure oficial en archivo (14 láminas).",
    "typologies": [],
    "flats_summary": [],
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": {
     "n": 0,
     "label": "Agotado"
@@ -24860,7 +25003,10 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "motivo_no_comparable": "Agotado según la propia asesora (1-jul-2026): ya no hay unidades en venta."
+   "motivo_no_comparable": "Agotado según la propia asesora (1-jul-2026): ya no hay unidades en venta.",
+   "cochera_certeza": "politica_desarrolladora",
+   "cochera_nota": "Edifikarte mete 2 estacionamientos y depósito en el precio en los cinco proyectos suyos que sí confirmamos (Monte Alegre 109, Monte Mayor 177, Conde de la Vega 251, Montemar 269 y Monte Carmelo 250). INFERIDO de ese patrón, no confirmado para este: además está agotado, así que no entra al ranking de todos modos.",
+   "cochera_fuente": "Política de Edifikarte confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
   },
   {
    "id": "monte-umbroso-585",
@@ -25030,7 +25176,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_certeza": "confirmado"
   },
   {
    "id": "monte-alegre",
@@ -26293,7 +26440,8 @@ window.PORTAL_DATA = {
    "gallery": [
     "assets/chats/monte-alegre-109-render.jpg"
    ],
-   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos y depósito, confirmado por Jenny Miranda el 3-sep-2026 ante la pregunta directa. El US$/m² del portal descuenta US$30,000 por los dos estacionamientos según la convención del benchmark, para compararlo en la misma base que los proyectos que venden la cochera aparte. La asesora no dio el valor suelto de cada estacionamiento. Es el mismo patrón de Edifikarte en Monte Mayor 177 y Conde de la Vega 251: siempre dos estacionamientos adentro del precio."
+   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos y depósito, confirmado por Jenny Miranda el 3-sep-2026 ante la pregunta directa. El US$/m² del portal descuenta US$30,000 por los dos estacionamientos según la convención del benchmark, para compararlo en la misma base que los proyectos que venden la cochera aparte. La asesora no dio el valor suelto de cada estacionamiento. Es el mismo patrón de Edifikarte en Monte Mayor 177 y Conde de la Vega 251: siempre dos estacionamientos adentro del precio.",
+   "cochera_certeza": "confirmado"
   }
  ]
 };

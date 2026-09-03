@@ -246,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260903d"></script>
+<script src="data/portal-data.js?v=20260903e"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -285,8 +285,13 @@ const CASETA={si:['🏠 Caseta atendida','#2F7D54'],cerrada:['🏠 Caseta cerrad
 function casetaLabel(p){const k=p.caseta_ventas||'nd';const [t,c]=CASETA[k]||CASETA.nd;
   return `<span style="color:${c};font-weight:${k==='si'?700:400};white-space:nowrap" title="${(p.caseta_nota||'').replace(/"/g,'')}">${t}</span>`;}
 function cocheraLabel(p){const s=parkingStatus(p);
-  if(s==='si')return '<span style="color:#2F7D54;font-weight:700;white-space:nowrap">✓ Incluida</span>';
-  if(s==='no')return '<span style="color:#6d776e;white-space:nowrap">Aparte</span>';
+  /* Una inferencia no se pinta como una confirmación: el asterisco marca las que salen de la
+     política de la desarrolladora en otro de sus proyectos, no del asesor de este. */
+  const inf=p.cochera_certeza==='politica_desarrolladora';
+  const ti=inf?' title="Inferido de la política de la desarrolladora en otro de sus proyectos, no confirmado para este"':'';
+  const ast=inf?'<span style="color:#8F6109">*</span>':'';
+  if(s==='si')return `<span style="color:${inf?'#8F6109':'#2F7D54'};font-weight:700;white-space:nowrap"${ti}>✓ Incluida${ast}</span>`;
+  if(s==='no')return `<span style="color:${inf?'#8F6109':'#6d776e'};white-space:nowrap"${ti}>Aparte${ast}</span>`;
   return '<span style="color:#b9863b;font-weight:700;white-space:nowrap">No se sabe</span>';}
 function parkingStatus(p){
   if(p.cochera_status)return p.cochera_status;
@@ -932,6 +937,10 @@ function buildBandas(){
   const COCH={si:['neteada','#2F7D54','El precio de lista incluye cochera y acá ya está descontada'],
               no:['aparte','#2F7D54','La cochera se vende aparte: el precio ya es el del depa solo'],
               nd:['sin confirmar','#ce3c31','No sabemos si el precio incluye estacionamiento']};
+  const cochCel=p=>{const [lab,col,tit]=COCH[p.cochera_status]||['—','#9a958c',''];
+    return p.cochera_certeza==='politica_desarrolladora'
+      ? [lab+'*','#8F6109','Inferido de la política de la desarrolladora en otro de sus proyectos, no confirmado para este: no entra al ranking']
+      : [lab,col,tit];};
   const bandas=[1,4,2,3].map(D=>{
     const of=P.filter(p=>p.mostrar&&(p.dorms_disponibles||[]).includes(D));
     const filas=[],sin=[];
@@ -951,7 +960,7 @@ function buildBandas(){
     const alto=filas.filter(f=>bandaPisoAlto(f.t)).map(f=>f.t.precio_m2).sort((a,b)=>a-b);
     const medAlto=alto.length?median(alto):null;
     const rows=filas.map(({p,t})=>{
-      const [lab,col,tit]=COCH[p.cochera_status]||['—','#9a958c',''];
+      const [lab,col,tit]=cochCel(p);
       const g=p.isGEU;
       return `<tr style="${g?'background:#EAF2FB':''}">
         <td style="font-weight:800;color:${g?'#185FA5':'#15402c'};white-space:nowrap">$${t.precio_m2.toLocaleString()}/m²</td>
