@@ -8642,7 +8642,7 @@ window.PORTAL_DATA = {
    ],
    "coherencia_alerta": null,
    "cochera_nota": "Confirmado por Rebeca Ruiz (Odima) con desglose completo el 13-ago-2026 y reconfirmado el 3-sep: el DPTO 102 de 96.31 m² se vende en S/852,000 «el depa y cochera», y el desglose es depa amoblado S/799,000 + cochera S/53,000. El precio de lista de julio era S/900,000 con cochera; hay S/48,000 de rebaja.",
-   "politica_precio": "No sabemos si el precio incluye estacionamiento; el brochure no lo aclara. Su US$/m² se muestra tal como lo publican, sin descontar cochera.",
+   "politica_precio": "El precio de lista INCLUYE la cochera, y la asesora dio el desglose exacto el 13-ago-2026: S/852,000 = departamento amoblado S/799,000 + cochera S/53,000. El US$/m² usa los S/799,000, neto de cochera. Es el único proyecto del cuadrante donde el valor de la cochera lo dio el vendedor.",
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -14159,7 +14159,7 @@ window.PORTAL_DATA = {
     }
    ],
    "cochera_nota": "Confirmado por Jenny Miranda (Edifikarte) el 17-jun y repetido el 1-jul-2026: el último flat de 87 m² y 2 dorm en piso 2 está en «S/820,000 incluye 2 estacionamientos lineales y deposito». Son DOS estacionamientos, no uno — al netear hay que descontar los dos.",
-   "politica_precio": "No hay ningún dato sobre si el precio incluye estacionamiento. Su US$/m² queda marcado como no comparable.",
+   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos lineales y un depósito, confirmado por Jenny Miranda el 17-jun y repetido el 1-jul-2026. El US$/m² descuenta US$28,000 por el par lineal según la convención del benchmark; el depósito no se descuenta.",
    "planos_analisis": {
     "fecha": null,
     "version": null,
