@@ -1634,6 +1634,23 @@
     "fuentes": [
      "Auditoría de duplicados, 3-sep-2026"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Cuadrante",
+    "dev": null,
+    "proyecto_id": null,
+    "tags": [
+     "registro",
+     "metodo"
+    ],
+    "canal": "Auditoría de planos",
+    "autor": "Benchmark",
+    "texto": "Revisión de las 129 láminas que figuraban en fichas sin pasar por el análisis. La mayoría no eran huecos: 16 duplicados byte a byte, 13 que no son planos, 24 versiones alternas de una unidad ya leída y el resto láminas de las mismas unidades en archivos cuyo nombre no lleva el número. Se revisaron una por una en pliegos de contacto. Único hueco real: el DPTO 101 de HANA, del que solo tenemos la silueta en la planta de piso. Se sacaron de «planos» un mapa de ubicación de Santorini, dos de Monte Carmelo 250, tres páginas de brochure de Conde II y las tres láminas de sótano de HANA, que ahora van como documentos.",
+    "cita": "129 láminas revisadas · 1 hueco real",
+    "fuentes": [
+     "Auditoría de planos, 3-sep-2026"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2285,7 +2302,8 @@
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1223"
+  "sello": "20260903-1303",
+  "regla_desde": "El ticket de entrada («desde») sale de la tipología más barata disponible, tomando su precio NETO de cochera — la misma base que el US$/m², para que los dos comparen. Lo que el proyecto publica se guarda aparte en desde_publicado: al 3-sep-2026 catorce proyectos publicaban un número que ninguna de sus unidades sostenía, uno por debajo de su unidad más barata y otro 147 mil por encima."
  },
  "quadrant": [
   [
@@ -3488,7 +3506,13 @@
     2,
     3,
     4
-   ]
+   ],
+   "verif_web_fecha": "2026-08-31",
+   "estado_evidencia": {
+    "fecha": "2026-08-31",
+    "tipo": "lista de precios del cliente",
+    "nota": "Lista de preventa de agosto-2026 entregada por Grupo Espacio Urbano, unidad por unidad."
+   }
   },
   {
    "id": "aura-sul",
@@ -4288,10 +4312,6 @@
     "assets/planos/conde-ii-ayd-2026/Flat tipico 202 - 3 dorm - 126 m2 ocupada.jpg",
     "assets/planos/conde-ii-oficial/tipo-1-pisos-2-4.jpg",
     "assets/planos/conde-ii-oficial/tipo-2-pisos-2-4.jpg",
-    "assets/planos/conde-ii/pg-13.jpg",
-    "assets/planos/conde-ii/pg-14.jpg",
-    "assets/planos/conde-ii/pg-15.jpg",
-    "assets/planos/conde-ii/pg-16.jpg",
     "assets/planos/conde-ii/plano-01.jpg",
     "assets/planos/conde-ii/plano-02.jpg",
     "assets/planos/conde-ii/plano-b01.jpg",
@@ -4467,6 +4487,34 @@
      "url": null,
      "fecha": "2026-06-30",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Render del lobby del edificio",
+     "archivo": "assets/planos/conde-ii/pg-13.jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "render"
+    },
+    {
+     "titulo": "Lámina de acabados",
+     "archivo": "assets/planos/conde-ii/pg-14.jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "ficha"
+    },
+    {
+     "titulo": "«Personaliza tu depa» — beneficio de personalización",
+     "archivo": "assets/planos/conde-ii/pg-15.jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "ficha"
+    },
+    {
+     "titulo": "Cuadro de tipologías con metraje y estado de venta",
+     "archivo": "assets/planos/conde-ii/pg-16.jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "tarifario"
     }
    ],
    "pisos": 5,
@@ -5078,7 +5126,8 @@
     2,
     3
    ],
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "politica_precio": "El precio de lista incluye 2 estacionamientos y 1 depósito, confirmado por Jenny Miranda el 1-jul-2026. Es el patrón de Edifikarte en toda la zona."
   },
   {
    "id": "conde-de-la-vega-460",
@@ -5092,8 +5141,8 @@
    "lng": -76.9797,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 253000,
-   "precio_hasta_usd": 393000,
+   "precio_desde_usd": 238000,
+   "precio_hasta_usd": 363000,
    "dorms": "1–3",
    "m2": "85–257",
    "wa": "944216477",
@@ -6319,7 +6368,8 @@
     1,
     2,
     3
-   ]
+   ],
+   "desde_publicado": 253000
   },
   {
    "id": "dmont-dicon",
@@ -6612,7 +6662,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 183328,
      "m2_equivalente": 84.5,
-     "precio_m2_equiv": 2170
+     "precio_m2_equiv": 2170,
+     "vendido": true,
+     "nota": " · Colocada: al 25-ago-2026 Grupo Dicon dejó de publicar unidades por debajo de 121.62 m² y su ticket de entrada subió de US$181,190 a US$263,064. Queda como referencia histórica de precio, fuera del ticket vigente."
     },
     {
      "unidad": "Flat 401",
@@ -6687,7 +6739,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 181190,
      "m2_equivalente": 84.5,
-     "precio_m2_equiv": 2144
+     "precio_m2_equiv": 2144,
+     "vendido": true,
+     "nota": " · Colocada: al 25-ago-2026 Grupo Dicon dejó de publicar unidades por debajo de 121.62 m² y su ticket de entrada subió de US$181,190 a US$263,064. Queda como referencia histórica de precio, fuera del ticket vigente."
     },
     {
      "unidad": "Dúplex 603",
@@ -6717,7 +6771,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603. Análisis de sus 13 láminas (02-sep-2026): 6 tipologías, cero estudios y cero dormitorios disfrazados. NO repite el «home office» de su hermano D'Mont: acá ningún ambiente tiene escritorio, cada cuarto que no es baño, cocina ni lavandería lleva su cama. Seis tipologías de 3 dormitorios limpios. Es además el único de su grupo con cocina CERRADA en U con puerta en las seis. Cuatro de los 13 archivos son duplicados exactos y su brochure de 15 páginas no trae ningún plano.",
+   "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603. Análisis de sus 13 láminas (02-sep-2026): 6 tipologías, cero estudios y cero dormitorios disfrazados. NO repite el «home office» de su hermano D'Mont: acá ningún ambiente tiene escritorio, cada cuarto que no es baño, cocina ni lavandería lleva su cama. Seis tipologías de 3 dormitorios limpios. Es además el único de su grupo con cocina CERRADA en U con puerta en las seis. Cuatro de los 13 archivos son duplicados exactos y su brochure de 15 páginas no trae ningún plano. · Su ticket de entrada de US$263,064 es real y vigente: las dos unidades de 84.5 m² que teníamos a US$181,190 y US$183,328 están colocadas, y quedan como referencia histórica de lo que la zona absorbió.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -7150,7 +7204,8 @@
    ],
    "dorms_con_precio": [
     3
-   ]
+   ],
+   "desde_publicado": null
   },
   {
    "id": "estelar-1080",
@@ -7164,8 +7219,8 @@
    "lng": -76.98446300308579,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": 202941,
-   "precio_hasta_usd": 266032,
+   "precio_desde_usd": 182407,
+   "precio_hasta_usd": 251032,
    "dorms": "2–3",
    "m2": "80–224",
    "wa": "966351473",
@@ -7678,7 +7733,8 @@
    "dorms_con_precio": [
     2,
     3
-   ]
+   ],
+   "desde_publicado": 202941
   },
   {
    "id": "floresta-living-444",
@@ -7693,7 +7749,7 @@
    "isGEU": false,
    "en_cuadrante": false,
    "precio_desde_usd": 196471,
-   "precio_hasta_usd": 319733,
+   "precio_hasta_usd": 352647,
    "dorms": "2–3",
    "m2": "85–197.66",
    "wa": "988609572",
@@ -8131,8 +8187,8 @@
    "lng": -76.983405589272,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 246176,
-   "precio_hasta_usd": 264706,
+   "precio_desde_usd": 235000,
+   "precio_hasta_usd": 235000,
    "dorms": "2–4",
    "m2": "85 – 208.57",
    "wa": "994448991",
@@ -8147,9 +8203,6 @@
     "assets/planos/hana/plano-102-vigente.jpg",
     "assets/planos/hana-oficial/Dpto 102 - 56.31 m2 techada - 96.31 m2 total.jpg",
     "assets/planos/hana-oficial/Planta 1er piso - Dptos 101 y 102.jpg",
-    "assets/planos/hana-oficial/Sotano 01 - estacionamientos (estado de venta).jpg",
-    "assets/planos/hana-oficial/Sotano 02 - estacionamientos (estado de venta).jpg",
-    "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg",
     "assets/img/hana.png",
     "assets/chats/hana-dpto102-lamina.jpg"
    ],
@@ -8192,7 +8245,7 @@
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Odima Inmobiliaria. Análisis de sus láminas (02-sep-2026): de los 11 archivos, solo hay UNA tipología con plano — el DPTO 102 de 96.31 m². Los otros diez son versiones del mismo dibujo, la planta del primer piso y los tres sótanos. Su brochure de feb-2026 anuncia 17 departamentos de 85 a 290 m² pero no publica ninguna otra planta. CORRECCIÓN AL STOCK: veníamos diciendo que los sótanos estaban íntegramente vendidos, y no es así. De 21 estacionamientos y 7 depósitos quedan libres el estacionamiento 08 del sótano 2 y el depósito 04 del sótano 3 — o sea que todavía pueden vender un paquete completo de depa más cochera más depósito. Su plano es el más honesto del cuadrante: declara 3 ambientes, 2 baños completos, 1 de visita y «estar», y el dibujo lo cumple exacto — el estar es real, un sofá en alcoba propia. A cambio, la lavandería es la punta de la cocina abierta contra la ventana, sin cuarto propio, y no tiene cuarto ni baño de servicio. Área libre 0.00: sin balcón ni terraza.",
+   "comentario": "Odima Inmobiliaria. Análisis de sus láminas (02-sep-2026): de los 11 archivos, solo hay UNA tipología con plano — el DPTO 102 de 96.31 m². Los otros diez son versiones del mismo dibujo, la planta del primer piso y los tres sótanos. Su brochure de feb-2026 anuncia 17 departamentos de 85 a 290 m² pero no publica ninguna otra planta. CORRECCIÓN AL STOCK: veníamos diciendo que los sótanos estaban íntegramente vendidos, y no es así. De 21 estacionamientos y 7 depósitos quedan libres el estacionamiento 08 del sótano 2 y el depósito 04 del sótano 3 — o sea que todavía pueden vender un paquete completo de depa más cochera más depósito. Su plano es el más honesto del cuadrante: declara 3 ambientes, 2 baños completos, 1 de visita y «estar», y el dibujo lo cumple exacto — el estar es real, un sofá en alcoba propia. A cambio, la lavandería es la punta de la cocina abierta contra la ventana, sin cuarto propio, y no tiene cuarto ni baño de servicio. Área libre 0.00: sin balcón ni terraza. · Sus tres láminas de sótano marcan el estado de venta estacionamiento por estacionamiento — es de los pocos proyectos que publica ese detalle.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -8247,6 +8300,27 @@
      "url": null,
      "fecha": "2026-07-01",
      "tipo": "plano"
+    },
+    {
+     "titulo": "Sótano 01 · estacionamientos con estado de venta",
+     "archivo": "assets/planos/hana-oficial/Sotano 01 - estacionamientos (estado de venta).jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "stock"
+    },
+    {
+     "titulo": "Sótano 02 · estacionamientos con estado de venta",
+     "archivo": "assets/planos/hana-oficial/Sotano 02 - estacionamientos (estado de venta).jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "stock"
+    },
+    {
+     "titulo": "Sótano 03 · estacionamientos con estado de venta",
+     "archivo": "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "stock"
     }
    ],
    "planos_fuente": "Brochure oficial Odima, edición febrero-2026 (plantas del 1er piso, Dpto. 102 y los 3 sótanos).",
@@ -8274,8 +8348,8 @@
    ],
    "asesora": "Rebeca Ruiz",
    "wa_label": "Rebeca Ruiz",
-   "pedido": "Hola Rebeca! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de HANA por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "lámina del DPTO 101",
+   "pedido_que": "Su planta del 1er piso muestra DOS departamentos —el 101 y el 102, los dos de 3 dormitorios— pero solo tenemos la lámina detallada del 102. Del 101 no hay más que la silueta en la planta de piso, a 660×466: no alcanza para leer sus ambientes.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -8381,7 +8455,9 @@
    ],
    "dorms_con_precio": [
     3
-   ]
+   ],
+   "nota_planos": "Analizado: DPTO 102. El DPTO 101 aparece en la planta del 1er piso como el segundo departamento del nivel, también de 3 dormitorios, pero no tenemos su lámina.",
+   "desde_publicado": 246176
   },
   {
    "id": "jardines-monte-real",
@@ -8395,7 +8471,7 @@
    "lng": -76.98578255636211,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 246028,
+   "precio_desde_usd": 231028,
    "precio_hasta_usd": 329187,
    "dorms": "3–5",
    "m2": "94 – 278",
@@ -9421,7 +9497,8 @@
    "dorms_con_precio": [
     2,
     3
-   ]
+   ],
+   "desde_publicado": 246028
   },
   {
    "id": "la-floresta-boulevard",
@@ -9435,8 +9512,8 @@
    "lng": -76.98854344646954,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 154000,
-   "precio_hasta_usd": 330000,
+   "precio_desde_usd": 164000,
+   "precio_hasta_usd": 308000,
    "dorms": "1–3",
    "m2": "54.37–147",
    "wa": "908800562",
@@ -10745,7 +10822,8 @@
     1,
     2,
     3
-   ]
+   ],
+   "desde_publicado": 154000
   },
   {
    "id": "monte-carmelo-250",
@@ -10783,9 +10861,7 @@
     "assets/img-f1/monte-carmelo-250/img-04.jpg",
     "assets/img-f1/monte-carmelo-250/img-05.jpg",
     "assets/img/monte-carmelo-250.jpg",
-    "assets/campo/monte-carmelo-250.jpg",
-    "assets/planos/monte-carmelo-250/plano-01.png",
-    "assets/planos/monte-carmelo-250/plano-02.png"
+    "assets/campo/monte-carmelo-250.jpg"
    ],
    "brochure": null,
    "typologies": [
@@ -10867,6 +10943,20 @@
      "url": null,
      "fecha": null,
      "tipo": "ficha"
+    },
+    {
+     "titulo": "Mapa de ubicación",
+     "archivo": "assets/planos/monte-carmelo-250/plano-01.png",
+     "url": null,
+     "fecha": null,
+     "tipo": "mapa"
+    },
+    {
+     "titulo": "Mapa de ubicación con hitos de la zona",
+     "archivo": "assets/planos/monte-carmelo-250/plano-02.png",
+     "url": null,
+     "fecha": null,
+     "tipo": "mapa"
     }
    ],
    "contactos": [
@@ -11515,7 +11605,8 @@
     3,
     4
    ],
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "politica_precio": "Edifikarte incluye estacionamiento en el precio de lista y en junio-julio de 2026 lo anunció además como «cochera de regalo». Falta que el asesor confirme cuántos son."
   },
   {
    "id": "monte-carmelo-551",
@@ -13488,7 +13579,8 @@
     3,
     4
    ],
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "politica_precio": "El precio de lista incluye 2 estacionamientos paralelos, confirmado con el asesor entre junio y julio de 2026. El US$/m² descuenta US$30,000 por el par."
   },
   {
    "id": "monte-mayor-177",
@@ -13502,8 +13594,8 @@
    "lng": -76.98753819552181,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 241176,
-   "precio_hasta_usd": 241176,
+   "precio_desde_usd": 213176,
+   "precio_hasta_usd": 213176,
    "dorms": "3",
    "m2": "87–233",
    "wa": "981386111",
@@ -13915,7 +14007,8 @@
    ],
    "dorms_con_precio": [
     2
-   ]
+   ],
+   "desde_publicado": 241176
   },
   {
    "id": "monte-mayor-183",
@@ -13929,8 +14022,8 @@
    "lng": -76.9869248368436,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 202000,
-   "precio_hasta_usd": 477000,
+   "precio_desde_usd": 187000,
+   "precio_hasta_usd": 447000,
    "dorms": "1–3",
    "m2": "64–240",
    "wa": "944216477",
@@ -14688,7 +14781,8 @@
    "dorms_con_precio": [
     2,
     3
-   ]
+   ],
+   "desde_publicado": 202000
   },
   {
    "id": "monte-real-265",
@@ -14703,7 +14797,7 @@
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 311765,
-   "precio_hasta_usd": null,
+   "precio_hasta_usd": 311765,
    "dorms": "3",
    "m2": "167.82",
    "wa": "988609572",
@@ -15549,7 +15643,7 @@
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 155850,
-   "precio_hasta_usd": 399000,
+   "precio_hasta_usd": 369000,
    "dorms": "1–3",
    "m2": "67 – 186",
    "wa": "960481577",
@@ -15715,8 +15809,8 @@
    "lng": -76.98275878252593,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 188000,
-   "precio_hasta_usd": 385000,
+   "precio_desde_usd": 335374,
+   "precio_hasta_usd": 389303,
    "dorms": "2–4",
    "m2": "64–240",
    "wa": "981349116",
@@ -15867,7 +15961,8 @@
    ],
    "dorms_con_precio": [
     3
-   ]
+   ],
+   "desde_publicado": 188000
   },
   {
    "id": "parque-monte-carmelo",
@@ -15881,8 +15976,8 @@
    "lng": -76.98519706005884,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 189412,
-   "precio_hasta_usd": 393382,
+   "precio_desde_usd": 197941,
+   "precio_hasta_usd": 407059,
    "dorms": "1–4",
    "m2": "85–208",
    "wa": "988609572",
@@ -17002,7 +17097,8 @@
    "dorms_con_precio": [
     1,
     3
-   ]
+   ],
+   "desde_publicado": 189412
   },
   {
    "id": "precursores-525",
@@ -17016,8 +17112,8 @@
    "lng": -76.98061927217682,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": 544425,
-   "precio_hasta_usd": 544425,
+   "precio_desde_usd": 514425,
+   "precio_hasta_usd": 514425,
    "dorms": "2–3",
    "m2": "83–227",
    "wa": "949107186",
@@ -17461,7 +17557,8 @@
     3
    ],
    "coherencia_alerta": "La foto de portada (chacarillasur-precursores.jpg) muestra un edificio de ladrillo terminado con un banner «ÚLTIMOS DEPARTAMENTOS · 922 323 923» y el logotipo de Chacarilla Sur, pero el banner no nombra el proyecto y Chacarilla Sur tiene DOS en la zona: este y Real Living · Monte Real. Hay que confirmar de cuál es antes de darla por buena. El número 922 323 923 tampoco lo teníamos.",
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "desde_publicado": 544425
   },
   {
    "id": "precursores-ii",
@@ -17475,8 +17572,8 @@
    "lng": -76.97923436666099,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": 385000,
-   "precio_hasta_usd": 410000,
+   "precio_desde_usd": 355000,
+   "precio_hasta_usd": 380000,
    "dorms": "3",
    "m2": "89–189",
    "wa": "996898925",
@@ -17912,7 +18009,8 @@
    "dorms_con_precio": [
     2,
     3
-   ]
+   ],
+   "desde_publicado": 385000
   },
   {
    "id": "santorini",
@@ -17927,14 +18025,13 @@
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 268450,
-   "precio_hasta_usd": 611000,
+   "precio_hasta_usd": 575000,
    "dorms": "1–4",
    "m2": "123–366",
    "wa": "999024346",
    "web": "https://www.morgensterninmobiliaria.pe/producto/proyecto-santorini/",
    "img": "assets/campo/santorini-cartel-obra.jpg",
    "planos": [
-    "assets/planos/santorini/plano-01.jpg",
     "assets/planos/santorini/plano-02.jpg",
     "assets/planos/santorini/plano-03.jpg",
     "assets/planos/santorini/plano-04.jpg",
@@ -18211,6 +18308,13 @@
      "url": null,
      "fecha": "2026-06",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Mapa de ubicación del brochure",
+     "archivo": "assets/planos/santorini/plano-01.jpg",
+     "url": null,
+     "fecha": null,
+     "tipo": "mapa"
     }
    ],
    "contactos": [
@@ -19719,7 +19823,7 @@
    "isGEU": false,
    "en_cuadrante": true,
    "precio_desde_usd": 259426,
-   "precio_hasta_usd": null,
+   "precio_hasta_usd": 383500,
    "dorms": "3–4",
    "m2": "153–321",
    "wa": "980765183",
@@ -20255,8 +20359,8 @@
    "lng": -76.985687,
    "isGEU": false,
    "en_cuadrante": false,
-   "precio_desde_usd": 244928,
-   "precio_hasta_usd": 257440,
+   "precio_desde_usd": 216928,
+   "precio_hasta_usd": 229440,
    "dorms": "3–4",
    "m2": "97 – 211",
    "wa": "957307920",
@@ -20553,7 +20657,8 @@
    ],
    "dorms_con_precio": [
     3
-   ]
+   ],
+   "desde_publicado": 244928
   },
   {
    "id": "precursores-verde",
@@ -21459,7 +21564,8 @@
    "cochera_fuente": "Política de Central Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
    "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas.",
    "dorms_declarados": [],
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "politica_precio": "INFERIDO de la política de Central Inmobiliaria, que incluye 1 estacionamiento simple según confirmó Diana Rodríguez para Jardines de Monte Real. No confirmado para este proyecto, así que no entra al ranking."
   },
   {
    "id": "living-monte-real",
@@ -22237,7 +22343,8 @@
     2,
     3
    ],
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "politica_precio": "INFERIDO de la política de Grupo Chacarilla Sur, que incluye 2 estacionamientos y depósito según confirmó Joyce Aguilar para Precursores 525. No confirmado para este proyecto."
   },
   {
    "isGEU": false,
@@ -23072,7 +23179,8 @@
     2,
     3
    ],
-   "dorms_con_precio": []
+   "dorms_con_precio": [],
+   "politica_precio": "INFERIDO del patrón de Edifikarte, que mete 2 estacionamientos y depósito en sus cinco proyectos confirmados. No confirmado para este, que además está agotado."
   },
   {
    "id": "monte-umbroso-585",
@@ -23263,8 +23371,8 @@
    "lng": -76.98609,
    "isGEU": false,
    "en_cuadrante": true,
-   "precio_desde_usd": 408235,
-   "precio_hasta_usd": 420000,
+   "precio_desde_usd": 378235,
+   "precio_hasta_usd": 390000,
    "dorms": "3–4",
    "m2": "118.06 – 306.77",
    "wa": "924447479",
@@ -24520,7 +24628,8 @@
    ],
    "dorms_con_precio": [
     3
-   ]
+   ],
+   "desde_publicado": 408235
   }
  ]
 }
