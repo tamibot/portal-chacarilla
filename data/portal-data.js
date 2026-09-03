@@ -2,16 +2,16 @@ window.PORTAL_DATA = {
  "meta": {
   "tc": 3.4,
   "fecha": "2026-08-31",
-  "total": 42,
+  "total": 39,
   "en_cuadrante": 23,
   "con_precio": 100,
-  "competidores_activos": 37,
+  "competidores_activos": 34,
   "nota": "Solo competencia vigente del cuadrante: proyectos con unidades a la venta (en planos, en construcción o entrega inmediata con stock). TC 3.4.",
-  "comparables_confirmados": 12,
-  "en_ultimas_unidades": 13,
-  "sin_precio_publico": 7,
-  "cochera_incluida": 10,
-  "cochera_aparte": 6,
+  "comparables_confirmados": 17,
+  "en_ultimas_unidades": 14,
+  "sin_precio_publico": 4,
+  "cochera_incluida": 15,
+  "cochera_aparte": 8,
   "verif_web_fecha": "2026-08-30",
   "fuente_campo": "Evolution API · DB creatorsbbdd · whatsapp_messages (jun–jul 2026)",
   "cortes": [
@@ -25,17 +25,52 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-16",
     "titulo": "Corte 2 · Pre-lanzamiento",
     "estado": "cerrado",
-    "resumen": "D'Mont vendido → D'Mont 2 en preventa (8/23). Monte Mayor 183 3/20, Conde de la Vega 460 12/26, Precursores II 3/19, Monte Sierpe vendió el 408, Aura Sul vendió el 203. Monte Alegre 109 nuevo en planos. Todos los competidores con precio quedaron comparables. GEU pasó a precios de preventa ($2,562/m² típico)."
+    "resumen": "D'Mont vendido → D'Mont 2 en preventa (8/23). Monte Mayor 183 3/20, Conde de la Vega 460 12/26, Precursores II 3/19, Monte Sierpe vendió el 408, Aura Sul vendió el 203. Todos los competidores con precio quedaron comparables. GEU pasó a precios de preventa ($2,562/m² típico)."
    },
    {
     "fecha": "2026-08-31",
     "titulo": "Corte 3 · Agosto 2026 (cierre de mes)",
     "estado": "actual",
-    "resumen": "Recorrido de campo del 22-ago: 27 carteles de obra leídos, dos proyectos reasignados y contactos verificados con fuente. Se sumaron Floresta 343, Le Parc y Conde de la Vega 128 al mapa. Conde II movió su entrega de 2026 a 2027. Jardines de Monte Real, Monte Sierpe, Conde de la Vega 251 y Precursores Verde anuncian últimas unidades. Monte Carmelo 551 (Balance, financia BCP) salió el 25-ago con hasta S/25,000 de descuento más un regalo, el tercer proyecto del cuadrante con descuento explícito y el más agresivo. La Floresta Boulevard cotizó por fin su 1 dormitorio (US$164,000 por 54.37 m² en primer piso) y repitió la misma frase de «últimos días de preventa» que ya había usado en julio. Se auditó la comparabilidad por cochera de los 41 proyectos: seis salieron del comparativo de US$/m² por no tener confirmado si su precio incluye estacionamiento, y quedaron 13 comparables firmes."
+    "resumen": "Recorrido de campo del 22-ago: 27 carteles de obra leídos, dos proyectos reasignados y contactos verificados con fuente. Se sumó Conde de la Vega 128 al mapa. Conde II movió su entrega de 2026 a 2027. Jardines de Monte Real, Monte Sierpe, Conde de la Vega 251 y Precursores Verde anuncian últimas unidades. Monte Carmelo 551 (Balance, financia BCP) salió el 25-ago con hasta S/25,000 de descuento más un regalo, el tercer proyecto del cuadrante con descuento explícito y el más agresivo. La Floresta Boulevard cotizó por fin su 1 dormitorio (US$164,000 por 54.37 m² en primer piso) y repitió la misma frase de «últimos días de preventa» que ya había usado en julio. Se auditó la comparabilidad por cochera de los 41 proyectos: seis salieron del comparativo de US$/m² por no tener confirmado si su precio incluye estacionamiento, y quedaron 13 comparables firmes."
    }
   ],
   "proximo_corte": "2026-09-30",
   "bitacora": [
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Monte Sierpe",
+    "dev": "Make Inmobiliaria",
+    "proyecto_id": "monte-sierpe",
+    "tags": [
+     "cochera",
+     "precio"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Nadia Villar confirmó que el precio incluye cochera simple y depósito. Sus 5 tipologías salen del limbo y entran al comparativo.",
+    "cita": "«Si, cochera simple y depósito» — WhatsApp, 3-sep-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Monte Carmelo 551",
+    "dev": "Balance Inmobiliaria",
+    "proyecto_id": "monte-carmelo-551",
+    "tags": [
+     "cochera",
+     "precio",
+     "promo"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Isaac Villar confirmó que los precios de Nexo son sin estacionamiento: las 11 tipologías ya eran netas y ahora comparan directo. Cochera simple S/55,000, doble lineal S/82,000. Además ofrece ajustar precio según la aprobación bancaria.",
+    "cita": "«Los precios que figuran en Nexo son sin estacionamiento» — WhatsApp, 3-sep-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
    {
     "fecha": "2026-08-31",
     "proyecto": "Monte Umbroso 585",
@@ -83,7 +118,7 @@ window.PORTAL_DATA = {
     ],
     "canal": "Revisión interna",
     "autor": "Benchmark",
-    "texto": "Se retiran del mapa «Monte Alegre 137» y «Parque La Floresta». Los dos venían de anotaciones a mano del recorrido del 22-ago: obra vista, sin cartel legible, sin foto y con la ubicación puesta por geocodificador. No aportaban ningún dato comercial y muy probablemente duplican a Monte Alegre 109 y a Floresta 343 respectivamente. El cuadrante queda en 38 competidores."
+    "texto": "Se retiran del mapa «Monte Alegre 137» y «Parque La Floresta». Los dos venían de anotaciones a mano del recorrido del 22-ago: obra vista, sin cartel legible, sin foto y con la ubicación puesta por geocodificador. No aportaban ningún dato comercial y muy probablemente duplican a proyectos que ya teniamos mapeados. El cuadrante queda en 38 competidores."
    },
    {
     "fecha": "2026-08-27",
@@ -523,25 +558,6 @@ window.PORTAL_DATA = {
    },
    {
     "fecha": "2026-08-24",
-    "proyecto": "Monte Alegre 109",
-    "dev": "Edifikarte",
-    "proyecto_id": "monte-alegre",
-    "tags": [
-     "precio"
-    ],
-    "canal": "Foto de campo",
-    "autor": "Benchmark",
-    "texto": "La valla precisa los tramos de entrada por tipología: 3 dormitorios desde 115 m², 133 m² y 150 m²; 4 dormitorios desde 190 m². Dos contactos en la valla: 924 447 479 y 981 386 111.",
-    "cita": "«EDIFIKARTE · MONTE ALEGRE · ESPACIOS EXCLUSIVOS · 3 dorms: desde 115 m², 133 m², 150 m² · 4 dorms: desde 190 m²» — valla, 22-ago-2026",
-    "imgs": [
-     "assets/campo/monte-alegre-valla.jpg"
-    ],
-    "fuentes": [
-     "Recorrido de campo 2026-08-22"
-    ]
-   },
-   {
-    "fecha": "2026-08-24",
     "proyecto": "Astete Living",
     "dev": "EDSA Inmobiliaria",
     "proyecto_id": "astete-living",
@@ -646,65 +662,6 @@ window.PORTAL_DATA = {
     "cita": "«201 · 149.04 · 3 DORM · PARALELOS Nº 29 Y 30- SOTANO 2 · $385,000.00» — lista de precios Los Precursores II",
     "fuentes": [
      "assets/brochures/precursores-ii-lista-precios.pdf"
-    ]
-   },
-   {
-    "fecha": "2026-08-24",
-    "proyecto": "Floresta 343",
-    "dev": "Vibra Inmobiliaria",
-    "proyecto_id": "floresta-343",
-    "tags": [
-     "registro"
-    ],
-    "canal": "Búsqueda en internet",
-    "autor": "Benchmark",
-    "texto": "Competidor que NO teníamos y sí está dentro del cuadrante: Av. de la Floresta 343, 8 pisos, 29 departamentos, 40 estacionamientos y 38 bike parkings. Tipologías FLEX de 64.01, 87.13, 103.55 y 104.98 m² más un dúplex en el piso 8. Amenidades fuertes para su tamaño: coworking, dos rooftops y pet & bike center. Falta precio y verificarlo en campo.",
-    "cita": "«Solo 8 pisos hacen de Floresta 343 un lugar íntimo» — brochure oficial de Vibra Inmobiliaria",
-    "imgs": [
-     "assets/planos/floresta-343/floresta343-tipo01-02-planta.png"
-    ],
-    "fuentes": [
-     "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343"
-    ]
-   },
-   {
-    "fecha": "2026-08-24",
-    "proyecto": "Le Parc",
-    "dev": "V&V Grupo Inmobiliario",
-    "proyecto_id": "le-parc",
-    "tags": [
-     "registro"
-    ],
-    "canal": "Archivo interno + búsqueda",
-    "autor": "Benchmark",
-    "texto": "Segundo proyecto que faltaba en el mapa: Av. de los Precursores 421, de V&V. Solo 15 departamentos de 157 a 460 m², 3 dormitorios — la oferta de mayor metraje del cuadrante. Teníamos su brochure y 9 planos archivados sin usar. Falta confirmar si sigue en venta.",
-    "cita": "«Sólo 15 exclusivos departamentos · Departamentos desde 157 mts2 hasta 460 mts2» — brochure Le Parc",
-    "imgs": [
-     "assets/planos/le-parc/plano-b01.jpg"
-    ],
-    "fuentes": [
-     "Brochure oficial en archivo (le-parc-f1.pdf)"
-    ]
-   },
-   {
-    "fecha": "2026-08-24",
-    "proyecto": "Monte Alegre 109",
-    "dev": "Edifikarte",
-    "proyecto_id": "monte-alegre",
-    "tags": [
-     "estado",
-     "registro"
-    ],
-    "canal": "Web oficial + brochure",
-    "autor": "Benchmark",
-    "texto": "Ficha oficial encontrada: 7 pisos, 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas de tipología (flats de 118 a 152 m², dúplex de 143 a 307 m²). Sigue sin publicar precios.",
-    "cita": "«Monte Alegre 109 · metraje desde 115m² - 276m² · 3 y 4 dorms · 7 pisos» — edifikarte.com.pe, 24-ago-2026",
-    "imgs": [
-     "assets/planos/monte-alegre-109-oficial/TIPO 001 - 3 dorm - 196.74 m2.jpg"
-    ],
-    "fuentes": [
-     "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
-     "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf"
     ]
    },
    {
@@ -944,25 +901,6 @@ window.PORTAL_DATA = {
     ],
     "fuentes": [
      "Recorrido de campo 2026-08-22 · fotos IMG_7975–7978"
-    ]
-   },
-   {
-    "fecha": "2026-08-22",
-    "proyecto": "Monte Alegre 109",
-    "dev": "Edifikarte",
-    "proyecto_id": "monte-alegre",
-    "tags": [
-     "precio"
-    ],
-    "canal": "Visita de campo",
-    "autor": "Martin",
-    "texto": "Valla comercial: «ESPACIOS EXCLUSIVOS» — 3 dorms desde 115 m², 133 m² y 150 m²; 4 dorms desde 190 m².",
-    "cita": "Valla fotografiada el 2026-08-22.",
-    "imgs": [
-     "assets/campo/monte-alegre-valla.jpg"
-    ],
-    "fuentes": [
-     "Recorrido de campo 2026-08-22 · foto IMG_8003"
     ]
    },
    {
@@ -1244,6 +1182,22 @@ window.PORTAL_DATA = {
     ]
    },
    {
+    "fecha": "2026-08-22",
+    "proyecto": "Spazio",
+    "dev": "Grupo Dicon",
+    "proyecto_id": "spazio",
+    "tags": [
+     "cochera"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Grupo Dicon cotiza el estacionamiento aparte. En la cotización que enviaron por otro de sus proyectos el desglose es explícito: departamento más cochera simple, sumados al final.",
+    "cita": "«su precio es 198.000 USD + 16.000 USD cochera simple = 214.000 USD total» — WhatsApp Ventas Dicon, 22-ago-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
+   {
     "fecha": "2026-08-19",
     "proyecto": "Monte Umbroso 247",
     "dev": "Inmobiliaria AyD",
@@ -1266,6 +1220,24 @@ window.PORTAL_DATA = {
      "registro"
     ],
     "cita": "«Finalmente tenemos todo listo, ya contamos con la lista de precios oficial de MONTE UMBROSO 247 (frente al Parque Bella Luz)... proyecto boutique de solo 12 departamentos (6 pisos). Entrega: Diciembre 2027.» — Washington Benavides, 19-ago"
+   },
+   {
+    "fecha": "2026-08-19",
+    "proyecto": "Monte Umbroso 247",
+    "dev": "Inmobiliaria AyD",
+    "proyecto_id": "monte-umbroso-247",
+    "tags": [
+     "cochera",
+     "precio",
+     "promo"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Las dos cotizaciones oficiales listan el estacionamiento en línea aparte a S/54,000 cada uno. Confirman también que el Dpto 102 se vende como 3 dormitorios aunque su lámina dibuje dos camas.",
+    "cita": "«Estacionamiento simple · Sótano 1 · S/ 54,000.00» — cotización AyD, 19-ago-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
    },
    {
     "fecha": "2026-08-16",
@@ -1397,6 +1369,91 @@ window.PORTAL_DATA = {
      "precio"
     ],
     "cita": "«En Conde de la Vega tenemos dptos. desde los $308,700.» — Washington Benavides / Azzurra. Lista oficial 18-may vigente."
+   },
+   {
+    "fecha": "2026-08-13",
+    "proyecto": "HANA",
+    "dev": "Odima",
+    "proyecto_id": "hana",
+    "tags": [
+     "cochera",
+     "precio",
+     "promo"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Rebeca Ruiz dio el único desglose exacto de cochera del benchmark: S/852,000 = depa amoblado S/799,000 + cochera S/53,000, con S/48,000 de rebaja sobre el precio de julio. El neto de HANA queda en US$2,440/m².",
+    "cita": "«Depa solo y amoblado 799 mil · Cochera 53.000 · Todo S/852 mil» — WhatsApp, 13-ago-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-08-13",
+    "proyecto": "Jardines de Monte Real",
+    "dev": "Central Inmobiliaria",
+    "proyecto_id": "jardines-monte-real",
+    "tags": [
+     "cochera",
+     "precio"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Diana Rodríguez confirmó que el precio incluye 1 estacionamiento simple y pasó la lámina del FLAT X08 con S/836,496 impreso sobre 94.20 m².",
+    "cita": "«El precio incluye 1 estacionamiento simple» — WhatsApp, 13-ago-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-07-02",
+    "proyecto": "Parque Monte Carmelo",
+    "dev": "EE Inmobiliaria",
+    "proyecto_id": "parque-monte-carmelo",
+    "tags": [
+     "cochera"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Cecilia Estrada confirmó por escrito que el estacionamiento no está incluido, con rango de precios: simples y lineales entre S/48,000 y S/99,000, en un semisótano y dos sótanos.",
+    "cita": "«El estacionamiento no está incluído en el precio del departamento» — WhatsApp, 2-jul-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-07-01",
+    "proyecto": "Monte Mayor 177",
+    "dev": "Edifikarte",
+    "proyecto_id": "monte-mayor-177",
+    "tags": [
+     "cochera",
+     "precio",
+     "stock"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Jenny Miranda: el último flat de 2 dorm de 87 m² está en S/820,000 con DOS estacionamientos lineales y depósito. Son dos, no uno — al netear cambia el US$/m².",
+    "cita": "«S/820,000.00 incluyen últimos 2 estac paralelos y deposito» — WhatsApp, 1-jul-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
+   },
+   {
+    "fecha": "2026-07-01",
+    "proyecto": "Conde de la Vega 128",
+    "dev": "Edifikarte",
+    "proyecto_id": "conde-de-la-vega-128",
+    "tags": [
+     "stock"
+    ],
+    "canal": "WhatsApp",
+    "autor": "Benchmark",
+    "texto": "Agotado. La asesora lo dijo de frente y derivó a Conde de la Vega 251. Su precio pasa a referencia histórica.",
+    "cita": "«en conde de la vega 128 no quedan departamentos» — WhatsApp, 1-jul-2026",
+    "fuentes": [
+     "Chat real de WhatsApp con el asesor · chat exportado el 3-sep-2026"
+    ]
    },
    {
     "fecha": "2026-06-28",
@@ -1849,16 +1906,6 @@ window.PORTAL_DATA = {
      "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de D'Mont 2 por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!"
     },
     {
-     "numero": "924447479",
-     "nombre": null,
-     "dev": "Edifikarte",
-     "proyectos": [
-      "Monte Alegre 109"
-     ],
-     "pide": "lista de precios + cochera + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Alegre 109 por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
-    },
-    {
      "numero": "952496382",
      "nombre": null,
      "dev": "Balance Grupo Inmobiliario",
@@ -1927,16 +1974,6 @@ window.PORTAL_DATA = {
      ],
      "pide": "tarifario por unidad + cochera + promoción",
      "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de TEN Apartments por unidad, con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!"
-    },
-    {
-     "numero": "960279665",
-     "nombre": null,
-     "dev": "Vibra Inmobiliaria",
-     "proyectos": [
-      "Floresta 343"
-     ],
-     "pide": "lista de precios + confirmar entrega + cochera + promoción",
-     "mensaje": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 por unidad, con lo que queda disponible? 2) en qué fecha están entregando? 3) el precio ya incluye la cochera o va aparte? cuánto cuesta? 4) tienen alguna promoción o descuento este mes? Gracias!"
     }
    ]
   },
@@ -2063,8 +2100,8 @@ window.PORTAL_DATA = {
   "regla_planos": "Del plano se leen ambientes, nunca metros: las áreas salen de las listas de precios. Cada unidad se revisa contra las mismas 25 casillas, con tres estados: SÍ (se ve dibujado), NO (el plano se lee bien y no está) y NO SE VE (el plano no alcanza a mostrarlo). El tercero es el que evita afirmar de más.",
   "regla_estudio": "Un ambiente vendido como «estudio» cuenta como dormitorio disfrazado si cumple dos de tres: tiene clóset, tiene ventana a exterior y tiene puerta que lo cierra. Si en la misma lámina los dormitorios llevan barrido de puerta dibujado y el estudio no, la ausencia es intencional.",
   "planos_analizados": {
-   "proyectos": 34,
-   "unidades": 288
+   "proyectos": 31,
+   "unidades": 260
   }
  },
  "quadrant": [
@@ -4003,7 +4040,8 @@ window.PORTAL_DATA = {
    },
    "unidades": 23,
    "pisos": 6,
-   "acabados": "Pisos de bambú machihembrado en sala, comedor y dormitorios; tablero de cuarzo en cocina; muebles altos y bajos; departamento smart con cerradura digital; porcelanato y enchape de piso a techo en baños; ventanas con vidrio templado incoloro; closet y baño incorporado en el dormitorio principal."
+   "acabados": "Pisos de bambú machihembrado en sala, comedor y dormitorios; tablero de cuarzo en cocina; muebles altos y bajos; departamento smart con cerradura digital; porcelanato y enchape de piso a techo en baños; ventanas con vidrio templado incoloro; closet y baño incorporado en el dormitorio principal.",
+   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte"
   },
   {
    "id": "conde-ii",
@@ -4134,7 +4172,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     3
    ],
-   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución. Análisis de sus plantas (02-sep-2026): el «tercer dormitorio» que el asesor ofrece convertir en oficina, taller o gimnasio está dibujado como dormitorio COMPLETO — cama, velador, dos closets, puerta con barrido, ventana exterior y baño propio con ducha. La personalización es promesa de obra, no un ambiente a medias. Sus dos tipologías traen los tres dormitorios con baño propio, cuarto de servicio con cama, baño de servicio con ducha, cuarto de lavado bajo techo y ascensor que abre dentro del departamento. OJO: de sus 6 tipologías solo hay plano de 2. Falta la del Dúplex 501 de 254 m², que sigue EN VENTA y del que solo hay renders.",
+   "comentario": "Brochure oficial de AyD edición 2026, recibido por WhatsApp: solo 10 departamentos, construcción 2026 y entrega 2027 — la edición anterior anunciaba construcción 2025 y entrega 2026, o sea el cronograma se corrió un año. El cuadro de tipologías marca VENDIDO en Flat 101 (182 m²), Flat 102 (100 m²) y Dúplex 502 (252 m²): quedan los dos flats típicos de 126 m² (124 techada + 2 libre, 3 dorms, 3.5 baños, cuarto y baño de servicio, balcón con vista exterior) y el Dúplex 501 de 254 m². Se puede personalizar acabados y distribución. Análisis de sus plantas (02-sep-2026): el «tercer dormitorio» que el asesor ofrece convertir en oficina, taller o gimnasio está dibujado como dormitorio COMPLETO — cama, velador, dos closets, puerta con barrido, ventana exterior y baño propio con ducha. La personalización es promesa de obra, no un ambiente a medias. Sus dos tipologías traen los tres dormitorios con baño propio, cuarto de servicio con cama, baño de servicio con ducha, cuarto de lavado bajo techo y ascensor que abre dentro del departamento. OJO: de sus 6 tipologías solo hay plano de 2. Falta la del Dúplex 501 de 254 m², que sigue EN VENTA y del que solo hay renders. · Brochure oficial de AyD: los flats típicos 201, 401 y 202 son de 126 m² de área ocupada (124 techada + 2 libre), 3 dormitorios, 3.5 baños, área de servicio completa con cuarto y baño de servicio, y balcón con vista exterior. Washington Benavides el 30-jun-2026: «desde los $308,700» y «nosotros tenemos dptos. únicamente de 3 dormitorios».",
    "fuentes": [
     "https://inmobiliariaayd.com/proyecto/conde-ii/",
     "https://inmobiliariaayd.com",
@@ -4195,6 +4233,13 @@ window.PORTAL_DATA = {
      "archivo": "assets/brochures/conde-ii-f1.pdf",
      "url": null,
      "fecha": "2025",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial de Inmobiliaria AyD · Conde II (flats típicos de 126 m²)",
+     "archivo": "assets/brochures/conde-ii-brochure-ayd.pdf",
+     "url": null,
+     "fecha": "2026-06-30",
      "tipo": "brochure"
     }
    ],
@@ -4468,7 +4513,7 @@ window.PORTAL_DATA = {
    "total_pisos": 6,
    "portales": {},
    "cochera_status": "si",
-   "cochera_nota": "El dúplex 603 incluye 2 estacionamientos + 1 depósito en el precio.",
+   "cochera_nota": "Confirmado por Jenny Miranda (Edifikarte) el 1-jul-2026: el Dúplex 603 de 122.52 m² y 3 dorm está en «S/1100,000.00 incluye 2 estacionamientos y 1 deposito». Son DOS estacionamientos.",
    "stock": {
     "n": null,
     "label": "Últimos dúplex (cartel en fachada, ago-2026)"
@@ -4780,7 +4825,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 981 386 111, 1-jul-2026"
   },
   {
    "id": "conde-de-la-vega-460",
@@ -6169,7 +6215,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte"
   },
   {
    "id": "dmont-2",
@@ -6819,7 +6866,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte"
   },
   {
    "id": "estelar-1080",
@@ -7796,7 +7844,8 @@ window.PORTAL_DATA = {
     "assets/planos/hana-oficial/Sotano 01 - estacionamientos (estado de venta).jpg",
     "assets/planos/hana-oficial/Sotano 02 - estacionamientos (estado de venta).jpg",
     "assets/planos/hana-oficial/Sotano 03 - estacionamientos (estado de venta).jpg",
-    "assets/img/hana.png"
+    "assets/img/hana.png",
+    "assets/chats/hana-dpto102-lamina.jpg"
    ],
    "brochure": "assets/brochures/hana-brochure.pdf",
    "typologies": [
@@ -7804,18 +7853,36 @@ window.PORTAL_DATA = {
      "unidad": "Tipo 102",
      "dorm": 3,
      "m2": 96.31,
-     "precio_usd": 249706,
-     "precio_m2": 2593,
+     "precio_usd": 235000,
+     "precio_m2": 2440,
      "tipo": "flat",
      "piso": "1",
-     "estac_incluidos": 0,
+     "estac_incluidos": 1,
      "depositos_incluidos": 0,
-     "precio_lista_todo": 249706,
-     "m2_equivalente": 96.31,
-     "precio_m2_equiv": 2593
+     "precio_lista_todo": 250588,
+     "m2_equivalente": 112.31,
+     "precio_m2_equiv": 2231,
+     "flat": false,
+     "precio_soles_todo": 852000,
+     "precio_soles": 799000,
+     "precio_lista_usd": 250588,
+     "ajuste_cochera_usd": 15588,
+     "nota": "Desglose textual de Rebeca Ruiz (Odima) el 13-ago-2026, reconfirmado el 3-sep: S/852,000 «el depa y cochera» = departamento amoblado S/799,000 + cochera S/53,000. El US$/m² usa los S/799,000, neto de cochera (se descuentan US$15,588). Es 1er piso elevado, sin balcón ni terraza."
     }
    ],
-   "flats_summary": [],
+   "flats_summary": [
+    {
+     "unidad": "Tipo 102",
+     "dorm": 3,
+     "m2": 96.31,
+     "precio_usd": 235000,
+     "precio_m2": 2440,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 250588,
+     "ajuste_cochera_usd": 15588,
+     "nota": "Desglose dado por la propia asesora, no estimado: S/852,000 con cochera − S/53,000 de cochera = S/799,000 el departamento. El US$/m² sale de ese neto de cochera (US$250,588 − US$15,588 = US$235,000). Es el único proyecto del cuadrante donde el valor de la cochera lo dio el vendedor."
+    }
+   ],
    "dorms_disponibles": [
     2,
     3,
@@ -7835,7 +7902,7 @@ window.PORTAL_DATA = {
    },
    "anuncios": null,
    "mostrar": true,
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": {
     "n": 1,
     "label": "Última unidad publicada · queda 1 estacionamiento y 1 depósito libres en sótano"
@@ -7869,6 +7936,13 @@ window.PORTAL_DATA = {
      "url": "https://odima.pe/wp-content/uploads/2026/02/HANA-BC_compressed.pdf",
      "fecha": "2026-02",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Lámina DPTO 102 de Odima (96.31 m², 3 ambientes + estar) · enviada por la asesora",
+     "archivo": "assets/chats/hana-dpto102-lamina.jpg",
+     "url": null,
+     "fecha": "2026-07-01",
+     "tipo": "plano"
     }
    ],
    "planos_fuente": "Brochure oficial Odima, edición febrero-2026 (plantas del 1er piso, Dpto. 102 y los 3 sótanos).",
@@ -7903,10 +7977,7 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-25",
     "nota": "Odima lo mantiene en venta al 25-ago-2026: 17 departamentos, desde S/837,000, de 85 a 208.57 m². No publica cuántas unidades quedan."
    },
-   "precio_fuente": {
-    "tipo": "brochure",
-    "nota": "Brochure oficial de Odima (feb-2026), con las plantas de sótano que muestran el estado de venta."
-   },
+   "precio_fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz, 13-ago y 3-sep-2026 (desglose depa/cochera)",
    "ventas": {
     "vendidas": 19,
     "total": 21,
@@ -7923,7 +7994,7 @@ window.PORTAL_DATA = {
     }
    ],
    "coherencia_alerta": null,
-   "cochera_nota": "Sin confirmar. Su brochure de Odima (feb-2026) muestra las plantas de sótano con el estado de venta de los estacionamientos, pero no dice si el precio del departamento incluye uno.",
+   "cochera_nota": "Confirmado por Rebeca Ruiz (Odima) con desglose completo el 13-ago-2026 y reconfirmado el 3-sep: el DPTO 102 de 96.31 m² se vende en S/852,000 «el depa y cochera», y el desglose es depa amoblado S/799,000 + cochera S/53,000. El precio de lista de julio era S/900,000 con cochera; hay S/48,000 de rebaja.",
    "politica_precio": "No sabemos si el precio incluye estacionamiento; el brochure no lo aclara. Su US$/m² se muestra tal como lo publican, sin descontar cochera.",
    "planos_analisis": {
     "fecha": null,
@@ -7985,6 +8056,18 @@ window.PORTAL_DATA = {
       ]
      }
     ]
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz +51 994 448 991, 13-ago y 3-sep-2026",
+   "promo": {
+    "tipo": "Descuento en precio + regalo",
+    "que": "S/48,000 de rebaja y el departamento amoblado",
+    "valor_usd": 14118,
+    "valor_txt": "S/48,000 ≈ US$14,118",
+    "pct_txt": "5.3% sobre el precio de lista de julio",
+    "desde": "2026-08-13",
+    "cond": "Sobre el DPTO 102, el único que queda. Pasó de S/900,000 con cochera a S/852,000 con cochera y amoblado.",
+    "canal": "WhatsApp de la asesora",
+    "fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz, 13-ago-2026, reconfirmado el 3-sep: «Tiene 48 mil de mejora»"
    }
   },
   {
@@ -8040,7 +8123,8 @@ window.PORTAL_DATA = {
     "assets/img-f1/jardines-monte-real/img-01.jpg",
     "assets/img-f1/jardines-monte-real/img-02.jpg",
     "assets/campo/jardines-monte-real-obra.jpg",
-    "assets/campo/living-monte-real-obra.jpg"
+    "assets/campo/living-monte-real-obra.jpg",
+    "assets/chats/jardines-monte-real-flat-x08-precio.jpg"
    ],
    "brochure": "assets/brochures/jardines-monte-real-brochure.pdf",
    "typologies": [
@@ -8048,16 +8132,20 @@ window.PORTAL_DATA = {
      "unidad": "X08 (408/508)",
      "dorm": 3,
      "m2": 94.2,
-     "precio_usd": 246028,
-     "precio_m2": 2612,
+     "precio_usd": 231028,
+     "precio_m2": 2453,
      "tipo": "flat",
      "piso": "4",
      "flat": true,
-     "estac_incluidos": 0,
+     "estac_incluidos": 1,
      "depositos_incluidos": 0,
      "precio_lista_todo": 246028,
-     "m2_equivalente": 94.2,
-     "precio_m2_equiv": 2612
+     "m2_equivalente": 110.2,
+     "precio_m2_equiv": 2233,
+     "precio_soles": 836496,
+     "precio_lista_usd": 246028,
+     "ajuste_cochera_usd": 15000,
+     "nota": "Diana Rodríguez (Central Inmobiliaria) el 13-ago-2026: «El precio incluye 1 estacionamiento simple» y «S/836,496 con 1 estacionamiento». La lámina del FLAT X08 imprime el mismo precio. El US$/m² descuenta US$15,000 por la cochera según la convención; la asesora no dio su valor suelto."
     },
     {
      "unidad": "107",
@@ -8076,17 +8164,22 @@ window.PORTAL_DATA = {
    ],
    "flats_summary": [
     {
+     "unidad": "X08 (408/508)",
      "dorm": 3,
      "m2": 94.2,
-     "precio_usd": 246028,
-     "precio_m2": 2612,
-     "comparable_confirmado": false,
-     "motivo_no_comparable": "Ni la valla de obra ni la ficha de Nexo dicen si el precio incluye estacionamiento."
+     "precio_usd": 231028,
+     "precio_m2": 2453,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 246028,
+     "ajuste_cochera_usd": 15000,
+     "nota": "El precio incluye 1 estacionamiento simple, confirmado por Diana Rodríguez el 13-ago-2026. Se descuenta US$15,000 por la cochera según la convención del benchmark: US$246,028 − US$15,000 = US$231,028 neto de cochera sobre 94.20 m². La asesora no dio el valor suelto de la cochera."
     }
    ],
    "dorms_disponibles": [
     2,
-    3
+    3,
+    4,
+    5
    ],
    "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora. Análisis de sus 14 plantas oficiales (02-sep-2026): el sello AIS de accesibilidad, que es su bandera comercial, NO se ve en ninguna lámina — sin barras de apoyo, sin círculos de giro, sin duchas a nivel y con todos los barridos de puerta del mismo ancho. Lo único con lectura de accesibilidad es el sello «ascensor directo a los 2 niveles» de sus dos dúplex grandes; los otros cuatro dúplex dependen de escalera interna. Ningún estudio ni dormitorio disfrazado en las 14. OJO con el Flat 107 de 129.42 m²: se vende como flat grande pero solo tiene 2 dormitorios de familia — la tercera cama es un catre individual dentro del bloque de servicio, pegado a la lavadora. A cambio sus dos dormitorios son suite completa con vestidor. Solo dos plantas tienen cocina cerrada (205 y X04); el resto abierta.",
    "amenidades": [
@@ -8119,9 +8212,10 @@ window.PORTAL_DATA = {
    "mostrar": true,
    "gallery": [
     "assets/img-f1/jardines-monte-real/img-01.jpg",
-    "assets/img-f1/jardines-monte-real/img-02.jpg"
+    "assets/img-f1/jardines-monte-real/img-02.jpg",
+    "assets/chats/jardines-monte-real-obra-ago2026.jpg"
    ],
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": {
     "n": null,
     "label": "Últimas unidades (anunciado en la valla de obra, ago-2026)"
@@ -8162,6 +8256,13 @@ window.PORTAL_DATA = {
      "url": "https://www.centralinmobiliaria.pe/wp-content/uploads/2025/01/JARDINES-MR-22-06-2026-SP-1.pdf",
      "fecha": "2026-06",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Lámina FLAT X08 (408/508) con precio impreso S/836,496 · enviada por la asesora",
+     "archivo": "assets/chats/jardines-monte-real-flat-x08-precio.jpg",
+     "url": null,
+     "fecha": "2026-08-13",
+     "tipo": "tarifario"
     }
    ],
    "planos_fuente": "Brochure oficial Central Inmobiliaria, edición 22-jun-2026 (14 láminas de tipología).",
@@ -8194,10 +8295,7 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-22",
     "nota": "Valla de obra: entrega marzo 2027, «últimas unidades»."
    },
-   "precio_fuente": {
-    "tipo": "campo",
-    "nota": "Valla de obra fotografiada el 22-ago-2026 (metrajes y stock) más la ficha de Nexo para el precio."
-   },
+   "precio_fuente": "Chat real de WhatsApp con el asesor Diana Rodríguez +51 920 374 177, 13-ago-2026 · lámina FLAT X08",
    "stock_hist": [
     {
      "corte": "2026-08-31",
@@ -8207,7 +8305,7 @@ window.PORTAL_DATA = {
      "total": null
     }
    ],
-   "cochera_nota": "Sin confirmar. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento.",
+   "cochera_nota": "Confirmado por Diana Rodríguez (Central Inmobiliaria) el 13-ago-2026: «El precio incluye 1 estacionamiento simple» y luego «S/836,496 con 1 estacionamiento» para el FLAT X08 (unidades 408 y 508) de 94.20 m². No dio el valor de la cochera suelta, así que el neto todavía no se puede calcular.",
    "politica_precio": "No sabemos si el precio incluye estacionamiento. El precio viene de la ficha de Nexo y los metrajes de la valla de obra; ninguno menciona estacionamiento. Hasta confirmarlo su US$/m² no es comparable contra el resto del cuadrante.",
    "unidades": 52,
    "coherencia_alerta": "Su comunicación se apoya en el sello AIS de accesibilidad pero ninguna de sus 14 láminas muestra un rasgo accesible. Antes de compararlo de frente conviene preguntarle a la asesora en qué se materializa el sello.",
@@ -8997,7 +9095,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 920 374 177 (Central Inmobiliaria), 13-ago-2026 · lámina FLAT X08 con precio impreso"
   },
   {
    "id": "la-floresta-boulevard",
@@ -10313,1280 +10412,6 @@ window.PORTAL_DATA = {
    }
   },
   {
-   "id": "monte-alegre",
-   "name": "Monte Alegre 109",
-   "dev": "Edifikarte",
-   "addr": "Calle Monte Alegre 109, Chacarilla del Estanque, Santiago de Surco, Lima",
-   "estado_grupo": "En planos",
-   "estado_raw": "Próximo proyecto (Edifikarte)",
-   "entrega": "Por confirmar",
-   "lat": -12.11587,
-   "lng": -76.98609,
-   "isGEU": false,
-   "en_cuadrante": true,
-   "precio_desde_usd": null,
-   "precio_hasta_usd": null,
-   "dorms": "3–4",
-   "m2": "118.06 – 306.77",
-   "wa": "924447479",
-   "web": "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
-   "img": "assets/campo/monte-alegre-valla.jpg",
-   "planos": [
-    "assets/planos/monte-alegre-109-oficial/DÚPLEX 002 - 3 dorm - 158.89 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/DÚPLEX 003 - 3 dorm - 143.70 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/DÚPLEX 601 - 4 dorm - 280.63 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/DÚPLEX 602 - 4 dorm - 306.77 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/DÚPLEX 603 - 4 dorm - 229.29 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 001 - 3 dorm - 196.74 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion A - 3 dorm - 196.74 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion B - 3 dorm - 196.74 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 101 - 3 dorm - 129.70 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 102 - 3 dorm - 143.97 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 201 - 3 dorm - 136.22 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 202 - 3 dorm - 152.17 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 301 - 3 dorm - 134.25 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 302 - 3 dorm - 149.73 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 401 - 3 dorm - 136.22 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 402 - 3 dorm - 152.17 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 501 - 3 dorm - 134.25 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO 502 - 3 dorm - 149.73 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO X03 - 3 dorm - 118.06 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO X03A - 3 dorm - 118.06 m2.jpg",
-    "assets/planos/monte-alegre-109-oficial/TIPO X03B - 3 dorm - 118.06 m2.jpg",
-    "assets/img/monte-alegre.jpg",
-    "assets/campo/monte-alegre-valla.jpg"
-   ],
-   "brochure": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf",
-   "typologies": [
-    {
-     "unidad": "TIPO 001",
-     "dorm": 3,
-     "m2": 196.74,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "primer_piso",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "DÚPLEX 002",
-     "dorm": 3,
-     "m2": 158.89,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "—",
-     "flat": false
-    },
-    {
-     "unidad": "DÚPLEX 003",
-     "dorm": 3,
-     "m2": 143.7,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "—",
-     "flat": false
-    },
-    {
-     "unidad": "TIPO 101",
-     "dorm": 3,
-     "m2": 129.7,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "primer_piso",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "TIPO 102",
-     "dorm": 3,
-     "m2": 143.97,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "primer_piso",
-     "piso": "1",
-     "flat": false
-    },
-    {
-     "unidad": "TIPO 201 / 401",
-     "dorm": 3,
-     "m2": 136.22,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "2 al 4",
-     "flat": true
-    },
-    {
-     "unidad": "TIPO 202 / 402",
-     "dorm": 3,
-     "m2": 152.17,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "2 al 4",
-     "flat": true
-    },
-    {
-     "unidad": "TIPO 301 / 501",
-     "dorm": 3,
-     "m2": 134.25,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "3 al 5",
-     "flat": true
-    },
-    {
-     "unidad": "TIPO 302 / 502",
-     "dorm": 3,
-     "m2": 149.73,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "3 al 5",
-     "flat": true
-    },
-    {
-     "unidad": "TIPO X03",
-     "dorm": 3,
-     "m2": 118.06,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "2 al 5",
-     "flat": true
-    },
-    {
-     "unidad": "DÚPLEX 601",
-     "dorm": 4,
-     "m2": 280.63,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "6",
-     "flat": false
-    },
-    {
-     "unidad": "DÚPLEX 602",
-     "dorm": 4,
-     "m2": 306.77,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "6",
-     "flat": false
-    },
-    {
-     "unidad": "DÚPLEX 603",
-     "dorm": 4,
-     "m2": 229.29,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "6",
-     "flat": false
-    }
-   ],
-   "flats_summary": [],
-   "dorms_disponibles": [
-    3,
-    4
-   ],
-   "comentario": "Ficha oficial de Edifikarte (consultada 24-ago-2026): 7 pisos, departamentos de 3 y 4 dormitorios de 115 a 276 m². Brochure de julio-2026 descargado con 21 láminas: flats de 118 a 152 m², primeros pisos de 129 a 197 m² y dúplex de 143 a 307 m². Todavía sin lista de precios pública — pedido abierto por WhatsApp. La valla fotografiada el 22-ago-2026 precisa los tramos de entrada: 3 dorms desde 115 m², 133 m² y 150 m²; 4 dorms desde 190 m². Contactos en la valla: 924 447 479 y 981 386 111. Análisis de sus 21 láminas (02-sep-2026): son 17 unidades, cero estudios y cero dormitorios disfrazados — pero Edifikarte repite el truco del rótulo: su tercer dormitorio va casi siempre como «ESTAR (DORMITORIO 03)» y en los dúplex 002/003 y los TIPO 101/102 hay dormitorios rotulados «WCL (DORMITORIO 02)», o sea walking closet. Todos con cama, closet y puerta dibujados, así que son dormitorios de verdad. HALLAZGO: ascensor directo en 15 de sus 17 unidades — abre dentro del departamento, con un segundo ingreso de servicio por el recibo. Solo los dúplex 002 y 003 de planta baja no lo tienen. Es justo lo contrario de Montemar 269, donde le atribuíamos ascensor directo y ninguna lámina lo dibuja. CONTRADICCIÓN DE METRAJE: publican «115 a 276 m²» pero sus láminas van de 118.06 (X03) a 306.77 m² (dúplex 602) — el tope real es 30 m² más alto, y ni el 115 ni el 276 aparecen impresos en ninguna lámina.",
-   "fuentes": [
-    "https://www.edifikarte.com.pe/proyectos/monte-alegre/",
-    "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf"
-   ],
-   "anuncios": null,
-   "mostrar": true,
-   "amenidades": [],
-   "total_pisos": 7,
-   "portales": {},
-   "cochera_status": "nd",
-   "stock": null,
-   "descubierto": "2026-08-13",
-   "geo_aprox": false,
-   "geo_nota": "Ubicación verificada en campo el 22-ago-2026 (foto tomada a 23 m del marcador).",
-   "verif_web": {
-    "fecha": "2026-08-13",
-    "precio_portal": "no publica",
-    "estado_portal": "En Lanzamiento (web oficial)",
-    "nota": "Confirmado en edifikarte.com.pe como 'Monte Alegre' (sin número). El '109' de una búsqueda previa era incorrecto.",
-    "fuente": "edifikarte.com.pe"
-   },
-   "es_nuevo_lanzamiento": true,
-   "precio_hist": [
-    {
-     "corte": "2026-08-16",
-     "desde": null,
-     "pm2": null
-    },
-    {
-     "corte": "2026-08-31",
-     "desde": null,
-     "pm2": null
-    }
-   ],
-   "estado_obra": "Próximo proyecto: aún sin obra",
-   "cuadrante_verificado": "2026-08-22",
-   "caseta_ventas": "no",
-   "caseta_nota": "Sin caseta de ventas.",
-   "caseta_fecha": "2026-08-22",
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Monte Alegre 109 con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
-   "pisos": 7,
-   "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (21 láminas de tipología).",
-   "wa_label": "Edifikarte · Monte Alegre",
-   "documentos": [
-    {
-     "titulo": "Brochure oficial Edifikarte · Monte Alegre 109 (jul-2026)",
-     "archivo": "assets/brochures/monte-alegre-brochure.pdf",
-     "url": "https://www.edifikarte.com.pe/wp-content/uploads/2026/07/MONTE-ALEGRE-BROCHURE-DIGITAL-1-3.pdf",
-     "fecha": "2026-07",
-     "tipo": "brochure"
-    }
-   ],
-   "contactos": [
-    {
-     "nombre": null,
-     "numero": "924447479",
-     "fuente": "Cartel/valla fotografiada en el recorrido del 22-ago-2026 — impreso en la valla de Edifikarte"
-    },
-    {
-     "nombre": "Jenny",
-     "numero": "981386111",
-     "fuente": "Chat real de WhatsApp con la asesora"
-    },
-    {
-     "nombre": null,
-     "numero": "934411415",
-     "fuente": "Web oficial de Edifikarte (24-ago-2026)"
-    }
-   ],
-   "foto_campo": "2026-08-22",
-   "estado_evidencia": {
-    "tipo": "web_oficial",
-    "fecha": "2026-08-25",
-    "nota": "Edifikarte al 25-ago-2026: 115 a 276 m², 3 y 4 dorms, 7 pisos — sin cambios."
-   },
-   "precio_fuente": {
-    "tipo": "brochure",
-    "nota": "Brochure oficial de Edifikarte de julio-2026 y valla con los tramos de entrada por tipología."
-   },
-   "stock_hist": [
-    {
-     "corte": "2026-08-31",
-     "disponibles": null,
-     "label": null,
-     "vendidas": null,
-     "total": null
-    }
-   ],
-   "planos_analisis": {
-    "fecha": null,
-    "version": null,
-    "planos_leidos": 21,
-    "unidades": [
-     {
-      "unidad": "TIPO 001",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 001 - 3 dorm - 196.74 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama: DORMITORIO 01, DORMITORIO 02 y el rotulado ESTAR (DORMITORIO 03), que además tiene closet, puerta con barrido y su propio WCL. No hay ningún ambiente amoblado con escritorio"
-      },
-      "observacion": "Unidad de primer piso. La lámina imprime «Área total: 196.74 m²» — dato de la lámina, el área oficial sale de la lista de precios. DOS INGRESOS: el ASCENSOR abre DENTRO del departamento (vano sin puerta al HALL, con la flecha INGRESO impresa) y además hay un segundo ingreso por el RECIBO con puerta abatible — es ascensor directo, no lobby compartido. El tercer dormitorio va rotulado ESTAR (DORMITORIO 03) pero está dibujado como dormitorio completo: cama, closet, puerta y walking closet propio. El HALL - ESTAR lleva un sofá dibujado: es un segundo estar además de la sala-comedor. La COCINA es un cuarto propio de 3.70×2.10 con isla exenta y dos taburetes, encimera de 4 hornillas en el muro exterior, lavadero, R y H (horno); la separación con la sala-comedor NO es un vano libre: es un tabique fino de vidrio de todo el ancho (el mismo grafismo de doble línea con el que se dibujan las mamparas a la terraza), sin barrido de puerta — visualmente abierta, físicamente cerrada. La LAVANDERÍA (2.20×2.75) es un recinto propio con lavadero, L, S y tendal TH, pero está fuera del muro perimetral y con el mismo despiece de piso embaldosado que las terrazas: es un patio de lavado a la intemperie. El BAÑO DE SERVICIO (1.20×2.70) sí tiene ducha, pero NO hay dormitorio de servicio. Tres terrazas (la grande de 2.81 al frente de la sala, la del medio de 4.80 y la del dormitorio principal de 4.37) más jardineras con árboles dibujados en el borde — son jardineras, no jardín rotulado, por eso patio_jardin va en false. Entre los dos WCL hay un recuadro cruzado encerrado entre muros negros: es un ducto, no una ducha.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos con dos sofás, mesa de centro y mesa de 6",
-       "cocina en cuarto propio con isla exenta y 2 taburetes, 4 hornillas, lavadero, R y horno",
-       "hall - estar con sofá (segundo estar)",
-       "3 dormitorios con cama: 01 (principal), 02 y el rotulado ESTAR (DORMITORIO 03)",
-       "dos WCL: uno del dormitorio principal y otro del ESTAR (DORMITORIO 03)",
-       "baño 01 con ducha, en enfilada con el WCL del principal",
-       "baño 02 con ducha (2.30×1.63)",
-       "medio baño de visita junto al ascensor (1.30)",
-       "baño de servicio con ducha (1.20×2.70)",
-       "depósito (2.00)",
-       "lavandería-patio con lavadero, L, S y tendal, a la intemperie",
-       "3 terrazas embaldosadas con jardineras y árboles",
-       "recibo de ingreso + hall de distribución"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 001 - 3 dorm - 196.74 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 001 · Opción A",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion A - 3 dorm - 196.74 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "igual que el TIPO 001 base: los tres cuartos con cama, closet y puerta; ninguno amoblado como escritorio"
-      },
-      "observacion": "Variante A de la misma planta de 196.74 m² (mismo metraje impreso). El cambio está todo en la zona de dormitorios: aquí LOS TRES dormitorios tienen baño propio — BAÑO 02 (2.30×1.63) para el dormitorio 02, BAÑO 03 (3.25×1.25) para el ESTAR (DORMITORIO 03) y un BAÑO 01 nuevo de 2.60×1.40 con ducha, inodoro y lavatorio metido dentro de la terraza del dormitorio principal, dibujado con trama diagonal (la lámina no explica qué significa esa trama). Esa terraza del principal se achica de 4.37 a 2.87 por el baño nuevo. Se mantienen los dos WCL, el hall-estar con sofá, la cocina cerrada con isla y barra, la lavandería-patio a la intemperie y el ascensor abriendo dentro del departamento. El listado impreso declara: dormitorio principal con walking closet, dormitorio secundario 02 con baño integrado, dormitorio secundario 03 con walking closet y baño integrado, hall de estar, baño de visita, depósito, baño de servicio, sala comedor, cocina, lavandería y 3 terrazas.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos",
-       "cocina en cuarto propio con isla y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama, los tres con baño propio",
-       "dos WCL (principal y ESTAR/dormitorio 03)",
-       "baño 01 (2.60×1.40) con ducha, dentro de la terraza del principal, en trama diagonal",
-       "baño 02 (2.30×1.63) con ducha",
-       "baño 03 (3.25×1.25) con ducha",
-       "medio baño de visita",
-       "baño de servicio con ducha",
-       "depósito",
-       "lavandería-patio a la intemperie",
-       "3 terrazas (la del principal reducida a 2.87)"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion A - 3 dorm - 196.74 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 001 · Opción B",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion B - 3 dorm - 196.74 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "igual que el TIPO 001 base: los tres cuartos con cama, closet y puerta"
-      },
-      "observacion": "Variante B de la misma planta de 196.74 m², prácticamente idéntica a la Opción A: los tres dormitorios con baño propio, el baño del principal (2.60×1.40, con ducha) metido en la terraza y dibujado con trama diagonal, y la terraza del principal reducida a 2.87. La única diferencia real con la A son las medidas de los baños secundarios: acá el baño del dormitorio 02 mide 2.45×1.63 y el del ESTAR (DORMITORIO 03) mide 3.25×1.25. OJO: la lámina tiene una errata de rotulado — hay DOS ambientes rotulados «BAÑO 01» (el del ESTAR y el del dormitorio principal) y ningún «BAÑO 03». El listado impreso es idéntico al de la Opción A.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos",
-       "cocina en cuarto propio con isla y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama, los tres con baño propio",
-       "dos WCL",
-       "baño del principal (2.60×1.40) con ducha, en trama diagonal dentro de la terraza",
-       "baño 02 (2.45×1.63) con ducha",
-       "baño del ESTAR (3.25×1.25) con ducha, rotulado por error también BAÑO 01",
-       "medio baño de visita",
-       "baño de servicio con ducha",
-       "depósito",
-       "lavandería-patio a la intemperie",
-       "3 terrazas"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 001 opcion B - 3 dorm - 196.74 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "DÚPLEX 002",
-      "archivo": "assets/planos/monte-alegre-109-oficial/DÚPLEX 002 - 3 dorm - 158.89 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos del 2° nivel llevan cama, closet y puerta con barrido; dos de ellos van rotulados con otro nombre — ESTAR (DORMITORIO 02) y WCL (DORMITORIO 03) — pero están dibujados como dormitorios, no como escritorios"
-      },
-      "observacion": "Dúplex de dos láminas leídas como UNA unidad; la lámina imprime «Área total: 158.89 m²». EL DATO MÁS LLAMATIVO: de los tres dormitorios que vende, solo uno va rotulado DORMITORIO — los otros dos son «ESTAR (DORMITORIO 02)» de 3.28×2.62 y «WCL (DORMITORIO 03)» de 3.02×2.52, es decir un estar y un walking closet que la propia lámina reconoce entre paréntesis como dormitorios; los dos llevan cama, closet y puerta dibujados. La COCINA va rotulada KITCHENETTE y el dibujo le da la razón: es un nicho en L de 2.03×1.18 totalmente abierto al hall/sala, con encimera de 4 hornillas, lavadero, R y H, sin puerta ni muro y sin taburetes. El BAÑO DE SERVICIO (1.62×1.55) tiene lavadero, ducha e inodoro, pero NO hay dormitorio de servicio. La LAVANDERÍA (4.14×1.80) no es cuarto: es una franja de la terraza grande, embaldosada y a la intemperie, con TH, lavadero, L y S. Dos terrazas: la grande de 3.64×5.18 frente a la sala y otra chica de 2.06×3.69 con jardinera y dos árboles junto al depósito. NO hay ascensor dibujado dentro de la unidad: se entra por el RECIBO con puerta abatible. El listado impreso declara Piso 1: kitchenette, sala comedor, baño de visita, baño de servicio, depósito, lavandería, patio y terraza; Piso 2: dormitorio principal con walking closet y baño integrado, dormitorio secundario, tercer dormitorio y baño secundario.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": false,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "1er nivel: recibo, hall, sala-comedor con sofá y mesa de 6",
-       "1er nivel: kitchenette abierta en nicho de 2.03×1.18 con 4 hornillas, lavadero, R y H",
-       "1er nivel: medio baño de visita (2.17×0.95)",
-       "1er nivel: baño de servicio (1.62×1.55) con ducha",
-       "1er nivel: depósito de 2.56×1.96",
-       "1er nivel: terraza grande con lavandería a la intemperie (TH, lavadero, L y S) y terraza chica con jardinera",
-       "2° nivel: dormitorio 01 con WCL y baño 01 propio con ducha",
-       "2° nivel: ESTAR (DORMITORIO 02) con cama, closet y puerta",
-       "2° nivel: WCL (DORMITORIO 03) con cama, closet y puerta",
-       "2° nivel: baño 02 (2.93×1.30) con ducha",
-       "2° nivel: hall de distribución y escalera"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/DÚPLEX 002 - 3 dorm - 158.89 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "DÚPLEX 003",
-      "archivo": "assets/planos/monte-alegre-109-oficial/DÚPLEX 003 - 3 dorm - 143.70 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos del 2° nivel llevan cama, closet y puerta; dos van rotulados ESTAR (DORMITORIO 03) y WCL (DORMITORIO 02), pero el dibujo es de dormitorio, no de escritorio"
-      },
-      "observacion": "Dúplex leído como UNA unidad; la lámina imprime «Área total: 143.70 m²». Repite el patrón del 002: de tres dormitorios, dos van rotulados con otro nombre — «ESTAR (DORMITORIO 03)» de 2.55×2.63 y «WCL (DORMITORIO 02)» de 2.60×3.11 — y los dos llevan cama, closet y puerta. La cocina va rotulada KITCHENETTE y efectivamente es un nicho en L de 2.00×2.01 abierto a la sala-comedor, con 4 hornillas, lavadero, R y H/M, sin puerta y sin taburetes. BAÑO DE SERVICIO (1.95×1.29) con lavadero, ducha e inodoro; sin dormitorio de servicio. La LAVANDERÍA (4.14×1.80) es otra vez una franja embaldosada de la terraza, con TH, lavadero, L y S, a la intemperie. Dos terrazas: 3.64×3.75 con jardinera y árboles frente a la sala, y 2.10×3.61 junto al depósito. Sin ascensor dentro de la unidad: se entra por el RECIBO con puerta. El listado impreso es idéntico al del DÚPLEX 002.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": false,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "1er nivel: recibo, sala-comedor de 6.54×3.65 con dos sofás y mesa de 6",
-       "1er nivel: kitchenette abierta en nicho de 2.00×2.01 con 4 hornillas, lavadero, R y H/M",
-       "1er nivel: medio baño de visita (1.15×1.45)",
-       "1er nivel: baño de servicio (1.95×1.29) con ducha",
-       "1er nivel: depósito de 2.65×1.80",
-       "1er nivel: dos terrazas embaldosadas, una con jardinera y árboles; lavandería a la intemperie con TH, lavadero, L y S",
-       "2° nivel: dormitorio 01 (3.60×3.05) con WCL y baño 01 con ducha",
-       "2° nivel: WCL (DORMITORIO 02) con cama, closet y puerta",
-       "2° nivel: ESTAR (DORMITORIO 03) con cama, closet y puerta",
-       "2° nivel: baño 02 (2.55×1.40) con ducha"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/DÚPLEX 003 - 3 dorm - 143.70 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 101",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 101 - 3 dorm - 129.70 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama y closet — DORMITORIO 01, WCL (DORMITORIO 02) y ESTAR (DORMITORIO 03) —; el HALL - ESTAR está amoblado con un sofá, no con escritorio"
-      },
-      "observacion": "Flat de primer piso a NPT +1.50; la lámina imprime «Área total: 129.70 m²». ES LA ÚNICA TIPOLOGÍA DEL JUEGO SIN NINGÚN EXTERIOR: no dibuja terraza, ni balcón, ni patio — el listado impreso tampoco menciona ninguno. Dos ingresos: el ASCENSOR abre directo al PASADIZO del departamento (vano sin puerta, con flecha INGRESO) y hay un segundo ingreso por el RECIBO con puerta. Dos de los tres dormitorios van rotulados con otro nombre — WCL (DORMITORIO 02) de 2.80×2.99 y ESTAR (DORMITORIO 03) de 3.25×2.70 — pero los dos llevan cama, closet corrido y puerta. La COCINA (2.70×2.25) es cuarto propio con ISLA exenta y dos taburetes, encimera de 4 hornillas, lavadero, R y H/M; la separación con la sala-comedor es el mismo tabique fino de vidrio de todo el ancho que en el TIPO 001, sin puerta abatible dibujada. La LAVANDERÍA (1.80×2.71) sí es un cuarto propio techado, blanco y entre muros, con lavadero, L, S y tendal TH. BAÑO DE SERVICIO (1.10×2.31) con ducha, pero SIN dormitorio de servicio. Suma un DEPÓSITO de 1.80. El HALL - ESTAR (3.10×2.05) lleva sofá: es un segundo estar.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": false,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.20×3.70 con mesa de 6 y sofás",
-       "cocina en cuarto propio (2.70×2.25) con isla exenta y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama: 01, WCL (DORMITORIO 02) y ESTAR (DORMITORIO 03)",
-       "WCL del dormitorio principal, con dos tiras de colgadores",
-       "baño 01 (2.90×1.36) con ducha",
-       "baño 02 (1.45×2.60) con ducha",
-       "medio baño de visita (1.30×1.80)",
-       "baño de servicio (1.10×2.31) con ducha",
-       "lavandería en cuarto propio techado con lavadero, L, S y TH",
-       "depósito",
-       "recibo y pasadizo; el ascensor abre dentro"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 101 - 3 dorm - 129.70 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 102",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 102 - 3 dorm - 143.97 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama: DORMITORIO 01, WCL (DORMITORIO 02) y ESTAR (DORMITORIO 03); ningún ambiente está amoblado con escritorio"
-      },
-      "observacion": "Flat de primer piso a NPT +1.50; la lámina imprime «Área total: 143.97 m²». ES LA ÚNICA TIPOLOGÍA DE FLAT CON DORMITORIO DE SERVICIO: el listado impreso lo declara, pero en el dibujo ese cuarto (1.85×2.15) va rotulado DEPOSITO y dibujado con trama diagonal, con cama y closet adentro — el rótulo y el listado no coinciden. La zona de servicio es completa: dormitorio, BAÑO DE SERVICIO de 2.05×1.35 con lavadero, inodoro y ducha, y PATIO - LAVANDERÍA de 4.00×2.54 rotulado así de fábrica, embaldosado y a la intemperie, con TH, lavadero, L y S. La COCINA (3.38×2.21) es cuarto propio con ISLA exenta pero SIN taburetes, encimera de 4 hornillas, lavadero, R y H/M. Terraza chica de 1.54×1.70 pegada al patio. A diferencia del 101 y del 201, aquí el dormitorio principal NO tiene walking closet: solo closets de puerta en el muro, y el único ambiente rotulado WCL es en realidad el dormitorio 02. Dos ingresos: el ascensor abre al pasadizo del departamento y hay un segundo ingreso por el recibo.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": false,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor en L de 7.25×3.98",
-       "cocina en cuarto propio (3.38×2.21) con isla exenta, sin taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama: 01, WCL (DORMITORIO 02) y ESTAR (DORMITORIO 03)",
-       "baño 01 (3.70×1.30) con ducha, integrado al dormitorio principal",
-       "baño 02 (1.30×2.70) con ducha",
-       "medio baño de visita (1.50×1.80)",
-       "dormitorio de servicio con cama, rotulado DEPOSITO en la lámina",
-       "baño de servicio (2.05×1.35) con ducha",
-       "patio-lavandería embaldosado de 4.00×2.54 a la intemperie",
-       "terraza de 1.54×1.70",
-       "recibo, pasadizo y ascensor que abre dentro"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 102 - 3 dorm - 143.97 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 201 / 401",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 201 - 3 dorm - 136.22 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama y closet — DORMITORIO 01, DORMITORIO 02 y ESTAR (DORMITORIO 03) —; el HALL - ESTAR va con sofá, no con escritorio"
-      },
-      "observacion": "Las láminas TIPO 201 y TIPO 401 son el MISMO dibujo (comparación pixel a pixel: cero diferencias), así que se leen como una sola tipología repetida en dos pisos. La lámina imprime «Área total: 136.22 m²». Es el TIPO 101 con exterior: agrega DOS TERRAZAS angostas de 1.10 de fondo (3.19 y 1.82 de largo) al frente de la sala y de la cocina. COCINA (2.70×2.13) en cuarto propio con isla exenta y dos taburetes; la separación con la sala-comedor es un tabique fino de vidrio de todo el ancho, sin puerta abatible. LAVANDERÍA (1.80×2.70) en cuarto propio techado con lavadero, L, S y TH. BAÑO DE SERVICIO (1.10×2.30) con ducha, sin dormitorio de servicio. Depósito de 1.80. El ascensor abre DENTRO del departamento (vano al pasadizo con flecha INGRESO) y hay un segundo ingreso por el recibo. El tercer dormitorio va rotulado ESTAR (DORMITORIO 03) con cama y closet dibujados.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.25×3.70",
-       "cocina en cuarto propio con isla exenta y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama: 01, 02 y ESTAR (DORMITORIO 03)",
-       "WCL del dormitorio principal",
-       "baño 01 (2.90×1.36) con ducha",
-       "baño 02 (1.45×2.60) con ducha",
-       "medio baño de visita (1.30×1.50)",
-       "baño de servicio (1.10×2.30) con ducha",
-       "lavandería en cuarto propio techado",
-       "depósito",
-       "2 terrazas de 1.10 de fondo"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 201 - 3 dorm - 136.22 m2.jpg",
-       "assets/planos/monte-alegre-109-oficial/TIPO 401 - 3 dorm - 136.22 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 202 / 402",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 202 - 3 dorm - 152.17 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama, closet y baño propio; el HALL - ESTAR va con sofá y no hay ningún escritorio dibujado"
-      },
-      "observacion": "Las láminas TIPO 202 y TIPO 402 son el MISMO dibujo (cero diferencias pixel a pixel): una sola tipología en dos pisos. La lámina imprime «Área total: 152.17 m²». LOS TRES DORMITORIOS TIENEN BAÑO PROPIO — baño 01 (3.70×1.30), baño 02 (1.30×2.65) y baño 03 (2.70×1.35), los tres con ducha —, más medio baño de visita y baño de servicio con ducha: cinco piezas sanitarias en 152 m². A cambio, NINGÚN dormitorio tiene walking closet: solo closets de puerta contra el muro. Acá la COCINA (2.80×2.85) SÍ está abierta de verdad a la sala-comedor — el muro se corta y no hay tabique de vidrio —, con isla exenta, dos taburetes, 4 hornillas, lavadero, R y H/M. LAVANDERÍA (1.80×3.44) en cuarto propio techado con lavadero, L, S y TH; DEPÓSITO de 2.00×2.10; BAÑO DE SERVICIO de 1.35×2.00 con ducha, sin dormitorio de servicio. Dos terrazas de 1.10 de fondo (2.12 y 3.19). El ascensor abre dentro del departamento y hay un segundo ingreso por el recibo. El tercer dormitorio va rotulado ESTAR (DORMITORIO 03).",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": false,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.25×3.85",
-       "cocina abierta a la sala con isla exenta y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama, los tres con baño propio con ducha",
-       "medio baño de visita (1.50×1.80)",
-       "baño de servicio (1.35×2.00) con ducha",
-       "lavandería en cuarto propio techado (1.80×3.44)",
-       "depósito de 2.00×2.10",
-       "2 terrazas de 1.10 de fondo"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 202 - 3 dorm - 152.17 m2.jpg",
-       "assets/planos/monte-alegre-109-oficial/TIPO 402 - 3 dorm - 152.17 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 301 / 501",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 301 - 3 dorm - 134.25 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama y closet; el HALL - ESTAR va con sofá y no hay escritorio dibujado"
-      },
-      "observacion": "Las láminas TIPO 301 y TIPO 501 son el mismo dibujo (la comparación pixel a pixel solo encuentra 33 píxeles distintos, un retoque de cota): una sola tipología en dos pisos. La lámina imprime «Área total: 134.25 m²». Es exactamente el TIPO 201 pero con UNA sola terraza (1.10×3.19) en vez de dos. Todo lo demás coincide: cocina en cuarto propio con isla y 2 taburetes separada de la sala por un tabique fino de vidrio, lavandería en cuarto propio techado (1.80×2.70), baño de servicio de 1.10×2.30 con ducha y sin dormitorio de servicio, depósito, dormitorio principal con WCL y baño 01 con ducha, baño 02 con ducha, medio baño de visita, tercer dormitorio rotulado ESTAR (DORMITORIO 03) y ascensor que abre dentro del departamento.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.25×3.70",
-       "cocina en cuarto propio con isla exenta y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama: 01, 02 y ESTAR (DORMITORIO 03)",
-       "WCL del dormitorio principal",
-       "baño 01 y baño 02, los dos con ducha",
-       "medio baño de visita",
-       "baño de servicio con ducha",
-       "lavandería en cuarto propio techado",
-       "depósito",
-       "1 terraza de 1.10×3.19"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 301 - 3 dorm - 134.25 m2.jpg",
-       "assets/planos/monte-alegre-109-oficial/TIPO 501 - 3 dorm - 134.25 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO 302 / 502",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO 302 - 3 dorm - 149.73 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama, closet y baño propio; ningún ambiente lleva escritorio"
-      },
-      "observacion": "Las láminas TIPO 302 y TIPO 502 son el mismo dibujo (41 píxeles de diferencia, un retoque de cota): una sola tipología en dos pisos. La lámina imprime «Área total: 149.73 m²». Es el TIPO 202 con UNA sola terraza (1.10×3.19) en vez de dos: los tres dormitorios con baño propio con ducha, ninguno con walking closet, cocina abierta de verdad a la sala-comedor con isla y 2 taburetes, lavandería en cuarto propio techado de 1.80×3.44, depósito de 2.00×2.10, baño de servicio de 1.35×2.00 con ducha, medio baño de visita y ascensor que abre dentro del departamento. OJO CON EL BROCHURE: la página siguiente del PDF oficial (p. 38 de monte-alegre-brochure.pdf) repite este mismo dibujo sin título, sin metraje y sin listado — es una lámina duplicada por error de armado, y no corresponde a ninguna tipología adicional.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": false,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.25×3.85",
-       "cocina abierta a la sala con isla exenta y 2 taburetes",
-       "hall - estar con sofá",
-       "3 dormitorios con cama, los tres con baño propio con ducha",
-       "medio baño de visita",
-       "baño de servicio con ducha",
-       "lavandería en cuarto propio techado",
-       "depósito",
-       "1 terraza de 1.10×3.19"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO 302 - 3 dorm - 149.73 m2.jpg",
-       "assets/planos/monte-alegre-109-oficial/TIPO 502 - 3 dorm - 149.73 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "DÚPLEX 601",
-      "archivo": "assets/planos/monte-alegre-109-oficial/DÚPLEX 601 - 4 dorm - 280.63 m2.jpg",
-      "dorm_declarados": 4,
-      "dorm_reales": 4,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los cuatro cuartos van con cama y closet dibujados; ningún ambiente lleva escritorio; el único ambiente extra es el ESTAR de 3.25×2.65 del nivel de dormitorios, amoblado con sofá y mesa de centro"
-      },
-      "observacion": "Dúplex de azotea leído como UNA unidad; la lámina imprime «Área total: 280.63 m²». Planta invertida: los CUATRO DORMITORIOS van abajo (NPT +14.00) y la zona social arriba (NPT +16.50) — la lámina rotula por error «DUPLEX 1° NIVEL» en las dos plantas. Los cuatro dormitorios van rotulados DORMITORIO y los cuatro tienen baño propio: baño 01 (4.25×1.30, con dos lavatorios), baño 02 (3.75×1.20), baño 03 (2.90×1.36) y baño 04 (1.73×2.20); sumando el baño de servicio son 5 baños completos más el medio baño de visita del nivel social. Tres walking closets dibujados (dormitorio 01, dormitorio 03 y uno extra junto al ascensor, que la lámina lista aparte como «Walking closet»). ESTAR propio de 3.25×2.65 en el nivel de dormitorios, además de la sala-comedor de arriba. LA ÚNICA COCINA CERRADA CON PUERTA DE TODO EL PROYECTO: cuarto de 2.60×3.88 con puerta abatible dibujada, isla exenta grande, encimera de 5 hornillas, lavadero, R y H/M; sin taburetes. Zona de servicio completa: DORMITORIO DE SERVICIO (2.00×2.07, con cama) y BAÑO DE SERVICIO con ducha, los dos dibujados con trama diagonal. LAVANDERÍA (2.35×2.06) sin muros propios, sobre la terraza embaldosada, a la intemperie. Tres terrazas (1.10×5.81 en el nivel de dormitorios; 3.50×6.30 con jardineras y árboles y 5.48×3.35 en el nivel social). El ASCENSOR está dibujado dentro del departamento en los DOS niveles, con flecha INGRESO en cada uno.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": false,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 5,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "nivel dormitorios (+14.00): 4 dormitorios con cama, cada uno con baño propio",
-       "nivel dormitorios: WCL del dormitorio 01, WCL del dormitorio 03 y un walking closet extra junto al ascensor",
-       "nivel dormitorios: estar de 3.25×2.65 con sofá",
-       "nivel dormitorios: terraza de 1.10×5.81",
-       "nivel social (+16.50): sala-comedor de 4.41×6.70",
-       "nivel social: cocina cerrada con puerta, isla exenta y 5 hornillas",
-       "nivel social: medio baño de visita",
-       "nivel social: dormitorio de servicio con cama y baño de servicio con ducha (en trama diagonal)",
-       "nivel social: lavandería a la intemperie sobre la terraza, con lavadero, L y S",
-       "nivel social: dos terrazas, una con jardinera y árboles"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/DÚPLEX 601 - 4 dorm - 280.63 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "DÚPLEX 602",
-      "archivo": "assets/planos/monte-alegre-109-oficial/DÚPLEX 602 - 4 dorm - 306.77 m2.jpg",
-      "dorm_declarados": 4,
-      "dorm_reales": 4,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los cuatro cuartos van con cama y closet dibujados; ningún ambiente lleva escritorio; el ambiente extra es el ESTAR de 4.62×2.87 del nivel de dormitorios, amoblado con sofás"
-      },
-      "observacion": "El departamento más grande del proyecto; la lámina imprime «Área total: 306.77 m²». Misma lógica que el 601: cuatro dormitorios abajo (NPT +14.00) y zona social arriba (NPT +16.50). Los cuatro dormitorios van rotulados DORMITORIO y los cuatro tienen baño propio — baño 01 (3.93×1.50), baño 02 (2.55×2.19), baño 03 (3.60×1.30) y baño 04 (1.40×2.70) —, que con el baño de servicio suman 5 completos, más el medio baño de visita. El dormitorio principal tiene además terraza propia (1.10×6.21) y el dormitorio 04 tiene walking closet. ESTAR propio de 4.62×2.87 en el nivel de dormitorios. Arriba: sala-comedor de 4.46×7.56, COCINA con isla exenta y encimera de 4 hornillas, DORMITORIO DE SERVICIO y BAÑO DE SERVICIO dibujados con trama diagonal, LAVANDERÍA de 3.78×1.81 sobre la terraza embaldosada (a la intemperie, con TH, lavadero, L y S) y DOS TERRAZAS grandes (3.50×6.50 con jardineras y árboles, y 4.93×3.73). Detalle poco común: el pasadizo del nivel social lleva una JARDINERA CON ÁRBOLES DIBUJADA POR DENTRO del departamento. El ascensor aparece dentro de la unidad en los dos niveles, con flecha INGRESO.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": false,
-       "lavanderia_recinto_propio": false,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 5,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "nivel dormitorios (+14.00): 4 dormitorios con cama, cada uno con baño propio",
-       "nivel dormitorios: dormitorio 01 con terraza propia de 1.10×6.21; dormitorio 04 con WCL",
-       "nivel dormitorios: estar de 4.62×2.87 y hall de distribución",
-       "nivel social (+16.50): sala-comedor de 4.46×7.56",
-       "nivel social: cocina con isla exenta y 4 hornillas",
-       "nivel social: medio baño de visita (1.50)",
-       "nivel social: dormitorio de servicio y baño de servicio con ducha (en trama diagonal)",
-       "nivel social: lavandería a la intemperie de 3.78×1.81 con TH, lavadero, L y S",
-       "nivel social: dos terrazas grandes, una con jardineras y árboles",
-       "nivel social: jardinera con árboles dibujada dentro del pasadizo"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/DÚPLEX 602 - 4 dorm - 306.77 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "DÚPLEX 603",
-      "archivo": "assets/planos/monte-alegre-109-oficial/DÚPLEX 603 - 4 dorm - 229.29 m2.jpg",
-      "dorm_declarados": 4,
-      "dorm_reales": 4,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los cuatro cuartos van con cama y closet dibujados; ningún ambiente lleva escritorio; el ambiente extra es el ESTAR del nivel de dormitorios, con sofá y mesa de centro"
-      },
-      "observacion": "Dúplex de azotea leído como UNA unidad; la lámina imprime «Área total: 229.29 m²». Cuatro dormitorios abajo y zona social arriba, igual que el 601 y el 602, pero con menos baños: solo el dormitorio 01 (con WCL) y el dormitorio 02 tienen baño integrado — baño 01 (1.37×3.61) y baño 02 (1.85×2.35) —, y los dormitorios 03 y 04 comparten el BAÑO 03 (1.60×2.20), que el listado llama «baño común». Con el baño de servicio suman 4 completos más el medio baño de visita. LA COCINA ES LA MÁS CHICA DE LOS TRES DÚPLEX DE AZOTEA: cuarto cerrado con puerta de 3.17×1.88, sin isla, con 4 hornillas, lavadero, R y H/M. Al lado, una zona de comedor con mesa de 6 dibujada dentro de una trama diagonal de 3.88×3.07 (la lámina no explica la trama). LAVANDERÍA (3.37×3.51) sí es un recinto propio blanco entre muros, con TH, lavadero, L y S. DORMITORIO DE SERVICIO (1.77×2.16, con cama) y BAÑO DE SERVICIO (1.50×2.15, con ducha), los dos en trama diagonal — y OJO: el listado impreso de la Planta 2 menciona el baño de servicio pero NO menciona el dormitorio de servicio, que sí está dibujado y rotulado. Una terraza grande de 4.28×5.23 con jardinera y árboles. El ascensor aparece dentro de la unidad en los dos niveles.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "nivel dormitorios: 4 dormitorios con cama; el 01 con WCL y baño integrado, el 02 con baño integrado",
-       "nivel dormitorios: baño 03 común para los dormitorios 03 y 04",
-       "nivel dormitorios: estar con sofá, recibo, pasadizo y un WCL extra",
-       "nivel social: sala-comedor de 4.28×5.09",
-       "nivel social: cocina cerrada con puerta de 3.17×1.88, sin isla",
-       "nivel social: comedor con mesa de 6 dentro de una zona en trama diagonal de 3.88×3.07",
-       "nivel social: medio baño de visita (1.35×1.75)",
-       "nivel social: dormitorio de servicio con cama y baño de servicio con ducha (en trama diagonal)",
-       "nivel social: lavandería en recinto propio techado de 3.37×3.51",
-       "nivel social: terraza de 4.28×5.23 con jardinera y árboles"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/DÚPLEX 603 - 4 dorm - 229.29 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO X03",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO X03 - 3 dorm - 118.06 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama y closet — DORMITORIO 01, DORMITORIO 02 y ESTAR (DORMITORIO 03) —; el HALL lleva un sofá, no un escritorio"
-      },
-      "observacion": "La tipología más chica del proyecto; la lámina imprime «Área total: 118.06 m²». Es la planta que se repite del piso 2 al 5 (de ahí la X del código) y viene en tres variantes: X03, X03A y X03B. En esta versión base la cocina va rotulada KITCHENETTE y el dibujo confirma que es un nicho abierto a la sala-comedor de 2.00×1.37, con encimera de 4 hornillas, lavadero, R y una península con dos taburetes. CONTRADICCIÓN DE LA PROPIA LÁMINA: el listado impreso declara «Dormitorio de servicio», pero el cuarto correspondiente (1.90×2.17) va rotulado DEPOSITO en el plano y NO tiene cama dibujada — por eso la casilla de cuarto de servicio va en false. Sí hay BAÑO DE SERVICIO (1.13×2.28) con ducha y LAVANDERÍA (1.80×2.17) en recinto propio techado con L/S y tendal TH. El dormitorio principal (4.28×2.90) tiene WCL y baño 01 con ducha; el baño 02 (3.37×1.30) también con ducha; medio baño de visita de 1.35×1.60. Una sola terraza de 1.10×2.50. El ascensor abre dentro del departamento, al RECIBO.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.60 con dos sofás y mesa de 6",
-       "kitchenette abierta de 2.00×1.37 con 4 hornillas, lavadero, R y península con 2 taburetes",
-       "hall con sofá (segundo estar)",
-       "3 dormitorios con cama: 01, 02 y ESTAR (DORMITORIO 03)",
-       "WCL del dormitorio principal",
-       "baño 01 (1.70×2.21) con ducha",
-       "baño 02 (3.37×1.30) con ducha",
-       "medio baño de visita (1.35×1.60)",
-       "baño de servicio (1.13×2.28) con ducha",
-       "depósito de 1.90×2.17 (el listado lo llama dormitorio de servicio, pero no tiene cama dibujada)",
-       "lavandería en recinto propio techado (1.80×2.17)",
-       "terraza de 1.10×2.50",
-       "recibo con el ascensor abriendo dentro"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO X03 - 3 dorm - 118.06 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO X03A",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO X03A - 3 dorm - 118.06 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama y closet; el HALL lleva sofá, no escritorio"
-      },
-      "observacion": "Variante A de la planta de 118.06 m² (mismo metraje impreso). Cambia solo la esquina de servicio: desaparece el depósito/«dormitorio de servicio» y en su lugar aparece una DESPENSA de cocina, y la KITCHENETTE crece de 2.00 a 3.28 de largo, con península de tres taburetes, encimera de 4 hornillas, lavadero, R y H/M — sigue siendo un nicho abierto a la sala-comedor. Se mantienen el BAÑO DE SERVICIO (1.25×2.28, con ducha) y la LAVANDERÍA (1.80×2.17) en recinto propio techado. Toda la zona de dormitorios es idéntica a la del X03: dormitorio 01 con WCL y baño propio, dormitorio 02, ESTAR (DORMITORIO 03), baño 02 y medio baño de visita. Es la única de las tres variantes con despensa. El listado impreso NO menciona la despensa ni ningún dormitorio de servicio.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": true,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.60",
-       "kitchenette abierta de 3.28×1.68 con península de 3 taburetes, 4 hornillas, lavadero, R y H/M",
-       "despensa de cocina",
-       "hall con sofá",
-       "3 dormitorios con cama: 01, 02 y ESTAR (DORMITORIO 03)",
-       "WCL del dormitorio principal",
-       "baño 01 y baño 02, los dos con ducha",
-       "medio baño de visita",
-       "baño de servicio (1.25×2.28) con ducha",
-       "lavandería en recinto propio techado",
-       "terraza de 1.10×2.50"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO X03A - 3 dorm - 118.06 m2.jpg"
-      ]
-     },
-     {
-      "unidad": "TIPO X03B",
-      "archivo": "assets/planos/monte-alegre-109-oficial/TIPO X03B - 3 dorm - 118.06 m2.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos llevan cama y closet; el HALL lleva sofá, no escritorio"
-      },
-      "observacion": "Variante B de la planta de 118.06 m². Acá la esquina de servicio se simplifica del todo: NO HAY BAÑO DE SERVICIO — la lámina no lo dibuja y el listado impreso tampoco lo menciona —, en su lugar hay un DEPÓSITO de 1.88×2.48 sin cama y una LAVANDERÍA más grande (1.80×2.37) en recinto propio techado, con L/S y tendal. La KITCHENETTE (2.65×1.37) sigue siendo un nicho abierto a la sala-comedor, con península de dos taburetes, 4 hornillas, lavadero, R y H/M. Es la única tipología de todo el proyecto sin baño de servicio: quedan dos baños completos (el del principal y el baño 02) más el medio baño de visita. La zona de dormitorios es idéntica a la del X03.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": false,
-       "bano_servicio_ducha": false,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 2,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala-comedor de 7.60",
-       "kitchenette abierta de 2.65×1.37 con península de 2 taburetes, 4 hornillas, lavadero, R y H/M",
-       "hall con sofá",
-       "3 dormitorios con cama: 01, 02 y ESTAR (DORMITORIO 03)",
-       "WCL del dormitorio principal",
-       "baño 01 (con ducha) y baño 02 (con ducha)",
-       "medio baño de visita",
-       "depósito de 1.88×2.48, sin cama",
-       "lavandería en recinto propio techado (1.80×2.37)",
-       "terraza de 1.10×2.50",
-       "sin baño de servicio"
-      ],
-      "archivos": [
-       "assets/planos/monte-alegre-109-oficial/TIPO X03B - 3 dorm - 118.06 m2.jpg"
-      ]
-     }
-    ]
-   },
-   "coherencia_alerta": "Publica un rango de 115 a 276 m² y sus propias láminas imprimen de 118.06 a 306.77. Ni el mínimo ni el máximo publicados aparecen en ningún plano."
-  },
-  {
    "id": "monte-carmelo-250",
    "name": "Monte Carmelo 250",
    "dev": "Edifikarte",
@@ -12416,7 +11241,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 220676,
      "m2_equivalente": 102.72,
-     "precio_m2_equiv": 2148
+     "precio_m2_equiv": 2148,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 220676,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "102",
@@ -12432,7 +11260,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 235647,
      "m2_equivalente": 100.18,
-     "precio_m2_equiv": 2352
+     "precio_m2_equiv": 2352,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 235647,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "SS03",
@@ -12448,7 +11279,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 235000,
      "m2_equivalente": 132.6,
-     "precio_m2_equiv": 1772
+     "precio_m2_equiv": 1772,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 235000,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "Tríplex 404",
@@ -12464,7 +11298,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 232147,
      "m2_equivalente": 120.04,
-     "precio_m2_equiv": 1934
+     "precio_m2_equiv": 1934,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 232147,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "201 / 301 / 401",
@@ -12480,7 +11317,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 247971,
      "m2_equivalente": 108.03,
-     "precio_m2_equiv": 2295
+     "precio_m2_equiv": 2295,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 247971,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "101",
@@ -12496,7 +11336,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 248206,
      "m2_equivalente": 108.13,
-     "precio_m2_equiv": 2295
+     "precio_m2_equiv": 2295,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 248206,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "203 / 303 / 403",
@@ -12512,7 +11355,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 249029,
      "m2_equivalente": 108.5,
-     "precio_m2_equiv": 2295
+     "precio_m2_equiv": 2295,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 249029,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "202 / 302 / 402",
@@ -12528,7 +11374,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 254059,
      "m2_equivalente": 108.0,
-     "precio_m2_equiv": 2352
+     "precio_m2_equiv": 2352,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 254059,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "SS01",
@@ -12544,7 +11393,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 288941,
      "m2_equivalente": 142.46,
-     "precio_m2_equiv": 2028
+     "precio_m2_equiv": 2028,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 288941,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "Dúplex 501 · penthouse",
@@ -12560,7 +11412,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 352265,
      "m2_equivalente": 174.04,
-     "precio_m2_equiv": 2024
+     "precio_m2_equiv": 2024,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 352265,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     },
     {
      "unidad": "Dúplex 503 · penthouse",
@@ -12576,7 +11431,10 @@ window.PORTAL_DATA = {
      "depositos_incluidos": 0,
      "precio_lista_todo": 352794,
      "m2_equivalente": 174.29,
-     "precio_m2_equiv": 2024
+     "precio_m2_equiv": 2024,
+     "ajuste_cochera_usd": 0,
+     "precio_lista_usd": 352794,
+     "nota": "El precio de Nexo es del departamento solo — Isaac Villar (Balance) lo confirmó el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 aparte."
     }
    ],
    "flats_summary": [
@@ -12586,9 +11444,8 @@ window.PORTAL_DATA = {
      "m2": 108.02,
      "precio_usd": 247971,
      "precio_m2": 2296,
-     "comparable_confirmado": false,
-     "nota": "Ficha de Nexo al 25-ago-2026: S/843 100 por 108.02 m² en pisos 2 al 4.",
-     "motivo_no_comparable": "No sabemos si el precio incluye estacionamiento; sin eso no se puede comparar contra el resto."
+     "comparable_confirmado": true,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/843 100 por 108.02 m² en pisos 2 al 4. · Confirmado el 3-sep-2026 por Isaac Villar (Balance): el precio de Nexo no incluye estacionamiento, así que compara directo. Cochera simple S/55,000, doble lineal S/82,000."
     },
     {
      "unidad": "203 / 303 / 403",
@@ -12596,9 +11453,8 @@ window.PORTAL_DATA = {
      "m2": 108.49,
      "precio_usd": 249029,
      "precio_m2": 2295,
-     "comparable_confirmado": false,
-     "nota": "Ficha de Nexo al 25-ago-2026: S/846 700 por 108.49 m² en pisos 2 al 4.",
-     "motivo_no_comparable": "No sabemos si el precio incluye estacionamiento; sin eso no se puede comparar contra el resto."
+     "comparable_confirmado": true,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/846 700 por 108.49 m² en pisos 2 al 4. · Confirmado el 3-sep-2026 por Isaac Villar (Balance): el precio de Nexo no incluye estacionamiento, así que compara directo. Cochera simple S/55,000, doble lineal S/82,000."
     },
     {
      "unidad": "202 / 302 / 402",
@@ -12606,9 +11462,8 @@ window.PORTAL_DATA = {
      "m2": 108.0,
      "precio_usd": 254059,
      "precio_m2": 2352,
-     "comparable_confirmado": false,
-     "nota": "Ficha de Nexo al 25-ago-2026: S/863 800 por 108.0 m² en pisos 2 al 4.",
-     "motivo_no_comparable": "No sabemos si el precio incluye estacionamiento; sin eso no se puede comparar contra el resto."
+     "comparable_confirmado": true,
+     "nota": "Ficha de Nexo al 25-ago-2026: S/863 800 por 108.0 m² en pisos 2 al 4. · Confirmado el 3-sep-2026 por Isaac Villar (Balance): el precio de Nexo no incluye estacionamiento, así que compara directo. Cochera simple S/55,000, doble lineal S/82,000."
     }
    ],
    "dorms_disponibles": [
@@ -12639,8 +11494,8 @@ window.PORTAL_DATA = {
    },
    "anuncios": null,
    "mostrar": true,
-   "cochera_status": "nd",
-   "cochera_nota": "Sin confirmar. Revisamos su web, la ficha de Nexo, el brochure de agosto y la planera de 42 páginas: ninguno dice si el precio incluye estacionamiento, ni publica el precio de la cochera. Lo que sí sabemos por sus planos es que tienen 34 estacionamientos en dos sótanos (21 en el Sótano 01 y 13 en el Sótano 02) para 20 departamentos — sobran 14, lo que hace pensar que se venden aparte, pero es una inferencia, no un dato confirmado.",
+   "cochera_status": "no",
+   "cochera_nota": "Confirmado por Isaac Villar (Balance) el 3-sep-2026: «Los precios que figuran en Nexo son sin estacionamiento». Cochera simple S/55,000 y doble lineal S/82,000. El precio publicado es del departamento solo, así que compara directo contra el nuestro.",
    "gallery": [
     "assets/img-f1/monte-carmelo-551/img-01.jpg",
     "assets/img-f1/monte-carmelo-551/img-02.jpg",
@@ -12739,10 +11594,7 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-25",
     "nota": "Campaña recibida hoy por el canal de Nexo Inmobiliario con descuentos de hasta S/25,000, más su ficha de Nexo con el inventario unidad por unidad y su web con los planos."
    },
-   "precio_fuente": {
-    "tipo": "portal",
-    "nota": "Ficha de Nexo Inmobiliario al 25-ago-2026 con el precio de cada unidad en soles; contrastada con la web de Balance y con los planos oficiales que declaran las áreas."
-   },
+   "precio_fuente": "Chat real de WhatsApp con el asesor +51 993 510 957, 3-sep-2026 (precio de Nexo confirmado como neto)",
    "stock_hist": [
     {
      "corte": "2026-08-31",
@@ -12764,15 +11616,15 @@ window.PORTAL_DATA = {
    "trayectoria_dev": "Balance declara más de 10 años y «más de 500 hogares». Entregados: Toulouse, Adela, Calle 9, Los Cisnes, Ordóñez y Euler (2016–2023). En venta hoy: Hercelles, Guisse y Monte Carmelo 551 (2025–2026). Fuente: línea de tiempo «Nuestra Historia» del brochure de agosto-2026.",
    "nota_areas": "Ojo al comparar: el brochure dice «desde 80 m²» (área techada del dúplex de semisótano) mientras Nexo publica el mismo depa como 132.60 m² totales. Nuestro $/m² usa el área total, igual que con el resto del cuadrante.",
    "promo": {
-    "tipo": "Descuento en precio",
-    "que": "Hasta S/25,000 de descuento + un regalo especial",
-    "valor_usd": 7353,
-    "valor_txt": "S/25,000 ≈ US$7,353",
-    "pct_txt": "3% sobre su flat típico de 108 m²",
-    "desde": "2026-08-25",
-    "cond": "Unidades seleccionadas · aplican términos y condiciones",
-    "canal": "Canal de WhatsApp de Nexo Inmobiliario",
-    "fuente": "Campaña recibida el 25-ago-2026 + ficha de Nexo"
+    "tipo": "Descuento negociable",
+    "que": "Ajuste de precio según aprobación bancaria o forma de pago",
+    "valor_usd": null,
+    "valor_txt": "sin monto declarado",
+    "pct_txt": null,
+    "desde": "2026-09-03",
+    "cond": "El asesor lo ofrece de entrada, sin que se lo pidan.",
+    "canal": "WhatsApp del proyecto",
+    "fuente": "Chat real de WhatsApp con el asesor Isaac Villar (Balance), 3-sep-2026: «Dependiendo si ya cuentas con aprobación ó tu tipo de compra podemos hacer ajustes en los precios de los dptos»"
    },
    "planos_analisis": {
     "fecha": null,
@@ -13411,7 +12263,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 993 510 957 (Monte Carmelo 551), 3-sep-2026"
   },
   {
    "id": "monte-mar-167",
@@ -14298,33 +13151,40 @@ window.PORTAL_DATA = {
      "unidad": "203",
      "dorm": 2,
      "m2": 86.95,
-     "precio_usd": 211176,
-     "precio_m2": 2429,
+     "precio_usd": 213176,
+     "precio_m2": 2452,
      "tipo": "flat",
      "piso": "2",
      "flat": true,
-     "estac_incluidos": 0,
-     "depositos_incluidos": 0,
-     "precio_lista_todo": 211176,
-     "m2_equivalente": 86.95,
-     "precio_m2_equiv": 2429
+     "estac_incluidos": 2,
+     "depositos_incluidos": 1,
+     "precio_lista_todo": 241176,
+     "m2_equivalente": 124.95,
+     "precio_m2_equiv": 1930,
+     "precio_soles": 820000,
+     "precio_lista_usd": 241176,
+     "ajuste_cochera_usd": 28000,
+     "nota": "Jenny Miranda (Edifikarte) el 17-jun y el 1-jul-2026: «S/820,000 incluye 2 estacionamientos lineales y deposito». Son DOS, no uno. El US$/m² descuenta US$28,000 por el par lineal según la convención del benchmark; el depósito no se descuenta. Es el último de 2 dorm y está separado con la minuta en stand by."
     }
    ],
    "flats_summary": [
     {
+     "unidad": "203",
      "dorm": 2,
      "m2": 86.95,
-     "precio_usd": 211176,
-     "precio_m2": 2429,
-     "comparable_confirmado": false,
-     "motivo_no_comparable": "El precio viene de un cartel de obra; no dice nada sobre estacionamiento."
+     "precio_usd": 213176,
+     "precio_m2": 2452,
+     "comparable_confirmado": true,
+     "precio_lista_usd": 241176,
+     "ajuste_cochera_usd": 28000,
+     "nota": "El precio incluye DOS estacionamientos lineales y un depósito, confirmado por Jenny Miranda. Se descuenta US$28,000 por el par lineal: US$241,176 − US$28,000 = US$213,176 neto de cochera sobre 86.95 m². El depósito no se descuenta, por eso el equivalente le suma sus 6 m²."
     }
    ],
    "dorms_disponibles": [
     2,
     3
    ],
-   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia.",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia. · Jenny Miranda el 13-ago-2026: el flat de 87 m² «Aun esta disponible, esta separado sin embargo aun esta en stand by la firma de la minuta», y es el único de 2 dorm que les queda; de 3 dorm solo tienen dúplex en Conde de la Vega 251. Su cartel de obra dice «ÚLTIMOS DEPARTAMENTOS · Flats desde 87m²-135m² / Dúplex desde 175m²».",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -14338,10 +13198,10 @@ window.PORTAL_DATA = {
    },
    "anuncios": null,
    "mostrar": true,
-   "cochera_status": "nd",
+   "cochera_status": "si",
    "stock": {
     "n": 1,
-    "label": "Último depa · 2 dorm 86 m²"
+    "label": "Último de 2 dorm · separado, minuta en stand by"
    },
    "verif_web": {
     "precio_portal": "conflicto: S/780,000 vs S/1,100,000",
@@ -14383,6 +13243,13 @@ window.PORTAL_DATA = {
      "url": "https://www.edifikarte.com.pe/wp-content/uploads/2023/10/Brochure-Monte-Mayor-177.pdf",
      "fecha": "2023-10",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Plano de planta del DPTO 203 (2 dorm) · PDF de Edifikarte",
+     "archivo": "assets/brochures/monte-mayor-177-dpto203-plano.pdf",
+     "url": null,
+     "fecha": "2026-07-01",
+     "tipo": "plano"
     }
    ],
    "contactos": [
@@ -14402,10 +13269,7 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-22",
     "nota": "Cartel «ÚLTIMO DEPA · 2 dorms 86 m²» en la reja; edificio entregado desde ago-2024."
    },
-   "precio_fuente": {
-    "tipo": "campo",
-    "nota": "Cartel «ÚLTIMO DEPA · 2 dorms 86 m²» en la reja, fotografiado el 22-ago-2026, más la ficha de Edifikarte."
-   },
+   "precio_fuente": "Chat real de WhatsApp con el asesor Jenny Miranda +51 981 386 111, 17-jun y 1-jul-2026",
    "ventas": {
     "vendidas": null,
     "total": null,
@@ -14421,7 +13285,7 @@ window.PORTAL_DATA = {
      "total": null
     }
    ],
-   "cochera_nota": "Sin confirmar. El precio sale de un cartel en la reja («ÚLTIMO DEPA · 2 dorms 86 m²», foto del 22-ago-2026) y de la ficha de Edifikarte: ninguno menciona estacionamiento.",
+   "cochera_nota": "Confirmado por Jenny Miranda (Edifikarte) el 17-jun y repetido el 1-jul-2026: el último flat de 87 m² y 2 dorm en piso 2 está en «S/820,000 incluye 2 estacionamientos lineales y deposito». Son DOS estacionamientos, no uno — al netear hay que descontar los dos.",
    "politica_precio": "No hay ningún dato sobre si el precio incluye estacionamiento. Su US$/m² queda marcado como no comparable.",
    "planos_analisis": {
     "fecha": null,
@@ -14654,7 +13518,11 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 981 386 111, 17-jun y 1-jul-2026",
+   "gallery": [
+    "assets/chats/monte-mayor-177-fachada.jpg"
+   ]
   },
   {
    "id": "monte-mayor-183",
@@ -15658,7 +14526,11 @@ window.PORTAL_DATA = {
     "assets/img-f1/monte-sierpe/img-03.jpg",
     "assets/img-f1/monte-sierpe/img-04.jpg",
     "assets/img-f1/monte-sierpe/img-05.jpg",
-    "assets/campo/monte-sierpe-ultimos-depas.jpg"
+    "assets/campo/monte-sierpe-ultimos-depas.jpg",
+    "assets/planos/monte-sierpe-asesora/lamina-00000010.jpg",
+    "assets/planos/monte-sierpe-asesora/lamina-00000011.jpg",
+    "assets/planos/monte-sierpe-asesora/lamina-00000012.jpg",
+    "assets/planos/monte-sierpe-asesora/lamina-00000013.jpg"
    ],
    "brochure": "assets/brochures/monte-sierpe-brochure.pdf",
    "typologies": [
@@ -15673,11 +14545,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "precio_lista_usd": 274118,
      "ajuste_cochera_usd": 20000,
-     "estac_incluidos": 0,
-     "depositos_incluidos": 0,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 1,
      "precio_lista_todo": 274118,
-     "m2_equivalente": 103.9,
-     "precio_m2_equiv": 2638
+     "m2_equivalente": 125.9,
+     "precio_m2_equiv": 2177,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
     },
     {
      "unidad": "x107 (Piso 1)",
@@ -15690,11 +14563,12 @@ window.PORTAL_DATA = {
      "flat": false,
      "precio_lista_usd": 248824,
      "ajuste_cochera_usd": 20000,
-     "estac_incluidos": 0,
-     "depositos_incluidos": 0,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 1,
      "precio_lista_todo": 248824,
-     "m2_equivalente": 103.4,
-     "precio_m2_equiv": 2406
+     "m2_equivalente": 125.4,
+     "precio_m2_equiv": 1984,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
     },
     {
      "unidad": "X01 (Pisos 2-3, típico)",
@@ -15707,11 +14581,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_lista_usd": 274118,
      "ajuste_cochera_usd": 20000,
-     "estac_incluidos": 0,
-     "depositos_incluidos": 0,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 1,
      "precio_lista_todo": 274118,
-     "m2_equivalente": 107.4,
-     "precio_m2_equiv": 2552
+     "m2_equivalente": 129.4,
+     "precio_m2_equiv": 2118,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
     },
     {
      "unidad": "X02 (Pisos 2-3, típico)",
@@ -15724,11 +14599,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_lista_usd": 274118,
      "ajuste_cochera_usd": 20000,
-     "estac_incluidos": 0,
-     "depositos_incluidos": 0,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 1,
      "precio_lista_todo": 274118,
-     "m2_equivalente": 107.4,
-     "precio_m2_equiv": 2552
+     "m2_equivalente": 129.4,
+     "precio_m2_equiv": 2118,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
     },
     {
      "unidad": "X05 (Piso 6)",
@@ -15741,11 +14617,12 @@ window.PORTAL_DATA = {
      "flat": true,
      "precio_lista_usd": 263529,
      "ajuste_cochera_usd": 20000,
-     "estac_incluidos": 0,
-     "depositos_incluidos": 0,
+     "estac_incluidos": 1,
+     "depositos_incluidos": 1,
      "precio_lista_todo": 263529,
-     "m2_equivalente": 105.3,
-     "precio_m2_equiv": 2503
+     "m2_equivalente": 127.3,
+     "precio_m2_equiv": 2070,
+     "nota": "Nadia Villar (Make) confirmó el 3-sep-2026 que el precio incluye «cochera simple y depósito». El US$/m² descuenta US$20,000 por la cochera (valor que Make declaró); el depósito no se descuenta y por eso el equivalente suma sus 6 m²."
     }
    ],
    "flats_summary": [
@@ -15754,17 +14631,18 @@ window.PORTAL_DATA = {
      "m2": 105.3,
      "precio_usd": 243529,
      "precio_m2": 2313,
-     "comparable_confirmado": false,
+     "comparable_confirmado": true,
      "precio_lista_usd": 263529,
      "ajuste_cochera_usd": 20000,
-     "motivo_no_comparable": "La asesora dio el precio de la cochera (US$20,000) pero no si el precio de lista la incluye."
+     "nota": "El precio incluye cochera simple y depósito, confirmado por Nadia Villar el 3-sep-2026. Se descuentan US$20,000 por la cochera —el valor que Make declaró— para dejarlo neto de estacionamiento. El depósito no se descuenta.",
+     "unidad": "X05 (Piso 6)"
     }
    ],
    "dorms_disponibles": [
     2,
     3
    ],
-   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta.",
+   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta. · Su brochure digital declara 6 pisos, 57 unidades y 75 estacionamientos (1.3 por departamento), lo que calza con que el precio incluya cochera. El 3-sep-2026 la asesora avisó que estarán en la feria inmobiliaria.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -15792,8 +14670,8 @@ window.PORTAL_DATA = {
     "n": null,
     "label": "Últimos departamentos (anunciado en la fachada, ago-2026)"
    },
-   "cochera_status": "nd",
-   "cochera_nota": "Sin confirmar. Lo único que dijo Nadia (Make) por WhatsApp el 14-ago-2026 fue «Cochera Make US$20k»: eso nos da el precio de la cochera, no si el departamento la trae incluida. Su brochure no tiene tabla de precios ni menciona estacionamiento.",
+   "cochera_status": "si",
+   "cochera_nota": "Confirmado por Nadia Villar (Make) el 3-sep-2026: preguntado si el precio de S/881,000 incluye estacionamiento, responde «Si, cochera simple y depósito». El rango publicado S/881,000–970,000 es con cochera simple y depósito adentro. Su brochure declara 57 unidades y 75 estacionamientos.",
    "entrega_confirmada_campo": "Terminado / entrega inmediata",
    "campo_ago": "14-ago: vendieron el 408. Quedan disponibles (Tipo X10, 105.89 m², 3 dorm+estudio, 4 baños). Terminado, entrega inmediata, EDGE, BCP.",
    "precio_hist": [
@@ -15819,6 +14697,13 @@ window.PORTAL_DATA = {
      "url": "https://makeinmobiliaria.pe/wp-content/uploads/2025/10/BROCHURE-DIGITAL-VERTICAL_MONTESIERPEIMPRESION.pdf",
      "fecha": "2025-10",
      "tipo": "brochure"
+    },
+    {
+     "titulo": "Láminas de tipología enviadas por la asesora (X2, 102 y dos más), mejor resolución que las de la web",
+     "archivo": "assets/planos/monte-sierpe-asesora/lamina-00000010.jpg",
+     "url": null,
+     "fecha": "2026-08-14",
+     "tipo": "plano"
     }
    ],
    "contactos": [
@@ -15851,10 +14736,7 @@ window.PORTAL_DATA = {
     "fecha": "2026-08-25",
     "nota": "Make Inmobiliaria lo mantiene en entrega inmediata al 25-ago-2026 — sin cambios."
    },
-   "precio_fuente": {
-    "tipo": "whatsapp",
-    "nota": "Precio por unidad confirmado con Nadia, su asesora, por WhatsApp."
-   },
+   "precio_fuente": "Chat real de WhatsApp con el asesor Nadia Villar +51 943 729 552, 3-sep-2026",
    "stock_hist": [
     {
      "corte": "2026-08-31",
@@ -16148,7 +15030,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor +51 943 729 552, 3-sep-2026 · brochure digital de 21 páginas"
   },
   {
    "id": "monte-umbroso",
@@ -16841,7 +15724,7 @@ window.PORTAL_DATA = {
      "total": null
     }
    ],
-   "cochera_nota": "Confirmado con el asesor el 02-jul-2026: el precio NO incluye estacionamiento. Se vende aparte entre S/48,000 y S/99,000 según el cajón, y algunos vienen con depósito.",
+   "cochera_nota": "Confirmado por Cecilia Estrada (EE Inmobiliaria) el 2-jul-2026, textual: «El estacionamiento no está incluído en el precio del departamento». Hay simples para un vehículo y lineales para dos, algunos con depósito, entre S/48,000 y S/99,000. Un semisótano y dos sótanos.",
    "politica_precio": "El precio de lista es el del departamento solo: el estacionamiento va aparte (S/48,000–99,000). Por eso su US$/m² es directamente comparable, sin ajuste.",
    "planos_analisis": {
     "fecha": null,
@@ -17571,7 +16454,8 @@ window.PORTAL_DATA = {
      }
     ]
    },
-   "coherencia_alerta": "Sus cinco dúplex declaran un dormitorio menos del que tienen. El 702 se vende como «1 dorm + flex» y son 2."
+   "coherencia_alerta": "Sus cinco dúplex declaran un dormitorio menos del que tienen. El 702 se vende como «1 dorm + flex» y son 2.",
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Cecilia Estrada +51 988 609 572, 2-jul-2026"
   },
   {
    "id": "precursores-525",
@@ -17661,7 +16545,7 @@ window.PORTAL_DATA = {
     2,
     3
    ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio.",
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio. · Joyce Aguilar (Grupo Chacarilla Sur) el 14-ago-2026: «nos está quedando un duplex penthouse». Su brochure declara flats y dúplex de 84 a 227 m², 20 departamentos en 6 pisos, BCP, entrega nov-2026, desde $203,700.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -17705,6 +16589,13 @@ window.PORTAL_DATA = {
      "archivo": "assets/brochures/Precu_Brochure_AC.pdf",
      "url": null,
      "fecha": "2026",
+     "tipo": "brochure"
+    },
+    {
+     "titulo": "Brochure oficial de Grupo Chacarilla Sur · Precursores 525 (84–227 m²)",
+     "archivo": "assets/brochures/precursores-525-brochure.pdf",
+     "url": null,
+     "fecha": "2026-06-17",
      "tipo": "brochure"
     }
    ],
@@ -19569,8 +18460,8 @@ window.PORTAL_DATA = {
    "borde_avenida": true,
    "unidades": 25,
    "financia": "Scotiabank",
-   "cochera_status": "nd",
-   "cochera_nota": "Sin confirmar: no tenemos ningún dato sobre si el precio incluye estacionamiento.",
+   "cochera_status": "no",
+   "cochera_nota": "Grupo Dicon cotiza el estacionamiento aparte del departamento. Confirmado por el cliente el 3-sep-2026 y visible en la cotización que Ventas Dicon envió el 22-ago: «su precio es 198.000 USD + 16.000 USD cochera simple = 214.000 USD total». Ese desglose es de otro proyecto de Dicon, así que el valor de la cochera de Spazio queda por confirmar; la política de venderla aparte, no.",
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -20163,7 +19054,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Ventas Dicon +51 957 733 272, 22-ago-2026 · política confirmada por el cliente"
   },
   {
    "id": "terraverde",
@@ -20401,14 +19293,14 @@ window.PORTAL_DATA = {
    ],
    "promo": {
     "tipo": "Descuento en precio",
-    "que": "Descuento de preventa aplicado en la hoja de cotización",
+    "que": "Descuento de preventa impreso en la cotización",
     "valor_usd": 33853,
-    "valor_txt": "S/115,100 ≈ US$33,853",
-    "pct_txt": "7.5% sobre el paquete del flat 301",
-    "desde": "2026-08",
-    "cond": "Prioridad en el pre-lanzamiento para quienes separan antes del lanzamiento comercial",
+    "valor_txt": "S/115,100 en el Flat 301 · S/78,300 en el Dpto 102",
+    "pct_txt": "7.5% sobre el total cotizado",
+    "desde": "2026-08-19",
+    "cond": "Se aplica sobre el total (departamento + 2 estacionamientos), no sobre el departamento solo.",
     "canal": "Hoja de cotización del asesor",
-    "fuente": "Cotización oficial del proyecto"
+    "fuente": "Chat real de WhatsApp con el asesor Washington Benavides, cotizaciones oficiales de AyD del 19-ago-2026 (rótulo «DCTO PREVENTA»)"
    },
    "coherencia_alerta": "Su cotización del dpto 102 declara 3 dormitorios y la lámina dibuja 2 camas. Y su rango de metrajes no coincide con lo que imprimen sus propias láminas.",
    "planos_analisis": {
@@ -20750,7 +19642,25 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "cochera_nota": "Confirmado en las dos hojas de cotización oficiales de AyD que Washington Benavides envió el 19-ago-2026: el estacionamiento va en línea aparte a S/54,000 cada uno, en Sótano 1. El FLAT 301 (150 m² techada + 3 libre) cotiza S/1,419,000 el departamento y suma dos estacionamientos de S/54,000; el DPTO 102 (94 + 36) cotiza S/960,350 más los mismos dos. El descuento de preventa se aplica sobre el total, no sobre el departamento.",
+   "cochera_fuente": "Chat real de WhatsApp con el asesor Washington Benavides, cotizaciones oficiales del 19-ago-2026",
+   "documentos": [
+    {
+     "titulo": "Cotización oficial AyD · Flat 301 (150 m², 3 dorm) con estacionamientos en línea aparte",
+     "archivo": "assets/chats/monte-umbroso-247-cotizacion-flat301.jpg",
+     "url": null,
+     "fecha": "2026-08-19",
+     "tipo": "cotizacion"
+    },
+    {
+     "titulo": "Cotización oficial AyD · Dpto 102 (94+36 m², declarado 3 dorm)",
+     "archivo": "assets/chats/monte-umbroso-247-cotizacion-dpto102.jpg",
+     "url": null,
+     "fecha": "2026-08-19",
+     "tipo": "cotizacion"
+    }
+   ]
   },
   {
    "id": "narciso-ayd",
@@ -22814,7 +21724,7 @@ window.PORTAL_DATA = {
    },
    "mapeado_desde": "2026-08-22",
    "dorms_disponibles": [],
-   "motivo_retiro": "Anotación suelta del recorrido del 22-ago-2026: se apuntó «obra en Calle Monte Alegre 137» sin cartel, sin licencia visible, sin foto y con el punto puesto por geocodificador. El catálogo de Edifikarte solo lista «Monte Alegre 109» — no existe un 137 entre sus proyectos — y la valla que fotografiamos dice «MONTE ALEGRE» sin número. Se retira por falta de información: es muy probable que sea el mismo Monte Alegre 109 anotado con otra numeración."
+   "motivo_retiro": "Anotación suelta del recorrido del 22-ago-2026: se apuntó «obra en Calle Monte Alegre 137» sin cartel, sin licencia visible, sin foto y con el punto puesto por geocodificador. El catálogo de Edifikarte no lista un 137 entre sus proyectos y la valla que fotografiamos dice «MONTE ALEGRE» sin número. Se retira por falta de información: es muy probable que sea otro registro de la misma obra anotado con otra numeración."
   },
   {
    "isGEU": false,
@@ -22872,7 +21782,7 @@ window.PORTAL_DATA = {
    },
    "mapeado_desde": "2026-08-22",
    "dorms_disponibles": [],
-   "motivo_retiro": "Anotación suelta del recorrido del 22-ago-2026: «obra frente al Parque La Floresta con caseta de ventas, sin cartel legible». Sin foto, sin dirección exacta y con el punto aproximado sobre el eje de la avenida. En esa misma avenida ya tenemos identificados Floresta Living 444 y Floresta 343; este último nunca se fotografió, así que lo más probable es que sea el mismo. Se retira por falta de información."
+   "motivo_retiro": "Anotación suelta del recorrido del 22-ago-2026: «obra frente al Parque La Floresta con caseta de ventas, sin cartel legible». Sin foto, sin dirección exacta y con el punto aproximado sobre el eje de la avenida. En esa misma avenida ya tenemos identificado Floresta Living 444, así que lo más probable es que sea el mismo. Se retira por falta de información."
   },
   {
    "id": "ten-apartments",
@@ -25236,962 +24146,6 @@ window.PORTAL_DATA = {
    }
   },
   {
-   "isGEU": false,
-   "precio_desde_usd": null,
-   "precio_hasta_usd": null,
-   "brochure": null,
-   "img": null,
-   "flats_summary": [],
-   "stock": null,
-   "mostrar": true,
-   "amenidades": [
-    "Lobby",
-    "Coworking",
-    "Pet & Bike center",
-    "Rooftop BBQ",
-    "Rooftop Gourmet",
-    "2 patios jardín (Zen y Huerto)",
-    "Áreas verdes",
-    "Gas natural",
-    "Balcón o terraza en todos los departamentos"
-   ],
-   "precio_hist": [
-    {
-     "corte": "2026-08-31",
-     "desde": null,
-     "pm2": null
-    }
-   ],
-   "cochera_status": "nd",
-   "id": "floresta-343",
-   "name": "Floresta 343",
-   "dev": "Vibra Inmobiliaria",
-   "addr": "Av. de la Floresta 343, Urb. Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "En construcción",
-   "estado_raw": "En venta · 29 departamentos",
-   "estado_obra": "Por verificar en el próximo recorrido de campo.",
-   "entrega": "Por confirmar",
-   "lat": -12.11452,
-   "lng": -76.987629,
-   "en_cuadrante": false,
-   "dorms": "1–2 (+ ambiente flex)",
-   "m2": "64.01 – 104.98",
-   "pisos": 8,
-   "unidades": 29,
-   "estacionamientos": 40,
-   "wa": "960279665",
-   "wa_label": "Vibra Inmobiliaria",
-   "web": "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343",
-   "planos": [
-    "assets/planos/floresta-343/floresta-16.png",
-    "assets/planos/floresta-343/floresta-19.png",
-    "assets/planos/floresta-343/floresta-22.png",
-    "assets/planos/floresta-343/floresta343-duplex803-planta.png",
-    "assets/planos/floresta-343/floresta343-tipo01-02-planta.png",
-    "assets/planos/floresta-343/floresta343-tipo03-04-planta.png",
-    "assets/planos/floresta-343/plano-01.png",
-    "assets/planos/floresta-343/plano-02.png",
-    "assets/planos/floresta-343/plano-03.png",
-    "assets/img-f1/floresta-343/img-01.png",
-    "assets/img-f1/floresta-343/img-02.png",
-    "assets/img-f1/floresta-343/img-03.png",
-    "assets/img/floresta-343.png"
-   ],
-   "planos_fuente": "Brochure oficial Vibra Inmobiliaria (edición mayo) descargado de su web.",
-   "typologies": [
-    {
-     "unidad": "Tipo 01 (diseño FLEX)",
-     "dorm": 2,
-     "m2": 103.55,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Tipo 02 (diseño FLEX)",
-     "dorm": 2,
-     "m2": 104.98,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Tipo 03 (diseño FLEX)",
-     "dorm": 1,
-     "m2": 64.01,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Tipo 04 (diseño FLEX)",
-     "dorm": 1,
-     "m2": 87.13,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "flat",
-     "piso": "típico",
-     "flat": true
-    },
-    {
-     "unidad": "Dúplex 803",
-     "dorm": null,
-     "m2": null,
-     "precio_usd": null,
-     "precio_m2": null,
-     "tipo": "duplex",
-     "piso": "8",
-     "flat": false
-    }
-   ],
-   "comentario": "Proyecto que NO teníamos registrado y sí está dentro del cuadrante. Vibra Inmobiliaria, Av. de la Floresta 343: 8 pisos, 29 departamentos, 40 estacionamientos y 38 bike parkings. Tipologías de diseño FLEX: 64.01, 87.13, 103.55 y 104.98 m² más un dúplex en el piso 8. Ojo con los «ambientes»: el propio brochure aclara que el departamento se entrega con 2 dormitorios y el tercer ambiente es referencial. Sin lista de precios pública. ANÁLISIS DEL «DISEÑO FLEX» (02-sep-2026): en sus láminas la línea verde punteada NO es una pared construida, es el muro que SE PUEDE levantar. Por eso los ambientes flex nunca llevan hoja de puerta, y eso hace que la pista habitual no sirva: hay que mirar qué mueble le ponen adentro. Y ahí Vibra dibuja el mismo metro cuadrado de tres maneras. El TIPO 01 (103.55 m², «2+E») es estudio real: mesón de trabajo con dos pantallas, velador y butacas, sin cama ni una tira de colgadores. El TIPO 02 (104.98 m², «2+E») es su gemelo, con la misma leyenda, y en el MISMO lugar dibuja una CAMA DE DOS PLAZAS rotulada «2PZ» —el mismo rótulo de los dormitorios reales— con veladores y closet completo: la lámina que vende «2+E» le muestra al comprador 3 dormitorios. El TIPO 04 (87.13 m²) ya viene cerrado de fábrica, con tres muros y puerta con barrido, y solo le falta el closet. El remate: su propio brochure dibuja ese mismo espacio del TIPO 04 como VESTIDOR, con dos tiras de colgadores enfrentadas, y le marca un medio baño extra opcional con la nota «modificación que se podrá realizar bajo un costo adicional». Tres versiones del mismo metro cuadrado: estudio, vestidor y —si el comprador paga el muro— dormitorio.",
-   "como_presenta": "«Solo 8 pisos hacen de Floresta 343 un lugar íntimo». Venden intimidad, vista a parque y un paquete de amenidades fuerte para el tamaño del edificio (coworking, dos rooftops, pet & bike center).",
-   "caseta_ventas": "nd",
-   "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
-   "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de la Floresta (entre el 130 y el 442, ambos verificados). Pendiente de confirmar con foto de campo. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
-   "descubierto_campo": null,
-   "cuadrante_verificado": null,
-   "fuentes": [
-    "https://vibrainmobiliaria.com.pe/proyecto?url=floresta-343",
-    "https://www.proyectosinmobiliariosbcp.com/proyectos/departamentos-santiago-de-surco-floresta-343-474",
-    "Brochure oficial Vibra (Floresta_Brochure_Mayo.pdf)"
-   ],
-   "documentos": [
-    {
-     "titulo": "Brochure oficial Vibra Inmobiliaria · Floresta 343",
-     "archivo": "assets/brochures/floresta-343-vibra-brochure.pdf",
-     "url": "https://vibrainmobiliaria.com.pe/img/proyectos/floresta-343/pdf/Floresta_Brochure_Mayo.pdf",
-     "fecha": "2026-05",
-     "tipo": "brochure"
-    },
-    {
-     "titulo": "Brochure Floresta 343 · copia en archivo",
-     "archivo": "assets/brochures/Floresta_343-brochure.pdf",
-     "url": null,
-     "fecha": null,
-     "tipo": "brochure"
-    }
-   ],
-   "pedido": "Hola! Estoy afinando números para decidir y me faltan un par de datos. 1) me pasas la lista de precios de Floresta 343 con lo que queda disponible? 2) el precio ya incluye la cochera o va aparte? y cuánto cuesta? 3) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "cochera + promoción + tarifario por unidad + lista de precios",
-   "contactos": [
-    {
-     "nombre": null,
-     "numero": "960279665",
-     "fuente": "Auditoría de fuentes de competencia (rastreo web de cada proyecto, jun-2026)"
-    },
-    {
-     "nombre": null,
-     "numero": "908892190",
-     "fuente": "Web oficial de Vibra Inmobiliaria (24-ago-2026)"
-    },
-    {
-     "nombre": null,
-     "numero": "908982190",
-     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
-    }
-   ],
-   "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-28",
-    "nota": "Estado tomado del relevamiento inicial del benchmark; sin confirmación posterior."
-   },
-   "precio_fuente": {
-    "tipo": "brochure",
-    "nota": "Brochure oficial de Vibra Inmobiliaria (edición mayo)."
-   },
-   "stock_hist": [
-    {
-     "corte": "2026-08-31",
-     "disponibles": null,
-     "label": null,
-     "vendidas": null,
-     "total": null
-    }
-   ],
-   "borde_avenida": true,
-   "dorms_disponibles": [
-    1,
-    2
-   ],
-   "planos_analisis": {
-    "fecha": null,
-    "version": null,
-    "planos_leidos": 9,
-    "unidades": [
-     {
-      "unidad": "TIPO 01 · «2+E» · 103.55 m²",
-      "archivo": "assets/planos/floresta-343/plano-01.png",
-      "dorm_declarados": 2,
-      "dorm_reales": 2,
-      "estudio": {
-       "hay": true,
-       "closet": false,
-       "ventana": true,
-       "puerta": false,
-       "veredicto": "estudio real",
-       "por_que": "el ambiente flex está amoblado como oficina y nada más: un mesón blanco corrido contra la pared con DOS pantallas y dos teclados dibujados, un velador de escritorio, libros en repisa, una planta y dos butacas. No hay cama. No hay ni una tira de colgadores adentro, cuando en la misma lámina los dos dormitorios llevan tiras de colgadores larguísimas e inconfundibles. Y no tiene hoja de puerta: su perímetro es la línea verde punteada, o sea el muro que todavía no existe. Solo cumple una de las tres (ventana al patio interior), así que hoy es un estudio de verdad — la propia lámina lo dice: «Este ambiente es un Estudio que puede ser convertido a Dormitorio»"
-      },
-      "observacion": "Es el caso «honesto» del Diseño FLEX: Vibra rotula 2+E y lo dibuja como estudio de verdad. La lámina imprime 103.55 m² de área total y 2½ baños (dato de lámina). Cocina abierta en L, sin isla, con barra separada de 2 taburetes en la zona de comedor. Lavandería en recinto propio y techado con lavadero, lavadora y puerta, pegada a la cocina y con piso de porcelanato gris (la misma familia de acabado que el brochure asigna a «cocinas cerradas, patios y baños»). Los dos dormitorios son suite: cada uno tiene su baño detrás de su tira de closets, y el principal («KING») arma un vestidor de paso con dos tiras de colgadores enfrentadas. Medio baño de visita con piso de mosaico junto al ingreso. Balcón corrido de porcelanato con jardineras sobre la fachada de Av. de la Floresta. No hay zona de servicio de ningún tipo — ni cuarto ni baño — que es la diferencia estructural contra todo lo grande del cuadrante. Comparar con el TIPO 02, que es su gemelo de metraje y dibuja el MISMO ambiente flex como dormitorio con cama y closet.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": true,
-       "balcon": true,
-       "balcon_techado": null,
-       "terraza": false,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": false,
-       "bano_servicio_ducha": false,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 2,
-       "medios_banos": 1,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos en un solo ambiente, con mesa de 6, sofá y dos butacas",
-       "cocina abierta en L con encimera de 4 hornillas, lavadero, refrigeradora y barra de 2 taburetes en el comedor",
-       "estudio flex junto al ingreso, con mesón de trabajo de dos puestos y dos butacas, sin puerta ni closet",
-       "dormitorio principal «KING» con vestidor de dos tiras de colgadores y baño propio",
-       "dormitorio secundario «2PZ» con tira de colgadores y baño propio",
-       "medio baño de visita con piso de mosaico",
-       "lavandería/patio con lavadero y lavadora, en recinto propio con puerta",
-       "balcón corrido de porcelanato con jardineras hacia Av. de la Floresta"
-      ],
-      "archivos": [
-       "assets/planos/floresta-343/plano-01.png",
-       "assets/planos/floresta-343/floresta-16.png",
-       "assets/planos/floresta-343/floresta343-tipo01-02-planta.png"
-      ]
-     },
-     {
-      "unidad": "TIPO 02 · «2+E» · 104.98 m²",
-      "archivo": "assets/planos/floresta-343/plano-02.png",
-      "dorm_declarados": 2,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": true,
-       "closet": true,
-       "ventana": true,
-       "puerta": false,
-       "veredicto": "dormitorio disfrazado",
-       "por_que": "el ambiente flex del TIPO 02 no es un escritorio: adentro de la línea verde punteada hay una CAMA de dos plazas con sus dos veladores, el rótulo «2PZ» —el mismísimo que llevan los dormitorios de verdad de la lámina— y una tira completa de colgadores con ropa colgada. Cumple closet y ventana; lo único que le falta es la hoja de puerta, y no la tiene porque la pared todavía no está construida (eso es lo que marca el punteado verde). Dos de tres, y encima con cama: es un dormitorio con otro nombre",
-       "ya_contado": false
-      },
-      "observacion": "ESTE es el caso interesante del Diseño FLEX. El TIPO 02 es el gemelo del TIPO 01 —104.98 contra 103.55 m², misma familia de planta, mismo rótulo «2+E», misma leyenda «Este ambiente es un Estudio que puede ser convertido a Dormitorio»— y sin embargo el mismo ambiente flex está dibujado de forma completamente distinta: en el 01 son dos butacas y un mesón de trabajo, en el 02 es una cama de dos plazas rotulada 2PZ con su closet de colgadores. O sea que la lámina que vende «2 dormitorios + estudio» le está mostrando al comprador TRES dormitorios. Fuera de eso el 02 es igual al 01: cocina abierta con barra de 2 taburetes, lavandería en recinto propio, dos suites con baño propio, medio baño de visita, balcón corrido con jardineras hacia Av. de la Floresta, sin zona de servicio. La lámina imprime 104.98 m² y 2½ baños (dato de lámina). El pie de página aclara que la modificación corre por cuenta del cliente y después de la entrega.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": true,
-       "balcon": true,
-       "balcon_techado": null,
-       "terraza": false,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": false,
-       "bano_servicio_ducha": false,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 2,
-       "medios_banos": 1,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos con mesa de 6, sofá y dos butacas",
-       "cocina abierta con encimera de hornillas, lavadero y barra de 2 taburetes",
-       "ambiente flex dibujado como dormitorio de dos plazas rotulado «2PZ», con cama, veladores y tira de colgadores, sin puerta",
-       "dormitorio principal «KING» con dos tiras de colgadores y baño propio",
-       "dormitorio secundario «2PZ» con tira de colgadores y baño",
-       "medio baño de visita",
-       "lavandería/patio con lavadora en recinto propio",
-       "balcón de porcelanato con jardineras hacia Av. de la Floresta"
-      ],
-      "archivos": [
-       "assets/planos/floresta-343/plano-02.png",
-       "assets/planos/floresta-343/floresta-16.png",
-       "assets/planos/floresta-343/floresta343-tipo01-02-planta.png"
-      ]
-     },
-     {
-      "unidad": "TIPO 03 · «1+E» · 64.01 m²",
-      "archivo": "assets/planos/floresta-343/plano-03.png",
-      "dorm_declarados": 1,
-      "dorm_reales": 1,
-      "estudio": {
-       "hay": true,
-       "closet": false,
-       "ventana": true,
-       "puerta": false,
-       "veredicto": "estudio real",
-       "por_que": "el segundo ambiente está amoblado como oficina: mesón blanco corrido con dos pantallas, dos teclados, un velador de escritorio, libros y dos butacas. Ni cama ni una sola tira de colgadores, cuando el único dormitorio de la lámina sí las tiene. Tampoco lleva hoja de puerta: se abre al hall de ingreso. Una sola de las tres (ventana), así que es estudio de verdad — pero también es la razón por la que el depa es de UN dormitorio y no de dos"
-      },
-      "observacion": "El más chico del proyecto: 64.01 m², 2 ambientes, 2 baños (dato de lámina). Es el caso donde el «+E» pesa más, porque el rótulo «1+E» le suma un ambiente a un departamento que en la práctica tiene UN solo dormitorio. Cocina abierta lineal contra la pared —encimera de 4 hornillas, lavadero y refrigeradora, todo a la vista del comedor— que es exactamente la que el brochure fotografía bajo el título «COCINA ABIERTA». Lavandería con lavadero y lavadora en un patio propio con puerta, entre los dos baños. El dormitorio principal «KING» es suite: baño propio más dos tiras de colgadores que hacen de vestidor. Sin medio baño de visita, sin cuarto ni baño de servicio, sin isla ni barra. Balcón de porcelanato con plantas hacia Av. de la Floresta.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": true,
-       "balcon": true,
-       "balcon_techado": null,
-       "terraza": false,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": false,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": false,
-       "bano_servicio_ducha": false,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": false,
-       "banos_completos": 2,
-       "medios_banos": 0,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos con sofá, dos butacas y mesa de 6",
-       "cocina abierta lineal contra la pared, con encimera de 4 hornillas, lavadero y refrigeradora",
-       "estudio flex junto al ingreso, con mesón de trabajo de dos puestos y dos butacas, sin puerta ni closet",
-       "un solo dormitorio, el principal «KING», con dos tiras de colgadores y baño propio",
-       "segundo baño completo",
-       "lavandería/patio con lavadero y lavadora, en recinto propio con puerta",
-       "balcón de porcelanato con plantas hacia Av. de la Floresta"
-      ],
-      "archivos": [
-       "assets/planos/floresta-343/plano-03.png",
-       "assets/planos/floresta-343/floresta-19.png",
-       "assets/planos/floresta-343/floresta343-tipo03-04-planta.png"
-      ]
-     },
-     {
-      "unidad": "TIPO 04 · «2+E» · 87.13 m²",
-      "archivo": "assets/planos/floresta-343/floresta-19.png",
-      "dorm_declarados": 2,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": true,
-       "closet": false,
-       "ventana": true,
-       "puerta": true,
-       "veredicto": "dormitorio disfrazado",
-       "por_que": "acá el ambiente flex ya está CERRADO: es un cuarto con sus tres muros construidos, con hoja de puerta y barrido dibujados en la pared que da al pasillo, y con ventana al patio interior. Adentro lo amueblan como estudio (mesón de trabajo con dos puestos y dos butacas, sin cama), pero eso es mobiliario, no arquitectura: de las tres casillas cumple ventana y puerta, y lo único que le falta para ser dormitorio es que le pongan el closet. Ojo con el detalle de edición: en el brochure de Vibra ese mismo espacio está dibujado como VESTIDOR, con dos tiras de colgadores enfrentadas — o sea que la propia desarrolladora ya lo dibujó una vez con colgadores adentro",
-       "ya_contado": false
-      },
-      "observacion": "El TIPO 04 es el caso más resbaloso de los cuatro y el que peor se ve: no existe en 1600×1200 como los otros tres, solo en las láminas de 660×330 del portal y en el brochure Floresta_343 a ~330×620 px, así que el `null` de despensa y el de balcón techado son por falta de resolución, no por ausencia. Planta en L de 87.13 m² con 2 baños (dato de lámina). Cocina abierta en L con encimera de hornillas, lavadero, refrigeradora y una península con TRES taburetes que da al comedor. Dos dormitorios con cama, cada uno con su baño, y un tramo de colgadores en L que arma vestidor. Terraza/balcón chico de porcelanato con planta en la esquina de la sala. Sin cuarto ni baño de servicio, sin medio baño de visita — pero el brochure de Vibra dibuja en verde punteado un medio baño EXTRA en la zona del pasillo con la nota «Modificación que se podrá realizar bajo un costo adicional»: es decir, el tercer baño se vende aparte. Ese mismo brochure, en la misma lámina, usa el espacio del estudio como vestidor: tres versiones del mismo metro cuadrado.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": true,
-       "balcon": true,
-       "balcon_techado": null,
-       "terraza": false,
-       "patio_jardin": false,
-       "cocina_tipo": "abierta",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": null,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": false,
-       "bano_servicio_ducha": false,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": false,
-       "banos_completos": 2,
-       "medios_banos": 0,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos con mesa de 6, sofá y dos butacas",
-       "cocina abierta en L con encimera de hornillas, lavadero, refrigeradora y península de 3 taburetes",
-       "ambiente flex cerrado con puerta y ventana, amoblado como estudio de dos puestos (en el brochure de Vibra el mismo espacio va dibujado como vestidor)",
-       "2 dormitorios con cama, cada uno con su baño",
-       "tramo de colgadores en L que hace de vestidor",
-       "lavandería con lavadora en recinto propio",
-       "terraza/balcón de porcelanato con planta en la esquina de la sala"
-      ],
-      "archivos": [
-       "assets/planos/floresta-343/floresta-19.png",
-       "assets/planos/floresta-343/floresta343-tipo03-04-planta.png",
-       "assets/brochures/Floresta_343-brochure.pdf#page=19"
-      ]
-     },
-     {
-      "unidad": "DÚPLEX 803 (dos niveles)",
-      "archivo": "assets/planos/floresta-343/floresta-22.png",
-      "dorm_declarados": 2,
-      "dorm_reales": 2,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "es la única tipología del proyecto que NO lleva el sello «Diseño FLEX» ni rótulo «+E»: la lámina dice «2 DORMITORIOS» a secas, y los dos cuartos llevan cama. No hay ningún ambiente candidato que juzgar"
-      },
-      "observacion": "El dúplex del piso 8, y la excepción del proyecto en casi todo. Los dos niveles van en la misma lámina = UNA sola unidad. Rótulos: «2 DORMITORIOS · 2½ BAÑOS · 142.25 m² ÁREA TOTAL · 57.33 m² ÁREA LIBRE» (datos de lámina). Es el único que declara área libre —los cuatro flats solo declaran área total— y es el único con COCINA CERRADA: cuarto propio con muros, puerta y piso de porcelanato gris, con encimera de 4 hornillas, lavadero y refrigeradora, y al costado la lavandería con lavadora en su propio recinto. También es el único con jardín de verdad: césped dibujado con arbustos, mesa redonda de 4 y zona de parrilla en el primer nivel, y más césped con seto en el segundo, además de una terraza de porcelanato con comedor exterior de 6. En el nivel 1 van la sala-comedor, el medio baño de visita con piso de mosaico, la escalera interior de madera y un dormitorio con su baño; en el nivel 2 el dormitorio principal con vestidor de colgadores, su baño y una terraza chica con tumbonas. Sin cuarto ni baño de servicio, como todo el edificio. No se marca azotea_propia porque el techo del edificio es área común (el brochure lo vende como Rooftop BBQ y Rooftop Gourmet): lo del 803 son terrazas y jardines de la unidad, no la azotea del edificio. Ojo con la lámina: está a ~330×620 px por nivel, así que el detalle fino (despensa, si el balcón es techado) no se puede afirmar.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": false,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": true,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": null,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": false,
-       "bano_servicio": false,
-       "bano_servicio_ducha": false,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 2,
-       "medios_banos": 1,
-       "ascensor_directo": false,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "NIVEL 1 · sala y comedor corridos con sofá, dos butacas y mesa de 6",
-       "NIVEL 1 · cocina cerrada con puerta y piso de porcelanato, encimera de 4 hornillas, lavadero y refrigeradora",
-       "NIVEL 1 · lavandería con lavadora en recinto propio, al costado de la cocina",
-       "NIVEL 1 · medio baño de visita con piso de mosaico",
-       "NIVEL 1 · dormitorio con tira de colgadores y baño completo",
-       "NIVEL 1 · escalera interior de madera",
-       "NIVEL 1 · terraza de porcelanato con comedor exterior de 6 y jardín de césped con mesa redonda y parrilla",
-       "NIVEL 2 · dormitorio principal con vestidor de colgadores y baño completo",
-       "NIVEL 2 · terraza chica con tumbonas y jardín de césped con seto"
-      ],
-      "archivos": [
-       "assets/planos/floresta-343/floresta-22.png",
-       "assets/planos/floresta-343/floresta343-duplex803-planta.png",
-       "assets/brochures/Floresta_343-brochure.pdf#page=22"
-      ]
-     }
-    ]
-   },
-   "coherencia_alerta": "Sus láminas viejas rotulan «3 AMBIENTES» y las nuevas «2+E» y «1+E»: es el mismo departamento con distinto rótulo comercial. Y el TIPO 02, vendido como «2+E», dibuja una cama de dos plazas en el estudio."
-  },
-  {
-   "isGEU": false,
-   "precio_desde_usd": null,
-   "precio_hasta_usd": null,
-   "brochure": null,
-   "img": null,
-   "flats_summary": [],
-   "stock": null,
-   "mostrar": true,
-   "amenidades": [
-    "Ascensores directos",
-    "Lobby",
-    "Gas natural (GNV)",
-    "Terraza interior con espejo de agua",
-    "Sala multiusos",
-    "Cine",
-    "Zona de parrillas y juegos",
-    "Estacionamientos para visitas"
-   ],
-   "precio_hist": [
-    {
-     "corte": "2026-08-31",
-     "desde": null,
-     "pm2": null
-    }
-   ],
-   "cochera_status": "nd",
-   "id": "le-parc",
-   "name": "Le Parc",
-   "dev": "V&V Grupo Inmobiliario",
-   "addr": "Av. de los Precursores 421, Chacarilla del Estanque, Santiago de Surco",
-   "estado_grupo": "Entrega inmediata",
-   "estado_raw": "Estado sin confirmar — brochure en archivo, sin fuente reciente",
-   "estado_obra": "Por verificar en el próximo recorrido de campo.",
-   "entrega": "Por confirmar",
-   "lat": -12.115046,
-   "lng": -76.980044,
-   "en_cuadrante": false,
-   "dorms": "3",
-   "m2": "157 – 460",
-   "unidades": 15,
-   "wa": "987561619",
-   "web": "https://vyv.pe/",
-   "planos": [
-    "assets/planos/le-parc/plano-b01.jpg",
-    "assets/planos/le-parc/plano-b02.jpg",
-    "assets/planos/le-parc/plano-b03.jpg",
-    "assets/planos/le-parc/plano-b04.jpg",
-    "assets/planos/le-parc/plano-b05.jpg",
-    "assets/planos/le-parc/plano-b06.jpg",
-    "assets/planos/le-parc/plano-b07.jpg",
-    "assets/planos/le-parc/plano-b08.jpg",
-    "assets/planos/le-parc/plano-b09.jpg",
-    "assets/img-f1/le-parc/imgb-01.jpg",
-    "assets/img-f1/le-parc/imgb-02.jpg",
-    "assets/img-f1/le-parc/imgb-03.jpg",
-    "assets/img-f1/le-parc/imgb-04.jpg",
-    "assets/img/le-parc.jpg"
-   ],
-   "planos_fuente": "Brochure oficial en archivo (9 láminas de tipología).",
-   "typologies": [],
-   "comentario": "Proyecto que NO teníamos registrado y cae dentro del cuadrante: V&V Grupo Inmobiliario, Av. de los Precursores 421. Solo 15 departamentos, de 157 a 460 m², 3 dormitorios. Es la oferta de mayor metraje del cuadrante. Tenemos su brochure y 9 planos en archivo, pero falta confirmar si sigue en venta o ya fue entregado, y su lista de precios. OJO: al 31-ago-2026 V&V no lista Le Parc entre sus 17 proyectos activos en vyv.pe. Nuestro registro sale de su brochure archivado. Al llamar, primero confirmar que el proyecto siga vigente. Análisis de sus 9 láminas (02-sep-2026): 6 unidades — 3 flats y 3 penthouses dúplex — cero estudios, todos de 3 dormitorios limpios con cuarto y baño de servicio. Ascensor directo confirmado en el dibujo en las 6. Dos de sus penthouses no están en el brochure y son los únicos del cuadrante con PISCINA PRIVADA en azotea.",
-   "caseta_ventas": "nd",
-   "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
-   "geo_aprox": true,
-   "geo_nota": "Ubicación aproximada por interpolación de la numeración sobre Av. de los Precursores (entre el 280 y el 525, ambos verificados). Pendiente de confirmar con foto de campo. Da sobre una avenida-límite del cuadrante, así que se registra «en el borde»: compite y entra al comparativo, pero no cuenta como cuadrante interior.",
-   "fuentes": [
-    "Brochure oficial en archivo (le-parc-f1.pdf)",
-    "https://vyv.pe/departamentos-en-surco/depas-de-lujo-en-surco/"
-   ],
-   "documentos": [
-    {
-     "titulo": "Brochure oficial · Le Parc (Av. Precursores 421)",
-     "archivo": "assets/brochures/le-parc-f1.pdf",
-     "url": null,
-     "fecha": null,
-     "tipo": "brochure"
-    }
-   ],
-   "pedido": "Hola! Consulta por el proyecto Le Parc, en Av. de los Precursores 421. Sigue en venta? Me pueden enviar los planos, metrajes disponibles y la lista de precios?",
-   "pedido_que": "confirmar estado + precios",
-   "como_presenta": "Concepto con el que se anuncian: «Le Parc — lifestyle en Chacarilla».",
-   "estado_evidencia": {
-    "tipo": "base_interna",
-    "fecha": "2026-06-01",
-    "nota": "Sólo tenemos su brochure archivado. V&V no publica ficha activa y no hay contacto verificado."
-   },
-   "coherencia_alerta": "Estado sin respaldo: el brochure no dice fecha de entrega y no tenemos contacto. Verificar en el próximo recorrido.",
-   "stock_hist": [
-    {
-     "corte": "2026-08-31",
-     "disponibles": null,
-     "label": null,
-     "vendidas": null,
-     "total": null
-    }
-   ],
-   "borde_avenida": true,
-   "dorms_disponibles": [
-    3
-   ],
-   "contactos": [
-    {
-     "nombre": null,
-     "numero": "987561619",
-     "fuente": "Línea de ventas de V&V Grupo Inmobiliario publicada en vyv.pe (31-ago-2026)"
-    },
-    {
-     "nombre": null,
-     "numero": "940397702",
-     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
-    },
-    {
-     "nombre": null,
-     "numero": "965290665",
-     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
-    },
-    {
-     "nombre": null,
-     "numero": "987561799",
-     "fuente": "referencias/whatsapp-links-competencia.json y base-datos-competencia.json (relevamiento de sus webs y portales, jun–ago 2026)"
-    }
-   ],
-   "planos_analisis": {
-    "fecha": null,
-    "version": null,
-    "planos_leidos": 9,
-    "unidades": [
-     {
-      "unidad": "FLAT UNO",
-      "archivo": "assets/planos/le-parc/plano-b01.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos de familia llevan cama dibujada y el cuarto extra también lleva cama, pero es el de servicio (está pegado a la cocina, detrás de la zona de lavandería y con su propio baño); no hay ningún ambiente amoblado como escritorio ni ningún cuarto sin uso asignado"
-      },
-      "observacion": "Es el flat más grande del brochure después del penthouse: el brochure imprime «Desde 231 mts2» (dato del brochure, no del dibujo). Planta rectangular larga con un ducto de iluminación cuadrado en el centro. Cocina cerrada de verdad —cuarto propio con muros y puerta— pero enorme: adentro entran una ISLA exenta con circulación en los cuatro lados, una barra de mesones en U con lavadero doble, la encimera de hornillas en el mesón lateral y una mesa de comedor de diario para 4. Al lado, y como recinto aparte con puerta, la lavandería con lavadora y secadora. La tira alta y angosta con frascos y platos dibujados que separa la cocina del dormitorio de servicio se leyó como despensa. El baño de servicio sí tiene plato de ducha con sumidero. Dormitorio principal con dos tiras de colgadores sin puertas (vestidor) y baño propio de ducha, inodoro y lavatorio doble. Terraza de madera al frente del sala-comedor, con jardineras — el brochure la llama «terraza», no balcón, y en el dibujo apoya sobre losa propia, no en voladizo. El brochure declara ascensor directo y la lámina lo confirma: la caja «A» abre con puerta hacia adentro del depa.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": false,
-       "despensa": true,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos en un solo ambiente de piso de madera, con mesa de 6 y sala de sofás",
-       "sala de estar aparte, con sofá propio, entre el hall del ascensor y los dormitorios",
-       "cocina cerrada con puerta, isla exenta, mesón en U con lavadero doble, encimera de hornillas y mesa de comedor de diario para 4",
-       "despensa/alacena en tira alta entre la cocina y la zona de servicio",
-       "medio baño de visita (inodoro y lavatorio) junto a la cocina",
-       "3 dormitorios: principal con vestidor de colgadores y baño propio, uno de dos camas simples con baño propio y uno de cama de dos plazas con baño propio",
-       "cuarto de lavandería como recinto aparte, con lavadora y secadora",
-       "dormitorio de servicio con cama dibujada y baño de servicio con ducha",
-       "terraza de madera con jardineras al frente del sala-comedor",
-       "ducto/patio de iluminación cuadrado en el centro de la planta"
-      ],
-      "archivos": [
-       "assets/planos/le-parc/plano-b01.jpg",
-       "assets/brochures/le-parc-f1.pdf#page=16"
-      ]
-     },
-     {
-      "unidad": "FLAT DOS",
-      "archivo": "assets/planos/le-parc/plano-b02.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "los tres cuartos de familia llevan cama y el cuarto extra con cama es el de servicio, en la punta de la zona de cocina y con su baño; no hay ambiente amoblado como escritorio"
-      },
-      "observacion": "El brochure imprime «Desde 183 mts2». Planta alargada y en cuña (sigue la línea oblicua del lindero). Es la única de las tres tipologías de flat cuyo brochure NO promete walking closet en el principal, aunque el dibujo sí le pone una tira de colgadores sin puertas igual que a las otras — de ahí que la casilla vaya en true y la diferencia quede solo en el texto comercial. Cocina cerrada con puerta, mesón con lavadero doble, encimera de hornillas, refrigeradora y mesa de comedor de diario para 4; NO tiene isla exenta. La lavandería (lavadora y secadora dibujadas) va en recinto propio en la punta de servicio, pegada al dormitorio de servicio y su baño. Terraza de madera con mesa redonda y jardineras frente al sala-comedor. Ascensor directo confirmado en el dibujo.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": true,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos, mesa de 8 y sala de sofás",
-       "sala de estar aparte con sofá propio, en el eje de los dormitorios",
-       "cocina cerrada con puerta, mesón con lavadero doble, encimera de hornillas, refrigeradora y mesa de comedor de diario para 4",
-       "despensa/barra de repisas con botellas junto a la cocina",
-       "medio baño de visita (inodoro y lavatorio)",
-       "3 dormitorios: principal con tira de colgadores y baño propio, uno de dos camas simples y uno de cama de dos plazas, cada uno con baño",
-       "cuarto de lavandería con lavadora y secadora, en recinto propio",
-       "dormitorio de servicio con cama y baño de servicio con ducha",
-       "terraza de madera con mesa redonda y jardineras"
-      ],
-      "archivos": [
-       "assets/planos/le-parc/plano-b02.jpg",
-       "assets/brochures/le-parc-f1.pdf#page=17"
-      ]
-     },
-     {
-      "unidad": "FLAT TRES",
-      "archivo": "assets/planos/le-parc/plano-b03.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "tres cuartos de familia con cama más el de servicio con cama; ningún ambiente extra amoblado como escritorio"
-      },
-      "observacion": "El brochure imprime «Desde 157 mts2»: es la tipología de flat más chica de Le Parc y aun así arranca por encima de casi todo el cuadrante. Diferencia clara contra FLAT UNO y FLAT DOS: acá los dos dormitorios secundarios COMPARTEN un solo baño (el brochure lo dice —«Baño secundario completo»— y el dibujo lo confirma), así que baja a 3 baños completos. El principal tiene el vestidor más largo del proyecto: una tira de colgadores que corre pegada a la pared oblicua y arma un pasillo de vestidor hasta su baño propio. Cocina cerrada con lavadero doble, encimera, refrigeradora y mesa de comedor de diario; la lavandería (lavadora y secadora) queda en una nicho propio al fondo de la cocina, camino al dormitorio de servicio. No se puede afirmar despensa: sin rótulos no se distingue una alacena de un closet. Terraza de madera con mesa al frente y jardineras en la fachada de dormitorios. Ascensor directo confirmado.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": null,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": false
-      },
-      "ambientes_texto": [
-       "sala y comedor corridos, mesa de 6 y sala de sofás",
-       "sala de estar aparte con sofá, entre el principal y los secundarios",
-       "cocina cerrada con lavadero doble, encimera de hornillas, refrigeradora y mesa de comedor de diario para 4",
-       "medio baño de visita junto al ingreso del ascensor",
-       "3 dormitorios: principal con vestidor largo de colgadores y baño propio; dos secundarios que comparten un baño completo",
-       "lavandería con lavadora y secadora al fondo de la cocina",
-       "dormitorio de servicio con cama y baño de servicio",
-       "terraza de madera con mesa y jardineras en la fachada de dormitorios"
-      ],
-      "archivos": [
-       "assets/planos/le-parc/plano-b03.jpg",
-       "assets/brochures/le-parc-f1.pdf#page=18"
-      ]
-     },
-     {
-      "unidad": "PENT HOUSE (dúplex · lámina de brochure)",
-      "archivo": "assets/planos/le-parc/plano-b04.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "tres dormitorios con cama en el primer nivel y un cuarto con cama en el segundo, que es el de servicio (va pegado a la lavandería y a su baño); no hay ambiente amoblado como escritorio en ninguno de los dos niveles"
-      },
-      "observacion": "UNA sola unidad en dos láminas: b04 es el primer nivel (= brochure p19) y b05 el segundo (= brochure p20). El brochure imprime «Desde 310 mts2» y reparte los ambientes por nivel: abajo los 3 dormitorios, la cocina, el sala-comedor con terraza, la sala de estar y el baño de visita; arriba la sala de esparcimiento, la terraza con sala-comedor, la zona de parrilla, otro baño de visita, el cuarto y baño de servicio y el cuarto de lavandería. La escalera interior de madera es lo que separa esta lámina del FLAT TRES, que en el mismo lugar tiene el dormitorio de servicio. El segundo nivel es la azotea del edificio: casi todo es piso exterior con seto verde perimetral, mesa de comedor exterior para 6 y parrilla; por eso azotea_propia va en true. NO tiene piscina (los otros dos penthouses sí) — dato fuerte para comparar. El brochure menciona «depósito de cocina» pero en la lámina sin rótulos no se puede identificar cuál closet es: despensa queda en null.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": false,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": false,
-       "cocina_barra": false,
-       "despensa": null,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 3,
-       "medios_banos": 2,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": true
-      },
-      "ambientes_texto": [
-       "NIVEL 1 · sala y comedor corridos con mesa de 6, sala de estar aparte y terraza de madera",
-       "NIVEL 1 · cocina cerrada con lavadero doble, encimera de hornillas y mesa de comedor de diario",
-       "NIVEL 1 · medio baño de visita junto al ascensor",
-       "NIVEL 1 · 3 dormitorios: principal con vestidor de colgadores y baño propio, dos secundarios que comparten baño completo",
-       "NIVEL 1 · escalera interior de madera al segundo nivel",
-       "NIVEL 2 · sala de esparcimiento techada con sofás y jardineras",
-       "NIVEL 2 · terraza exterior grande con mesa de comedor para 6, parrilla y seto verde perimetral",
-       "NIVEL 2 · medio baño de visita",
-       "NIVEL 2 · dormitorio de servicio con cama, baño de servicio con ducha y cuarto de lavandería con lavadora y secadora"
-      ],
-      "archivos": [
-       "assets/planos/le-parc/plano-b04.jpg",
-       "assets/planos/le-parc/plano-b05.jpg",
-       "assets/brochures/le-parc-f1.pdf#page=19",
-       "assets/brochures/le-parc-f1.pdf#page=20"
-      ]
-     },
-     {
-      "unidad": "PENT HOUSE sobre la planta rectangular (dúplex, sin lámina en brochure)",
-      "archivo": "assets/planos/le-parc/plano-b06.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "tres cuartos con cama en el nivel 1 y un cuarto con cama en el nivel 2 que es el de servicio, junto a la lavandería; ningún ambiente amoblado como escritorio"
-      },
-      "observacion": "UNA unidad en dos láminas (b06 nivel 1 + b07 nivel 2). NO está en el brochure: solo existe a 796×500 px, así que hay más `null` que en las otras. Es el penthouse levantado sobre la misma planta rectangular con ducto central del FLAT UNO, pero con la huella más ancha (se ve en el diagrama de ubicación) y con la escalera interior de madera en el lugar donde el FLAT UNO tiene la zona de servicio. Cocina cerrada, con isla exenta y mesa redonda de comedor de diario para 4. El nivel 2 es la azotea: césped, jardineras de flores, sala lounge exterior, PISCINA rectangular, comedor exterior para 6, parrilla y una barra/kitchenette de apoyo; adentro quedan una sala techada, el cuarto de lavandería con lavadora y secadora y el dormitorio de servicio con su baño. Los dos penthouses que NO están en el brochure son los únicos con piscina privada del proyecto.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": true,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": true,
-       "cocina_barra": true,
-       "despensa": true,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 1,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": true
-      },
-      "ambientes_texto": [
-       "NIVEL 1 · sala y comedor corridos con mesa de 8, sala de estar aparte y terraza de madera con jardineras",
-       "NIVEL 1 · cocina cerrada con isla exenta, mesón con lavadero doble, encimera de hornillas y mesa redonda de comedor de diario",
-       "NIVEL 1 · despensa/barra de repisas junto a la cocina",
-       "NIVEL 1 · medio baño de visita",
-       "NIVEL 1 · 3 dormitorios, cada uno con baño; el principal con tiras de colgadores",
-       "NIVEL 1 · ducto/patio de iluminación cuadrado al centro y escalera interior de madera",
-       "NIVEL 2 · azotea propia con césped, jardineras de flores, sala lounge exterior y seto perimetral",
-       "NIVEL 2 · piscina rectangular, comedor exterior para 6 y zona de parrilla",
-       "NIVEL 2 · sala techada, barra/kitchenette de apoyo, cuarto de lavandería con lavadora y secadora, dormitorio de servicio con cama y baño con ducha"
-      ],
-      "archivos": [
-       "assets/planos/le-parc/plano-b06.jpg",
-       "assets/planos/le-parc/plano-b07.jpg"
-      ]
-     },
-     {
-      "unidad": "PENT HOUSE sobre la planta alargada (dúplex, sin lámina en brochure)",
-      "archivo": "assets/planos/le-parc/plano-b08.jpg",
-      "dorm_declarados": 3,
-      "dorm_reales": 3,
-      "estudio": {
-       "hay": false,
-       "closet": null,
-       "ventana": null,
-       "puerta": null,
-       "veredicto": "sin estudio",
-       "por_que": "tres cuartos con cama en el nivel 1 y el cuarto con cama del nivel 2 es el de servicio, pegado a la lavandería; ningún ambiente amoblado como escritorio"
-      },
-      "observacion": "UNA unidad en dos láminas (b08 nivel 1 + b09 nivel 2). Tampoco está en el brochure: solo a 796×500 px. Es el penthouse sobre la misma planta alargada en cuña del FLAT DOS —mismo reparto de dormitorios— pero con la escalera interior de madera donde el FLAT DOS tiene el dormitorio de servicio, que acá sube al segundo nivel. Nivel 2 con azotea propia: jardín con flores y césped, sala lounge exterior, mesa redonda, PISCINA, comedor exterior para 6, parrilla, y adentro sala techada, barra/kitchenette, lavandería con lavadora y secadora, dormitorio de servicio con baño y un medio baño más.",
-      "checklist": {
-       "sala_comedor": true,
-       "sala_estar_extra": true,
-       "estudio": false,
-       "balcon": false,
-       "balcon_techado": false,
-       "terraza": true,
-       "patio_jardin": true,
-       "cocina_tipo": "cerrada",
-       "cocina_isla": false,
-       "cocina_barra": true,
-       "despensa": true,
-       "lavanderia": true,
-       "lavanderia_techada": true,
-       "lavanderia_recinto_propio": true,
-       "cuarto_servicio": true,
-       "bano_servicio": true,
-       "bano_servicio_ducha": true,
-       "dorm_principal_suite": true,
-       "walk_in_closet": true,
-       "bano_visita": true,
-       "banos_completos": 4,
-       "medios_banos": 2,
-       "ascensor_directo": true,
-       "doble_altura": false,
-       "azotea_propia": true
-      },
-      "ambientes_texto": [
-       "NIVEL 1 · sala y comedor corridos con mesa de 8, sala de estar aparte y terraza de madera con jardineras",
-       "NIVEL 1 · cocina cerrada con mesón de lavadero doble, encimera de hornillas, refrigeradora y mesa de comedor de diario",
-       "NIVEL 1 · despensa/barra de repisas con botellas",
-       "NIVEL 1 · medio baño de visita junto al ascensor",
-       "NIVEL 1 · 3 dormitorios con sus baños; el principal con tira de colgadores",
-       "NIVEL 1 · escalera interior de madera al segundo nivel",
-       "NIVEL 2 · azotea propia con jardín de flores y césped, sala lounge exterior y mesa redonda",
-       "NIVEL 2 · piscina, comedor exterior para 6 y zona de parrilla",
-       "NIVEL 2 · sala techada, barra/kitchenette, cuarto de lavandería con lavadora y secadora, dormitorio de servicio con baño y medio baño"
-      ],
-      "archivos": [
-       "assets/planos/le-parc/plano-b08.jpg",
-       "assets/planos/le-parc/plano-b09.jpg"
-      ]
-     }
-    ]
-   }
-  },
-  {
    "id": "conde-de-la-vega-128",
    "name": "Conde de la Vega 128",
    "dev": "Edifikarte",
@@ -26253,11 +24207,14 @@ window.PORTAL_DATA = {
    "typologies": [],
    "flats_summary": [],
    "cochera_status": "nd",
-   "stock": null,
+   "stock": {
+    "n": 0,
+    "label": "Agotado"
+   },
    "mostrar": true,
    "geo_aprox": true,
    "geo_nota": "Ubicación interpolada sobre Jr. Conde de la Vega del Ren, entre el 119 (Conde II) y el 149 (HANA), ambos verificados en campo. Pendiente de foto.",
-   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera. Revisado el 25-ago-2026: su ficha oficial dice «metraje desde 257 m²» y 5 pisos. Si el rango de entrada subió de 109 a 257 m², es señal de que las unidades chicas ya se colocaron. Análisis de sus 14 láminas (02-sep-2026): 10 unidades, cero estudios y cero dormitorios disfrazados. Tres cosas que no cuadran con lo que publican: (1) venden «23 departamentos de 3 dormitorios» pero el FLAT 103 y el FLAT 204 son de DOS dormitorios; (2) dicen 5 pisos, pero sus dúplex arrancan en NPT +13.75 y el segundo nivel en +16.50, o sea más de 5 niveles habitables; (3) el rango publicado llega a 242.99 m² y el máximo impreso en las láminas es 243.36 m² (dúplex 602) — el 242.99 no aparece en ninguna. Bien equipado: dormitorio de servicio en 7 de 10 unidades y el baño de servicio siempre con ducha. Los cuatro dúplex tienen la lavandería a la intemperie, en patio computado como área libre. El FLAT 203 es el único con cocina abierta y barra con taburetes de todo el juego.",
+   "comentario": "Proyecto de Edifikarte que estaba en nuestra base pero no en el mapa: 5 pisos, 23 departamentos de 3 dormitorios, de 109.01 a 242.99 m², desde US$261,600 (≈S/981,000 en Nexo), con un US$/m² promedio referencial de US$2,400. Comparte la calle con Conde II (119), HANA (149) y Conde de la Vega 251. Falta confirmar estado de obra y si el precio incluye cochera. Revisado el 25-ago-2026: su ficha oficial dice «metraje desde 257 m²» y 5 pisos. Si el rango de entrada subió de 109 a 257 m², es señal de que las unidades chicas ya se colocaron. Análisis de sus 14 láminas (02-sep-2026): 10 unidades, cero estudios y cero dormitorios disfrazados. Tres cosas que no cuadran con lo que publican: (1) venden «23 departamentos de 3 dormitorios» pero el FLAT 103 y el FLAT 204 son de DOS dormitorios; (2) dicen 5 pisos, pero sus dúplex arrancan en NPT +13.75 y el segundo nivel en +16.50, o sea más de 5 niveles habitables; (3) el rango publicado llega a 242.99 m² y el máximo impreso en las láminas es 243.36 m² (dúplex 602) — el 242.99 no aparece en ninguna. Bien equipado: dormitorio de servicio en 7 de 10 unidades y el baño de servicio siempre con ducha. Los cuatro dúplex tienen la lavandería a la intemperie, en patio computado como área libre. El FLAT 203 es el único con cocina abierta y barra con taburetes de todo el juego. · AGOTADO: Jenny Miranda (Edifikarte) el 1-jul-2026, textual: «en conde de la vega 128 no quedan departamentos». Nos derivó a Conde de la Vega 251. Su precio queda como referencia histórica, no como oferta vigente.",
    "amenidades": [],
    "precio_hist": [
     {
@@ -26302,6 +24259,7 @@ window.PORTAL_DATA = {
    ],
    "coherencia_alerta": "Publica «23 departamentos de 3 dormitorios» pero dos de sus tipologías son de 2 dormitorios, y su rango de áreas no cierra con lo que imprimen sus propias láminas.",
    "dorms_disponibles": [
+    2,
     3
    ],
    "planos_analisis": {
@@ -26895,7 +24853,8 @@ window.PORTAL_DATA = {
       ]
      }
     ]
-   }
+   },
+   "motivo_no_comparable": "Agotado según la propia asesora (1-jul-2026): ya no hay unidades en venta."
   },
   {
    "id": "monte-umbroso-585",

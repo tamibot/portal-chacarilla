@@ -8,12 +8,28 @@ node_modules/
 # Assets que hoy no referencia el portal. Lista regenerada por
 # scripts/gitignore_assets.py — no editar a mano.
 
+assets/brochures/Floresta_343-brochure.pdf
+assets/brochures/floresta-343-vibra-brochure.pdf
+assets/brochures/le-parc-f1.pdf
+assets/brochures/monte-alegre-brochure.pdf
 assets/brochures/monte-sierpe-f1.pdf
+assets/chats/jardines-monte-real-obra-ago2026.jpg
+assets/chats/monte-mayor-177-fachada.jpg
 assets/img-f1/conde-vega-128/img-01.jpg
 assets/img-f1/conde-vega-251/img-01.jpg
+assets/img-f1/floresta-343/img-01.png
+assets/img-f1/floresta-343/img-02.png
+assets/img-f1/floresta-343/img-03.png
+assets/img-f1/le-parc/imgb-01.jpg
+assets/img-f1/le-parc/imgb-02.jpg
+assets/img-f1/le-parc/imgb-03.jpg
+assets/img-f1/le-parc/imgb-04.jpg
 assets/img-f1/monte-carmelo-250/img-01.jpg
 assets/img-f1/monte-carmelo-250/imgb-01.jpg
+assets/img/floresta-343.png
+assets/img/le-parc.jpg
 assets/img/logo-geu.svg
+assets/img/monte-alegre.jpg
 assets/planos/aura-sul/plano-01.webp
 assets/planos/aura-sul/plano-02.webp
 assets/planos/aura-sul/plano-03.webp
