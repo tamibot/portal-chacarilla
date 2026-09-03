@@ -1617,6 +1617,23 @@ window.PORTAL_DATA = {
     "fuentes": [
      "Recorrido de campo 2026-08-22"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Cuadrante",
+    "dev": null,
+    "proyecto_id": null,
+    "tags": [
+     "registro",
+     "metodo"
+    ],
+    "canal": "Auditoría de assets",
+    "autor": "Benchmark",
+    "texto": "Comparación byte a byte de todos los archivos: 36 grupos duplicados. Casi todos son el mismo archivo guardado dos veces dentro del mismo proyecto, pero tres renders estaban compartidos entre Monte Carmelo 250 y Monte Mayor 177, y la fachada que muestran lleva el número 330 — que no es ninguno de los dos. Retirados de ambos. Y los dos «planos» de Monte Umbroso 520 resultaron ser el mismo archivo: tiene un render, no dos.",
+    "cita": "Render con el número 330 en el ingreso, usado como Monte Carmelo 250 y como Monte Mayor 177",
+    "fuentes": [
+     "Auditoría de duplicados, 3-sep-2026"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2268,7 +2285,7 @@ window.PORTAL_DATA = {
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1211"
+  "sello": "20260903-1216"
  },
  "quadrant": [
   [
@@ -10709,9 +10726,6 @@ window.PORTAL_DATA = {
     "assets/img-f1/monte-carmelo-250/img-03.png",
     "assets/img-f1/monte-carmelo-250/img-04.jpg",
     "assets/img-f1/monte-carmelo-250/img-05.jpg",
-    "assets/img-f1/monte-carmelo-250/imgb-02.jpg",
-    "assets/img-f1/monte-carmelo-250/imgb-03.jpg",
-    "assets/img-f1/monte-carmelo-250/imgb-04.jpg",
     "assets/img/monte-carmelo-250.jpg",
     "assets/campo/monte-carmelo-250.jpg"
    ],
@@ -10754,7 +10768,7 @@ window.PORTAL_DATA = {
     3,
     4
    ],
-   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, precios de lista desde S/ 981,000. La valla de obra (22-ago-2026) dice «Tu depa en la mejor zona de Chacarilla · 2 | 3 dormitorios · FLATS Y DÚPLEX · Contáctanos 981 386 111» y suma el claim «Tu inversión segura en el mejor lugar». Corregido el 25-ago-2026 con su ficha oficial: son flats y dúplex de 2, 3 y 4 dormitorios de 80 a 274 m² en 7 pisos — teníamos 2-3 dorms, 80-116 m² y 6 pisos. Análisis de sus 11 láminas (02-sep-2026): en 5 de las 11 tipologías (103, 203, 604, S01, S02 y S03) uno de los ambientes que cuentan como dormitorio está amueblado con ESCRITORIO en vez de cama, aunque tiene closet, ventana y puerta: son dormitorios disfrazados. El caso más caro es el S03, de 111.52 m², que en la práctica se amuebla como un solo dormitorio más un cuarto de trabajo. El 604 es el único que rotula ESTUDIO aparte y aun así no cierra: dibuja 3 camas para 4 ambientes. El 102 dibuja solo 2 camas y su tercer dormitorio existe pero va sin cama. Se confirma otra vez el patrón de Edifikarte: los tipos 103, 203 y S03 rotulan «KITCHENETTE» cocinas abiertas normales con mesón en L, 4 hornillas y península al comedor.",
+   "comentario": "Edifikarte, esquina de Jr. Monte Carmelo cuadra 2 con Monte Mayor. Verificado en campo (22-ago-2026): obra en curso con malla y cartel comercial. Flats y dúplex: 2 dorm desde 80 m², 3 dorm desde 116 m². Financiado por BCP. Precios aún no publicados — pedir lista al asesor. Ficha oficial Edifikarte (24-ago-2026): 6 pisos, flats y dúplex de 2 y 3 dormitorios, precios de lista desde S/ 981,000. La valla de obra (22-ago-2026) dice «Tu depa en la mejor zona de Chacarilla · 2 | 3 dormitorios · FLATS Y DÚPLEX · Contáctanos 981 386 111» y suma el claim «Tu inversión segura en el mejor lugar». Corregido el 25-ago-2026 con su ficha oficial: son flats y dúplex de 2, 3 y 4 dormitorios de 80 a 274 m² en 7 pisos — teníamos 2-3 dorms, 80-116 m² y 6 pisos. Análisis de sus 11 láminas (02-sep-2026): en 5 de las 11 tipologías (103, 203, 604, S01, S02 y S03) uno de los ambientes que cuentan como dormitorio está amueblado con ESCRITORIO en vez de cama, aunque tiene closet, ventana y puerta: son dormitorios disfrazados. El caso más caro es el S03, de 111.52 m², que en la práctica se amuebla como un solo dormitorio más un cuarto de trabajo. El 604 es el único que rotula ESTUDIO aparte y aun así no cierra: dibuja 3 camas para 4 ambientes. El 102 dibuja solo 2 camas y su tercer dormitorio existe pero va sin cama. Se confirma otra vez el patrón de Edifikarte: los tipos 103, 203 y S03 rotulan «KITCHENETTE» cocinas abiertas normales con mesón en L, 4 hornillas y península al comedor. · Se retiraron de su galería tres renders que estaban duplicados byte a byte entre este proyecto y otro de Edifikarte: la fachada que muestran lleva el número 330 en el ingreso, que no es la dirección de ninguno de los dos. Es el mismo tipo de render genérico que ya habíamos sacado de la sección de planos.",
    "fuentes": [
     "https://www.edifikarte.com.pe",
     "Meta Ads Library (jul-2026) · proper-mkt/competencia-chacarilla-2026-07",
@@ -13429,10 +13443,6 @@ window.PORTAL_DATA = {
     "assets/planos/monte-mayor-177/monte_mayor-21.png",
     "assets/planos/monte-mayor-177/plano-203-vigente-1.jpg",
     "assets/img/monte-mayor-177.jpg",
-    "assets/img-f1/monte-mayor-177-renders/imgb-01.jpg",
-    "assets/img-f1/monte-mayor-177-renders/imgb-02.jpg",
-    "assets/img-f1/monte-mayor-177-renders/imgb-03.jpg",
-    "assets/img-f1/monte-mayor-177-renders/imgb-04.jpg",
     "assets/campo/monte-mayor-177-ultimo.jpg"
    ],
    "brochure": "assets/brochures/monte-mayor-177-brochure.pdf",
@@ -13473,7 +13483,7 @@ window.PORTAL_DATA = {
    "dorms_disponibles": [
     2
    ],
-   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia. · Jenny Miranda el 13-ago-2026: el flat de 87 m² «Aun esta disponible, esta separado sin embargo aun esta en stand by la firma de la minuta», y es el único de 2 dorm que les queda; de 3 dorm solo tienen dúplex en Conde de la Vega 251. Su cartel de obra dice «ÚLTIMOS DEPARTAMENTOS · Flats desde 87m²-135m² / Dúplex desde 175m²».",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia. · Jenny Miranda el 13-ago-2026: el flat de 87 m² «Aun esta disponible, esta separado sin embargo aun esta en stand by la firma de la minuta», y es el único de 2 dorm que les queda; de 3 dorm solo tienen dúplex en Conde de la Vega 251. Su cartel de obra dice «ÚLTIMOS DEPARTAMENTOS · Flats desde 87m²-135m² / Dúplex desde 175m²». · Se retiraron de su galería tres renders que estaban duplicados byte a byte entre este proyecto y otro de Edifikarte: la fachada que muestran lleva el número 330 en el ingreso, que no es la dirección de ninguno de los dos. Es el mismo tipo de render genérico que ya habíamos sacado de la sección de planos.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -15452,8 +15462,7 @@ window.PORTAL_DATA = {
    "web": "https://urbania.pe/inmueble/proyecto-proyecto-monte-umbroso-520-santiago-de-surco-chacarilla-del-estanque-transforma-proyectos-inmobiliarios-sac-persona-natural-59995159",
    "img": "assets/img-f1/monte-umbroso/img-01.jpg",
    "planos": [
-    "assets/img-f1/monte-umbroso/img-01.jpg",
-    "assets/img-f1/monte-umbroso/img-02.jpg"
+    "assets/img-f1/monte-umbroso/img-01.jpg"
    ],
    "brochure": null,
    "typologies": [
@@ -15589,7 +15598,7 @@ window.PORTAL_DATA = {
    "pedido_que": "No tiene ninguna lámina de tipología publicada: los dos archivos que teníamos bajo «planos» son renders de fachada. Sin planos no se puede analizar qué trae cada unidad.",
    "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520.",
    "cochera_certeza": "confirmado",
-   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas.",
+   "nota_planos": "Sin planos publicados. Lo único que teníamos eran dos archivos idénticos byte a byte: un solo render de fachada duplicado.",
    "dorms_declarados": [
     1,
     2,
