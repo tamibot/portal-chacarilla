@@ -246,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260903f"></script>
+<script src="data/portal-data.js?v=20260903g"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -1101,7 +1101,10 @@ function buildPlanos(){
 function buildCobertura(){
   const comps=P.filter(p=>p.mostrar&&!p.isGEU).sort((a,b)=>(b.en_cuadrante-a.en_cuadrante)||a.name.localeCompare(b.name));
   const si='<span style="color:#2F7D54;font-weight:800">✓</span>', no='<span style="color:#ce3c31;font-weight:800">✕</span>';
-  const nPlan=p=>(p.planos||[]).filter(x=>!x.includes('assets/campo/')).length;
+  /* Un plano es una lámina de tipología, no un render ni una foto de valla. Antes esto solo
+     excluía assets/campo/, así que tres proyectos mostraban «PLANOS» sin tener ninguno. */
+  const esPlano=x=>x.includes('/planos/')||x.includes('/chats/');
+  const nPlan=p=>(p.planos||[]).filter(esPlano).length;
   const cols=[
     ['Planos', p=>nPlan(p)?`<span style="color:#2F7D54;font-weight:800">${nPlan(p)}</span>`:no],
     ['Brochure', p=>(p.documentos||[]).some(d=>d.tipo==='brochure')?si:(p.brochure?'<span style="color:#b9863b;font-weight:700" title="Solo link, sin copia guardada">link</span>':no)],
