@@ -237,6 +237,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="priceview"></div>
     <div id="argview"></div>
     <div id="dormview"></div>
+   <div id="tipicoview" style="display:none"></div>
     <div id="ofertaview"></div>
     <div id="planosview"></div>
     <div id="covview"></div>
@@ -246,7 +247,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260903n"></script>
+<script src="data/portal-data.js?v=20260903i"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -920,12 +921,13 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],oferta:['ofertaview'],planos:['planosview'],arg:['argview'],cov:['covview']};
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],tipico:['tipicoview'],oferta:['ofertaview'],planos:['planosview'],arg:['argview'],cov:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['oferta','Comunicación y oferta'],['planos','Lo que dicen los planos'],['arg','Argumentario'],['cov','Cobertura de datos']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['tipico','El típico de cada uno'],['oferta','Comunicación y oferta'],['planos','Lo que dicen los planos'],['arg','Argumentario'],['cov','Cobertura de datos']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
   buildBandas();
+  buildTipicos();
   buildOferta();
   buildPlanos();
   buildCobertura();
@@ -933,11 +935,44 @@ function buildAnaNav(){
 }
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
-  ['statview','analysisview','priceview','dormview','ofertaview','planosview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  ['statview','analysisview','priceview','dormview','tipicoview','ofertaview','planosview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
 
+
+/* EL TIPICO DE CADA PROYECTO · compara producto aunque no haya precio.
+   Un benchmark no es solo el US$/m²: saber que el tipico del vecino es un 3 dorm de
+   132 m² con dos estacionamientos adentro ya dice contra que competimos. */
+function buildTipicos(){
+  const C={si:['incluida','#2F7D54'],no:['aparte','#6d776e'],nd:['no se sabe','#b9863b']};
+  const rows=P.filter(p=>p.mostrar&&p.tipico).sort((a,b)=>
+      (b.isGEU-a.isGEU)||((b.tipico.precio_m2?1:0)-(a.tipico.precio_m2?1:0))||a.name.localeCompare(b.name));
+  const sinT=P.filter(p=>p.mostrar&&!p.tipico);
+  const conP=rows.filter(p=>p.tipico.precio_m2).length;
+  document.getElementById('tipicoview').innerHTML=`
+   <h2 style="margin-bottom:2px">El típico de cada proyecto</h2>
+   <div class="muted" style="margin-bottom:14px">${D.meta.regla_tipico||''}</div>
+   <div class="amen" style="margin-bottom:18px">
+     <span><b>${rows.length}</b> proyectos con típico identificado</span>
+     <span><b>${conP}</b> además con US$/m²</span>
+     <span><b>${rows.length-conP}</b> comparan producto sin precio</span>
+   </div>
+   <div style="overflow-x:auto"><table class="t">
+    <thead><tr><th>Proyecto</th><th>Su típico</th><th class="num">m²</th><th class="num">Dorm</th>
+      <th>Cochera</th><th class="num">US$/m²</th></tr></thead>
+    <tbody>${rows.map(p=>{const t=p.tipico,[cl,co]=C[p.cochera_status]||C.nd;
+      const inf=p.cochera_certeza==='politica_desarrolladora';
+      return `<tr${p.isGEU?' style="background:#EAF2FB"':''}>
+       <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:${p.isGEU?800:700};color:${p.isGEU?'#185FA5':'#15402c'}">${p.name}</a>
+           ${p.isGEU?' <span class="badge b-geu">nuestro</span>':''}${p.en_cuadrante?'':' <span class="muted" style="font-size:10px">fuera</span>'}</td>
+       <td style="font-size:12.5px">${t.unidad||'—'}${t.de_n_tipicos>1?`<span class="muted" style="font-size:10px"> · de ${t.de_n_tipicos} típicos</span>`:''}</td>
+       <td class="num">${t.m2}</td><td class="num">${t.dorm??'—'}</td>
+       <td style="color:${inf?'#8F6109':co};white-space:nowrap"${inf?' title="Inferido de la política de la desarrolladora, no confirmado para este proyecto"':''}>${cl}${inf?'*':''}${t.estac_incluidos?` <span class="muted">(${t.estac_incluidos})</span>`:''}</td>
+       <td class="num" style="font-weight:${t.precio_m2?800:400};color:${t.precio_m2?(p.isGEU?'#185FA5':'#15402c'):'#b8b3a6'}">${t.precio_m2?'$'+t.precio_m2.toLocaleString():'sin precio'}</td></tr>`;}).join('')}
+    </tbody></table></div>
+   <div class="foot">${sinT.length?`<b>Sin típico identificable (${sinT.length}):</b> ${sinT.map(p=>p.name).join(' · ')} — no tenemos ningún flat de piso intermedio cargado, solo primeros pisos, dúplex o nada.`:''}</div>`;
+}
 
 /* POR DORMITORIOS · una tabla por banda, porque 1 y 4 dorm se comparan contra
    muy pocos y el promedio del cuadrante (que es casi todo 3 dorm) no los representa */
