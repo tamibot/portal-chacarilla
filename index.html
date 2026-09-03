@@ -246,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260903g"></script>
+<script src="data/portal-data.js?v=20260903h"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -382,9 +382,16 @@ function thumbHtml(p,cls){
 
 /* MAPA */
 const map=L.map('map',{zoomControl:true}).setView([-12.114,-76.983],15);
-const carto=L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{attribution:'© OpenStreetMap © CARTO',subdomains:'abcd',maxZoom:20});
-const osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:19});
-carto.addTo(map);let cd=false;carto.on('tileerror',()=>{if(!cd){cd=true;map.removeLayer(carto);osm.addTo(map);}});
+/* Basemap: hasta el 3-sep-2026 esto era CARTO, pero empezó a estampar «API KEY REQUIRED» sobre
+   cada tile — y como las sirve con HTTP 200, el fallback por tileerror nunca saltaba. Los tiles
+   estándar de OpenStreetMap tampoco sirven: sus servidores voluntarios devuelven un tile de
+   «Access blocked». Esri Light Gray es gratis, sin clave, y mantiene el fondo claro sobre el que
+   están calibrados el cuadrante amarillo y los marcadores. Los rótulos van en su capa aparte. */
+const esriBase=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',{attribution:'© OpenStreetMap · Esri',maxZoom:19});
+const esriRef=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,pane:'shadowPane'});
+const osmfr=L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap France',subdomains:'abc',maxZoom:19});
+esriBase.addTo(map);esriRef.addTo(map);
+let cd=false;esriBase.on('tileerror',()=>{if(!cd){cd=true;map.removeLayer(esriBase);map.removeLayer(esriRef);osmfr.addTo(map);}});
 
 let quadLayer=L.polygon(D.quadrant,{color:'#C99700',weight:2.5,fillColor:'#F2C200',fillOpacity:0.15}).addTo(map);
 quadLayer.bindTooltip('Mi cuadrante · Chacarilla del Estanque',{sticky:true});
