@@ -397,7 +397,7 @@
     "texto": "La valla de obra da todo: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales (lobby, SUM, zona de bicicletas, parque interior, pet spa, sala de reuniones y parrillas). Financia BCP, certificación AIS. Contactos de la valla: 920 374 177 y 964 104 126. El propietario es Central Proyectos Inmobiliarios S.A.C.",
     "cita": "«ENTREGA MARZO 2027 · ÚLTIMAS UNIDADES · FLATS DESDE 127 m² · DÚPLEX DESDE 209 m²» — valla de obra, 22-ago-2026",
     "imgs": [
-     "assets/campo/living-monte-real-obra.jpg"
+     "assets/campo/jardines-monte-real-cerco.jpg"
     ],
     "fuentes": [
      "Recorrido de campo 2026-08-22"
@@ -909,7 +909,7 @@
     "cita": "Cerco de marca fotografiado el 2026-08-22 a las 16:00.",
     "imgs": [
      "assets/campo/living-monte-real.jpg",
-     "assets/campo/living-monte-real-obra.jpg"
+     "assets/campo/jardines-monte-real-cerco.jpg"
     ],
     "fuentes": [
      "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030"
@@ -1584,6 +1584,23 @@
     "fuentes": [
      "Chats exportados el 3-sep-2026"
     ]
+   },
+   {
+    "fecha": "2026-09-03",
+    "proyecto": "Cuadrante",
+    "dev": null,
+    "proyecto_id": null,
+    "tags": [
+     "registro",
+     "metodo"
+    ],
+    "canal": "Auditoría de assets",
+    "autor": "Benchmark",
+    "texto": "Barrido de todos los archivos contra el proyecto que los usa. Salió un cruce: la foto archivada como «jardines-monte-real-obra» muestra en realidad DOS edificios —Monte Sierpe terminado con sus carteles de últimos depas y el número 106, y al lado la obra de Jardines de Monte Real— y estaba asignada solo a uno. Ahora está en los dos y quedó anotado que son vecinos inmediatos. Otra, «living-monte-real-obra», sí era de Jardines de Monte Real: solo el nombre mentía. Las dos renombradas.",
+    "cita": "«ÚLTIMOS DEPAS · 943 729 552» sobre la fachada del 106, junto a la malla verde de Central Inmobiliaria",
+    "fuentes": [
+     "Recorrido de campo 2026-08-22"
+    ]
    }
   ],
   "ultimo_recorrido": "2026-08-22",
@@ -2223,7 +2240,8 @@
    "unidades": 238
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
-  "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno."
+  "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
+  "sello": "20260903-1211"
  },
  "quadrant": [
   [
@@ -3414,7 +3432,13 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "aura-sul",
@@ -4175,7 +4199,10 @@
     "canal": "Meta Ads (Grupo Dicon / LoBo)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · ganchos «Entrega inmediata y cochera gratis» y «Llévate una Parrilla Ninja»"
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3
+   ]
   },
   {
    "id": "conde-ii",
@@ -4576,7 +4603,24 @@
     ]
    },
    "cochera_certeza": null,
-   "cochera_fuente": null
+   "cochera_fuente": null,
+   "cartel_obra": {
+    "fecha": "2026-08-22",
+    "foto": "assets/campo/conde-ii-cerco-licencia.jpg",
+    "pisos": "5 pisos + azotea",
+    "sotanos": 2,
+    "departamentos": 10,
+    "estacionamientos": 19,
+    "licencia": "0231-2026-SGLH-GDU-MSS",
+    "ejecucion": "13 meses",
+    "uso": "Residencial",
+    "propietario": "AyD Narciso S.A.C.",
+    "cerco": "Tu nueva historia comienza aquí · Dormitorios 3 · Desde 126 m²",
+    "lectura": "19 estacionamientos para 10 departamentos son 1.9 por unidad. Es la señal más fuerte que tenemos de que van incluidos, pero sigue siendo señal: AyD vende Monte Umbroso 247 con la cochera aparte y Narciso con doble lineal adentro, así que su política no se puede deducir. El propietario que figura en el cartel es «AyD Narciso S.A.C.», la sociedad, no el proyecto Narciso — por eso las dos fotos de esta obra estuvieron archivadas con el nombre equivocado."
+   },
+   "dorms_declarados": [
+    3
+   ]
   },
   {
    "id": "conde-de-la-vega-251",
@@ -4969,7 +5013,11 @@
     ]
    },
    "cochera_fuente": "Chat real de WhatsApp con el asesor +51 981 386 111, 1-jul-2026",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "conde-de-la-vega-460",
@@ -5557,7 +5605,6 @@
     }
    ],
    "dorms_disponibles": [
-    1,
     2,
     3
    ],
@@ -6196,7 +6243,12 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "dmont-dicon",
@@ -6361,7 +6413,10 @@
     ]
    },
    "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3
+   ]
   },
   {
    "id": "dmont-2",
@@ -6584,7 +6639,6 @@
     }
    ],
    "dorms_disponibles": [
-    2,
     3
    ],
    "comentario": "Proyecto activo de Grupo Dicon en Jr. Monte Real 422, en preventa (reemplaza a D'Mont, ya agotado). Confirmar tipologías y lista de precios con el asesor. Al 25-ago-2026 su ticket de entrada subió a US$263,064 (teníamos US$181,190): ya no publican unidades por debajo de 121.62 m², señal de que las chicas se colocaron. Quedan 8 unidades: flats 101, 201, 202, 302, 401, 402, 502 y el dúplex 603. Análisis de sus 13 láminas (02-sep-2026): 6 tipologías, cero estudios y cero dormitorios disfrazados. NO repite el «home office» de su hermano D'Mont: acá ningún ambiente tiene escritorio, cada cuarto que no es baño, cocina ni lavandería lleva su cama. Seis tipologías de 3 dormitorios limpios. Es además el único de su grupo con cocina CERRADA en U con puerta en las seis. Cuatro de los 13 archivos son duplicados exactos y su brochure de 15 páginas no trae ningún plano.",
@@ -7013,7 +7067,11 @@
     ]
    },
    "cochera_fuente": " · política de Grupo Dicon confirmada por el cliente el 3-sep-2026: el estacionamiento se cotiza aparte",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "estelar-1080",
@@ -7533,7 +7591,11 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "floresta-living-444",
@@ -7964,7 +8026,11 @@
     ]
    },
    "cochera_certeza": "politica_desarrolladora",
-   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
+   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "hana",
@@ -8037,9 +8103,7 @@
     }
    ],
    "dorms_disponibles": [
-    2,
-    3,
-    4
+    3
    ],
    "comentario": "Odima Inmobiliaria. Análisis de sus láminas (02-sep-2026): de los 11 archivos, solo hay UNA tipología con plano — el DPTO 102 de 96.31 m². Los otros diez son versiones del mismo dibujo, la planta del primer piso y los tres sótanos. Su brochure de feb-2026 anuncia 17 departamentos de 85 a 290 m² pero no publica ninguna otra planta. CORRECCIÓN AL STOCK: veníamos diciendo que los sótanos estaban íntegramente vendidos, y no es así. De 21 estacionamientos y 7 depósitos quedan libres el estacionamiento 08 del sótano 2 y el depósito 04 del sótano 3 — o sea que todavía pueden vender un paquete completo de depa más cochera más depósito. Su plano es el más honesto del cuadrante: declara 3 ambientes, 2 baños completos, 1 de visita y «estar», y el dibujo lo cumple exacto — el estar es real, un sofá en alcoba propia. A cambio, la lavandería es la punta de la cocina abierta contra la ventana, sin cuarto propio, y no tiene cuarto ni baño de servicio. Área libre 0.00: sin balcón ni terraza.",
    "amenidades": [],
@@ -8222,7 +8286,12 @@
     "canal": "WhatsApp de la asesora",
     "fuente": "Chat real de WhatsApp con el asesor Rebeca Ruiz, 13-ago-2026, reconfirmado el 3-sep: «Tiene 48 mil de mejora»"
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "jardines-monte-real",
@@ -8242,7 +8311,7 @@
    "m2": "94 – 278",
    "wa": "920374177",
    "web": "https://www.centralinmobiliaria.pe/proyectos/jardines-de-monte-real/",
-   "img": "assets/campo/living-monte-real-obra.jpg",
+   "img": "assets/campo/jardines-monte-real-cerco.jpg",
    "planos": [
     "assets/planos/jardines-monte-real-brochure2026/Duplex 209.55 m2.jpg",
     "assets/planos/jardines-monte-real-brochure2026/Duplex 211.57 m2.jpg",
@@ -8276,8 +8345,8 @@
     "assets/planos/jardines-monte-real-oficial/Lamina 29 - 216.52 m2.jpg",
     "assets/img-f1/jardines-monte-real/img-01.jpg",
     "assets/img-f1/jardines-monte-real/img-02.jpg",
-    "assets/campo/jardines-monte-real-obra.jpg",
-    "assets/campo/living-monte-real-obra.jpg",
+    "assets/campo/monte-sierpe-y-jardines-vecinos.jpg",
+    "assets/campo/jardines-monte-real-cerco.jpg",
     "assets/chats/jardines-monte-real-flat-x08-precio.jpg"
    ],
    "brochure": "assets/brochures/jardines-monte-real-brochure.pdf",
@@ -8331,11 +8400,9 @@
    ],
    "dorms_disponibles": [
     2,
-    3,
-    4,
-    5
+    3
    ],
-   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora. Análisis de sus 14 plantas oficiales (02-sep-2026): el sello AIS de accesibilidad, que es su bandera comercial, NO se ve en ninguna lámina — sin barras de apoyo, sin círculos de giro, sin duchas a nivel y con todos los barridos de puerta del mismo ancho. Lo único con lectura de accesibilidad es el sello «ascensor directo a los 2 niveles» de sus dos dúplex grandes; los otros cuatro dúplex dependen de escalera interna. Ningún estudio ni dormitorio disfrazado en las 14. OJO con el Flat 107 de 129.42 m²: se vende como flat grande pero solo tiene 2 dormitorios de familia — la tercera cama es un catre individual dentro del bloque de servicio, pegado a la lavadora. A cambio sus dos dormitorios son suite completa con vestidor. Solo dos plantas tienen cocina cerrada (205 y X04); el resto abierta.",
+   "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora. Análisis de sus 14 plantas oficiales (02-sep-2026): el sello AIS de accesibilidad, que es su bandera comercial, NO se ve en ninguna lámina — sin barras de apoyo, sin círculos de giro, sin duchas a nivel y con todos los barridos de puerta del mismo ancho. Lo único con lectura de accesibilidad es el sello «ascensor directo a los 2 niveles» de sus dos dúplex grandes; los otros cuatro dúplex dependen de escalera interna. Ningún estudio ni dormitorio disfrazado en las 14. OJO con el Flat 107 de 129.42 m²: se vende como flat grande pero solo tiene 2 dormitorios de familia — la tercera cama es un catre individual dentro del bloque de servicio, pegado a la lavadora. A cambio sus dos dormitorios son suite completa con vestidor. Solo dos plantas tienen cocina cerrada (205 y X04); el resto abierta. · Su cerco de obra declara «ENTREGA MARZO 2027 · ÚLTIMAS UNIDADES · FLATS DESDE 127 m² · DÚPLEX DESDE 209 m² · 6 pisos, 7 dptos, 7 áreas sociales», financia BCP, con los teléfonos 920 374 177 y 964 104 126. Ojo con el «desde 127 m²»: es de lo que QUEDA, no del proyecto — el X08 que cotizaron es de 94.20 m². Está pegado a Monte Sierpe, que ya está terminado y vendiendo sus últimas unidades en la misma cuadra.",
    "amenidades": [
     "Coworking",
     "Lobby",
@@ -9251,7 +9318,15 @@
     ]
    },
    "cochera_fuente": "Chat real de WhatsApp con el asesor +51 920 374 177 (Central Inmobiliaria), 13-ago-2026 · lámina FLAT X08 con precio impreso",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "vecino_de": [
+    "monte-sierpe"
+   ],
+   "dorms_declarados": [
+    3,
+    4,
+    5
+   ]
   },
   {
    "id": "la-floresta-boulevard",
@@ -10565,7 +10640,12 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "monte-carmelo-250",
@@ -11330,7 +11410,12 @@
     "canal": "Meta Ads (Edifikarte)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · anuncio «¡Vive el mundial en tu nuevo depa en Chacarilla! Depas de 3 dorms desde 116m² y ¡cochera de regalo!»"
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "monte-carmelo-551",
@@ -12433,7 +12518,11 @@
     ]
    },
    "cochera_fuente": "Chat real de WhatsApp con el asesor +51 993 510 957 (Monte Carmelo 551), 3-sep-2026",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "monte-mar-167",
@@ -12581,8 +12670,7 @@
    "flats_summary": [],
    "dorms_disponibles": [
     2,
-    3,
-    4
+    3
    ],
    "comentario": "Edifikarte, Calle Montemar 269. Datos de su web oficial: 6 pisos, departamentos de 2, 3 y 4 dormitorios de 80 a 136 m². Se presenta como «proyecto premium en Chacarilla». Aún no publican planos de tipología ni lista de precios. Nota: nuestra ficha anterior lo registraba como «Monte Mar 167» con otro desarrollador; corregido con la fuente oficial. Brochure oficial de julio-2026 descargado: 10 tipologías (flats de 81.37 a 153.25 m², dúplex de 141 a 183 m²), 2 y 3 dormitorios. Sin lista de precios pública — pedido abierto por WhatsApp. Su ficha oficial publica 2, 3 y 4 dormitorios (teníamos 2-3) y flats de 80 a 136 m²; con los dúplex del brochure de julio el rango llega a 182.67 m². Análisis de sus 18 láminas (02-sep-2026): 10 tipologías, cero estudios y cero dormitorios disfrazados. Rotula usos alternativos entre paréntesis —DORMITORIO 03 (ESTAR), DORMITORIO 02 (WCL)— pero los amuebla con cama, así que son dormitorios. CONTRADICE SU PROPIA FICHA: le atribuíamos «2 ascensores directos por departamento», pero ninguna de las 18 láminas dibuja el ascensor abriendo adentro — todas entran por puerta abatible a un recibo. Servicio flojo: solo el dúplex 004 tiene dormitorio de servicio; siete tipologías tienen baño de servicio con ducha pero sin cuarto, y tres (001, 102, 202) no tienen nada y resuelven el lavado con un closet de 1.3 a 1.6 m. Sus tres dúplex tienen la lavandería a la intemperie. El TIPO 204/304/404 es la única tipología sin walk-in closet en el principal.",
    "fuentes": [
@@ -13279,7 +13367,12 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "monte-mayor-177",
@@ -13351,8 +13444,7 @@
     }
    ],
    "dorms_disponibles": [
-    2,
-    3
+    2
    ],
    "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia. · Jenny Miranda el 13-ago-2026: el flat de 87 m² «Aun esta disponible, esta separado sin embargo aun esta en stand by la firma de la minuta», y es el único de 2 dorm que les queda; de 3 dorm solo tienen dúplex en Conde de la Vega 251. Su cartel de obra dice «ÚLTIMOS DEPARTAMENTOS · Flats desde 87m²-135m² / Dúplex desde 175m²».",
    "amenidades": [],
@@ -13704,7 +13796,10 @@
     "canal": "Meta Ads (Edifikarte)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «¡Kamado de regalo!», 7 variantes el 15-jul"
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3
+   ]
   },
   {
    "id": "monte-mayor-183",
@@ -14465,7 +14560,12 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "monte-real-265",
@@ -14682,7 +14782,10 @@
    },
    "cochera_certeza": "politica_desarrolladora",
    "cochera_nota": "Misma política de EE Inmobiliaria dicha por Cecilia Estrada el 2-jul-2026: «El estacionamiento no está incluído en el precio del departamento». INFERIDO, no confirmado para este proyecto.",
-   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
+   "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
+   "dorms_declarados": [
+    3
+   ]
   },
   {
    "id": "monte-sierpe",
@@ -14840,10 +14943,9 @@
     }
    ],
    "dorms_disponibles": [
-    2,
-    3
+    2
    ],
-   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta. · Su brochure digital declara 6 pisos, 57 unidades y 75 estacionamientos (1.3 por departamento), lo que calza con que el precio incluya cochera. El 3-sep-2026 la asesora avisó que estarán en la feria inmobiliaria. · Las cuatro láminas que la asesora envió el 14-ago-2026 (848×564, mejores que las 660×371 de la web) corrigieron tres metrajes, sumaron la tipología X10 y subieron la cobertura del análisis de planos del 71% al 81%. Ojo: los precios por unidad que tenemos cargados son anteriores al rango S/881,000–970,000 que dio el 14-ago, y el x107 queda por debajo de ese piso — hay que pedirle la lista por unidad.",
+   "comentario": "Make Inmobiliaria, entrega inmediata (jun-2026). Se vendió el 408. Flats 2-3 dorm (103-107 m²). El precio de lista incluye 1 cochera (US$20,000, confirmado); el US$/m² del portal la descuenta para comparar en la misma base. Típico neto ~US$2,313/m². Brochure oficial descargado: 2 y 3 ambientes de 75 a 212 m², más de 500 m² de parque interno, estacionamiento de bicicletas. El edificio ya está terminado y su fachada lleva dos carteles rojos «ÚLTIMOS DEPAS · 943 729 552» — la foto que teníamos archivada como «jardines-monte-real-obra» era en realidad esta. · Su brochure digital declara 6 pisos, 57 unidades y 75 estacionamientos (1.3 por departamento), lo que calza con que el precio incluya cochera. El 3-sep-2026 la asesora avisó que estarán en la feria inmobiliaria. · Las cuatro láminas que la asesora envió el 14-ago-2026 (848×564, mejores que las 660×371 de la web) corrigieron tres metrajes, sumaron la tipología X10 y subieron la cobertura del análisis de planos del 71% al 81%. Ojo: los precios por unidad que tenemos cargados son anteriores al rango S/881,000–970,000 que dio el 14-ago, y el x107 queda por debajo de ese piso — hay que pedirle la lista por unidad. · Verificado en la foto de campo: el edificio con los dos carteles «ÚLTIMOS DEPAS · 943 729 552» y el número 106 en el ingreso es este, ya terminado, y **pegado a la obra de Jardines de Monte Real**, que está en la misma cuadra detrás de la malla verde con los teléfonos de Central Inmobiliaria. Son vecinos inmediatos: el comprador que va a ver uno ve el otro desde la vereda.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -14865,7 +14967,8 @@
     "assets/img-f1/monte-sierpe/img-02.jpg",
     "assets/img-f1/monte-sierpe/img-03.jpg",
     "assets/img-f1/monte-sierpe/img-04.jpg",
-    "assets/img-f1/monte-sierpe/img-05.jpg"
+    "assets/img-f1/monte-sierpe/img-05.jpg",
+    "assets/campo/monte-sierpe-y-jardines-vecinos.jpg"
    ],
    "stock": {
     "n": null,
@@ -15293,7 +15396,14 @@
     ]
    },
    "cochera_fuente": "Chat real de WhatsApp con el asesor +51 943 729 552, 3-sep-2026 · brochure digital de 21 páginas",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "vecino_de": [
+    "jardines-monte-real"
+   ],
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "monte-umbroso",
@@ -15375,7 +15485,6 @@
    ],
    "dorms_disponibles": [
     1,
-    2,
     3
    ],
    "comentario": "Estaba registrado como «en construcción» con datos de julio-2024. Verificado el 25-ago-2026: el edificio YA ESTÁ TERMINADO — año de construcción 2024 — y está en remate de últimas unidades a través de corredores independientes, no de la inmobiliaria. Son 26 departamentos en 7 pisos con rooftop y 3 sótanos, arquitectura de Atelier Reusche Reyna, financiado por BBVA. Quedan publicados el flat 503 de 1 dormitorio (67 m², US$170,850 con 1 estacionamiento) y un penthouse dúplex de 3 dorms con terraza de 63 m² (186 m², US$399,000 con 2 estacionamientos). Es el único 1 dormitorio con precio confirmado del cuadrante además del nuestro. ⚠ Al 31-ago-2026 se detectó que sus dos precios coinciden con los de Monte Umbroso 585 (Galeon). Quedan marcados como no comparables hasta confirmar de cuál edificio son.",
@@ -15453,7 +15562,12 @@
    "pedido_que": "No tiene ninguna lámina de tipología publicada: los dos archivos que teníamos bajo «planos» son renders de fachada. Sin planos no se puede analizar qué trae cada unidad.",
    "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520.",
    "cochera_certeza": "confirmado",
-   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas."
+   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas.",
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "monteflor",
@@ -15534,9 +15648,7 @@
     }
    ],
    "dorms_disponibles": [
-    2,
-    3,
-    4
+    3
    ],
    "comentario": "Constructora Magnífica, en la esquina de Calle Monte Umbroso 166 con Monte Flor. Valla: 2 y 3 dormitorios desde 193 m², WhatsApp 975 244 600. Sin caseta de ventas. Faltan precios por unidad. La valla confirma: «Monte Flor · CHACARILLA - SURCO · 2 y 3 dormitorios · +51 975 244 600 · Constructora Magnífica». Búsqueda del 02-sep-2026: Constructora Magnífica (RUC 20610489142, operando desde ene-2023) tiene su web magnifica.pe en modo placeholder, sin contenido. No publica ficha, brochure ni planos de Monte Flor. Todo lo que tenemos sale de avisos de corredores en InfoCasas. Para analizar sus plantas hay que conseguirlas por el corredor.",
    "amenidades": [],
@@ -15613,7 +15725,12 @@
     }
    ],
    "cochera_certeza": "confirmado",
-   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas."
+   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas.",
+   "dorms_declarados": [
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "parque-monte-carmelo",
@@ -15877,7 +15994,6 @@
    ],
    "dorms_disponibles": [
     1,
-    2,
     3,
     4
    ],
@@ -16733,7 +16849,13 @@
     "canal": "Meta Ads (EE Inmobiliaria)",
     "fuente": "Biblioteca de Anuncios de Meta · piezas bajadas el 17-jul-2026 · gancho «Tu depa con Bono Verde 🌿»"
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "precursores-525",
@@ -16789,10 +16911,7 @@
     }
    ],
    "flats_summary": [],
-   "dorms_disponibles": [
-    2,
-    3
-   ],
+   "dorms_disponibles": [],
    "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio. · Joyce Aguilar (Grupo Chacarilla Sur) el 14-ago-2026: «nos está quedando un duplex penthouse». Su brochure declara flats y dúplex de 84 a 227 m², 20 departamentos en 6 pisos, BCP, entrega nov-2026, desde $203,700. · El 3-sep-2026 Joyce confirmó que el último departamento —el Dúplex 603— sigue disponible en US$544,425 incluyendo 2 estacionamientos y depósito, con entrega en noviembre de 2026.",
    "amenidades": [],
    "total_pisos": 6,
@@ -17181,7 +17300,11 @@
    },
    "cochera_certeza": "confirmado",
    "cochera_fuente": "Chat real de WhatsApp con el asesor Joyce Aguilar +51 949 107 186, 3-sep-2026",
-   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos y depósito, confirmado por Joyce Aguilar el 3-sep-2026. El US$/m² descuenta US$30,000 por los dos según la convención del benchmark. Es un dúplex penthouse, así que va en la banda de dúplex y no en el ranking de flats típicos."
+   "politica_precio": "El precio de lista INCLUYE 2 estacionamientos y depósito, confirmado por Joyce Aguilar el 3-sep-2026. El US$/m² descuenta US$30,000 por los dos según la convención del benchmark. Es un dúplex penthouse, así que va en la banda de dúplex y no en el ranking de flats típicos.",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "precursores-ii",
@@ -17622,7 +17745,10 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3
+   ]
   },
   {
    "id": "santorini",
@@ -17852,10 +17978,8 @@
     }
    ],
    "dorms_disponibles": [
-    1,
     2,
-    3,
-    4
+    3
    ],
    "comentario": "Grupo Moryasoc Proyecto 31 S.A.C., en Calle Monte Real 380 con Monte Flor 693. Cartel informativo de obra (22-ago-2026): licencia 0401-2025-SGLH-GDU-MSS, edificación nueva multifamiliar, 6 pisos y azotea, 3 sótanos, 14 meses de ejecución, horario L–V 8:00–17:30 y sábados 8:00–13:30. No tiene caseta de ventas ni publicidad comercial en la obra — solo el cartel municipal. Tarifario del proyecto: los precios incluyen 1 estacionamiento y la 2.ª cochera paralela suma US$18,000 en todas las tipologías (ej. 301A: US$387,000 con 1 vs US$405,000 con 2). Con ese ajuste sus flats entran al comparativo: de US$2,156 a US$2,316 por m² netos de cochera. Varias unidades ya figuran VENDIDAS en su web. Al 25-ago-2026 su web marca 13 unidades vendidas de 23 — quedan 10. El flat 501B, que usábamos como comparable, ya figura vendido: su precio se mantiene como referencia de cierre, no de oferta vigente.",
    "amenidades": [],
@@ -18418,7 +18542,13 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3,
+    4
+   ]
   },
   {
    "id": "spazio",
@@ -18623,8 +18753,6 @@
    "flats_summary": [],
    "dorms_disponibles": [
     3,
-    4,
-    5,
     6
    ],
    "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank. Análisis de sus 11 plantas (02-sep-2026): se venden como «FLEX APARTMENTS» pero el ambiente flexible NO existe en ningún plano — todo cuarto que no es sala, comedor, cocina, baño o lavandería lleva cama, closet y puerta. La flexibilidad es solo verbal. Ningún dormitorio principal tiene baño en suite en ninguna de las 11 unidades, y ninguna tiene cuarto de servicio con cama. Su mejor carta son las azoteas propias con césped, mesas y parrilla en los dos tríplex (603, 604) y los dos dúplex (701, 702). El flat 102 es el único con la lavandería a la intemperie, y el 101 el único sin ningún exterior pese a ser primer piso.",
@@ -19313,7 +19441,13 @@
     ]
    },
    "cochera_fuente": "Chat real de WhatsApp con el asesor Ventas Dicon +51 957 733 272, 22-ago-2026 · política confirmada por el cliente",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3,
+    4,
+    5,
+    6
+   ]
   },
   {
    "id": "terraverde",
@@ -19546,8 +19680,7 @@
    ],
    "mapeado_desde": "2026-08-22",
    "dorms_disponibles": [
-    3,
-    4
+    3
    ],
    "promo": {
     "tipo": "Descuento en precio",
@@ -19919,7 +20052,11 @@
      "tipo": "cotizacion"
     }
    ],
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3,
+    4
+   ]
   },
   {
    "id": "narciso-ayd",
@@ -20062,8 +20199,7 @@
     "nota": "Inmobiliaria AyD lo lista como «EN PLANOS» en su web: 5 pisos, 9 departamentos de 97 a 211 m²."
    },
    "dorms_disponibles": [
-    3,
-    4
+    3
    ],
    "contactos": [
     {
@@ -20224,7 +20360,11 @@
     "canal": "WhatsApp del asesor",
     "fuente": "Chat real de WhatsApp con el asesor de Inmobiliaria AyD, +51 957 307 920, 3-sep-2026"
    },
-   "foto_campo": null
+   "foto_campo": null,
+   "dorms_declarados": [
+    3,
+    4
+   ]
   },
   {
    "id": "precursores-verde",
@@ -20344,11 +20484,7 @@
    ],
    "borde_avenida": true,
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": [
-    1,
-    2,
-    3
-   ],
+   "dorms_disponibles": [],
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -20962,7 +21098,12 @@
       ]
      }
     ]
-   }
+   },
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "astete-living",
@@ -21117,7 +21258,8 @@
    "cochera_certeza": "politica_desarrolladora",
    "cochera_nota": "Central Inmobiliaria incluye 1 estacionamiento simple en el precio: Diana Rodríguez —la misma asesora y el mismo número— lo confirmó para Jardines de Monte Real el 13-ago-2026. INFERIDO de la política de la desarrolladora, no confirmado para este proyecto.",
    "cochera_fuente": "Política de Central Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
-   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas."
+   "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas.",
+   "dorms_declarados": []
   },
   {
    "id": "living-monte-real",
@@ -21166,7 +21308,7 @@
    "caseta_ventas": "si",
    "caseta_nota": "Caseta de ventas en el terreno (anotación de campo).",
    "caseta_fecha": "2026-08-22",
-   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada. Tiene web propia (reallivingchacarilla.com.pe) con brochure de 35 páginas y las 12 plantas rotuladas con área techada y ocupada: siete flats de 82.7 a 121.6 m² techados y cinco dúplex de 109.8 a 145.6 m² techados. Comunican «depas flats desde 85 hasta 176 m²» y «depas dúplex de 120 a 193 m²». El brochure NO menciona si el precio incluye estacionamiento ni depósito. Análisis de sus 12 plantas (02-sep-2026): ningún estudio ni dormitorio disfrazado. Dos hallazgos de venta. Primero: los DÚPLEX 504 y 505 no tienen segundo piso de vivienda — su nivel 2 es una azotea de uso exclusivo amoblada como terraza de sol, con un bloque chico de servicio. Por eso la brecha entre 111 m² techados y 183-185 ocupados. Segundo: sus láminas de los tipos X llevan impresa la advertencia «el balcón corresponde al dpto 201 y 401» (X01), «al 302» (X02), «al 203 y 403» (X03) y «al 204 y 404» (X04) — o sea que el balcón dibujado NO lo tienen todas las unidades del tipo. Los tres flats de primer piso (Depa 101, 102 y 103) sí tienen terraza a nivel con césped y arbustos plantados, no jardinera; el 103 parte la vivienda con un patio central.",
+   "comentario": "Cartel del proyecto fotografiado el 22-ago-2026: «REAL LIVING · Monte Real · 1, 2, 3 DORMS · 85 m² | 193 m² · 949 107 186». El portón lleva el monograma de GRUPO CHACARILLA SUR — el mismo logo, letra por letra, que el de su edificio de Precursores. Y 949 107 186 es el número de Joyce, su asesora comercial. Inmobiliaria confirmada. Tiene web propia (reallivingchacarilla.com.pe) con brochure de 35 páginas y las 12 plantas rotuladas con área techada y ocupada: siete flats de 82.7 a 121.6 m² techados y cinco dúplex de 109.8 a 145.6 m² techados. Comunican «depas flats desde 85 hasta 176 m²» y «depas dúplex de 120 a 193 m²». El brochure NO menciona si el precio incluye estacionamiento ni depósito. Análisis de sus 12 plantas (02-sep-2026): ningún estudio ni dormitorio disfrazado. Dos hallazgos de venta. Primero: los DÚPLEX 504 y 505 no tienen segundo piso de vivienda — su nivel 2 es una azotea de uso exclusivo amoblada como terraza de sol, con un bloque chico de servicio. Por eso la brecha entre 111 m² techados y 183-185 ocupados. Segundo: sus láminas de los tipos X llevan impresa la advertencia «el balcón corresponde al dpto 201 y 401» (X01), «al 302» (X02), «al 203 y 403» (X03) y «al 204 y 404» (X04) — o sea que el balcón dibujado NO lo tienen todas las unidades del tipo. Los tres flats de primer piso (Depa 101, 102 y 103) sí tienen terraza a nivel con césped y arbustos plantados, no jardinera; el 103 parte la vivienda con un patio central. · Su cerco pintado declara «1.2.3 DORMS · desde 85 m² hasta 193 m²», con el logotipo de Chacarilla Sur y el WhatsApp 949 107 186 — el mismo de Joyce Aguilar, que atiende Precursores 525. Confirma desarrolladora y rango de tipologías.",
    "fuentes": [
     "Cartel/valla fotografiada en el recorrido del 22-ago-2026",
     "Recorrido de campo 2026-08-22 · fotos IMG_8029–8030",
@@ -21210,11 +21352,7 @@
     }
    ],
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": [
-    1,
-    2,
-    3
-   ],
+   "dorms_disponibles": [],
    "documentos": [
     {
      "titulo": "Brochure oficial de Real Living",
@@ -21885,7 +22023,12 @@
    },
    "cochera_certeza": "politica_desarrolladora",
    "cochera_nota": "Grupo Chacarilla Sur incluye 2 estacionamientos y depósito en el precio: lo confirmó Joyce Aguilar —la misma asesora y el mismo número que atiende este proyecto— para Precursores 525 el 3-sep-2026. INFERIDO de la política de la desarrolladora, no confirmado para este proyecto: no entra al ranking hasta preguntarlo.",
-   "cochera_fuente": "Política de Grupo Chacarilla Sur confirmada por su asesora en un proyecto hermano · inferido, no confirmado aquí"
+   "cochera_fuente": "Política de Grupo Chacarilla Sur confirmada por su asesora en un proyecto hermano · inferido, no confirmado aquí",
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "isGEU": false,
@@ -22116,10 +22259,7 @@
     }
    ],
    "coherencia_alerta": "Publica «23 departamentos de 3 dormitorios» pero dos de sus tipologías son de 2 dormitorios, y su rango de áreas no cierra con lo que imprimen sus propias láminas.",
-   "dorms_disponibles": [
-    2,
-    3
-   ],
+   "dorms_disponibles": [],
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -22715,7 +22855,11 @@
    "motivo_no_comparable": "Agotado según la propia asesora (1-jul-2026): ya no hay unidades en venta.",
    "cochera_certeza": "politica_desarrolladora",
    "cochera_nota": "Edifikarte mete 2 estacionamientos y depósito en el precio en los cinco proyectos suyos que sí confirmamos (Monte Alegre 109, Monte Mayor 177, Conde de la Vega 251, Montemar 269 y Monte Carmelo 250). INFERIDO de ese patrón, no confirmado para este: además está agotado, así que no entra al ranking de todos modos.",
-   "cochera_fuente": "Política de Edifikarte confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí"
+   "cochera_fuente": "Política de Edifikarte confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
+   "dorms_declarados": [
+    2,
+    3
+   ]
   },
   {
    "id": "monte-umbroso-585",
@@ -22814,8 +22958,6 @@
    ],
    "promocion": null,
    "dorms_disponibles": [
-    1,
-    2,
     3
    ],
    "img": "assets/img-f1/monte-umbroso-585/interiores.jpg",
@@ -22886,7 +23028,12 @@
      }
     ]
    },
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "monte-alegre",
@@ -23042,8 +23189,7 @@
     }
    ],
    "dorms_disponibles": [
-    3,
-    4
+    3
    ],
    "comentario": "Edifikarte, Calle Monte Alegre 109. Edificio de 20 departamentos de 3 y 4 dormitorios, 7 pisos, entrega estimada junio de 2028. Su valla dice «MONTE ALEGRE · ESPACIOS EXCLUSIVOS · 3 dorms desde 115 m², 133 m² y 150 m² · 4 dorms desde 190 m²». Listado oficial de la asesora (14-ago-2026): 202 de 152.17 m² a S/1,388,000, 302 de 149.73 m² a S/1,367,000, 402 de 152.17 m² a S/1,418,000 y 502 de 149.73 m² a S/1,428,000, los cuatro con 2 estacionamientos y depósito incluidos. El 3-sep-2026 avisó que «solo queda disponible piso 2 y 5», con balcón exterior, y que «existe un ligero cambio» de precio aunque «se podría solicitar se respete el precio presentado». Sus láminas rotulan el tercer dormitorio como «ESTAR (DORMITORIO 03)» y le dibujan cama: vende 3 y entrega 3, sin disfraz.",
    "fuentes": [
@@ -24150,7 +24296,11 @@
     "assets/chats/monte-alegre-109-render.jpg"
    ],
    "politica_precio": "El precio de lista INCLUYE 2 estacionamientos y depósito, confirmado por Jenny Miranda el 3-sep-2026 ante la pregunta directa. El US$/m² del portal descuenta US$30,000 por los dos estacionamientos según la convención del benchmark, para compararlo en la misma base que los proyectos que venden la cochera aparte. La asesora no dio el valor suelto de cada estacionamiento. Es el mismo patrón de Edifikarte en Monte Mayor 177 y Conde de la Vega 251: siempre dos estacionamientos adentro del precio.",
-   "cochera_certeza": "confirmado"
+   "cochera_certeza": "confirmado",
+   "dorms_declarados": [
+    3,
+    4
+   ]
   }
  ]
 }
