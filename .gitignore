@@ -9,6 +9,10 @@ node_modules/
 # scripts/gitignore_assets.py — no editar a mano.
 
 assets/brochures/monte-sierpe-f1.pdf
+assets/img-f1/conde-vega-128/img-01.jpg
+assets/img-f1/conde-vega-251/img-01.jpg
+assets/img-f1/monte-carmelo-250/img-01.jpg
+assets/img-f1/monte-carmelo-250/imgb-01.jpg
 assets/img/logo-geu.svg
 assets/planos/aura-sul/plano-01.webp
 assets/planos/aura-sul/plano-02.webp
