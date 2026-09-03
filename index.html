@@ -246,7 +246,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260831f"></script>
+<script src="data/portal-data.js?v=20260902a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -1027,7 +1027,9 @@ function buildPlanos(){
       <span class="muted" style="font-size:11px"> · ${p.dev||''}</span>
       <div style="font-size:12.5px;color:#A6342A;font-weight:700;margin-top:3px">${arr.length} unidad${arr.length>1?'es':''} que vende${arr.length>1?'n':''} un dormitorio como estudio</div>
       ${arr.map(x=>`<div style="font-size:12.5px;color:#3c3a33;margin-top:7px;line-height:1.5">
-         <b>${x.u.unidad}</b> — declara ${x.u.dorm_declarados??'—'} dorm, son ${x.u.dorm_reales??'—'}
+         <b>${x.u.unidad}</b> — ${(x.u.estudio||{}).ya_contado
+             ? `los ${x.u.dorm_declarados??'—'} dormitorios que declara son ${x.u.dorm_reales??'—'} de verdad, pero uno lo dibuja como escritorio`
+             : `declara ${x.u.dorm_declarados??'—'} dorm, son ${x.u.dorm_reales??'—'}`}
          <div class="muted" style="font-size:11.5px;margin-top:1px">${(x.u.estudio||{}).por_que||''}</div></div>`).join('')}
     </div>`;};
 
@@ -1039,13 +1041,24 @@ function buildPlanos(){
      <span><b>${con.length}</b> de ${conPlanos.length} proyectos con planos revisados</span>
      <span><b>${todas.length}</b> unidades leídas</span>
      <span><b>${est.length}</b> con un ambiente vendido como estudio</span>
-     <span style="background:#FBEAE6;color:#A6342A"><b>${dis.length}</b> son en realidad un dormitorio</span>
+     <span style="background:#FBEAE6;color:#A6342A"><b>${dis.filter(x=>!(x.u.estudio||{}).ya_contado).length}</b> esconden un dormitorio que no cuentan</span>
+     <span><b>${dis.filter(x=>(x.u.estudio||{}).ya_contado).length}</b> lo cuentan, pero lo amueblan como escritorio</span>
    </div>
 
    <div class="sec">Quiénes venden un dormitorio como estudio</div>
    <div class="foot" style="margin-bottom:10px">${D.meta.regla_estudio||''}</div>
    ${Object.entries(porProy).sort((a,b)=>b[1].length-a[1].length).map(tarjeta).join('')
      || '<div class="empty">Ninguno en lo revisado hasta ahora.</div>'}
+
+   <div class="sec" style="margin-top:26px">Al revés: promete más dormitorios de los que dibuja</div>
+   <div class="foot" style="margin-bottom:10px">La otra cara del estudio. Acá la ficha comercial cuenta un dormitorio que la lámina no dibuja.</div>
+   ${(()=>{const sc=todas.filter(x=>x.u.dorm_declarados!=null&&x.u.dorm_reales!=null&&x.u.dorm_reales<x.u.dorm_declarados);
+     return sc.length?sc.map(x=>`<div style="background:var(--card,#fff);border:1px solid #ece7d9;border-left:3px solid #b8860b;border-radius:3px;padding:12px 16px;margin-bottom:8px">
+       <a href="proyecto.html?id=${x.p.id}" target="_blank" style="font-weight:800;color:#15402c;font-size:14px">${x.p.name}</a>
+       <span class="muted" style="font-size:11px"> · ${x.u.unidad}</span>
+       <div style="font-size:12.5px;color:#8a6508;font-weight:700;margin-top:3px">declara ${x.u.dorm_declarados} dormitorios · el plano dibuja ${x.u.dorm_reales}</div>
+       <div class="muted" style="font-size:11.5px;margin-top:3px;line-height:1.5">${x.u.observacion||''}</div></div>`).join('')
+       : '<div class="empty">Ninguna en lo revisado.</div>';})()}
 
    <div class="sec" style="margin-top:26px">Cobertura del análisis</div>
    <div style="overflow-x:auto"><table class="t">
