@@ -2285,7 +2285,7 @@
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1216"
+  "sello": "20260903-1223"
  },
  "quadrant": [
   [
@@ -3482,6 +3482,12 @@
     2,
     3,
     4
+   ],
+   "dorms_con_precio": [
+    1,
+    2,
+    3,
+    4
    ]
   },
   {
@@ -3516,7 +3522,13 @@
     "assets/img-f1/aura-sul/img-02.webp",
     "assets/img-f1/aura-sul/img-03.webp",
     "assets/img-f1/aura-sul/img-04.webp",
-    "assets/img/aura-sul.jpg"
+    "assets/img/aura-sul.jpg",
+    "assets/planos/aura-sul/plano-01.webp",
+    "assets/planos/aura-sul/plano-02.webp",
+    "assets/planos/aura-sul/plano-03.webp",
+    "assets/planos/aura-sul/plano-04.webp",
+    "assets/planos/aura-sul/plano-05.webp",
+    "assets/planos/aura-sul/plano-06.webp"
    ],
    "brochure": "assets/brochures/aura-sul-f1.pdf",
    "typologies": [
@@ -4246,6 +4258,9 @@
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
     3
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -4664,7 +4679,8 @@
    },
    "dorms_declarados": [
     3
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "id": "conde-de-la-vega-251",
@@ -5061,7 +5077,8 @@
    "dorms_declarados": [
     2,
     3
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "id": "conde-de-la-vega-460",
@@ -5487,7 +5504,7 @@
     },
     {
      "unidad": "Flat 503",
-     "dorm": 2,
+     "dorm": 1,
      "m2": 85.1,
      "m2_techada": 82.47,
      "area_libre": 2.63,
@@ -5505,7 +5522,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 253000,
      "m2_equivalente": 101.1,
-     "precio_m2_equiv": 2502
+     "precio_m2_equiv": 2502,
+     "dorm_reales": 2,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 2 y su propia lámina declara 1 (el plano dibuja 2). El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     },
     {
      "unidad": "Flat 504",
@@ -5567,7 +5586,7 @@
     },
     {
      "unidad": "Penthouse 603",
-     "dorm": 2,
+     "dorm": 3,
      "m2": 147.69,
      "m2_techada": 128.59,
      "area_libre": 19.1,
@@ -5585,7 +5604,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 393000,
      "m2_equivalente": 179.69,
-     "precio_m2_equiv": 2187
+     "precio_m2_equiv": 2187,
+     "dorm_reales": 2,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 2 y su propia lámina declara 3 (el plano dibuja 2). El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     },
     {
      "unidad": "Penthouse 604",
@@ -5649,6 +5670,7 @@
     }
    ],
    "dorms_disponibles": [
+    1,
     2,
     3
    ],
@@ -6292,6 +6314,11 @@
     1,
     2,
     3
+   ],
+   "dorms_con_precio": [
+    1,
+    2,
+    3
    ]
   },
   {
@@ -6325,7 +6352,7 @@
    "typologies": [
     {
      "unidad": "D-101",
-     "dorm": 3,
+     "dorm": 2,
      "m2": 115.71,
      "precio_usd": 237206,
      "precio_m2": 2050,
@@ -6335,12 +6362,14 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 237206,
      "m2_equivalente": 115.71,
-     "precio_m2_equiv": 2050
+     "precio_m2_equiv": 2050,
+     "dorm_reales": 3,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 3 y su propia lámina declara 2 (el plano dibuja 3). El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     }
    ],
    "flats_summary": [],
    "dorms_disponibles": [
-    3
+    2
    ],
    "comentario": "Última unidad: D-101 (piso 1, 115.71 m², 3 dorm) US$237,206; cochera simple aparte US$14,000. Entrega setiembre 2026.",
    "amenidades": [],
@@ -6460,6 +6489,9 @@
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
     3
+   ],
+   "dorms_con_precio": [
+    2
    ]
   },
   {
@@ -7115,6 +7147,9 @@
    "dorms_declarados": [
     2,
     3
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -7639,6 +7674,10 @@
    "dorms_declarados": [
     2,
     3
+   ],
+   "dorms_con_precio": [
+    2,
+    3
    ]
   },
   {
@@ -8074,6 +8113,10 @@
    "dorms_declarados": [
     2,
     3
+   ],
+   "dorms_con_precio": [
+    2,
+    3
    ]
   },
   {
@@ -8335,6 +8378,9 @@
     2,
     3,
     4
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -8444,7 +8490,8 @@
    ],
    "dorms_disponibles": [
     2,
-    3
+    3,
+    5
    ],
    "comentario": "Últimas ~3 unidades (Flat 107 piso 1, Flat X08 pisos 4-5). Entrega mar/abr 2027, financia BCP. Precio por unidad del asesor (Central). Cochera NO confirmada: el US$/m² ($2,612) es sobre precio de lista; si incluyera cochera, el neto sería ~5% menor. Brochure oficial del 22-jun-2026: 6 pisos, 51 departamentos, estacionamientos para autos y bicicletas y un parque central. Flats de 94.20 a 135.13 m² y dúplex de 209.55 a 259.88 m², varios con vista al parque y ascensor directo. La valla de obra fotografiada el 22-ago-2026 confirma: ENTREGA MARZO 2027, «ÚLTIMAS UNIDADES», flats desde 127 m² y dúplex desde 209 m², 6 pisos y 7 áreas sociales. Contactos en la valla: 920 374 177 y 964 104 126. (La foto estaba archivada con el nombre de otro proyecto y se reasignó.) Su brochure oficial de junio-2026 (32 páginas) trae las 14 plantas rotuladas con metraje: ocho flats de 94.20 a 135.13 m² y seis dúplex de 209.55 a 278.44 m². Su web declara 3 a 5 dormitorios y precio desde S/778,221, y que será el primer edificio multifamiliar del Perú con sello AIS de accesibilidad e inclusión. Su ficha declara 52 departamentos en 6 pisos más rooftop, 2 sótanos con 55 estacionamientos y 3 ascensores: sobran 3 cocheras sobre las unidades, así que probablemente se vendan aparte — pendiente de confirmarlo con la asesora. Análisis de sus 14 plantas oficiales (02-sep-2026): el sello AIS de accesibilidad, que es su bandera comercial, NO se ve en ninguna lámina — sin barras de apoyo, sin círculos de giro, sin duchas a nivel y con todos los barridos de puerta del mismo ancho. Lo único con lectura de accesibilidad es el sello «ascensor directo a los 2 niveles» de sus dos dúplex grandes; los otros cuatro dúplex dependen de escalera interna. Ningún estudio ni dormitorio disfrazado en las 14. OJO con el Flat 107 de 129.42 m²: se vende como flat grande pero solo tiene 2 dormitorios de familia — la tercera cama es un catre individual dentro del bloque de servicio, pegado a la lavadora. A cambio sus dos dormitorios son suite completa con vestidor. Solo dos plantas tienen cocina cerrada (205 y X04); el resto abierta. · Su cerco de obra declara «ENTREGA MARZO 2027 · ÚLTIMAS UNIDADES · FLATS DESDE 127 m² · DÚPLEX DESDE 209 m² · 6 pisos, 7 dptos, 7 áreas sociales», financia BCP, con los teléfonos 920 374 177 y 964 104 126. Ojo con el «desde 127 m²»: es de lo que QUEDA, no del proyecto — el X08 que cotizaron es de 94.20 m². Está pegado a Monte Sierpe, que ya está terminado y vendiendo sus últimas unidades en la misma cuadra.",
    "amenidades": [
@@ -9370,6 +9417,10 @@
     3,
     4,
     5
+   ],
+   "dorms_con_precio": [
+    2,
+    3
    ]
   },
   {
@@ -10689,6 +10740,11 @@
     1,
     2,
     3
+   ],
+   "dorms_con_precio": [
+    1,
+    2,
+    3
    ]
   },
   {
@@ -10727,7 +10783,9 @@
     "assets/img-f1/monte-carmelo-250/img-04.jpg",
     "assets/img-f1/monte-carmelo-250/img-05.jpg",
     "assets/img/monte-carmelo-250.jpg",
-    "assets/campo/monte-carmelo-250.jpg"
+    "assets/campo/monte-carmelo-250.jpg",
+    "assets/planos/monte-carmelo-250/plano-01.png",
+    "assets/planos/monte-carmelo-250/plano-02.png"
    ],
    "brochure": null,
    "typologies": [
@@ -11456,7 +11514,8 @@
     2,
     3,
     4
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "id": "monte-carmelo-551",
@@ -11517,7 +11576,18 @@
     "assets/img-f1/monte-carmelo-551/img-03.png",
     "assets/img-f1/monte-carmelo-551/img-04.jpg",
     "assets/img-f1/monte-carmelo-551/img-05.png",
-    "assets/img/monte-carmelo-551.jpg"
+    "assets/img/monte-carmelo-551.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-1.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-10.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-11.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-2.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-3.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-4.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-5.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-6.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-7.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-8.jpg",
+    "assets/planos/monte-carmelo-551/mc551-nexo-9.jpg"
    ],
    "brochure": "assets/brochures/monte-carmelo-551-f1.pdf",
    "typologies": [
@@ -12563,6 +12633,10 @@
    "dorms_declarados": [
     2,
     3
+   ],
+   "dorms_con_precio": [
+    2,
+    3
    ]
   },
   {
@@ -13413,7 +13487,8 @@
     2,
     3,
     4
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "id": "monte-mayor-177",
@@ -13481,7 +13556,8 @@
     }
    ],
    "dorms_disponibles": [
-    2
+    2,
+    3
    ],
    "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia. · Jenny Miranda el 13-ago-2026: el flat de 87 m² «Aun esta disponible, esta separado sin embargo aun esta en stand by la firma de la minuta», y es el único de 2 dorm que les queda; de 3 dorm solo tienen dúplex en Conde de la Vega 251. Su cartel de obra dice «ÚLTIMOS DEPARTAMENTOS · Flats desde 87m²-135m² / Dúplex desde 175m²». · Se retiraron de su galería tres renders que estaban duplicados byte a byte entre este proyecto y otro de Edifikarte: la fachada que muestran lleva el número 330 en el ingreso, que no es la dirección de ninguno de los dos. Es el mismo tipo de render genérico que ya habíamos sacado de la sección de planos.",
    "amenidades": [],
@@ -13836,6 +13912,9 @@
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
     3
+   ],
+   "dorms_con_precio": [
+    2
    ]
   },
   {
@@ -13874,7 +13953,7 @@
    "typologies": [
     {
      "unidad": "Flat 101",
-     "dorm": 1,
+     "dorm": 2,
      "m2": 73.13,
      "m2_techada": 73.13,
      "m2_libre": 0,
@@ -13894,11 +13973,13 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 202000,
      "m2_equivalente": 89.13,
-     "precio_m2_equiv": 2266
+     "precio_m2_equiv": 2266,
+     "dorm_reales": 2,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 1 y su propia lámina declara 2. El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     },
     {
      "unidad": "Flat 102",
-     "dorm": 2,
+     "dorm": 3,
      "m2": 239.69,
      "m2_techada": 132.98,
      "m2_libre": 106.71,
@@ -13918,7 +13999,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 477000,
      "m2_equivalente": 271.69,
-     "precio_m2_equiv": 1756
+     "precio_m2_equiv": 1756,
+     "dorm_reales": 3,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 2 y su propia lámina declara 3. El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     },
     {
      "unidad": "Flat 201",
@@ -14294,7 +14377,6 @@
     }
    ],
    "dorms_disponibles": [
-    1,
     2,
     3
    ],
@@ -14602,6 +14684,10 @@
     1,
     2,
     3
+   ],
+   "dorms_con_precio": [
+    2,
+    3
    ]
   },
   {
@@ -14636,7 +14722,9 @@
     "assets/img-f1/monte-real-265/img-02.jpg",
     "assets/img-f1/monte-real-265/img-03.jpg",
     "assets/img-f1/monte-real-265/img-04.jpg",
-    "assets/img-f1/monte-real-265/img-05.jpg"
+    "assets/img-f1/monte-real-265/img-05.jpg",
+    "assets/planos/monte-real-217/plano-01.jpg",
+    "assets/planos/monte-real-217/plano-02.jpg"
    ],
    "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2025/05/2601_BROCHURE_MONTE_REAL_2026.pdf",
    "typologies": [
@@ -14821,6 +14909,9 @@
    "cochera_nota": "Misma política de EE Inmobiliaria dicha por Cecilia Estrada el 2-jul-2026: «El estacionamiento no está incluído en el precio del departamento». INFERIDO, no confirmado para este proyecto.",
    "cochera_fuente": "Política de EE Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
    "dorms_declarados": [
+    3
+   ],
+   "dorms_con_precio": [
     3
    ]
   },
@@ -15440,6 +15531,9 @@
    "dorms_declarados": [
     2,
     3
+   ],
+   "dorms_con_precio": [
+    2
    ]
   },
   {
@@ -15602,6 +15696,10 @@
    "dorms_declarados": [
     1,
     2,
+    3
+   ],
+   "dorms_con_precio": [
+    1,
     3
    ]
   },
@@ -15766,6 +15864,9 @@
     2,
     3,
     4
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -15801,7 +15902,10 @@
     "assets/planos/parque-monte-carmelo/duplex-703.png",
     "assets/planos/parque-monte-carmelo/duplex-704.jpg",
     "assets/planos/parque-monte-carmelo/duplex-705.jpg",
-    "assets/img/parque-monte-carmelo.jpg"
+    "assets/img/parque-monte-carmelo.jpg",
+    "assets/planos/parque-monte-carmelo/parque_monte_carmelo-24.png",
+    "assets/planos/parque-monte-carmelo/parque_monte_carmelo-27.png",
+    "assets/planos/parque-monte-carmelo/parque_monte_carmelo-33.png"
    ],
    "brochure": "https://eeinmobiliaria.com/wp-content/uploads/2026/03/BROCHURE_PARQUE_MONTE_CARMELO_2026-AGOSTO_12-08-26.pdf",
    "typologies": [
@@ -15979,7 +16083,7 @@
     },
     {
      "unidad": "Dúplex 701",
-     "dorm": 4,
+     "dorm": 3,
      "m2": 207.35,
      "precio_usd": 405000,
      "precio_m2": 1953,
@@ -15994,11 +16098,13 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 405000,
      "m2_equivalente": 207.35,
-     "precio_m2_equiv": 1953
+     "precio_m2_equiv": 1953,
+     "dorm_reales": 4,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 4 y su propia lámina declara 3 (el plano dibuja 4). El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     },
     {
      "unidad": "Dúplex 703",
-     "dorm": 4,
+     "dorm": 3,
      "m2": 208.31,
      "precio_usd": 407059,
      "precio_m2": 1954,
@@ -16013,7 +16119,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 407059,
      "m2_equivalente": 208.31,
-     "precio_m2_equiv": 1954
+     "precio_m2_equiv": 1954,
+     "dorm_reales": 4,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 4 y su propia lámina declara 3 (el plano dibuja 4). El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     }
    ],
    "flats_summary": [
@@ -16030,8 +16138,7 @@
    ],
    "dorms_disponibles": [
     1,
-    3,
-    4
+    3
    ],
    "comentario": "Proyecto en construcción de EE Inmobiliaria (entrega nov-2027). 24 unidades disponibles. IMPORTANTE: los precios NO incluyen estacionamiento — se vende aparte (S/48,000–99,000; algunos con depósito), confirmado con el asesor (2026-07-02). Por eso el precio de lista ya es neto sin cochera y su US$/m² (2,310) es directamente comparable a GEU-neto, sin descuento adicional. Medidas de flats típicos T01/T03/T04/T05 entre 85.16 y 103.91 m²; dúplex hasta 208.31 m². RESUELTO EL DÚPLEX 702 (02-sep-2026): su brochure lo titula «DÚO — 1 dormitorio + flex» y Nexo lo cuenta como 2. Gana Nexo. Ese «flex» está rotulado SALA DE ESTAR pero tiene ropero empotrado —el mismo panel de listones con que se dibujan los closets de los dormitorios en toda la planera— y ventana al ducto. No tiene puerta, y en esa misma lámina el dormitorio principal y los dos baños sí llevan su barrido dibujado: la ausencia es deliberada, es la pieza que permite venderlo como ambiente social. Dos de tres: son 2 dormitorios reales. Y no es el único: sus CINCO dúplex esconden un dormitorio. En el 701 y el 703 el ambiente ya se llama ESTUDIO y cumple las TRES (ropero, ventana y puerta); en el 704 y 705, dos de tres. Ningún plano del proyecto tiene un estudio real.",
    "amenidades": [],
@@ -16891,6 +16998,10 @@
     2,
     3,
     4
+   ],
+   "dorms_con_precio": [
+    1,
+    3
    ]
   },
   {
@@ -16947,7 +17058,10 @@
     }
    ],
    "flats_summary": [],
-   "dorms_disponibles": [],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
    "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio. · Joyce Aguilar (Grupo Chacarilla Sur) el 14-ago-2026: «nos está quedando un duplex penthouse». Su brochure declara flats y dúplex de 84 a 227 m², 20 departamentos en 6 pisos, BCP, entrega nov-2026, desde $203,700. · El 3-sep-2026 Joyce confirmó que el último departamento —el Dúplex 603— sigue disponible en US$544,425 incluyendo 2 estacionamientos y depósito, con entrega en noviembre de 2026.",
    "amenidades": [],
    "total_pisos": 6,
@@ -17346,7 +17460,8 @@
     2,
     3
    ],
-   "coherencia_alerta": "La foto de portada (chacarillasur-precursores.jpg) muestra un edificio de ladrillo terminado con un banner «ÚLTIMOS DEPARTAMENTOS · 922 323 923» y el logotipo de Chacarilla Sur, pero el banner no nombra el proyecto y Chacarilla Sur tiene DOS en la zona: este y Real Living · Monte Real. Hay que confirmar de cuál es antes de darla por buena. El número 922 323 923 tampoco lo teníamos."
+   "coherencia_alerta": "La foto de portada (chacarillasur-precursores.jpg) muestra un edificio de ladrillo terminado con un banner «ÚLTIMOS DEPARTAMENTOS · 922 323 923» y el logotipo de Chacarilla Sur, pero el banner no nombra el proyecto y Chacarilla Sur tiene DOS en la zona: este y Real Living · Monte Real. Hay que confirmar de cuál es antes de darla por buena. El número 922 323 923 tampoco lo teníamos.",
+   "dorms_con_precio": []
   },
   {
    "id": "precursores-ii",
@@ -17415,7 +17530,7 @@
     },
     {
      "unidad": "601 dúplex",
-     "dorm": 3,
+     "dorm": 2,
      "m2": 189.02,
      "precio_usd": 380000,
      "precio_m2": 2010,
@@ -17426,7 +17541,9 @@
      "precio_lista_todo": 380000,
      "m2_equivalente": 227.02,
      "precio_m2_equiv": 1674,
-     "cochera_incluida": "2 PARALELOS"
+     "cochera_incluida": "2 PARALELOS",
+     "dorm_reales": 2,
+     "nota": " · Dormitorios corregidos el 3-sep-2026: la tipología decía 3 y su propia lámina declara 2. El benchmark cuenta los dormitorios como los vende la desarrolladora; el conteo real del plano se compara aparte, en la vista de planos."
     }
    ],
    "flats_summary": [
@@ -17441,6 +17558,7 @@
     }
    ],
    "dorms_disponibles": [
+    2,
     3
    ],
    "comentario": "Sobre Av. de los Precursores (borde). 19 deptos de 3 dorm; quedan 3 unidades (2 flats + dúplex con terraza y piscina). Precio incluye 2 cocheras paralelas y depósito; valores por m² netos de cochera. Entrega julio 2026.",
@@ -17790,6 +17908,10 @@
    "cochera_certeza": "confirmado",
    "dorms_declarados": [
     3
+   ],
+   "dorms_con_precio": [
+    2,
+    3
    ]
   },
   {
@@ -17837,7 +17959,10 @@
     "assets/img-f1/santorini/img-03.jpeg",
     "assets/img-f1/santorini/img-04.jpg",
     "assets/img-f1/santorini/img-05.jpg",
-    "assets/campo/santorini-cartel-obra.jpg"
+    "assets/campo/santorini-cartel-obra.jpg",
+    "assets/planos/santorini/santorini-12.png",
+    "assets/planos/santorini/santorini-17.png",
+    "assets/planos/santorini/santorini-14.png"
    ],
    "brochure": "assets/brochures/brochure_junio_2026_SANTORINI_.pdf",
    "typologies": [
@@ -17857,7 +17982,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 387000,
      "m2_equivalente": 175.8,
-     "precio_m2_equiv": 2201
+     "precio_m2_equiv": 2201,
+     "precio_lista_usd": 387000,
+     "nota": "La lámina imprime los dos precios: US$387,000 con un estacionamiento y US$405,000 con dos paralelos. La diferencia de US$18,000 es constante en todo el tarifario y es la que se descuenta para dejarlo neto de cochera."
     },
     {
      "unidad": "501A · flat Torre A",
@@ -17893,7 +18020,9 @@
      "depositos_incluidos": 0,
      "precio_lista_todo": 287500,
      "m2_equivalente": 141.0,
-     "precio_m2_equiv": 2039
+     "precio_m2_equiv": 2039,
+     "precio_lista_usd": 287500,
+     "nota": "La lámina imprime los dos precios: US$287,500 con un estacionamiento y US$305,500 con dos paralelos. La diferencia de US$18,000 es constante en todo el tarifario y es la que se descuenta para dejarlo neto de cochera."
     },
     {
      "unidad": "501B · flat Torre B",
@@ -17939,7 +18068,7 @@
      "precio_m2": 1898,
      "tipo": "duplex",
      "piso": "6",
-     "nota": "Ficha de plano del proyecto: US$593,000 con un estacionamiento (US$611,000 con dos paralelos). Neto de cochera (US$18,000) = US$575,000 → US$1,898/m². Es penthouse: no entra al comparativo de flats típicos.",
+     "nota": "La lámina imprime los dos precios: US$593,000 con un estacionamiento y US$611,000 con dos paralelos. La diferencia de US$18,000 es constante en todo el tarifario y es la que se descuenta para dejarlo neto de cochera.",
      "precio_lista_usd": 593000,
      "cochera_incluida": "1 estacionamiento",
      "ajuste_cochera_usd": 18000,
@@ -18020,6 +18149,7 @@
     }
    ],
    "dorms_disponibles": [
+    1,
     2,
     3
    ],
@@ -18096,8 +18226,8 @@
    "licencia": "0401-2025-SGLM-GDU-MSS (modalidad C) · Grupo Moryasoc Proyecto 31 S.A.C. · plazo 14 meses",
    "pisos": 6,
    "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30",
-   "pedido": "Hola Rossana! Cómo estás? Estoy afinando números para decidir y me faltan un par de datos. 1) me puedes pasar la lista de precios de Santorini por unidad, con lo que queda disponible? 2) tienen alguna promoción o descuento este mes? Gracias!",
-   "pedido_que": "promoción + tarifario por unidad",
+   "pedido": "precio del departamento 101 (1 dormitorio)",
+   "pedido_que": "Su lámina del 101 está leída y es de 1 dormitorio, pero no tenemos su precio: es el único 1 dorm de Santorini y sin él la banda de 1 dormitorio se queda sin uno de sus competidores con producto real.",
    "politica_precio": "El precio de lista de cada departamento YA incluye 1 estacionamiento. La 2.ª cochera paralela cuesta US$18,000 adicionales (delta constante en todas las tipologías del tarifario). El US$/m² del portal descuenta esos US$18,000.",
    "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos.",
    "estado_evidencia": {
@@ -18590,7 +18720,12 @@
     2,
     3,
     4
-   ]
+   ],
+   "dorms_con_precio": [
+    2,
+    3
+   ],
+   "cochera_nota": "El precio de lista incluye 1 estacionamiento. Sus propias láminas imprimen las dos alternativas —«con un estacionamiento» y «con dos estacionamientos paralelos»— y la diferencia es de US$18,000 constante en las tres tipologías que la publican. Ese es el valor que se descuenta, mejor que la convención genérica del benchmark porque sale de su propio tarifario."
   },
   {
    "id": "spazio",
@@ -19489,6 +19624,10 @@
     4,
     5,
     6
+   ],
+   "dorms_con_precio": [
+    3,
+    6
    ]
   },
   {
@@ -19722,7 +19861,8 @@
    ],
    "mapeado_desde": "2026-08-22",
    "dorms_disponibles": [
-    3
+    3,
+    4
    ],
    "promo": {
     "tipo": "Descuento en precio",
@@ -20098,6 +20238,9 @@
    "dorms_declarados": [
     3,
     4
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -20125,7 +20268,8 @@
     "assets/planos/narciso-ayd-oficial/Flat 201-401 - 3 dorm - 97 m2.jpg",
     "assets/planos/narciso-ayd-oficial/Flat 202-402 - 3 dorm - 97 m2.jpg",
     "assets/planos/narciso-ayd-oficial/Render oficial fachada frontal (feb-2026).jpg",
-    "assets/chats/narciso-dpto201-plano-asesor.jpg"
+    "assets/chats/narciso-dpto201-plano-asesor.jpg",
+    "assets/planos/narciso-ayd/Render oficial AyD - proximo lanzamiento en Chacarilla.jpg"
    ],
    "typologies": [
     {
@@ -20406,6 +20550,9 @@
    "dorms_declarados": [
     3,
     4
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -20448,7 +20595,12 @@
     "assets/img-f1/precursores-verde/img-05.jpg",
     "assets/img/precursores-verde.jpg",
     "assets/campo/precursores-verde.jpg",
-    "assets/campo/precursores-verde-2.jpg"
+    "assets/campo/precursores-verde-2.jpg",
+    "assets/planos/precursores-verde/plano-01.jpg",
+    "assets/planos/precursores-verde/plano-02.jpg",
+    "assets/planos/precursores-verde/plano-03.jpg",
+    "assets/planos/precursores-verde/plano-04.jpg",
+    "assets/planos/precursores-verde/plano-tipologia.jpg"
    ],
    "typologies": [],
    "flats_summary": [],
@@ -20526,7 +20678,11 @@
    ],
    "borde_avenida": true,
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": [],
+   "dorms_disponibles": [
+    1,
+    2,
+    3
+   ],
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -21145,7 +21301,8 @@
     1,
     2,
     3
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "id": "astete-living",
@@ -21301,7 +21458,8 @@
    "cochera_nota": "Central Inmobiliaria incluye 1 estacionamiento simple en el precio: Diana Rodríguez —la misma asesora y el mismo número— lo confirmó para Jardines de Monte Real el 13-ago-2026. INFERIDO de la política de la desarrolladora, no confirmado para este proyecto.",
    "cochera_fuente": "Política de Central Inmobiliaria confirmada por su asesor en un proyecto hermano · inferido, no confirmado aquí",
    "nota_planos": "Sin planos publicados: lo que figura bajo «planos» son renders o fotos de campo, no láminas.",
-   "dorms_declarados": []
+   "dorms_declarados": [],
+   "dorms_con_precio": []
   },
   {
    "id": "living-monte-real",
@@ -21399,7 +21557,10 @@
     }
    ],
    "mapeado_desde": "2026-08-22",
-   "dorms_disponibles": [],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
    "documentos": [
     {
      "titulo": "Brochure oficial de Real Living",
@@ -22075,7 +22236,8 @@
     1,
     2,
     3
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "isGEU": false,
@@ -22306,7 +22468,10 @@
     }
    ],
    "coherencia_alerta": "Publica «23 departamentos de 3 dormitorios» pero dos de sus tipologías son de 2 dormitorios, y su rango de áreas no cierra con lo que imprimen sus propias láminas.",
-   "dorms_disponibles": [],
+   "dorms_disponibles": [
+    2,
+    3
+   ],
    "planos_analisis": {
     "fecha": null,
     "version": null,
@@ -22906,7 +23071,8 @@
    "dorms_declarados": [
     2,
     3
-   ]
+   ],
+   "dorms_con_precio": []
   },
   {
    "id": "monte-umbroso-585",
@@ -23080,6 +23246,9 @@
     1,
     2,
     3
+   ],
+   "dorms_con_precio": [
+    3
    ]
   },
   {
@@ -23236,7 +23405,8 @@
     }
    ],
    "dorms_disponibles": [
-    3
+    3,
+    4
    ],
    "comentario": "Edifikarte, Calle Monte Alegre 109. Edificio de 20 departamentos de 3 y 4 dormitorios, 7 pisos, entrega estimada junio de 2028. Su valla dice «MONTE ALEGRE · ESPACIOS EXCLUSIVOS · 3 dorms desde 115 m², 133 m² y 150 m² · 4 dorms desde 190 m²». Listado oficial de la asesora (14-ago-2026): 202 de 152.17 m² a S/1,388,000, 302 de 149.73 m² a S/1,367,000, 402 de 152.17 m² a S/1,418,000 y 502 de 149.73 m² a S/1,428,000, los cuatro con 2 estacionamientos y depósito incluidos. El 3-sep-2026 avisó que «solo queda disponible piso 2 y 5», con balcón exterior, y que «existe un ligero cambio» de precio aunque «se podría solicitar se respete el precio presentado». Sus láminas rotulan el tercer dormitorio como «ESTAR (DORMITORIO 03)» y le dibujan cama: vende 3 y entrega 3, sin disfraz.",
    "fuentes": [
@@ -24347,6 +24517,9 @@
    "dorms_declarados": [
     3,
     4
+   ],
+   "dorms_con_precio": [
+    3
    ]
   }
  ]
