@@ -19707,7 +19707,7 @@
     3,
     6
    ],
-   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank. Análisis de sus 11 plantas (02-sep-2026): se venden como «FLEX APARTMENTS» pero el ambiente flexible NO existe en ningún plano — todo cuarto que no es sala, comedor, cocina, baño o lavandería lleva cama, closet y puerta. La flexibilidad es solo verbal. Ningún dormitorio principal tiene baño en suite en ninguna de las 11 unidades, y ninguna tiene cuarto de servicio con cama. Su mejor carta son las azoteas propias con césped, mesas y parrilla en los dos tríplex (603, 604) y los dos dúplex (701, 702). El flat 102 es el único con la lavandería a la intemperie, y el 101 el único sin ningún exterior pese a ser primer piso.",
+   "comentario": "Grupo Dicon, Av. de los Precursores 166-172. En la visita del 22-ago-2026 se fotografió el panel de disponibilidad dentro de la sala de ventas: de 27 departamentos (pisos 1 al 7), 7 figuran VENDIDOS y quedan 20. Falta la lista de precios por unidad. La foto del recorrido confirma sala de ventas atendida, con el claim «Tu espacio, tu historia», la marca SPAZIO Residencial / FLEX APARTMENTS y el contacto 957 733 272. Grupo Dicon exhibe el sello Best Place to Live por 3er año consecutivo. Al 25-ago-2026 su precio de entrada bajó a US$174,468 (teníamos US$192,428) y publica hasta US$387,491. Son 25 departamentos entre flats, dúplex y tríplex, de 83 a 247.31 m², financiados por Scotiabank. Análisis de sus 11 plantas (02-sep-2026): se venden como «FLEX APARTMENTS» pero el ambiente flexible NO existe en ningún plano — todo cuarto que no es sala, comedor, cocina, baño o lavandería lleva cama, closet y puerta. La flexibilidad es solo verbal. Ningún dormitorio principal tiene baño en suite en ninguna de las 11 unidades, y ninguna tiene cuarto de servicio con cama. Su mejor carta son las azoteas propias con césped, mesas y parrilla en los dos tríplex (603, 604) y los dos dúplex (701, 702). El flat 102 es el único con la lavandería a la intemperie, y el 101 el único sin ningún exterior pese a ser primer piso. · Su rango llega a 6 dormitorios y no es un error de carga: los tríplex 603 y 604 son UNA unidad en tres niveles y su lámina dibuja seis camas —dos dormitorios en el nivel 1 y cuatro en el nivel 2, con azotea propia arriba—, sobre 247.3 y 229.7 m². Son las únicas unidades de 6 dormitorios del cuadrante y no compiten con ninguna nuestra. Su ticket de entrada real es un flat de 3 dorm de 83.1 m² en US$174,468, el más bajo de esa banda en todo el cuadrante.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -20430,7 +20430,8 @@
      "medios": 1
     },
     "de_n_tipicos": 4
-   }
+   },
+   "nota_tipologias": "El rango 3–6 dorm mezcla su flat típico de 3 dormitorios con dos tríplex de 6. Para comparar, la banda que corresponde es la de 3 dormitorios."
   },
   {
    "id": "terraverde",
