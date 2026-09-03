@@ -2063,8 +2063,8 @@
   "regla_planos": "Del plano se leen ambientes, nunca metros: las áreas salen de las listas de precios. Cada unidad se revisa contra las mismas 25 casillas, con tres estados: SÍ (se ve dibujado), NO (el plano se lee bien y no está) y NO SE VE (el plano no alcanza a mostrarlo). El tercero es el que evita afirmar de más.",
   "regla_estudio": "Un ambiente vendido como «estudio» cuenta como dormitorio disfrazado si cumple dos de tres: tiene clóset, tiene ventana a exterior y tiene puerta que lo cierra. Si en la misma lámina los dormitorios llevan barrido de puerta dibujado y el estudio no, la ausencia es intencional.",
   "planos_analizados": {
-   "proyectos": 33,
-   "unidades": 287
+   "proyectos": 34,
+   "unidades": 288
   }
  },
  "quadrant": [
@@ -12894,7 +12894,7 @@
     2,
     3
    ],
-   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa».",
+   "comentario": "Edifikarte. Verificado en campo (22-ago-2026): letrero «ÚLTIMO DEPA — 2 DORMS 86 m²», tel. 981 386 111. Antes figuraba el flat de 2 dorm en separación; hoy se ofrece como la última unidad del proyecto. Sus 4 renders estaban archivados bajo el nombre «monte-carmelo-177»; la fachada de celosías verticales coincide con la del edificio fotografiado detrás del cartel «Último depa». Análisis de sus láminas (02-sep-2026): 4 unidades, cero estudios. Se confirma otra vez el vicio de Edifikarte: sus tres láminas comerciales listan «Kitchenette» y ninguna lo es — el 702 tiene cocina cerrada con mesones de terrazo en U, y el 703 y el 203 tienen cocinas abiertas con barra de 4 y 3 taburetes. El plano técnico del 203 ni siquiera dice kitchenette: dice COCINA. DATO DE VENTA sobre el 203, que es el que queda disponible: ninguno de sus 2 dormitorios es suite, los dos baños abren al hall. El 702 tiene jardín de césped y parrilla en azotea propia.",
    "amenidades": [],
    "total_pisos": 7,
    "fuentes": [
@@ -15953,7 +15953,7 @@
     2,
     3
    ],
-   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m².",
+   "comentario": "Edificio en construcción de Grupo Chacarilla Sur (entrega nov-2026); flats de 2-3 dorm (83-227 m2) desde US$188,327, un ticket de entrada por encima de GEU. No publica lista de precios por unidad, por lo que su precio por m² es referencial. Ficha comercial (Nexo, 24-ago-2026): 6 pisos, 20 departamentos de 83 a 230 m², frente al parque de la pileta; precios de lista desde S/ 706,228; entrega set-2026. Su brochure oficial (Grupo Chacarilla Sur, Av. de los Precursores 525) estaba archivado con nombre equivocado — se reasignó. Trae metrajes de 83, 84, 94, 96, 144, 173, 199 y 227 m². Análisis de sus láminas (02-sep-2026): 5 unidades. Su DÚPLEX 603 vende 3 dormitorios pero dibuja un cuarto extra con muros, puerta y closet reales, y la cama, veladores y armario en línea punteada: son 4 cuartos en la práctica. Ninguna de sus unidades tiene cuarto de servicio.",
    "amenidades": [],
    "total_pisos": 6,
    "fuentes": [
@@ -22645,7 +22645,7 @@
      "flat": false
     }
    ],
-   "comentario": "Proyecto que NO teníamos registrado y sí está dentro del cuadrante. Vibra Inmobiliaria, Av. de la Floresta 343: 8 pisos, 29 departamentos, 40 estacionamientos y 38 bike parkings. Tipologías de diseño FLEX: 64.01, 87.13, 103.55 y 104.98 m² más un dúplex en el piso 8. Ojo con los «ambientes»: el propio brochure aclara que el departamento se entrega con 2 dormitorios y el tercer ambiente es referencial. Sin lista de precios pública.",
+   "comentario": "Proyecto que NO teníamos registrado y sí está dentro del cuadrante. Vibra Inmobiliaria, Av. de la Floresta 343: 8 pisos, 29 departamentos, 40 estacionamientos y 38 bike parkings. Tipologías de diseño FLEX: 64.01, 87.13, 103.55 y 104.98 m² más un dúplex en el piso 8. Ojo con los «ambientes»: el propio brochure aclara que el departamento se entrega con 2 dormitorios y el tercer ambiente es referencial. Sin lista de precios pública. ANÁLISIS DEL «DISEÑO FLEX» (02-sep-2026): en sus láminas la línea verde punteada NO es una pared construida, es el muro que SE PUEDE levantar. Por eso los ambientes flex nunca llevan hoja de puerta, y eso hace que la pista habitual no sirva: hay que mirar qué mueble le ponen adentro. Y ahí Vibra dibuja el mismo metro cuadrado de tres maneras. El TIPO 01 (103.55 m², «2+E») es estudio real: mesón de trabajo con dos pantallas, velador y butacas, sin cama ni una tira de colgadores. El TIPO 02 (104.98 m², «2+E») es su gemelo, con la misma leyenda, y en el MISMO lugar dibuja una CAMA DE DOS PLAZAS rotulada «2PZ» —el mismo rótulo de los dormitorios reales— con veladores y closet completo: la lámina que vende «2+E» le muestra al comprador 3 dormitorios. El TIPO 04 (87.13 m²) ya viene cerrado de fábrica, con tres muros y puerta con barrido, y solo le falta el closet. El remate: su propio brochure dibuja ese mismo espacio del TIPO 04 como VESTIDOR, con dos tiras de colgadores enfrentadas, y le marca un medio baño extra opcional con la nota «modificación que se podrá realizar bajo un costo adicional». Tres versiones del mismo metro cuadrado: estudio, vestidor y —si el comprador paga el muro— dormitorio.",
    "como_presenta": "«Solo 8 pisos hacen de Floresta 343 un lugar íntimo». Venden intimidad, vista a parque y un paquete de amenidades fuerte para el tamaño del edificio (coworking, dos rooftops, pet & bike center).",
    "caseta_ventas": "nd",
    "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
@@ -22955,7 +22955,8 @@
       "observacion": "El dúplex del piso 8, y la excepción del proyecto en casi todo. Los dos niveles van en la misma lámina = UNA sola unidad. Rótulos: «2 DORMITORIOS · 2½ BAÑOS · 142.25 m² ÁREA TOTAL · 57.33 m² ÁREA LIBRE» (datos de lámina). Es el único que declara área libre —los cuatro flats solo declaran área total— y es el único con COCINA CERRADA: cuarto propio con muros, puerta y piso de porcelanato gris, con encimera de 4 hornillas, lavadero y refrigeradora, y al costado la lavandería con lavadora en su propio recinto. También es el único con jardín de verdad: césped dibujado con arbustos, mesa redonda de 4 y zona de parrilla en el primer nivel, y más césped con seto en el segundo, además de una terraza de porcelanato con comedor exterior de 6. En el nivel 1 van la sala-comedor, el medio baño de visita con piso de mosaico, la escalera interior de madera y un dormitorio con su baño; en el nivel 2 el dormitorio principal con vestidor de colgadores, su baño y una terraza chica con tumbonas. Sin cuarto ni baño de servicio, como todo el edificio. No se marca azotea_propia porque el techo del edificio es área común (el brochure lo vende como Rooftop BBQ y Rooftop Gourmet): lo del 803 son terrazas y jardines de la unidad, no la azotea del edificio. Ojo con la lámina: está a ~330×620 px por nivel, así que el detalle fino (despensa, si el balcón es techado) no se puede afirmar."
      }
     ]
-   }
+   },
+   "coherencia_alerta": "Sus láminas viejas rotulan «3 AMBIENTES» y las nuevas «2+E» y «1+E»: es el mismo departamento con distinto rótulo comercial. Y el TIPO 02, vendido como «2+E», dibuja una cama de dos plazas en el estudio."
   },
   {
    "isGEU": false,
@@ -23018,7 +23019,7 @@
    ],
    "planos_fuente": "Brochure oficial en archivo (9 láminas de tipología).",
    "typologies": [],
-   "comentario": "Proyecto que NO teníamos registrado y cae dentro del cuadrante: V&V Grupo Inmobiliario, Av. de los Precursores 421. Solo 15 departamentos, de 157 a 460 m², 3 dormitorios. Es la oferta de mayor metraje del cuadrante. Tenemos su brochure y 9 planos en archivo, pero falta confirmar si sigue en venta o ya fue entregado, y su lista de precios. OJO: al 31-ago-2026 V&V no lista Le Parc entre sus 17 proyectos activos en vyv.pe. Nuestro registro sale de su brochure archivado. Al llamar, primero confirmar que el proyecto siga vigente.",
+   "comentario": "Proyecto que NO teníamos registrado y cae dentro del cuadrante: V&V Grupo Inmobiliario, Av. de los Precursores 421. Solo 15 departamentos, de 157 a 460 m², 3 dormitorios. Es la oferta de mayor metraje del cuadrante. Tenemos su brochure y 9 planos en archivo, pero falta confirmar si sigue en venta o ya fue entregado, y su lista de precios. OJO: al 31-ago-2026 V&V no lista Le Parc entre sus 17 proyectos activos en vyv.pe. Nuestro registro sale de su brochure archivado. Al llamar, primero confirmar que el proyecto siga vigente. Análisis de sus 9 láminas (02-sep-2026): 6 unidades — 3 flats y 3 penthouses dúplex — cero estudios, todos de 3 dormitorios limpios con cuarto y baño de servicio. Ascensor directo confirmado en el dibujo en las 6. Dos de sus penthouses no están en el brochure y son los únicos del cuadrante con PISCINA PRIVADA en azotea.",
    "caseta_ventas": "nd",
    "caseta_nota": "Todavía no observado en campo — sumar a la ruta del próximo recorrido.",
    "geo_aprox": true,
@@ -23985,7 +23986,7 @@
    ],
    "wa": "966351473",
    "asesora": "Isabel Ruiz",
-   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520.  Su brochure oficial cierra la duda: dice «Flats y Dúplex DESDE 67 m²» y «departamentos de 1, 2 y 3 dorms», que son exactamente los dos metrajes que teníamos cargados bajo Monte Umbroso 520 — el flat de 67 m² y el dúplex de 186 m². También declara que INCLUYE ESTACIONAMIENTO.",
+   "comentario": "Proyecto de Galeon —la misma desarrolladora de Estelar 1080— en Alameda Monte Umbroso 585. 8 pisos, 26 departamentos, certificación EDGE, 3 sótanos. Ya entregado: su ficha lo lista entre los proyectos entregados y comunica «último dúplex disponible» desde 186 m² y US$399,000. ATENCIÓN: los dos precios que el benchmark tenía cargados bajo «Monte Umbroso 520» (el flat de 1 dorm de 67 m² a US$170,850 y el penthouse dúplex de 186 m² a US$399,000) coinciden exactamente con este proyecto — mismo número de unidades, mismo estado y el mismo dúplex. Muy probablemente los avisos de corredores que usamos como fuente eran de este edificio y no del 520.  Su brochure oficial cierra la duda: dice «Flats y Dúplex DESDE 67 m²» y «departamentos de 1, 2 y 3 dorms», que son exactamente los dos metrajes que teníamos cargados bajo Monte Umbroso 520 — el flat de 67 m² y el dúplex de 186 m². También declara que INCLUYE ESTACIONAMIENTO. Análisis de su lámina (02-sep-2026): el Dúplex 704 tiene 3 dormitorios y 3.5 baños que cuadran exactos con el dibujo, y su segundo nivel es casi todo JARDINERA — césped de verdad con comedor exterior de 6 encima. Es el área verde privada más grande de todas las unidades analizadas del cuadrante. Su lavandería está rotulada «PATIO»: va a la intemperie, con tendal.",
    "fuentes": [
     "https://www.galeon.com.pe/proyectos/monte-umbroso-585/",
     "Pieza de Meta con el claim «Vive en Chacarilla · desde $170,850», certificación EDGE, 1-2-3 dorm",
@@ -24037,7 +24038,60 @@
     2,
     3
    ],
-   "img": "assets/img-f1/monte-umbroso-585/interiores.jpg"
+   "img": "assets/img-f1/monte-umbroso-585/interiores.jpg",
+   "planos_analisis": {
+    "fecha": "2026-09-02",
+    "version": "1.0",
+    "planos_leidos": 1,
+    "unidades": [
+     {
+      "unidad": "Dúplex 704 (dos niveles)",
+      "archivo": "assets/planos/monte-umbroso-585/Duplex 704 - 3 dorm - 186 m2.png",
+      "archivos": [
+       "assets/planos/monte-umbroso-585/Duplex 704 - 3 dorm - 186 m2.png",
+       "assets/brochures/monte-umbroso-585-brochure.pdf"
+      ],
+      "dorm_declarados": 3,
+      "dorm_reales": 3,
+      "estudio": {
+       "hay": false,
+       "closet": null,
+       "ventana": null,
+       "puerta": null,
+       "veredicto": "sin estudio",
+       "por_que": "la lámina rotula TODOS los ambientes de los dos niveles y no queda ninguno sin nombre: los tres cuartos se llaman DORMITORIO PRINCIPAL, DORMITORIO 01 y DORMITORIO 02, y los tres llevan cama dibujada. No hay ambiente candidato que juzgar, ni rótulo tipo «flex», «multiuso» o «estudio» en ninguna parte"
+      },
+      "checklist": {
+       "sala_comedor": true,
+       "sala_estar_extra": false,
+       "estudio": false,
+       "balcon": true,
+       "balcon_techado": null,
+       "terraza": false,
+       "patio_jardin": true,
+       "cocina_tipo": "cerrada",
+       "cocina_isla": false,
+       "cocina_barra": false,
+       "despensa": false,
+       "lavanderia": true,
+       "lavanderia_techada": false,
+       "lavanderia_recinto_propio": true,
+       "cuarto_servicio": false,
+       "bano_servicio": false,
+       "bano_servicio_ducha": false,
+       "dorm_principal_suite": true,
+       "walk_in_closet": true,
+       "bano_visita": true,
+       "banos_completos": 3,
+       "medios_banos": 1,
+       "ascensor_directo": false,
+       "doble_altura": false,
+       "azotea_propia": true
+      },
+      "observacion": "Es el último dúplex del edificio y el que Galeon comunica «desde 186 m²». La gracia de la unidad está en el segundo nivel: casi todo es JARDINERA rotulada, un jardín de césped de verdad con arbustos y árboles dibujados, mesa redonda de 4 y comedor exterior de 6 puestos ENCIMA del pasto — es azotea de uso exclusivo, y es el área verde privada más grande de todo lo analizado en este lote. Compartiendo ese nivel van la LAVANDERÍA PATIO (con lavadero de servicio L/S, lavadora, tendal TH y un ducto), un BAÑO FAMILIAR completo, el DORMITORIO 02 con su closet y el hall con la escalera de 16 pasos. El primer nivel es el social: SALA-COMEDOR con sofá, dos butacas y mesa de 6, BALCÓN rotulado en la fachada, BAÑO DE VISITA (inodoro y lavatorio, medio baño), cocina cerrada con mesón en U de mármol, y los dos primeros dormitorios: el PRINCIPAL con vestidor de dos tiras de colgadores camino a su BAÑO PRINCIPAL, y el DORMITORIO 01 con el BAÑO FAMILIAR. Los 3.5 baños de la ficha cuadran exactamente con el dibujo: baño principal + dos baños familiares (uno por nivel) + baño de visita. Detalle a marcar: la lavandería está rotulada PATIO, o sea a la intemperie —tiene tendal y está pegada al jardín—, así que lavanderia_techada va en false. No tiene cuarto ni baño de servicio, que en 186 m² y tres dormitorios llama la atención frente a Le Parc o al típico de calle de Monte Mayor."
+     }
+    ]
+   }
   }
  ]
 }
