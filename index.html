@@ -237,6 +237,8 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="priceview"></div>
     <div id="argview"></div>
     <div id="dormview"></div>
+   <div id="entradaview" style="display:none"></div>
+   <div id="ventasview" style="display:none"></div>
    <div id="tipicoview" style="display:none"></div>
     <div id="ofertaview"></div>
     <div id="planosview"></div>
@@ -247,7 +249,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260903p"></script>
+<script src="data/portal-data.js?v=20260904a"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -921,12 +923,14 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],tipico:['tipicoview'],oferta:['ofertaview'],planos:['planosview'],arg:['argview'],cov:['covview']};
+const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],entrada:['entradaview'],ventas:['ventasview'],tipico:['tipicoview'],oferta:['ofertaview'],planos:['planosview'],arg:['argview'],cov:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Por dormitorios'],['tipico','El típico de cada uno'],['oferta','Comunicación y oferta'],['planos','Lo que dicen los planos'],['arg','Argumentario'],['cov','Cobertura de datos']];
+  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Las bandas'],['entrada','Ticket de entrada'],['ventas','Cuánto lleva vendido'],['tipico','El típico de cada uno'],['oferta','Comunicación y oferta'],['planos','Lo que dicen los planos'],['arg','Argumentario'],['cov','Cobertura de datos']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
   buildBandas();
+  buildEntrada();
+  buildVentas();
   buildTipicos();
   buildOferta();
   buildPlanos();
@@ -935,7 +939,7 @@ function buildAnaNav(){
 }
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
-  ['statview','analysisview','priceview','dormview','tipicoview','ofertaview','planosview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  ['statview','analysisview','priceview','dormview','entradaview','ventasview','tipicoview','ofertaview','planosview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
@@ -978,73 +982,169 @@ function buildTipicos(){
    muy pocos y el promedio del cuadrante (que es casi todo 3 dorm) no los representa */
 function bandaPisoAlto(t){const ps=String(t.piso||'').toLowerCase();
   return t.tipo==='flat'&&!/semis|s[oó]tano|^1$|1er|primer|azotea/.test(ps);}
-function buildBandas(){
-  const COCH={si:['neteada','#2F7D54','El precio de lista incluye cochera y acá ya está descontada'],
-              no:['aparte','#2F7D54','La cochera se vende aparte: el precio ya es el del depa solo'],
-              nd:['sin confirmar','#ce3c31','No sabemos si el precio incluye estacionamiento']};
-  const cochCel=p=>{const [lab,col,tit]=COCH[p.cochera_status]||['—','#9a958c',''];
-    return p.cochera_certeza==='politica_desarrolladora'
-      ? [lab+'*','#8F6109','Inferido de la política de la desarrolladora en otro de sus proyectos, no confirmado para este: no entra al ranking']
-      : [lab,col,tit];};
-  const bandas=[1,4,2,3].map(D=>{
-    /* dorms_disponibles sale de las tipologías cargadas, no del rango de marketing.
-       Los que DICEN tener esta banda pero no nos pasaron ninguna unidad van aparte:
-       antes se colaban al comparativo como «precio a consultar» y no comparaban nada. */
-    const of=P.filter(p=>p.mostrar&&(p.dorms_disponibles||[]).includes(D));
-    const dice=P.filter(p=>p.mostrar&&!(p.dorms_disponibles||[]).includes(D)
-                            &&(p.dorms_declarados||[]).includes(D)).map(p=>p.name);
-    /* La regla del benchmark vale también acá: un dúplex o un penthouse no compara contra un
-       flat de piso intermedio. Antes iban todos a la misma tabla y un dúplex de 128 m² vendido
-       como 1 dorm encabezaba la banda de 1 dormitorio. */
-    const filas=[],otros=[],sin=[];
-    of.forEach(p=>{const ts=(p.typologies||[]).filter(t=>t.dorm===D&&t.precio_usd&&t.precio_m2);
-      if(!ts.length){sin.push(p.name);return;}
-      ts.forEach(t=>(t.tipo==='flat'&&bandaPisoAlto(t)?filas:otros).push({p,t}));});
-    otros.sort((a,b)=>a.t.precio_m2-b.t.precio_m2||a.p.name.localeCompare(b.p.name));
-    filas.sort((a,b)=>a.t.precio_m2-b.t.precio_m2||a.p.name.localeCompare(b.p.name));
-    return {D,of,filas,otros,sin,dice};
-  });
-  document.getElementById('dormview').innerHTML=`
-   <h2 style="margin-bottom:2px">Comparativo por dormitorios</h2>
-   <div class="muted" style="margin-bottom:14px">Cada banda se compara sola. El US$/m² del cuadrante lo domina el 3 dorm,
-   así que para 1 y 4 dormitorios ese promedio no dice nada — ahí lo que manda es contra quién compite realmente cada unidad.
-   Todos los precios están expresados igual: departamento solo, sin cochera.</div>`
-   + bandas.map(({D,of,filas,otros,sin,dice})=>{
-    const v=filas.map(f=>f.t.precio_m2).sort((a,b)=>a-b);
-    const med=v.length?median(v):null;                       // median() ya promedia los dos centrales
-    const alto=filas.filter(f=>bandaPisoAlto(f.t)).map(f=>f.t.precio_m2).sort((a,b)=>a-b);
-    const medAlto=alto.length?median(alto):null;
-    const rows=filas.map(({p,t})=>{
-      const [lab,col,tit]=cochCel(p);
-      const g=p.isGEU;
-      return `<tr style="${g?'background:#EAF2FB':''}">
-        <td style="font-weight:800;color:${g?'#185FA5':'#15402c'};white-space:nowrap">$${t.precio_m2.toLocaleString()}/m²</td>
-        <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:${g?800:700};color:${g?'#185FA5':'#15402c'}">${p.name}</a>
-            ${g?'<span class="badge b-geu" style="margin-left:4px">nuestro</span>':''}
-            <div class="muted" style="font-size:10px">${t.unidad||''}</div></td>
-        <td style="white-space:nowrap">${t.m2} m²</td>
-        <td style="white-space:nowrap">${fmtUsd(t.precio_usd)}</td>
-        <td style="font-size:10px;color:#6d776e">${t.tipo||''}${t.piso?' · piso '+t.piso:''}</td>
-        <td><span style="font-size:10px;font-weight:700;color:${col}" title="${tit}">${lab}</span></td></tr>`;}).join('');
-    const geu=filas.filter(f=>f.p.isGEU);
-    const pos=geu.map(f=>{const i=v.indexOf(f.t.precio_m2)+1;
-      return `<b>${f.t.unidad}</b> a $${f.t.precio_m2.toLocaleString()}/m² es el puesto ${i} de ${v.length}, del más barato al más caro`;}).join(' · ');
-    return `<div style="margin:22px 0 8px"><h3 style="margin:0 0 2px">${D} dormitorio${D>1?'s':''}</h3>
-      <div class="muted" style="font-size:11px">${of.length} proyectos con tipología de ${D} dorm cargada · ${of.length-sin.length} con precio${dice.length?` · ${dice.length} más lo declaran sin pasarnos unidad`:''}
-      ${med?` — mediana de la banda <b>$${med.toLocaleString()}/m²</b>`:''}${medAlto&&alto.length>1?`, y <b>$${medAlto.toLocaleString()}/m²</b> mirando solo flats de piso alto`:''}</div></div>
-      ${filas.length?`<table class="t"><thead><tr><th>US$/m²</th><th>Proyecto · unidad</th><th>Área</th><th>Precio</th><th>Tipo</th><th>Cochera</th></tr></thead><tbody>${rows}</tbody></table>`
-        :'<div class="empty">Todavía no tenemos ningún precio publicado para esta banda.</div>'}
-      ${pos?`<div class="alert" style="background:#EAF2FB;border-color:#c3d8ee;color:#173f68;margin-top:8px">📍 ${pos}.</div>`:''}
-      ${otros.length?`<div class="foot" style="margin-top:10px"><b>Fuera del comparativo de flats — ${D} dorm en otro producto:</b><br>
-        ${otros.map(({p,t})=>`${p.name} · ${t.unidad||''} · ${t.tipo}${t.piso?` piso ${t.piso}`:''} · ${t.m2} m² · $${t.precio_m2.toLocaleString()}/m²`).join('<br>')}
-        <br><span class="muted">Un dúplex, un penthouse o un primer piso no comparan contra un flat de piso intermedio.</span></div>`:''}
-      ${sin.length?`<div class="muted" style="font-size:10.5px;margin-top:6px"><b>Tienen ${D} dorm cargado pero sin precio:</b> ${sin.join(' · ')}</div>`:''}
-      ${dice.length?`<div class="muted" style="font-size:10.5px;margin-top:4px"><b>Dicen tener ${D} dorm pero no nos pasaron ninguna unidad:</b> ${dice.join(' · ')} — no entran al comparativo porque un rango de marketing no es una tipología.</div>`:''}`;
-  }).join('');
+/* TICKET DE ENTRADA POR TIPOLOGIA · lo minimo que hay que pagar para entrar a cada banda.
+   No es lo mismo que el ranking de US$/m²: ahi manda el precio por metro, aca el desembolso. */
+function buildEntrada(){
+  const lista=t=>t.precio_m2_lista||t.precio_m2;
+  const banda=Dm=>{
+    const best={};
+    P.filter(p=>p.mostrar).forEach(p=>(p.typologies||[]).forEach(t=>{
+      if(!(t.m2&&t.precio_lista_calc_usd)||t.dorm!==Dm) return;
+      if(Dm!==4&&t.es_tipico!==true) return;
+      const cur=best[p.id];
+      if(!cur||t.precio_lista_calc_usd<cur.t.precio_lista_calc_usd) best[p.id]={p,t};
+    }));
+    const f=Object.values(best).sort((a,b)=>a.t.precio_lista_calc_usd-b.t.precio_lista_calc_usd);
+    if(!f.length) return '';
+    const iG=f.findIndex(x=>x.p.isGEU);
+    return `<div class="sec" style="margin-top:22px">${Dm} dormitorio${Dm>1?'s':''}</div>
+     <div class="foot" style="margin-bottom:8px">Lo menos que hay que pagar para entrar a esta tipología, proyecto por proyecto.
+       ${iG>=0?`Somos el <b>#${iG+1}</b> de ${f.length}.`:'No tenemos unidad en esta banda.'}</div>
+     <div style="overflow-x:auto"><table class="t">
+      <thead><tr><th class="num">#</th><th>Proyecto</th><th>Unidad</th><th class="num">Desde</th><th class="num">m²</th><th class="num">US$/m²</th></tr></thead>
+      <tbody>${f.map(({p,t},i)=>`<tr style="${p.isGEU?'background:#EAF2FB':''}">
+        <td class="num">${i+1}</td>
+        <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:${p.isGEU?800:700};color:${p.isGEU?'#185FA5':'#15402c'}">${p.name}</a>
+            ${p.precio_de_asesor?'':'<span title="El precio sale de un portal, no de la boca del asesor" style="color:#8F6109">°</span>'}
+            <div class="muted" style="font-size:10px">${p.dev||''}</div></td>
+        <td style="font-size:11px">${t.unidad||''}</td>
+        <td class="num" style="font-weight:800;color:${p.isGEU?'#185FA5':'inherit'}">${fmtUsd(t.precio_lista_calc_usd)}</td>
+        <td class="num">${t.m2}</td>
+        <td class="num muted">$${(lista(t)||0).toLocaleString()}/m²</td></tr>`).join('')}
+      </tbody></table></div>`;
+  };
+  document.getElementById('entradaview').innerHTML=`
+   <h2 style="margin-bottom:2px">Ticket de entrada por tipología</h2>
+   <div class="muted" style="margin-bottom:6px">Lo mínimo para entrar a cada banda. No es el ranking de US$/m²: ahí manda el precio
+   por metro y acá el desembolso. Se puede ser caro por m² y barato de entrada, que es justo nuestro caso.</div>`
+   + [1,2,3,4].map(banda).join('');
+}
+
+/* CUANTO LLEVA COLOCADO CADA UNO · el stock es la otra mitad de la presion competitiva:
+   un proyecto al 90% ya no compite por precio, compite por urgencia. */
+function buildVentas(){
+  const V=P.filter(p=>p.mostrar&&!p.isGEU&&(p.ventas||{}).vendidas&&(p.ventas||{}).total)
+           .map(p=>({p,v:p.ventas,pct:Math.round(p.ventas.vendidas/p.ventas.total*100)}))
+           .sort((a,b)=>b.pct-a.pct);
+  const tv=V.reduce((s,x)=>s+x.v.vendidas,0), tt=V.reduce((s,x)=>s+x.v.total,0);
+  const otros=P.filter(p=>p.mostrar&&!p.isGEU&&(p.ventas||{}).fuente&&!((p.ventas||{}).vendidas&&(p.ventas||{}).total));
+  document.getElementById('ventasview').innerHTML=`
+   <h2 style="margin-bottom:2px">Cuánto lleva colocado cada uno</h2>
+   <div class="muted" style="margin-bottom:14px">El stock es la otra mitad de la presión: un proyecto al 90% ya no compite por precio,
+   compite por urgencia de mudanza. Solo entran los que publican su avance unidad por unidad.</div>
+   <div class="amen" style="margin-bottom:18px">
+     <span><b>${tv}</b> de ${tt} unidades colocadas</span>
+     <span><b>${tt?Math.round(tv/tt*100):0}%</b> del stock que publica avance</span>
+     <span><b>${V.length}</b> proyectos con cifra · ${otros.length} anuncian «últimas» sin dar número</span>
+   </div>
+   <div style="overflow-x:auto"><table class="t">
+    <thead><tr><th>Proyecto</th><th class="num">Vendidas</th><th class="num">Quedan</th><th style="width:32%">Avance</th><th class="num">%</th></tr></thead>
+    <tbody>${V.map(({p,v,pct})=>`<tr>
+      <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#15402c">${p.name}</a>
+          <div class="muted" style="font-size:10px">${p.dev||''}</div>
+          <div class="muted" style="font-size:9.5px">${v.fuente||''}</div></td>
+      <td class="num"><b>${v.vendidas}</b> de ${v.total}</td>
+      <td class="num" style="font-weight:700;color:${v.total-v.vendidas<=3?'#ce3c31':'#2F7D54'}">${v.total-v.vendidas}</td>
+      <td><div style="background:#efece2;height:9px;border-radius:2px;overflow:hidden">
+            <div style="width:${pct}%;height:100%;background:#d64031"></div></div></td>
+      <td class="num" style="font-weight:800">${pct}%</td></tr>`).join('')}
+    </tbody></table></div>
+   ${otros.length?`<div class="foot"><b>Anuncian «últimas unidades» sin dar cifra:</b> ${otros.map(p=>`${p.name} <span class="muted">(${p.ventas.fuente||''})</span>`).join(' · ')}</div>`:''}`;
 }
 
 
-/* COMUNICACIÓN Y OFERTA · qué promete cada uno y cuánto vale — para poder compararlo */
+function buildBandas(){
+  /* Mismo formato que el informe en PDF: por unidad va la miniatura de su plano, la
+     política de cochera, el precio de lista y el precio con la oferta puesta. Los campos
+     los deriva scripts/derivar_comparativo.py con el mismo módulo que usa el informe,
+     así que las dos vistas no pueden discrepar. */
+  const esTip=t=>t.es_tipico===true;
+  const lista=t=>t.precio_m2_lista||t.precio_m2;
+  const ofer =t=>t.precio_m2_oferta||lista(t);
+
+  // Una fila por proyecto: su unidad más barata de la banda. En 1, 2 y 3 dorm solo
+  // típicos; en 4 entra todo, porque en el cuadrante todos los 4 dorm son dúplex.
+  const mejorPorProyecto=(Dm,clave)=>{
+    const best={};
+    P.filter(p=>p.mostrar).forEach(p=>(p.typologies||[]).forEach(t=>{
+      if(!(t.m2&&clave(t))) return;
+      if(t.dorm!==Dm) return;
+      if(Dm!==4&&!esTip(t)) return;
+      const cur=best[p.id];
+      if(!cur||clave(t)<clave(cur.t)) best[p.id]={p,t};
+    }));
+    return Object.values(best);
+  };
+  const thumb=t=>t.plano_archivo
+    ? `<a href="${t.plano_archivo}" target="_blank"><img src="${t.plano_archivo}" loading="lazy"
+         style="max-height:46px;max-width:96px;display:block;border:1px solid var(--line,#e4dfd5);background:#fff"></a>`
+    : '<span class="muted" style="font-size:10px">sin plano</span>';
+
+  const banda=Dm=>{
+    const filasL=mejorPorProyecto(Dm,lista).sort((a,b)=>lista(a.t)-lista(b.t));
+    const filasO=[...filasL].sort((a,b)=>ofer(a.t)-ofer(b.t));
+    const posL={}; filasL.forEach((f,i)=>posL[f.p.id]=i+1);
+    const med=filasL.length?median(filasL.map(f=>lista(f.t))):null;
+    const geu=filasL.find(f=>f.p.isGEU);
+    const gap=(geu&&med)?Math.round((lista(geu.t)-med)/med*1000)/10:null;
+    const dice=P.filter(p=>p.mostrar&&!(p.dorms_disponibles||[]).includes(Dm)
+                            &&(p.dorms_declarados||[]).includes(Dm)).map(p=>p.name);
+    const sinPrecio=P.filter(p=>p.mostrar&&(p.dorms_disponibles||[]).includes(Dm)
+        &&!(p.typologies||[]).some(t=>t.dorm===Dm&&lista(t))).map(p=>p.name);
+    if(!filasO.length) return '';
+    /* El informe saca la banda de 4 dorm porque solo estamos nosotros. Una tabla de una
+       fila no compara nada, pero que no haya contra quién compararse es un hallazgo:
+       se dice en una línea en vez de borrarlo en silencio. */
+    if(filasL.length<2){
+      const solo=filasL[0];
+      return `<div class="sec" style="margin-top:26px">${Dm} dormitorio${Dm>1?'s':''}</div>
+       <div class="alert" style="max-width:760px">En ${Dm} dormitorios <b>no hay contra quién compararse</b>:
+       ${solo.p.isGEU?`el único con precio publicado en el cuadrante es el nuestro (${solo.t.unidad||''},
+       ${solo.t.m2} m² a $${(lista(solo.t)||0).toLocaleString()}/m²)`:`el único con precio es ${solo.p.name}`}.
+       Los que anuncian 4 dormitorios no lo sostienen: sus dúplex se venden como 3 y el cuarto sale de un estudio
+       con ropero. El detalle está en «Lo que dicen los planos».</div>`;
+    }
+    const rows=filasO.map(({p,t},i)=>{
+      const g=p.isGEU, mv=posL[p.id]-(i+1);
+      const flecha=mv>0?`<span style="color:#2F7D54;font-weight:700" title="subió ${mv} puesto(s) al poner la oferta">▲${mv}</span>`
+                 :mv<0?`<span style="color:#ce3c31;font-weight:700" title="bajó ${-mv} puesto(s) al poner la oferta">▼${-mv}</span>`:'';
+      const baja=t.oferta_baja_precio;
+      return `<tr style="${g?'background:#EAF2FB':''}">
+        <td class="num" style="white-space:nowrap">${i+1}º ${flecha}</td>
+        <td>${thumb(t)}</td>
+        <td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:${g?800:700};color:${g?'#185FA5':'#15402c'}">${p.name}</a>
+            ${g?'<span class="badge b-geu" style="margin-left:4px">nuestro</span>':''}
+            ${p.precio_de_asesor?'':'<span title="El precio sale de un portal, no de la boca del asesor" style="color:#8F6109">°</span>'}
+            <div class="muted" style="font-size:10.5px">${t.unidad||''}</div>
+            ${t.plano_nota?`<div style="font-size:10px;color:#A6342A">${t.plano_nota}</div>`:''}</td>
+        <td class="num">${t.m2}</td>
+        <td style="font-size:10.5px;color:#6d776e;white-space:nowrap">${t.cochera_txt||'—'}</td>
+        <td class="num" style="white-space:nowrap">${fmtUsd(t.precio_lista_calc_usd)}</td>
+        <td class="num" style="font-weight:700;white-space:nowrap">$${(lista(t)||0).toLocaleString()}</td>
+        <td style="font-size:10.5px;max-width:150px">${p.oferta_corta||'<span class="muted">no indica</span>'}
+            ${p.oferta_canal?`<div class="muted" style="font-size:9.5px">${p.oferta_canal}</div>`:''}</td>
+        <td class="num" style="white-space:nowrap;color:${baja?'#2F7D54':'inherit'}">${fmtUsd(t.precio_oferta_usd)}</td>
+        <td class="num" style="font-weight:800;white-space:nowrap;color:${baja?'#2F7D54':(g?'#185FA5':'#15402c')}">$${(ofer(t)||0).toLocaleString()}</td></tr>`;}).join('');
+    return `<div class="sec" style="margin-top:26px">${Dm} dormitorio${Dm>1?'s':''} — ${filasL.length} proyecto${filasL.length>1?'s':''}</div>
+     <div class="foot" style="margin-bottom:8px">Mediana US$${med?med.toLocaleString():'—'}${geu?` · nosotros US$${lista(geu.t).toLocaleString()}, ${gap>0?'+':''}${gap}%`:''}.
+       Una fila por proyecto, su unidad más barata de la banda. <b>Todos los precios son del departamento solo</b>, con la cochera descontada al valor que declara cada uno.
+       La flecha dice cuántos puestos se movió al poner la oferta. El grado ° marca el precio que sale de un portal y no de la boca del asesor.</div>
+     <div style="overflow-x:auto"><table class="t">
+      <thead><tr><th>Puesto</th><th>Plano</th><th>Proyecto</th><th class="num">m²</th><th>Cochera</th>
+        <th class="num">Precio lista</th><th class="num">US$/m² lista</th><th>Oferta</th>
+        <th class="num">Con oferta</th><th class="num">US$/m² oferta</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>
+     ${sinPrecio.length?`<div class="muted" style="font-size:10.5px;margin-top:6px"><b>Tienen ${Dm} dorm cargado pero sin precio:</b> ${sinPrecio.join(' · ')}</div>`:''}
+     ${dice.length?`<div class="muted" style="font-size:10.5px;margin-top:4px"><b>Dicen tener ${Dm} dorm pero no nos pasaron ninguna unidad:</b> ${dice.join(' · ')} — un rango de marketing no es una tipología.</div>`:''}`;
+  };
+  document.getElementById('dormview').innerHTML=`
+   <h2 style="margin-bottom:2px">Las bandas — precio de lista, oferta y lo que queda</h2>
+   <div class="muted" style="margin-bottom:6px">Cada banda se compara sola: el promedio del cuadrante lo domina el 3 dormitorios y
+   para 1 y 4 no dice nada. La banda va por los dormitorios que el proyecto <b>anuncia</b>, que es lo que ve el comprador;
+   cuando su plano dibuja más, se avisa debajo de la unidad.</div>`
+   + [1,2,3,4].map(banda).join('');
+}
+
 function buildOferta(){
   const conPromo=P.filter(p=>p.mostrar&&p.promo).sort((a,b)=>(b.promo.valor_usd||0)-(a.promo.valor_usd||0));
   const filas=conPromo.map(p=>{const q=p.promo;
