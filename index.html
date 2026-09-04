@@ -250,7 +250,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260904b"></script>
+<script src="data/portal-data.js?v=20260904c"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -268,8 +268,8 @@ const PLANOS_TXT=EN_PLANOS.length?`GEU (lanzamiento) y ${EN_PLANOS.join(', ')} e
   const el=document.getElementById('hsub');
   /* El sello sale de la data, no del HTML: si el navegador sirve una copia cacheada,
      el sello queda viejo y se ve, en vez de mostrar cifras viejas como si fueran de hoy. */
-  const sello=D.meta.sello?` · datos ${D.meta.sello}`:'';
-  if(el&&MES)el.textContent=`Grupo Espacio Urbano · Ave. del Sur 220 · Actualizado ${MES} ${y}${sello}`;
+  if(el&&MES){el.textContent=`Grupo Espacio Urbano · Ave. del Sur 220 · Actualizado ${MES} ${y}`;
+    if(D.meta.sello) el.title=`Versión de los datos: ${D.meta.sello}`;}
 })();
 const STCOL={'En planos':'#C99700','En construcción':'#2d6a4f','Entrega inmediata':'#5b7e91'};
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata','Entregado':'st-entregado'};
@@ -705,7 +705,7 @@ function buildStats(){
        <div style="font-size:11px;letter-spacing:1px;color:#A32D2D;font-weight:800;margin-bottom:8px">⚠ DÓNDE CUIDARNOS</div>
        <div style="font-size:12.5px;line-height:1.75;color:#5a2020">▪ En <b>US$/m² estamos ${gap>0?'+':''}${gap}% sobre la mediana</b> de la zona — mitad superior del rango.<br>▪ El <b>dúplex</b> es de los más caros por m² del cuadrante.<br>▪ Hay que <b>justificar el premium</b> con producto: amplitud, cochera incluida, entrega 2027 (más recorrido de obra).</div></div>
    </div>`;})()}
-   <div class="foot">Los contactos (WhatsApp) y datos de cada proyecto están en su ficha (clic en cualquier tarjeta del mapa o fila de la matriz) y en el Time lapse. Fuentes: webs oficiales, brochures PDF y asesores.</div>`;
+   <div class="foot">Clic en cualquier tarjeta abre la ficha del proyecto, con su WhatsApp, sus planos y sus fuentes.</div>`;
 }
 
 /* RANKING FILTRABLE */
@@ -753,7 +753,7 @@ function buildPrice(){
    <table class="t"><thead>
      <tr><th rowspan="2">Proyecto</th><th colspan="3" class="sep" style="text-align:center">1 dorm</th><th colspan="3" class="sep" style="text-align:center">2 dorm</th><th colspan="3" class="sep" style="text-align:center">3 dorm</th><th rowspan="2" class="sep" style="text-align:center">Cochera</th></tr>
      <tr><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th><th class="sep">m²</th><th>Precio</th><th>USD/m²</th></tr></thead><tbody>${mrows}</tbody></table>
-   <div class="foot">Precio neto por unidad sola, cochera descontada donde el asesor lo confirmó. En "Ticket de entrada" se ordena por el precio del depto; en "Precio por m²" por el US$/m². 4 dorm = dúplex (m² total).</div>`;
+   <div class="foot">Precio del departamento solo, con la cochera descontada donde el asesor confirmó que va incluida. En 4 dormitorios el m² es el total, porque todos son dúplex.</div>`;
 }
 
 
@@ -808,25 +808,12 @@ function buildAnalysis(){
    <div class="sec">Comparativo por proyecto — US$/m² del flat típico más barato</div>
    ${barRows}
    <div style="font-size:10px;color:#aaa;margin:6px 0 14px">⬛ borde = proyecto ubicado sobre una avenida-límite del cuadrante. Donde el asesor confirmó la política de cochera (Santorini, Monte Mayor 177 y 183, Precursores II, Conde de la Vega 460), la barra muestra el precio neto sin cochera; en los demás es el precio de lista publicado. Los proyectos que no aparecen en el gráfico no publican precios por unidad.</div>
-   <div class="sec">Ajuste por cochera — precios netos confirmados con cada asesor</div>
-   <table class="t" style="max-width:1080px"><thead><tr><th>Proyecto</th><th>Unidades típicas</th><th>Desde (lista)</th><th>Cochera / depósito</th><th>US$/m² neto</th><th>Disponibilidad</th></tr></thead><tbody>
-   <tr class="geurow"><td><b>AVE. DEL SUR 220 (GEU)</b></td><td>Flats 1–3d + dúplex 2–4d (67.8–329 m²)</td><td>US$173,235</td><td>1 incluida · adicional $15k</td><td><b style="color:#A32D2D">$2,562</b></td><td>Preventa · 39 und.</td></tr>
-   <tr><td><b>Santorini</b></td><td>7 flats 2-3d, pisos 2-5</td><td>US$286,450 c/1 estac</td><td>1-2 estac. incl. → −$15k</td><td><b>$2,180–2,335</b></td><td>9 disp. (>50% vendido) · mar-27</td></tr>
-   <tr><td><b>Aura Sul</b></td><td>6 flats 3d</td><td>US$229,552</td><td>Aparte ($15k/$25k)</td><td><b>$2,286–2,287</b></td><td>En construcción</td></tr>
-   <tr><td><b>Monte Mayor 177</b></td><td>Flat 203, 87 m², 2d</td><td>S/820,000</td><td>2 paralelos + depósito incl. → −$30k</td><td><b>$2,429</b></td><td>ÚLTIMA unidad</td></tr>
-   <tr><td><b>Precursores II</b></td><td>Flats 201/503, 149 m², 3d</td><td>US$385,000</td><td>2 paralelas + depósito incl. → −$30k</td><td><b>$2,435–2,463</b></td><td>3 und. (16/19 vendidas) · jul-26</td></tr>
-   <tr><td><b>Monte Mayor 183</b></td><td>Flats 202/302, 115.6 m²</td><td>US$319,000</td><td>2 simples incl. → −$30k</td><td><b>$2,501–2,510</b></td><td>Últimas 4 und.</td></tr>
-   <tr><td><b>Conde de la Vega 460</b></td><td>9 flats típicos, pisos 2-5</td><td>US$253,000</td><td>1-2 incl. → −15/28/30k</td><td><b>$2,412–2,797</b><div style="font-size:10px;color:#999">prom. $2,568</div></td><td>12 und. c/precio</td></tr>
-   <tr style="color:#777"><td><b>HANA</b> †</td><td>Tipo 102, 96.31 m² — piso 1 elevado</td><td>S/900,000</td><td>Incluida → −$15k</td><td><b>$2,593</b> †</td><td>ÚLTIMA unidad</td></tr>
-   <tr style="color:#777"><td><b>D'Mont</b> †</td><td>D-101, 115.71 m² — piso 1 elevado</td><td>US$237,206</td><td>Aparte: $14k</td><td><b>$2,050</b> †</td><td>ÚLTIMA unidad · sep-26</td></tr>
-   <tr style="color:#777"><td><b>Monte Mar 167</b> †</td><td>121 m² — piso por confirmar</td><td>S/980,000</td><td>2 paralelos incl. → −$30k</td><td><b>$2,134</b> †</td><td>Últimas 3</td></tr>
-   </tbody></table>
    <div style="font-size:10px;color:#999;max-width:1080px;margin:2px 0 8px">† Unidades finales con cálculo completo (piso 1 / piso por confirmar): referencia de cierre, no integran la banda de flats típicos.</div>
    <div class="alert" style="max-width:1080px">🎯 <b>Rango confirmado del cuadrante: $${Math.min(...all).toLocaleString()}–${Math.max(...all).toLocaleString()}/m² neto · GEU en preventa ($${GEU_F.toLocaleString()}) queda ${gapAll>0?'+':''}${gapAll}% sobre la mediana ($${median(all).toLocaleString()}), en la mitad superior del rango.</b> Situación de cochera verificada con cada asesor comercial (jun–ago 2026). El cuadrante se está quedando sin stock: ${N_ULT} proyectos en últimas unidades y ${PLANOS_TXT}.</div>
    <div class="sec">Estado de la oferta (${comp.length} proyectos)</div>
    ${estRows}
    <div class="alert" style="max-width:980px">La competencia activa real de la preventa GEU son los <b>en construcción</b> y <b>en planos</b>; los de entrega inmediata compiten por urgencia de mudanza y los entregados solo aportan referencia de cierre.</div>
-   <div class="foot">Dirección de cada proyecto verificada una a una dentro del cuadrante (jun–ago 2026) · Los nombres comerciales que corresponden a un mismo edificio se muestran como una sola ficha · Tipo de cambio: S/ 3.40 por US$.</div>`;
+   <div class="foot">Tipo de cambio: S/ ${D.meta.tc} por US$.</div>`;
 }
 function ticketSection(){
   const list=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&p.precio_desde_usd).sort((a,b)=>a.precio_desde_usd-b.precio_desde_usd);
@@ -1239,8 +1226,6 @@ function buildPlanos(){
    <div class="muted" style="margin-bottom:14px">${D.meta.regla_planos||''}</div>
 
    <div class="amen" style="margin-bottom:20px">
-     <span><b>${con.length}</b> de ${conPlanos.length} proyectos con planos revisados</span>
-     <span><b>${todas.length}</b> unidades leídas</span>
      <span><b>${est.length}</b> con un ambiente vendido como estudio</span>
      <span style="background:#FBEAE6;color:#A6342A"><b>${dis.filter(x=>!(x.u.estudio||{}).ya_contado).length}</b> esconden un dormitorio que no cuentan</span>
      <span><b>${dis.filter(x=>(x.u.estudio||{}).ya_contado).length}</b> lo cuentan, pero lo amueblan como escritorio</span>
@@ -1278,7 +1263,7 @@ function buildPlanos(){
          <td class="num">${U.length}</td><td class="num">${e||'—'}</td>
          <td class="num" style="font-weight:${dd?800:400};color:${dd?'#A6342A':'#b8b3a6'}">${dd||'—'}</td></tr>`;}).join('')}
      </tbody></table></div>
-   <div class="foot">Faltan ${conPlanos.length-con.length} proyectos con planos por revisar. El detalle de las 25 casillas de cada unidad está en su ficha.</div>`;
+   <div class="foot">El detalle de cada unidad está en la ficha de su proyecto.</div>`;
 }
 
 /* COBERTURA DE DATOS · qué tenemos y qué falta de cada proyecto */
@@ -1332,9 +1317,6 @@ function buildCobertura(){
     ['Foto de campo', p=>{const f=p.foto_campo&&IMG.test(String(p.img||''))?p.img:
         ((p.gallery||[]).find(x=>x.includes('/campo/'))||(IMG.test(String(p.img||''))&&String(p.img).includes('/campo/')?p.img:null));
        return f?ver(f,'✓','Foto del recorrido de campo'):(p.foto_campo?ver(ficha(p),'✓','Verificado en campo'):no('Nunca fotografiado'));}],
-    ['Estado', p=>{const e=p.estado_evidencia||{};
-       return (e.tipo==='whatsapp'||e.tipo==='campo'||e.tipo==='web_oficial')
-         ?ver(ficha(p),'✓',`${e.tipo} · ${e.fecha||''}`):tilde('Conviene reconfirmarlo con el asesor');}],
   ];
   const verde=h=>h.includes('#2F7D54')||h.includes('#8F6109');
   const rows=comps.map(p=>{
@@ -1346,30 +1328,17 @@ function buildCobertura(){
       ${p.en_cuadrante?'':'<span style="font-size:9px;color:#9a958c"> · fuera</span>'}
       <div class="muted" style="font-size:10px">${p.dev||''}</div>
       ${falta.length?`<div style="font-size:9.5px;color:#b9863b">falta: ${falta.join(' · ')}</div>`:''}</td>
-      ${cel.map(h=>`<td style="text-align:center">${h}</td>`).join('')}
-      <td style="text-align:center;font-weight:800;color:${col}">${pct}%</td></tr>`;}).join('');
+      ${cel.map(h=>`<td style="text-align:center">${h}</td>`).join('')}</tr>`;}).join('');
   const tot=cols.map(([t,fn])=>[t,comps.filter(p=>verde(fn(p))).length]);
   const nDoc=comps.reduce((a,p)=>a+(p.documentos||[]).length,0);
   const nPl=comps.reduce((a,p)=>a+nPlan(p),0);
   const nFu=comps.reduce((a,p)=>a+(p.fuentes||[]).length,0);
   document.getElementById('covview').innerHTML=`
    <h2 style="margin-bottom:2px">El respaldo</h2>
-   <div class="muted" style="margin-bottom:14px">Qué tenemos de cada competidor y <b>dónde está</b>.
-     Cada marca abre la prueba: el plano y la foto en el visor, el brochure y el tarifario en otra pestaña,
-     la ubicación en Google Maps, el contacto en WhatsApp. Lo que está en rojo es lo que falta pedir.</div>
-   <div class="amen" style="margin-bottom:16px">
-     <span><b>${nPl}</b> láminas de tipología</span>
-     <span><b>${nDoc}</b> documentos guardados</span>
-     <span><b>${nFu}</b> fuentes citadas</span>
-     <span><b>${(D.meta.bitacora||[]).length}</b> registros en la bitácora</span>
-   </div>
-   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;max-width:1080px">
-     ${tot.map(([t,n])=>`<div style="flex:1;min-width:96px;background:var(--card,#fff);border:1px solid #e6e1d4;border-radius:10px;padding:8px 11px">
-       <div style="font-size:17px;font-weight:800;color:${n/comps.length>=.6?'#2F7D54':'#b9863b'}">${n}<span style="font-size:10px;color:#bbb">/${comps.length}</span></div>
-       <div style="font-size:10px;color:#7a7a7a">${t}</div></div>`).join('')}
-   </div>
-   <div style="overflow-x:auto"><table class="t"><thead><tr><th style="width:18%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}<th style="text-align:center">Completo</th></tr></thead><tbody>${rows}</tbody></table></div>
-   <div class="foot" style="margin-top:10px">El asterisco en Cochera marca los que se infieren de la política de la desarrolladora y no están confirmados para ese proyecto. Último rastreo del cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>
+   <div class="muted" style="margin-bottom:14px">Clic en cualquier marca abre la prueba: el plano y la foto de obra
+     en el visor, el brochure y el tarifario en otra pestaña, la ubicación en Google Maps, el contacto en WhatsApp.</div>
+   <div style="overflow-x:auto"><table class="t"><thead><tr><th style="width:18%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div>
+   <div class="foot" style="margin-top:10px">El asterisco en Cochera marca los que se infieren de la política de la desarrolladora y no están confirmados para ese proyecto.</div>
    ${archivoZonaHtml()}`;
 }
 
@@ -1396,7 +1365,7 @@ function archivoZonaHtml(){
 function buildArgumentario(){
   const comps=P.filter(p=>!p.isGEU&&p.mostrar);
   const all=[];comps.forEach(p=>(p.typologies||[]).forEach(t=>{if(t.precio_m2&&t.tipo==='flat'&&[1,2,3].includes(t.dorm)&&pisoOk(t.piso)&&!exclUnit(p.name,t))all.push(t.precio_m2);}));
-  const med=median(all),geu=2562,gap=Math.round((geu-med)/med*1000)/10;
+  const med=median(all),geu=median(geuFlats()),gap=Math.round((geu-med)/med*1000)/10;
   const tk=P.filter(p=>(p.isGEU||(p.mostrar&&p.en_cuadrante))&&p.precio_desde_usd).sort((a,b)=>a.precio_desde_usd-b.precio_desde_usd);
   const rank=tk.findIndex(p=>p.isGEU)+1;
   const card=(t,body)=>`<div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:18px 22px;margin-bottom:14px">
@@ -1424,7 +1393,7 @@ function buildArgumentario(){
        ▪ <b>39 residencias boutique</b> en el corazón de Chacarilla, entrega nov-2027.<br>
        ▪ Respaldo <b>Grupo Espacio Urbano</b> (proyectos ya entregados en la zona).</div>`)}
    </div>
-   <div class="foot">Cifras recalculadas del benchmark del cuadrante. Mediana y gap sobre ${all.length} departamentos típicos comparables · TC ${D.meta.tc}.</div>`;
+   <div class="foot">Mediana y diferencia sobre ${all.length} departamentos típicos comparables · TC ${D.meta.tc}.</div>`;
 }
 function dormSections(){
   const dorms=[1,2,3];
@@ -1499,7 +1468,7 @@ function buildUpdates(){
      ${chip(16,'En construcción','+1',GRN)}${chip(6,'Entrega inmediata','−1',RED)}${chip(2,'En planos','+1',GRN)}</div>
    <div style="font-size:12.5px;color:#555;margin:-6px 0 16px;max-width:900px"><b style="color:${RED}">−1</b> en entrega inmediata (D'Mont vendido), <b style="color:${GRN}">+1</b> en construcción (D'Mont 2) y <b style="color:${GRN}">+1</b> en planos (Monte Alegre). Solo 2 proyectos en planos compiten con una preventa.</div>
    <table class="t"><thead><tr><th style="width:20%">Proyecto</th><th style="width:15%">Situación</th><th style="width:9%">$/m² típ.</th><th>Qué pasó</th></tr></thead><tbody>${tr}</tbody></table>
-   <div class="foot" style="margin-top:10px">$/m² del flat típico, unidad sola sin cochera (bench jun–jul · pisos 2–6, sin 1er piso ni dúplex). Nuestro típico en preventa: <b>$2,562/m²</b> (${geuGap()>0?'+':''}${geuGap()}% sobre la mediana de la zona). Datos confirmados con los asesores comerciales por WhatsApp y con las listas de precios oficiales.</div>`;
+   <div class="foot" style="margin-top:10px">US$/m² del flat típico, unidad sola sin cochera. Nuestro típico: <b>$${median(geuFlats()).toLocaleString()}/m²</b> (${geuGap()>0?'+':''}${geuGap()}% sobre la mediana de la zona).</div>`;
 }
 
 /* INIT: solo proyectos con precio en el cuadrante */

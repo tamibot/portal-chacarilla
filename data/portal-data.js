@@ -2257,8 +2257,8 @@ window.PORTAL_DATA = {
   "nota_mapeo": "«Mapeado en» es la fecha en que el proyecto entró a nuestro registro, no la fecha en que arrancó. Casi todos llevaban meses en obra: simplemente no los teníamos levantados.",
   "regla_cochera": "Convención de Azzurra usada en todo el benchmark: estacionamiento simple US$15,000, lineal o doble US$28,000, dos simples US$30,000. Cálculo unidad por unidad en referencias/azzurra-precios-netos-cochera.md.",
   "nota_corte": "Corte de agosto cerrado al 31-ago-2026. El barrido de webs oficiales se hizo el 24-ago y las últimas confirmaciones por WhatsApp llegaron el 27 y 30 de agosto.",
-  "promos_nota": "Se comparan solo promociones con fuente: campaña recibida, hoja de cotización, chat del asesor o pieza de Meta guardada. El valor en US$ es el beneficio declarado; el porcentaje se calcula sobre el flat típico de cada proyecto. Las que salen de piezas de julio llevan la fecha de la pieza y quedan marcadas «vigencia por confirmar»: un regalo anunciado en julio puede no estar vivo en el corte de agosto. La jugada dominante de la zona es la cochera de regalo, no el descuento en precio.",
-  "regla_equivalente": "US$/m² equivalente = precio de lista ÷ (m² del departamento + 16 m² por cada estacionamiento incluido + 6 m² por cada depósito incluido). Sirve para comparar sin tener que ponerle precio a la cochera: en vez de restarle plata al precio, se le suman los metros que el comprador realmente recibe. Donde la cochera va aparte, el precio de lista ya es el del departamento solo y el equivalente coincide con el US$/m² normal.",
+  "promos_nota": "Solo entran promociones con fuente: campaña recibida, cotización, chat del asesor o pieza de Meta. El valor en US$ es el beneficio declarado y el porcentaje se calcula sobre el flat típico.",
+  "regla_equivalente": "US$/m² equivalente = precio de lista ÷ (m² del departamento + 16 m² por estacionamiento incluido + 6 m² por depósito). Compara sin tener que ponerle precio a la cochera.",
   "m2_estacionamiento": 16,
   "m2_deposito": 6,
   "casillas_planos": [
@@ -2288,22 +2288,22 @@ window.PORTAL_DATA = {
    "doble_altura",
    "azotea_propia"
   ],
-  "regla_planos": "Del plano se leen ambientes, nunca metros: las áreas salen de las listas de precios. Cada unidad se revisa contra las mismas 25 casillas, con tres estados: SÍ (se ve dibujado), NO (el plano se lee bien y no está) y NO SE VE (el plano no alcanza a mostrarlo). El tercero es el que evita afirmar de más.",
-  "regla_estudio": "Un ambiente vendido como «estudio» cuenta como dormitorio disfrazado si cumple dos de tres: tiene clóset, tiene ventana a exterior y tiene puerta que lo cierra. Si en la misma lámina los dormitorios llevan barrido de puerta dibujado y el estudio no, la ausencia es intencional.",
+  "regla_planos": "Del plano se leen ambientes, nunca metros: las áreas salen de las listas de precios.",
+  "regla_estudio": "Un ambiente vendido como «estudio» cuenta como dormitorio si tiene dos de tres: clóset, ventana a exterior y puerta que lo cierra.",
   "planos_analizados": {
    "proyectos": 31,
    "unidades": 238
   },
   "regla_cochera_certeza": "Dos niveles, y no valen lo mismo. **Confirmado**: el asesor de ESE proyecto lo dijo por escrito, o su cotización lo muestra. **Política de la desarrolladora**: lo confirmó el mismo asesor o el mismo formato de cotización en un proyecto hermano, y se infiere para este. Solo lo confirmado entra al ranking de US$/m²; lo inferido se muestra marcado, porque decir «la desarrolladora lo vende así en sus otros cuatro proyectos» informa mucho más que decir «no se sabe». El 3-sep-2026 quedó demostrado que hacía falta: habíamos inferido que Narciso vendía la cochera aparte porque así la cotiza AyD en Monte Umbroso 247, y el asesor confirmó lo contrario — «incluye estacionamiento doble lineal». Una inmobiliaria puede tener políticas distintas por proyecto. Por eso ninguna inferencia sostiene un US$/m² del ranking.",
   "nota_planos": "Un plano es una lámina de tipología. Los renders de fachada y las fotos de valla no cuentan, aunque estén cargados en el mismo campo: tres proyectos mostraban la sección «PLANOS» sin tener ninguno.",
-  "sello": "20260903-1411",
+  "sello": "20260904-1152",
   "regla_desde": "El ticket de entrada («desde») sale de la tipología más barata disponible, tomando su precio NETO de cochera — la misma base que el US$/m², para que los dos comparen. Lo que el proyecto publica se guarda aparte en desde_publicado: al 3-sep-2026 catorce proyectos publicaban un número que ninguna de sus unidades sostenía, uno por debajo de su unidad más barata y otro 147 mil por encima.",
   "tipicos": {
    "con_tipico": 25,
    "con_precio": 18,
    "total": 34
   },
-  "regla_tipico": "El típico de cada proyecto es su flat de piso intermedio de metraje mediano: ni el chico del ticket de entrada ni el grande de portada. Se identifica exista o no su precio, porque saber que el típico de un competidor es un 3 dormitorios de 132 m² con dos estacionamientos incluidos ya compara producto aunque nunca nos pasen el tarifario.",
+  "regla_tipico": "El típico de cada proyecto es su flat de piso intermedio de metraje mediano: ni el chico del ticket de entrada ni el grande de portada.",
   "comparativo_derivado": {
    "fecha": "2026-09-03",
    "unidades_con_plano": 124,
@@ -3648,7 +3648,7 @@ window.PORTAL_DATA = {
     "piso": null,
     "precio_m2": 2475,
     "precio_usd": 342540,
-    "estac_incluidos": 0,
+    "estac_incluidos": 1,
     "banos": {
      "completos": 3,
      "medios": 1
@@ -5167,8 +5167,8 @@ window.PORTAL_DATA = {
    "wa_label": "Jenny",
    "foto_campo": "2026-08-22",
    "como_presenta": "En obra sólo comunican el remate: «ÚLTIMOS DÚPLEX», con los metrajes y el WhatsApp de Edifikarte.",
-   "pedido": "precio y metraje de un flat de piso intermedio",
-   "pedido_que": "Hola Jenny! Sobre Conde de la Vega 251: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
+   "pedido": "precio de un flat típico",
+   "pedido_que": "Hola Jenny! Sobre Conde de la Vega 251: el precio y el metraje de un flat de piso intermedio; si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
@@ -5444,8 +5444,8 @@ window.PORTAL_DATA = {
    "politica_precio": "El precio de lista incluye 2 estacionamientos y 1 depósito, confirmado por Jenny Miranda el 1-jul-2026. Es el patrón de Edifikarte en toda la zona.",
    "tipico": null,
    "pedido_lista": [
-    "precio y metraje de un flat de piso intermedio",
-    "si tienen alguna promocion vigente"
+    "precio de un flat típico",
+    "promoción"
    ],
    "precio_de_asesor": false,
    "oferta_corta": null,
@@ -6389,8 +6389,8 @@ window.PORTAL_DATA = {
    ],
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Jenniffer! Sobre Conde de la Vega 460: precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola Jenniffer! Sobre Conde de la Vega 460: el precio de su flat típico; si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-05-18",
@@ -6983,8 +6983,8 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 16
    },
    "pedido_lista": [
-    "precio de su flat tipico",
-    "si tienen alguna promocion vigente"
+    "precio del típico",
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -7196,12 +7196,12 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido": "precio de un flat típico",
    "pedido_lista": [
-    "precio y metraje de un flat de piso intermedio",
-    "si tienen alguna promocion vigente"
+    "precio de un flat típico",
+    "promoción"
    ],
-   "pedido_que": "Hola! Sobre D'Mont: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
+   "pedido_que": "Hola! Sobre D'Mont: el precio y el metraje de un flat de piso intermedio; si tienen alguna promoción vigente.",
    "precio_fuente": {
     "tipo": "sin_confirmar",
     "nota": "No hay fuente registrada para sus precios por unidad. Solo tenemos su brochure, que no los trae. Hay que pedirle la lista a Grupo Dicon antes de sostener su posicion en el ranking."
@@ -7608,8 +7608,8 @@ window.PORTAL_DATA = {
     }
    ],
    "wa_label": "Grupo Dicon",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola! Sobre D'Mont 2: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola! Sobre D'Mont 2: si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -8009,7 +8009,7 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 9
    },
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": false,
    "oferta_corta": null,
@@ -8810,8 +8810,8 @@ window.PORTAL_DATA = {
    "asesora": "Cecilia",
    "wa_label": "Cecilia",
    "foto_campo": "2026-08-22",
-   "pedido": "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
-   "pedido_que": "Hola Cecilia! Sobre Floresta Living 444: confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo); si tienen alguna promocion vigente.",
+   "pedido": "confirmar cochera",
+   "pedido_que": "Hola Cecilia! Sobre Floresta Living 444: el precio incluye estacionamiento o va aparte; si tienen alguna promoción vigente.",
    "financia": "Interbank",
    "stock": {
     "n": 5,
@@ -9098,8 +9098,8 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 1
    },
    "pedido_lista": [
-    "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
-    "si tienen alguna promocion vigente"
+    "confirmar cochera",
+    "promoción"
    ],
    "precio_de_asesor": false,
    "oferta_corta": null,
@@ -9293,8 +9293,8 @@ window.PORTAL_DATA = {
    ],
    "asesora": "Rebeca Ruiz",
    "wa_label": "Rebeca Ruiz",
-   "pedido": "precio y metraje de un flat de piso intermedio",
-   "pedido_que": "Hola Rebeca! Sobre HANA: precio y metraje de un flat de piso intermedio.",
+   "pedido": "precio de un flat típico",
+   "pedido_que": "Hola Rebeca! Sobre HANA: el precio y el metraje de un flat de piso intermedio.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -9420,7 +9420,7 @@ window.PORTAL_DATA = {
    "desde_publicado": 246176,
    "tipico": null,
    "pedido_lista": [
-    "precio y metraje de un flat de piso intermedio"
+    "precio de un flat típico"
    ],
    "precio_de_asesor": true,
    "oferta_corta": "S/48,000 menos y amoblado",
@@ -9668,8 +9668,8 @@ window.PORTAL_DATA = {
    "foto_campo": "2026-08-22",
    "pisos": 6,
    "como_presenta": "La valla vende «ÚLTIMAS UNIDADES» con entrega marzo 2027, flats desde 127 m² y dúplex desde 209 m², y 7 áreas sociales. Financia BCP y exhibe certificación AIS.",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola Diana! Sobre Jardines de Monte Real: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola Diana! Sobre Jardines de Monte Real: si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "campo",
     "fecha": "2026-08-22",
@@ -10520,7 +10520,7 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 1
    },
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -12116,8 +12116,8 @@ window.PORTAL_DATA = {
    "wa_label": "Jenny",
    "foto_campo": "2026-08-22",
    "como_presenta": "Venden zona e inversión: «Tu depa en la mejor zona de Chacarilla» y «Tu inversión segura en el mejor lugar».",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Jenny! Sobre Monte Carmelo 250: precio de su flat tipico.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola Jenny! Sobre Monte Carmelo 250: el precio de su flat típico.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -12764,7 +12764,7 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 1
    },
    "pedido_lista": [
-    "precio de su flat tipico"
+    "precio del típico"
    ],
    "precio_de_asesor": false,
    "oferta_corta": "Cochera de regalo",
@@ -14333,8 +14333,8 @@ window.PORTAL_DATA = {
    ],
    "cuadrante_verificado": "2026-08-22",
    "como_presenta": "Edifikarte lo posiciona como premium: «Tu nuevo hogar, tu nueva historia — elegancia, tranquilidad y exclusividad».",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Jenny! Sobre Montemar 269: precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola Jenny! Sobre Montemar 269: el precio de su flat típico; si tienen alguna promoción vigente.",
    "documentos": [
     {
      "titulo": "Brochure oficial Edifikarte · Montemar 269 (jul-2026)",
@@ -15025,8 +15025,8 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 4
    },
    "pedido_lista": [
-    "precio de su flat tipico",
-    "si tienen alguna promocion vigente"
+    "precio del típico",
+    "promoción"
    ],
    "precio_de_asesor": false,
    "oferta_corta": null,
@@ -16272,8 +16272,8 @@ window.PORTAL_DATA = {
    "asesora": "Jenniffer",
    "wa_label": "Jenniffer",
    "foto_campo": "2026-08-22",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Jenniffer! Sobre Monte Mayor 183: precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola Jenniffer! Sobre Monte Mayor 183: el precio de su flat típico; si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-06-24",
@@ -16513,8 +16513,8 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 15
    },
    "pedido_lista": [
-    "precio de su flat tipico",
-    "si tienen alguna promocion vigente"
+    "precio del típico",
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -16798,13 +16798,13 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "pedido": "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
+   "pedido": "confirmar cochera",
    "pedido_lista": [
-    "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
-    "precio de su flat tipico",
-    "si tienen alguna promocion vigente"
+    "confirmar cochera",
+    "precio del típico",
+    "promoción"
    ],
-   "pedido_que": "Hola Cecilia! Sobre Monte Real: confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo); precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido_que": "Hola Cecilia! Sobre Monte Real: el precio incluye estacionamiento o va aparte; el precio de su flat típico; si tienen alguna promoción vigente.",
    "precio_de_asesor": true,
    "oferta_corta": null,
    "oferta_canal": null
@@ -17120,8 +17120,8 @@ window.PORTAL_DATA = {
    "caseta_ventas": "banner",
    "caseta_nota": "Sin caseta: carteles «ÚLTIMOS DEPAS» colgados en la propia fachada del edificio terminado.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Nadia! Sobre Monte Sierpe: precio de su flat tipico; si tienen alguna promocion vigente.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola Nadia! Sobre Monte Sierpe: el precio de su flat típico; si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -17523,8 +17523,8 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 4
    },
    "pedido_lista": [
-    "precio de su flat tipico",
-    "si tienen alguna promocion vigente"
+    "precio del típico",
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -17689,8 +17689,8 @@ window.PORTAL_DATA = {
    ],
    "wa_label": "Milagros · corredora",
    "asesora": "Milagros López",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola Milagros! Sobre Monte Umbroso 520: precio de su flat tipico; laminas de tipologia; si tienen alguna promocion vigente.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola Milagros! Sobre Monte Umbroso 520: el precio de su flat típico; las láminas de tipología; si tienen alguna promoción vigente.",
    "coherencia_alerta": "CONFIRMADO el 31-ago-2026: el brochure oficial de Monte Umbroso 585 (Galeon) declara «Flats y Dúplex desde 67 m²» y «1, 2 y 3 dormitorios» — los dos metrajes que teníamos acá (el flat de 67 m² a US$170,850 y el dúplex de 186 m² a US$399,000) son de ese edificio, no de éste. Sus precios quedan fuera del comparativo hasta conseguir una lista propia del 520.",
    "cochera_certeza": "confirmado",
    "nota_planos": "Sin planos publicados. Lo único que teníamos eran dos archivos idénticos byte a byte: un solo render de fachada duplicado.",
@@ -17731,9 +17731,9 @@ window.PORTAL_DATA = {
     }
    ],
    "pedido_lista": [
-    "precio de su flat tipico",
-    "laminas de tipologia",
-    "si tienen alguna promocion vigente"
+    "precio del típico",
+    "planos",
+    "promoción"
    ],
    "motivo_no_comparable": "Fuera del ranking de US$/m²: sus precios venían de avisos de corredores en portales, no de la inmobiliaria, y coincidían al dólar con los de Monte Umbroso 585. Sin lista propia no se puede sostener.",
    "precio_de_asesor": false,
@@ -17868,8 +17868,8 @@ window.PORTAL_DATA = {
    "caseta_nota": "Sin caseta de ventas: valla publicitaria sobre Av. de los Precursores.",
    "caseta_fecha": "2026-08-22",
    "politica_precio": "Confirmado que el precio NO incluye cochera: es unidad sola.",
-   "pedido": "precio de su flat tipico",
-   "pedido_que": "Hola! Sobre Monte Flor: precio de su flat tipico; laminas de tipologia; si tienen alguna promocion vigente.",
+   "pedido": "precio del típico",
+   "pedido_que": "Hola! Sobre Monte Flor: el precio de su flat típico; las láminas de tipología; si tienen alguna promoción vigente.",
    "contactos": [
     {
      "nombre": null,
@@ -17933,9 +17933,9 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 2
    },
    "pedido_lista": [
-    "precio de su flat tipico",
-    "laminas de tipologia",
-    "si tienen alguna promocion vigente"
+    "precio del típico",
+    "planos",
+    "promoción"
    ],
    "motivo_no_comparable": "Fuera del ranking de US$/m²: su único precio viene de fichas de portal cuyo metraje (135 y 154 m²) queda por debajo del piso de 193 m² que declara su propia valla de obra. Sin lista de precios propia y sin planos, no hay con qué sostener su posición.",
    "precio_de_asesor": false,
@@ -19381,8 +19381,8 @@ window.PORTAL_DATA = {
    "asesora": "Joyce",
    "wa_label": "Joyce",
    "foto_campo": "2026-08-22",
-   "pedido": "precio y metraje de un flat de piso intermedio",
-   "pedido_que": "Hola Joyce! Sobre Precursores 525: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
+   "pedido": "precio de un flat típico",
+   "pedido_que": "Hola Joyce! Sobre Precursores 525: el precio y el metraje de un flat de piso intermedio; si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "base_interna",
     "fecha": "2026-06-28",
@@ -19710,8 +19710,8 @@ window.PORTAL_DATA = {
    "desde_publicado": 544425,
    "tipico": null,
    "pedido_lista": [
-    "precio y metraje de un flat de piso intermedio",
-    "si tienen alguna promocion vigente"
+    "precio de un flat típico",
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -19925,8 +19925,8 @@ window.PORTAL_DATA = {
    ],
    "asesora": "Indira Ramos",
    "wa_label": "Indira Ramos",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola Indira! Sobre Precursores II: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola Indira! Sobre Precursores II: si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "brochure",
     "fecha": "2026-06-01",
@@ -20232,7 +20232,7 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 2
    },
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -20621,8 +20621,8 @@ window.PORTAL_DATA = {
    "licencia": "0401-2025-SGLM-GDU-MSS (modalidad C) · Grupo Moryasoc Proyecto 31 S.A.C. · plazo 14 meses",
    "pisos": 6,
    "horario_ventas": "Obra: lun-vie 8:00–17:30 · sáb 8:00–13:30",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola Rossana! Sobre Santorini: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola Rossana! Sobre Santorini: si tienen alguna promoción vigente.",
    "politica_precio": "El precio de lista de cada departamento YA incluye 1 estacionamiento. La 2.ª cochera paralela cuesta US$18,000 adicionales (delta constante en todas las tipologías del tarifario). El US$/m² del portal descuenta esos US$18,000.",
    "como_presenta": "Venden por torre (A y B) y por vista, con dúplex de remate en el piso 6 (uno con piscina y terraza). Cada tipología se cotiza en dos versiones: con 1 y con 2 estacionamientos.",
    "estado_evidencia": {
@@ -21150,7 +21150,7 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 5
    },
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -21561,8 +21561,8 @@ window.PORTAL_DATA = {
    ],
    "wa_label": "Grupo Dicon",
    "foto_campo": "2026-08-22",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola! Sobre Spazio: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola! Sobre Spazio: si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -22221,7 +22221,7 @@ window.PORTAL_DATA = {
    },
    "nota_tipologias": "El rango 3–6 dorm mezcla su flat típico de 3 dormitorios con dos tríplex de 6. Para comparar, la banda que corresponde es la de 3 dormitorios.",
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": false,
    "oferta_corta": null,
@@ -24284,8 +24284,8 @@ window.PORTAL_DATA = {
     }
    ],
    "cuadrante_verificado": "2026-08-22",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola! Sobre Real Living · Monte Real: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola! Sobre Real Living · Monte Real: si tienen alguna promoción vigente.",
    "contactos": [
     {
      "nombre": null,
@@ -25024,7 +25024,7 @@ window.PORTAL_DATA = {
    },
    "desde_publicado": 210882,
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
@@ -25243,8 +25243,8 @@ window.PORTAL_DATA = {
      "tipo": "brochure"
     }
    ],
-   "pedido": "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
-   "pedido_que": "Hola Jenny! Sobre Conde de la Vega 128: confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo); precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
+   "pedido": "confirmar cochera",
+   "pedido_que": "Hola Jenny! Sobre Conde de la Vega 128: el precio incluye estacionamiento o va aparte; el precio y el metraje de un flat de piso intermedio; si tienen alguna promoción vigente.",
    "estado_evidencia": {
     "tipo": "web_oficial",
     "fecha": "2026-08-25",
@@ -25879,9 +25879,9 @@ window.PORTAL_DATA = {
    "politica_precio": "INFERIDO del patrón de Edifikarte, que mete 2 estacionamientos y depósito en sus cinco proyectos confirmados. No confirmado para este, que además está agotado.",
    "tipico": null,
    "pedido_lista": [
-    "confirmar la cochera de ESTE proyecto (hoy se infiere de otro suyo)",
-    "precio y metraje de un flat de piso intermedio",
-    "si tienen alguna promocion vigente"
+    "confirmar cochera",
+    "precio de un flat típico",
+    "promoción"
    ],
    "precio_de_asesor": false,
    "oferta_corta": null,
@@ -26090,12 +26090,12 @@ window.PORTAL_DATA = {
      "pm2": null
     }
    ],
-   "pedido": "precio y metraje de un flat de piso intermedio",
+   "pedido": "precio de un flat típico",
    "pedido_lista": [
-    "precio y metraje de un flat de piso intermedio",
-    "si tienen alguna promocion vigente"
+    "precio de un flat típico",
+    "promoción"
    ],
-   "pedido_que": "Hola Isabel! Sobre Monte Umbroso 585: precio y metraje de un flat de piso intermedio; si tienen alguna promocion vigente.",
+   "pedido_que": "Hola Isabel! Sobre Monte Umbroso 585: el precio y el metraje de un flat de piso intermedio; si tienen alguna promoción vigente.",
    "precio_de_asesor": false,
    "oferta_corta": null,
    "oferta_canal": null
@@ -26345,8 +26345,8 @@ window.PORTAL_DATA = {
    "caseta_ventas": "no",
    "caseta_nota": "Sin caseta de ventas.",
    "caseta_fecha": "2026-08-22",
-   "pedido": "si tienen alguna promocion vigente",
-   "pedido_que": "Hola! Sobre Monte Alegre 109: si tienen alguna promocion vigente.",
+   "pedido": "promoción",
+   "pedido_que": "Hola! Sobre Monte Alegre 109: si tienen alguna promoción vigente.",
    "pisos": 7,
    "planos_fuente": "Brochure oficial Edifikarte, edición julio-2026 (21 láminas de tipología).",
    "wa_label": "Edifikarte · Monte Alegre",
@@ -27438,7 +27438,7 @@ window.PORTAL_DATA = {
     "de_n_tipicos": 4
    },
    "pedido_lista": [
-    "si tienen alguna promocion vigente"
+    "promoción"
    ],
    "precio_de_asesor": true,
    "oferta_corta": null,
