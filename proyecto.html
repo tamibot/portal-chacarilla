@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260904c"></script>
+<script src="data/portal-data.js?v=20260904e"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -178,7 +178,7 @@ function render(){
   }
 
   const wa=(p.wa?`<a class="btn wa" href="${waHref(p)}" target="_blank">📱 ${p.wa_label||'WhatsApp'} +51 ${waFmt(p.wa)}</a>`:'')
-    +(p.pedido&&p.wa?`<a class="btn wa" style="background:#b9863b" href="${waHref(p,p.wa,p.pedido)}" target="_blank" title="Abre WhatsApp con el mensaje ya escrito">📩 Pedir ${p.pedido_que||'información'}</a>`:'')
+    
     +(p.wa_asesora?`<a class="btn wa" href="${waHref(p,p.wa_asesora)}" target="_blank">📱 ${p.asesora||'Asesora'} +51 ${waFmt(p.wa_asesora)}</a>`:'');
   const web=p.web?`<a class="btn web" href="${p.web}" target="_blank">🌐 Web oficial</a>`:'';
   const broch=p.brochure?`<a class="btn broch" href="${p.brochure}" target="_blank">📄 Ver brochure (PDF)</a>`:'';
@@ -255,10 +255,10 @@ function render(){
    ${(p.contactos&&p.contactos.length)?`<div class="sec">Contactos verificados</div>
    <div style="display:flex;flex-direction:column;gap:7px">
    ${p.contactos.map(c=>`<div style="background:#fff;border:1px solid #e6e1d4;border-radius:10px;padding:9px 14px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap">
-      <a href="${waHref(p,c.numero,p.pedido||undefined)}" target="_blank" style="font-size:13px;font-weight:700;color:#2F7D54">📱 +51 ${waFmt(c.numero)}</a>
+      <a href="${waHref(p,c.numero)}" target="_blank" style="font-size:13px;font-weight:700;color:#2F7D54">📱 +51 ${waFmt(c.numero)}</a>
       ${c.nombre?`<b style="font-size:12px;color:#15402c">${c.nombre}</b>`:''}
       <span style="font-size:11px;color:#8a8577;flex:1;min-width:200px">Fuente: ${c.fuente}</span></div>`).join('')}
-   </div>`:'<div class="sec">Contactos verificados</div><div class="empty">Todavía no tenemos un WhatsApp con fuente comprobada para este proyecto.</div>'}
+   </div>`:'<div class="sec">Contactos verificados</div><div class="empty">Este proyecto no publica un WhatsApp de contacto.</div>'}
 
 
    ${(()=>{const A=p.planos_analisis; if(!A)return '';
@@ -291,7 +291,7 @@ function render(){
         <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">${A.unidades.length} unidades leídas de ${A.planos_leidos||'—'} láminas${dis?` · ${dis} dormitorio${dis>1?'s':''} vendido${dis>1?'s':''} como estudio`:''}</span></div>
        <div class="alert" style="background:#EEF2F7;border-color:#c6d2e0;color:#22303f">📐 ${D.meta.regla_planos}</div>
        <div style="overflow-x:auto"><table class="t"><thead><tr><th>Unidad</th>${th}</tr></thead><tbody>${filas}</tbody></table></div>`;})()}
-   ${docsHtml?`<div class="sec">Respaldos guardados <span style="font-weight:600;color:#8a8577;font-size:11px;text-transform:none;letter-spacing:0">copia propia — no depende de que la web del competidor siga arriba</span></div>${docsHtml}`:''}
+   ${docsHtml?`<div class="sec">Documentos del proyecto</div>${docsHtml}`:''}
 
    <div class="sec">Fuentes</div>
    ${srcHtml}
