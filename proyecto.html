@@ -67,7 +67,7 @@ table.t{width:100%;border-collapse:collapse;font-size:12.5px}
 <div id="lightbox" onclick="this.style.display='none'"><img id="lbimg" src=""></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260904a"></script>
+<script src="data/portal-data.js?v=20260904b"></script>
 <script>
 const D=window.PORTAL_DATA,P=D.projects;
 const STCLASS={'En planos':'st-planos','En construcción':'st-constr','Entrega inmediata':'st-inmediata'};
@@ -111,8 +111,16 @@ function render(){
     const rows=p.typologies.map(t=>{
       const tc=t.tipo==='duplex'?'duplex':(t.tipo==='pent'||t.tipo==='triplex')?'pent':(t.tipo==='primer_piso'?'primer':'');
       const tip=t.flat?' <span style="font-size:9px;font-weight:700;color:#1a8a4a;background:#EAF3DE;padding:1px 6px;border-radius:4px">TÍPICO</span>':'';
+      // Cada tipologia abre su propia lamina: el plano lo enlaza derivar_comparativo.py,
+      // la misma que usa el informe, asi la miniatura y la fila hablan de la misma unidad.
+      const pl=t.plano_archivo
+        ? `<a href="#" onclick="lb('${t.plano_archivo}');return false" title="Ver el plano de esta unidad"
+             style="display:inline-block;vertical-align:middle;margin-right:7px">
+             <img src="${t.plano_archivo}" loading="lazy" style="height:34px;width:auto;max-width:64px;
+               border:1px solid #e4dfd5;background:#fff;display:block"></a>` : '';
+      const nota=t.plano_nota?` <span style="font-size:10px;color:#A6342A">${t.plano_nota}</span>`:'';
       return `<tr${t.flat?' style="background:#fbfdf9"':''}>
-        <td><span class="ttype ${tc}">${tipoLabel[t.tipo]||t.tipo}</span>${tip}${t.unidad?' <span style="color:#aaa;font-size:11px">'+t.unidad+'</span>':''}</td>
+        <td>${pl}<span class="ttype ${tc}">${tipoLabel[t.tipo]||t.tipo}</span>${tip}${t.unidad?' <span style="color:#aaa;font-size:11px">'+t.unidad+'</span>':''}${nota}</td>
         <td>${t.dorm?t.dorm+' dorm':'<span style="color:#ccc">—</span>'}</td>
         <td>${t.m2?t.m2+' m²':'<span style="color:#ccc">—</span>'}</td>
         <td>${t.precio_usd?fmtUsd(t.precio_usd):'<span style="color:#ccc">consultar</span>'}</td>

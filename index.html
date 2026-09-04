@@ -236,6 +236,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
     <div id="analysisview"></div>
     <div id="priceview"></div>
     <div id="argview"></div>
+    <div id="anaSubSel"></div>
     <div id="dormview"></div>
    <div id="entradaview" style="display:none"></div>
    <div id="ventasview" style="display:none"></div>
@@ -249,7 +250,7 @@ table.t{width:100%;border-collapse:collapse;font-size:11.5px;max-width:1180px}
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="data/portal-data.js?v=20260904a"></script>
+<script src="data/portal-data.js?v=20260904b"></script>
 <script>
 const D=window.PORTAL_DATA, P=D.projects;
 // ponytail: contadores derivados del data, no hardcodeados (antes: 25 competidores y 6 en últimas unidades, ambos fijos)
@@ -923,9 +924,14 @@ function buildTimelapse(){
    <div style="background:#fff;border:1px solid #e6e1d4;border-radius:14px;padding:6px 20px 12px;max-width:940px">${feed||'<div style="color:#aaa;padding:16px 0">Sin registros para este filtro.</div>'}</div>
    <div class="foot" style="margin-top:12px">${data.length} de ${all.length} registros · Fuente: conversaciones reales por WhatsApp (Evolution API) y relevamiento de campo. Se agrega un registro cada vez que un asesor comparte novedad.</div>`;
 }
-const ANA_GROUPS={pos:['statview','analysisview'],price:['priceview'],dorm:['dormview'],entrada:['entradaview'],ventas:['ventasview'],tipico:['tipicoview'],oferta:['ofertaview'],planos:['planosview'],arg:['argview'],cov:['covview']};
+/* Siete vistas, una por pregunta. Antes eran diez y tres de ellas —Ranking, Ticket de
+   entrada y El típico— eran la misma tabla ordenada distinto, así que van juntas con un
+   selector. Oferta y ventas tambien: las dos hablan de presion comercial. */
+const ANA_GROUPS={pos:['statview','analysisview'],precios:['priceview','entradaview','tipicoview'],
+  dorm:['dormview'],planos:['planosview'],oferta:['ofertaview','ventasview'],
+  arg:['argview'],resp:['covview']};
 function buildAnaNav(){
-  const items=[['pos','Nuestra posición'],['price','Ranking'],['dorm','Las bandas'],['entrada','Ticket de entrada'],['ventas','Cuánto lleva vendido'],['tipico','El típico de cada uno'],['oferta','Comunicación y oferta'],['planos','Lo que dicen los planos'],['arg','Argumentario'],['cov','Cobertura de datos']];
+  const items=[['pos','Nuestra posición'],['precios','Precios'],['dorm','Las bandas'],['planos','Los planos'],['oferta','Oferta y ventas'],['arg','Argumentario'],['resp','El respaldo']];
   document.getElementById('anaNav').innerHTML=items.map(([id,l])=>`<button class="anatab" data-sub="${id}" onclick="showAnaSub('${id}')">${l}</button>`).join('');
   buildArgumentario();
   buildBandas();
@@ -937,9 +943,28 @@ function buildAnaNav(){
   buildCobertura();
   showAnaSub('pos');
 }
+/* Las vistas agrupadas comparten pestaña: un selector interno elige cuál se ve, en vez
+   de apilar tres tablas que dicen lo mismo con otro orden. */
+const SUB_SEL={precios:[['priceview','Por US$/m²'],['entradaview','Ticket de entrada'],['tipicoview','El típico de cada uno']],
+               oferta:[['ofertaview','Qué ofrece cada uno'],['ventasview','Cuánto lleva vendido']]};
+let SUB_ON={};
+function pickSub(grupo,vista){
+  SUB_ON[grupo]=vista;
+  (SUB_SEL[grupo]||[]).forEach(([v])=>{const e=document.getElementById(v);if(e)e.style.display=v===vista?'block':'none';});
+  document.querySelectorAll(`[data-subsel="${grupo}"] button`).forEach(b=>b.classList.toggle('on',b.dataset.v===vista));
+}
+function subSelHtml(grupo){
+  const L=SUB_SEL[grupo]||[]; if(L.length<2) return '';
+  const act=SUB_ON[grupo]||L[0][0];
+  return `<div data-subsel="${grupo}" class="subsel" style="display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px">
+    ${L.map(([v,t])=>`<button class="anatab${v===act?' on':''}" data-v="${v}" onclick="pickSub('${grupo}','${v}')">${t}</button>`).join('')}</div>`;
+}
 function showAnaSub(id){
   const show=ANA_GROUPS[id]||[id];
   ['statview','analysisview','priceview','dormview','entradaview','ventasview','tipicoview','ofertaview','planosview','argview','covview'].forEach(v=>document.getElementById(v).style.display=show.includes(v)?'block':'none');
+  const sel=document.getElementById('anaSubSel');
+  if(sel){ sel.innerHTML=subSelHtml(id);
+    if(SUB_SEL[id]) pickSub(id, SUB_ON[id]||SUB_SEL[id][0][0]); }
   document.querySelectorAll('#anaNav .anatab').forEach(b=>b.classList.toggle('on',b.dataset.sub===id));
   const w=document.getElementById('anaWrap');if(w)w.scrollTop=0;
 }
@@ -1258,56 +1283,96 @@ function buildPlanos(){
 
 /* COBERTURA DE DATOS · qué tenemos y qué falta de cada proyecto */
 function buildCobertura(){
+  /* «El respaldo»: la misma matriz de cobertura, pero cada marca ABRE la prueba.
+     Antes decia «✓ tiene brochure» y no habia forma de verlo: el dato estaba en la
+     data y el portal lo escondia. Ahora cada celda es el archivo, la cita o el chat. */
   const comps=P.filter(p=>p.mostrar&&!p.isGEU).sort((a,b)=>(b.en_cuadrante-a.en_cuadrante)||a.name.localeCompare(b.name));
-  const si='<span style="color:#2F7D54;font-weight:800">✓</span>', no='<span style="color:#ce3c31;font-weight:800">✕</span>';
-  /* Un plano es una lámina de tipología, no un render ni una foto de valla. Antes esto solo
-     excluía assets/campo/, así que tres proyectos mostraban «PLANOS» sin tener ninguno. */
+  const IMG=/\.(jpe?g|png|webp|avif|gif)$/i;
+  const no=t=>`<span style="color:#ce3c31;font-weight:800" title="${(t||'No lo tenemos').replace(/"/g,'')}">✕</span>`;
+  const tilde=t=>`<span style="color:#b9863b;font-weight:700" title="${(t||'').replace(/"/g,'')}">~</span>`;
+  // Un enlace que abre la prueba: imagen en el visor, lo demas en pestaña nueva.
+  const ver=(href,txt,tip)=>{
+    if(!href) return '';
+    const t=(tip||'Abrir el respaldo').replace(/"/g,'');
+    return IMG.test(href)
+      ? `<a href="#" onclick="lb('${href}');return false" title="${t}" style="color:#2F7D54;font-weight:800;text-decoration:none;border-bottom:1px dotted #2F7D54">${txt}</a>`
+      : `<a href="${href}" target="_blank" rel="noopener" title="${t}" style="color:#2F7D54;font-weight:800;text-decoration:none;border-bottom:1px dotted #2F7D54">${txt}</a>`;};
+  const doc=(p,re)=>(p.documentos||[]).find(d=>re.test(String(d.tipo||'')+' '+String(d.titulo||'')));
   const esPlano=x=>x.includes('/planos/')||x.includes('/chats/');
   const nPlan=p=>(p.planos||[]).filter(esPlano).length;
+  const ficha=p=>`proyecto.html?id=${p.id}`;
+
   const cols=[
-    ['Planos', p=>nPlan(p)?`<span style="color:#2F7D54;font-weight:800">${nPlan(p)}</span>`:no],
-    ['Brochure', p=>(p.documentos||[]).some(d=>d.tipo==='brochure')?si:(p.brochure?'<span style="color:#b9863b;font-weight:700" title="Solo link, sin copia guardada">link</span>':no)],
-    ['Tarifario', p=>p.tarifario?si:no],
-    ['Precios', p=>p.precio_desde_usd?si:no],
-    ['$/m² comparable', p=>{if(comparableRows(p).length)return si;
-       // por qué no compara: casi siempre es que no se sabe si el precio trae cochera
+    ['Planos', p=>{const L=(p.planos||[]).filter(esPlano);
+       return L.length?ver(L[0],nPlan(p),`${nPlan(p)} lámina(s) · clic abre la primera`):no('Sin láminas de tipología');}],
+    ['Brochure', p=>{const d=doc(p,/brochure/i);
+       return d&&d.archivo?ver(d.archivo,'✓',d.titulo)
+            :(p.brochure?ver(p.brochure,'✓','Brochure guardado')
+            :(p.web?ver(p.web,'link','Solo el link a su web, sin copia guardada'):no('Sin brochure')));}],
+    ['Tarifario', p=>{const d=doc(p,/tarifario|cotizaci|lista de precios|precio/i);
+       return d&&d.archivo?ver(d.archivo,'✓',d.titulo):no('Sin tarifario guardado');}],
+    ['Precios', p=>p.precio_desde_usd
+       ?ver(ficha(p),'✓',`Desde ${fmtUsd(p.precio_desde_usd)} · abre la ficha`):no('Sin precio publicado')],
+    ['$/m² comparable', p=>{if(comparableRows(p).length)return ver(ficha(p),'✓','Entra al ranking · abre la ficha');
        const m=(p.flats_summary||[]).map(f=>f.motivo_no_comparable).filter(Boolean)[0];
-       return m?`<span style="color:#ce3c31;font-weight:800" title="${m.replace(/"/g,'')}">✕</span>`:no;}],
-    ['Cochera', p=>{const k=parkingStatus(p);
-       if(k==='si')return '<span style="color:#2F7D54;font-weight:700;font-size:10px" title="El precio de lista la incluye; el US$/m² la descuenta">incluida</span>';
-       if(k==='no')return '<span style="color:#2F7D54;font-weight:700;font-size:10px" title="Se vende aparte: el precio publicado ya es el del depa solo">aparte</span>';
-       return '<span style="color:#ce3c31;font-weight:800;font-size:10px" title="Sin este dato el US$/m² no compara">no se sabe</span>';}],
-    ['Punto de venta', p=>p.caseta_ventas&&p.caseta_ventas!=='nd'?si:no],
-    ['Ubicación exacta', p=>p.geo_aprox?no:si],
-    ['Contacto verificado', p=>(p.contactos||[]).length?si:no],
-    ['Foto de campo', p=>p.foto_campo?si:no],
-    ['Estado al día', p=>{const e=p.estado_evidencia||{};
-       return (e.tipo==='whatsapp'||e.tipo==='campo'||e.tipo==='web_oficial')?si:'<span style="color:#b9863b;font-weight:700" title="Conviene reconfirmarlo con el asesor">~</span>';}],
+       return no(m||'No compara');}],
+    ['Cochera', p=>{const k=parkingStatus(p), inf=p.cochera_certeza==='politica_desarrolladora';
+       const tip=p.cochera_nota||p.cochera_fuente||'';
+       if(k==='nd') return no('No sabemos si el precio incluye estacionamiento');
+       const lab=(k==='si'?'incluida':'aparte')+(inf?'*':'');
+       return `<a href="${ficha(p)}" target="_blank" rel="noopener" title="${String(tip).replace(/"/g,'')}"
+         style="font-size:10px;font-weight:700;color:${inf?'#8F6109':'#2F7D54'};text-decoration:none;border-bottom:1px dotted">${lab}</a>`;}],
+    ['Punto de venta', p=>p.caseta_ventas&&p.caseta_ventas!=='nd'
+       ?ver(ficha(p),'✓',p.caseta_nota||'Tiene punto de venta'):no('Sin punto de venta detectado')],
+    ['Ubicación', p=>p.geo_aprox?tilde(p.geo_nota||'Ubicación aproximada')
+       :ver(`https://www.google.com/maps?q=${p.lat},${p.lng}`,'✓','Coordenada verificada · abre el mapa')],
+    ['Contacto', p=>{const c=(p.contactos||[])[0];
+       return c?ver(`https://wa.me/51${(c.numero||'').replace(/\D/g,'')}`,'✓',
+                    `${c.nombre||'Contacto'} +51 ${c.numero} · ${c.fuente||''}`):no('Sin contacto verificado');}],
+    ['Foto de campo', p=>{const f=p.foto_campo&&IMG.test(String(p.img||''))?p.img:
+        ((p.gallery||[]).find(x=>x.includes('/campo/'))||(IMG.test(String(p.img||''))&&String(p.img).includes('/campo/')?p.img:null));
+       return f?ver(f,'✓','Foto del recorrido de campo'):(p.foto_campo?ver(ficha(p),'✓','Verificado en campo'):no('Nunca fotografiado'));}],
+    ['Estado', p=>{const e=p.estado_evidencia||{};
+       return (e.tipo==='whatsapp'||e.tipo==='campo'||e.tipo==='web_oficial')
+         ?ver(ficha(p),'✓',`${e.tipo} · ${e.fecha||''}`):tilde('Conviene reconfirmarlo con el asesor');}],
   ];
-  const score=p=>cols.reduce((a,[,fn])=>a+(fn(p).includes('#2F7D54')?1:0),0);
+  const verde=h=>h.includes('#2F7D54')||h.includes('#8F6109');
   const rows=comps.map(p=>{
-    const sc=score(p), pct=Math.round(sc/cols.length*100);
+    const cel=cols.map(([,fn])=>fn(p));
+    const sc=cel.filter(verde).length, pct=Math.round(sc/cols.length*100);
     const col=pct>=75?'#2F7D54':pct>=50?'#b9863b':'#ce3c31';
-    return `<tr><td><a href="proyecto.html?id=${p.id}" target="_blank" style="font-weight:700;color:#15402c">${p.name}</a>
+    const falta=(p.pedido_lista||[]);
+    return `<tr><td><a href="${ficha(p)}" target="_blank" style="font-weight:700;color:#15402c">${p.name}</a>
       ${p.en_cuadrante?'':'<span style="font-size:9px;color:#9a958c"> · fuera</span>'}
-      <div class="muted" style="font-size:10px">${p.dev}</div></td>
-      ${cols.map(([,fn])=>`<td style="text-align:center">${fn(p)}</td>`).join('')}
+      <div class="muted" style="font-size:10px">${p.dev||''}</div>
+      ${falta.length?`<div style="font-size:9.5px;color:#b9863b">falta: ${falta.join(' · ')}</div>`:''}</td>
+      ${cel.map(h=>`<td style="text-align:center">${h}</td>`).join('')}
       <td style="text-align:center;font-weight:800;color:${col}">${pct}%</td></tr>`;}).join('');
-  const tot=cols.map(([t,fn])=>[t,comps.filter(p=>fn(p).includes('#2F7D54')).length]);
+  const tot=cols.map(([t,fn])=>[t,comps.filter(p=>verde(fn(p))).length]);
+  const nDoc=comps.reduce((a,p)=>a+(p.documentos||[]).length,0);
+  const nPl=comps.reduce((a,p)=>a+nPlan(p),0);
+  const nFu=comps.reduce((a,p)=>a+(p.fuentes||[]).length,0);
   document.getElementById('covview').innerHTML=`
-   <h2 style="margin-bottom:2px">Cobertura de datos</h2>
-   <div style="font-size:12px;color:#999;margin-bottom:16px">Qué información tenemos realmente de cada competidor y qué falta. Todo lo marcado ✓ tiene su respaldo guardado en la plataforma (planos, brochure o cita del asesor) — clic en el nombre abre la ficha con las fuentes.</div>
-   <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;max-width:960px">
-     ${tot.map(([t,n])=>`<div style="flex:1;min-width:110px;background:#fff;border:1px solid #e6e1d4;border-radius:11px;padding:10px 13px">
-       <div style="font-size:19px;font-weight:800;color:${n/comps.length>=.6?'#2F7D54':'#b9863b'}">${n}<span style="font-size:11px;color:#bbb">/${comps.length}</span></div>
-       <div style="font-size:10.5px;color:#7a7a7a">${t}</div></div>`).join('')}
+   <h2 style="margin-bottom:2px">El respaldo</h2>
+   <div class="muted" style="margin-bottom:14px">Qué tenemos de cada competidor y <b>dónde está</b>.
+     Cada marca abre la prueba: el plano y la foto en el visor, el brochure y el tarifario en otra pestaña,
+     la ubicación en Google Maps, el contacto en WhatsApp. Lo que está en rojo es lo que falta pedir.</div>
+   <div class="amen" style="margin-bottom:16px">
+     <span><b>${nPl}</b> láminas de tipología</span>
+     <span><b>${nDoc}</b> documentos guardados</span>
+     <span><b>${nFu}</b> fuentes citadas</span>
+     <span><b>${(D.meta.bitacora||[]).length}</b> registros en la bitácora</span>
    </div>
-   <table class="t"><thead><tr><th style="width:20%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}<th style="text-align:center">Completo</th></tr></thead><tbody>${rows}</tbody></table>
-   <div class="foot" style="margin-top:10px">Los ✕ de Planos / Brochure / Tarifario son los pedidos abiertos por WhatsApp (ver Time lapse). Último rastreo en internet de todo el cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>
+   <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;max-width:1080px">
+     ${tot.map(([t,n])=>`<div style="flex:1;min-width:96px;background:var(--card,#fff);border:1px solid #e6e1d4;border-radius:10px;padding:8px 11px">
+       <div style="font-size:17px;font-weight:800;color:${n/comps.length>=.6?'#2F7D54':'#b9863b'}">${n}<span style="font-size:10px;color:#bbb">/${comps.length}</span></div>
+       <div style="font-size:10px;color:#7a7a7a">${t}</div></div>`).join('')}
+   </div>
+   <div style="overflow-x:auto"><table class="t"><thead><tr><th style="width:18%">Proyecto</th>${cols.map(([t])=>`<th style="text-align:center">${t}</th>`).join('')}<th style="text-align:center">Completo</th></tr></thead><tbody>${rows}</tbody></table></div>
+   <div class="foot" style="margin-top:10px">El asterisco en Cochera marca los que se infieren de la política de la desarrolladora y no están confirmados para ese proyecto. Último rastreo del cuadrante: ${D.meta.verif_web_fecha?fmtFechaCorta(D.meta.verif_web_fecha):'—'}.</div>
    ${archivoZonaHtml()}`;
 }
 
-/* ARCHIVO DE LA ZONA · brochures y planos de proyectos que no entran al benchmark */
 function archivoZonaHtml(){
   const A=D.meta.archivo_zona||[]; if(!A.length)return '';
   const ZC={'dentro del cuadrante':'#2F7D54','fuera del cuadrante':'#9a958c','por confirmar':'#b9863b'};
@@ -1441,5 +1506,11 @@ function buildUpdates(){
 refresh();
 showDetail(P.find(p=>p.isGEU));
 </script>
+<div id="lightbox" onclick="this.style.display='none'"
+     style="display:none;position:fixed;inset:0;background:rgba(20,24,20,.92);z-index:9999;
+            align-items:center;justify-content:center;padding:24px;cursor:zoom-out">
+  <img id="lbimg" style="max-width:96vw;max-height:92vh;box-shadow:0 8px 40px rgba(0,0,0,.5);background:#fff">
+  <div style="position:absolute;top:14px;right:22px;color:#fff;font:600 13px/1 system-ui">cerrar ✕</div>
+</div>
 </body>
 </html>
